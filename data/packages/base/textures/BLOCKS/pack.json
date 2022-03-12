@@ -1,0 +1,7 @@
+{
+	filterMin: MipMap,
+	filterMag: MipMap,
+	useIndexes: false,
+    maxWidth: 512,
+    duplicatePadding: true
+}

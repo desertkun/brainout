@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-steel-1
+    }
+    {
+        groups = cardgroup-steel-1
+    }
+    {
+        groups = cardgroup-steel-1
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = steel-case-bg
+        class = content.components.IconComponent
+        icon = steel-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_EXCLUSIVE_DESC
+id = case-steel-1
+name = CASE_STEEL

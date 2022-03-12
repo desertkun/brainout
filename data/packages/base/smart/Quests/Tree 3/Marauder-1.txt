@@ -1,0 +1,46 @@
+class = content.quest.Quest
+id = quest-marauder-1
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-marauder
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = consumable-item-geiger
+        target = 3
+    }
+}
+
+group = marauder
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_MARAUDER
+
+rewards = [
+    {
+        action = unlock
+        id = case-daily
+        amount = 1
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 100
+    }
+    {
+        action = addstat
+        id = gears
+        amount = 5
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 500
+    }
+]

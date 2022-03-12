@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = order
+id = skin-player-order
+name = ITEM_PLAYER_SKIN_ORDER

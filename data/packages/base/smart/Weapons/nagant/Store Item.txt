@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-nagant
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 15
+    }
+]
+instrument = {
+    id = weapon-nagant
+    skins = skin-weapon-nagant-default
+    upgrades = {
+        fastloader = upgrade-nagant-fastloader
+		silencer = upgrade-nagant-silencer
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_NAGANT
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 99
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = krieg-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_KRIEG
+    }
+}

@@ -1,0 +1,62 @@
+{
+	"content": 
+	{
+		"music-list-bridge":
+		{
+			"class": "content.MusicList",
+			"tag": "client",
+			"list":
+			[
+				"music-bridge"
+			]
+		},
+		"music-bridge":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "map_bridge:music/bg.mp3"
+		},
+		"parr-bridge":
+		{
+			"class": "content.parallax.Parallax",
+			"tag": "client",
+			"layers": [
+				{
+					"class": "content.parallax.DynamicLayer",
+					"texture": "parr-bridge-sky-foreground",
+					"x": 0,
+					"y": 515,
+					"coefX": 0.01,
+					"coefY": 0.01,
+					"flowX": -5
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "parr-bridge-sky-root-repeat",
+					"x": 0,
+					"y": 0,
+					"coefX": 0.1,
+					"coefY": 0.0,
+					"scale": true
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "parr-bridge-sky-root",
+					"x": 0,
+					"y": 128,
+					"coefX": 0.01,
+					"coefY": 0.01
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "parr-bridge-grass",
+					"x": 0,
+					"y": 330,
+					"coefX": 0.5,
+					"coefY": 0.2
+				}
+			]
+		}
+	},
+	"textures": "data/textures/textures.json"
+}

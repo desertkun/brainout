@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-tanto
+        class = content.components.IconComponent
+        icon = knife-tanto
+        tag = client
+    }
+]
+id = sl-ml-knife-tanto
+instrument = {
+    id = weapon-knife-tanto
+    skin = skin-weapon-knife-tanto
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_TANTO
+slot = slot-melee
+category = melee
+tags = mission
+index = 10
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        unlockTitle = MENU_UNLOCK_QUEST
+        unlockObject = QUEST_TITLE_MARAUDER
+    }
+}
+

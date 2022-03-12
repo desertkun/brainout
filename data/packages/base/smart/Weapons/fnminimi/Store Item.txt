@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-fnminimi
+instrument = {
+    id = weapon-fnminimi
+    skins = skin-weapon-fnminimi-default, skin-weapon-fnminimi-radiation, skin-weapon-fnminimi-oracle
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        bipod = upgrade-fnminimi-bipod
+        clip = upgrade-fnminimi-clip-extended
+        recoil = upgrade-fnminimi-recoil
+        reload-time = upgrade-fnminimi-reload-time
+        scope = upgrade-fnminimi-scope-optical
+        shoot-time = upgrade-fnminimi-shoot-time
+        butt = upgrade-fnminimi-butt-extended
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_FNMINIMI
+slot = slot-primary
+category = other
+tags = resources
+index = 35
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

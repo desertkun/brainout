@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-saiga-wolfhound
+        tag = client
+    }
+]
+data = weapon-wolfhound
+id = skin-weapon-saiga-wolfhound
+name = ITEM_WEAP_SAIGA_WOLFHOUND
+slot = sl-pri-saiga
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

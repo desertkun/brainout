@@ -1,0 +1,15 @@
+class = content.active.SpawnPoint
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-point
+        tag = client
+    }
+    {
+        animation = anim-spawn-mark
+        class = content.components.SpawnAnimationComponent
+        tag = client
+    }
+]
+id = spawn
+name = ITEM_SPAWN

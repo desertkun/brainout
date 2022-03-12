@@ -1,0 +1,16 @@
+{
+"class": "export-json",
+"name": "JSON",
+"project": "C:\\Work\\brainout\\data\\content\\spine\\actor.spine",
+"output": "C:/Work/brainout/data/packages/base/contents/content/animations",
+"open": false,
+"extension": ".json",
+"format": "JSON",
+"prettyPrint": false,
+"nonessential": false,
+"cleanUp": false,
+"packAtlas": null,
+"packSource": "attachments",
+"packTarget": "single",
+"warnings": false
+}

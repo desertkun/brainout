@@ -1,0 +1,20 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-green
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 200
+    }
+]
+id = sl-skin-green
+items = []
+name = ITEM_PLAYER_SKIN_GREEN
+skin = skin-player-green
+slot = slot-player-skin
+category = outfit
+tags = []
+index = 1

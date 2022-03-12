@@ -1,0 +1,79 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.ConnectionComponent
+        data = [
+            core-0
+            core-1
+            core-2
+            core-3
+            core-4
+            core-5
+            core-6
+            core-7
+            core-8
+            core-9
+            core-10
+            core-11, core-11-1, core-11-2, core-11-3, core-11-4, core-11-5, core-11-6
+            core-12
+            core-13
+            core-14, core-14-1, core-14-2, core-14-3, core-14-4, core-14-5, core-14-6
+            core-15
+        ]
+        stickId = brick
+        stickTo = brick
+        tag = client
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        destroy = {
+            @if = "$editor != true"
+            @then = [
+                smoke-part, wood-destroy-part-1, wood-destroy-snd-1
+            ]
+        }
+        hit = [
+            sparkle-1, wood-hit-snd-1, wood-hit-part-1
+            sparkle-1, wood-hit-snd-2, wood-hit-part-1
+            sparkle-1, wood-hit-snd-3, wood-hit-part-2
+            sparkle-1, wood-hit-snd-4, wood-hit-part-1
+            sparkle-1, wood-hit-snd-5, wood-hit-part-1
+            sparkle-1, wood-hit-snd-6, wood-hit-part-2
+        ]
+        step = wood-step-snd-1, wood-step-snd-2, wood-step-snd-3, wood-step-snd-4
+        tag = client
+    }
+    {
+        @if = "$coredestructable == yes"
+        @then = {
+            class = content.components.BlockHealthComponent
+            damageCoef = {
+                * = 0
+                explosive-bullet = 1
+                explosive-bullet-active = 1
+            }
+            health = 600
+            tag = server
+        }
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-core
+        tag = client
+    }
+]
+contactId = core
+static = {
+    @if = "$server == true"
+    @then = false
+    @else = true
+}
+contactStrategy = combined
+contactTo = core, collision, brick, ground, carbon, metal, platform
+id = core
+name = ITEM_BG_CORE
+resist = 999999

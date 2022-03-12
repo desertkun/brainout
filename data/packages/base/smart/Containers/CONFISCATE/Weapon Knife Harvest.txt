@@ -1,0 +1,22 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-ml-knife-harvest
+    }
+]
+group = cardgroup-confiscate
+id = gen-weapon-knife-harvest
+name = CARD_TITLE_NEW_WEAPON
+weight = 10
+share-weight = uc

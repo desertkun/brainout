@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-ares-shrike-default
+name = ITEM_WEAP_ARES_SHRIKE
+slot = sl-pri-ares-shrike

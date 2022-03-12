@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-pecheneg-default
+name = ITEM_WEAP_PECHENEG
+slot = sl-pri-pecheneg

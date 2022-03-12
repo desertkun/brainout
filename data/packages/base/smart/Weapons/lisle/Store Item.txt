@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-lisle
+components = [
+]
+instrument = {
+    id = weapon-lisle
+    skins = skin-weapon-lisle-default, skin-weapon-lisle-prankster, skin-weapon-lisle-caramel, skin-weapon-lisle-pirate
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-lisle-clip-extended
+        recoil = upgrade-lisle-recoil
+        accuracy = upgrade-lisle-accuracy
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_LISLE
+slot = slot-primary
+category = sniper
+tags = unique
+index = 334
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = krieg-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_KRIEG
+    }
+}
+

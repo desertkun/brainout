@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.InstrumentSkinCardComponent
+        content = skin-weapon-mp7-dust
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-unique
+id = gen-skin-mp7-dust
+name = ITEM_WEAP_MP7_DUST
+weight = 100

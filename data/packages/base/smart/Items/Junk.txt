@@ -1,0 +1,413 @@
+class = content.consumable.Resource
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-case
+        icon-medium = icon-item-junk-case-medium
+        icon-small = icon-item-junk-case-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk
+name = ITEM_JUNK
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-1
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-1
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-2
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-2
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-3
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-3
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-4
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-4
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-5
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-5
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-6
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-6
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-7
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-7
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-8
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-8
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-9
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-9
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-junk-10
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.AutoConvertConsumable
+        to = consumable-item-junk
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = junk
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10
+        tag = client
+    }
+]
+id = consumable-item-junk-10
+name = ITEM_JUNK
+stacks = false
+description = ITEM_JUNK_DESC

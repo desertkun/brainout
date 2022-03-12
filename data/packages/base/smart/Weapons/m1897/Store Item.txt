@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+]
+id = sl-pri-m1897
+instrument = {
+    id = weapon-m1897
+    skins = skin-weapon-m1897-default, skin-weapon-m1897-ideal, skin-weapon-m1897-frontier, skin-weapon-m1897-2077
+    upgrades = {
+        recoil = upgrade-m1897-recoil
+        reload-time = upgrade-m1897-reload-time
+    }
+}
+items = [
+    {
+        amount = 12
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_M1897
+slot = slot-primary
+category = shotgun
+tags = unique
+index = 60
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = survivor-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SURVIVOR
+    }
+}

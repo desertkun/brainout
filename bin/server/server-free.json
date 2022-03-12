@@ -1,0 +1,109 @@
+{
+	"ports":
+	{
+		"tcp": 36555,
+		"udp": 36556,
+		"http": 36557
+	},
+
+	"name": "Free Game Mode",
+
+	"packages":
+	[
+		"base",
+		"sounds",
+		"freeplay",
+		"halloween"
+	],
+
+	"defines":
+	{
+		"dropBullets": "true",
+		"crow_damage": "false",
+		"crow_visibility": "false",
+		"primary": "disabled",
+		"secondary": "disabled",
+		"special": "disabled",
+		"player": "disabled",
+		"minimapEnabled": "false",
+		"friendlyFire": "false",
+		"freeplay": "true",
+		"items_long_live": "true",
+		"items_auto_pick": "false",
+		"items_pickup_icon": "false",
+		"bulletDistance": "far"
+	},
+
+	"presets": {
+	},
+
+	"teams": 
+	[
+		"team-freeplay"
+	],
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},	
+
+	"prices":
+	{
+		"createClan": 15,
+		"joinClan": 5,
+		"updateClan": 5,
+		"participateClanEvent": 40,
+		"kill": 5,
+		"headshot": 5,
+		"longshot": 10,
+		"headtohead": 5,
+		"takePoint": 15,
+		"doubleKill": 15,
+		"tripleKill": 25,
+		"knife": 20,
+		"chip-take": 25,
+		"purchase-gears": 2,
+		"purchase-skillpts": 25,
+		"trophy-base": 2,
+		"trophy-upgrade": 1,
+		"trophy-skin": 1
+	},
+
+	"modeDelay": 0,
+	"maxPlayers": 16,
+
+	"plugins":
+	[
+		{
+			"class": "plugins.PostLeaderboardPlugin",
+			"leaderboard": "top100",
+			"leaderboard-order": "desc",
+			"stat": "kpd",
+			"min": "1.5",
+			"expire-in": 604000
+		}
+	],
+
+	"respawn":
+	{
+		"kind": "dynamicWaves",
+		"rate": 3,
+		"waveMinTime": 1
+	},
+
+	"damageCoef": 2,
+	"autoBalance":
+	{
+		"enabled": false
+	},
+	"weaponAutoLoad": false,
+	"fullDrop": "death-drop-item",
+
+	"restartIn": 20,
+	"roundTime": 0,
+
+	"greetings": "greetings-default.xml",
+
+	"daily-container": "case-daily"
+}

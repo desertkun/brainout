@@ -1,0 +1,25 @@
+class = content.gamecase.gen.StatCard
+components = [
+    {
+        class = content.components.ClientStatCardComponent
+        flipEffect = geigerCard
+        icon = icon-nuclear-material-big-2-2x
+        tag = client
+    }
+    {
+        amount = {
+            from = 2
+            to = 2
+        }
+        class = content.components.ServerStatCardComponent
+        stat = nuclear-material
+        tag = server
+    }
+    {
+        class = content.components.StatCardComponent
+    }
+]
+group = cardgroup-nuclear-material-improved
+id = gen-nuclear-material-2
+name = CARD_NUCLEAR_MATERIAL
+weight = 100

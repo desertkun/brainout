@@ -1,0 +1,46 @@
+class = content.quest.Quest
+id = quest-kit-3
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-kit
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-rg6
+        target = 1
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-rpg7
+        target = 1
+    }
+}
+
+group = kit
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_KIT
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 2
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 500
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 650
+    }
+]

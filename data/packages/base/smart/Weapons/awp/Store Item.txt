@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-sniper
+components = [
+]
+instrument = {
+    id = weapon-sniper
+    skins = skin-weapon-sniper-default, skin-weapon-sniper-azimov, skin-weapon-sniper-rainbow, skin-weapon-sniper-clover, skin-weapon-sniper-blackdragon, skin-weapon-sniper-vulkan, skin-weapon-sniper-magnet, skin-weapon-sniper-flora
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        bipod = upgrade-sniper-bipod
+        clip = upgrade-sniper-clip-extended
+        recoil = upgrade-sniper-recoil
+        reload-time = upgrade-sniper-reload-time
+        scope = upgrade-sniper-scope-pks
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-338-Lapua
+    }
+]
+name = ITEM_WEAP_SNIPER
+slot = slot-primary
+category = sniper
+tags = missions, classic
+index = 2
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-svd
+        param = 50
+        unlockTitle = MENU_UNLOCK_AWP
+    }
+}

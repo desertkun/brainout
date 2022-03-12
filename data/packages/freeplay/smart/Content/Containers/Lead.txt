@@ -1,0 +1,23 @@
+class = content.consumable.ConsumableToOwnableContent
+id = consumable-case-daily
+ownable = case-daily
+description = MENU_OWNABLE_FREEPLAY_NOTICE
+name = CASE_DAILY
+components = [
+    {
+        class = content.components.IconComponent
+        icon = daily-case
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 500
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+]
+weight = 2

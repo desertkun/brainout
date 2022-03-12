@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = skat
+id = skin-player-skat
+name = ITEM_PLAYER_SKIN_SKAT

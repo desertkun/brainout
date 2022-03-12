@@ -1,0 +1,5 @@
+animation = base:animations/weapon-flare.json
+class = content.Animation
+id = anim-flare
+states = []
+timeScale = 1

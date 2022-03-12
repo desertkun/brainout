@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-flick
+        class = content.components.IconComponent
+        icon = knife-flick
+        tag = client
+    }
+]
+data = knife-flick
+id = skin-weapon-knife-flick
+name = ITEM_WEAP_KNIFE_FLICK
+slot = sl-ml-knife-flick

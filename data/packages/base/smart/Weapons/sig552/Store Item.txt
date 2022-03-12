@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-sig552
+instrument = {
+    id = weapon-sig552
+    skins = skin-weapon-sig552-default, skin-weapon-sig552-toxic, skin-weapon-sig552-technomatronic, skin-weapon-sig552-offensive, skin-weapon-sig552-rat
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-sig552-accuracy
+        clip = upgrade-sig552-clip-extended
+        scope = upgrade-sig552-scope-acog
+        shoot-time = upgrade-sig552-shoot-time
+	holder = upgrade-sig552-holder
+	silencer = upgrade-sig552-silencer
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_SIG552
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 12
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 15
+    }
+}

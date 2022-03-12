@@ -1,0 +1,96 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = ak74-reload-snd
+        fetch = ak74-fetch-snd
+        shoot = [
+            bizon-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            bizon-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 1190
+    }
+    {
+        animation = anim-bizon
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-bizon-default
+id = weapon-bizon
+instrumentTags = primary
+primary = {
+    accuracy = 40
+    aimDistance = 30
+    allowedBullets = bullet-9mmx18
+    clipSize = 64
+    magazineManagement = 2
+    damage = 55
+    fire-rate = 700
+    recoil = 35
+    reloadTime = 1.5
+    fetchTime = 0.5
+    shootModes = auto, single
+}
+slot = slot-primary
+speedCoef = 1.1

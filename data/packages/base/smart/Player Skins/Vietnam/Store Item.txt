@@ -1,0 +1,33 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-vietnam
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-vietnam
+items = []
+name = ITEM_PLAYER_SKIN_VIETNAM
+skin = skin-player-vietnam
+slot = slot-player-skin
+category = outfit
+tags = resources
+index = 9
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = m16-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}

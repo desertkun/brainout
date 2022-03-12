@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-pistol-opal
+        tag = client
+    }
+]
+data = weapon-opal
+id = skin-weapon-pistol-opal
+name = ITEM_WEAP_PISTOL_OPAL
+slot = sl-sec-pistol
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

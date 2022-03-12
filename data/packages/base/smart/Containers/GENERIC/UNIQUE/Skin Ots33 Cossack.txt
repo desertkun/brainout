@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.InstrumentSkinCardComponent
+        content = skin-weapon-ots33-cossack
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-unique
+id = gen-skin-ots33-cossack
+name = ITEM_WEAP_OTS33_COSSACK
+weight = 40

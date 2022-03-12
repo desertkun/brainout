@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-bullets
+        tag = client
+    }
+]
+id = profile-badge-bullets
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = shots
+        param = 20000
+        unlockTitle = ACHIEVEMENT_GUNNER_DESC
+    }
+}

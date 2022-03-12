@@ -1,0 +1,33 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-exit-door
+        tag = client
+    }
+    {
+        class = content.components.ServerDoorSpawnerComponent
+        instance = enter-door-instance
+        tag = server
+    }
+]
+id = enter-door
+name = ITEM_ENTER_DOOR
+
+--------
+
+class = content.active.FreeplayExitDoor
+components = [
+    {
+    	class = content.components.ClientActiveActivatorComponent
+    	activateText = MENU_ENTER_FREEPLAY
+    	tag = client
+    }
+    {
+        class = content.components.ServerFreeplayEnterDoorComponent
+        tag = server
+    }
+]
+id = enter-door-instance
+name = ITEM_ENTER_DOOR
+exitTime = 10.0

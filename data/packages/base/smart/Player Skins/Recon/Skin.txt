@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = recon
+id = skin-player-recon
+name = ITEM_PLAYER_SKIN_RECON

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-supershorty.json
+class = content.Animation
+id = anim-supershorty
+states = []
+timeScale = 1

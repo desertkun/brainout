@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-exclusive-karambit
+    }
+    {
+        groups = cardgroup-exclusive-karambit
+    }
+    {
+        groups = cardgroup-exclusive-karambit
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = exclusive-case-bg
+        class = content.components.IconComponent
+        icon = exclusive-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_EXCLUSIVE_KARAMBIT_DESC
+id = case-exclusive-karambit
+name = CASE_EXCLUSIVE

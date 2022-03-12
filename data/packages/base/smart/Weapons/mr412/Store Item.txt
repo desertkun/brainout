@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-mr412
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-mr412
+    skins = skin-weapon-mr412-default, skin-weapon-mr412-fighter, skin-weapon-mr412-fullmetal, skin-weapon-mr412-outlaw, skin-weapon-mr412-lapd
+    upgrades = {
+        fastloader = upgrade-mr412-fastloader
+	barrel = upgrade-mr412-barrel-extended
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-357-magnum
+    }
+]
+name = ITEM_WEAP_MR412
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 25
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = sniper-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SNIPER
+    }
+}

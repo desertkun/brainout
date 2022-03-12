@@ -1,0 +1,5 @@
+animation = base:animations/instrument-flashlight.json
+class = content.Animation
+id = anim-flashlight
+states = []
+timeScale = 1

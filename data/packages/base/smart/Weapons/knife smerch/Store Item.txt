@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-smerch
+        class = content.components.IconComponent
+        icon = knife-smerch
+        tag = client
+    }
+]
+id = sl-ml-knife-smerch
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-smerch
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_SMERCH
+slot = slot-melee
+category = melee
+tags = unique
+index = 5
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RED
+    }
+}

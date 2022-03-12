@@ -1,0 +1,45 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = medal-templar
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                id = medal-templar-2
+                func = "<="
+                value = 0
+            }
+			{
+                id = medal-templar-3
+                func = "<="
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_TEMPLAR_DESC
+id = medal-templar
+name = "{MEDAL_TEMPLAR} 1"
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_TEMPLAR_DESC
+    }
+}

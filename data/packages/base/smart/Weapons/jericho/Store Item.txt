@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-sec-jericho
+instrument = {
+    id = weapon-jericho
+    skins = skin-weapon-jericho-default, skin-weapon-jericho-spiegel
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-jericho-reload-time
+        recoil = upgrade-jericho-recoil
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_JERICHO
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 345
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+		}
+}
+

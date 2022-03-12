@@ -1,0 +1,206 @@
+{
+	"rotary": "random",
+	"class": "source.MapSetSource",
+	"maps":
+	{
+		"halloween":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/halloween.map"
+		}
+	},
+	"modes":
+	{
+		"zombie":
+		{
+			"packages": ["halloween"],
+			"mode": "zombie",
+			"teams":
+			[
+				"team-blue"
+			],
+			"defines": {
+				"drill": "disabled"
+			},
+			"settings":
+			{
+				"zombieTeam": "team-red",
+                "wavePause": 15,
+				"waves": [
+					{
+						"kinds": [
+							{
+								"player": "player-zombie-1",
+								"items": [
+									{
+										"item": "weapon-m4a1",
+										"kind": "instrument",
+										"skin": "skin-weapon-m4a1-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-5.56x45",
+										"amount": 40
+									}
+								]
+							},
+							{
+								"player": "player-zombie-1",
+								"items": [
+									{
+										"item": "weapon-ak74",
+										"kind": "instrument",
+										"skin": "skin-weapon-ak74-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-5.45x39",
+										"amount": 40
+									}
+								]
+							}
+						],
+						"amount": 5,
+						"addPerPlayer": 4,
+						"maxConcurrentAmount": 2,
+						"addMaxConcurrentPerPlayer": 1,
+						"reward": 100,
+						"spawnSpeed": 30,
+						"waveTime": 300
+					},
+					{
+						"kinds": [
+							{
+								"player": "player-zombie-2",
+								"items": [
+									{
+										"item": "weapon-mp5",
+										"kind": "instrument",
+										"skin": "skin-weapon-mp5-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-9mmx19",
+										"amount": 60
+									}
+								]
+							},
+							{
+								"player": "player-zombie-2",
+								"items": [
+									{
+										"item": "weapon-lr300",
+										"kind": "instrument",
+										"skin": "skin-weapon-lr300-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-5.56x45",
+										"amount": 40
+									}
+								]
+							},
+							{
+								"player": "player-zombie-2",
+								"items": [
+									{
+										"item": "weapon-lr300",
+										"kind": "instrument",
+										"skin": "skin-weapon-lr300-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-5.56x45",
+										"amount": 40
+									}
+								]
+							}
+						],
+						"amount": 10,
+						"addPerPlayer": 5,
+						"maxConcurrentAmount": 3,
+						"addMaxConcurrentPerPlayer": 1,
+						"reward": 200,
+						"spawnSpeed": 60,
+						"waveTime": 300
+					},
+					{
+						"kinds": [
+							{
+								"player": "player-zombie-3",
+								"items": [
+									{
+										"item": "weapon-fnminimi",
+										"kind": "instrument",
+										"skin": "skin-weapon-fnminimi-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-5.56x45",
+										"amount": 100
+									}
+								]
+							},
+							{
+								"player": "player-zombie-5",
+								"items": [
+									{
+										"item": "weapon-rpg7",
+										"kind": "instrument",
+										"skin": "skin-weapon-rpg7-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "rpg7-bullet",
+										"amount": 2
+									}
+								]
+							},
+							{
+								"player": "player-zombie-4",
+								"items": [
+									{
+										"item": "weapon-spas12",
+										"kind": "instrument",
+										"skin": "skin-weapon-spas12-default",
+										"upgrades": {
+										}
+									},
+									{
+										"item": "bullet-12-76",
+										"amount": 12
+									},
+									{
+										"amount": 1,
+										"item": "item-helmet-pasgt"
+									}
+								]
+							}
+						],
+						"amount": 15,
+						"addPerPlayer": 6,
+						"maxConcurrentAmount": 4,
+						"addMaxConcurrentPerPlayer": 1,
+						"reward": 500,
+						"spawnSpeed": 120,
+						"waveTime": 400
+					}
+				]
+			}
+		}
+	},
+	"sets":
+	[
+		{
+			"map": "halloween",
+			"mode": "zombie"
+		}
+	]
+}

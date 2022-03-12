@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-toyhammer
+        class = content.components.IconComponent
+        icon = knife-toyhammer
+        tag = client
+    }
+]
+data = knife-toyhammer
+id = skin-weapon-knife-toyhammer
+name = ITEM_WEAP_KNIFE_TOYHAMMER
+slot = sl-ml-knife-toyhammer

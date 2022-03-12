@@ -1,0 +1,38 @@
+class = content.quest.Quest
+id = quest-tourist
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-tourist
+        tag = client
+    }
+]
+
+tasks = {
+	1 = {
+        class = content.quest.task.SpendTime
+        target = 20
+    }
+	2 = {
+        class = content.quest.task.SpendTime
+        target = 60
+    }
+	3 = {
+        class = content.quest.task.SpendTime
+        target = 240
+    }
+}
+
+coop = false
+hasToLeave = false
+name = QUEST_TITLE_TOURIST
+perTaskReward = true
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 3000
+    }
+]

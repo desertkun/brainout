@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-taurus-default
+name = ITEM_WEAP_TAURUS
+slot = sl-sec-taurus

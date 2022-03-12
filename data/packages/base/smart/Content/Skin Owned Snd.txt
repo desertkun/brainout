@@ -1,0 +1,4 @@
+class = content.Sound
+id = skin-owned-snd
+sound = base:sounds/skin-owned.mp3
+tag = client

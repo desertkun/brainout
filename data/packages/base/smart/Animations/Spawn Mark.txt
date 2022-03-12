@@ -1,0 +1,5 @@
+animation = base:animations/spawn-mark.json
+class = content.Animation
+id = anim-spawn-mark
+states = []
+timeScale = 1

@@ -1,0 +1,55 @@
+function = pow2In
+name = ITEM_BULLET_M72LAW
+power = 0.02
+speed = 240
+powerDistance = 128
+mass = 0.05
+components = [
+    {
+        fly = []
+        tag = client
+        hit = []
+        class = content.components.BulletEffectsComponent
+        launch = [
+            [
+                {
+                    object = shoot-flash-2
+                    attachTo = fire-bone
+                }
+                {
+                    object = pistol-shoot-fire-1
+                    attachTo = fire-bone
+                }
+                {
+                    object = rpg7-tail-part
+                    attachTo = shell-bone
+                }
+                {
+                    object = rpg7-tail-part
+                    attachTo = fire-bone
+                }
+            ]
+        ]
+    }
+    {
+        tag = client
+        class = content.components.IconComponent
+        icon = m72law-grenade
+        icon-small = m72law-grenade
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = ammo
+        weight = 0.5
+    }
+    {
+        throw-power = 80
+        tag = server
+        class = content.components.BulletThrowableComponent
+        throw-active = explosive-m72law-active
+    }
+]
+id = m72law-bullet
+maxDistance = 4
+class = content.bullet.LimitedBullet
+good = 2

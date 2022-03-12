@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-p99-default
+name = ITEM_WEAP_P99
+slot = sl-sec-p99

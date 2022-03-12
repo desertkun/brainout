@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-sec-desert
+instrument = {
+    id = weapon-desert
+    skins = skin-weapon-desert-default, skin-weapon-desert-gold, skin-weapon-desert-black, skin-weapon-desert-soprano, skin-weapon-desert-frosty
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-desert-reload-time
+        barrel = upgrade-desert-barrel
+        accuracy = upgrade-desert-accuracy
+    }
+}
+items = [
+    {
+        amount = 21
+        id = bullet-357-magnum
+    }
+]
+name = ITEM_WEAP_DESERT
+slot = slot-secondary
+category = pistol
+tags = level, classic
+index = 6
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 17
+    }
+}

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-beretta.json
+class = content.Animation
+id = anim-beretta
+states = []
+timeScale = 1

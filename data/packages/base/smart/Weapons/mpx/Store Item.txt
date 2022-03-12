@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-mpx
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-mpx
+    skins = skin-weapon-mpx-default, skin-weapon-mpx-sparkling
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        silencer = upgrade-mpx-silencer
+        holder = upgrade-mpx-holder
+        scope = upgrade-mpx-scope-qd
+        shoot-time = upgrade-mpx-shoot-time
+        wear-resistance = upgrade-mpx-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_MPX
+slot = slot-primary
+category = submachine
+tags = unique
+index = 369
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = legacy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_LEGACY
+    }
+}
+

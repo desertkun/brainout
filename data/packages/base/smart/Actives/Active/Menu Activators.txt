@@ -1,0 +1,186 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+    	class = content.components.ClientMenuActivatorComponent
+    	activateText = MENU_FREE_PLAY
+        menu = freeplay
+    	tag = client
+    }
+]
+id = active-menu-freeplay
+name = Freeplay Menu Activator
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_TOP_100
+        menu = top100players
+        tag = client
+    }
+]
+id = active-menu-top100players
+name = Top 100 Menu Activator
+
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_QUICK_PLAY
+        menu = quickplay
+        tag = client
+    }
+]
+id = active-menu-quickplay
+name = Quick Play Menu Activator
+
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_FIND_GAME
+        menu = findgame
+        tag = client
+    }
+]
+id = active-menu-findgame
+name = Find Game Menu Activator
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_WORKBENCH
+        menu = workbench
+        tag = client
+    }
+]
+id = active-menu-workbench
+name = Workbench Menu Activator
+
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_STORE
+        menu = store
+        tag = client
+    }
+]
+id = active-menu-store
+name = Store Menu Activator
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_CLAN
+        menu = clan
+        tag = client
+    }
+]
+id = active-menu-clan
+name = Clan Menu Activator
+
+--------
+
+class = content.active.PersonalContainer
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMarketContainerComponent
+        title = MENU_REAL_ESTATE_ITEMS_MENU
+        category = rs
+        tag = client
+    }
+    {
+        class = content.components.ServerMarketContainerComponent
+        tag = server
+    }
+]
+market = freeplay
+id = active-menu-garage
+name = Garage Menu Activator
+--------
+
+class = content.active.PersonalContainer
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientMarketContainerComponent
+        title = MENU_REAL_ESTATE_ITEMS_MENU
+        category = rs
+        tag = client
+    }
+    {
+        class = content.components.ClientMenuActivatorComponent
+        activateText = MENU_REAL_ESTATE_ITEMS_MENU
+        menu = crafting
+        tag = client
+    }
+    {
+        class = content.components.ServerMarketContainerComponent
+        tag = server
+    }
+]
+market = freeplay
+id = active-menu-crafting
+name = Crafting Menu Activator

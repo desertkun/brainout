@@ -1,0 +1,32 @@
+class = content.consumable.ConsumableToOwnableContent
+id = consumable-case-standard
+ownable = case-standard
+description = MENU_OWNABLE_FREEPLAY_NOTICE
+name = CASE_STANDARD
+components = [
+    {
+        class = content.components.IconComponent
+        icon = standard-case
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 500
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+]
+weight = 4

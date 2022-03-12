@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = instrument-default
+id = skin-instrument-drill-default
+name = ITEM_INSTR_DRILL
+slot = sl-spc-builder

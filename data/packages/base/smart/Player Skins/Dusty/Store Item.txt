@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-dusty
+        tag = client
+    }
+]
+id = sl-skin-dusty
+items = []
+name = ITEM_PLAYER_SKIN_DUSTY
+skin = skin-player-dusty
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 45
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = x4-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}

@@ -1,0 +1,57 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = sobr-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-sobr
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-sobr
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-vssm-2
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-ak9-2
+                value = 0
+            }
+			{
+                func = "<="
+                id = sl-skin-sobr
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_SOBR_DESC
+id = sl-store-case-sobr
+name = CASE_SOBR
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 125000
+        currency = ru
+    }
+}

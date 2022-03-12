@@ -1,0 +1,30 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-trapper
+        tag = client
+    }
+]
+id = sl-skin-trapper
+items = []
+name = ITEM_PLAYER_SKIN_TRAPPER
+skin = skin-player-trapper
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 371
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = zveroboy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ZVEROBOY
+    }
+}

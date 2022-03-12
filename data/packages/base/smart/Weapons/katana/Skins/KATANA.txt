@@ -1,0 +1,7 @@
+class = content.instrument.InstrumentSkin
+components = [
+]
+data = weapon-default
+id = skin-weapon-katana-default
+name = ITEM_WEAP_KATANA
+slot = sl-pri-katana

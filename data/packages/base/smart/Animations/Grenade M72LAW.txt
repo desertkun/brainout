@@ -1,0 +1,5 @@
+animation = base:animations/grenade-m72law.json
+class = content.Animation
+id = anim-grenade-m72law
+states = []
+timeScale = 1

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = spectator
+id = skin-player-spectator
+name = ITEM_PLAYER_SKIN_SPECTATOR

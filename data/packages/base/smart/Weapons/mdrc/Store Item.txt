@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 60
+    }
+]
+id = sl-pri-mdrc
+instrument = {
+    id = weapon-mdrc
+    skins = skin-weapon-mdrc-default, skin-weapon-mdrc-citadel, skin-weapon-mdrc-mint, skin-weapon-mdrc-racer, skin-weapon-mdrc-energy, skin-weapon-mdrc-salad
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-mdrc-recoil
+        reload-time = upgrade-mdrc-reload-time
+        scope-a = upgrade-mdrc-scope-cap
+        scope-b = upgrade-mdrc-scope-eotech
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_MDRC
+slot = slot-primary
+category = assault
+tags = unique
+index = 158
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = polymer-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_POLYMER
+    }
+}

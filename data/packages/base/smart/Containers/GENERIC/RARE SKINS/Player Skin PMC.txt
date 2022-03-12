@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-skin-pmc
+    }
+]
+group = cardgroup-rare-skins
+id = gen-player-skin-pmc
+name = MENU_NEW_UNIFORM
+weight = 50

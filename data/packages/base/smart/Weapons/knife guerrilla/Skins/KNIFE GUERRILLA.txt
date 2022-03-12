@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-guerrilla
+        class = content.components.IconComponent
+        icon = knife-guerrilla
+        tag = client
+    }
+]
+data = knife-guerrilla
+id = skin-weapon-knife-guerrilla
+name = ITEM_WEAP_KNIFE_GUERRILLA
+slot = sl-ml-knife-guerrilla

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = bedouin
+id = skin-player-bedouin
+name = ITEM_PLAYER_SKIN_BEDOUIN

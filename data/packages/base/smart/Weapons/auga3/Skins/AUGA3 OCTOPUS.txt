@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-auga3-octopus
+        tag = client
+    }
+]
+data = weapon-octopus
+id = skin-weapon-auga3-octopus
+name = ITEM_WEAP_AUGA3_OCTOPUS
+slot = sl-pri-auga3
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

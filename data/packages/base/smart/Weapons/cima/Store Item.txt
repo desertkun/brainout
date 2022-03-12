@@ -1,0 +1,37 @@
+class = content.shop.InstrumentSlotItem
+components = []
+id = sl-pri-cima
+instrument = {
+    id = weapon-cima
+    skins = skin-weapon-cima-default, skin-weapon-cima-luxurious
+    upgrades = {
+        clip = upgrade-cima-clip-extended
+        scope = upgrade-cima-scope-eotech
+        body = upgrade-cima-sawnoff, upgrade-cima-silencer
+        reload-time = upgrade-cima-reload-time
+        recoil = upgrade-cima-recoil
+    }
+}
+items = [
+    {
+        amount = 100
+        id = airsoft-bullet
+    }
+]
+name = ITEM_WEAP_CIMA
+slot = slot-primary
+category = assault
+tags = unique
+index = 380
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

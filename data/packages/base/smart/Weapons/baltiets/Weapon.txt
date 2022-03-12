@@ -1,0 +1,75 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = pistol-reload-snd
+        fetch = pistol-fetch-snd
+        shoot = [
+            pistol-shoot-smoke, tt-shoot-1, gunshot-tail-1, supersonic-snap
+            pistol-shoot-smoke, tt-shoot-2, gunshot-tail-2, supersonic-snap
+            pistol-shoot-smoke, tt-shoot-3, gunshot-tail-1, supersonic-snap
+            pistol-shoot-smoke, tt-shoot-4, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1
+    }
+    {
+        animation = anim-baltiets
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-1hand
+            fetch = reload-1hand-fetch
+            addRound = add-round
+        }
+        icon-scale = 1.142
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-baltiets-default
+id = weapon-baltiets
+instrumentTags = secondary
+primary = {
+    accuracy = 50 
+	aimDistance = 20 
+	allowedBullets = bullet-7.62x39 
+	clipSize = 8
+    magazineManagement = 2
+	damage = 70 
+	fire-rate = 550 
+	recoil = 65 
+	reloadTime = 1.4
+	fetchTime = 0.4
+	shootModes = single
+}
+slot = slot-secondary

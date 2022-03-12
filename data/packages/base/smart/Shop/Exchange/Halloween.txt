@@ -1,0 +1,34 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = xmas-case
+        tag = client
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-halloween
+        unique = true
+    }
+]
+description = CASE_HALLOWEEN_DESC
+id = sl-store-case-halloween
+limit = 5
+name = CASE_HALLOWEEN
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 10000
+        currency = ru
+    }
+}

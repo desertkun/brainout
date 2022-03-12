@@ -1,0 +1,23 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-guitar-catrina
+        tag = client
+    }
+]
+data = instrument-catrina
+id = skin-instrument-guitar-catrina
+name = ITEM_SPECIAL_GUITAR_CATRINA
+slot = sl-spc-guitar
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

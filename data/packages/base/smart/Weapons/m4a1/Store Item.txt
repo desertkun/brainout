@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-m4a1
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+instrument = {
+    id = weapon-m4a1
+    skins = skin-weapon-m4a1-default, skin-weapon-m4a1-water, skin-weapon-m4a1-neon, skin-weapon-m4a1-rebellion, skin-weapon-m4a1-instinct, skin-weapon-m4a1-camo, skin-weapon-m4a1-extra, skin-weapon-m4a1-protector
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-m4a1-accuracy
+        holder = upgrade-m4a1-holder, upgrade-m4a1-gl-m203
+        scope = upgrade-m4a1-scope-truglo, upgrade-m4a1-scope-acog
+        shoot-time = upgrade-m4a1-shoot-time
+        wear-resistance = upgrade-m4a1-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_M4A1
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 5
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 4
+    }
+}

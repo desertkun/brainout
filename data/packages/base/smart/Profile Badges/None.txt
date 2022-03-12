@@ -1,0 +1,9 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-none
+        tag = client
+    }
+]
+id = profile-badge-none

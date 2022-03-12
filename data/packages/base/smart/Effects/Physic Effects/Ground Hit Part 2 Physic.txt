@@ -1,0 +1,18 @@
+angleOffset = {
+    max = 20
+    min = -20
+}
+attached = ground-hit-part-2
+class = content.effect.PhysicEffect
+friction = 0.5
+id = ground-hit-part-2-physic
+mass = 0.5
+speed = {
+    max = 20
+    min = 10
+}
+spring = {
+    max = 0.05
+    min = 0.3
+}
+tag = client

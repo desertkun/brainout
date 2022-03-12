@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = deadman
+id = skin-player-deadman
+name = ITEM_PLAYER_SKIN_DEADMAN

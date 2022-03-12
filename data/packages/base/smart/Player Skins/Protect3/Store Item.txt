@@ -1,0 +1,26 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-protect3
+        tag = client
+    }
+]
+description = ITEM_PLAYER_SKIN_PROTECT_DESC
+id = sl-skin-protect3
+items = []
+name = ITEM_PLAYER_SKIN_PROTECT
+skin = skin-player-protect3
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

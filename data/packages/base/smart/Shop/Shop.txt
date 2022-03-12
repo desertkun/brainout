@@ -1,0 +1,30 @@
+class = content.shop.Shop
+id = shop
+items = {
+}
+open = [
+    slot-primary
+    slot-secondary
+    slot-melee
+]
+slots = [
+    slot-player-skin
+    {
+        @if = "$primary != disabled"
+        @then = slot-primary
+    }
+    slot-mask
+    {
+        @if = "$secondary != disabled"
+        @then = slot-secondary
+    }
+    {
+        @if = "$player != disabled"
+        @then = slot-player
+    }
+    {
+        @if = "$special != disabled"
+        @then = slot-special
+    }
+    slot-melee
+]

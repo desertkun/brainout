@@ -1,0 +1,11 @@
+class = content.active.Sprite
+components = [
+    {
+        class = content.components.SpriteComponent
+        tag = client
+    }
+]
+id = sprite
+name = ITEM_SPRITE
+scale = 1
+sprite = sprite-test

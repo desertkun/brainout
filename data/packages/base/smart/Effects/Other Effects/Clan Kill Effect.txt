@@ -1,0 +1,9 @@
+class = content.Effect
+id = clan-kill-effect
+set = [
+    clan-kill-1
+    clan-kill-2
+    clan-kill-3
+    clan-kill-4
+]
+tag = client

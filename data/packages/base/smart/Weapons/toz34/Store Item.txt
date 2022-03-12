@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 200
+    }
+]
+id = sl-pri-toz34
+instrument = {
+    id = weapon-toz34
+    skins = skin-weapon-toz34-default, skin-weapon-toz34-tusk, skin-weapon-toz34-composite, skin-weapon-toz34-sunrise, skin-weapon-toz34-iguana, skin-weapon-toz34-druid, skin-weapon-toz34-witch, skin-weapon-toz34-reptile, skin-weapon-toz34-heart
+    upgrades = {
+        accuracy = upgrade-toz34-accuracy
+        recoil = upgrade-toz34-recoil
+        reload-time = upgrade-toz34-reload-time
+        scope = upgrade-toz34-scope-po2
+        shoot-time = upgrade-toz34-shoot-time
+        sawnoff = upgrade-toz34-sawnoff
+    }
+}
+items = [
+    {
+        amount = 12
+        id = bullet-12-slug
+    }
+]
+name = ITEM_WEAP_TOZ34
+slot = slot-primary
+category = shotgun
+tags = level, classic, toz34
+index = 2
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 1
+    }
+}

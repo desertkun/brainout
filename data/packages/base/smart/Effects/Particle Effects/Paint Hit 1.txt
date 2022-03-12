@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = paint-hit-1
+particle = base:particles/paint-hit-1
+tag = client

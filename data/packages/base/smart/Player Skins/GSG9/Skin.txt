@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = gsg9
+id = skin-player-gsg9
+name = ITEM_PLAYER_SKIN_GSG9

@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+id = sl-pri-vss
+instrument = {
+    id = weapon-vss
+    skins = skin-weapon-vss-default, skin-weapon-vss-flora, skin-weapon-vss-fug, skin-weapon-vss-corpse, skin-weapon-vss-shamp, skin-weapon-vss-cultist, skin-weapon-vss-vintar
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-vss-accuracy
+        clip = upgrade-vss-clip-extended
+        recoil = upgrade-vss-recoil
+        reload-time = upgrade-vss-reload-time
+        scope = upgrade-vss-scope-pso, upgrade-vss-scope-cobra
+        wear-resistance = upgrade-vss-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-9mm-39
+    }
+]
+name = ITEM_WEAP_VSS
+slot = slot-primary
+category = sniper
+tags = missions, classic
+index = 30
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = longshots
+        param = 150
+        unlockTitle = MENU_UNLOCK_VSS
+    }
+}

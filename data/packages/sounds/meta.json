@@ -1,0 +1,19 @@
+{
+	"export": 
+	{
+		"server":
+		{
+			"exclude": 
+			[
+				"contents/content/sounds"
+			]
+		},
+		"chserver":
+		{
+			"exclude": 
+			[
+				"contents/content/sounds"
+			]
+		}
+	}
+}

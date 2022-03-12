@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-ots141a-default
+name = ITEM_WEAP_OTS141A
+slot = sl-pri-ots141a

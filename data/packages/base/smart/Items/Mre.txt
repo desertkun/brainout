@@ -1,0 +1,71 @@
+class = content.consumable.DecayConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-mre
+        icon-small = icon-item-mre-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = canned-foods-move-1, canned-foods-move-2, canned-foods-move-3
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+    {
+        class = content.components.ClientItemActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerBoosterActivatorComponent
+        time = 3
+        effect = canned-foods-open-effect
+        animation = eat-canned-foods
+        tag = server
+    }
+    {
+        class = content.components.BoosterActivatorComponent
+        health = 50
+        hunger = 75
+        thirst = 75
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = fridge, med
+        weight = 1.5
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 40
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 80
+                    to = 90
+                }
+            ]
+        }
+    }
+]
+uses = 3
+id = consumable-item-mre
+name = ITEM_MRE
+description = ITEM_CANNED_MRE_DESC
+
+--------
+
+class = content.Effect
+id = canned-foods-open-effect
+set = [
+	canned-foods-open-snd
+]
+tag = client

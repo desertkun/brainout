@@ -1,0 +1,60 @@
+class = content.Medal
+components = [
+{
+        class = content.components.AnimatedIconComponent
+        frames = [
+            {
+                frame = medal-season-0-7
+                delay = 2
+            }
+            {
+                frame = medal-season-0-1
+                delay = 0.05
+            }
+            {
+                frame = medal-season-0-2
+                delay = 0.05
+            }
+            {
+                frame = medal-season-0-3
+                delay = 0.05
+            }
+            {
+                frame = medal-season-0-4
+                delay = 0.05
+            }
+            {
+                frame = medal-season-0-5
+                delay = 0.05
+            }
+            {
+                frame = medal-season-0-6
+                delay = 0.05
+            }
+
+        ]
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_SEASON_0_DESC
+id = medal-season-0
+name = MEDAL_SEASON_0
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_SEASON_0_DESC
+    }
+}

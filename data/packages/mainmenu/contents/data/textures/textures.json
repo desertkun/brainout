@@ -1,0 +1,10 @@
+{
+	"UI": "mainmenu:textures/UI.atlas",
+	"PIANO": "mainmenu:textures/PIANO.atlas",
+	"BG": "mainmenu:textures/BG.atlas",
+	"INTRO": "mainmenu:textures/INTRO.atlas",
+	"SPLASH": "mainmenu:textures/SPLASH.atlas",
+	"TUTORIALHINTS": "mainmenu:textures/TUTORIALHINTS.atlas",
+	"CONTROLLER": "mainmenu:textures/CONTROLLER.atlas",
+	"MAPS": "mainmenu:textures/MAPS.atlas"
+}

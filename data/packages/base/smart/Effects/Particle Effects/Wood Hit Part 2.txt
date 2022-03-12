@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = wood-hit-part-2
+particle = base:particles/wood-hit-2
+tag = client

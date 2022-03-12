@@ -1,0 +1,13 @@
+@if = "$light != disabled"
+@then = {
+    class = content.effect.LightEffect
+    color = ffefa3cc
+    distance = 14
+    rays = 14
+    soft = 4
+    tag = client
+    time = 0.1
+    timeAfter = 0.05
+    timeBefore = 0
+}
+id = shoot-flash-2

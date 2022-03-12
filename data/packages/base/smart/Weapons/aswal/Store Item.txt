@@ -1,0 +1,48 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+id = sl-pri-aswal
+instrument = {
+    id = weapon-aswal
+    skins = skin-weapon-aswal-default, skin-weapon-aswal-partisan, skin-weapon-aswal-valentine, skin-weapon-aswal-necron, skin-weapon-aswal-radiant, skin-weapon-aswal-icicle, skin-weapon-aswal-wrapper
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-aswal-accuracy
+        clip = upgrade-aswal-clip-extended
+        holder = upgrade-aswal-holder
+        reload-time = upgrade-aswal-reload-time
+        scope = upgrade-aswal-scope-cobra
+        shoot-time = upgrade-aswal-shoot-time
+        wear-resistance = upgrade-aswal-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-9mm-39
+    }
+]
+
+name = ITEM_WEAP_ASWAL
+slot = slot-primary
+category = assault
+tags = missions, classic
+index = 20
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = headshots-from, weapon-pistol-s
+        param = 10
+        unlockTitle = MENU_UNLOCK_ASWAL
+    }
+}

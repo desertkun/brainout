@@ -1,0 +1,23 @@
+class = content.Effect
+id = explode-effect-1
+set = [
+    explode-effect-1-snd, explode-effect-1-e, explosion-flash-1, explode-effect-1-shake, explosion-tail-1
+]
+tag = client
+
+--------
+
+class = content.effect.ShakeEffect
+distance = 32
+id = explode-effect-1-shake
+power = 16
+tag = client
+
+--------
+
+class = content.effect.ShakeEffect
+distance = 32
+id = explode-effect-2-shake
+power = 8
+tag = client
+

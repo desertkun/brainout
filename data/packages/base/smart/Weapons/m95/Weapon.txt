@@ -1,0 +1,111 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 1.5
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                pull-snd-1
+                {
+                    attachTo = shell-bone
+                    object = sleeve-1-physic
+                }
+            ]
+        ]
+        reload = sniper-reload-snd
+        reloadSecondary = []
+        shoot = [
+            dvl10-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 4.3
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 100
+    }
+    {
+        animation = anim-m95
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands-bp
+            aimHit = shoot-aim-weapon-2hands-bp
+            hit = shoot-hold-weapon-2hands-bp
+            hold = hold-weapon-2hands-bp
+            fetch = pull-2hands-1
+            reload = reload-2hands-bp
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 24
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m95-default
+id = weapon-m95
+instrumentTags = primary, sniper
+primary = {
+    accuracy = 80
+    aimDistance = 30
+    allowedBullets = bullet-12.7x55
+    clipSize = 5
+    magazineManagement = 2
+    damage = 235
+    fire-rate = 120
+    noHalfReload = false
+    noUnload = false
+    perBulletReload = false
+    pullRequired = true
+    fetchTime = 1.35
+    recoil = 80
+    reloadTime = 4
+    shootModes = single
+    silenced = false
+    shell-auto-eject = false
+}
+slot = slot-primary
+speedCoef = 0.8

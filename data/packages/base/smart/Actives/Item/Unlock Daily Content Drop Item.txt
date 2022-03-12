@@ -1,0 +1,64 @@
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        tag = client
+    }
+    {
+        class = content.components.ClientItemAutoPickerComponent
+        effect = []
+        pickTime = 0.5
+        tag = client
+    }
+    {
+        class = content.components.ServerPickupCallbackComponent
+        tag = server
+        block = true
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 300
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ActiveParticleComponent
+        particle = radiation-effect
+        tag = client
+    }
+    {
+        class = content.components.GeigerComponent
+        distance-divider = 12
+        highest-frequency = 2400
+        sounds = [
+            geiger-1
+            geiger-2
+            geiger-3
+            geiger-4
+            geiger-5
+            geiger-6
+        ]
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = ingame-icon-daily-container
+        tag = client
+    }
+]
+auto-remove = true
+id = unlock-daily-content-drop-item

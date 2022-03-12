@@ -1,0 +1,239 @@
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-1
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-1-physic
+mass = 0.5
+onHit = [
+    player-blood-hit-1
+]
+speed = {
+    max = 50
+    min = 30
+}
+spring = {
+    max = 0
+    min = 0
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client
+time = 5
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-2
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-2-physic
+mass = 0.5
+onHit = [
+    player-blood-hit-2
+]
+speed = {
+    max = 50
+    min = 30
+}
+spring = {
+    max = 0
+    min = 0
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client
+time = 5
+
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-3
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-3-physic
+mass = 0.5
+onHit = [
+    player-blood-hit-3
+]
+speed = {
+    max = 50
+    min = 30
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+spring = {
+    max = 0
+    min = 0
+}
+tag = client
+time = 5
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-4
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-4-physic
+mass = 0.5
+onHit = [
+    player-blood-hit-4
+]
+speed = {
+    max = 50
+    min = 30
+}
+spring = {
+    max = 0
+    min = 0
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client
+time = 5
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-1
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-1-physic-no-sound
+mass = 0.5
+onHit = [
+    player-blood-hit-1
+]
+speed = {
+    max = 50
+    min = 30
+}
+spring = {
+    max = 0
+    min = 0
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client
+time = 5
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-2
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-2-physic-no-sound
+mass = 0.5
+onHit = [
+    player-blood-hit-2
+]
+speed = {
+    max = 50
+    min = 30
+}
+spring = {
+    max = 0
+    min = 0
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client
+time = 5
+
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-3
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-3-physic-no-sound
+mass = 0.5
+onHit = [
+    player-blood-hit-3
+]
+speed = {
+    max = 50
+    min = 30
+}
+spring = {
+    max = 0
+    min = 0
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client
+time = 5
+
+--------
+
+angleOffset = {
+    max = 0
+    min = 0
+}
+attached = player-blood-part-4
+class = content.effect.HitPhysicEffect
+friction = 0.5
+id = player-blood-part-4-physic-no-sound
+mass = 0.5
+onHit = [
+    player-blood-hit-4
+]
+speed = {
+    max = 50
+    min = 30
+}
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+spring = {
+    max = 0
+    min = 0
+}
+tag = client
+time = 5

@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-pennywise
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = pennywise
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = headshots-mask-pennywise
+        goal = GOAL_HEADSHOT_USING_MASK
+        value = 100
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-confiscate
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-penny
+items = []
+name = ITEM_MASK_PENNY
+player = player-mask-penny
+slot = slot-mask
+category = mask
+tags = unique
+index = 13
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-penny
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

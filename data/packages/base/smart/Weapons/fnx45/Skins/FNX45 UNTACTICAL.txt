@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-fnx45-untactical
+        tag = client
+    }
+]
+data = weapon-untactical
+id = skin-weapon-fnx45-untactical
+name = ITEM_WEAP_FNX45_UNTACTICAL
+slot = sl-sec-fnx45
+
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}
+

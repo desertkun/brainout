@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwnedEx
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-sec-rhino
+    }
+]
+group = cardgroup-contraband
+id = gen-weapon-rhino
+name = CARD_TITLE_NEW_WEAPON
+weight = 40

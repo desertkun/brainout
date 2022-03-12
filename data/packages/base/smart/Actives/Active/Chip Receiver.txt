@@ -1,0 +1,29 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-chip-base
+        in-game = icon-chip-receiver
+        tag = client
+    }
+    {
+        class = content.components.DetectorComponent
+        detectClass = chip
+        height = 12
+        period = 0.5
+        tag = server
+        width = 12
+        x = -6
+        y = -6
+    }
+    {
+        class = content.components.ServerChipReceiverComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientChipReceiverComponent
+        tag = client
+    }
+]
+id = chip-receiver
+name = ITEM_CHIP_RECEIVER

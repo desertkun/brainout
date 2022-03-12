@@ -1,0 +1,96 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = ak74-reload-snd
+        fetch = ak74-fetch-snd
+        shoot = [
+            hksl8-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 850
+    }
+    {
+        animation = anim-hk433
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            fetchSecondary = pull-shotgun-underbarrel
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+            reloadSecondary = reload-shotgun-underbarrel
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-hk433-default
+id = weapon-hk433
+instrumentTags = primary
+primary = {
+    accuracy = 55
+    aimDistance = 30
+    allowedBullets = bullet-5.56x45
+    clipSize = 30
+    magazineManagement = 2
+    damage = 60
+    fire-rate = 700
+    recoil = 20
+    reloadTime = 1
+    fetchTime = 0.5
+    shootModes = auto, single
+}
+slot = slot-primary

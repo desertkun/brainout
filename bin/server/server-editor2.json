@@ -1,0 +1,67 @@
+{
+	"ports":
+	{
+		"tcp": 36555,
+		"udp": 36556,
+		"http": 36557
+	},
+	"name": "Editor Plus",
+	"packages":
+	[
+		"base", "sounds", "custom"
+	],
+	"defines":
+	{
+		"minimapEnabled": "false",
+		"editor": "true",
+		"friendlyFire": "true",
+		"ragdoll": "disabled",
+		"platforms": "phy"
+	},
+	"teams": 
+	[
+		"team-blue",
+		"team-green"
+	],
+	
+	"prices":
+	{
+		"kill": 10
+	},
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},	
+
+	"modeDelay": 11,
+
+	"respawn": 
+	{
+		"kind": "immedeately",
+		"waveTime": 10,
+		"waveMinTime": 2
+	},
+	
+	"damageCoef": 4,
+	"autoBalance":
+	{
+		"enabled": false,
+		"balance": 1
+	},
+
+	"mode": "editor2",
+	"modeSettings":
+	{
+		"editor2":
+		{
+		}
+	},
+
+	"restartIn": 20,
+	"roundTime": 0,
+	"spectateIfNoPlayers": false,
+
+	"maps-filter": "template-"
+}

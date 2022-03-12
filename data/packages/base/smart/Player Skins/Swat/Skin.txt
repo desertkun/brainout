@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = swat
+id = skin-player-swat
+name = ITEM_PLAYER_SKIN_SWAT

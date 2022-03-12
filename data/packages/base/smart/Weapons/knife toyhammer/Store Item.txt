@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-toyhammer
+        class = content.components.IconComponent
+        icon = knife-toyhammer
+        tag = client
+    }
+]
+id = sl-ml-knife-toyhammer
+instrument = {
+    id = weapon-knife-toyhammer
+    skin = skin-weapon-knife-toyhammer
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_TOYHAMMER
+slot = slot-melee
+category = melee
+tags = unique
+index = 337
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

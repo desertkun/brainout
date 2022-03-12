@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = b800
+id = skin-player-b800
+name = ITEM_PLAYER_SKIN_b800

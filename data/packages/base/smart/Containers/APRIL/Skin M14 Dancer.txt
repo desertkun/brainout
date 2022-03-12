@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.InstrumentSkinCardComponent
+        content = skin-weapon-m14-dancer
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-april
+id = gen-skin-m14-dancer
+name = ITEM_WEAP_M14_DANCER
+weight = 50

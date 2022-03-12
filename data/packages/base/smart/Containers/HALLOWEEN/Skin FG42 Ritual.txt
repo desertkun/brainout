@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.InstrumentSkinCardComponent
+        content = skin-weapon-fg42-ritual
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-halloween
+id = gen-skin-fg42-ritual
+name = ITEM_WEAP_FG42_RITUAL
+weight = 100

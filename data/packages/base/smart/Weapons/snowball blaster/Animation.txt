@@ -1,0 +1,5 @@
+animation = base:animations/weapon-snowball-blaster.json
+class = content.Animation
+id = anim-snowball-blaster
+states = []
+timeScale = 1

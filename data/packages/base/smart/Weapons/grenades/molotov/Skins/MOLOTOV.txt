@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-molotov
+id = skin-instrument-grenade-molotov-default
+name = ITEM_SPECIAL_MOLOTOV
+slot = sl-grn-molotov

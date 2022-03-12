@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-groza-default
+name = ITEM_WEAP_GROZA
+slot = sl-pri-groza

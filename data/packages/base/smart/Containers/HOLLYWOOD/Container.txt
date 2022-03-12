@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-hollywood
+    }
+    {
+        groups = cardgroup-hollywood
+    }
+    {
+        groups = cardgroup-hollywood
+    }
+	{
+        groups = cardgroup-hollywood
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = hollywood-case-bg
+        class = content.components.IconComponent
+        icon = hollywood-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_HOLLYWOOD_DESC
+id = case-hollywood
+name = CASE_HOLLYWOOD

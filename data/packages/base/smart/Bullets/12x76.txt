@@ -1,0 +1,101 @@
+function = pow2In
+components = [
+    {
+        fly = [
+            bullet-projectile-invisible
+            bullet-projectile-invisible
+            bullet-projectile-def-1
+            bullet-projectile-def-2
+        ]
+        tag = client
+        hit = [
+            [
+                bullet-hit-1
+                hit-flash-1
+            ]
+        ]
+        class = content.components.BulletEffectsComponent
+        launch = [
+            [
+                {
+                    object = shoot-flash-2
+                    attachTo = fire-bone
+                }
+                {
+                    object = pistol-shoot-fire-1
+                    attachTo = fire-bone
+                }
+            ]
+            [
+                {
+                    object = shoot-flash-2
+                    attachTo = fire-bone
+                }
+                {
+                    object = pistol-shoot-fire-2
+                    attachTo = fire-bone
+                }
+            ]
+            [
+                {
+                    object = shoot-flash-2
+                    attachTo = fire-bone
+                }
+                {
+                    object = pistol-shoot-fire-3
+                    attachTo = fire-bone
+                }
+            ]
+        ]
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = bullet-12-move-1, bullet-12-move-2, bullet-12-move-3, bullet-12-move-4
+        tag = client
+    }
+    {
+        tag = client
+        class = content.components.IconComponent
+        icon = icon-bullet-12x76
+        icon-small = icon-bullet-12x76-small
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = ammo
+        weight = 0.030
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 20
+                    from = 15
+                    to = 80
+                }
+                {
+                    weight = 5
+                    from = 80
+                    to = 90
+                }
+            ]
+        }
+    }
+]
+power = 0.02
+maxDistance = 36
+powerDistance = 72
+mass = 0.25
+hitImpulse = 20
+id = bullet-12-76
+headMultiplier = 0.6
+bulletAtLaunch = 6
+class = content.bullet.LimitedBullet
+speed = 240
+name = ITEM_BULLET_12_76
+good = 8

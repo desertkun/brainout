@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-rg6-default
+name = ITEM_WEAP_RG6
+slot = sl-pri-rg6

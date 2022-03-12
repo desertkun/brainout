@@ -1,0 +1,88 @@
+id = parr-freeplay
+class = content.parallax.Parallax
+tag = client
+layers = [
+	{
+		class = content.parallax.FreePlayDayNightGradientLayer
+		textures = freeplay-sky-0, freeplay-sky-1, freeplay-sky-2, freeplay-sky-3, freeplay-sky-4
+		timeWeight = [180, 30, 30, 90, 30]
+		x = 0
+		y = 0
+		coefX = 0.1
+		coefY = 0.0
+		scale = true
+	}
+	{
+		class = content.parallax.StaticLayer
+        coefX = 0.5
+        coefY = 0.2
+        texture = freeplay-city
+        x = 0
+        y = 180
+	}
+	{
+		class = content.parallax.FreePlayTimeOfDayLayer
+        coefX = 0.1
+        coefY = 0
+        texture = freeplay-stars
+        timeOfDay = 0.9
+        timeLength = 0.2
+        top = true
+        x = 0
+        y = -50
+	}
+]
+
+--------
+
+id = parr-freeplay-forest
+class = content.parallax.Parallax
+tag = client
+layers = [
+	{
+		class = content.parallax.FreePlayDayNightGradientLayer
+		textures = freeplay-sky-0, freeplay-sky-1, freeplay-sky-2, freeplay-sky-3, freeplay-sky-4
+		timeWeight = [180, 30, 30, 90, 30]
+		x = 0
+		y = 0
+		coefX = 0.1
+		coefY = 0.0
+		scale = true
+	}
+	{
+		class = content.parallax.StaticLayer
+        coefX = 0.5
+        coefY = 0.2
+        texture = freeplay-forest
+        x = 0
+        y = 180
+	}
+	{
+		class = content.parallax.FreePlayTimeOfDayLayer
+        coefX = 0.1
+        coefY = 0
+        texture = freeplay-stars
+        timeOfDay = 0.9
+        timeLength = 0.2
+        top = true
+        x = 0
+        y = -50
+	}
+]
+
+--------
+
+id = parr-freeplay-swamp
+class = content.parallax.Parallax
+tag = client
+layers = [
+	{
+		class = content.parallax.StaticLayer
+		texture = freeplay-sky-0
+		x = 0
+		y = 0
+		coefX = 0.1
+		coefY = 0.0
+		scale = true
+	}
+]

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-fnfal-technology
+        tag = client
+    }
+]
+data = weapon-technology
+id = skin-weapon-fnfal-technology
+name = ITEM_WEAP_FNFAL_TECHNOLOGY
+slot = sl-pri-fnfal
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

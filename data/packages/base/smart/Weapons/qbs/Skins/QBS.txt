@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-qbs-default
+name = ITEM_WEAP_QBS
+slot = sl-pri-qbs

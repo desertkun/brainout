@@ -1,0 +1,11 @@
+{
+"class": "com.esotericsoftware.spine.editor.Prefs$ExportJson",
+"project": "C:\\GitHub\\brainout-content\\packages\\base\\smart\\Weapons\\axe\\AXE.spine",
+"output": "C:/GitHub/brainout-content/packages/base/contents/content/animations",
+"extension": ".json",
+"format": "JSON",
+"nonessential": false,
+"prettyPrint": false,
+"createAtlas": false,
+"texturePacker": null
+}

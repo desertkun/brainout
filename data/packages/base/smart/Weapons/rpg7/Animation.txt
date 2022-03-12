@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rpg7.json
+class = content.Animation
+id = anim-rpg7
+states = []
+timeScale = 1

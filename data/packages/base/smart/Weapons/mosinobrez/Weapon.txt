@@ -1,0 +1,129 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            last-round = []
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                pull-snd-1
+                {
+                    attachTo = shell-bone
+                    object = sleeve-1-physic
+                }
+            ]
+        ]
+        shoot = [
+            mosin-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            mosin-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            mosin-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        actions = [
+            {
+                effects = clip-insert
+                for = insert
+                type = effect
+            }
+            {
+                effects = pull-snd-3
+                for = closed-snd
+                type = effect
+            }
+            {
+                effects = pull-snd-2
+                for = opened-snd
+                type = effect
+            }
+            {
+                effects = peacemaker-bullet-load-1, peacemaker-bullet-load-2
+                for = add-bullet
+                type = effect
+            }
+            {
+                for = opened
+                type = animate
+                animation = open
+            }
+            {
+                for = closed
+                type = animate
+                animation = close
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        effects = {
+            empty = empty
+            last-round = last-round
+        }
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 200
+    }
+    {
+        animation = anim-mosinobrez
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            fetch = pull-2hands-1
+            reload = reload-2hands-clip
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-mosinobrez-default
+id = weapon-mosinobrez
+instrumentTags = primary
+primary = {
+    accuracy = 60
+    aimDistance = 30
+    allowedBullets = bullet-7.62x51
+    bulletAtLaunch = 1
+    clipSize = 5
+    damage = 110
+    fire-rate = 600
+    noHalfReload = false
+    pullRequired = true
+    noUnload = true
+    fetchTime = 0.9
+    recoil = 90
+    reloadTime = 2
+    shootModes = single
+    shell-auto-eject = false
+}
+slot = slot-primary
+speedCoef = 1.2

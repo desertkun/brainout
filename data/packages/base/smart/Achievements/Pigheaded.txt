@@ -1,0 +1,35 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-pigheaded
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.SkillPointsRewardComponent
+        tag = server
+    }
+]
+id = achievement-pigheaded
+name = ACHIEVEMENT_PIGHEADED
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = head-to-head-kills
+        param = 100
+        unlockTitle = ACHIEVEMENT_PIGHEADED_DESC
+    }
+}

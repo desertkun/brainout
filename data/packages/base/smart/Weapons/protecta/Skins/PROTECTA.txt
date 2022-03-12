@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-protecta-default
+name = ITEM_WEAP_PROTECTA
+slot = sl-pri-protecta

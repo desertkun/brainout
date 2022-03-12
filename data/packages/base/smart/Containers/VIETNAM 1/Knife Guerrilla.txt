@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-ml-knife-guerrilla
+    }
+]
+group = cardgroup-vietnam1
+id = gen-weapon-knife-guerrilla
+name = ITEM_WEAP_KNIFE
+weight = 100

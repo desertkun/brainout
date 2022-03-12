@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-m93r-default
+name = ITEM_WEAP_M93R
+slot = sl-sec-m93r

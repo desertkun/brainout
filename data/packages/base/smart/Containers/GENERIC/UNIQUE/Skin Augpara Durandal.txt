@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.InstrumentSkinCardComponent
+        content = skin-weapon-augpara-durandal
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-unique
+id = gen-skin-augpara-durandal
+name = ITEM_WEAP_AUGPARA_DURANDAL
+weight = 30

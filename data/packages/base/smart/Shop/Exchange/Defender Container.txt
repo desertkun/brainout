@@ -1,0 +1,57 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = defender-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-defender
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-defender
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-rpk74
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-sec-mp443
+                value = 0
+            }
+			{
+                func = "<="
+                id = sl-skin-para
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_DEFENDER_DESC
+id = sl-store-case-defender
+name = CASE_DEFENDER
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 125000
+        currency = ru
+    }
+}

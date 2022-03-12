@@ -1,0 +1,44 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-fnx45
+instrument = {
+    id = weapon-fnx45
+    skins = skin-weapon-fnx45-default, skin-weapon-fnx45-tough, skin-weapon-fnx45-jaws, skin-weapon-fnx45-untactical
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        laser = upgrade-fnx45-laser
+        silencer = upgrade-fnx45-silencer
+		scope = upgrade-fnx45-scope
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_FNX45
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 22.5
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = x4-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_X4
+    }
+}

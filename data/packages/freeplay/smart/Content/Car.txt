@@ -1,0 +1,23 @@
+
+class = content.Animation
+id = anim-fp-car
+animation = freeplay:animations/car.json
+states = []
+tag = client
+timeScale = 1
+
+--------
+
+class = content.active.Animation
+id = active-fp-car
+name = Freeplay Car
+components = [
+	{
+		class = content.components.ActiveAnimationComponent
+		animation = anim-fp-car
+		play = [
+			animation
+		]
+		tag = client
+	}
+]

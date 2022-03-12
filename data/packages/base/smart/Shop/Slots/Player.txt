@@ -1,0 +1,15 @@
+class = content.shop.PlayerSlot
+components = []
+default = sl-pl-default
+id = slot-player
+name = SLOT_SPECIAL
+categories = [
+    {
+        id = special
+        title = SLOT_CATEGORY_SPECIALIZATION
+    }
+]
+tags = [
+]
+stack = true
+width = 100

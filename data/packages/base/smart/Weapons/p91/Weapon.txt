@@ -1,0 +1,106 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = []
+        reload = mp7-reload-snd
+        fetch = mp7-fetch-snd
+        reloadSecondary = []
+        shoot = [
+            ump-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            ump-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-p91
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+            reloadSecondary = reload-2hands-underbarrel
+            fetchSecondary = pull-shotgun-underbarrel
+        }
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 1000
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-p91-default
+id = weapon-p91
+instrumentTags = primary
+primary = {
+    accuracy = 24
+    aimDistance = 30
+    allowedBullets = bullet-9mmx18
+    clipSize = 20
+    magazineManagement = 2
+    damage = 50
+    fire-rate = 950
+    noHalfReload = false
+    noUnload = false
+    perBulletReload = false
+    pullRequired = false
+    fetchTime = 0
+    recoil = 20
+    reloadTime = 1.5
+    fetchTime = 0.5
+    shootModes = auto, single
+    silenced = false
+}
+slot = slot-primary
+speedCoef = 1.2

@@ -1,0 +1,39 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = medal-5year
+        items-filters = {
+            medal-1year = {
+                func = ">="
+                value = 1
+            },
+            medal-2year = {
+                func = ">="
+                value = 1
+            },
+            medal-3year = {
+                func = ">="
+                value = 0
+            },
+            medal-4year = {
+                func = ">="
+                value = 0
+            }
+        }
+    }
+]
+group = cardgroup-5year-2
+id = gen-medal-5year-5
+name = CARD_MEDAL
+weight = 100

@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-icicle
+        class = content.components.IconComponent
+        icon = knife-icicle
+        tag = client
+    }
+]
+data = knife-icicle
+id = skin-weapon-knife-icicle
+name = ITEM_WEAP_KNIFE_ICICLE
+slot = sl-ml-knife-icicle

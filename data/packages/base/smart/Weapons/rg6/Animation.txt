@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rg6.json
+class = content.Animation
+id = anim-rg6
+states = []
+timeScale = 1

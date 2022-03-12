@@ -1,0 +1,107 @@
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-contraband
+        icon-bg = card-bg-contraband
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-zveroboy-1
+name = CASE_ELITE_CARD
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-contraband
+        icon-bg = card-bg-contraband
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-zveroboy-2
+name = CASE_ELITE_CARD
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-contraband
+        icon-bg = card-bg-contraband
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-zveroboy-3
+name = CASE_ELITE_CARD
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-contraband
+        icon-bg = card-bg-contraband
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-zveroboy-4
+name = CASE_ELITE_CARD
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-contraband
+        icon-bg = card-bg-contraband
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-zveroboy-5
+name = CASE_ELITE_CARD

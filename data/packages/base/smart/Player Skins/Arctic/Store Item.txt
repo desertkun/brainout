@@ -1,0 +1,34 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-arctic
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-skin-arctic
+items = []
+name = ITEM_PLAYER_SKIN_ARCTIC
+skin = skin-player-arctic
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 343
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = north-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_NORTH
+    }
+}

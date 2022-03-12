@@ -1,0 +1,72 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceInstrumentEffectsComponent
+        replace = {
+            reload = pkm-reload-snd
+        fetch = pkm-fetch-snd
+        }
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            clip = extended
+        }
+        tag = client
+    }
+    {
+        big-icon = hk21-clip-extended
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.AddItemsComponent
+        items = [
+            {
+                amount = 40
+                id = bullet-7.62x51
+            }
+        ]
+        tag = server
+    }
+]
+description = ITEM_UPGRADE_EXTENDED_CLIP_DESC
+id = upgrade-hk21-clip-extended
+name = ITEM_UPGRADE_EXTENDED_CLIP
+properties = {
+    clip-size = "+60"
+    reload-time = "+1.3"    
+    speed-coef = "=0.83"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-hk21
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

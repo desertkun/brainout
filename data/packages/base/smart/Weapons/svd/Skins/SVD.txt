@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-svd-default
+name = ITEM_WEAP_SVD
+slot = sl-pri-svd

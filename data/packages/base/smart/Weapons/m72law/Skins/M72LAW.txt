@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-m72law-default
+name = ITEM_WEAP_M72LAW
+slot = sl-pri-m72law

@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-ak74
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 120
+    }
+]
+instrument = {
+    id = weapon-ak74
+    skins = skin-weapon-ak74-default, skin-weapon-ak74-black, skin-weapon-ak74-aerox, skin-weapon-ak74-carved, skin-weapon-ak74-tuxedo, skin-weapon-ak74-dragon, skin-weapon-ak74-werewolf, skin-weapon-ak74-warrior
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        butt = upgrade-ak74-butt-old
+        clip = upgrade-ak74-doubleclip
+        recoil = upgrade-ak74-recoil
+        reload-time = upgrade-ak74-reload-time
+        scope = upgrade-ak74-scope-pso, upgrade-ak74-scope-cobra
+        wear-resistance = upgrade-ak74-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AK74
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 8
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 5
+    }
+}

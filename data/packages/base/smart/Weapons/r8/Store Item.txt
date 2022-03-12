@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+]
+id = sl-sec-r8
+instrument = {
+    id = weapon-r8
+    skins = skin-weapon-r8-default,
+    upgrades = {
+        fastloader = upgrade-r8-fastloader
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-357-magnum
+    }
+]
+name = ITEM_WEAP_R8
+slot = slot-secondary
+category = pistol
+tags = parts
+index = 380
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-r8
+        icon = standard-case
+        param = 4
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

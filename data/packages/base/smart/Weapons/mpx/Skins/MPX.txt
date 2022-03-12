@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mpx-default
+name = ITEM_WEAP_MPX
+slot = sl-pri-mpx

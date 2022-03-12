@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-jericho-default
+name = ITEM_WEAP_JERICHO
+slot = sl-sec-jericho

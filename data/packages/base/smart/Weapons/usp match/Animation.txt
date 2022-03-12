@@ -1,0 +1,5 @@
+animation = base:animations/weapon-usp-match.json
+class = content.Animation
+id = anim-usp-match
+states = []
+timeScale = 1

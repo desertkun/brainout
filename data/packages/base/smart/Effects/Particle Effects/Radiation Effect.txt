@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = radiation-effect
+particle = base:particles/radiation
+tag = client

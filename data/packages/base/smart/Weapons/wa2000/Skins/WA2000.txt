@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-wa2000-default
+name = ITEM_WEAP_WA2000
+slot = sl-pri-wa2000

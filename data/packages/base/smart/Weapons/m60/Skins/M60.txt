@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-m60-default
+name = ITEM_WEAP_M60
+slot = sl-pri-m60

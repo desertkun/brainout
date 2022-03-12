@@ -1,0 +1,43 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-kac
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-kac
+    skins = skin-weapon-kac-default, skin-weapon-kac-jaeger, skin-weapon-kac-pilot, skin-weapon-kac-steel
+    upgrades = {
+        fastloader = upgrade-kac-fastloader
+        scope = upgrade-kac-scope-optical
+        bipod = upgrade-kac-bipod
+    }
+}
+items = [
+    {
+        amount = 18
+        id = bullet-357-magnum
+    }
+]
+name = ITEM_WEAP_KAC
+slot = slot-primary
+category = sniper
+tags = unique
+index = 356
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

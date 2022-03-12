@@ -1,0 +1,23 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-multicam
+        tag = client
+    }
+]
+id = profile-badge-camo-2
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = tech-level
+        param = 3
+        displayOffset = -1
+        unlockTitle = MENU_UNLOCK_LEVEL_TECH
+    }
+}

@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-sec-supershorty
+instrument = {
+    id = weapon-supershorty
+    skins = skin-weapon-supershorty-default
+    upgrades = {
+        reload-time = upgrade-supershorty-holder-unfolded
+    }
+}
+items = [
+    {
+        amount = 2
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_SUPERSHORTY
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 349
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = terminator-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_TERMINATOR
+    }
+}

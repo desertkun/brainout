@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mp5-bone
+        tag = client
+    }
+]
+data = weapon-bone
+id = skin-weapon-mp5-bone
+name = ITEM_WEAP_MP5_BONE
+slot = sl-pri-mp5
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

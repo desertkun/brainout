@@ -1,0 +1,172 @@
+{
+    "dimensions": {
+        "default": {
+            "maps": {
+                "maps/fr-part-first.map": {
+                    "position": 1
+                },
+                "maps/fr-part-checkpoint.map": {
+                    "position": 2
+                },
+                "maps/fr-part-station.map": {
+                    "position": 4
+                },
+                "maps/fr-part-bridge.map": {
+                    "position": 5
+                },
+                "maps/fr-part-garage.map": {
+                    "position": 6
+                },
+                "maps/fr-part-un.map": {
+                    "position": 7
+                },
+                "maps/fr-part-building.map": {
+                    "position": 8
+                },
+                "maps/fr-part-gas.map": {
+                    "position": 10
+                },
+                "maps/fr-part-building-2.map": {
+                    "position": 11
+                },
+                "maps/fr-part-bank.map": {
+                    "position": 12
+                },
+                "maps/fr-part-btr.map": {
+                    "position": 13
+                },
+                "maps/fr-part-shop.map": {
+                    "position": 14
+                },
+                "maps/fr-part-bunker.map": {
+                    "position": 15
+                },
+                "maps/fr-part-forest-1.map": {
+                    "position": 3
+                },
+                "maps/fr-part-forest-3.map": {
+                    "position": 9
+                },
+                "maps/fr-loop-left.map": {
+                    "position": 0
+                },
+                "maps/fr-loop-right.map": {
+                    "position": 16
+                }
+            },
+            "custom": {
+                "parallax": "parr-freeplay"
+            }
+        },
+        "forest": {
+            "maps": {
+                "maps/fr-part-transition.map": {
+                    "position": 2
+                },
+                "maps/fr-part-trains.map": {
+                    "position": 1
+                },
+                "maps/fr-part-tower.map": {
+                    "position": 4
+                },
+                "maps/fr-part-tunnel.map": {
+                    "position": 5
+                },
+                "maps/fr-part-construction.map": {
+                    "position": 6
+                },
+                "maps/fr-part-forest-2.map": {
+                    "position": 3
+                },
+                "maps/fr-part-forest-4.map": {
+                    "position": 9
+                },
+                "maps/fr-part-kamaz.map": {
+                    "position": 10
+                },
+                "maps/fr-part-forest-6.map": {
+                    "position": 7
+                },
+                "maps/fr-part-forest-5.map": {
+                    "position": 11
+                },
+                "maps/fr-part-forest-7.map": {
+                    "position": 8
+                },
+                "maps/fr-part-warehouse.map": {
+                    "position": 12
+                },
+                "maps/fr-loop-forest-left.map": {
+                    "position": 0
+                },
+                "maps/fr-loop-forest-right.map": {
+                    "position": 13
+                }
+            },
+            "custom": {
+                "parallax": "parr-freeplay-forest"
+            }
+        },
+        "swamp2": {
+            "maps": {
+                "maps/fr-loop-swamp-left.map": {
+                    "position": 0
+                },
+                "maps/fr-part-swamp-1.map": {
+                    "position": 1
+                },
+                "maps/fr-part-swamp-2.map": {
+                    "position": 2
+                },
+                "maps/fr-part-swamp-3.map": {
+                    "position": 3
+                },
+                "maps/fr-part-swamp-volga.map": {
+                    "position": 4
+                },
+                "maps/fr-part-swamp-4.map": {
+                    "position": 5
+                },
+                "maps/fr-part-swamp-5.map": {
+                    "position": 6
+                },
+                "maps/fr-loop-swamp-right.map": {
+                    "position": 7
+                }
+            },
+            "custom": {
+                "music-list": "music-list-swamp",
+                "parallax": "parr-freeplay-forest"
+            }
+        },
+        "intro": {
+            "maps": {
+                "maps/fr-intro.map": {
+                },
+                "maps/apt-1-1.map": {
+                },
+                "maps/apt-1-2.map": {
+                },
+                "maps/apt-1-3.map": {
+                },
+                "maps/apt-1-4.map": {
+                },
+                "maps/apt-1-5.map": {
+                },
+                "maps/apt-1-6.map": {
+                },
+                "maps/apt-1-7.map": {
+                },
+                "maps/apt-1-8.map": {
+                },
+                "maps/apt-1-9.map": {
+                },
+                "maps/apt-1-10.map": {
+                }
+            },
+            "custom": {
+                "parallax": "parr-freeplay"
+            }
+        }
+    }
+}

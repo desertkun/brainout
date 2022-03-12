@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = berill
+id = skin-player-berill
+name = ITEM_PLAYER_SKIN_BERILL

@@ -1,0 +1,23 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-battle-pass-0
+        big-icon = icon-battle-pass-0-profile-badge-unique
+        tag = client
+    }
+]
+id = profile-badge-battle-pass-0
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = icon-battle-pass-points
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}

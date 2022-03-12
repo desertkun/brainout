@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = tactical
+id = skin-player-tactical
+name = ITEM_PLAYER_SKIN_TACTICAL

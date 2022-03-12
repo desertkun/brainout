@@ -1,0 +1,7 @@
+class = content.instrument.InstrumentSkin
+components = [
+]
+data = weapon-default
+id = skin-weapon-hunter-bow-default
+name = ITEM_WEAP_HUNTER_BOW
+slot = sl-pri-hunter-bow

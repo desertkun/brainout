@@ -1,0 +1,35 @@
+class = content.gamecase.gen.StatCard
+components = [
+    {
+        class = content.components.ClientStatCardComponent
+        flipEffect = geigerCard
+        icon = icon-confiscate-nuclear-5
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                id = nuclear-material
+                func = "<"
+                value = 17
+            }
+        ]
+    }
+    {
+        amount = {
+            from = 5
+            to = 5
+        }
+        class = content.components.ServerStatCardComponent
+        stat = nuclear-material
+        tag = server
+    }
+    {
+        class = content.components.StatCardComponent
+    }
+]
+group = cardgroup-confiscate
+id = gen-confiscate-nuclear-5
+name = CARD_NUCLEAR_MATERIAL
+weight = 50

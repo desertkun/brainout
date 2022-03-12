@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = sparkle-1
+particle = base:particles/sparkle-1
+tag = client

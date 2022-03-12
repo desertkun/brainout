@@ -1,0 +1,171 @@
+rain
+- Delay -
+active: false
+- Duration - 
+lowMin: 40000.0
+lowMax: 40000.0
+- Count - 
+min: 0
+max: 1000
+- Emission - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 200.0
+highMax: 250.0
+relative: false
+scalingCount: 5
+scaling0: 1.0
+scaling1: 1.0
+scaling2: 0.1632653
+scaling3: 0.1632653
+scaling4: 1.0
+timelineCount: 5
+timeline0: 0.0
+timeline1: 0.23287672
+timeline2: 0.28082192
+timeline3: 0.44520548
+timeline4: 0.49315068
+- Life - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 900.0
+highMax: 900.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Life Offset - 
+active: false
+- X Offset - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Y Offset - 
+active: true
+lowMin: 96.0
+lowMax: 96.0
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Spawn Shape - 
+shape: line
+- Spawn Width - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 64.0
+highMax: 64.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Spawn Height - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Scale - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 10.0
+highMax: 20.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Velocity - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 125.0
+highMax: 150.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Angle - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: -90.0
+highMax: -90.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Rotation - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 90.0
+highMax: 90.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Wind - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Gravity - 
+active: false
+- Tint - 
+colorsCount: 3
+colors0: 1.0
+colors1: 1.0
+colors2: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Transparency - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 1.0
+highMax: 1.0
+relative: false
+scalingCount: 4
+scaling0: 0.0
+scaling1: 0.8245614
+scaling2: 0.8596491
+scaling3: 0.0
+timelineCount: 4
+timeline0: 0.0
+timeline1: 0.1780822
+timeline2: 0.8767123
+timeline3: 1.0
+- Options - 
+attached: false
+continuous: true
+aligned: false
+additive: false
+behind: false
+premultipliedAlpha: false
+- Image Path -
+/Users/desertkun/Documents/Work/brainout/data/textures/GAME/raindrop.png

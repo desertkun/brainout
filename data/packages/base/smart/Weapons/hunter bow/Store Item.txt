@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-hunter-bow
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+    {
+        big-icon = icon-bow
+        class = content.components.IconComponent
+        icon = icon-bow
+        tag = client
+    }
+]
+instrument = {
+    id = weapon-hunter-bow
+    skins = skin-weapon-hunter-bow-default
+    upgrades = {
+    }
+}
+items = [
+    {
+        amount = 10
+        id = arrow-bullet
+    }
+]
+name = ITEM_WEAP_HUNTER_BOW
+slot = slot-primary
+category = other
+tags = unique
+index = 100
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = phantom-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_PHANTOM
+    }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mp40-default
+name = ITEM_WEAP_MP40
+slot = sl-pri-mp40

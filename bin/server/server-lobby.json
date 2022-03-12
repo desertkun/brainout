@@ -1,0 +1,47 @@
+{
+	"name": "Lobby",
+	"packages":
+	[
+		"base",
+		"sounds",
+		"lobby"
+	],
+	"defines":
+	{
+		"lobby": "true",
+		"chat": "disabled",
+		"minimapEnabled": "false",
+		"ragdoll": "disabled",
+		"chatBubbles": "true"
+	},
+	"teams": 
+	[
+		"team-blue"
+	],
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},
+
+	"prices":
+	{
+		"createClan": 15,
+		"joinClan": 5,
+		"updateClan": 5,
+		"participateClanEvent": 40,
+		"duel": 1000
+	},
+
+	"modeDelay": 11,
+	"roundTime": 1200,
+	"weaponAutoLoad": true,
+
+	"damageCoef": 4,
+	"autoBalance":
+	{
+		"enabled": false,
+		"balance": 1
+	}
+}

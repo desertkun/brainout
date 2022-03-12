@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = maniac
+id = skin-player-maniac
+name = ITEM_PLAYER_SKIN_MANIAC

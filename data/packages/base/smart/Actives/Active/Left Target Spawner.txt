@@ -1,0 +1,35 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-target-left
+        tag = client
+    }
+    {
+        class = content.components.TargetBlocksSpawnerComponent
+        opened = target-left
+        closed = target-left-closed
+        tag = server
+    }
+]
+id = left-target-spawner
+name = Left Target Spawner
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-target-right
+        tag = client
+    }
+    {
+        class = content.components.TargetBlocksSpawnerComponent
+        opened = target-right
+        closed = target-right-closed
+        tag = server
+    }
+]
+id = right-target-spawner
+name = Right Target Spawner

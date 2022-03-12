@@ -1,0 +1,1 @@
+java -XX:-OmitStackTraceInFastThrow -server -XX:MaxHeapFreeRatio=15 -XX:MinHeapFreeRatio=15 -XX:+UseG1GC -Xms16m -Xmx256m -XX:InitiatingHeapOccupancyPercent=20 -Djava.net.preferIPv4Stack=true -jar brainout-server.jar "$@"

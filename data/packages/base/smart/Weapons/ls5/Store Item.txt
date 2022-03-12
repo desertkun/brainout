@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-ls5
+instrument = {
+    id = weapon-ls5
+    skins = skin-weapon-ls5-default, skin-weapon-ls5-crimsonsteel, skin-weapon-ls5-briton, skin-weapon-ls5-specialops, skin-weapon-ls5-core, skin-weapon-ls5-hell
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ls5-accuracy
+        clip = upgrade-ls5-clip-extended
+        holder = upgrade-ls5-holder
+        recoil = upgrade-ls5-recoil
+        reload-time = upgrade-ls5-reload-time
+        scope = upgrade-ls5-scope-susat
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_LS5
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 4
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 3
+    }
+}

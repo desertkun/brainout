@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-car15-default
+name = ITEM_WEAP_CAR15
+slot = sl-pri-car15

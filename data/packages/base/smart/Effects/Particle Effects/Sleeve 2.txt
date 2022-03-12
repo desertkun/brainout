@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = sleeve-2
+particle = base:particles/sleeve-2
+tag = client

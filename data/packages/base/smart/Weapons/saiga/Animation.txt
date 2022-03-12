@@ -1,0 +1,5 @@
+animation = base:animations/weapon-saiga.json
+class = content.Animation
+id = anim-saiga
+states = []
+timeScale = 1

@@ -1,0 +1,35 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-butcher
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.SkillPointsRewardComponent
+        tag = server
+    }
+]
+id = achievement-butcher
+name = ACHIEVEMENT_BUTCHER
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-tag, knife
+        param = 500
+        unlockTitle = ACHIEVEMENT_BUTCHER_DESC
+    }
+}

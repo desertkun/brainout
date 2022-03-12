@@ -1,0 +1,32 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-pmc
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-pmc
+items = []
+name = ITEM_PLAYER_SKIN_PMC
+skin = skin-player-pmc
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 386
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = gold-case
+        unlockTitle = MENU_LOCKED_UNIFORM
+    }
+}

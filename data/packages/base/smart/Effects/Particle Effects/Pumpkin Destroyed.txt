@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = pumpkin-destroyed-1
+particle = base:particles/pumpkin-destroyed-1
+tag = client

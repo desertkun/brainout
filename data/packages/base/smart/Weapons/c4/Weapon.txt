@@ -1,0 +1,32 @@
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-c4
+        class = content.components.ThrowableAnimationComponent
+        skin = throwable-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+defaultSkin = skin-instrument-c4-default
+id = instrument-c4
+instrumentTags = c4, explosive
+slot = slot-special
+throwActive = c4-active
+throwPower = 6
+throwTime = 1
+throwable = false
+name = ITEM_SPECIAL_C4

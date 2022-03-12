@@ -1,0 +1,169 @@
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-battery
+        class = content.components.InstrumentAnimationComponent
+        skin = ok
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-battery-ok
+        icon-small = icon-battery-ok-small
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = hands
+        lock = true
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = battery-move-1
+        tag = client
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = battery-item-picked
+        weight = 12
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10000
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-battery-ok-default
+forceSelect = true
+stacks = false
+id = instrument-battery-ok
+speedCoef = 0.75
+throwable = true
+name = ITEM_BATTERY_OK
+description = ITEM_BATTERY_OK_DESC
+
+--------
+
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-battery
+        class = content.components.InstrumentAnimationComponent
+        skin = dead
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-battery-dead
+        icon-small = icon-battery-dead-small
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = hands
+        lock = true
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = battery-move-1
+        tag = client
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = battery-item-picked
+        weight = 8
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10000
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-battery-dead-default
+forceSelect = true
+stacks = false
+id = instrument-battery-dead
+speedCoef = 0.75
+throwable = true
+name = ITEM_BATTERY_DEAD
+description = ITEM_BATTERY_DEAD_DESC
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 2
+        mass = 2
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = true
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        timeToLive = 0
+        tag = server
+    }
+]
+auto-remove = true
+id = battery-item-picked
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = []
+data = ok
+id = skin-instrument-battery-ok-default
+name = ITEM_BATTERY_OK
+description = ITEM_BATTERY_OK_DESC
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = []
+data = dead
+id = skin-instrument-battery-dead-default
+name = ITEM_BATTERY_DEAD
+description = ITEM_BATTERY_DEAD_DESC
+
+--------
+
+animation = base:animations/instrument-battery.json
+class = content.Animation
+id = anim-battery
+states = []
+timeScale = 1

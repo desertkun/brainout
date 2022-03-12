@@ -1,0 +1,46 @@
+class = content.quest.Quest
+id = quest-passport-3
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-passport
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = freeplay-passport-3
+        target = 9
+    }
+}
+
+group = passport
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_PASSPORT
+
+rewards = [
+    {
+        action = unlock
+        id = sl-skin-militia
+        amount = 1
+    }
+    {
+        action = unlock
+        id = case-gold
+        amount = 1
+    }
+    {
+        action = addstat
+        id = score
+        amount = 750
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 1000
+    }
+]

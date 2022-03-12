@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-ml-knife-falchion
+    }
+]
+group = cardgroup-krieg
+id = gen-weapon-falchion
+name = CARD_TITLE_NEW_WEAPON
+weight = 100

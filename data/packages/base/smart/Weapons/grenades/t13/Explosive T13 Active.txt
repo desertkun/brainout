@@ -1,0 +1,59 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 600
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.4
+        width = 1
+        contactGap = 0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClass = physics
+        tag = server
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = physics
+        tag = server
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-grenade-he
+        class = content.components.ActiveIconComponent
+        rotateByX = 10
+        skin = throwable-t13
+        tag = client
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        amount = 60
+        bullet = explosive-bullet
+        class = content.components.ExplosiveComponent
+        damage = 65
+        effect = explode-effect-1
+        tag = server
+    }
+]
+id = explosive-t13-active
+name = ITEM_HE

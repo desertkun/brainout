@@ -1,0 +1,36 @@
+class = content.active.Item
+components = [
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        iconBadge = false
+        discover = true
+        tag = client
+    }
+    {
+        class = content.components.ItemStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 0
+        target = freeplay
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-freeplay-container
+            tag = client
+        }
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+name = ITEM_FREEPLAY_CONTAINER_1
+auto-remove = false
+editor = true
+id = freeplay-container

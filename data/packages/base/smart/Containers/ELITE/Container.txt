@@ -1,0 +1,33 @@
+cards = [
+    {
+        groups = cardgroup-elite
+    }
+    {
+        groups = cardgroup-elite
+    }
+    {
+        groups = cardgroup-elite
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = elite-case-bg
+        class = content.components.IconComponent
+        icon = elite-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_ELITE_DESC
+id = case-elite
+name = CASE_ELITE

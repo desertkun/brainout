@@ -1,0 +1,127 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = [
+            gl-insert-1
+        ]
+        fetch = [
+            [
+                pull-snd-shotgun
+                {
+                    attachTo = shell-bone
+                    object = sleeve-grenade-physic
+                }
+            ]
+        ]
+        shoot = [
+            [
+                {
+                    attachTo = fire-bone
+                    object = shoot-flash-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-smoke
+                }
+                {
+                    attachTo = fire-bone
+                    object = gl-shoot-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-fire-1
+                }
+            ]
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 3
+    }
+    {
+        actions = [
+            {
+                effects = toz34-reload-1, toz34-reload-1
+                for = add-bullet
+                type = effect
+            }
+            {
+                effects = toz34-close
+                for = toz34-close
+                type = effect
+            }
+            {
+                effects = toz34-open
+                for = toz34-open
+                type = effect
+            }
+            {
+                for = opened
+                type = animate
+                animation = open
+            }
+            {
+                for = closed
+                type = animate
+                animation = close
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-m79
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-m79
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 24
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m79-default
+id = weapon-m79
+instrumentTags = primary
+primary = {
+    accuracy = 35
+    aimDistance = 30
+    allowedBullets = grenade-bullet
+    clipSize = 1
+    damage = 500
+    fire-rate = 600
+    perBulletReload = true
+    pullRequired = false
+    recoil = 30
+    reloadTime = 1.6
+    shootModes = single
+}
+slot = slot-primary
+speedCoef = 1.2

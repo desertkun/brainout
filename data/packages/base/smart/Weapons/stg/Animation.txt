@@ -1,0 +1,5 @@
+animation = base:animations/weapon-stg.json
+class = content.Animation
+id = anim-stg
+states = []
+timeScale = 1

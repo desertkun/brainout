@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-ak15
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-ak15
+    skins = skin-weapon-ak15-default, skin-weapon-ak15-sahara, skin-weapon-ak15-khaki
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ak15-accuracy
+        clip = upgrade-ak15-clip-extended
+        holder = upgrade-ak15-holder
+        recoil = upgrade-ak15-recoil
+        reload-time = upgrade-ak15-reload-time
+        scope = upgrade-ak15-scope-pk110
+        wear-resistance = upgrade-ak15-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_AK15
+slot = slot-primary
+category = assault
+tags = missions, classic
+index = 25
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-ak74
+        param = 120
+        unlockTitle = MENU_UNLOCK_AK15
+    }
+}

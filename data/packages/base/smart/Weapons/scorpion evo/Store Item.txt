@@ -1,0 +1,43 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-scorpion-evo
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-scorpion-evo
+    skins = skin-weapon-scorpion-evo-default, skin-weapon-scorpion-evo-shard
+    upgrades = {
+        silencer = upgrade-scorpion-evo-silencer
+        scope = upgrade-scorpion-evo-scope-acog
+        wear-resistance = upgrade-scorpion-evo-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_SCORPION_EVO
+slot = slot-primary
+category = submachine
+tags = unique
+index = 409
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	    icon = icon-battle-pass-points-big
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}
+

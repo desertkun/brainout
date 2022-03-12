@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mg34.json
+class = content.Animation
+id = anim-mg34
+states = []
+timeScale = 1

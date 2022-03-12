@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-m3gg
+instrument = {
+    id = weapon-m3gg
+    skins = skin-weapon-m3gg-default, skin-weapon-m3gg-mechanic
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        butt = upgrade-m3gg-butt-unfolded
+        barrel = upgrade-m3gg-barrel-muzle, upgrade-m3gg-barrel-silencer
+        silencer = upgrade-m3gg-silencer
+        scope = upgrade-m3gg-scope-colimator
+        clip = upgrade-m3gg-doubleclip
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_M3GG
+slot = slot-primary
+category = submachine
+tags = unique
+index = 408
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RED
+    }
+}

@@ -1,0 +1,25 @@
+class = content.active.EnterPremisesDoor
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-exit-door
+        tag = client
+    }
+    {
+    	class = content.components.ClientEnterPremisesActivatorComponent
+        digits = led-0, led-1, led-2, led-3, led-4, led-5, led-6, led-7, led-8, led-9
+        empty = led-empty
+        activateEffect = safe-open-effects
+        deniedEffect = safe-denied-effects
+        beep = safe-been-snd
+    	activateText = MENU_ENTER_PREMISES
+    	tag = client
+    }
+    {
+        class = content.components.ServerFreeplayEnterRealEstateComponent
+        tag = server
+    }
+]
+id = enter-bld-door
+name = Building Door
+exitTime = 3.0

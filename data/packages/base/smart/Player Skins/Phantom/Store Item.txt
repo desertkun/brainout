@@ -1,0 +1,30 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-phantom
+        tag = client
+    }
+]
+id = sl-skin-phantom
+items = []
+name = ITEM_PLAYER_SKIN_PHANTOM
+skin = skin-player-phantom
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 47
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = phantom-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_PHANTOM
+    }
+}

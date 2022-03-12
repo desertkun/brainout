@@ -1,0 +1,26 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+    {
+        big-icon = icon-item-binoculars
+        class = content.components.IconComponent
+        icon = icon-item-binoculars
+        tag = client
+    }
+]
+id = sl-binoculars
+instrument = {
+    id = instrument-binoculars
+    skins = skin-instrument-binoculars-default
+}
+items = [
+]
+name = ITEM_BINOCULARS
+slot = slot-binoculars
+category = binoculars
+tags = []
+index = 1

@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-chainsaw
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = chainsaw
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-chainsaw
+        goal = GOAL_KILL_USING_MASK
+        value = 150
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 3
+        class = content.components.UnlockStoreItemComponent
+        content = case-standard
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-chainsaw
+items = []
+name = ITEM_MASK_CHAINSAW
+player = player-mask-chainsaw
+slot = slot-mask
+category = mask
+tags = unique
+index = 3
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-chainsaw
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

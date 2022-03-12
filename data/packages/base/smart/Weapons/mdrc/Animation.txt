@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mdrc.json
+class = content.Animation
+id = anim-mdrc
+states = []
+timeScale = 1

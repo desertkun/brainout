@@ -1,0 +1,20 @@
+class = content.shop.Slot
+components = [
+]
+default = sl-msk-none
+id = slot-mask
+name = SLOT_SECONDARY
+categories = [
+    {
+        id = mask
+        title = SLOT_CATEGORY_MASK
+    }
+]
+tags = [
+    {
+        id = unique
+        title = SLOT_TAG_UNIQUE
+    }
+]
+stack = true
+width = 100

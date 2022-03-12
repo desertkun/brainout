@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-grenades
+        tag = client
+    }
+]
+id = profile-badge-grenades
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-tag, grenade
+        param = 100
+        unlockTitle = ACHIEVEMENT_GRENADER_DESC
+    }
+}

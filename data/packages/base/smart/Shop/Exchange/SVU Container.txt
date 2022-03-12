@@ -1,0 +1,52 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = special-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-special-svu
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-special-svu
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-svu
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-skin-siber
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_SPECIAL_SVU_DESC
+id = sl-store-case-special-svu
+name = CASE_SPECIAL
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 30
+        currency = nuclear-material
+    }
+}

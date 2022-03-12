@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mat49-sulfa
+        tag = client
+    }
+]
+data = weapon-sulfa
+id = skin-weapon-mat49-sulfa
+name = ITEM_WEAP_MAT49_SULFA
+slot = sl-sec-mat49
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

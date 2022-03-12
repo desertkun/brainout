@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-unique, cardgroup-part, cardgroup-rare-skins, cardgroup-skins, cardgroup-ak12-skin
+    }
+    {
+        groups = cardgroup-skillpts
+    }
+    {
+        groups = cardgroup-gears, cardgroup-gears-rare, cardgroup-gears-improved
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = gold-case-bg
+        class = content.components.IconComponent
+        icon = gold-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_GOLD_DESC
+id = case-gold
+name = CASE_GOLD

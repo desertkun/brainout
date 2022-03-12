@@ -1,0 +1,23 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-omon
+        tag = client
+    }
+]
+id = profile-badge-camo-1
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = tech-level
+        param = 2
+        displayOffset = -1
+        unlockTitle = MENU_UNLOCK_LEVEL_TECH
+    }
+}

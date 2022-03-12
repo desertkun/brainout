@@ -1,0 +1,5 @@
+animation = base:animations/weapon-makarov.json
+class = content.Animation
+id = anim-makarov
+states = []
+timeScale = 1

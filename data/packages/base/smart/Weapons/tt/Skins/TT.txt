@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-tt-default
+name = ITEM_WEAP_TT
+slot = sl-sec-tt

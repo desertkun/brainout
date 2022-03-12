@@ -1,0 +1,30 @@
+angleOffset = {
+    max = 10
+    min = -10
+}
+attached = airsoft-hit-pt
+class = content.effect.PhysicEffect
+friction = 0.5
+id = airsoft-hit-1
+mass = 1
+reduce = -0.4
+speed = {
+    max = 10
+    min = 5
+}
+spring = {
+    max = 0.5
+    min = 0.25
+}
+distanceOffset = 0.4
+removeChild = true
+tag = client
+
+--------
+
+alphaBefore = 0.05
+class = content.effect.ProjectileEffect
+id = airsoft-hit-pt
+projectile = airsoft-hit
+ttl = 2
+tag = client

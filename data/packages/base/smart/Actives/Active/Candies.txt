@@ -1,0 +1,150 @@
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-candy-1-small
+        tag = client
+    }
+    {
+        class = content.components.ClientItemAutoPickerComponent
+        effect = cookie-1, cookie-2, cookie-3, cookie-4
+        pickTime = 0.25
+        tag = client
+    }
+    {
+        class = content.components.ServerPickupCallbackComponent
+        block = true
+        tag = server
+    }
+    {
+        class = content.components.RandomJumpComponent
+        power = 0.5
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+auto-remove = true
+id = active-candy-1
+name = Candy
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-candy-2-small
+        tag = client
+    }
+    {
+        class = content.components.ClientItemAutoPickerComponent
+        effect = cookie-1, cookie-2, cookie-3, cookie-4
+        pickTime = 0.25
+        tag = client
+    }
+    {
+        class = content.components.ServerPickupCallbackComponent
+        block = true
+        tag = server
+    }
+    {
+        class = content.components.RandomJumpComponent
+        power = 0.5
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+auto-remove = true
+id = active-candy-2
+name = Candy
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-candy-3-small
+        tag = client
+    }
+    {
+        class = content.components.ClientItemAutoPickerComponent
+        effect = cookie-1, cookie-2, cookie-3, cookie-4
+        pickTime = 0.25
+        tag = client
+    }
+    {
+        class = content.components.RandomJumpComponent
+        power = 0.5
+        tag = server
+    }
+    {
+        class = content.components.ServerPickupCallbackComponent
+        block = true
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+auto-remove = true
+id = active-candy-3
+name = Candy

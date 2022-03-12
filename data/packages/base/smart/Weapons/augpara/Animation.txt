@@ -1,0 +1,5 @@
+animation = base:animations/weapon-augpara.json
+class = content.Animation
+id = anim-augpara
+states = []
+timeScale = 1

@@ -1,0 +1,12 @@
+class = content.active.Player
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-speed
+        tag = client
+    }
+]
+extends = player-default
+id = player-silent
+name = ITEM_PLAYER_SILENT
+steps = false

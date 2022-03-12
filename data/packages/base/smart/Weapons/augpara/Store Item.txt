@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-augpara
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-augpara
+    skins = skin-weapon-augpara-default, skin-weapon-augpara-durandal, skin-weapon-augpara-hysteria
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-augpara-accuracy
+        clip = upgrade-augpara-clip-extended
+        light = upgrade-augpara-laser
+        scope = upgrade-augpara-scope-truglo
+        holder = upgrade-augpara-holder
+        shoot-time = upgrade-augpara-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_AUGPARA
+slot = slot-primary
+category = submachine
+tags = resources
+index = 385
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

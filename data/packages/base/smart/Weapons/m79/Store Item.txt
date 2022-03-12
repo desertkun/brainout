@@ -1,0 +1,39 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+id = sl-pri-m79
+instrument = {
+    id = weapon-m79
+    skins = skin-weapon-m79-default, skin-weapon-m79-tiger
+    upgrades = {
+    }
+}
+items = [
+    {
+        amount = 5
+        id = grenade-bullet
+    }
+]
+name = ITEM_WEAP_M79
+slot = slot-primary
+category = other
+tags = unique
+index = 159
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = vietnam2-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_VIETNAM2
+    }
+}

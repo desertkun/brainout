@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-rem7600-default
+name = ITEM_WEAP_REM7600
+slot = sl-pri-rem7600

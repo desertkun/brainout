@@ -1,0 +1,5 @@
+animation = base:animations/weapon-cz75.json
+class = content.Animation
+id = anim-cz75
+states = []
+timeScale = 1

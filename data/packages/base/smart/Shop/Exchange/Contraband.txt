@@ -1,0 +1,34 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = contraband-case
+        tag = client
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-contraband
+        unique = true
+    }
+]
+description = CASE_CONTRABAND_DESC
+id = sl-store-case-contraband
+limit = 2
+name = CASE_CONTRABAND
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 24
+        currency = nuclear-material
+    }
+}

@@ -1,0 +1,5 @@
+class = content.effect.ParticleEffect
+id = fire-particle
+particle = base:particles/fire
+limitWhenDone = false
+tag = client

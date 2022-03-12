@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-garand
+instrument = {
+    id = weapon-garand
+    skins = skin-weapon-garand-default, skin-weapon-garand-biathlon, skin-weapon-garand-sport,  skin-weapon-garand-safari
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        scope = upgrade-garand-scope-m81
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_GARAND
+slot = slot-primary
+category = sniper
+tags = unique
+index = 40
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_STANDARD
+    }
+}

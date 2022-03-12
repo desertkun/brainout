@@ -1,0 +1,138 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = []
+        shoot = [
+            m1897-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            m1897-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        actions = [
+            {
+                effects = [
+                    [
+                        shotgun-shell-2-snd
+                        shotgun-shell-3-snd
+                        shotgun-shell-4-snd
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                    ]
+                ]
+                for = drop-bullets-3
+                type = effect
+            }
+            {
+                effects = [
+                    [
+                        shotgun-shell-2-snd
+                        shotgun-shell-4-snd
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                    ]
+                ]
+                for = drop-bullets-2
+                type = effect
+            }
+            {
+                effects = spas12-reload-snd-1-fast, spas12-reload-snd-2-fast
+                for = add-bullet
+                type = effect
+            }
+            {
+                effects = [
+                    spas12-reload-snd-1-fast, spas12-reload-snd-2-fast
+                ]
+                for = add-bullets
+                type = effect
+            }
+            {
+                effects = magnum-roll
+                for = roll
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 200
+    }
+    {
+        animation = anim-mts255
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-weapon-revolver-3
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-mts255-default
+id = weapon-mts255
+instrumentTags = primary, shotgun
+primary = {
+    accuracy = 30
+    aimDistance = 30
+    allowedBullets = bullet-12-76
+    clipSize = 5
+    damage = 100
+    fire-rate = 300
+    recoil = 60
+    reloadTime = 5
+    shootModes = single
+    shell-auto-eject = false
+}
+slot = slot-primary

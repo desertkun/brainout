@@ -1,0 +1,33 @@
+class = content.block.Smoke
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-stairs
+        tag = client
+    }
+    {
+        class = content.components.BlockParticleComponent
+        effect = smoke-block-part
+        tag = client
+    }
+    {
+        class = content.components.ServerSmokeComponent
+        tag = server
+    }
+]
+id = smoke-block
+static = false
+name = Smoke Block
+generatePhysics = false
+canBeSeenTrough = false
+resist = 0
+
+--------
+
+
+class = content.effect.ParticleEffect
+id = smoke-block-part
+particle = base:particles/block-smoke
+layer = 2
+limitWhenDone = false
+tag = client

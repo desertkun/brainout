@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+]
+id = sl-pri-spas12
+instrument = {
+    id = weapon-spas12
+    skins = skin-weapon-spas12-default, skin-weapon-spas12-reggae, skin-weapon-spas12-torgue, skin-weapon-spas12-companion
+    upgrades = {
+        recoil = upgrade-spas12-recoil
+        reload-time = upgrade-spas12-reload-time
+    }
+}
+items = [
+    {
+        amount = 12
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_SPAS12
+slot = slot-primary
+category = shotgun
+tags = missions, classic
+index = 4
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = double-kills
+        param = 3
+		unlockTitle = MENU_UNLOCK_SPAS12
+    }
+}

@@ -1,0 +1,13 @@
+class = content.effect.SoundEffect
+sound = base:sounds/skin-owned.mp3
+id = skin-owned-snd-e
+tag = client
+
+--------
+
+class = content.Effect
+id = skin-owned-snd-effect
+set = [
+    skin-owned-snd-e
+]
+tag = client

@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-premium
+        class = content.components.IconComponent
+        icon = knife-premium
+        tag = client
+    }
+]
+data = knife-premium
+id = skin-weapon-knife-premium
+name = ITEM_WEAP_KNIFE_PREMIUM
+slot = sl-ml-knife-premium

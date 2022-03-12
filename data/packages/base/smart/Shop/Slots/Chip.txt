@@ -1,0 +1,12 @@
+class = content.shop.Slot
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-slot-instruments
+        tag = client
+    }
+]
+default = sl-inst-none
+id = slot-chip
+name = SLOT_SPECIAL
+width = 100

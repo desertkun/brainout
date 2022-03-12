@@ -1,0 +1,65 @@
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+    	class = content.components.ClientActiveActivatorComponent
+    	activateText = MENU_ENTER_THE_DOOR
+    	tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = door-1-effects
+        tag = server
+    }
+]
+id = portal-door-a
+name = ITEM_DOOR
+
+--------
+
+class = content.Effect
+id = door-1-effects
+set = door-open-1-snd, door-open-2-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = base:sounds/door-open-1.mp3
+id = door-open-1-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = base:sounds/door-open-2.mp3
+id = door-open-2-snd
+tag = client
+
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MAP_SHOOTING_RANGE
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = door-1-effects
+        tag = server
+    }
+]
+id = portal-door-shooting-range
+name = Shooting Range Door

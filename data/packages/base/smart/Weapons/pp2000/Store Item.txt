@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-pri-pp2000
+instrument = {
+    id = weapon-pp2000
+    skins = skin-weapon-pp2000-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        butt = upgrade-pp2000-butt-extended
+        recoil = upgrade-pp2000-recoil
+        shoot-time = upgrade-pp2000-shoot-time
+        scope = upgrade-pp2000-scope-qd
+        clip = upgrade-pp2000-clip-extended
+        light = upgrade-pp2000-light
+    }
+}
+items = [
+    {
+        amount = 44
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_PP2000
+slot = slot-primary
+category = submachine
+tags = unique
+index = 362
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

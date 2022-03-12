@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-ml-lolipop
+    }
+]
+group = cardgroup-2019
+id = gen-weapon-lolipop
+name = CARD_TITLE_NEW_WEAPON
+weight = 100

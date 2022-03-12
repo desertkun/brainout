@@ -1,0 +1,62 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = supply-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-special-supply
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-special-supply
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-skin-combine
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-sec-usp-match
+                value = 0
+            }
+            {
+                func = ">="
+                id = sl-pri-tar21
+                value = 1
+            }
+            {
+                func = ">="
+                id = sl-skin-usec
+                value = 1
+            }
+        ]
+    }
+]
+description = CASE_SUPPLY_DESC
+id = sl-store-case-supply
+name = CASE_SUPPLY
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 125000
+        currency = ru
+    }
+}

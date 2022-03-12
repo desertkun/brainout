@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-fiveseven-default
+name = ITEM_WEAP_FIVESEVEN
+slot = sl-sec-fiveseven

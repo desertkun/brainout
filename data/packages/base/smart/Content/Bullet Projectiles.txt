@@ -1,0 +1,41 @@
+@if = "$tracers != disabled"
+@then = {
+    alphaBefore = 0.05
+    class = content.effect.ProjectileEffect
+    projectile = bullet-def-1
+    tag = client
+}
+id = bullet-projectile-def-1
+
+--------
+
+@if = "$tracers != disabled"
+@then = {
+    alphaBefore = 0.05
+    class = content.effect.ProjectileEffect
+    projectile = bullet-def-2
+    tag = client
+}
+id = bullet-projectile-def-2
+
+--------
+
+@if = "$tracers != disabled"
+@then = {
+    alphaBefore = 0.05
+    class = content.effect.ProjectileEffect
+    projectile = bullet-long-1
+    tag = client
+}
+id = bullet-projectile-long-1
+
+--------
+
+@if = "$tracers != disabled"
+@then = {
+    alphaBefore = 0.05
+    class = content.effect.ProjectileEffect
+    projectile = bullet-long-2
+    tag = client
+}
+id = bullet-projectile-long-2

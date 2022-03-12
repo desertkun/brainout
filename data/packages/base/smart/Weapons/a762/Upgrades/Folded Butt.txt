@@ -1,0 +1,25 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            butt = folded
+        }
+        tag = client
+    }
+    {
+        big-icon = a762-butt-off
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_FOLDED_BUTT_DESC
+id = upgrade-a762-butt-folded
+name = ITEM_UPGRADE_FOLDED_BUTT
+properties = {
+    accuracy = "-15"
+    recoil = "+20"
+    speed-coef = "=1.2"
+}

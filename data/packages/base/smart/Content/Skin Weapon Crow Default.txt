@@ -1,0 +1,12 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = icon-crow
+        class = content.components.IconComponent
+        icon = icon-crow
+        tag = client
+    }
+]
+data = weapon-default
+id = skin-weapon-crow-default
+name = ITEM_WEAP_CROW

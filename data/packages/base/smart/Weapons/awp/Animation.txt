@@ -1,0 +1,5 @@
+animation = base:animations/weapon-sniper.json
+class = content.Animation
+id = anim-sniper
+states = []
+timeScale = 1

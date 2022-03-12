@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-a762-default
+name = ITEM_WEAP_A762
+slot = sl-pri-a762

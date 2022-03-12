@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-ft200m-default
+name = ITEM_WEAP_FT200M
+slot = sl-pri-ft200m

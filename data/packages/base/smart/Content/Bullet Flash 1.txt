@@ -1,0 +1,14 @@
+@if = "$tracers != disabled"
+@then = {
+    class = content.effect.LightEffect
+    color = ffefa355
+    distance = 4
+    rays = 16
+    soft = 8
+    tag = client
+    time = 0.8
+    timeAfter = 0.4
+    timeBefore = 0
+    xRay = true
+}
+id = bullet-flash-1

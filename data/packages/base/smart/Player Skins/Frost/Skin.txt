@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = frost
+id = skin-player-frost
+name = ITEM_PLAYER_SKIN_FROST

@@ -1,0 +1,19 @@
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-part-bg
+        icon-shine = card-shine-part
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-part
+name = CARDGROUP_PART

@@ -1,0 +1,36 @@
+class = content.quest.Quest
+id = quest-first-aid-3
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-first-aid
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = consumable-item-radx
+        target = 3
+    }
+}
+
+group = first-aid
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_FIRST_AID
+
+rewards = [
+    {
+        action = unlock
+        id = case-gold
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 1500
+    }
+]

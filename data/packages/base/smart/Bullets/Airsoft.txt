@@ -1,0 +1,30 @@
+blockEffect = false
+class = content.bullet.ShotBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-projectile-airsoft-1
+        ]
+        hit = [
+            airsoft-hit-1
+        ]
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = airsoft-hit
+        tag = client
+    }
+]
+id = airsoft-bullet
+mass = 0.05
+name = ITEM_BULLET_AIRSOFT
+power = 0.02
+powerDistance = {
+    @if = "$bulletDistance == far"
+    @then = 256
+    @else = 128
+}
+speed = 210

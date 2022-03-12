@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-antiterror
+        class = content.components.IconComponent
+        icon = knife-antiterror
+        tag = client
+    }
+]
+data = knife-antiterror
+id = skin-weapon-knife-antiterror
+name = ITEM_WEAP_KNIFE_ANTITERROR
+slot = sl-ml-knife-antiterror

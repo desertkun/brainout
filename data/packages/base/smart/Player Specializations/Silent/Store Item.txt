@@ -1,0 +1,45 @@
+access = byDefault
+class = content.shop.PlayerSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-silent
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_SILENT_DESC
+id = sl-pl-silent
+items = []
+name = ITEM_SPECIAL_SILENT
+player = player-silent
+slot = slot-player
+category = special
+tags = level
+index = 5
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 6
+    }
+}

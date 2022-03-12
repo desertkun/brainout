@@ -1,0 +1,33 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-medic
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-medic
+items = []
+name = ITEM_PLAYER_SKIN_MEDIC
+skin = skin-player-medic
+slot = slot-player-skin
+category = outfit
+tags = resources
+index = 351
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_UNIFORM_CONTRABAND
+    }
+}

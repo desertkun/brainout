@@ -1,0 +1,5 @@
+animation = base:animations/weapon-ar15.json
+class = content.Animation
+id = anim-ar15
+states = []
+timeScale = 1

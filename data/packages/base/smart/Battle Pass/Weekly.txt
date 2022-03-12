@@ -1,0 +1,375 @@
+
+// WEEK 1
+
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-weekly-kill-from-assault
+target = 500
+reward = 2000
+kind = assault
+validMultiplier = 604800
+validTo = 1
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-1000kills
+target = 1000
+reward = 2000
+action = kills
+title = MENU_KILL_N_TIMES
+validMultiplier = 604800
+validTo = 1
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-grenade
+target = 50
+reward = 2000
+action = kills-tag-grenade
+title = ACHIEVEMENT_GRENADER_DESC
+validMultiplier = 604800
+validTo = 1
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-kill-from-ddn
+target = 500
+reward = 2000
+action = kills
+title = MENU_KILL_N_TIMES
+game-mode = deathmatch, domination, normal
+validMultiplier = 604800
+validTo = 1
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-kill-from-afg
+target = 250
+reward = 2000
+action = kills
+title = MENU_KILL_N_TIMES
+game-mode = assault, foxhunt, gungame
+validMultiplier = 604800
+validTo = 1
+
+--------
+
+// WEEK 2
+
+class = content.battlepass.Action
+id = battle-pass-weekly-win
+target = 15
+reward = 2000
+action = games-won
+title = MENU_WIN_N_TIMES
+validMultiplier = 604800
+validFrom = 1
+validTo = 2
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-win-dom
+target = 3
+reward = 2000
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = domination
+validMultiplier = 604800
+validFrom = 1
+validTo = 2
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-win-nor
+target = 3
+reward = 2000
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = normal
+validMultiplier = 604800
+validFrom = 1
+validTo = 2
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-win-dea
+target = 3
+reward = 2000
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = deathmatch
+validMultiplier = 604800
+validFrom = 1
+validTo = 2
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-win-ass
+target = 3
+reward = 2000
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = assault
+validMultiplier = 604800
+validFrom = 1
+validTo = 2
+
+--------
+
+// WEEK 3
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-free
+target = 50
+reward = 2000
+action = kills
+title = MENU_KILL_N_TIMES
+game-mode = free
+validMultiplier = 604800
+validFrom = 2
+validTo = 3
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-dq
+target = 5
+reward = 2000
+action = daily-quest-complete
+title = MENY_COMPLETE_DAILY_ORDER_N_TIMES
+game-mode = free
+validMultiplier = 604800
+validFrom = 2
+validTo = 3
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-oppositekills
+target = 30
+reward = 2000
+action = karma-kill
+title = MENU_KILL_N_OPPOSITE_REPUTATION
+game-mode = free
+validMultiplier = 604800
+validFrom = 2
+validTo = 3
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-kills5-freeplay
+target = 1
+reward = 2000
+action = kills-5
+title = MENU_KILL_5_IN_GAME
+game-mode = free
+validMultiplier = 604800
+validFrom = 2
+validTo = 3
+
+--------
+
+// WEEK 4
+
+class = content.battlepass.Action
+id = battle-pass-weekly-double-kills
+target = 20
+reward = 2000
+action = double-kills
+title = MENU_PERFORM_N_DOUBLE_KILLS
+validMultiplier = 604800
+validFrom = 3
+validTo = 4
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-kills5-freeplay
+target = 1
+reward = 2000
+action = kills-10
+title = MENU_KILL_10_IN_GAME
+game-mode = assault
+validMultiplier = 604800
+validFrom = 3
+validTo = 4
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-triple-kills-freeplay
+target = 3
+reward = 2000
+action = triple-kills
+title = ACHIEVEMENT_9_LIVES_DESC
+validMultiplier = 604800
+validFrom = 3
+validTo = 4
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-win24-freeplay
+target = 24
+reward = 2000
+action = games-won
+game-mode = assault
+title = MENU_WIN_N_TIMES
+validMultiplier = 604800
+validFrom = 3
+validTo = 4
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-4-double-kills
+target = 1
+reward = 2000
+action = double-kills-4-game
+title = MENU_PERFORM_4_DOUBLE_KILLS_IN_ONE_GAME
+validMultiplier = 604800
+validFrom = 3
+validTo = 4
+
+--------
+
+// WEEK 5
+
+class = content.battlepass.Action
+id = battle-pass-weekly-exit-fp
+target = 30
+reward = 2000
+action = freeplay-exited
+title = MENU_EXIT_CONFLICT_AREA_N_TIMES
+validMultiplier = 604800
+validFrom = 4
+validTo = 5
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-sell-20k
+target = 20000
+reward = 2000
+action = market-sold-total
+title = MENU_SELL_ITEMS_FOR_N_RU_TOTAL
+validMultiplier = 604800
+validFrom = 4
+validTo = 5
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-bunker
+target = 3
+reward = 2000
+action = safes-opened
+title = MENU_ENTER_BUNKER_N_TIMES
+validMultiplier = 604800
+validFrom = 4
+validTo = 5
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-minutes-spent
+target = 30
+reward = 2000
+game-mode = free
+action = fp-minutes-spent
+title = QUEST_TASK_SPEND_TIME
+validMultiplier = 604800
+validFrom = 4
+validTo = 5
+
+--------
+
+// WEEK 6 AND ONWARDS
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-lvl-gungame
+target = 100
+reward = 2000
+action = gungame-levelup
+title = MENU_LEVELUP_N_TIMES
+game-mode = gungame
+validMultiplier = 604800
+validFrom = 5
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-hunter-foxhunt
+target = 100
+reward = 2000
+action = kills-from-weapon-hunter-bow
+title = MENU_KILL_N_HUNTER_BOW
+game-mode = foxhunt
+validMultiplier = 604800
+validFrom = 5
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-knife-gungame
+target = 10
+reward = 2000
+action = kills-from-weapon-knife
+title = ACHIEVEMENT_BUTCHER_DESC
+game-mode = gungame
+validMultiplier = 604800
+validFrom = 5
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-knife-assault
+target = 10
+reward = 2000
+action = kills-from-weapon-knife
+title = ACHIEVEMENT_BUTCHER_DESC
+game-mode = assault
+validMultiplier = 604800
+validFrom = 5
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-weekly-secondary
+target = 250
+reward = 2000
+action = kills-tag-secondary
+title = ACHIEVEMENT_DUELIST_DESC
+validMultiplier = 604800
+validFrom = 5
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-bandages
+target = 10
+reward = 2000
+action = consumable-item-bandages-used
+title = MENU_USE_BANDAGES_N_TIMES
+game-mode = free
+validMultiplier = 604800
+validFrom = 5
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-weekly-medikit
+target = 10
+reward = 2000
+action = consumable-item-medikit-used
+title = MENU_USE_MEDIKIT_N_TIMES
+game-mode = free
+validMultiplier = 604800
+validFrom = 5

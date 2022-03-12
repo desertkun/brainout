@@ -1,0 +1,5 @@
+animation = base:animations/weapon-ares-shrike.json
+class = content.Animation
+id = anim-ares-shrike
+states = []
+timeScale = 1

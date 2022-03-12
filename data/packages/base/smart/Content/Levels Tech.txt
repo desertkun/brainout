@@ -1,0 +1,47 @@
+beginFromZero = true
+class = content.Levels
+id = levels-tech
+levels = [
+    {
+        gears = 10
+        icon = icon-tech-level-0
+        name = LEVEL_TECH_1
+        score = 250
+        skillpts = 0
+    }
+    {
+        gears = 10
+        icon = icon-tech-level-1
+        name = LEVEL_TECH_2
+        score = 500
+        skillpts = 0
+    }
+    {
+        gears = 10
+        icon = icon-tech-level-2
+        name = LEVEL_TECH_3
+        score = 1000
+        skillpts = 0
+    }
+    {
+        gears = 10
+        icon = icon-tech-level-3
+        name = LEVEL_TECH_4
+        score = 2000
+        skillpts = 0
+    }
+    {
+        gears = 10
+        icon = icon-tech-level-4
+        name = LEVEL_TECH_5
+        score = 5000
+        skillpts = 0
+    }
+    {
+        gears = 10
+        icon = icon-tech-level-5
+        name = LEVEL_TECH_6
+        score = -1
+        skillpts = 0
+    }
+]

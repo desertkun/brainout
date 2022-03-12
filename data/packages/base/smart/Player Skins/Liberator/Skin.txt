@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = liberator
+id = skin-player-liberator
+name = ITEM_PLAYER_SKIN_LIBERATOR

@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-aac-toy
+        tag = client
+    }
+]
+data = weapon-toy
+id = skin-weapon-aac-toy
+name = ITEM_WEAP_AAC_TOY
+slot = sl-pri-aac
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = xmas-case
+        unlockTitle = "{MENU_LOCKED_SKINS}\n({CASE_HALLOWEEN})"
+    }
+}

@@ -1,0 +1,5 @@
+animation = base:animations/anim-badge-glitch-skull.json
+class = content.Animation
+id = anim-badge-glitch-skull
+states = []
+timeScale = 1

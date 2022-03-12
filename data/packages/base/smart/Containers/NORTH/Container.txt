@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-north
+    }
+    {
+        groups = cardgroup-north
+    }
+    {
+        groups = cardgroup-north
+    }
+    {
+        groups = cardgroup-north-2
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = north-case-bg
+        class = content.components.IconComponent
+        icon = north-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = smuggling-snd
+        tag = client
+    }
+]
+description = CASE_NORTH_DESC
+id = case-north
+name = CASE_NORTH

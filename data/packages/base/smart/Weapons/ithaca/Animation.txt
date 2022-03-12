@@ -1,0 +1,5 @@
+animation = base:animations/weapon-ithaca.json
+class = content.Animation
+id = anim-ithaca
+states = []
+timeScale = 1

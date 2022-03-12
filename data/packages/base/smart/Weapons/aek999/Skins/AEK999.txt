@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-aek999-default
+name = ITEM_WEAP_AEK999
+slot = sl-pri-aek999

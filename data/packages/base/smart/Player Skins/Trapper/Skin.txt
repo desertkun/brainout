@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = trapper
+id = skin-player-trapper
+name = ITEM_PLAYER_SKIN_TRAPPER

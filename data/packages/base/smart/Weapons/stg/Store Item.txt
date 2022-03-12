@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-stg
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+instrument = {
+    id = weapon-stg
+    skins = skin-weapon-stg-default, skin-weapon-stg-emile, skin-weapon-stg-wunderwaffe
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-stg-accuracy
+        recoil = upgrade-stg-recoil
+        reload-time = upgrade-stg-reload-time
+        shoot-time = upgrade-stg-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_STG
+slot = slot-primary
+category = assault
+tags = unique
+index = 153
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RED
+    }
+}

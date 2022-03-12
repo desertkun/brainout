@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = riot
+id = skin-player-riot
+name = ITEM_PLAYER_SKIN_RIOT

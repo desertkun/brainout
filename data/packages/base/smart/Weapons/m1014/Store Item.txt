@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+]
+id = sl-pri-m1014
+instrument = {
+    id = weapon-m1014
+    skins = skin-weapon-m1014-default, skin-weapon-m1014-steampunk, skin-weapon-m1014-neon, skin-weapon-m1014-hunting, skin-weapon-m1014-konoha, skin-weapon-m1014-mummy
+    upgrades = {
+        recoil = upgrade-m1014-recoil
+        reload-time = upgrade-m1014-reload-time
+    }
+}
+items = [
+    {
+        amount = 16
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_M1014
+slot = slot-primary
+category = shotgun
+tags = level, classic
+index = 7
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 11
+    }
+}

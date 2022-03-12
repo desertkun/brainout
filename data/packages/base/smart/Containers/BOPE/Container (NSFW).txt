@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-special-bope
+    }
+    {
+        groups = cardgroup-special-bope
+    }
+    {
+        groups = cardgroup-special-bope
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = special-case-bg
+        class = content.components.IconComponent
+        icon = special-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_SPECIAL_BOPE_DESC
+id = case-special-bope
+name = CASE_BOPE

@@ -1,0 +1,138 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.BlockEffectsComponent
+        hit = [
+            target-hit-snd-1, target-hit-part-1
+            target-hit-snd-2, target-hit-part-1
+            target-hit-snd-3, target-hit-part-1
+            target-hit-snd-4, target-hit-part-1
+        ]
+        destroy = {
+            @if = "$editor != true"
+            @then = [
+                target-open-1
+                target-open-2
+                target-open-3
+                target-open-4
+            ]
+        }
+        tag = client
+    }
+    {
+        class = content.components.BlockAnimationComponent
+        animation = anim-target-block
+        play = [
+            open
+        ]
+        skin = right
+        loop = false
+        tag = client
+    }
+    {
+        class = content.components.BlockHitConfirmationComponent
+        tag = server
+    }
+    {
+        class = content.components.ShootingRangeTargetBlockComponent
+        tag = server
+    }
+]
+id = target-right
+editor = false
+resist = 999999
+
+--------
+
+class = content.block.NonContact
+components = [
+    {
+        class = content.components.BlockAnimationComponent
+        animation = anim-target-block
+        play = [
+            close
+        ]
+        skin = right
+        loop = false
+        tag = client
+    }
+]
+id = target-right-closed
+editor = false
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.BlockEffectsComponent
+        hit = [
+            target-hit-snd-1, target-hit-part-1
+            target-hit-snd-2, target-hit-part-1
+            target-hit-snd-3, target-hit-part-1
+            target-hit-snd-4, target-hit-part-1
+        ]
+        destroy = [
+            target-open-1
+            target-open-2
+            target-open-3
+            target-open-4
+        ]
+        tag = client
+    }
+    {
+        class = content.components.BlockAnimationComponent
+        animation = anim-target-block
+        play = [
+            open
+        ]
+        skin = left
+        loop = false
+        tag = client
+    }
+    {
+        class = content.components.BlockHitConfirmationComponent
+        tag = server
+    }
+    {
+        class = content.components.ShootingRangeTargetBlockComponent
+        tag = server
+    }
+]
+id = target-left
+editor = false
+resist = 999999
+
+--------
+
+class = content.block.NonContact
+components = [
+    {
+        class = content.components.BlockAnimationComponent
+        animation = anim-target-block
+        play = [
+            close
+        ]
+        skin = left
+        loop = false
+        tag = client
+    }
+]
+id = target-left-closed
+editor = false
+fixture = true
+
+--------
+
+animation = base:animations/target-block.json
+class = content.Animation
+id = anim-target-block
+states = []
+timeScale = 1
+
+--------
+
+class = content.effect.ParticleEffect
+id = target-hit-part-1
+particle = base:particles/target-hit
+tag = client

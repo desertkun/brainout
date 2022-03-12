@@ -1,0 +1,5 @@
+{
+	"name": "freeplay",
+	"dependency": ["base"],
+	"version": "0.1"
+}

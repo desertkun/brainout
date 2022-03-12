@@ -1,0 +1,141 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            shootSecondary = [
+                [
+                    {
+                        attachTo = fire-secondary-bone
+                        object = shoot-flash-1
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = pistol-shoot-smoke
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = gl-shoot-1
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = pistol-shoot-fire-1
+                    }
+                ]
+            ]
+            stuck = stuck-snd
+        }
+        reload = ak74-reload-snd
+        fetch = ak74-fetch-snd
+        reloadSecondary = [
+            [
+                {
+                    attachTo = fire-secondary-bone
+                    object = gl-insert-1
+                }
+            ]
+        ]
+        shoot = [
+            ft200m-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            ft200m-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 1042
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-ft200m
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-bp
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+            reloadSecondary = reload-2hands-underbarrel
+            fetchSecondary = pull-shotgun-underbarrel
+        }
+        icon-scale = 1.142
+    }
+    {
+        class = content.components.SecondaryWeaponSlotComponent
+        icon = icon-shop-special-gl
+        properties = {
+            accuracy = 35
+            aimDistance = 30
+            allowedBullets = grenade-bullet
+            clipSize = 1
+            damage = 500
+            fire-rate = 120
+            recoil = 29
+            reloadTime = 1.8
+            shootModes = single
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-ft200m-default
+id = weapon-ft200m
+instrumentTags = primary
+primary = {
+	accuracy = 50 
+	aimDistance = 50 
+	allowedBullets = bullet-5.56x45 
+	clipSize = 30
+    magazineManagement = 2
+	damage = 50
+	fire-rate = 900 
+	recoil = 30 
+	reloadTime = 1.3
+    fetchTime = 0.5
+	shootModes = auto, single
+}
+slot = slot-primary

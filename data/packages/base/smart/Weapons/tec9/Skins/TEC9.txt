@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-tec9-default
+name = ITEM_WEAP_TEC9
+slot = sl-sec-tec9

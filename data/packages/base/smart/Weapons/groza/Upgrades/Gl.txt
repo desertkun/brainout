@@ -1,0 +1,73 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            barrel = gl
+        }
+        tag = client
+    }
+    {
+        big-icon = icon-groza-gl
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentEffectsComponent
+        replace = {
+            reloadSecondary = [
+                [
+                    {
+                        attachTo = fire-secondary-bone
+                        object = gl-insert-1
+                    }
+                ]
+            ]
+            shootSecondary = [
+                [
+                    {
+                        attachTo = fire-secondary-bone
+                        object = shoot-flash-1
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = pistol-shoot-smoke
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = gl-shoot-1
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = pistol-shoot-fire-1
+                    }
+                ]
+            ]
+        }
+        tag = client
+    }
+    {
+        class = content.components.SecondaryWeaponSlotComponent
+        icon = icon-shop-special-gl
+        properties = {
+            accuracy = 35
+            aimDistance = 30
+            allowedBullets = grenade-bullet
+            clipSize = 1
+            damage = 500
+            fire-rate = 120
+            recoil = 29
+            reloadTime = 1.8
+            shootModes = single
+        }
+    }
+]
+description = ITEM_UPGRADE_GL_GP30_DESC
+id = upgrade-groza-gl
+name = ITEM_UPGRADE_GL_GP30
+properties = {
+    speedcoef = "=0.91"
+    accuracy = "+10"
+    recoil = "-20"    
+}

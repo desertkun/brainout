@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-harvest
+        class = content.components.IconComponent
+        icon = knife-sickle
+        tag = client
+    }
+]
+data = knife-harvest
+id = skin-weapon-knife-harvest
+name = ITEM_WEAP_KNIFE_HARVEST
+slot = sl-ml-knife-harvest

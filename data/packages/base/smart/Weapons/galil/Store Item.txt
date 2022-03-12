@@ -1,0 +1,43 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 40
+    }
+]
+id = sl-pri-galil
+instrument = {
+    id = weapon-galil
+    skins = skin-weapon-galil-default, skin-weapon-galil-luftwaffe, skin-weapon-galil-unshakable, skin-weapon-galil-nut
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-galil-recoil
+        reload-time = upgrade-galil-reload-time
+        scope = upgrade-galil-scope-elbit
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_GALIL
+slot = slot-primary
+category = assault
+tags = resources
+index = 54
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

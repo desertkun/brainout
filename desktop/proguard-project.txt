@@ -1,0 +1,86 @@
+-injars ../bin/client/brainout-desktop.jar(!META-INF/versions/**.class,!module-info.class)
+-outjars ../bin/obfuscated/brainout-desktop.jar
+-libraryjars  <java.home>/../jre/lib/rt.jar
+-verbose
+-dontnote "!DuplicateClassPrinter*"
+-dontshrink
+-dontoptimize
+-printmapping ../bin/obfuscated/mapping
+-useuniqueclassmembernames
+-dontusemixedcaseclassnames
+-obfuscationdictionary keywords.txt
+-classobfuscationdictionary proguard-class-dictionary.txt
+-packageobfuscationdictionary proguard-class-dictionary.txt
+-renamesourcefileattribute BrainOut
+-keepattributes LineNumberTable,SourceFile,EnclosingMethod,Synthetic,*Annotation*
+-dontwarn com.badlogic.**, com.esotericsoftware.**, org.lwjgl.**, eu.infomas.annotation.**, javax.crypto.**, javax.servlet.**, org.apache.log.**, org.apache.log4j.**, org.apache.avalon.**, org.slf4j.**
+
+-keepclassmembers class com.badlogic.gdx.backends.android.AndroidInput* {
+    <init>(com.badlogic.gdx.Application,android.content.Context,java.lang.Object,com.badlogic.gdx.backends.android.AndroidApplicationConfiguration);
+}
+
+-keepclassmembers class com.badlogic.gdx.physics.box2d.World {
+    boolean contactFilter(long,long);
+    void beginContact(long);
+    void endContact(long);
+    void preSolve(long,long);
+    void postSolve(long,long);
+    boolean reportFixture(long);
+    float reportRayFixture(long,float,float,float,float,float);
+}
+
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class com.desertkun.brainout.desktop.DesktopLauncher {
+    <methods>;
+}
+
+-keep class org.apache.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.badlogic.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class org.lwjgl.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.esotericsoftware.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.studiohartman.jamepad.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.desertkun.brainout.common.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.desertkun.brainout.menu.ui.** {
+    <fields>;
+    <methods>;
+}
+
+-keep public class * extends com.desertkun.brainout.wrap.Wrapper {
+    <fields>;
+    <methods>;
+ }
+
+# received
+-keepclassmembers class * {
+    boolean received(...);
+}
+
+-forceprocessing

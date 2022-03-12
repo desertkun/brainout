@@ -1,0 +1,50 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-medkit
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_MEDIKIT_DESC
+id = sl-spc-medkit
+instrument = {
+    id = instrument-medkit
+    skin = skin-instrument-medkit-default
+}
+items = []
+name = ITEM_SPECIAL_MEDIKIT
+freeplay = false
+slot = slot-special
+category = special
+tags = level
+index = 4
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 7
+    }
+}

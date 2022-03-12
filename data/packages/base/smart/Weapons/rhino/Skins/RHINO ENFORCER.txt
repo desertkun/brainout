@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-rhino-enforcer
+        tag = client
+    }
+]
+data = weapon-enforcer
+id = skin-weapon-rhino-enforcer
+name = ITEM_WEAP_RHINO_ENFORCER
+slot = sl-sec-rhino
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

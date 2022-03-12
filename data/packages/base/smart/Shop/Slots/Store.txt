@@ -1,0 +1,52 @@
+class = content.shop.Slot
+components = []
+id = slot-store
+categories = [
+    {
+        id = exchange
+        title = SLOT_CATEGORY_EXCHANGE
+        items = [
+			sl-store-tech-score
+            sl-store-gears
+            sl-store-skillpts
+            sl-store-case-standard
+            sl-store-case-gold
+            sl-store-case-red-mosin
+            sl-store-case-starter-1
+            sl-store-case-starter-2
+            sl-store-case-contraband
+            sl-store-case-mdrc
+            sl-store-case-recon
+            sl-store-case-special-vdv
+            sl-store-case-special-usec
+            sl-store-case-supply
+            sl-store-case-vimpel
+			sl-store-case-sobr
+			sl-store-case-special-bope
+			sl-store-case-defender
+			sl-store-case-hollywood
+			sl-store-case-cyber
+            sl-store-case-special-svu
+			sl-pri-rg6
+            sl-pri-rpg7
+            sl-pri-shield
+            sl-pri-aa12
+			sl-pri-m95
+			sl-ml-knife-butterfly
+			sl-ml-knife-executor
+            sl-pri-car15
+			sl-pri-pdrc
+			sl-pri-kiparis
+			sl-pri-six12
+			sl-pri-scout
+			sl-sec-baltiets
+			sl-skin-ghillie-desert
+			sl-skin-swat
+			sl-skin-fsa
+			sl-skin-master
+			sl-skin-raider
+            sl-skin-polar
+			sl-skin-cn
+        ]
+    }
+]

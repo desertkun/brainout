@@ -1,0 +1,62 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+	{
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+]
+id = sl-sec-baltiets
+instrument = {
+    id = weapon-baltiets
+    skins = skin-weapon-baltiets-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-baltiets-reload-time
+		recoil = upgrade-baltiets-recoil
+    }
+}
+items = [
+    {
+        amount = 21
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_BALTIETS
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 40
+
+--------
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 50000
+        currency = ru
+    }
+}
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-baltiets
+		icon = icon-blueprint
+		param = 1
+        unlockTitle = MENU_LOCKED_BLUEPRINT
+    }
+}

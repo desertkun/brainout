@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-mp7
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-mp7
+    skins = skin-weapon-mp7-default, skin-weapon-mp7-dust, skin-weapon-mp7-hellquist, skin-weapon-mp7-surgeon
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-mp7-recoil
+        reload-time = upgrade-mp7-reload-time
+        scope = upgrade-mp7-scope-qd
+        silencer = upgrade-mp7-silencer
+	clip = upgrade-mp7-clip-extended
+        butt = upgrade-mp7-butt-unfolded
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.7x28
+    }
+]
+name = ITEM_WEAP_MP7
+slot = slot-primary
+category = submachine
+tags = unique
+index = 154
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

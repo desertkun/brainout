@@ -1,0 +1,6 @@
+animation = base:animations/instrument-chip.json
+class = content.Animation
+defaultSkin = skin-instrument-chip-default
+id = anim-chip
+states = []
+timeScale = 1

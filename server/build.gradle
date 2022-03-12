@@ -1,0 +1,49 @@
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+sourceSets.main.java.srcDirs = [ "src/" ]
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
+
+
+project.ext.mainClassName = "com.desertkun.brainout.Main"
+project.ext.assetsDir = new File("../data/assets/main");
+
+task run(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+}
+
+task dist(type: Jar) {
+    destinationDir = new File("../bin/server")
+    baseName = new File("brainout-server")
+    version = null
+
+    from files(sourceSets.main.output.classesDirs)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+
+    exclude('org/python/apache/**')
+    exclude('org/python/jsr223/**')
+    exclude('org/python/bouncycastle/**')
+    exclude('org/python/icu/**')
+    exclude('org/python/google/**')
+    exclude('org/python/netty/**')
+
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+}
+
+dist.dependsOn classes
+
+task obfuscate(type: proguard.gradle.ProGuardTask) {
+    configuration files("proguard-project.txt")
+    outputs.upToDateWhen { false }
+}
+
+obfuscate.dependsOn dist

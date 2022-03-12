@@ -1,0 +1,5 @@
+animation = base:animations/weapon-zastava.json
+class = content.Animation
+id = anim-zastava
+states = []
+timeScale = 1

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-acr-default
+name = ITEM_WEAP_ACR
+slot = sl-pri-acr

@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 60
+    }
+]
+id = sl-pri-m1
+instrument = {
+    id = weapon-m1
+    skins = skin-weapon-m1-default, skin-weapon-m1-landing
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-m1-clip-extended
+        recoil = upgrade-m1-recoil
+        reload-time = upgrade-m1-reload-time
+		ammo-belt-pouch = upgrade-m1-ammo-belt-pouch
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_M1
+slot = slot-primary
+category = sniper
+tags = unique
+index = 335
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = vietnam3-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_VIETNAM3
+    }
+}

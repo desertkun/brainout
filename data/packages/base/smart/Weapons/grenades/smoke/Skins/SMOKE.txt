@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-smoke
+id = skin-instrument-grenade-smoke-default
+name = ITEM_SPECIAL_FLASH
+slot = sl-grn-smoke

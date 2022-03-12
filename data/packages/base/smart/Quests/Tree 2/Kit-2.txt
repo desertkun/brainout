@@ -1,0 +1,56 @@
+class = content.quest.Quest
+id = quest-kit-2
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-kit
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-m4a1
+        target = 1
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-pistol
+        target = 1
+    }
+}
+
+group = kit
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_KIT
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 1
+    }
+    {
+        action = addstat
+        id = gears
+        amount = 15
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 100
+    }
+    {
+        action = addstat
+        id = skillpts
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 500
+    }
+]

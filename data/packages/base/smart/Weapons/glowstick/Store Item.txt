@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-glowstick-red
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+description = ITEM_SPECIAL_GLOWSTICK_DESC
+id = sl-grn-glowstick
+instrument = {
+    id = instrument-glowstick-red
+    skin = skin-instrument-glowstick-red
+}
+items = []
+name = ITEM_SPECIAL_GLOWSTICK
+slot = slot-special
+category = special
+tags = level
+index = 5
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

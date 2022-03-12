@@ -1,0 +1,25 @@
+"DepotBuildConfig"
+{
+  "DepotID" "578311"
+
+  "FileMapping"
+  {
+    "LocalPath" "./obfuscated/brainout-steam.jar"
+    "DepotPath" "."
+    "recursive" "0"
+  }
+
+  "FileMapping"
+  {
+    "LocalPath" "./client/steam_appid.txt"
+    "DepotPath" "."
+    "recursive" "0"
+  }
+
+  "FileMapping"
+  {
+    "LocalPath" "./client/packages/*.zip"
+    "DepotPath" "./packages"
+    "recursive" "0"
+  }
+}

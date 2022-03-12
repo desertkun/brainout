@@ -1,0 +1,66 @@
+class = content.quest.Quest
+id = quest-kit-4
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-kit
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-luger
+        target = 1
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-mosin
+        target = 1
+    }
+    3 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-mp40
+        target = 1
+    }
+    4 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-stg
+        target = 1
+    }
+    5 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-ppsh
+        target = 1
+    }
+}
+
+group = kit
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_KIT
+
+rewards = [
+    {
+        action = unlock
+        id = case-gold
+        amount = 1
+    }
+    {
+        action = unlock
+        id = case-standard
+        amount = 1
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 500
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 750
+    }
+]

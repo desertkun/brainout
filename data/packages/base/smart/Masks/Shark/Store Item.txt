@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-shark
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = shark
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = doublekills-mask-shark
+        goal = GOAL_DOUBLEKILL_USING_MASK
+        value = 10
+    }
+    {
+        amount = 50000
+        class = content.components.AddStatItemComponent
+        stat = ru
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-shark
+items = []
+name = ITEM_MASK_SHARK
+player = player-mask-shark
+slot = slot-mask
+category = mask
+tags = unique
+index = 18
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-shark
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_SUMMER_BLUEPRINT
+    }
+}

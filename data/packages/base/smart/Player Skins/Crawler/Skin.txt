@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = crawler
+id = skin-player-crawler
+name = ITEM_PLAYER_SKIN_CRAWLER

@@ -1,0 +1,3485 @@
+{"content": {
+    "explosion-tail-1": {
+        "class": "content.effect.GunshotTailSoundEffect",
+        "key": "explosion-tail",
+        "sound": "sounds:sounds/gunshot-tail-1.mp3",
+        "delayCheck": 0.1,
+        "distance": 2,
+        "pitch": {
+            "min": 0.8,
+            "max": 0.9
+        },
+        "tag": "client"
+    },
+    "gunshot-tail-1": {
+        "class": "content.effect.GunshotTailSoundEffect",
+        "key": "gunshot-tail",
+        "sound": "sounds:sounds/gunshot-tail-1.mp3",
+        "delayCheck": 0.2,
+        "distance": 2,
+        "pitch": {
+            "min": 0.9,
+            "max": 1.1
+        },
+        "tag": "client"
+    },
+    "gunshot-tail-2": {
+        "class": "content.effect.GunshotTailSoundEffect",
+        "key": "gunshot-tail",
+        "sound": "sounds:sounds/gunshot-tail-2.mp3",
+        "delayCheck": 0.2,
+        "distance": 2,
+        "pitch": {
+            "min": 0.9,
+            "max": 1.1
+        },
+        "tag": "client"
+    },
+    "roks-3-ext-sound": {
+        "class": "content.effect.StartStopSoundEffect",
+        "start": "sounds:sounds/roks3-start.mp3",
+        "loop": "sounds:sounds/roks3-loop.mp3",
+        "stop": "sounds:sounds/roks3-end.mp3",
+        "startTime": 5.35,
+        "stopTime": 0.3,
+        "tag": "client"
+    },
+    "chainsaw-ext-sound": {
+        "class": "content.effect.StartStopSoundEffect",
+        "start": "sounds:sounds/chainsaw-start.mp3",
+        "loop": "sounds:sounds/chainsaw-loop.mp3",
+        "stop": "sounds:sounds/chainsaw-end.mp3",
+        "startTime": 14,
+        "stopTime": 1.5,
+        "tag": "client"
+    },
+    "clip-insert": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/clip-insert.mp3",
+        "tag": "client"
+    },
+    "molotov-burning-1-snd": {
+        "distance": 0.25,
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/burning-1.mp3",
+        "tag": "client"
+    },
+    "molotov-burning-2-snd": {
+        "distance": 0.25,
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/burning-2.mp3",
+        "tag": "client"
+    },
+    "molotov-explode-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/molotov.mp3",
+        "tag": "client"
+    },
+    "smoke-grenade-activate-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/smoke.mp3",
+        "tag": "client"
+    },
+    "m134-buildup": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m134-buildup.mp3",
+        "tag": "client"
+    },
+    "sv98-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sv98-shoot-1.mp3",
+        "tag": "client"
+    },
+    "g36c-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g36c-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ares-shrike-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ares-shrike-shoot-1.mp3",
+        "tag": "client"
+    },
+    "hk21-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hk21-shoot-1.mp3",
+        "tag": "client"
+    },
+    "hk21-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hk21-shoot-2.mp3",
+        "tag": "client"
+    },
+    "gilboa-snake-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/gilboa-snake-shoot-1.mp3",
+        "tag": "client"
+    },
+    "msp-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/msp-shoot-1.mp3",
+        "tag": "client"
+    },
+    "rpk74-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/rpk74-shoot-1.mp3",
+        "tag": "client"
+    },
+    "kac-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/kac-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sr47-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sr47-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sr47-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sr47-shoot-2.mp3",
+        "tag": "client"
+    },
+    "sr47-shoot-silenced-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sr47-shoot-silenced-1.mp3",
+        "tag": "client"
+    },
+    "pp2000-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pp2000-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mp7-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mp7-shoot-1.mp3",
+        "tag": "client"
+    },
+    "gewehr43-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/gewehr43-shoot-1.mp3",
+        "tag": "client"
+    },"keltec-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/keltec-shoot-1.mp3",
+        "tag": "client"
+    },"keltec-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/keltec-shoot-2.mp3",
+        "tag": "client"
+    },"keltec-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/keltec-shoot-3.mp3",
+        "tag": "client"
+	},
+    "ak9-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak9-shoot-1.mp3",
+        "tag": "client"
+	},
+    "taurus-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/taurus-shoot-1.mp3",
+        "tag": "client"
+	},
+    "serf-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/serf-shoot-1.mp3",
+        "tag": "client"
+    },
+    "serf-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/serf-shoot-3.mp3",
+        "tag": "client"
+    },
+    "serf-pull": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/serf-pull.mp3",
+        "tag": "client"
+    },
+    "imbel-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/taurus-shoot-1.mp3",
+        "tag": "client"
+	},
+    "paint-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/paint-shoot-1.mp3",
+        "tag": "client"
+		
+	},
+    "paint-shoot-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/paint-shoot-2.mp3",
+        "tag": "client"
+		
+	},
+    "paint-shoot-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/paint-shoot-3.mp3",
+        "tag": "client"
+		
+	},
+    "ar57-reload-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ar57-reload.mp3",
+        "tag": "client"
+	},
+    "ar57-fetch-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ar57-fetch.mp3",
+        "tag": "client"
+	},
+    "gilboa-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gilboa-reload.mp3",
+        "tag": "client"
+	},
+    "gilboa-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gilboa-fetch.mp3",
+        "tag": "client"
+	},
+    "m1-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m1-shoot-1.mp3",
+        "tag": "client"
+    },  
+    "1887-shoot": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/1887-shoot.mp3",
+        "tag": "client"
+    },    
+    "aac-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aac-shoot-1.mp3",
+        "tag": "client"
+		
+    },    "m60-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m60-shoot-1.mp3",
+        "tag": "client"
+		
+    },
+    "9a91-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/9a91-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fg42-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/fg42-reload.mp3",
+        "tag": "client"
+    },
+    "fg42-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/fg42-fetch.mp3",
+        "tag": "client"
+    },
+    "chainsaw-idle-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/chainsaw-idle-1.mp3",
+        "tag": "client"
+    },
+    "chainsaw-idle-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/chainsaw-idle-2.mp3",
+        "tag": "client"
+    },
+    "m72-open": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m72-open.mp3",
+        "tag": "client"
+    },
+    "fg42-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fg42-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fg42-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fg42-shoot-2.mp3",
+        "tag": "client"
+    },
+    "fg42-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fg42-shoot-3.mp3",
+        "tag": "client"
+    },
+    "m98k-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m98k-shoot-1.mp3",
+        "tag": "client"
+    },
+    "m98b-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m98b-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fiveseven-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fiveseven-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fiveseven-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fiveseven-shoot-2.mp3",
+        "tag": "client"
+    },
+    "fiveseven-shoot-silenced-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fiveseven-shoot-silenced-1.mp3",
+        "tag": "client"
+    },
+    "mp443-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mp443-shoot-1.mp3",
+        "tag": "client"
+    },
+    "bow-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bow-shoot-1.mp3",
+        "tag": "client"
+    },
+    "bow-cock": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bow-cock.mp3",
+        "tag": "client"
+    },
+    "vehicle-engine-startup": {
+        "class": "content.effect.SoundEffect",
+        "tag": "client",
+        "sound": "sounds:sounds/vehicle-engine-startup.mp3"
+    },
+    "vehicle-engine-startup-fail": {
+        "class": "content.effect.SoundEffect",
+        "tag": "client",
+        "sound": "sounds:sounds/vehicle-engine-fail.mp3"
+    },
+    "vehicle-engine-stop": {
+        "class": "content.effect.SoundEffect",
+        "tag": "client",
+        "sound": "sounds:sounds/vehicle-engine-stop.mp3"
+    },
+    "vehicle-engine-idle": {
+        "class": "content.effect.MusicEffect",
+        "tag": "client",
+        "loop": true,
+        "music": "sounds:sounds/vehicle-engine-loop.mp3"
+    },
+    "vehicle-engine-run": {
+        "class": "content.effect.MusicEffect",
+        "tag": "client",
+        "loop": false,
+        "music": "sounds:sounds/vehicle-run.mp3"
+    },
+    "generator-startup": {
+        "class": "content.effect.SoundEffect",
+        "tag": "client",
+        "sound": "sounds:sounds/generator-startup.mp3"
+    },
+    "generator-startup-fail": {
+        "class": "content.effect.SoundEffect",
+        "tag": "client",
+        "sound": "sounds:sounds/generator-fail.mp3"
+    },
+    "generator-stop": {
+        "class": "content.effect.SoundEffect",
+        "tag": "client",
+        "sound": "sounds:sounds/generator-stop.mp3"
+    },
+    "generator-idle": {
+        "class": "content.effect.MusicEffect",
+        "tag": "client",
+        "loop": true,
+        "music": "sounds:sounds/generator-loop.mp3"
+    },
+    "petrol-pour": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/petrol-pour.mp3",
+        "tag": "client"
+    },
+    "battery-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/battery-move-1.mp3",
+        "tag": "client"
+    },
+    "ignition-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ignition-move-1.mp3",
+        "tag": "client"
+    },
+    "petrol-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/petrol-move-1.mp3",
+        "tag": "client"
+    },
+    "petrol-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/petrol-move-2.mp3",
+        "tag": "client"
+    },
+    "petrol-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/petrol-move-3.mp3",
+        "tag": "client"
+    },
+    "fort12-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fort12-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fort12-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fort12-shoot-2.mp3",
+        "tag": "client"
+    },
+    "tul1-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tul1-shoot-1.mp3",
+        "tag": "client"
+    }, 
+	"stoeger-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/stoeger-shoot-1.mp3",
+        "tag": "client"
+    },
+    "scout-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/scout-shoot-1.mp3",
+        "tag": "client"
+    },
+    "scout-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/scout-shoot-2.mp3",
+        "tag": "client"
+    },
+    "pdrc-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pdrc-shoot-1.mp3",
+        "tag": "client"
+    },
+    "pdrc-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pdrc-shoot-2.mp3",
+        "tag": "client"
+    },    
+    "ft200m-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ft200m-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ft200m-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ft200m-shoot-2.mp3",
+        "tag": "client"
+    },
+    "sgi5k-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sgi5k-shoot-1.mp3",
+        "tag": "client"
+    },
+    "jericho-shoot": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/jericho-shoot.mp3",
+        "tag": "client"
+    },
+    "sgi5k-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sgi5k-shoot-2.mp3",
+        "tag": "client"
+    },
+    "buzzer-sound": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/buzzer.mp3",
+        "tag": "client"
+    },
+    "target-open-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-open-1.mp3",
+        "tag": "client"
+    },
+    "target-open-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-open-2.mp3",
+        "tag": "client"
+    },
+    "target-open-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-open-3.mp3",
+        "tag": "client"
+    },
+    "target-open-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-open-4.mp3",
+        "tag": "client"
+    },
+    "junk-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/junk-move-1.mp3",
+        "tag": "client"
+    },
+    "cookie-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/cookie-1.mp3",
+        "tag": "client"
+    },
+    "cookie-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/cookie-2.mp3",
+        "tag": "client"
+    },
+    "cookie-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/cookie-3.mp3",
+        "tag": "client"
+    },
+    "cookie-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/cookie-4.mp3",
+        "tag": "client"
+    },
+    "junk-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/junk-move-2.mp3",
+        "tag": "client"
+    },
+    "junk-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/junk-move-3.mp3",
+        "tag": "client"
+    },
+    "junk-move-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/junk-move-4.mp3",
+        "tag": "client"
+    },
+    "pills-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pills-move-1.mp3",
+        "tag": "client"
+    },
+    "pills-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pills-move-2.mp3",
+        "tag": "client"
+    },
+    "pills-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pills-move-3.mp3",
+        "tag": "client"
+    },
+    "valuables-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/plastic-solid-move-1.mp3",
+        "tag": "client"
+    },
+    "valuables-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/plastic-solid-move-2.mp3",
+        "tag": "client"
+    },
+    "ru-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ru-move-1.mp3",
+        "tag": "client"
+    },
+    "ru-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ru-move-2.mp3",
+        "tag": "client"
+    },
+    "ru-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ru-move-3.mp3",
+        "tag": "client"
+    },
+    "bandages-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bandages-move-1.mp3",
+        "tag": "client"
+    },
+    "keys-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/keys-move-1.mp3",
+        "tag": "client"
+    },
+    "keys-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/keys-move-2.mp3",
+        "tag": "client"
+    },
+    "keys-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/keys-move-3.mp3",
+        "tag": "client"
+    },
+    "keys-move-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/keys-move-4.mp3",
+        "tag": "client"
+    },
+    "eat-radx-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/radx-used.mp3",
+        "tag": "client"
+    },
+    "bandages-open-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bandages-used.mp3",
+        "tag": "client"
+    },
+    "canned-foods-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/canned-foods-move-1.mp3",
+        "tag": "client"
+    },
+    "canned-foods-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/canned-foods-move-2.mp3",
+        "tag": "client"
+    },
+    "canned-foods-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/canned-foods-move-3.mp3",
+        "tag": "client"
+    },
+    "canned-foods-open-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/canned-food-open.mp3",
+        "tag": "client"
+    },
+    "energy-drink-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/energy-drink-move-1.mp3",
+        "tag": "client"
+    },
+    "boards-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/boards-move-1.mp3",
+        "tag": "client"
+    },
+    "boards-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/boards-move-2.mp3",
+        "tag": "client"
+    },
+    "logs-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/logs-move-1.mp3",
+        "tag": "client"
+    },
+    "logs-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/logs-move-2.mp3",
+        "tag": "client"
+    },
+    "matches-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/matches-move-1.mp3",
+        "tag": "client"
+    },
+    "sticks-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/sticks-move-1.mp3",
+        "tag": "client"
+    },
+    "drink-energy-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/energy-drink-open.mp3",
+        "tag": "client"
+    },
+    "medikit-open-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/medikit-used.mp3",
+        "tag": "client"
+    },
+    "sticks-fire-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/sticks-fire-used.mp3",
+        "tag": "client"
+    },
+    "sticks-fire-snd-success": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/sticks-fire-used-success.mp3",
+        "tag": "client"
+    },
+    "water-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/water-move-1.mp3",
+        "tag": "client"
+    },
+    "water-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/water-move-2.mp3",
+        "tag": "client"
+    },
+    "drink-water-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/water-used.mp3",
+        "tag": "client"
+    },
+    "drink-vodka-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/vodka-used.mp3",
+        "tag": "client"
+    },
+    "container-item-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/container-move-1.mp3",
+        "tag": "client"
+    },
+    "container-item-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/container-move-2.mp3",
+        "tag": "client"
+    },
+    "container-item-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/container-move-3.mp3",
+        "tag": "client"
+    },
+    "container-item-move-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/container-move-4.mp3",
+        "tag": "client"
+    },
+    "air-conditioning-snd": {
+        "class": "content.effect.StaticSoundEffect",
+        "distance": 0.25,
+        "loop": true,
+        "sound": "sounds:sounds/air-conditioning.mp3",
+        "tag": "client"
+    },
+    "ar15-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ar15-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ar18-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ar18-shoot-1.mp3",
+        "tag": "client"
+    },
+    "scorpion-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/scorpion-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fnx45-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fnx45-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fnx45-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fnx45-shoot-2.mp3",
+        "tag": "client"
+    },
+    "m110-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m110-shoot-1.mp3",
+        "tag": "client"
+    },
+    "hksl8-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hksl8-shoot-1.mp3",
+        "tag": "client"
+    },
+    "hksl8-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hksl8-shoot-2.mp3",
+        "tag": "client"
+    },
+    "hksl8-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hksl8-shoot-3.mp3",
+        "tag": "client"
+    },
+    "hksl8-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hksl8-shoot-4.mp3",
+        "tag": "client"
+    },
+    "zastava-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/zastava-shoot-1.mp3",
+        "tag": "client"
+    },
+    "zastava-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/zastava-shoot-2.mp3",
+        "tag": "client"
+    },
+    "tar21-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tar21-shoot-1.mp3",
+        "tag": "client"
+    },
+    "tar21-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tar21-shoot-2.mp3",
+        "tag": "client"
+    },
+    "grenade-roll-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/grenade-roll-1.mp3",
+        "tag": "client"
+    },
+    "grenade-roll-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/grenade-roll-2.mp3",
+        "tag": "client"
+    },
+    "grenade-roll-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/grenade-roll-3.mp3",
+        "tag": "client"
+    },
+    "grenade-roll-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/grenade-roll-4.mp3",
+        "tag": "client"
+    },
+    "pumpkin-destroyed-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pumpkin-destroyed-1.mp3",
+        "tag": "client"
+    },
+    "pumpkin-destroyed-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pumpkin-destroyed-2.mp3",
+        "tag": "client"
+    },
+    "sks-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/sks-reload.mp3",
+        "tag": "client"
+    },
+    "sks-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/sks-fetch.mp3",
+        "tag": "client"
+    },
+    "veresk-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/veresk-shoot-1.mp3",
+        "tag": "client"
+    },
+    "veresk-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/veresk-shoot-2.mp3",
+        "tag": "client"
+    },
+    "veresk-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/veresk-shoot-3.mp3",
+        "tag": "client"
+    },
+    "flare-reload-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/flare-reload-1.mp3",
+        "tag": "client"
+    },
+    "flare-drop-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/flare-drop-1.mp3",
+        "tag": "client"
+    },
+    "flare-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/flare-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sks-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sks-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sks-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sks-shoot-2.mp3",
+        "tag": "client"
+    },
+    "sks-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sks-shoot-3.mp3",
+        "tag": "client"
+    },
+    "sks-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sks-shoot-4.mp3",
+        "tag": "client"
+    },
+    "fnminimi-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fnminimi-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fnminimi-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fnminimi-shoot-2.mp3",
+        "tag": "client"
+    },
+    "fnminimi-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fnminimi-shoot-3.mp3",
+        "tag": "client"
+    },
+    "fnminimi-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fnminimi-shoot-4.mp3",
+        "tag": "client"
+    },
+    "lr300-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/lr300-shoot-1.mp3",
+        "tag": "client"
+    },
+    "shield-hit-damaged-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shield-hit-damaged-1.mp3",
+        "tag": "client"
+    },
+    "shield-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shield-hit-1.mp3",
+        "tag": "client"
+    },
+    "shield-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shield-hit-2.mp3",
+        "tag": "client"
+    },
+    "galil-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/galil-shoot-1.mp3",
+        "tag": "client"
+    },
+    "hecate-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hecate-shoot-1.mp3",
+        "tag": "client"
+    },
+    "rhino-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/rhino-shoot-1.mp3",
+        "tag": "client"
+    },
+    "rhino-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/rhino-shoot-2.mp3",
+        "tag": "client"
+    },
+    "rhino-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/rhino-shoot-3.mp3",
+        "tag": "client"
+    },
+    "clan-kill-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/clan-kill-1.mp3",
+        "tag": "client"
+    },
+    "clan-kill-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/clan-kill-2.mp3",
+        "tag": "client"
+    },
+    "clan-kill-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/clan-kill-3.mp3",
+        "tag": "client"
+    },
+    "clan-kill-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/clan-kill-4.mp3",
+        "tag": "client"
+    },
+
+    "guitar-note-36": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.6299605249474366,
+        "tag": "client"
+    },
+    "guitar-note-37": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.6674199270850172,
+        "tag": "client"
+    },
+    "guitar-note-38": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.7071067811865475,
+        "tag": "client"
+    },
+    "guitar-note-39": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.7491535384383408,
+        "tag": "client"
+    },
+    "guitar-note-40": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.7937005259840998,
+        "tag": "client"
+    },
+    "guitar-note-41": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.8408964152537146,
+        "tag": "client"
+    },
+    "guitar-note-42": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.8908987181403393,
+        "tag": "client"
+    },
+    "guitar-note-43": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 0.9438743126816935,
+        "tag": "client"
+    },
+    "guitar-note-44": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "guitar-note-45": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 1.0594630943592953,
+        "tag": "client"
+    },
+    "guitar-note-46": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 1.122462048309373,
+        "tag": "client"
+    },
+    "guitar-note-47": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-44.wav",
+        "pitch": 1.189207115002721,
+        "tag": "client"
+    },
+
+    "guitar-note-48": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 0.8408964152537146,
+        "tag": "client"
+    },
+    "guitar-note-49": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 0.8908987181403393,
+        "tag": "client"
+    },
+    "guitar-note-50": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 0.9438743126816935,
+        "tag": "client"
+    },
+    "guitar-note-51": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "guitar-note-52": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 1.0594630943592953,
+        "tag": "client"
+    },
+    "guitar-note-53": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 1.122462048309373,
+        "tag": "client"
+    },
+    "guitar-note-54": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-51.wav",
+        "pitch": 1.189207115002721,
+        "tag": "client"
+    },
+
+
+    "guitar-note-55": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 0.8408964152537146,
+        "tag": "client"
+    },
+    "guitar-note-56": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 0.8908987181403393,
+        "tag": "client"
+    },
+    "guitar-note-57": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 0.9438743126816935,
+        "tag": "client"
+    },
+    "guitar-note-58": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "guitar-note-59": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 1.0594630943592953,
+        "tag": "client"
+    },
+    "guitar-note-60": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 1.122462048309373,
+        "tag": "client"
+    },
+    "guitar-note-61": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-58.wav",
+        "pitch": 1.189207115002721,
+        "tag": "client"
+    },
+
+
+    "guitar-note-62": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 0.8408964152537146,
+        "tag": "client"
+    },
+    "guitar-note-63": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 0.8908987181403393,
+        "tag": "client"
+    },
+    "guitar-note-64": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 0.9438743126816935,
+        "tag": "client"
+    },
+    "guitar-note-65": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "guitar-note-66": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 1.0594630943592953,
+        "tag": "client"
+    },
+    "guitar-note-67": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 1.122462048309373,
+        "tag": "client"
+    },
+    "guitar-note-68": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-65.wav",
+        "pitch": 1.189207115002721,
+        "tag": "client"
+    },
+
+
+    "guitar-note-69": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch": 0.8408964152537146,
+        "tag": "client"
+    },
+    "guitar-note-70": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch":  0.8908987181403393,
+        "tag": "client"
+    },
+    "guitar-note-71": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch": 0.9438743126816935,
+        "tag": "client"
+    },
+    "guitar-note-72": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "guitar-note-73": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch": 1.0594630943592953,
+        "tag": "client"
+    },
+    "guitar-note-74": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch": 1.122462048309373,
+        "tag": "client"
+    },
+    "guitar-note-75": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-72.wav",
+        "pitch": 1.189207115002721,
+        "tag": "client"
+    },
+
+
+    "guitar-note-76": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 0.8408964152537146,
+        "tag": "client"
+    },
+    "guitar-note-77": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 0.8908987181403393,
+        "tag": "client"
+    },
+    "guitar-note-78": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 0.9438743126816935,
+        "tag": "client"
+    },
+    "guitar-note-79": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "guitar-note-80": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 1.0594630943592953,
+        "tag": "client"
+    },
+    "guitar-note-81": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 1.122462048309373,
+        "tag": "client"
+    },
+    "guitar-note-82": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 1.189207115002721,
+        "tag": "client"
+    },
+    "guitar-note-83": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 1.2599210498948732,
+        "tag": "client"
+    },
+    "guitar-note-84": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/note-79.wav",
+        "pitch": 1.3348398541700344,
+        "tag": "client"
+    },
+
+
+    "electro-guitar-note-36": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-d2.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-37": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-d2.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-38": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-d2.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-39": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-d2.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-40": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-d2.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-41": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-g2.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-42": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-g2.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-43": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-g2.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-44": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-g2.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-45": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-g2.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-46": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-c3.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-47": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-c3.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-48": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-c3.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-49": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-c3.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-50": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-c3.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-51": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-f3.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-52": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-f3.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-53": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-f3.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-54": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-f3.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-55": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-f3.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-56": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-ad3.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-57": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-ad3.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-58": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-ad3.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-59": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-ad3.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-60": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-ad3.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-61": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-dd4.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-62": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-dd4.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-63": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-dd4.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-64": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-dd4.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-65": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-dd4.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-66": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-gd4.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-67": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-gd4.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-68": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-gd4.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-69": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-gd4.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-70": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-gd4.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-71": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-cd5.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-72": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-cd5.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-73": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-cd5.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-74": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-cd5.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-75": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-cd5.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-76": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-fd5.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-77": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-fd5.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-78": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-fd5.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-79": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-fd5.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+    "electro-guitar-note-80": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-fd5.wav",
+        "pitch": 1.12246,
+        "tag": "client"
+    },
+
+    "electro-guitar-note-81": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-b5.wav",
+        "pitch": 0.8909,
+        "tag": "client"
+    },
+    "electro-guitar-note-82": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-b5.wav",
+        "pitch": 0.94387,
+        "tag": "client"
+    },
+    "electro-guitar-note-83": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-b5.wav",
+        "pitch": 1,
+        "tag": "client"
+    },
+    "electro-guitar-note-84": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/eg-b5.wav",
+        "pitch": 1.05946,
+        "tag": "client"
+    },
+
+
+    "mdrc-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mdrc-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mdrc-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mdrc-reload-snd.mp3",
+        "tag": "client"
+    },
+    "mdrc-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mdrc-fetch-snd.mp3",
+        "tag": "client"
+    },
+    "mac10-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mac10-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mac10-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mac10-shoot-2.mp3",
+        "tag": "client"
+    },
+    "mac10-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mac10-shoot-3.mp3",
+        "tag": "client"
+    },
+    "beretta-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/beretta-shoot-1.mp3",
+        "tag": "client"
+    },
+    "beretta-shoot-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/beretta-shoot-2.mp3",
+        "tag": "client"
+    },
+    "cz75-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/cz75-shoot-1.mp3",
+        "tag": "client"
+    },
+    "tec9-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tec9-shoot-1.mp3",
+        "tag": "client"
+    },
+    "vsk94-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/vsk94-shoot-1.mp3",
+        "tag": "client"
+    },
+    "vss-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/vss-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ak12-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak12-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ak12-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak12-shoot-2.mp3",
+        "tag": "client"
+    },
+    "ak74-reload-fast-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-reload-fast.mp3",
+        "tag": "client"
+    },
+    "vityaz-reload-fast-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/vityaz-reload-fast.mp3",
+        "tag": "client"
+    },
+    "ar15-reload-fast-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ar15-reload-fast.mp3",
+        "tag": "client"
+    },
+    "ak74-reload-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-reload.mp3",
+        "tag": "client"
+    },
+    "ak74-fetch-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-fetch.mp3",
+        "tag": "client"
+    },
+    "m110-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m110-reload.mp3",
+        "tag": "client"
+    },
+    "m110-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m110-fetch.mp3",
+        "tag": "client"
+    },
+    "vsk94-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/vsk94-reload.mp3",
+        "tag": "client"
+    },
+    "vsk94-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/vsk94-fetch.mp3",
+        "tag": "client"
+    },
+    "supersonic-snap": {
+        "class": "content.effect.RandomSoundEffect",
+        "sounds": [
+            "sounds:sounds/supersonic-snap-1.mp3",
+            "sounds:sounds/supersonic-snap-2.mp3"
+        ],
+        "soundDistance": 4.5,
+        "minimumDistance": 128,
+        "tag": "client"
+    },
+    "airsoft-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/airsoft-shoot-1.mp3",
+        "tag": "client"
+    },
+    "airsoft-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/airsoft-shoot-2.mp3",
+        "tag": "client"
+    },
+    "ak74-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ak74-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-shoot-2.mp3",
+        "tag": "client"
+    },
+    "ak74-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-shoot-3.mp3",
+        "tag": "client"
+    },
+    "ak74-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-shoot-4.mp3",
+        "tag": "client"
+    },
+    "ak74-shoot-5": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-shoot-5.mp3",
+        "tag": "client"
+    },
+    "ak74-shoot-6": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74-shoot-6.mp3",
+        "tag": "client"
+    },
+    "svu-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/svu-shoot-1.mp3",
+        "tag": "client"
+    },
+    "rpg7-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/rpg7-shoot-1.mp3",
+        "tag": "client"
+    },
+    "rpg7-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/rpg7-reload.mp3",
+        "tag": "client"
+    },
+    "rpg7-engine-loop": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/rpg7-engine-loop.mp3",
+        "loop": true,
+        "tag": "client"
+    },
+    "ak74m-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74m-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ak74m-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74m-shoot-2.mp3",
+        "tag": "client"
+    },
+    "ak74m-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74m-shoot-3.mp3",
+        "tag": "client"
+    },
+    "ak74m-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74m-shoot-4.mp3",
+        "tag": "client"
+    },
+    "ak74m-shoot-5": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74m-shoot-5.mp3",
+        "tag": "client"
+    },
+    "ak74m-shoot-6": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak74m-shoot-6.mp3",
+        "tag": "client"
+    },
+    "akm74-2-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/akm74-2-shoot-1.mp3",
+        "tag": "client"
+    },
+    "dvl10-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/dvl10-shoot-1.mp3",
+        "tag": "client"
+    },
+    "aksu-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aksu-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ammo-received": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ammo-received.mp3",
+        "tag": "client"
+    },
+    "an94-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/an94-shoot-1.mp3",
+        "tag": "client"
+    },
+    "an94-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/an94-shoot-2.mp3",
+        "tag": "client"
+    },
+    "aug-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aug-shoot-1.mp3",
+        "tag": "client"
+    },
+    "aug-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aug-shoot-2.mp3",
+        "tag": "client"
+    },
+    "bizon-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/bizon-shoot-1.mp3",
+        "tag": "client"
+    },
+    "bizon-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/bizon-shoot-2.mp3",
+        "tag": "client"
+    },
+    "bullet-flyby-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-flyby-1.mp3",
+        "tag": "client"
+    },
+    "bullet-flyby-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-flyby-2.mp3",
+        "tag": "client"
+    },
+    "bullet-flyby-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-flyby-3.mp3",
+        "tag": "client"
+    },
+    "bullet-flyby-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-flyby-4.mp3",
+        "tag": "client"
+    },
+    "colt-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/colt-reload.mp3",
+        "tag": "client"
+    },
+    "colt-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/colt-fetch.mp3",
+        "tag": "client"
+    },
+    "colt-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/colt-shoot-1.mp3",
+        "tag": "client"
+    },
+    "colt-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/colt-shoot-2.mp3",
+        "tag": "client"
+    },
+    "colt-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/colt-shoot-3.mp3",
+        "tag": "client"
+    },
+    "colt-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/colt-shoot-4.mp3",
+        "tag": "client"
+    },
+    "colt-shoot-5": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/colt-shoot-5.mp3",
+        "tag": "client"
+    },
+    "colt-shoot-6": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/colt-shoot-6.mp3",
+        "tag": "client"
+    },
+    "crow-kark-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/crow-1.mp3",
+        "tag": "client"
+    },
+    "crow-kark-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/crow-2.mp3",
+        "tag": "client"
+    },
+    "crow-kark-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/crow-3.mp3",
+        "tag": "client"
+    },
+    "crow-kark-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/crow-4.mp3",
+        "tag": "client"
+    },
+    "crow-kark-5": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/crow-5.mp3",
+        "tag": "client"
+    },
+    "desert-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/deagle-shoot-1.mp3",
+        "tag": "client"
+    },
+    "drill-launch-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/drill-launch-1.mp3",
+        "tag": "client"
+    },
+    "explode-effect-1-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/explosion-1.mp3",
+        "tag": "client"
+    },
+    "flare-explode-effect-1-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/flare-explosion-1.mp3",
+        "tag": "client"
+    },
+    "famas-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/famas-shoot-1.mp3",
+        "tag": "client"
+    },
+    "famas-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/famas-shoot-2.mp3",
+        "tag": "client"
+    },
+    "flashbang-effect-1-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/flashbang.mp3",
+        "tag": "client"
+    },
+    "fn2000-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fn2000-shoot-1.mp3",
+        "tag": "client"
+    },
+    "fn2000-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/fn2000-shoot-2.mp3",
+        "tag": "client"
+    },
+    "g3-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/g3-reload.mp3",
+        "tag": "client"
+    },
+    "g3-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/g3-fetch.mp3",
+        "tag": "client"
+    },
+    "g3-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g3-shoot-1.mp3",
+        "tag": "client"
+    },
+    "g3-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g3-shoot-2.mp3",
+        "tag": "client"
+    },
+    "g3-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g3-shoot-3.mp3",
+        "tag": "client"
+    },
+    "g3-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g3-shoot-4.mp3",
+        "tag": "client"
+    },
+    "g36-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g36-shoot-1.mp3",
+        "tag": "client"
+    },
+    "g36-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/g36-shoot-2.mp3",
+        "tag": "client"
+    },
+    "garand-empty-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/garand-empty.mp3",
+        "tag": "client"
+    },
+    "garand-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/toz34-reload.mp3",
+        "tag": "client"
+    },
+    "garand-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/garand-shoot-1.mp3",
+        "tag": "client"
+    },
+    "qbz-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/qbz-shoot-1.mp3",
+        "tag": "client"
+    },
+    "qbz-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/qbz-shoot-2.mp3",
+        "tag": "client"
+    },
+    "qbz-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/qbz-shoot-3.mp3",
+        "tag": "client"
+    },
+    "qbz-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/qbz-shoot-4.mp3",
+        "tag": "client"
+    },
+    "geiger-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/geiger-1.mp3",
+        "tag": "client"
+    },
+    "geiger-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/geiger-2.mp3",
+        "tag": "client"
+    },
+    "geiger-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/geiger-3.mp3",
+        "tag": "client"
+    },
+    "geiger-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/geiger-4.mp3",
+        "tag": "client"
+    },
+    "geiger-5": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/geiger-5.mp3",
+        "tag": "client"
+    },
+    "geiger-6": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/geiger-6.mp3",
+        "tag": "client"
+    },
+    "gl-insert-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gl-insert.mp3",
+        "tag": "client"
+    },
+    "gl-insert-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gl-insert-2.mp3",
+        "tag": "client"
+    },
+    "gl-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gl-shoot-1.mp3",
+        "tag": "client"
+    },
+    "glock-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/glock-reload.mp3",
+        "tag": "client"
+    },
+    "glock-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/glock-fetch.mp3",
+        "tag": "client"
+    },
+    "glock-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/glock-shoot-1.mp3",
+        "tag": "client"
+    },
+    "glock-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/glock-shoot-2.mp3",
+        "tag": "client"
+    },
+    "glock-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/glock-shoot-3.mp3",
+        "tag": "client"
+    },
+    "ground-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-hit-1.mp3",
+        "tag": "client"
+    },
+    "ground-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-hit-2.mp3",
+        "tag": "client"
+    },
+    "ground-hit-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-hit-3.mp3",
+        "tag": "client"
+    },
+    "ground-hit-snd-5": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-hit-4.mp3",
+        "tag": "client"
+    },
+    "mud-step-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mud-step-1.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "mud-step-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mud-step-2.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "mud-step-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mud-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snow-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-snow-1.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snow-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-snow-2.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snow-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-snow-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snow-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-snow-4.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-1.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-2.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "ground-step-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ground-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "groza-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/groza-shoot-1.mp3",
+        "tag": "client"
+    },
+    "groza-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/groza-shoot-2.mp3",
+        "tag": "client"
+    },
+    "he-grenade-click-sound": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/he-grenade-click-1.mp3",
+        "tag": "client"
+    },
+    "he-grenade-throw-sound": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/he-grenade-throw-1.mp3",
+        "tag": "client"
+    },
+    "swamp-in-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/swamp-in.mp3",
+        "tag": "client"
+    },
+    "swamp-1-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/swamp-1.mp3",
+        "tag": "client"
+    },
+    "swamp-2-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/swamp-2.mp3",
+        "tag": "client"
+    },
+    "swamp-3-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/swamp-3.mp3",
+        "tag": "client"
+    },
+    "swamp-4-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/swamp-4.mp3",
+        "tag": "client"
+    },
+    "health-received": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/health-received.mp3",
+        "tag": "client"
+    },
+    "hit-marker-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/hit-marker.mp3",
+        "tag": "client"
+    },
+    "hit-marker-head-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/hit-marker-head.mp3",
+        "tag": "client"
+    },
+    "hk416-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hk416-shoot-1.mp3",
+        "tag": "client"
+    },
+    "hk416-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/hk416-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ice-destroy-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ice-destroy-1.mp3",
+        "tag": "client"
+    },
+    "ice-destroy-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ice-destroy-2.mp3",
+        "tag": "client"
+    },
+    "ice-destroy-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ice-destroy-3.mp3",
+        "tag": "client"
+    },
+    "ice-step-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ice-step-1.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "item-def-pickup": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gold-pickup.mp3",
+        "tag": "client"
+    },
+    "item-gold-pickup": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/gold-pickup.mp3",
+        "tag": "client"
+    },
+    "kirk-swing": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/kirk-swing.mp3",
+        "tag": "client"
+    },
+    "knife-swing": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/knife-swing.mp3",
+        "tag": "client"
+    },
+    "coltds-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/coltds-shoot-1.mp3",
+        "tag": "client"
+    },
+    "thompson-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/thompson-shoot-1.mp3",
+        "tag": "client"
+    },
+    "thompson-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/thompson-shoot-2.mp3",
+        "tag": "client"
+    },
+    "kriss-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/kriss-shoot-1.mp3",
+        "tag": "client"
+    },
+    "kriss-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/kriss-shoot-2.mp3",
+        "tag": "client"
+    },
+    "ls5-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ls5-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ls5-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ls5-shoot-2.mp3",
+        "tag": "client"
+    },
+    "luger-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-reload.mp3",
+        "tag": "client"
+    },
+    "luger-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/luger-fetch.mp3",
+        "tag": "client"
+    },
+    "luger-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pistol-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mauser-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mauser-shoot-1.mp3",
+        "tag": "client"
+    },
+    "m1014-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m1014-shoot-1.mp3",
+        "tag": "client"
+    },
+    "aek-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aek-shoot-1.mp3",
+        "tag": "client"
+    },
+    "aek-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aek-shoot-2.mp3",
+        "tag": "client"
+    },
+    "aek-shoot-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/aek-shoot-3.mp3",
+        "tag": "client"
+    },
+    "m1014-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m1014-shoot-2.mp3",
+        "tag": "client"
+    },
+    "m1014-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m1014-shoot-3.mp3",
+        "tag": "client"
+    },
+    "m4a1-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m4a1-reload.mp3",
+        "tag": "client"
+    },
+    "m4a1-reload-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-reload.mp3",
+        "tag": "client"
+    },
+    "add-round-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/add-round.mp3",
+        "tag": "client"
+    },
+    "m4a1-fetch-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-fetch.mp3",
+        "tag": "client"
+    },
+    "m4a1-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-shoot-1.mp3",
+        "tag": "client"
+    },
+    "m4a1-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-shoot-2.mp3",
+        "tag": "client"
+    },
+    "m4a1-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-shoot-3.mp3",
+        "tag": "client"
+    },
+    "m4a1-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-shoot-4.mp3",
+        "tag": "client"
+    },
+    "m4a1-shoot-5": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-shoot-5.mp3",
+        "tag": "client"
+    },
+    "m4a1-shoot-6": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m4a1-shoot-6.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-load-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-load-1.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-load-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-load-2.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-load-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-load-3.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-drop-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-drop-1.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-drop-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-drop-2.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-drop-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-drop-3.mp3",
+        "tag": "client"
+    },
+    "magnum-bullet-drop-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-bullet-drop-4.mp3",
+        "tag": "client"
+    },
+    "peacemaker-bullet-load-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/peacemaker-bullet-load-1.mp3",
+        "tag": "client"
+    },
+    "peacemaker-bullet-load-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/peacemaker-bullet-load-2.mp3",
+        "tag": "client"
+    },
+    "peacemaker-roll": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/peacemaker-roll.mp3",
+        "tag": "client"
+    },
+    "peacemaker-cocking": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/peacemaker-cocking.mp3",
+        "tag": "client"
+    },
+    "peacemaker-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/peacemaker-shoot-1.mp3",
+        "tag": "client"
+    },
+    "peacemaker-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/peacemaker-shoot-2.mp3",
+        "tag": "client"
+    },
+    "peacemaker-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/peacemaker-shoot-3.mp3",
+        "tag": "client"
+    },
+    "magnum-roll": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-roll.mp3",
+        "tag": "client"
+    },
+    "peacemaker-roll": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/peacemaker-roll.mp3",
+        "tag": "client"
+    },
+    "magnum-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/magnum-reload.mp3",
+        "tag": "client"
+    },
+    "magnum-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/magnum-shoot-1.mp3",
+        "tag": "client"
+    },
+    "makarov-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/makarov-shoot-1.mp3",
+        "tag": "client"
+    },
+    "makarov-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/makarov-shoot-2.mp3",
+        "tag": "client"
+    },
+    "metal-destroy-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-destroy-1.mp3",
+        "tag": "client"
+    },
+    "metal-destroy-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-destroy-2.mp3",
+        "tag": "client"
+    },
+    "metal-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-hit-1.mp3",
+        "tag": "client"
+    },
+    "metal-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-hit-2.mp3",
+        "tag": "client"
+    },
+    "metal-hit-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-hit-3.mp3",
+        "tag": "client"
+    },
+    "metal-impact-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-impact.mp3",
+        "tag": "client"
+    },
+    "metal-step-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-step-1.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "metal-step-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-step-2.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "metal-step-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "metal-step-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/metal-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "aa12-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aa12-shoot-1.mp3",
+        "tag": "client"
+    },
+    "aa12-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aa12-shoot-2.mp3",
+        "tag": "client"
+    },
+    "aa12-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/aa12-shoot-3.mp3",
+        "tag": "client"
+    },
+    "m14-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m14-shoot-1.mp3",
+        "tag": "client"
+    },
+    "m14-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m14-shoot-2.mp3",
+        "tag": "client"
+    },
+    "m14-shoot-silenced-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m14-shoot-silenced-1.mp3",
+        "tag": "client"
+    },
+    "m14-shoot-silenced-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m14-shoot-silenced-2.mp3",
+        "tag": "client"
+    },
+    "mosin-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mosin-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mosin-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mosin-shoot-2.mp3",
+        "tag": "client"
+    },
+    "mosin-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mosin-shoot-3.mp3",
+        "tag": "client"
+    },
+    "mp40-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp40-reload.mp3",
+        "tag": "client"
+    },
+    "mp40-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp40-fetch.mp3",
+        "tag": "client"
+    },
+    "tec9-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/tec9-reload.mp3",
+        "tag": "client"
+    },
+    "tec9-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/tec9-fetch.mp3",
+        "tag": "client"
+    },
+    "mp40-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mp40-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mp28-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mp28-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mp5-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp5-reload-snd.mp3",
+        "tag": "client"
+    },
+    "mp5-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp5-fetch-snd.mp3",
+        "tag": "client"
+    },
+    "sr3-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sr3-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sr3-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sr3-shoot-2.mp3",
+        "tag": "client"
+    },
+    "sr3-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sr3-shoot-3.mp3",
+        "tag": "client"
+    },
+    "mp5-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mp5-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mp5-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mp5-shoot-2.mp3",
+        "tag": "client"
+    },
+    "mp7-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp7-reload.mp3",
+        "tag": "client"
+    },
+    "mp7-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp7-fetch.mp3",
+        "tag": "client"
+    },
+    "mp7-shoot-silenced-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp7-shoot-silenced-1.mp3",
+        "tag": "client"
+    },
+    "open-fire-snd": {
+        "class": "content.effect.StaticSoundEffect",
+        "distance": 0.25,
+        "loop": true,
+        "sound": "sounds:sounds/open-fire.mp3",
+        "tag": "client"
+    },
+    "fluorescent-loop-snd": {
+        "class": "content.effect.StaticSoundEffect",
+        "distance": 1,
+        "loop": true,
+        "sound": "sounds:sounds/fluorescent-loop.mp3",
+        "tag": "client"
+    },
+    "p90-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/p90-shoot-1.mp3",
+        "tag": "client"
+    },
+    "p90-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/p90-shoot-2.mp3",
+        "tag": "client"
+    },
+    "ak105bullpup-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak105bullpup-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ak105bullpup-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ak105bullpup-shoot-2.mp3",
+        "tag": "client"
+    },
+    "pistol-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pistol-reload.mp3",
+        "tag": "client"
+    },
+    "pistol-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pistol-fetch.mp3",
+        "tag": "client"
+    },
+    "pistol-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pistol-shoot-1.mp3",
+        "tag": "client"
+    },
+    "pistol-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pistol-shoot-2.mp3",
+        "tag": "client"
+    },
+    "pistol-shoot-s-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pistol-shoot-s-1.mp3",
+        "tag": "client"
+    },
+    "pistol-shoot-s-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pistol-shoot-s-2.mp3",
+        "tag": "client"
+    },
+    "pistol-shoot-s-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pistol-shoot-s-3.mp3",
+        "tag": "client"
+    },
+    "pkm-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pkm-reload.mp3",
+        "tag": "client"
+    },
+    "pkm-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pkm-fetch.mp3",
+        "tag": "client"
+    },
+    "mg42-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mg42-reload.mp3",
+        "tag": "client"
+    },
+    "mg42-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mg42-fetch.mp3",
+        "tag": "client"
+    },
+    "pkm-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pkm-shoot-1.mp3",
+        "tag": "client"
+    },
+    "tt-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tt-shoot-1.mp3",
+        "tag": "client"
+    },
+    "tt-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tt-shoot-2.mp3",
+        "tag": "client"
+    },
+    "tt-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tt-shoot-3.mp3",
+        "tag": "client"
+    },
+    "tt-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/tt-shoot-4.mp3",
+        "tag": "client"
+    },
+    "rpd-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/rpd-shoot-1.mp3",
+        "tag": "client"
+    },
+    "pkm-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/pkm-shoot-2.mp3",
+        "tag": "client"
+    },
+    "mg42-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mg42-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mg34-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mg34-shoot-1.mp3",
+        "tag": "client"
+    },
+    "mg42-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mg42-shoot-2.mp3",
+        "tag": "client"
+    },
+    "mg42-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/mg42-shoot-3.mp3",
+        "tag": "client"
+    },
+    "player-blood-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/blood-hit-1.mp3",
+        "tag": "client"
+    },
+    "player-blood-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/blood-hit-2.mp3",
+        "tag": "client"
+    },
+    "player-blood-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/blood-hit-3.mp3",
+        "tag": "client"
+    },
+    "player-blood-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/blood-hit-4.mp3",
+        "tag": "client"
+    },
+    "player-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/player-hit-1.mp3",
+        "tag": "client"
+    },
+    "player-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/player-hit-2.mp3",
+        "tag": "client"
+    },
+    "player-jet-snd": {
+        "class": "content.effect.StaticSoundEffect",
+        "sound": "sounds:sounds/jet.mp3",
+        "tag": "client"
+    },
+    "ppsh-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/mp5-reload-snd.mp3",
+        "tag": "client"
+    },
+    "ppsh-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ppsh-shoot-1.mp3",
+        "tag": "client"
+    },
+    "pull-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pull-1.mp3",
+        "tag": "client"
+    },
+    "pull-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pull-2.mp3",
+        "tag": "client"
+    },
+    "pull-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pull-3.mp3",
+        "tag": "client"
+    },
+    "pull-snd-shotgun": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/pull-shotgun.mp3",
+        "tag": "client"
+    },
+    "m1897-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m1897-shoot-1.mp3",
+        "tag": "client"
+    },
+    "m1897-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/m1897-shoot-2.mp3",
+        "tag": "client"
+    },
+    "m1897-pull-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m1897-pull-1.mp3",
+        "tag": "client"
+    },
+    "m1897-pull-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m1897-pull-2.mp3",
+        "tag": "client"
+    },
+    "m1897-pull-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/m1897-pull-3.mp3",
+        "tag": "client"
+    },
+    "scar-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/scar-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sg552-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sg552-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sg552-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sg552-shoot-2.mp3",
+        "tag": "client"
+    },
+    "sg552-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sg552-shoot-3.mp3",
+        "tag": "client"
+    },
+    "shotgun-shell-1-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shotgun-shell-1.mp3",
+        "tag": "client"
+    },
+    "shotgun-shell-2-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shotgun-shell-2.mp3",
+        "tag": "client"
+    },
+    "shotgun-shell-3-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shotgun-shell-3.mp3",
+        "tag": "client"
+    },
+    "shotgun-shell-4-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shotgun-shell-4.mp3",
+        "tag": "client"
+    },
+    "shell-1-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shell-1.mp3",
+        "tag": "client"
+    },
+    "shell-2-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shell-2.mp3",
+        "tag": "client"
+    },
+    "shell-3-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shell-3.mp3",
+        "tag": "client"
+    },
+    "shell-4-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/shell-4.mp3",
+        "tag": "client"
+    },
+    "smg-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/smg-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sniper-reload-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sniper-reload.mp3",
+        "tag": "client"
+    },
+    "sniper-fetch-snd": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/sniper-fetch.mp3",
+        "tag": "client"
+    },
+    "sniper-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "distantDelay": true,
+        "sound": "sounds:sounds/sniper-shoot-1.mp3",
+        "tag": "client"
+    },
+    "sniper-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "distantDelay": true,
+        "sound": "sounds:sounds/sniper-shoot-2.mp3",
+        "tag": "client"
+    },
+    "sniper-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "distantDelay": true,
+        "sound": "sounds:sounds/sniper-shoot-3.mp3",
+        "tag": "client"
+    },
+    "snow-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/snow-hit-1.mp3",
+        "tag": "client"
+    },
+    "snow-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/snow-hit-2.mp3",
+        "tag": "client"
+    },
+    "snow-hit-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/snow-hit-3.mp3",
+        "tag": "client"
+    }, 
+	"paint-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/paint-hit-1.mp3",
+        "tag": "client"
+    },
+    "paint-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/paint-hit-2.mp3",
+        "tag": "client"
+    },
+    "paint-hit-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/paint-hit-3.mp3",
+        "tag": "client"
+    },
+    "toz34-reload-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/toz34-reload-1.mp3",
+        "tag": "client"
+    },
+    "toz34-reload-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/toz34-reload-2.mp3",
+        "tag": "client"
+    },
+    "toz34-open": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/toz34-open.mp3",
+        "tag": "client"
+    },
+    "toz34-close": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/toz34-close.mp3",
+        "tag": "client"
+    },
+    "spas12-reload-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/spas12-reload-1.mp3",
+        "tag": "client"
+    },
+    "spas12-reload-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/spas12-reload-2.mp3",
+        "tag": "client"
+    },
+    "protecta-reload-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/protecta-reload-1.mp3",
+        "tag": "client"
+    },
+    "protecta-reload-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/protecta-reload-2.mp3",
+        "tag": "client"
+    },
+    "spas12-reload-snd-1-fast": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/spas12-reload-1-fast.mp3",
+        "tag": "client"
+    },
+    "spas12-reload-snd-2-fast": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/spas12-reload-2-fast.mp3",
+        "tag": "client"
+    },
+    "judge-reload-1-fast": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/judge-reload-1-fast.mp3",
+        "tag": "client"
+    },
+    "judge-reload-2-fast": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/judge-reload-2-fast.mp3",
+        "tag": "client"
+    },
+    "spas12-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/spas12-shoot-1.mp3",
+        "tag": "client"
+    },
+    "spas12-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/spas12-shoot-2.mp3",
+        "tag": "client"
+    },
+    "spas12-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/spas12-shoot-3.mp3",
+        "tag": "client"
+    },
+    "spas12-shoot-4": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/spas12-shoot-4.mp3",
+        "tag": "client"
+    },
+    "spas12-shoot-5": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/spas12-shoot-5.mp3",
+        "tag": "client"
+    },
+    "spas12-shoot-6": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/spas12-shoot-6.mp3",
+        "tag": "client"
+    },
+    "stg-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ak74-reload.mp3",
+        "tag": "client"
+    },
+    "stg-fetch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/ak74-fetch.mp3",
+        "tag": "client"
+    },
+    "stg-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/stg-shoot-1.mp3",
+        "tag": "client"
+    },
+    "stuck-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/weapon-stuck.mp3",
+        "tag": "client"
+    },
+    "svd-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/svd-shoot-1.mp3",
+        "tag": "client"
+    },
+    "toz34-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/toz34-reload.mp3",
+        "tag": "client"
+    },
+    "toz34-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/toz34-shoot-1.mp3",
+        "tag": "client"
+    },
+    "toz34-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/toz34-shoot-2.mp3",
+        "tag": "client"
+    },
+    "toz34-shoot-3": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/toz34-shoot-3.mp3",
+        "tag": "client"
+    },
+    "transformator-snd": {
+        "class": "content.effect.StaticSoundEffect",
+        "distance": 0.25,
+        "loop": true,
+        "sound": "sounds:sounds/transformator.mp3",
+        "tag": "client"
+    },
+    "ump-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ump-shoot-1.mp3",
+        "tag": "client"
+    },
+    "ump-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/ump-shoot-2.mp3",
+        "tag": "client"
+    },
+    "usp-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/usp-reload.mp3",
+        "tag": "client"
+    },
+    "usp-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/usp-fetch.mp3",
+        "tag": "client"
+    },
+    "usp-match-reload": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/usp-match-reload.mp3",
+        "tag": "client"
+    },
+    "usp-match-fetch": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/usp-match-fetch.mp3",
+        "tag": "client"
+    },
+    "usp-match-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/usp-match-shoot-1.mp3",
+        "tag": "client"
+    },
+    "usp-match-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/usp-match-shoot-2.mp3",
+        "tag": "client"
+    },
+    "p50-reload": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/p50-reload.mp3",
+        "tag": "client"
+    },
+    "p50-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/p50-shoot-1.mp3",
+        "tag": "client"
+    },
+    "usp-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/usp-shoot-1.mp3",
+        "tag": "client"
+    },
+    "usp-shoot-2": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/usp-shoot-2.mp3",
+        "tag": "client"
+    },
+    "qbu88-shoot-1": {
+        "class": "content.effect.RevSoundEffect",
+        "sound": "sounds:sounds/qbu88-shoot-1.mp3",
+        "tag": "client"
+    },
+    "water-reload-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/water-reload.mp3",
+        "tag": "client"
+    },
+    "water-shoot-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/water-shoot-1.mp3",
+        "tag": "client"
+    },
+    "weapon-switch-snd": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/weapon-switch.mp3",
+        "tag": "client"
+    },
+    "wood-destroy-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-destroy-1.mp3",
+        "tag": "client"
+    },
+    "target-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-hit-1.mp3",
+        "tag": "client"
+    },
+    "target-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-hit-2.mp3",
+        "tag": "client"
+    },
+    "target-hit-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-hit-3.mp3",
+        "tag": "client"
+    },
+    "target-hit-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/target-hit-4.mp3",
+        "tag": "client"
+    },
+    "wood-hit-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-hit-1.mp3",
+        "tag": "client"
+    },
+    "wood-hit-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-hit-2.mp3",
+        "tag": "client"
+    },
+    "wood-hit-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-hit-3.mp3",
+        "tag": "client"
+    },
+    "wood-hit-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-hit-4.mp3",
+        "tag": "client"
+    },
+    "wood-hit-snd-5": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-hit-5.mp3",
+        "tag": "client"
+    },
+    "wood-hit-snd-6": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-hit-6.mp3",
+        "tag": "client"
+    },
+    "wood-step-snd-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-step-1.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "wood-step-snd-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-step-2.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "wood-step-snd-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "wood-step-snd-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/wood-step-3.mp3",
+        "distance": 0.25,
+        "tag": "client"
+    },
+    "vodka-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/vodka-move-1.mp3",
+        "tag": "client"
+    },
+    "bullet-12-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-12-move-1.mp3",
+        "tag": "client"
+    },
+    "bullet-12-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-12-move-2.mp3",
+        "tag": "client"
+    },
+    "bullet-12-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-12-move-3.mp3",
+        "tag": "client"
+    },
+    "bullet-12-move-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-12-move-4.mp3",
+        "tag": "client"
+    },
+    "bullet-default-move-1": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-default-move-1.mp3",
+        "tag": "client"
+    },
+    "bullet-default-move-2": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-default-move-2.mp3",
+        "tag": "client"
+    },
+    "bullet-default-move-3": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-default-move-3.mp3",
+        "tag": "client"
+    },
+    "bullet-default-move-4": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-default-move-4.mp3",
+        "tag": "client"
+    },
+    "bullet-9mmx18-move": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/bullet-9mmx18-move.mp3",
+        "tag": "client"
+    },
+    "change-walkietalkie-frequency": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/change-walkietalkie-frequency.mp3",
+        "tag": "client"
+    },
+    "walkietalkie-click-touchdown": {
+        "class": "content.effect.SoundEffect",
+        "sound": "sounds:sounds/walkietalkie-click-down.mp3",
+        "tag": "client"
+    }
+}}

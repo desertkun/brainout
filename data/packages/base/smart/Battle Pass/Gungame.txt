@@ -1,0 +1,69 @@
+class = content.battlepass.GameModeAction
+id = battle-pass-lvl-gungame
+target = 50
+reward = 250
+action = gungame-levelup
+title = MENU_LEVELUP_N_TIMES
+game-mode = gungame
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-lvl15-gungame
+target = 1
+reward = 250
+action = gungame-levelup-15
+title = MENU_LEVELUP_15_ONE_GAME
+game-mode = gungame
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-knife-gungame
+target = 3
+reward = 250
+action = kills-from-weapon-knife
+title = ACHIEVEMENT_BUTCHER_DESC
+game-mode = gungame
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-win-3-gungame
+target = 3
+reward = 250
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = gungame
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-kill-3-gungame
+target = 1
+reward = 250
+action = kills-3-no-death
+title = MENU_KILL_3_WITHOUT_DYING
+game-mode = gungame
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-double-kills-gungame
+target = 5
+reward = 250
+action = double-kills
+title = MENU_PERFORM_N_DOUBLE_KILLS
+game-mode = gungame
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-3-double-kills-gungame
+target = 1
+reward = 250
+action = double-kills-3-game
+title = MENU_PERFORM_3_DOUBLE_KILLS_IN_ONE_GAME
+game-mode = gungame
+
+

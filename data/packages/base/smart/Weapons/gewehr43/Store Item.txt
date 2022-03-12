@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-pri-gewehr43
+instrument = {
+    id = weapon-gewehr43
+    skins = skin-weapon-gewehr43-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-gewehr43-reload-time
+        scope = upgrade-gewehr43-scope-zf4
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_GEWEHR43
+slot = slot-primary
+category = sniper
+tags = unique
+index = 354
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = anti-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_ANTI
+    }
+}
+
+

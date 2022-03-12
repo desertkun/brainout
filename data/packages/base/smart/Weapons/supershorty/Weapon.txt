@@ -1,0 +1,95 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                m1897-pull-1
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+            [
+                m1897-pull-2
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+            [
+                m1897-pull-3
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+        ]
+        reload = spas12-reload-snd-1, spas12-reload-snd-2
+        shoot = [
+            1887-shoot, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1
+    }
+    {
+        animation = anim-supershorty
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands-2
+            aimHit = shoot-aim-weapon-2hands-2
+            hit = shoot-hold-weapon-2hands-2
+            hold = hold-weapon-2hands-3
+            fetch = pull-shotgun-underbarrel-2
+            reload = reload-shotgun-underbarrel
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 8
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-supershorty-default
+id = weapon-supershorty
+instrumentTags = secondary, shotgun
+primary = {
+    accuracy = 35
+    aimDistance = 20
+    allowedBullets = bullet-12-76
+    clipSize = 2
+    damage = 60
+    fire-rate = 500
+    noUnload = true
+    perBulletReload = true
+    pullRequired = true
+    fetchTime = 0.6
+    recoil = 80
+    reloadTime = 0.75
+    shootModes = single
+    shell-auto-eject = false
+}
+slot = slot-secondary
+speedCoef = 1.2

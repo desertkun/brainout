@@ -1,0 +1,9 @@
+class = content.effect.ParticleEffect
+id = player-blood-hit-4
+particle = base:particles/blood-hit-4
+enabled = {
+    @if = "$blood == enabled"
+    @then = true
+    @else = false
+}
+tag = client

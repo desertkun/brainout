@@ -1,0 +1,35 @@
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 1
+    }
+    {
+        class = content.components.ClientChipItemComponent
+        tag = client
+    }
+    {
+        class = content.components.ClientItemAutoPickerComponent
+        effect = equip-snd
+        pickTime = 0.75
+        tag = client
+    }
+    {
+        class = content.components.ServerChipItemComponent
+        dropSpeed = 10
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+auto-remove = true
+id = chip-drop-item-picked

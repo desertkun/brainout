@@ -1,0 +1,7 @@
+class = content.effect.ContinuousParticleEffect
+id = rpg7-rocket-part
+particle = base:particles/rpg7-rocket
+tag = client
+stickTime = 2
+substeps = 2
+stopEmitter = true

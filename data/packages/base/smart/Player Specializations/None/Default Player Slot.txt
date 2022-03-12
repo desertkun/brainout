@@ -1,0 +1,12 @@
+id = sl-pl-default
+
+access = byDefault
+class = content.shop.PlayerSlotItem
+components = []
+description = ITEM_NONE
+items = []
+name = ITEM_NONE
+player = player-default
+slot = slot-player
+category = special
+index = 0

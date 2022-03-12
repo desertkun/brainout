@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-desert-soprano
+        tag = client
+    }
+]
+data = weapon-soprano
+id = skin-weapon-desert-soprano
+name = ITEM_WEAP_DESERT_SOPRANO
+slot = sl-sec-desert
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

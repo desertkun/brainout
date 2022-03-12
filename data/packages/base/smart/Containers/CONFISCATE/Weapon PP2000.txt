@@ -1,0 +1,23 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-pri-pp2000
+    }
+]
+group = cardgroup-confiscate
+id = gen-weapon-pp2000
+name = CARD_TITLE_NEW_WEAPON
+weight = 10
+share-weight = uc
+

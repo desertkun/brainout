@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-hardened
+        class = content.components.IconComponent
+        icon = knife-hardened
+        tag = client
+    }
+]
+data = knife-hardened
+id = skin-weapon-knife-hardened
+name = ITEM_WEAP_KNIFE_HARDENED
+slot = sl-ml-knife

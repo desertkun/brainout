@@ -1,0 +1,52 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = optical
+        }
+        tag = client
+    }
+    {
+        big-icon = fg42-scope-optical
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_OPTICAL_DESC
+id = upgrade-fg42-scope-optical
+name = ITEM_UPGRADE_SCOPE_OPTICAL
+properties = {
+    aim-distance = "+20"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-fg42
+        param = 1
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

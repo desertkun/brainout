@@ -1,0 +1,37 @@
+class = content.shop.Slot
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-slot-secondary
+        tag = client
+    }
+]
+default = sl-sec-makarov
+id = slot-secondary
+name = SLOT_SECONDARY
+categories = [
+    {
+        id = pistol
+        title = SLOT_CATEGORY_PISTOLS
+    }
+]
+tags = [
+    {
+        id = level
+        title = SLOT_TAG_LEVEL
+    }
+    {
+        id = missions
+        title = SLOT_TAG_MISSIONS
+    }
+    {
+        id = resources
+        title = SLOT_TAG_RESOURCES
+    }
+    {
+        id = unique
+        title = SLOT_TAG_UNIQUE
+    }
+]
+stack = true
+width = 100

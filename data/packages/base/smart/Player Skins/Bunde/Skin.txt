@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = bunde
+id = skin-player-bunde
+name = ITEM_PLAYER_SKIN_BUNDE

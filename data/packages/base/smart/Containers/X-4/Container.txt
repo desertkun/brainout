@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-x4
+    }
+    {
+        groups = cardgroup-x4
+    }
+    {
+        groups = cardgroup-x4
+    }
+    {
+        groups = cardgroup-x4
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = x4-case-bg
+        class = content.components.IconComponent
+        icon = x4-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_EXCLUSIVE_DESC
+id = case-x4
+name = CASE_X4

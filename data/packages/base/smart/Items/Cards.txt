@@ -1,0 +1,291 @@
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 2
+        width = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon-small = icon-item-cards-en-small
+        game-icon = icon-item-cards-en-small
+        big-icon = icon-item-cards-en
+        tag = client
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = true
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ClientDeckOfCardsComponent
+        activateText = MENU_PLAY_DECK_OF_CARDS
+        back = card-ru-back
+        tag = client
+    }
+    {
+        class = content.components.ServerDeckOfCardsComponent
+        deck = [
+            card-ru-clubs-10
+            card-ru-clubs-2
+            card-ru-clubs-3
+            card-ru-clubs-4
+            card-ru-clubs-5
+            card-ru-clubs-6
+            card-ru-clubs-7
+            card-ru-clubs-8
+            card-ru-clubs-9
+            card-en-clubs-ace
+            card-en-clubs-jack
+            card-en-clubs-king
+            card-en-clubs-queen
+            card-ru-diamonds-10
+            card-ru-diamonds-2
+            card-ru-diamonds-3
+            card-ru-diamonds-4
+            card-ru-diamonds-5
+            card-ru-diamonds-6
+            card-ru-diamonds-7
+            card-ru-diamonds-8
+            card-ru-diamonds-9
+            card-en-diamonds-ace
+            card-en-diamonds-jack
+            card-en-diamonds-king
+            card-en-diamonds-queen
+            card-ru-hearts-10
+            card-ru-hearts-2
+            card-ru-hearts-3
+            card-ru-hearts-4
+            card-ru-hearts-5
+            card-ru-hearts-6
+            card-ru-hearts-7
+            card-ru-hearts-8
+            card-ru-hearts-9
+            card-en-hearts-ace
+            card-en-hearts-jack
+            card-en-hearts-king
+            card-en-hearts-queen
+            card-ru-spades-10
+            card-ru-spades-2
+            card-ru-spades-3
+            card-ru-spades-4
+            card-ru-spades-5
+            card-ru-spades-6
+            card-ru-spades-7
+            card-ru-spades-8
+            card-ru-spades-9
+            card-en-spades-ace
+            card-en-spades-jack
+            card-en-spades-king
+            card-en-spades-queen
+            card-en-joker
+        ]
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        timeToLive = 0
+        tag = server
+    }
+]
+auto-remove = true
+name = ITEM_DECK_OF_WESTERN_CARDS
+id = cards-en-item
+filter = {
+    cards = {
+        items = [
+            freeplay-cards-en
+        ]
+        limit = 1
+    }
+}
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-cards-en
+name = ITEM_DECK_OF_WESTERN_CARDS
+description = ITEM_DECK_OF_RUSSIAN_WESTERN_DESC
+stacks = false
+components = [
+    {
+        class = content.components.IconComponent
+        icon-small = icon-item-cards-en-small
+        game-icon = icon-item-cards-en-small
+        big-icon = icon-item-cards-en
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = cards-en-item
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 500
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 60
+    }
+]
+
+--------
+
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 2
+        width = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon-small = icon-item-cards-ru-small
+        game-icon = icon-item-cards-en-small
+        big-icon = icon-item-cards-ru
+        tag = client
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = true
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ClientDeckOfCardsComponent
+        activateText = MENU_PLAY_DECK_OF_CARDS
+        back = card-ru-back
+        tag = client
+    }
+    {
+        class = content.components.ServerDeckOfCardsComponent
+        deck = [
+            card-ru-clubs-10
+            card-ru-clubs-6
+            card-ru-clubs-7
+            card-ru-clubs-8
+            card-ru-clubs-9
+            card-ru-clubs-ace
+            card-ru-clubs-jack
+            card-ru-clubs-king
+            card-ru-clubs-queen
+            card-ru-diamonds-10
+            card-ru-diamonds-6
+            card-ru-diamonds-7
+            card-ru-diamonds-8
+            card-ru-diamonds-9
+            card-ru-diamonds-ace
+            card-ru-diamonds-jack
+            card-ru-diamonds-king
+            card-ru-diamonds-queen
+            card-ru-hearts-10
+            card-ru-hearts-6
+            card-ru-hearts-7
+            card-ru-hearts-8
+            card-ru-hearts-9
+            card-ru-hearts-ace
+            card-ru-hearts-jack
+            card-ru-hearts-king
+            card-ru-hearts-queen
+            card-ru-spades-10
+            card-ru-spades-6
+            card-ru-spades-7
+            card-ru-spades-8
+            card-ru-spades-9
+            card-ru-spades-ace
+            card-ru-spades-jack
+            card-ru-spades-king
+            card-ru-spades-queen
+        ]
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        timeToLive = 0
+        tag = server
+    }
+]
+auto-remove = true
+name = ITEM_DECK_OF_RUSSIAN_CARDS
+id = cards-ru-item
+filter = {
+    cards = {
+        items = [
+            freeplay-cards-ru
+        ]
+        limit = 1
+    }
+}
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-cards-ru
+name = ITEM_DECK_OF_RUSSIAN_CARDS
+description = ITEM_DECK_OF_RUSSIAN_CARDS_DESC
+stacks = false
+components = [
+    {
+        class = content.components.IconComponent
+        icon-small = icon-item-cards-ru-small
+        big-icon = icon-item-cards-ru
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = cards-ru-item
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 500
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 60
+    }
+]

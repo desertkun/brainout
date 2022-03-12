@@ -1,0 +1,150 @@
+class = content.active.Player
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        height = 2
+        mass = 0
+        width = 2
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerPhysicsSyncComponent
+        tag = server
+    }
+    {
+        animationClass = content.components.PlayerAnimationComponent
+        class = content.components.RagDollComponent
+        tag = client
+        timeToLive = 10
+    }
+    {
+        animation = anim-crow
+        class = content.components.PlayerAnimationComponent
+    }
+    {
+        class = content.components.HealthComponent
+        health = 5
+        immortalTime = 0
+    }
+    {
+        class = content.components.PlayerEffectsComponent
+        hit = [
+            player-hit-snd-1, player-blood-part-1-physic, player-blood-part-2-physic, player-blood-spray-part-1
+            player-hit-snd-2, player-blood-part-3-physic, player-blood-part-4-physic, player-blood-spray-part-2
+            player-hit-snd-1, player-blood-part-3-physic, player-blood-part-3-physic, player-blood-spray-part-1
+            player-hit-snd-2, player-blood-part-4-physic, player-blood-part-4-physic, player-blood-spray-part-1
+            player-hit-snd-1, player-blood-part-1-physic, player-blood-part-2-physic, player-blood-part-4-physic, player-blood-part-3-physic, player-blood-spray-part-2
+            player-hit-snd-2, player-blood-part-1-physic, player-blood-part-2-physic, player-blood-part-4-physic, player-blood-part-3-physic, player-blood-spray-part-2
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ColliderComponent
+        colliders = {
+            body = {
+                damageCoefficient = 1
+                height = 2
+                width = 2
+            }
+        }
+        tag = server
+    }
+    {
+        class = content.components.ReoccurringActiveEffectComponent
+        effect = [
+            crow-kark-1
+            crow-kark-2
+            crow-kark-3
+            crow-kark-4
+            crow-kark-5
+        ]
+        periodFrom = 60
+        periodTo = 120
+        tag = client
+    }
+    {
+        class = content.components.PlayerComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerHealthComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerPlayerColliderComponent
+        headDamageMultiplier = 1
+        headHeight = 0
+        headWidth = 0
+        tag = server
+    }
+]
+defaultSkin = skin-spectator-crow
+flying = true
+id = player-crow
+jetForce = 0
+jetTime = 0
+jumpForce = 0
+jumpJetDelay = 0
+maxWeight = 30
+name = ITEM_PLAYER_CROW
+states = {
+    normal = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 1
+            }
+        }
+        height = 2
+        speed = {
+            x = 15
+            y = 15
+        }
+        width = 2
+    }
+    run = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 1
+            }
+        }
+        height = 2
+        speed = {
+            x = 20
+            y = 20
+        }
+        width = 2
+    }
+    sit = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 1
+            }
+        }
+        height = 2
+        speed = {
+            x = 15
+            y = 15
+        }
+        width = 2
+    }
+}
+
+--------
+
+class = content.PlayerSkin
+components = []
+data = crow
+id = skin-spectator-crow
+name = ITEM_SKIN_CROW

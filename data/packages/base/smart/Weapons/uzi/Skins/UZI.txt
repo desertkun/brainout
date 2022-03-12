@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-uzi-default
+name = ITEM_WEAP_UZI
+slot = sl-pri-uzi

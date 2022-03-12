@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-sgi5k-default
+name = ITEM_WEAP_SGI5K
+slot = sl-pri-sgi5k

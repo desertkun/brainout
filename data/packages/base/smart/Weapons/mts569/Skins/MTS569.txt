@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mts569-default
+name = ITEM_WEAP_MTS569
+slot = sl-pri-mts569

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m95-akatsuki
+        tag = client
+    }
+]
+data = weapon-akatsuki
+id = skin-weapon-m95-akatsuki
+name = ITEM_WEAP_M95_AKATSUKI
+slot = sl-pri-m95
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,384 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-audio-player
+        icon-small = icon-item-audio-player-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-recorder-move-1, valuables-recorder-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.65
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 15
+    }
+]
+id = consumable-item-audio-player
+name = ITEM_AUDIO_PLAYER
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-cassette-1
+        icon-small = icon-item-cassette-1-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-casette-move-1, valuables-casette-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.15
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 2
+    }
+]
+id = consumable-item-casette-1
+name = "{ITEM_CASSETTE} 1"
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-diskette
+        icon-small = icon-item-diskette-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-floppy-move-1, valuables-floppy-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.02
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 8
+    }
+]
+id = consumable-item-diskette
+name = ITEM_DISKETTE
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-cassette-2
+        icon-small = icon-item-cassette-2-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-casette-move-1, valuables-casette-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.15
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 2
+    }
+]
+id = consumable-item-casette-2
+name = "{ITEM_CASSETTE} 2"
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-gamegirl
+        icon-small = icon-item-gamegirl-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-brickgame-move-1, valuables-brickgame-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.4
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 20
+    }
+]
+id = consumable-item-gamegirl
+name = ITEM_GAMEGIRL
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-brickgame
+        icon-small = icon-item-brickgame-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-brickgame-move-1, valuables-brickgame-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.06
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 10
+    }
+]
+id = consumable-item-brickgame
+name = ITEM_BRICKGAME
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-phone
+        icon-small = icon-item-phone-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-telephone-move-1, valuables-telephone-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.13
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 30
+    }
+]
+id = consumable-item-phone
+name = ITEM_PHONE
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-watches
+        icon-small = icon-item-watches-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-watch-move-1, valuables-watch-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 28
+    }
+]
+id = consumable-item-watches
+name = ITEM_WATCHES
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-beeper
+        icon-small = icon-item-beeper-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-beeper-move-1, valuables-beeper-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 25
+    }
+]
+id = consumable-item-beeper
+name = ITEM_BEEPER
+
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-vhs-player
+        icon-small = icon-item-vhs-player-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-vhsplayer-move-1, valuables-vhsplayer-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 3
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 35
+    }
+]
+id = consumable-item-vhs-player
+name = ITEM_VHS_PLAYER
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-vhs-1
+        icon-small = icon-item-vhs-1-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-casette-move-1, valuables-casette-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 5
+    }
+]
+id = consumable-item-vhs-1
+name = "{ITEM_VHS} 1"
+
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-vhs-1
+        icon-small = icon-item-vhs-1-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-casette-move-1, valuables-casette-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.FreePlayValuableComponent
+        value = 5
+    }
+]
+id = consumable-item-vhs-2
+name = "{ITEM_VHS} 2"
+

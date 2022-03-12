@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-ak74m-hunter
+        tag = client
+    }
+]
+data = weapon-hunter
+id = skin-weapon-ak74m-hunter
+name = ITEM_WEAP_AK74M_HUNTER
+slot = sl-pri-ak74m
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

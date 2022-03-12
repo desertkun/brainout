@@ -1,0 +1,38 @@
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-ammobox
+        class = content.components.ThrowableAnimationComponent
+        skin = throwable-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+    {
+        big-icon = icon-shop-special-ammobox
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+defaultSkin = skin-instrument-ammobox-default
+id = instrument-ammobox
+slot = slot-special
+throwActive = ammobox-active
+throwPower = 15
+throwTime = 1
+throwable = false

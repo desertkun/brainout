@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-rsh12
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+instrument = {
+    id = weapon-rsh12
+    skins = skin-weapon-rsh12-default, skin-weapon-rsh12-alchemy, skin-weapon-rsh12-reptile, skin-weapon-rsh12-paradigmatic, skin-weapon-rsh12-royal, skin-weapon-rsh12-cloud, skin-weapon-rsh12-cyrax
+    upgrades = {
+        fastloader = upgrade-rsh12-fastloader
+        scope = upgrade-rsh12-scope
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-12.7x55
+    }
+]
+name = ITEM_WEAP_RSH12
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 18
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = elite-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ELITE
+    }
+}

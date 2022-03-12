@@ -1,0 +1,44 @@
+class = content.instrument.ActivateInstrument
+components = [
+    {
+        activateEffect = [
+            he-grenade-click-sound
+        ]
+        class = content.components.ClientInstrumentActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+    {
+        class = content.components.DetectOnActivateInstrumentComponent
+        detectClass = c4
+        tag = server
+    }
+    {
+        animation = anim-detonator
+        class = content.components.InstrumentAnimationComponent
+        skin = throwable-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+        tag = client
+    }
+    {
+        big-icon = icon-shop-special-c4-detonator
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-detonator-default
+id = instrument-detonator
+slot = slot-special
+throwable = false
+name = ITEM_SPECIAL_DETONATOR

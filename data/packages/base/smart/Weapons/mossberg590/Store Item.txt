@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 70
+    }
+]
+id = sl-pri-mossberg590
+instrument = {
+    id = weapon-mossberg590
+    skins = skin-weapon-mossberg590-default, skin-weapon-mossberg590-green
+    upgrades = {
+        recoil = upgrade-mossberg590-recoil
+        reload-time = upgrade-mossberg590-reload-time
+    }
+}
+items = [
+    {
+        amount = 14
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_MOSSBERG590
+slot = slot-primary
+category = shotgun
+tags = parts
+index = 375
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-mossberg590
+        icon = standard-case
+        param = 4
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

@@ -1,0 +1,6 @@
+animation = base:animations/instrument-guitar.json
+class = content.Animation
+defaultSkin = skin-instrument-guitar-default
+id = anim-guitar
+states = []
+timeScale = 1

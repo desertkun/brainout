@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-bar-sturm
+        tag = client
+    }
+]
+data = weapon-sturm
+id = skin-weapon-bar-sturm
+name = ITEM_WEAP_BAR_STURM
+slot = sl-pri-bar
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

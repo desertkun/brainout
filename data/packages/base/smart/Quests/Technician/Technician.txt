@@ -1,0 +1,70 @@
+class = content.quest.Quest
+id = quest-gunsmith
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-gunsmith
+        tag = client
+    }
+]
+
+tasks = {
+	1 = {
+        class = content.quest.task.UseItem
+        items = instrument-flashlight
+        target = 1
+    }
+	2 = {
+        class = content.quest.task.UseItem
+        items = weapon-flare
+        target = 4
+    }
+	3 = {
+        class = content.quest.task.PaintItemOfCategory
+        category = pistol
+        categoryName = SLOT_CATEGORY_PISTOLS
+        target = 1
+    }
+	4 = {
+        class = content.quest.task.PaintItemOfCategory
+        category = shotgun
+        categoryName = SLOT_CATEGORY_SHOTGUN
+        target = 1
+    }
+	5 = {
+        class = content.quest.task.PaintItemOfCategory
+        category = assault
+        categoryName = SLOT_CATEGORY_ASSAULT
+        target = 1
+    }
+	6 = {
+        class = content.quest.task.PaintItemOfCategory
+        category = sniper
+        categoryName = SLOT_CATEGORY_SNIPER
+        target = 1
+    }
+	7 = {
+        class = content.quest.task.PaintItemOfCategory
+        category = submachine
+        categoryName = SLOT_CATEGORY_SUBMACHINE
+        target = 1
+    }
+	8 = {
+        class = content.quest.task.UpgradeWeapon
+        target = 30
+    }
+}
+
+coop = false
+hasToLeave = false
+name = QUEST_TITLE_GUNSMITH
+perTaskReward = true
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 1500
+    }
+]

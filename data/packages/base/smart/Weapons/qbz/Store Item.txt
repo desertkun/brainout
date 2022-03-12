@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+]
+id = sl-pri-qbz
+instrument = {
+    id = weapon-qbz
+    skins = skin-weapon-qbz-default, skin-weapon-qbz-cybersport, skin-weapon-qbz-azart
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-qbz-accuracy
+        reload-time = upgrade-qbz-reload-time
+        shoot-time = upgrade-qbz-shoot-time
+        wear-resistance = upgrade-qbz-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_QBZ
+slot = slot-primary
+category = assault
+tags = parts
+index = 45
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-qbz
+        icon = standard-case
+        param = 4
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-soviet
+        tag = client
+    }
+]
+id = sl-skin-soviet
+items = []
+name = ITEM_PLAYER_SKIN_SOVIET
+skin = skin-player-soviet
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 36
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}

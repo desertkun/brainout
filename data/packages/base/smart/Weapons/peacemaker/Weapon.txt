@@ -1,0 +1,144 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 0.5
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        cock = []
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = []
+        shoot = [
+            peacemaker-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            peacemaker-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            peacemaker-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        actions = [
+            {
+                effects = [
+                    [
+                        magnum-bullet-drop-1
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                    [
+                        magnum-bullet-drop-2
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                    [
+                        magnum-bullet-drop-3
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                    [
+                        magnum-bullet-drop-4
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                ]
+                for = drop-bullet
+                type = effect
+            }
+            {
+                effects = peacemaker-bullet-load-1, peacemaker-bullet-load-2
+                for = add-bullet
+                type = effect
+            }
+            {
+                effects = [
+                    peacemaker-bullet-load-1, peacemaker-bullet-load-2
+                ]
+                for = add-bullets
+                type = effect
+            }
+            {
+                effects = peacemaker-roll
+                for = roll
+                type = effect
+            }
+            {
+                effects = peacemaker-opened
+                for = opened
+                type = effect
+            }
+            {
+                effects = peacemaker-cocking
+                for = cocked
+                type = effect
+            }
+            {
+                effects = peacemaker-closed
+                for = closed
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-peacemaker
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            cock = cock-weapon-revolver
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-weapon-revolver-2
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 24
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-peacemaker-default
+id = weapon-peacemaker
+instrumentTags = secondary
+primary = {
+    accuracy = 45
+    aimDistance = 20
+    allowedBullets = bullet-357-magnum
+    clipSize = 5
+    cockTime = 0.5
+    damage = 102
+    fire-rate = 450
+    recoil = 70
+    reloadTime = 7.6
+    shootModes = singleCock
+    shell-auto-eject = false
+}
+slot = slot-secondary

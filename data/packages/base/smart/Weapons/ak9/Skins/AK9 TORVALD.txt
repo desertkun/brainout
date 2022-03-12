@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-ak9-torvald
+        tag = client
+    }
+]
+data = weapon-torvald
+id = skin-weapon-ak9-torvald
+name = ITEM_WEAP_AK9_TORVALD
+slot = sl-pri-ak9-2
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

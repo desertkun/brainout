@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-makarov-watermelon
+        tag = client
+    }
+]
+data = weapon-watermelon
+id = skin-weapon-makarov-watermelon
+name = ITEM_WEAP_MAKAROV_WATERMELON
+slot = sl-sec-makarov
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}
+

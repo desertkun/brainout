@@ -1,0 +1,5 @@
+{
+	"name": "map_hospital",
+	"dependency": ["base"],
+	"version": "0.1"
+}

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = siber
+id = skin-player-siber
+name = ITEM_PLAYER_SKIN_SIBER

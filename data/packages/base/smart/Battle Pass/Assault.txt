@@ -1,0 +1,27 @@
+class = content.battlepass.GameModeAction
+id = battle-pass-kills-assault
+target = 30
+reward = 250
+action = kills
+title = MENU_KILL_N_TIMES
+game-mode = assault
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-kills5-assault
+target = 1
+reward = 250
+action = kills-5
+title = MENU_KILL_5_IN_GAME
+game-mode = assault
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-kills22-assault
+target = 1
+reward = 250
+action = double-kills-2-game
+title = MENU_MAKE_2_DOUBLEKILLS_IN_GAME
+game-mode = assault

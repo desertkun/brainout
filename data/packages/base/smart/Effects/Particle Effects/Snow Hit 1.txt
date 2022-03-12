@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = snow-hit-1
+particle = base:particles/snow-hit-1
+tag = client

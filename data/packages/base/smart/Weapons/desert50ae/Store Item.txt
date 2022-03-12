@@ -1,0 +1,36 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-sec-desert50ae
+instrument = {
+    id = weapon-desert50ae
+    skins = skin-weapon-desert50ae-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-desert50ae-reload-time
+        scope = upgrade-desert50ae-scope-burris, upgrade-desert50ae-scope-optical
+    }
+}
+items = [
+    {
+        amount = 14
+        id = bullet-12.7x55
+    }
+]
+name = ITEM_WEAP_DESERT50AE
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 379
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

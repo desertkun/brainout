@@ -1,0 +1,42 @@
+cards = [
+    {
+        groups = [
+            cardgroup-standard
+            cardgroup-improved
+            cardgroup-rare
+            cardgroup-part
+            cardgroup-gears-improved
+            cardgroup-gears
+            cardgroup-gears-rare
+            cardgroup-unique
+        ]
+    }
+    {
+        groups = cardgroup-improved, cardgroup-rare, cardgroup-gears-improved, cardgroup-gears-rare, cardgroup-skillpts, cardgroup-nuclear-material-standard
+    }
+    {
+        groups = cardgroup-nuclear-material-standard, cardgroup-nuclear-material-improved, cardgroup-nuclear-material-rare, cardgroup-nuclear-material-unique
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = daily-case-bg
+        class = content.components.IconComponent
+        icon = daily-case
+        icon-small = case-daily-ingame
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_DAILY_DESC
+id = case-daily
+name = CASE_DAILY

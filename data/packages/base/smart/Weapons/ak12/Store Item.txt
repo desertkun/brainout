@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-ak12
+instrument = {
+    defaultSkin = skin-weapon-ak12-default
+    id = weapon-ak12
+    skins = skin-weapon-ak12-default, skin-weapon-ak12-fire, skin-weapon-ak12-boom, skin-weapon-ak12-demolition, skin-weapon-ak12-dune, skin-weapon-ak12-granite, skin-weapon-ak12-salad, skin-weapon-ak12-classic, skin-weapon-ak12-camouflage
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ak12-accuracy
+        clip = upgrade-ak12-clip-extended
+        on = upgrade-ak12-holder
+        recoil = upgrade-ak12-recoil
+        reload-time = upgrade-ak12-reload-time
+        scope = upgrade-ak12-scope-acog
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AK12
+slot = slot-primary
+category = assault
+tags = unique
+index = 64
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = exclusive-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_EXCLUSIVE
+    }
+}

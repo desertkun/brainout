@@ -1,0 +1,78 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = mg42-reload-snd
+        fetch = mg42-fetch-snd
+        shoot = [
+            mg34-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 1020
+    }
+    {
+        animation = anim-mg34
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-mg34-default
+id = weapon-mg34
+instrumentTags = primary
+primary = {
+    accuracy = 35
+    aimDistance = 40
+    allowedBullets = bullet-7.62x39
+    clipSize = 75
+    magazineManagement = 2
+    damage = 50
+    fire-rate = 825
+    recoil = 20
+    reloadTime = 3.3
+    fetchTime = 0.7
+    shootModes = auto
+}
+slot = slot-primary
+speedCoef = 0.8

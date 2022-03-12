@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-p91
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-p91
+    skins = skin-weapon-p91-default, skin-weapon-p91-edel
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-p91-recoil
+        reload-time = upgrade-p91-reload-time
+        silencer = upgrade-p91-silencer
+        clip = upgrade-p91-clip-extended
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx18
+    }
+]
+name = ITEM_WEAP_P91
+slot = slot-primary
+category = submachine
+tags = unique
+index = 155
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

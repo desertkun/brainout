@@ -1,0 +1,81 @@
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 2
+        mass = 2
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = true
+        offsetY = -0.6
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientRadioReceiverComponent
+        background = buzzer-bg
+        active = buzzer-active
+        characters = {
+            "1" = radio-1
+            "2" = radio-2
+            "3" = radio-3
+            "4" = radio-4
+            "5" = radio-5
+            "6" = radio-6
+            "7" = radio-7
+            "8" = radio-8
+            "9" = radio-9
+        }
+        tag = client
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        timeToLive = 0
+        tag = server
+    }
+]
+auto-remove = true
+id = radio-receiver-item
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-radio-receiver
+        icon-small = radio-receiver-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = battery-move-1
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = radio-receiver-item
+        weight = 3
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 50
+        tag = client
+    }
+]
+id = radio-receiver
+name = ITEM_RADIO_RECEIVER
+description = ITEM_RADIO_RECEIVER_DESC
+stacks = false

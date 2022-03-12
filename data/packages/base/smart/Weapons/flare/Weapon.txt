@@ -1,0 +1,74 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        shoot = flare-shoot-1
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        usedEvent = true
+        tag = server
+    }
+    {
+        actions = [
+            {
+                effects = flare-reload-1
+                for = add-bullet
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-flare
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-weapon-flare
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 100
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-flare-default
+id = weapon-flare
+instrumentTags = secondary
+primary = {
+    accuracy = 40
+    aimDistance = 25
+    allowedBullets = flare-bullet-green, flare-bullet-red
+    clipSize = 1
+    damage = 40
+    fire-rate = 60
+    recoil = 50
+    reloadTime = 1
+    shootModes = auto, burst, single
+}
+slot = slot-secondary

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-kiparis.json
+class = content.Animation
+id = anim-kiparis
+states = []
+timeScale = 1

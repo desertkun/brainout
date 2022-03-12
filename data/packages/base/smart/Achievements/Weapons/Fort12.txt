@@ -1,0 +1,36 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-fort12
+        icon-locked = achievement-fort12-lock
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 2000
+        class = content.components.RuRewardComponent
+        tag = server
+    }
+]
+id = achievement-fort12
+name = ACHIEVEMENT_FORT12
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-fort12
+        param = 500
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_FORT12}"
+    }
+}

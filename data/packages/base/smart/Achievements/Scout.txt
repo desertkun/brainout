@@ -1,0 +1,35 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-scout
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.SkillPointsRewardComponent
+        tag = server
+    }
+]
+id = achievement-scout
+name = ACHIEVEMENT_SCOUT
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = freeplay-exited
+        param = 5
+        unlockTitle = ACHIEVEMENT_SCOUT_DESC
+    }
+}

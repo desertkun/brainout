@@ -1,0 +1,54 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-claymore
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_CLAYMORE_DESC
+id = sl-spc-claymore
+instrument = {
+    id = instrument-claymore
+    skin = skin-instrument-claymore-default
+}
+items = []
+name = ITEM_SPECIAL_CLAYMORE
+freeplay = false
+slot = slot-special
+category = special
+tags = level
+enabled = {
+    @if = "$claymore == disabled"
+    @then = false
+    @else = true
+}
+index = 9
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 12
+    }
+}

@@ -1,0 +1,43 @@
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+project.ext.mainClassName = "com.desertkun.brainout.desktop.DesktopLauncher"
+project.ext.assetsDir = new File("../data/assets/main");
+
+task run(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = "../bin/client"
+    ignoreExitValue = true
+
+    if (System.getProperty("os.name").toLowerCase().contains("mac")) {
+        // Required to run lwjgl java apps on Mac OSX
+        jvmArgs = ["-XstartOnFirstThread"]
+    }
+}
+
+task dist(type: Jar) {
+    destinationDir = new File("../bin/client")
+    baseName = new File("brainout-desktop")
+    version = null
+
+    from files(sourceSets.main.output.classesDirs)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+    from files(project.assetsDir);
+ 
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+}
+
+task obfuscate(type: proguard.gradle.ProGuardTask) {
+    configuration files("proguard-project.txt")
+    outputs.upToDateWhen { false }
+}
+
+dist.dependsOn classes
+dist.finalizedBy obfuscate

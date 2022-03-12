@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = showel
+        class = content.components.IconComponent
+        icon = showel
+        tag = client
+    }
+]
+id = sl-ml-shovel
+instrument = {
+    id = weapon-shovel
+    skin = skin-weapon-shovel-default
+}
+items = [
+]
+name = ITEM_WEAP_SHOVEL
+slot = slot-melee
+category = melee
+tags = unique
+index = 8
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_USEC
+    }
+}

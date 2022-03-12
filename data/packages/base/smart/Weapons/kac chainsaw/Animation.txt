@@ -1,0 +1,5 @@
+animation = base:animations/weapon-kac-chainsaw.json
+class = content.Animation
+id = anim-kac-chainsaw
+states = []
+timeScale = 1

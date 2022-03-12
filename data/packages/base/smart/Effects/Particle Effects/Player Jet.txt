@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = player-jet
+particle = base:particles/jet
+tag = client

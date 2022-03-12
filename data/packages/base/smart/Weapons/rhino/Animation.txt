@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rhino.json
+class = content.Animation
+id = anim-rhino
+states = []
+timeScale = 1

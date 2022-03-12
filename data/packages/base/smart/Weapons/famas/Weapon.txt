@@ -1,0 +1,95 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = ak74-reload-snd
+        fetch = ak74-fetch-snd
+        shoot = [
+            famas-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            famas-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 926
+    }
+    {
+        animation = anim-famas
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-bp
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-famas-default
+id = weapon-famas
+instrumentTags = primary
+primary = {
+    accuracy = 50
+    aimDistance = 30
+    allowedBullets = bullet-5.56x45
+    clipSize = 25
+    magazineManagement = 2
+    damage = 45
+    fire-rate = 900
+    recoil = 30
+    reloadTime = 1.3
+    fetchTime = 0.5
+    shootModes = burst, auto
+}
+slot = slot-primary

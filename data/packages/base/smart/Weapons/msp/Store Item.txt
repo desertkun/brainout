@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-msp
+instrument = {
+    id = weapon-msp
+    skins = skin-weapon-msp-default
+    upgrades = {
+        reload-time = upgrade-msp-reload-time
+    }
+}
+items = [
+    {
+        amount = 6
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_MSP
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 366
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = zveroboy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ZVEROBOY
+    }
+}

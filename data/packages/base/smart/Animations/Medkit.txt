@@ -1,0 +1,5 @@
+animation = base:animations/instrument-medkit.json
+class = content.Animation
+id = anim-medkit
+states = []
+timeScale = 1

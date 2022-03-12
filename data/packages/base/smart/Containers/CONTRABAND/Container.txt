@@ -1,0 +1,51 @@
+cards = [
+    {
+        groups = [
+            cardgroup-standard
+            cardgroup-improved
+            cardgroup-rare
+            cardgroup-part
+            cardgroup-gears-improved
+            cardgroup-gears
+            cardgroup-gears-rare
+            cardgroup-unique
+        ]
+    }
+    {
+        groups = cardgroup-contraband
+    }
+    {
+        groups = [
+            cardgroup-standard
+            cardgroup-improved
+            cardgroup-rare
+            cardgroup-part
+            cardgroup-gears-improved
+            cardgroup-gears
+            cardgroup-gears-rare
+            cardgroup-unique
+        ]
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = contraband-case-bg
+        class = content.components.IconComponent
+        icon = contraband-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = smuggling-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_CONTRABAND_DESC
+id = case-contraband
+name = CASE_CONTRABAND

@@ -1,0 +1,45 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = core-inv
+            tag = client
+        }
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        hit = [
+            sparkle-1, wood-hit-snd-1, wood-hit-part-1
+            sparkle-1, wood-hit-snd-2, wood-hit-part-1
+            sparkle-1, wood-hit-snd-3, wood-hit-part-2
+            sparkle-1, wood-hit-snd-4, wood-hit-part-1
+            sparkle-1, wood-hit-snd-5, wood-hit-part-1
+            sparkle-1, wood-hit-snd-6, wood-hit-part-2
+        ]
+        step = wood-step-snd-1, wood-step-snd-2, wood-step-snd-3, wood-step-snd-4
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-collision
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = core-inv
+contactStrategy = combined
+static = true
+contactTo = collision, brick, core, metal, ground, platform, core-inv
+id = core-inv
+name = Invisible Core
+resist = 999999

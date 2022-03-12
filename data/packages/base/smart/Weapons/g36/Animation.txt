@@ -1,0 +1,5 @@
+animation = base:animations/weapon-g36.json
+class = content.Animation
+id = anim-g36
+states = []
+timeScale = 1

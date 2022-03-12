@@ -1,0 +1,5 @@
+animation = base:animations/weapon-fnx45.json
+class = content.Animation
+id = anim-fnx45
+states = []
+timeScale = 1

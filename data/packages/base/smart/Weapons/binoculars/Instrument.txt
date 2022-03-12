@@ -1,0 +1,48 @@
+access = byDefault
+class = content.instrument.Instrument
+components = [
+    {
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        big-icon = icon-item-binoculars
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = binoculars
+    }
+    {
+        class = content.components.InstrumentAimComponent
+        aimDistance = 100
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-binoculars
+        class = content.components.InstrumentAnimationComponent
+        skin = binoculars-default
+        states = {
+            aim = aim-binoculars
+            aimHit = aim-binoculars
+            hit = hold-binoculars
+            hold = hold-binoculars
+            reload = aim-binoculars
+        }
+    }
+]
+defaultSkin = skin-instrument-binoculars-default
+id = instrument-binoculars
+instrumentTags = tools
+slot = slot-binoculars
+name = ITEM_BINOCULARS

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-butterfly.json
+class = content.Animation
+id = anim-butterfly
+states = []
+timeScale = 1

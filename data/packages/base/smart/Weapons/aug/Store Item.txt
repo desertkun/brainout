@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-aug
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-aug
+    skins = skin-weapon-aug-default, skin-weapon-aug-chameleon, skin-weapon-aug-aki, skin-weapon-aug-kitty, skin-weapon-aug-biohazard, skin-weapon-aug-cosmo, skin-weapon-aug-scars
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-aug-accuracy
+        clip = upgrade-aug-clip-extended
+        recoil = upgrade-aug-recoil
+        reload-time = upgrade-aug-reload-time
+        scope = upgrade-aug-scope-rail
+        shoot-time = upgrade-aug-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_AUG
+slot = slot-primary
+category = assault
+tags = missions, classic
+index = 23
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-tag, grenade
+        param = 10
+        unlockTitle = MENU_UNLOCK_AUG
+    }
+}

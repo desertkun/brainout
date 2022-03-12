@@ -1,0 +1,53 @@
+class = content.shop.PlayerSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-additional-gl
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_ADDITIONAL_GL_DESC
+id = sl-pl-additional-gl
+items = [
+    {
+        amount = 2
+        id = grenade-bullet
+    }
+]
+name = ITEM_SPECIAL_ADDITIONAL_GL
+player = player-default
+restrict = {
+    item = sl-spc-gl
+    slot = slot-special
+}
+slot = slot-player
+category = special
+tags = level
+index = 8
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 6
+    }
+}

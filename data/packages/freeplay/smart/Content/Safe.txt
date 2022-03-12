@@ -1,0 +1,24 @@
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-safe
+        tag = client
+    }
+    {
+    	class = content.components.ClientSafeActivatorComponent
+        digits = led-0, led-1, led-2, led-3, led-4, led-5, led-6, led-7, led-8, led-9
+        empty = led-empty
+        beep = safe-been-snd
+    	activateText = MENU_ENTER_THE_DOOR
+    	tag = client
+    }
+    {
+        class = content.components.ServerSafeComponent
+        activateEffect = safe-open-effects
+        deniedEffect = safe-denied-effects
+        tag = server
+    }
+]
+id = portal-safe
+name = Safe

@@ -1,0 +1,35 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-fbr
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-skin-fbr
+items = []
+name = ITEM_PLAYER_SKIN_FBR
+skin = skin-player-fbr
+slot = slot-player-skin
+category = outfit
+tags = resources
+index = 373
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

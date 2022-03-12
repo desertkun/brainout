@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-imbel
+instrument = {
+    id = weapon-imbel
+    skins = skin-weapon-imbel-default, skin-weapon-imbel-dahl, skin-weapon-imbel-breakwater
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        holder = upgrade-imbel-holder, upgrade-imbel-laser
+        scope = upgrade-imbel-scope-optical, upgrade-imbel-scope-eotech
+	barrel = upgrade-imbel-barrel-long
+        shoot-time = upgrade-imbel-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_IMBEL
+slot = slot-primary
+category = assault
+tags = unique
+index = 189
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_BOPE
+    }
+}

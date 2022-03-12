@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-zombie
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = zombie
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-zombie
+        goal = GOAL_KILL_USING_MASK
+        value = 300
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = sl-skin-deadman
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-zombie
+items = []
+name = ITEM_MASK_ZOMBIE
+player = player-mask-zombie
+slot = slot-mask
+category = mask
+tags = unique
+index = 10
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-zombie
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

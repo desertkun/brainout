@@ -1,0 +1,49 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = polymer-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-polymer-mdrc
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-polymer-mdrc
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-mdrc
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_POLYMER_DESC
+id = sl-store-case-mdrc
+name = CASE_POLYMER
+
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 50000
+        currency = ru
+    }
+}
+

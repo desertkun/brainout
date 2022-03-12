@@ -1,0 +1,56 @@
+class = content.quest.Quest
+id = quest-explosives-2
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-explosives
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = instrument-grenade-he-small
+        target = 2
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = instrument-grenade-flash
+        target = 2
+    }
+}
+
+group = explosives
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_EXPLOSIVES
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 1
+    }
+    {
+        action = addstat
+        id = score
+        amount = 600
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 150
+    }
+    {
+        action = addstat
+        id = gears
+        amount = 20
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 800
+    }
+]

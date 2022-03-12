@@ -1,0 +1,61 @@
+class = content.quest.Quest
+id = quest-mercenary
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-mercenary
+        tag = client
+    }
+]
+
+tasks = {
+	1 = {
+        class = content.quest.task.KillWith
+        weapon = instrument-grenade-he
+        target = 3
+    }
+	2 = {
+        class = content.quest.task.KillWith
+        category = sniper
+        categoryName = SLOT_CATEGORY_SNIPER
+        target = 15
+    }
+	3 = {
+        class = content.quest.task.KillWith
+        category = shotgun
+        categoryName = SLOT_CATEGORY_SHOTGUN
+        target = 10
+    }
+	4 = {
+        class = content.quest.task.KillWith
+        category = submachine
+        categoryName = SLOT_CATEGORY_SUBMACHINE
+        target = 5
+    }
+	5 = {
+        class = content.quest.task.KillWith
+        category = assault
+        categoryName = SLOT_CATEGORY_ASSAULT
+        target = 30
+    }
+	6 = {
+        class = content.quest.task.KillWith
+        category = pistol
+        categoryName = SLOT_CATEGORY_PISTOLS
+        target = 5
+    }
+}
+
+coop = false
+hasToLeave = false
+name = ITEM_PLAYER_SKIN_BLUE
+perTaskReward = true
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 2500
+    }
+]

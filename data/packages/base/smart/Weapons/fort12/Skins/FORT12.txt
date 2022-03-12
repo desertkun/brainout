@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-fort12-default
+name = ITEM_WEAP_FORT12
+slot = sl-sec-fort12

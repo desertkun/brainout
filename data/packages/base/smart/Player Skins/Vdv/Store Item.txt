@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-vdv
+        tag = client
+    }
+]
+id = sl-skin-vdv
+items = []
+name = ITEM_PLAYER_SKIN_VDV
+skin = skin-player-vdv
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 35
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}

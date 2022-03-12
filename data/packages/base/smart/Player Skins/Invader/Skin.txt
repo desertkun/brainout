@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = invader
+id = skin-player-invader
+name = ITEM_PLAYER_SKIN_INVADER

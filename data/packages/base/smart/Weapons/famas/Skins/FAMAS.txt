@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-famas-default
+name = ITEM_WEAP_FAMAS
+slot = sl-pri-famas

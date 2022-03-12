@@ -1,0 +1,254 @@
+class = content.consumable.Resource
+id = res-ceramics
+name = ITEM_CERAMICS
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-ceramics
+        icon-small = res-ceramics-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ignition-move-1
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-chemicals
+name = ITEM_CHEMICALS
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-chemicals
+        icon-small = res-chemicals-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = water-move-1, water-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-glass
+name = ITEM_GLASS
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-glass
+        icon-small = res-glass-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-glue
+name = ITEM_GLUE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-glue
+        icon-small = res-glue-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-metal
+name = ITEM_METAL
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-metal
+        icon-small = res-metal-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = battery-move-1
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-paint
+name = ITEM_RES_PAINT
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-paint
+        icon-small = res-paint-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = canned-foods-move-1, canned-foods-move-2, canned-foods-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-paper
+name = ITEM_PAPER
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-paper
+        icon-small = res-paper-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-pcb
+name = ITEM_PCB
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-pcb
+        icon-small = res-pcb-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-plastic
+name = ITEM_PLASTIC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-plastic
+        icon-small = res-plastic-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = junk-move-1, junk-move-2, junk-move-3, junk-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-textile
+name = ITEM_TEXTILE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-textile
+        icon-small = res-textile-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+]
+
+--------
+
+class = content.consumable.Resource
+id = res-wood
+name = ITEM_WOOD
+components = [
+    {
+        class = content.components.IconComponent
+        icon = res-wood
+        icon-small = res-wood-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = boards-move-1, boards-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 60
+    }
+]

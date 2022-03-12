@@ -1,0 +1,47 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = cyber-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-cyber
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-cyber
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-sec-malorian
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_CYBER_DESC
+id = sl-store-case-cyber
+name = CASE_CYBER
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 200000
+        currency = ru
+    }
+}

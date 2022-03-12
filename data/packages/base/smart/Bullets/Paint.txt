@@ -1,0 +1,28 @@
+blockEffect = false
+class = content.bullet.ShotBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-projectile-paint-1
+        ]
+        hit = [
+            paint-hit-snd-1, paint-hit-1
+            paint-hit-snd-2, paint-hit-1
+            paint-hit-snd-3, paint-hit-1
+        ]
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-bullet-pistol
+        tag = client
+    }
+]
+id = paint-bullet
+mass = 0.05
+name = ITEM_BULLET_PAINT
+power = 0.02
+powerDistance = 500
+speed = 80

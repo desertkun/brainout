@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-defender
+    }
+    {
+        groups = cardgroup-defender
+    }
+    {
+        groups = cardgroup-defender
+    }
+	{
+        groups = cardgroup-defender
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = defender-case-bg
+        class = content.components.IconComponent
+        icon = defender-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_DEFENDER_DESC
+id = case-defender
+name = CASE_DEFENDER

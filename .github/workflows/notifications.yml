@@ -1,0 +1,27 @@
+name: telegram message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            A commit has been pushed: ${{ github.event.commits[0].message }}
+      - name: Discord notification RU
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_RU }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'A commit has been pushed: {{ EVENT_PAYLOAD.commits[0].message }}'
+      - name: Discord notification EN
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_EN }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'A commit has been pushed: {{ EVENT_PAYLOAD.commits[0].message }}'

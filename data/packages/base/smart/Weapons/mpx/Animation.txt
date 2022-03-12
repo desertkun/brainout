@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mpx.json
+class = content.Animation
+id = anim-mpx
+states = []
+timeScale = 1

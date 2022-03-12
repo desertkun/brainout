@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = pistol-shoot-fire-2
+particle = base:particles/shoot-effect-2
+tag = client

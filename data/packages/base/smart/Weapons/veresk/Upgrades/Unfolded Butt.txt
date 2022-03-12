@@ -1,0 +1,25 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            body = unfold
+        }
+        tag = client
+    }
+    {
+        big-icon = icon-veresk-unfolded
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_UNFOLDED_BUTT_DESC
+id = upgrade-veresk-butt-unfolded
+name = ITEM_UPGRADE_UNFOLDED_BUTT
+properties = {
+    accuracy = "+20"
+    recoil = "-15"
+    speed-coef = "=0.91"
+}

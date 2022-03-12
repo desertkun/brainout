@@ -1,0 +1,15 @@
+class = content.active.FreeplayExitDoor
+components = [
+    {
+    	class = content.components.ClientActiveActivatorComponent
+    	activateText = MENU_EXIT_PREMISES
+    	tag = client
+    }
+    {
+        class = content.components.ServerFreeplayExitAptDoorComponent
+        tag = server
+    }
+]
+id = apt-exit-door
+name = Apt. Exit Door
+exitTime = 1.0

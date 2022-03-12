@@ -1,0 +1,10 @@
+class = content.effect.LightEffect
+color = ffffffcc
+distance = 6
+id = rpg7-flash
+rays = 32
+soft = 3
+tag = client
+time = 5
+timeAfter = 0.4
+timeBefore = 0

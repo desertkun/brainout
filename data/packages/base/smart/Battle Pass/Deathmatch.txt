@@ -1,0 +1,58 @@
+class = content.battlepass.GameModeAction
+id = battle-pass-kill-deathmatch
+target = 100
+reward = 250
+action = kills
+title = MENU_KILL_N_TIMES
+game-mode = deathmatch
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-kill-15-deathmatch
+target = 1
+reward = 250
+action = kills-15
+title = MENU_KILL_15_IN_GAME
+game-mode = deathmatch
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-win-3-deathmatch
+target = 3
+reward = 250
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = deathmatch
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-kill-3-deathmatch
+target = 1
+reward = 250
+action = kills-3-no-death
+title = MENU_KILL_3_WITHOUT_DYING
+game-mode = deathmatch
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-double-kills-deathmatch
+target = 5
+reward = 250
+action = double-kills
+title = MENU_PERFORM_N_DOUBLE_KILLS
+game-mode = deathmatch
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-3-double-kills-deathmatch
+target = 1
+reward = 250
+action = double-kills-3-game
+title = MENU_PERFORM_3_DOUBLE_KILLS_IN_ONE_GAME
+game-mode = deathmatch
+

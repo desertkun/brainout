@@ -1,0 +1,606 @@
+class = content.active.FreePlayPlayer
+components = [
+    {
+        class = content.components.PlayerPhysicsComponent
+        contactGap = 1
+        height = 3
+        mass = 1
+        width = 2
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerPhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveProgressComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientFreeplayPlayerComponent
+        activateText = MENU_REVIVE
+        tag = client
+    }
+    {
+        class = content.components.ActiveProgressVisualComponent
+    }
+    {
+        animationClass = content.components.PlayerAnimationComponent
+        class = content.components.RagDollComponent
+        detachBones = head, leg1, leg2, hand1, hand2
+        detachProbability = 0.5
+        tag = client
+        timeToLive = 30
+    }
+    {
+        animation = anim-actor
+        class = content.components.PlayerAnimationComponent
+    }
+    {
+        class = content.components.ServerTeamVisibilityComponent
+        detectionTime = {
+            @else = 5
+            @if = "$shortVisibility == true"
+            @then = 3
+        }
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-player-default
+        tag = client
+    }
+    {
+        class = content.components.HealthComponent
+        health = 200
+        immortalTime = 1.5
+    }
+    {
+        class = content.components.TemperatureComponent
+    }
+    {
+        class = content.components.PlayerEffectsComponent
+        fracture = [
+            player-hit-snd-1
+            player-hit-snd-2
+        ]
+        hit = [
+            player-hit-snd-1, player-blood-spray-part-1
+            player-hit-snd-2, player-blood-spray-part-2
+        ]
+        bleeding = [
+            player-blood-part-1-physic-no-sound
+            player-blood-part-2-physic-no-sound
+            player-blood-part-3-physic-no-sound
+            player-blood-part-4-physic-no-sound
+        ]
+        jetEffect = [
+            player-jet, player-jet-snd
+        ]
+        protect = [
+            metal-impact-snd
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ColliderComponent
+        colliders = {
+            body = {
+                damageCoefficient = 1
+                height = 2.75
+                width = 2
+            }
+            head = {
+                damageCoefficient = 1.25
+                height = 0.75
+                width = 0.5
+                x = 0.75
+                y = 2.75
+            }
+        }
+        tag = server
+    }
+    {
+        class = content.components.PlayerComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerPlayerColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerHealthComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.FreePlayerStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.PlayerBoostersComponent
+    }
+    {
+        class = content.components.FreeplayPlayerComponent
+        thirst-max = 100
+        temperature-max = 24
+        thirst-time = 6
+        hunger-max = 100
+        hunger-distance = 32
+        radio-max = 100
+    }
+    {
+        class = content.components.KarmaComponent
+    }
+    {
+        class = content.components.ServerFreeplayPlayerComponent
+        god-time = 1
+        total = 2
+        set-health = 300
+        restore-health = 50
+        revive-time = 5
+        bones-effect = bones-broke-effects
+        swamp-effect = swamp-effect
+        bones-speed = 30
+        bones-damage = 10
+        bones-bleeding-duration = 600
+        bones-bleeding-intensity = 5
+        tag = server
+    }
+]
+defaultSkin = skin-player-green
+id = player-freeplay
+jumpForce = 21
+jumpJetDelay = 0.3
+maxWeight = 15
+maxOverweight = 20
+name = ITEM_PLAYER_DEFAULT
+states = {
+    normal = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1.5
+                x2 = 1
+                y2 = 1
+            }
+            head = {
+                x1 = -0.5
+                y1 = 1
+                x2 = 0.5
+                y2 = 2
+            }
+        }
+        height = 3
+        speed = {
+            x = 10
+            y = 17
+        }
+        width = 2
+    }
+    run = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1.5
+                x2 = 1
+                y2 = 1
+            }
+            head = {
+                x1 = -0.5
+                y1 = 1
+                x2 = 0.5
+                y2 = 2
+            }
+        }
+        height = 3
+        speed = {
+            x = 12
+            y = 15
+        }
+        width = 2
+    }
+    sit = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 0.5
+            }
+            head = {
+                x1 = -0.5
+                y1 = 0.5
+                x2 = 0.5
+                y2 = 1.5
+            }
+        }
+        height = 2
+        speed = {
+            x = 4
+            y = 15
+        }
+        width = 2
+    }
+    squat = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 0.5
+            }
+            head = {
+                x1 = -0.5
+                y1 = 0.5
+                x2 = 0.5
+                y2 = 1.5
+            }
+        }
+        height = 1
+        speed = {
+            x = 0
+            y = 0
+        }
+        width = 2
+    }
+    wounded = {
+        collider = {
+            body = {
+                x1 = -1.5
+                y1 = -0.5
+                x2 = 1.5
+                y2 = 1
+            }
+            head = {
+                x1 = 0
+                y1 = 0
+                x2 = 0
+                y2 = 0
+            }
+        }
+        height = 1
+        speed = {
+            x = 3
+            y = 0
+        }
+        width = 2
+    }
+    crawl = {
+        collider = {
+            body = {
+                x1 = -1.5
+                y1 = -0.5
+                x2 = 1.5
+                y2 = 1
+            }
+            head = {
+                x1 = 0
+                y1 = 0
+                x2 = 0
+                y2 = 0
+            }
+        }
+        speed = {
+            x = 1.5
+            y = 0
+        }
+        width = 2
+        height = 1
+    }
+}
+
+--------
+
+class = content.active.FreePlayPlayer
+components = [
+    {
+        class = content.components.PlayerPhysicsComponent
+        contactGap = 1
+        height = 3
+        mass = 1
+        width = 2
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerPhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveProgressComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveProgressVisualComponent
+    }
+    {
+        @if = "$ragdoll != disabled"
+        @then = {
+            animationClass = content.components.PlayerAnimationComponent
+            class = content.components.RagDollComponent
+            detachBones = head, leg1, leg2, hand1, hand2
+            detachProbability = 0.5
+            tag = client
+            timeToLive = 30
+        }
+    }
+    {
+        class = content.components.PlayerChatComponent
+        tag = client
+    }
+    {
+        animation = anim-actor
+        class = content.components.PlayerAnimationComponent
+    }
+    {
+        class = content.components.ServerTeamVisibilityComponent
+        detectionTime = {
+            @else = 5
+            @if = "$shortVisibility == true"
+            @then = 3
+        }
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-player-default
+        tag = client
+    }
+    {
+        class = content.components.HealthComponent
+        health = 100
+        immortalTime = 1.5
+    }
+    {
+        class = content.components.PlayerEffectsComponent
+        fracture = [
+            player-hit-snd-1
+            player-hit-snd-2
+        ]
+        hit = [
+            player-hit-snd-1, player-blood-spray-part-1
+            player-hit-snd-2, player-blood-spray-part-2
+        ]
+        jetEffect = [
+            player-jet, player-jet-snd
+        ]
+        protect = [
+            metal-impact-snd
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ColliderComponent
+        colliders = {
+            body = {
+                damageCoefficient = 1
+                height = 2.75
+                width = 2
+            }
+            head = {
+                damageCoefficient = 2
+                height = 0.75
+                width = 0.5
+                x = 0.75
+                y = 2.75
+            }
+        }
+        tag = server
+    }
+    {
+        class = content.components.PlayerComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerPlayerColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerHealthComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.FreePlayerStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.PlayerBoostersComponent
+    }
+    {
+        class = content.components.KarmaComponent
+    }
+]
+defaultSkin = skin-player-green
+id = player-fp-bot
+jumpForce = 26
+jumpJetDelay = 0.3
+maxWeight = 15
+name = ITEM_PLAYER_DEFAULT
+states = {
+    normal = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1.5
+                x2 = 1
+                y2 = 1
+            }
+            head = {
+                x1 = -0.5
+                y1 = 1
+                x2 = 0.5
+                y2 = 2
+            }
+        }
+        height = 3
+        speed = {
+            x = 10
+            y = 17
+        }
+        width = 2
+    }
+    run = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1.5
+                x2 = 1
+                y2 = 1
+            }
+            head = {
+                x1 = -0.5
+                y1 = 1
+                x2 = 0.5
+                y2 = 2
+            }
+        }
+        height = 3
+        speed = {
+            x = 12
+            y = 15
+        }
+        width = 2
+    }
+    sit = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 0.5
+            }
+            head = {
+                x1 = -0.5
+                y1 = 0.5
+                x2 = 0.5
+                y2 = 1.5
+            }
+        }
+        height = 2
+        speed = {
+            x = 4
+            y = 15
+        }
+        width = 2
+    }
+    squat = {
+        collider = {
+            body = {
+                x1 = -1
+                y1 = -1
+                x2 = 1
+                y2 = 0.5
+            }
+            head = {
+                x1 = -0.5
+                y1 = 0.5
+                x2 = 0.5
+                y2 = 1.5
+            }
+        }
+        height = 1
+        speed = {
+            x = 0
+            y = 0
+        }
+        width = 2
+    }
+    wounded = {
+        collider = {
+            body = {
+                x1 = -1.5
+                y1 = -0.5
+                x2 = 1.5
+                y2 = 1
+            }
+            head = {
+                x1 = 0
+                y1 = 0
+                x2 = 0
+                y2 = 0
+            }
+        }
+        height = 1
+        speed = {
+            x = 3
+            y = 0
+        }
+        width = 2
+    }
+    crawl = {
+        collider = {
+            body = {
+                x1 = -1.5
+                y1 = -0.5
+                x2 = 1.5
+                y2 = 1
+            }
+            head = {
+                x1 = 0
+                y1 = 0
+                x2 = 0
+                y2 = 0
+            }
+        }
+        speed = {
+            x = 1.5
+            y = 0
+        }
+        width = 2
+        height = 1
+    }
+}
+
+
+--------
+
+id = sl-pl-freeplay
+
+access = byDefault
+class = content.shop.PlayerSlotItem
+components = []
+description = ITEM_NONE
+items = []
+name = ITEM_NONE
+player = player-freeplay
+price = 0
+
+--------
+
+class = content.shop.PlayerSlotItem
+components = [
+]
+id = sl-pl-freeplay-bot
+items = []
+player = player-fp-bot
+slot = slot-player
+category = special
+tags = level
+index = 3
+
+--------
+
+class = content.Effect
+id = bones-broke-effects
+set = bones-broke-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/bones-broke.mp3
+id = bones-broke-snd
+tag = client

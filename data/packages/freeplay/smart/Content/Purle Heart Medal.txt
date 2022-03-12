@@ -1,0 +1,24 @@
+class = content.consumable.ConsumableToOwnableContent
+id = consumable-beta
+ownable = medal-beta
+description = MEDAL_BETA_DESC
+name = MEDAL_BETA
+components = [
+    {
+        class = content.components.IconComponent
+        big-icon = item-medal-beta
+        icon-small = item-medal-purple-heart
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 500
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+]
+weight = 2

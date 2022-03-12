@@ -1,0 +1,36 @@
+cards = [
+    {
+        groups = cardgroup-insurgent
+    }
+    {
+        groups = cardgroup-insurgent
+    }
+    {
+        groups = cardgroup-insurgent
+    }
+	{
+        groups = cardgroup-insurgent
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = insurgent-case-bg
+        class = content.components.IconComponent
+        icon = insurgent-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_INSURGENT_DESC
+id = case-insurgent
+name = CASE_INSURGENT

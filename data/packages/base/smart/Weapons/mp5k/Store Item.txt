@@ -1,0 +1,44 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-mp5k
+instrument = {
+    id = weapon-mp5k
+    skins = skin-weapon-mp5k-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+	reload-time = upgrade-mp5k-reload-time
+        shoot-time = upgrade-mp5k-shoot-time
+	clip = upgrade-mp5k-clip-extended
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_MP5K
+slot = slot-secondary
+category = pistol
+tags = missions
+index = 196
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-mp5
+        param = 400
+		unlockTitle = MENU_UNLOCK_MP5K
+    }
+}

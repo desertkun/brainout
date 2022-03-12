@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-small
+id = skin-instrument-grenade-he-small-default
+name = ITEM_SPECIAL_GRENADE
+slot = sl-grn-he-small

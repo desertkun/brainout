@@ -1,0 +1,5 @@
+animation = base:animations/weapon-tt.json
+class = content.Animation
+id = anim-tt
+states = []
+timeScale = 1

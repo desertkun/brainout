@@ -1,0 +1,344 @@
+class = content.Levels
+id = levels-default
+levels = [
+    {
+        icon = icon-level-0
+        name = LEVEL_1
+        score = 200
+    }
+    {
+        icon = icon-level-1
+        name = LEVEL_2
+        score = 300
+    }
+    {
+        icon = icon-level-2
+        name = LEVEL_3
+        score = 500
+    }
+    {
+        icon = icon-level-3
+        name = LEVEL_4
+        score = 800
+    }
+    {
+        icon = icon-level-4
+        name = LEVEL_5
+        score = 1200
+    }
+    {
+        icon = icon-level-5
+        name = LEVEL_6
+        score = 1700
+    }
+    {
+        icon = icon-level-6
+        name = LEVEL_7
+        score = 2300
+    }
+    {
+        icon = icon-level-7
+        name = LEVEL_8
+        score = 3000
+    }
+    {
+        icon = icon-level-8
+        name = LEVEL_9
+        score = 3800
+    }
+    {
+        icon = icon-level-9
+        name = LEVEL_10
+        score = 4700
+    }
+    {
+        icon = icon-level-10
+        name = LEVEL_11
+        score = 5700
+    }
+    {
+        icon = icon-level-11
+        name = LEVEL_12
+        score = 6800
+    }
+    {
+        icon = icon-level-12
+        name = LEVEL_13
+        score = 8000
+    }
+    {
+        icon = icon-level-13
+        name = LEVEL_14
+        score = 9300
+    }
+    {
+        icon = icon-level-14
+        name = LEVEL_15
+        score = 10700
+    }
+    {
+        icon = icon-level-15
+        name = LEVEL_16
+        score = 12200
+    }
+    {
+        icon = icon-level-16
+        name = LEVEL_17
+        score = 13800
+    }
+    {
+        icon = icon-level-17
+        name = LEVEL_18
+        score = 15500
+    }
+    {
+        icon = icon-level-18
+        name = LEVEL_19
+        score = 17300
+    }
+    {
+        icon = icon-level-19
+        name = LEVEL_20
+        score = 19200
+    }
+    {
+        icon = icon-level-20
+        name = LEVEL_21
+        score = 21200
+    }
+    {
+        icon = icon-level-21
+        name = LEVEL_22
+        score = 23300
+    }
+    {
+        icon = icon-level-22
+        name = LEVEL_23
+        score = 25500
+    }
+    {
+        icon = icon-level-23
+        name = LEVEL_24
+        score = 27800
+    }
+    {
+        icon = icon-level-24
+        name = LEVEL_25
+        score = 30200
+    }
+    {
+        icon = icon-level-25
+        name = LEVEL_26
+        score = 32700
+    }
+    {
+        icon = icon-level-26
+        name = LEVEL_27
+        score = 35300
+    }
+    {
+        icon = icon-level-27
+        name = LEVEL_28
+        score = 38000
+    }
+    {
+        icon = icon-level-28
+        name = LEVEL_29
+        score = 40800
+    }
+    {
+        icon = icon-level-29
+        name = LEVEL_30
+        score = 43700
+    }
+    {
+        icon = icon-level-30
+        name = LEVEL_31
+        score = 46700
+    }
+    {
+        icon = icon-level-31
+        name = LEVEL_32
+        score = 49800
+    }
+    {
+        icon = icon-level-32
+        name = LEVEL_33
+        score = 53000
+    }
+    {
+        icon = icon-level-33
+        name = LEVEL_34
+        score = 56300
+    }
+    {
+        icon = icon-level-34
+        name = LEVEL_35
+        score = 59700
+    }
+    {
+        icon = icon-level-35
+        name = LEVEL_36
+        score = 63200
+    }
+    {
+        icon = icon-level-36
+        name = LEVEL_37
+        score = 66800
+    }
+    {
+        icon = icon-level-37
+        name = LEVEL_38
+        score = 70500
+    }
+    {
+        icon = icon-level-38
+        name = LEVEL_39
+        score = 74300
+    }
+    {
+        icon = icon-level-39
+        name = LEVEL_40
+        score = 78200
+    }
+    {
+        icon = icon-level-40
+        name = LEVEL_41
+        score = 82200
+    }
+    {
+        icon = icon-level-41
+        name = LEVEL_42
+        score = 86300
+    }
+    {
+        icon = icon-level-42
+        name = LEVEL_43
+        score = 90500
+    }
+    {
+        icon = icon-level-43
+        name = LEVEL_44
+        score = 94800
+    }
+    {
+        icon = icon-level-44
+        name = LEVEL_45
+        score = 99200
+    }
+    {
+        icon = icon-level-45
+        name = LEVEL_46
+        score = 103700
+    }
+    {
+        icon = icon-level-46
+        name = LEVEL_47
+        score = 108300
+    }
+    {
+        icon = icon-level-47
+        name = LEVEL_48
+        score = 113000
+    }
+    {
+        icon = icon-level-48
+        name = LEVEL_49
+        score = 117800
+    }
+    {
+        icon = icon-level-49
+        name = LEVEL_50
+        score = 122700
+    }
+    {
+        icon = icon-level-50
+        name = LEVEL_51
+        score = 127700
+    }
+    {
+        icon = icon-level-51
+        name = LEVEL_52
+        score = 132800
+    }
+    {
+        icon = icon-level-52
+        name = LEVEL_53
+        score = 138000
+    }
+    {
+        icon = icon-level-53
+        name = LEVEL_54
+        score = 143300
+    }
+    {
+        icon = icon-level-54
+        name = LEVEL_55
+        score = 148700
+    }
+    {
+        icon = icon-level-55
+        name = LEVEL_56
+        score = 154200
+    }
+    {
+        icon = icon-level-56
+        name = LEVEL_57
+        score = 159800
+    }
+    {
+        icon = icon-level-57
+        name = LEVEL_58
+        score = 165500
+    }
+    {
+        icon = icon-level-58
+        name = LEVEL_59
+        score = 171300
+    }
+    {
+        icon = icon-level-59
+        name = LEVEL_60
+        score = 177200
+    }
+    {
+        icon = icon-level-60
+        name = LEVEL_61
+        score = 183200
+    }
+    {
+        icon = icon-level-61
+        name = LEVEL_62
+        score = 189300
+    }
+    {
+        icon = icon-level-62
+        name = LEVEL_63
+        score = 195500
+    }
+    {
+        icon = icon-level-63
+        name = LEVEL_64
+        score = 201800
+    }
+    {
+        icon = icon-level-64
+        name = LEVEL_65
+        score = 208200
+    }
+    {
+        icon = icon-level-65
+        name = LEVEL_66
+        score = 214700
+    }
+    {
+        icon = icon-level-66
+        name = LEVEL_67
+        score = 221300
+    }
+    {
+        icon = icon-level-67
+        name = LEVEL_68
+        score = 228000
+    }
+]

@@ -1,0 +1,63 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.AnimatedIconComponent
+        frames = [
+            {
+                frame = medal-skin-maker-5-1
+                delay = 2
+            }
+            {
+                frame = medal-skin-maker-5-2
+                delay = 0.05
+            }
+            {
+                frame = medal-skin-maker-5-3
+                delay = 0.05
+            }
+            {
+                frame = medal-skin-maker-5-4
+                delay = 0.05
+            }
+            {
+                frame = medal-skin-maker-5-5
+                delay = 0.05
+            }
+            {
+                frame = medal-skin-maker-5-6
+                delay = 0.05
+            }
+            {
+                frame = medal-skin-maker-5-7
+                delay = 0.05
+            }
+            {
+                frame = medal-skin-maker-5-8
+                delay = 0.05
+            }
+        ]
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_SKIN_MAKER_DESC
+id = medal-skin-maker-5
+name = "{MEDAL_SKIN_MAKER} 5"
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_SKIN_MAKER_DESC
+    }
+}

@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-sv98
+components = [
+]
+instrument = {
+    id = weapon-sv98
+    skins = skin-weapon-sv98-default, skin-weapon-sv98-guard, skin-weapon-sv98-abo
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        barrel = upgrade-sv98-barrel-extended, upgrade-sv98-silencer
+        accuracy = upgrade-sv98-accuracy
+        wear-resistance = upgrade-sv98-wear-reistance
+        scope = upgrade-sv98-scope-optical
+    }
+}
+items = [
+    {
+        amount = 15
+        id = bullet-338-Lapua
+    }
+]
+name = ITEM_WEAP_SV98
+slot = slot-primary
+category = sniper
+tags = unique
+index = 365
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = zveroboy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ZVEROBOY
+    }
+}
+
+

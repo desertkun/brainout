@@ -1,0 +1,19 @@
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-gift
+        icon-bg = card-bg-gift
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-krieg
+name = CARDGROUP_UNIQUE

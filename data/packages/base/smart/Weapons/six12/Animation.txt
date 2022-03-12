@@ -1,0 +1,5 @@
+animation = base:animations/weapon-six12.json
+class = content.Animation
+id = anim-six12
+states = []
+timeScale = 1

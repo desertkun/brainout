@@ -1,0 +1,87 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                pull-snd-shotgun
+                {
+                    attachTo = shell-bone
+                    object = sleeve-1-physic
+                }
+            ]
+        ]
+        reload = ak74-reload-snd
+        fetch = ak74-fetch-snd
+        shoot = [
+            scout-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            scout-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 300
+    }
+    {
+        animation = anim-rem7600
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            fetch = pull-shotgun-underbarrel
+            reload = reload-2hands-1
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-rem7600-default
+id = weapon-rem7600
+instrumentTags = primary
+primary = {
+    accuracy = 60
+    aimDistance = 25
+    allowedBullets = bullet-7.62x51
+    clipSize = 4
+    magazineManagement = 2
+    damage = 110
+    fire-rate = 240
+    recoil = 60
+    reloadTime = 1.1
+    fetchTime = 0.75
+    shootModes = single
+    pullRequired = true
+    shell-auto-eject = false
+}
+slot = slot-primary

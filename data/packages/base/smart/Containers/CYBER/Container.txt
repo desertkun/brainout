@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-cyber
+    }
+    {
+        groups = cardgroup-cyber
+    }
+    {
+        groups = cardgroup-cyber
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = cyber-case-bg
+        class = content.components.IconComponent
+        icon = cyber-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_CYBER_DESC
+id = case-cyber
+name = CASE_CYBER

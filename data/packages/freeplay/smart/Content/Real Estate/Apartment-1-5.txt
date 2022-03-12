@@ -1,0 +1,19 @@
+class = content.consumable.RealEstateContent
+id = freeplay-apt-1-5
+map = intro-apt-1-5
+rooms = "1"
+variant = "#5"
+location = B1
+name = "{REAL_ESTATE_APT_1} #5"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-apt-keys
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+]

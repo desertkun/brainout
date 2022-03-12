@@ -1,0 +1,150 @@
+animation = base:animations/actor.json
+class = content.Animation
+defaultMix = 0.25
+id = anim-actor
+states = [
+    {
+        duration = 0.25
+        from = move-forward
+        to = stay
+    }
+    {
+        duration = 0.25
+        from = move-backward
+        to = stay
+    }
+    {
+        duration = 1
+        from = move-forward
+        to = run-forward
+    }
+    {
+        duration = 1
+        from = move-backward
+        to = run-backward
+    }
+    {
+        duration = 1
+        from = run-forward
+        to = move-forward
+    }
+    {
+        duration = 1
+        from = run-backward
+        to = move-backward
+    }
+    {
+        duration = 0.25
+        from = run-backward
+        to = stay
+    }
+    {
+        duration = 0.25
+        from = run-forward
+        to = stay
+    }
+    {
+        duration = 0.25
+        from = stay
+        to = run-backward
+    }
+    {
+        duration = 0.25
+        from = stay
+        to = run-forward
+    }
+    {
+        duration = 1
+        from = move-forward
+        to = fly
+    }
+    {
+        duration = 1
+        from = move-backward
+        to = fly
+    }
+    {
+        duration = 1
+        from = run-forward
+        to = fly
+    }
+    {
+        duration = 1
+        from = run-backward
+        to = fly
+    }
+    {
+        duration = 1
+        from = stay
+        to = fly
+    }
+    {
+        both = true
+        duration = 0
+        from = stay
+        to = sit
+    }
+    {
+        both = true
+        duration = 0
+        from = stay
+        to = sit2
+    }
+    {
+        both = true
+        duration = 0
+        from = run-forward
+        to = sit-forward
+    }
+    {
+        both = true
+        duration = 0
+        from = run-backward
+        to = sit-backward
+    }
+    {
+        both = true
+        duration = 0
+        from = shoot-aim-weapon-2hands
+        to = aim-weapon-2hands
+    }
+    {
+        both = true
+        duration = 0
+        from = shoot-aim-weapon-2hands-bp
+        to = aim-weapon-2hands-bp
+    }
+    {
+        both = true
+        duration = 0
+        from = shoot-aim-weapon-1hand
+        to = aim-weapon-1hand
+    }
+    {
+        both = true
+        duration = 0
+        from = shoot-hold-weapon-2hands
+        to = hold-weapon-2hands
+    }
+    {
+        both = true
+        duration = 0
+        from = shoot-hold-weapon-2hands-bp
+        to = hold-weapon-2hands-bp
+    }
+    {
+        both = true
+        duration = 0
+        from = shoot-hold-weapon-1hand
+        to = hold-weapon-1hand
+    }
+]
+skip-mix = [
+    crouch
+    crouch-forward
+    crouch-backward
+    wounded
+    wounded-forward
+    wounded-backward
+]
+timeScale = 2

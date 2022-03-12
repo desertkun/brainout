@@ -1,0 +1,58 @@
+class = content.shop.Slot
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-slot-primary
+        tag = client
+    }
+]
+default = sl-pri-mp5
+id = slot-primary
+name = SLOT_PRIMARY
+categories = [
+    {
+        id = assault
+        title = SLOT_CATEGORY_ASSAULT
+    }
+    {
+        id = submachine
+        title = SLOT_CATEGORY_SUBMACHINE
+    }
+    {
+        id = shotgun
+        title = SLOT_CATEGORY_SHOTGUN
+    }
+    {
+        id = sniper
+        title = SLOT_CATEGORY_SNIPER
+    }
+    {
+        id = other
+        title = SLOT_CATEGORY_OTHER
+    }
+]
+tags = [
+    {
+        id = level
+        title = SLOT_TAG_LEVEL
+    }
+    {
+        id = missions
+        title = SLOT_TAG_MISSIONS
+    }
+    {
+        id = resources
+        title = SLOT_TAG_RESOURCES
+    }
+    {
+        id = parts
+        title = SLOT_TAG_PARTS
+    }
+    {
+        id = unique
+        title = SLOT_TAG_UNIQUE
+    }
+]
+stack = true
+width = 192
+

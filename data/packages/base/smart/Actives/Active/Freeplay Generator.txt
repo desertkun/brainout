@@ -1,0 +1,84 @@
+class = content.active.FreeplayGenerator
+components = [
+    {
+        class = content.components.ClientFreeplayGeneratorComponent
+        startup = generator-startup
+        fail = generator-startup-fail
+        stop = generator-stop
+        idle = generator-idle
+        tag = client
+    }
+    {
+    	class = content.components.ClientGeneratorLightsComponent
+    	ids = [
+            tower-lights-1
+            tower-lights-2
+            tower-lights-3
+            tower-lights-4
+            tower-lights-5
+            tower-lights-6
+            tower-lights-7
+        ]
+        on = fr-tower-2-light
+        off = fr-tower-2
+    	tag = client
+    }
+    {
+        class = content.components.ServerFreeplayGeneratorComponent
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-generator
+        tag = client
+    }
+]
+id = freeplay-generator
+refill-animation = petrol-refill
+refill-effect = generator-refill-effect
+refill-time = 5
+refill-amount = 50
+petrol = instrument-petrol
+working-time-from = 10
+working-time-to = 15
+name = Freeplay Generator
+
+--------
+
+class = content.Effect
+id = generator-refill-effect
+set = [
+    petrol-pour
+]
+tag = client
+
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-broadcast
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_START_THE_BROADCAST
+        tag = client
+    }
+    {
+        class = content.components.ClientFreeplayGeneratorConditionComponent
+        noPowerText = MENU_NO_POWER
+        generator = tower-generator
+        tag = client
+    }
+    {
+        class = content.components.ServerFreeplayGeneratorActivatorComponent
+        event = tower-broadcast
+        generator = tower-generator
+        tag = server
+    }
+]
+id = active-freeplay-broadcast
+name = Freeplay Broadcast Activator

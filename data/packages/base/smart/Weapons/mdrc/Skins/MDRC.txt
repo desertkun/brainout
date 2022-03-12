@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mdrc-default
+name = ITEM_WEAP_MDRC
+slot = sl-pri-mdrc

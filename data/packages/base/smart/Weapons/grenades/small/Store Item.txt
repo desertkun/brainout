@@ -1,0 +1,58 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-grenade-he-small
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 300
+    }
+]
+description = ITEM_SPECIAL_GRENADE_DESC
+id = sl-grn-he-small
+instrument = {
+    amount = 2
+    id = instrument-grenade-he-small
+    skin = skin-instrument-grenade-he-small-default
+}
+items = []
+name = ITEM_SPECIAL_GRENADE
+slot = slot-special
+category = special
+tags = level
+enabled = {
+    @if = "$grenades == disabled"
+    @then = false
+    @else = true
+}
+index = 7
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 10
+    }
+}

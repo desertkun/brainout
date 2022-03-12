@@ -1,0 +1,50 @@
+class = content.block.NonContact
+components = [
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = swamp-block
+            tag = client
+        }
+    }
+    {
+        class = content.components.ServerSwampComponent
+        activateEffect = swamp-in-effect
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-swamp
+        tag = client
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+]
+fixture = false
+hasContact = false
+id = swamp-ground
+name = Swamp
+resist = 4
+
+--------
+
+class = content.Effect
+id = swamp-in-effect
+set = [
+    swamp-in-snd
+]
+tag = client
+--------
+
+class = content.Effect
+id = swamp-effect
+set = [
+    swamp-1-snd
+    swamp-2-snd
+    swamp-3-snd
+    swamp-4-snd
+]
+tag = client

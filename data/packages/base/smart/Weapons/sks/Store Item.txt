@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 45
+    }
+]
+id = sl-pri-sks
+instrument = {
+    id = weapon-sks
+    skins = skin-weapon-sks-default, skin-weapon-sks-aqua, skin-weapon-sks-45
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-sks-reload-time
+        scope = upgrade-sks-scope-m81
+	clip = upgrade-sks-clip-extended
+	recoil = upgrade-sks-recoil
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_SKS
+slot = slot-primary
+category = sniper
+tags = unique
+index = 66
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = survivor-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SURVIVOR
+    }
+}

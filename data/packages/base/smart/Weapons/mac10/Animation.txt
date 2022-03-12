@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mac10.json
+class = content.Animation
+id = anim-mac10
+states = []
+timeScale = 1

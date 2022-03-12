@@ -1,0 +1,56 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        big-icon = knife-executor
+        class = content.components.IconComponent
+        icon = knife-executor
+        tag = client
+    }
+]
+id = sl-ml-knife-executor
+instrument = {
+    id = weapon-knife-executor
+    skin = skin-weapon-knife-executor
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_EXECUTOR
+slot = slot-melee
+category = melee
+tags = unique
+index = 25
+
+
+--------
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 30000
+        currency = ru
+    }
+}
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-executor
+		icon = icon-blueprint-abstract
+		param = 1
+        unlockTitle = MENU_LOCKED_BLUEPRINT
+    }
+}

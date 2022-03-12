@@ -1,0 +1,5 @@
+animation = base:animations/weapon-magnum.json
+class = content.Animation
+id = anim-magnum
+states = []
+timeScale = 1

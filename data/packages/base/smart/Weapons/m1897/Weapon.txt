@@ -1,0 +1,100 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                m1897-pull-1
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+            [
+                m1897-pull-2
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+            [
+                m1897-pull-3
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+        ]
+        reload = spas12-reload-snd-1, spas12-reload-snd-2
+        shoot = [
+            m1897-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            m1897-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 300
+    }
+    {
+        animation = anim-m1897
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            fetch = pull-shotgun-underbarrel-2
+            reload = reload-shotgun-1
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 8
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m1897-default
+id = weapon-m1897
+instrumentTags = primary, shotgun
+primary = {
+    accuracy = 50
+    aimDistance = 28
+    allowedBullets = bullet-12-76
+    clipSize = 5
+    damage = 90
+    fire-rate = 250
+    noUnload = true
+    perBulletReload = true
+    pullRequired = true
+    fetchTime = 0.5
+    recoil = 50
+    reloadTime = 0.75
+    shootModes = single
+    shell-auto-eject = false
+}
+slot = slot-primary

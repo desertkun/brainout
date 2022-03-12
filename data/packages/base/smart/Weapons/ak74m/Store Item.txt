@@ -1,0 +1,58 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+]
+id = sl-pri-ak74m
+instrument = {
+    id = weapon-ak74m
+    skins = skin-weapon-ak74m-default, skin-weapon-ak74m-hunter, skin-weapon-ak74m-hive, skin-weapon-ak74m-steampunk, skin-weapon-ak74m-fig
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-ak74m-recoil
+        reload-time = upgrade-ak74m-reload-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AK74M
+slot = slot-primary
+category = assault
+tags = parts
+index = 50
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 25
+        currency = gears
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-ak74m
+        icon = standard-case
+        param = 6
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

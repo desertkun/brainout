@@ -1,0 +1,19 @@
+class = content.bullet.LimitedBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        icon = icon-petrol
+        icon-small = icon-petrol-small
+        fly = []
+        hit = []
+        launch = []
+        tag = client
+    }
+]
+hitImpulse = 0
+id = chainsaw-bullet
+mass = 0
+maxDistance = 3.5
+power = 1
+powerDistance = 3.5
+speed = 32

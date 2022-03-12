@@ -1,0 +1,391 @@
+class = content.active.Active
+name = CUSTOM_SPAWN_1
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 4
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 4
+                    h = 3
+                    image = spawn-green
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        offset = {
+            x = 0
+            y = 1.5
+        }
+        team = team-green
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+]
+team = team-green
+id = sp-gm-green
+
+--------
+
+class = content.active.Active
+name = CUSTOM_SPAWN_2
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 4
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 4
+                    h = 3
+                    image = spawn-blue
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        offset = {
+            x = 0
+            y = 1.5
+        }
+        team = team-blue
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+]
+team = team-blue
+id = sp-gm-blue
+
+--------
+
+class = content.active.Active
+name = CUSTOM_SPAWN_3
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 4
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 4
+                    h = 3
+                    image = spawn-dm
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        offset = {
+            x = 0
+            y = 1.5
+        }
+        team = team-dm
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+]
+team = team-dm
+id = sp-gm-z
+
+--------
+
+class = content.active.Active
+name = CUSTOM_FLAG_SPAWN
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 4
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 4
+                    h = 3
+                    image = spawn-flag
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        offset = {
+            x = 0
+            y = 1.5
+        }
+        target = flag
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+]
+id = sp-gm-flag
+
+--------
+
+class = content.active.Flag
+spawn-name = SPAWN_A
+spawnRange = 32
+name = CUSTOM_FLAG
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 2
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 2
+                    h = 3
+                    image = spawn-a
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+        limit-amount = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        target = flag
+        offset = {
+            x = 0
+            y = 1.5
+        }
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+    {
+        class = content.components.ServerFlagComponent
+        tag = server
+        takeDistance = 8
+    }
+    {
+        class = content.components.ClientFlagComponent
+        flagEnemyIcon = flag-enemy
+        flagNoneIcon = flag-none
+        flagOursIcon = flag-ours
+        tag = client
+    }
+]
+takeTime = {
+    @else = 6
+    @if = "$extendedTakeTime == true"
+    @then = 10
+}
+id = sp-gm-flag-a
+
+--------
+
+class = content.active.Flag
+spawn-name = SPAWN_B
+spawnRange = 32
+name = CUSTOM_FLAG
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 2
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 2
+                    h = 3
+                    image = spawn-b
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+        limit-amount = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        target = flag
+        offset = {
+            x = 0
+            y = 1.5
+        }
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+    {
+        class = content.components.ServerFlagComponent
+        tag = server
+        takeDistance = 8
+    }
+    {
+        class = content.components.ClientFlagComponent
+        flagEnemyIcon = flag-enemy
+        flagNoneIcon = flag-none
+        flagOursIcon = flag-ours
+        tag = client
+    }
+]
+takeTime = {
+    @else = 6
+    @if = "$extendedTakeTime == true"
+    @then = 10
+}
+id = sp-gm-flag-b
+
+--------
+
+class = content.active.Flag
+spawn-name = SPAWN_C
+spawnRange = 32
+name = CUSTOM_FLAG
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 2
+        height = 3
+        images = [
+            {
+                @if = "$editor == true"
+                @then = {
+                    x = 0
+                    y = 0
+                    w = 2
+                    h = 3
+                    image = spawn-c
+                }
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 1
+        limit-amount = 1
+    }
+    {
+        class = content.components.SubPointComponent
+        target = flag
+        offset = {
+            x = 0
+            y = 1.5
+        }
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ClientSpriteBlockComponent
+            tag = client
+        }
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_GAME
+        icon = icon-custom-game
+    }
+    {
+        class = content.components.ServerFlagComponent
+        tag = server
+        takeDistance = 8
+    }
+    {
+        class = content.components.ClientFlagComponent
+        flagEnemyIcon = flag-enemy
+        flagNoneIcon = flag-none
+        flagOursIcon = flag-ours
+        tag = client
+    }
+]
+takeTime = {
+    @else = 6
+    @if = "$extendedTakeTime == true"
+    @then = 10
+}
+id = sp-gm-flag-c
+
+

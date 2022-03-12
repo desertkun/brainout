@@ -1,0 +1,5 @@
+animation = base:animations/instrument-drill.json
+class = content.Animation
+id = anim-drill
+states = []
+timeScale = 1

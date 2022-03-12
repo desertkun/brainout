@@ -1,0 +1,43 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        big-icon = icon-shop-upgrade-shoot-time
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SHOOT_TIME_DESC
+id = upgrade-shoot-time-10
+name = ITEM_UPGRADE_SHOOT_TIME
+properties = {
+    fire-rate = "+100"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 26
+        currency = gears
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = tech-level
+        notify = false
+        param = 6
+    }
+}

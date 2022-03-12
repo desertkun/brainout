@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mp5sd6-polizei
+        tag = client
+    }
+]
+data = weapon-polizei
+id = skin-weapon-mp5sd6-polizei
+name = ITEM_WEAP_MP5SD6_POLIZEI
+slot = sl-pri-mp5sd6
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

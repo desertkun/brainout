@@ -1,0 +1,15 @@
+class = content.active.AmbientSound
+components = [
+    {
+        class = content.components.AmbientSoundComponent
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-sound
+        tag = client
+    }
+]
+id = sound
+name = ITEM_SOUND
+sound = open-fire-snd

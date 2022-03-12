@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = diversionist
+id = skin-player-diversionist
+name = ITEM_PLAYER_SKIN_DIVERSIONIST

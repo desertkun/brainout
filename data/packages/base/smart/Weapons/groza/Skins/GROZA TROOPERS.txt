@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-groza-troopers
+        tag = client
+    }
+]
+data = weapon-troopers
+id = skin-weapon-groza-troopers
+name = ITEM_WEAP_GROZA_TROOPERS
+slot = sl-pri-groza
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

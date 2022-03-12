@@ -1,0 +1,38 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-bayonet
+        class = content.components.IconComponent
+        icon = knife-bayonet
+        tag = client
+    }
+]
+id = sl-ml-knife-bayonet
+instrument = {
+    id = weapon-knife-bayonet
+    skin = skin-weapon-knife-bayonet
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_BAYONET
+slot = slot-melee
+category = melee
+tags = unique
+index = 335
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = defender-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_DEFENDER
+    }
+}

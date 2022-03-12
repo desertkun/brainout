@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-rpd-chromium
+        tag = client
+    }
+]
+data = weapon-chromium
+id = skin-weapon-rpd-chromium
+name = ITEM_WEAP_RPD_CHROMIUM
+slot = sl-pri-rpd
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

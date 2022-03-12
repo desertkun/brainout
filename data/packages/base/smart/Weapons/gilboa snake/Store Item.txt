@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-gilboa-snake
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+instrument = {
+    id = weapon-gilboa-snake
+    skins = skin-weapon-gilboa-snake-default, skin-weapon-gilboa-snake-murderer, skin-weapon-gilboa-snake-wild
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-gilboa-snake-accuracy
+        holder = upgrade-gilboa-snake-holder
+        scope = upgrade-gilboa-snake-scope-aimpoint
+        wear-resistance = upgrade-gilboa-snake-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 50
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_GILBOA_SNAKE
+slot = slot-primary
+category = assault
+tags = unique
+index = 360
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = navy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_NAVY
+    }
+}

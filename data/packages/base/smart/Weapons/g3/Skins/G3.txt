@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-g3-default
+name = ITEM_WEAP_G3
+slot = sl-pri-g3

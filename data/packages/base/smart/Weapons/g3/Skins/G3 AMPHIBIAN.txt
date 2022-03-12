@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-g3-amphibian
+        tag = client
+    }
+]
+data = weapon-amphibian
+id = skin-weapon-g3-amphibian
+name = ITEM_WEAP_G3_AMPHIBIAN
+slot = sl-pri-g3
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

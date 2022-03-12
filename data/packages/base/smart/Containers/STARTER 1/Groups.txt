@@ -1,0 +1,64 @@
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-unique-bg
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-ak12
+name = CARDGROUP_UNIQUE
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-unique-bg
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-ak12-skin
+name = CARDGROUP_UNIQUE
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-exclusive
+        icon-bg = card-exclusive-bg
+        icon-shine = card-shine-improved
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-yellow
+    }
+]
+id = cardgroup-exclusive-skin-bandit
+name = CARDGROUP_EXCLUSIVE
+

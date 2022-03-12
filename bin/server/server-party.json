@@ -1,0 +1,31 @@
+{
+	"name": "Lobby",
+	"packages":
+	[
+		"base"
+	],
+	"defines":
+	{
+		"lobby": "true"
+	},
+	"teams": 
+	[
+		"team-blue"
+	],
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},	
+
+	"modeDelay": 11,
+	"roundTime": 1200,
+
+	"damageCoef": 4,
+	"autoBalance":
+	{
+		"enabled": false,
+		"balance": 1
+	}
+}

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m16a3-insurgency
+        tag = client
+    }
+]
+data = weapon-insurgency
+id = skin-weapon-m16a3-insurgency
+name = ITEM_WEAP_M16A3_INSURGENCY
+slot = sl-pri-m16a3
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

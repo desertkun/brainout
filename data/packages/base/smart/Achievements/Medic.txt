@@ -1,0 +1,35 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-medic
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.SkillPointsRewardComponent
+        tag = server
+    }
+]
+id = achievement-medic
+name = ACHIEVEMENT_MEDIC
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = provided, health
+        param = 10000
+        unlockTitle = ACHIEVEMENT_MEDIC_DESC
+    }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-kiparis-default
+name = ITEM_WEAP_KIPARIS
+slot = sl-pri-kiparis

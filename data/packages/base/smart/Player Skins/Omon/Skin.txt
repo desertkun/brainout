@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = omon
+id = skin-player-omon
+name = ITEM_PLAYER_SKIN_OMON

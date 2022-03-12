@@ -1,0 +1,21 @@
+class = content.gamecase.gen.PartialInstrumentCard
+components = [
+    {
+        class = content.components.ClientPartialInstrumentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.PartialInstrumentCardComponent
+        content = sl-pri-ak74m
+    }
+    {
+        class = content.components.ServerPartialInstrumentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-part
+id = gen-skin-ak74m
+name = CARDGROUP_PART
+weight = 100

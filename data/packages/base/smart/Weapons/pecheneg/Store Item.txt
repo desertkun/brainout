@@ -1,0 +1,43 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-pecheneg
+instrument = {
+    id = weapon-pecheneg
+    skins = skin-weapon-pecheneg-default, skin-weapon-pecheneg-contract
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-pecheneg-recoil
+        reload-time = upgrade-pecheneg-reload-time
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_PECHENEG
+slot = slot-primary
+category = other
+tags = parts
+index = 371
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-pecheneg
+        icon = standard-case
+        param = 5
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

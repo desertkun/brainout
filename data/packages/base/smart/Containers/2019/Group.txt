@@ -1,0 +1,19 @@
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back-xmas
+        icon-bg = card-bg-xmas
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-2019
+name = CARDGROUP_UNIQUE

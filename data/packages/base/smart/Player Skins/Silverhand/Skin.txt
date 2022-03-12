@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = silverhand
+id = skin-player-silverhand
+name = ITEM_PLAYER_SKIN_SILVERHAND

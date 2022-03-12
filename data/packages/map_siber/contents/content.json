@@ -1,0 +1,62 @@
+{
+	"content": 
+	{
+		"music-list-siber":
+		{
+			"class": "content.MusicList",
+			"tag": "client",
+			"list":
+			[
+				"music-siber"
+			]
+		},
+		"music-siber":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "map_siber:music/bg.mp3"
+		},
+		"parr-siber":
+		{
+			"class": "content.parallax.Parallax",
+			"tag": "client",
+			"layers": [
+				{
+					"class": "content.parallax.DynamicLayer",
+					"texture": "siber-parr-sky-foreground",
+					"x": 0,
+					"y": 515,
+					"coefX": 0.00,
+					"coefY": 0.00,
+					"flowX": -5
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "siber-parr-sky-root-repeat",
+					"x": 0,
+					"y": -60,
+					"coefX": 0.1,
+					"coefY": 0.0,
+					"scale": true
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "siber-parr-sky-root",
+					"x": 0,
+					"y": 128,
+					"coefX": 0.01,
+					"coefY": 0.01
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "siber-parr-grass",
+					"x": 0,
+					"y": 270,
+					"coefX": 0.5,
+					"coefY": 0.2
+				}
+			]
+		}
+	},
+	"textures": "data/textures/textures.json"
+}

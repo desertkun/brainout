@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-trench
+        class = content.components.IconComponent
+        icon = knife-trench
+        tag = client
+    }
+]
+id = sl-ml-knife-trench
+instrument = {
+    id = weapon-knife-trench
+    skin = skin-weapon-knife-trench
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_TRENCH
+slot = slot-melee
+category = melee
+tags = unique
+index = 338
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

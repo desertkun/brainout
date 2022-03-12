@@ -1,0 +1,43 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-platform
+        tag = client
+    }
+    {
+        @if = "$platforms == phy"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = plaform-block-phy
+            tag = client
+        }
+        @else = {
+            @if = "$editor == true"
+            @then = {
+                class = content.components.BlockTextureComponent
+                region = platform-block
+                tag = client
+            }
+        }
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        hit = []
+        step = metal-step-snd-1, metal-step-snd-2, metal-step-snd-3, metal-step-snd-4
+        tag = client
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+]
+contactStrategy = platform
+static = true
+fixture = false
+hasContact = true
+id = platform
+contactId = platform
+contactTo = core, platform, brick, metal, carbon
+name = ITEM_BG_PLATFORM
+resist = 0

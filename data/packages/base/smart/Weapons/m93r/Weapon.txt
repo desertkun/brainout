@@ -1,0 +1,72 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = usp-reload
+        fetch = usp-fetch
+        shoot = [
+            beretta-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            beretta-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-m93r
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-1hand
+            fetch = reload-1hand-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m93r-default
+id = weapon-m93r
+instrumentTags = secondary
+primary = {
+    accuracy = 30
+    aimDistance = 25
+    allowedBullets = bullet-9mmx19
+    clipSize = 20
+    magazineManagement = 2
+    damage = 45
+    fire-rate = 950
+    recoil = 43
+    reloadTime = 1.6
+    fetchTime = 0.4
+    shootModes = burst, single
+}
+slot = slot-secondary

@@ -1,0 +1,441 @@
+class = content.active.ShootingRange
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shooting-range-3
+        tag = client
+    }
+    {
+    	class = content.components.ClientShootingRangeActivatorComponent
+    	activateText = SHOOTING_RANGE_PRACTICE
+    	tag = client
+    }
+]
+group = sniper
+time = 120
+weapons = {
+    01-svd = {
+        weapon = weapon-svd
+        skin = skin-weapon-svd-default
+        upgrades = {
+            clip = upgrade-svd-clip-extended
+            scope = upgrade-svd-scope-pso
+        }
+        items = {
+            bullet-7.62x51 = 120
+        }
+    }
+    02-sniper = {
+        weapon = weapon-sniper
+        skin = skin-weapon-sniper-default
+        upgrades = {
+            bipod = upgrade-sniper-bipod
+            clip = upgrade-sniper-clip-extended
+            scope = upgrade-sniper-scope-pks
+        }
+        items = {
+            bullet-338-Lapua = 120
+        }
+    }
+    03-garand = {
+        weapon = weapon-garand
+        skin = skin-weapon-garand-default
+        upgrades = {
+            scope = upgrade-garand-scope-m81
+        }
+        items = {
+            bullet-7.62x51 = 120
+        }
+    }
+    04-ar15 = {
+        weapon = weapon-ar15
+        skin = skin-weapon-ar15-default
+        upgrades = {
+            cap = upgrade-ar15-scope-magnifier
+            clip = upgrade-ar15-doubleclip
+            holder = upgrade-ar15-holder
+            scope = upgrade-ar15-scope-eot
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    05-hecate = {
+        weapon = weapon-hecate
+        skin = skin-weapon-hecate-default
+        upgrades = {
+        }
+        items = {
+            bullet-12.7x55 = 120
+        }
+    }
+    06-mosin = {
+        weapon = weapon-mosin
+        skin = skin-weapon-mosin-default
+        upgrades = {
+            scope = upgrade-mosin-scope-npz
+        }
+        items = {
+            bullet-7.62x51 = 120
+        }
+    }
+    07-sks = {
+        weapon = weapon-sks
+        skin = skin-weapon-sks-default
+        upgrades = {
+            scope = upgrade-sks-scope-m81
+            clip = upgrade-sks-clip-extended
+        }
+        items = {
+            bullet-7.62x51 = 240
+        }
+    }
+    08-zastava = {
+        weapon = weapon-zastava
+        skin = skin-weapon-zastava-default
+        upgrades = {
+            scope = upgrade-zastava-scope-optical
+        }
+        items = {
+            bullet-7.62x51 = 120
+        }
+    }
+    09-dvl10 = {
+        weapon = weapon-dvl10
+        skin = skin-weapon-dvl10-default
+        upgrades = {
+            silencer = upgrade-dvl10-silencer
+            bipod = upgrade-dvl10-bipod
+            clip = upgrade-dvl10-clip-extended
+        }
+        items = {
+            bullet-338-Lapua = 120
+        }
+    }
+    10-svu = {
+        weapon = weapon-svu
+        skin = skin-weapon-svu-default
+        upgrades = {
+        }
+        items = {
+            bullet-7.62x51 = 120
+        }
+    }
+    11-g3 = {
+        weapon = weapon-g3
+        skin = skin-weapon-g3-default
+        upgrades = {
+            butt = upgrade-g3-butt-extended
+            scope = upgrade-g3-scope-pks
+        }
+        items = {
+            bullet-7.62x51 = 120
+        }
+    }
+    12-hksl8 = {
+        weapon = weapon-hksl8
+        skin = skin-weapon-hksl8-default
+        upgrades = {
+            clip = upgrade-hksl8-clip-extended
+            scope = upgrade-hksl8-scope-optical
+            silencer = upgrade-hksl8-silencer
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+}
+id = shooting-range-sniper
+name = Sniper Shooting Range
+
+--------
+
+class = content.active.ShootingRange
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shooting-range-1
+        tag = client
+    }
+    {
+        class = content.components.ClientShootingRangeActivatorComponent
+        activateText = SHOOTING_RANGE_PRACTICE
+        tag = client
+    }
+]
+group = primary
+time = 120
+weapons = {
+    01-mdrc = {
+        weapon = weapon-mdrc
+        skin = skin-weapon-mdrc-default
+        upgrades = {
+            scope-a = upgrade-mdrc-scope-cap
+            scope-b = upgrade-mdrc-scope-eotech
+        }
+        items = {
+            bullet-7.62x51 = 240
+        }
+    }
+    02-lr300 = {
+        weapon = weapon-lr300
+        skin = skin-weapon-lr300-default
+        upgrades = {
+            butt = upgrade-lr300-butt-light
+            scope = upgrade-lr300-scope-susat
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    03-acr = {
+        weapon = weapon-acr
+        skin = skin-weapon-acr-default
+        upgrades = {
+            scope = upgrade-acr-scope-eot
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    04-tar21 = {
+        weapon = weapon-tar21
+        skin = skin-weapon-tar21-default
+        upgrades = {
+            scope = upgrade-tar21-scope-eotech
+            holder = upgrade-tar21-holder
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    05-ak74m = {
+        weapon = weapon-ak74m
+        skin = skin-weapon-ak74m-default
+        upgrades = {
+        }
+        items = {
+            bullet-5.45x39 = 240
+        }
+    }
+    06-ak12 = {
+        weapon = weapon-ak12
+        skin = skin-weapon-ak12-default
+        upgrades = {
+            clip = upgrade-ak12-clip-extended
+            on = upgrade-ak12-holder
+            scope = upgrade-ak12-scope-acog
+        }
+        items = {
+            bullet-5.45x39 = 240
+        }
+    }
+    07-m4a1 = {
+        weapon = weapon-m4a1
+        skin = skin-weapon-m4a1-default
+        upgrades = {
+            holder = upgrade-m4a1-holder
+            scope = upgrade-m4a1-scope-truglo
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    08-an94 = {
+        weapon = weapon-an94
+        skin = skin-weapon-an94-default
+        upgrades = {
+            clip = upgrade-an94-clip-extended
+            scope = upgrade-an94-scope-cobra
+        }
+        items = {
+            bullet-5.45x39 = 240
+        }
+    }
+    09-fn2000 = {
+        weapon = weapon-fn2000
+        skin = skin-weapon-fn2000-default
+        upgrades = {
+            on = upgrade-fn2000-holder
+            scope = upgrade-fn2000-scope-truglo
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    10-galil = {
+        weapon = weapon-galil
+        skin = skin-weapon-galil-default
+        upgrades = {
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    11-hk416 = {
+        weapon = weapon-hk416
+        skin = skin-weapon-hk416-default
+        upgrades = {
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+    12-qbz = {
+        weapon = weapon-qbz
+        skin = skin-weapon-qbz-default
+        upgrades = {
+        }
+        items = {
+            bullet-5.56x45 = 240
+        }
+    }
+}
+id = shooting-range-primary
+name = Primary Shooting Range
+
+--------
+
+class = content.active.ShootingRange
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shooting-range-2
+        tag = client
+    }
+    {
+        class = content.components.ClientShootingRangeActivatorComponent
+        activateText = SHOOTING_RANGE_PRACTICE
+        tag = client
+    }
+]
+group = secondary
+time = 120
+weapons = {
+    01-rsh12 = {
+        weapon = weapon-rsh12
+        skin = skin-weapon-rsh12-default
+        upgrades = {
+            fastloader = upgrade-rsh12-fastloader
+            scope = upgrade-rsh12-scope
+        }
+        items = {
+            bullet-12.7x55 = 240
+        }
+    }
+    02-sigsauer = {
+        weapon = weapon-sigsauer
+        skin = skin-weapon-sigsauer-default
+        upgrades = {
+            clip = upgrade-sigsauer-clip-extended
+            light = upgrade-sigsauer-laser
+            silecter = upgrade-sigsauer-silencer
+        }
+        items = {
+            bullet-9mmx19 = 240
+        }
+    }
+    03-pistol-s = {
+        weapon = weapon-pistol-s
+        skin = skin-weapon-pistol-s-default
+        upgrades = {
+            clip = upgrade-pistol-s-clip-extended
+        }
+        items = {
+            bullet-9mmx18 = 240
+        }
+    }
+    04-magnum = {
+        weapon = weapon-magnum
+        skin = skin-weapon-magnum-default
+        upgrades = {
+            fastloader = upgrade-magnum-fastloader
+        }
+        items = {
+            bullet-357-magnum = 240
+        }
+    }
+    05-tt = {
+        weapon = weapon-tt
+        skin = skin-weapon-tt-default
+        upgrades = {
+            fastloader = upgrade-magnum-fastloader
+        }
+        items = {
+            bullet-45acp = 240
+        }
+    }
+    06-fnx45 = {
+        weapon = weapon-fnx45
+        skin = skin-weapon-fnx45-default
+        upgrades = {
+            laser = upgrade-fnx45-laser
+            silencer = upgrade-fnx45-silencer
+            scope = upgrade-fnx45-scope
+        }
+        items = {
+            bullet-45acp = 240
+        }
+    }
+    07-beretta = {
+        weapon = weapon-beretta
+        skin = skin-weapon-beretta-default
+        upgrades = {
+        }
+        items = {
+            bullet-9mmx19 = 240
+        }
+    }
+    08-desert = {
+        weapon = weapon-desert
+        skin = skin-weapon-desert-default
+        upgrades = {
+        }
+        items = {
+            bullet-357-magnum = 240
+        }
+    }
+    09-coltds = {
+        weapon = weapon-coltds
+        skin = skin-weapon-coltds-default
+        upgrades = {
+            fastloader = upgrade-coltds-fastloader
+        }
+        items = {
+            bullet-357-magnum = 240
+        }
+    }
+    10-pistol = {
+        weapon = weapon-pistol
+        skin = skin-weapon-pistol-default
+        upgrades = {
+            clip = upgrade-pistol-clip-extended
+            light = upgrade-pistol-laser
+            silecter = upgrade-pistol-silencer
+        }
+        items = {
+            bullet-9mmx18 = 240
+        }
+    }
+    11-luger = {
+        weapon = weapon-luger
+        skin = skin-weapon-luger-default
+        upgrades = {
+        }
+        items = {
+            bullet-9mmx19 = 240
+        }
+    }
+    12-usp-match = {
+        weapon = weapon-usp-match
+        skin = skin-weapon-usp-match-default
+        upgrades = {
+        }
+        items = {
+            bullet-9mmx19 = 240
+        }
+    }
+}
+id = shooting-range-secondary
+name = Secondary Shooting Range
+

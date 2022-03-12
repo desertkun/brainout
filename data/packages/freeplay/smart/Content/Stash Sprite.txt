@@ -1,0 +1,29 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.ConditionalSpriteComponent
+        defaultSprite = stash-1
+        conditions = [
+            {
+                ownable = extended-storage-4
+                sprite = stash-5
+            }
+            {
+                ownable = extended-storage-3
+                sprite = stash-4
+            }
+            {
+                ownable = extended-storage-2
+                sprite = stash-3
+            }
+            {
+                ownable = extended-storage-1
+                sprite = stash-2
+            }
+        ]
+        tag = client
+    }
+]
+id = stash-sprite
+name = Stash Sprite
+scale = 1

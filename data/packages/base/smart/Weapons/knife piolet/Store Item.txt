@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = piolet
+        class = content.components.IconComponent
+        icon = piolet
+        tag = client
+    }
+]
+id = sl-ml-piolet
+instrument = {
+    id = weapon-piolet
+    skin = skin-weapon-piolet-default
+}
+items = [
+]
+name = ITEM_WEAP_PIOLET
+slot = slot-melee
+category = melee
+tags = unique
+index = 6
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = north-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_NORTH
+    }
+}

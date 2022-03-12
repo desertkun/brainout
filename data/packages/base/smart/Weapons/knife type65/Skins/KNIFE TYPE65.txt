@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-type65
+        class = content.components.IconComponent
+        icon = knife-type65
+        tag = client
+    }
+]
+data = knife-type65
+id = skin-weapon-knife-type65
+name = ITEM_WEAP_KNIFE_TYPE65
+slot = sl-ml-knife-type65

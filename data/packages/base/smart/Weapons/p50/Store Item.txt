@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-sec-p50
+instrument = {
+    id = weapon-p50
+    skins = skin-weapon-p50-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-p50-accuracy
+        recoil = upgrade-p50-recoil
+        reload-time = upgrade-p50-reload-time
+    }
+}
+items = [
+    {
+        amount = 25
+        id = bullet-5.7x28
+    }
+]
+name = ITEM_WEAP_P50
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 383
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

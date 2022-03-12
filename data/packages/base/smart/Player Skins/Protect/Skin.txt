@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = protect
+id = skin-player-protect
+name = ITEM_PLAYER_SKIN_PROTECT

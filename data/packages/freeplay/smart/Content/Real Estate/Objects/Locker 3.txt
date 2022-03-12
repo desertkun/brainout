@@ -1,0 +1,99 @@
+class = content.active.RealEstateItem
+name = "{UNIQUE_LOCKER} #3"
+kind = unique
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 4
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 3
+                h = 4
+                image = rs-unique-3x4-1
+            }
+        ]
+        underlying-block = rs-decor
+        blocks-layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = rs-unique-3x4-1
+        tag = client
+    }
+    {
+        class = content.components.RealEstateItemContainerComponent
+        weightLimit = 20
+        tagLimit = sniper
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.RecipeComponent
+        items = {
+            res-plastic = 3
+            res-metal = 7
+            res-paint = 3
+            consumable-item-junk = 4
+        }
+        stat = blueprint-rs-locker-3
+    }
+    {
+        class = content.components.ItemComponent
+        space = true
+        weight = 12
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+]
+id = rs-locker-3
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-rs-locker-3
+stat = blueprint-rs-locker-3
+name = "{BLUEPRINT_FOR}: {UNIQUE_LOCKER} #3"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-rsitem
+        icon-small = icon-blueprint-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-rs-locker-3
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+]

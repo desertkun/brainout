@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mts569.json
+class = content.Animation
+id = anim-mts569
+states = []
+timeScale = 1

@@ -1,0 +1,31 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = []
+id = sl-pri-serf
+instrument = {
+    id = weapon-serf
+    skin = skin-weapon-serf-default
+}
+items = [
+    {
+        amount = 6
+        id = serf-bullet
+    }
+]
+name = ITEM_WEAP_SERF
+slot = slot-primary
+category = other
+tags = unique
+index = 1000
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

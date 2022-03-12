@@ -1,0 +1,33 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-mp5
+instrument = {
+    id = weapon-mp5
+    skins = skin-weapon-mp5-default, skin-weapon-mp5-flamethrower, skin-weapon-mp5-bone
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-mp5-accuracy
+        butt = upgrade-mp5-butt-extended
+        holder = upgrade-mp5-holder
+        reload-time = upgrade-mp5-reload-time
+        scope = upgrade-mp5-scope-eot
+        shoot-time = upgrade-mp5-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_MP5
+slot = slot-primary
+category = submachine
+tags = classic
+index = 1

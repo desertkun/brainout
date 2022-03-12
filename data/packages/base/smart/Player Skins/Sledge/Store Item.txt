@@ -1,0 +1,36 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-sledge
+        tag = client
+    }
+	{
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-sledge
+items = []
+name = ITEM_PLAYER_SKIN_SLEDGE
+skin = skin-player-sledge
+slot = slot-player-skin
+category = outfit
+tags = missions
+index = 388
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		hide = true
+    }
+}
+

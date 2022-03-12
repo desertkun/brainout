@@ -1,0 +1,63 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+	{
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-six12
+instrument = {
+    id = weapon-six12
+    skins = skin-weapon-six12-default, skin-weapon-six12-octopus, skin-weapon-six12-crusher
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-six12-recoil
+		holder = upgrade-six12-silencer
+		wear-resistance = upgrade-six12-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 16
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_SIX12
+slot = slot-primary
+category = shotgun
+tags = unique
+index = 20
+
+--------
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 65000
+        currency = ru
+    }
+}
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-six12
+		icon = icon-blueprint
+		param = 1
+        unlockTitle = MENU_LOCKED_BLUEPRINT
+    }
+}

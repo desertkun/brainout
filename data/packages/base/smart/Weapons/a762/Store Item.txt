@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-a762
+instrument = {
+    id = weapon-a762
+    skins = skin-weapon-a762-default, skin-weapon-a762-wintry
+    upgrades = {
+        recoil = upgrade-a762-recoil
+        reload-time = upgrade-a762-reload-time
+	butt = upgrade-a762-butt-folded
+        scope = upgrade-a762-scope-pk110
+	clip = upgrade-a762-clip-extended
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_A762
+slot = slot-primary
+category = assault
+tags = unique
+index = 411
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	    icon = icon-battle-pass-points-big
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-desert
+id = skin-weapon-m4a1-desert
+name = ITEM_WEAP_M4A1_DESERT
+slot = sl-pri-m4a1-desert

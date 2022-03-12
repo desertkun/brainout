@@ -1,0 +1,118 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        buildUp = m134-buildup
+        shoot = [
+            fnminimi-shoot-1, fnminimi-shoot-2, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            fnminimi-shoot-4, fnminimi-shoot-3, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.PlayerAnimationComponentData
+        replace = {
+            backpack = m134-backpack
+        }
+        tag = server
+    }
+    {
+        attachBoneA = belt-a
+        attachBoneB = belt-body-c
+        cellSprite = weapon-belt-thick-x2
+        cells = 18
+        class = content.components.InstrumentBeltComponent
+        tag = client
+        tension = 1.2
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        actions = [
+            {
+                for = cycle
+                type = animate
+                animation = roll
+            }
+            {
+                for = buildup
+                type = animate
+                animation = preheat
+            }
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-m134
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = hold-weapon-minigun
+            aimHit = shoot-weapon-minigun
+            hit = shoot-weapon-minigun
+            hold = hold-weapon-minigun
+            reload = hold-weapon-minigun
+            buildUp = buildup-weapon-minigun
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m134-default
+id = weapon-m134
+instrumentTags = primary
+primary = {
+    accuracy = 30
+    aimDistance = 30
+    allowedBullets = bullet-7.62x39
+    clipSize = 250
+    magazineManagement = 2
+    damage = 40
+    fire-rate = 1000
+    bulletAtLaunch = 2
+    hasBuildUp = true
+    buildUpTime = 0.85
+    recoil = 15
+    reloadTime = 3.5
+    shootModes = auto
+}
+slot = slot-primary
+speedCoef = 0.5

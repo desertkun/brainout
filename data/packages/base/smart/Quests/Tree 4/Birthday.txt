@@ -1,0 +1,35 @@
+class = content.quest.Quest
+id = quest-first-birthday-1
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-birthday
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = consumable-item-cake
+        target = 3
+    }
+}
+
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_BIRTHDAY
+
+rewards = [
+    {
+        action = unlock
+        id = sl-skin-new
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 5000
+    }
+]

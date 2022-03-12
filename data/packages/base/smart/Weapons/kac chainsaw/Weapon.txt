@@ -1,0 +1,100 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = pkm-reload-snd
+        fetch = pkm-fetch-snd
+        shoot = [
+            rhino-shoot-2, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 4.5
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 960
+    }
+    {
+        animation = anim-kac-chainsaw
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = hold-weapon-minigun
+            aimHit = shoot-weapon-minigun
+            hit = shoot-weapon-minigun
+            hold = hold-weapon-minigun
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+
+    }
+    {
+        class = content.components.SuppressBulletAttachmentsComponent
+        suppress = fire-bone
+        tag = client
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-kac-chainsaw-default
+id = weapon-kac-chainsaw
+instrumentTags = primary
+primary = {
+    accuracy = 20
+    aimDistance = 20
+    allowedBullets = bullet-5.56x45
+    clipSize = 100
+    magazineManagement = 2
+    damage = 65
+    fire-rate = 550
+    recoil = 30
+    reloadTime = 3.5
+    shootModes = auto
+}
+slot = slot-primary
+speedCoef = 0.8

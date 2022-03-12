@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-ak105bullpup
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-ak105bullpup
+    skins = skin-weapon-ak105bullpup-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ak105bullpup-accuracy
+        recoil = upgrade-ak105bullpup-recoil
+        scope = upgrade-ak105bullpup-scope-elcan
+		holder = upgrade-ak105bullpup-holder
+		reload-time = upgrade-ak105bullpup-reload-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AK105BULLPUP
+slot = slot-primary
+category = assault
+tags = missions
+index = 378
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-ak105
+        param = 500
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_AK105}"
+    }
+}

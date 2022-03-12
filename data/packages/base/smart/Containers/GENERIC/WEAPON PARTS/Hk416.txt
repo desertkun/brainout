@@ -1,0 +1,21 @@
+class = content.gamecase.gen.PartialInstrumentCard
+components = [
+    {
+        class = content.components.ClientPartialInstrumentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.PartialInstrumentCardComponent
+        content = sl-pri-hk416
+    }
+    {
+        class = content.components.ServerPartialInstrumentCardComponent
+        tag = server
+    }
+]
+group = cardgroup-part
+id = gen-skin-hk416
+name = CARDGROUP_PART
+weight = 100

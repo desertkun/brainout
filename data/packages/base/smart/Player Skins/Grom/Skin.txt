@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = grom
+id = skin-player-grom
+name = ITEM_PLAYER_SKIN_GROM

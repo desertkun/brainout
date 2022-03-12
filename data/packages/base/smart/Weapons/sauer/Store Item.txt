@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }    
+]
+id = sl-pri-sauer
+instrument = {
+    id = weapon-sauer
+    skins = skin-weapon-sauer-default, skin-weapon-sauer-hell, skin-weapon-sauer-bamboo
+    upgrades = {
+        scope = upgrade-sauer-scope-optical
+    }
+}
+items = [
+    {
+        amount = 4
+        id = bullet-9.3x74R
+    }
+    {
+        amount = 10
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_SAUER
+slot = slot-primary
+category = shotgun
+tags = unique
+index = 356
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = anti-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_ANTI
+    }
+}
+

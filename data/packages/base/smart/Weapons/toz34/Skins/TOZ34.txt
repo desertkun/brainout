@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-toz34-default
+name = ITEM_WEAP_TOZ34
+slot = sl-pri-toz34

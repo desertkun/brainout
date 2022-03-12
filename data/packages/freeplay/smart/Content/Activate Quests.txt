@@ -1,0 +1,15 @@
+
+class = content.active.Active
+components = [
+    {
+    	class = content.components.ClientActiveActivatorComponent
+    	activateText = MENU_APPLY_QUESTS
+    	tag = client
+    }
+    {
+        class = content.components.ServerFreeplayApplyQuestComponent
+        tag = server
+    }
+]
+id = fp-apply-quests
+name = MENU_APPLY_QUESTS

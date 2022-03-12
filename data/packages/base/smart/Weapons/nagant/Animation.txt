@@ -1,0 +1,5 @@
+animation = base:animations/weapon-nagant.json
+class = content.Animation
+id = anim-nagant
+states = []
+timeScale = 1

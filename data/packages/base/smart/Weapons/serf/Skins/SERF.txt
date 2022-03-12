@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-serf-default
+name = ITEM_WEAP_SERF
+slot = sl-pri-serf

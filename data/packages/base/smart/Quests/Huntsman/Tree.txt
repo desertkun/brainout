@@ -1,0 +1,6 @@
+class = content.quest.Tree
+id = quest-tree-huntsman
+
+quests = [
+    quest-huntsman
+]

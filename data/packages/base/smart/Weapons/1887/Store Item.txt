@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-1887
+instrument = {
+    id = weapon-1887
+    skins = skin-weapon-1887-default, skin-weapon-1887-tekhno, skin-weapon-1887-police, skin-weapon-1887-turbine
+    upgrades = {
+        recoil = upgrade-1887-recoil
+        reload-time = upgrade-1887-reload-time
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_1887
+slot = slot-primary
+category = shotgun
+tags = unique
+index = 342
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_STANDARD
+    }
+}

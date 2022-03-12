@@ -1,0 +1,157 @@
+{
+	"rotary": "random",
+	"class": "source.MapSetSource",
+	"maps":
+	{
+		"factory":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_station"],
+			"map": "maps/factory.map"
+		},
+		"station":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_station"],
+			"map": "maps/station.map"
+		},
+		"siber":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_station"],
+			"map": "maps/siber.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"forest":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge"],
+			"map": "maps/forest.map"
+		},
+		"bridge":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/bridge.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"tower":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/tower.map"
+		},
+		"bunker":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/bunker.map"
+		},
+		"mall":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/mall.map"
+		},
+		"hospital":
+		{
+			"packages": ["map_factory", "map_forest", "map_hospital"],
+			"map": "maps/hospital.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"hospital_new":
+		{
+			"packages": ["map_factory", "map_forest", "map_hospital"],
+			"map": "maps/hospital_new.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		}
+	},
+	"modes":
+	{
+		"domination":
+		{
+			"mode": "domination",
+			"settings":
+			{
+				"winPoints": 100,
+				"takeFlagPoints": 5,
+
+				"holdFlagTime": 5,
+				"holdFlagPoints": 1
+			}
+		},
+		"assault":
+		{
+			"mode": "assault",
+			"defines":
+			{
+				"items_long_live": "true"
+			},
+			"settings":
+			{
+				"rounds": 15,
+				"timeRound": 300,
+				"timeAfterRound": 3,
+				"timeBeforeRound": 15
+			},
+			"roundTime": 0
+		},
+		"normal":
+		{
+			"mode": "normal",
+			"settings":
+			{
+				"tickets": 10,
+				"ticketsForNewPlayer": 10,
+				"pointBonus": 0
+			}
+		}
+	},
+	"sets":
+	[
+		{
+			"map": "factory",
+			"mode": "domination,assault"
+		},
+		{
+			"map": "hospital",
+			"mode": "domination,normal"
+		},
+		{
+			"map": "hospital_new",
+			"mode": "domination,normal"
+		},
+		{
+			"map": "siber",
+			"mode": "normal"
+		},
+		{
+			"map": "forest",
+			"mode": "normal"
+		},
+		{
+			"map": "mall",
+			"mode": "normal,domination,assault"
+		},
+		{
+			"map": "bridge",
+			"mode": "normal,domination"
+		},
+		{
+			"map": "tower",
+			"mode": "assault,normal,domination"
+		},
+		{
+			"map": "bunker",
+			"mode": "normal,domination"
+		},
+		{
+			"map": "station",
+			"mode": "assault"
+		}
+	]
+}

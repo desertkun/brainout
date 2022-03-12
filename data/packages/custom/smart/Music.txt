@@ -1,0 +1,45 @@
+class = content.MusicList
+tag = client
+list = [
+	music-forest-01
+]
+id = music-list-forest
+
+--------
+
+class = content.MusicList
+tag = client
+list = [
+	music-city-01
+]
+id = music-list-city
+
+--------
+
+class = content.MusicList
+tag = client
+list = [
+	music-evening-01
+]
+id = music-list-evening
+
+--------
+
+class = content.Music
+tag = client
+music = custom:music/music-forest.mp3
+id = music-forest-01
+
+--------
+
+class = content.Music
+tag = client
+music = custom:music/music-city.mp3
+id = music-city-01
+
+--------
+
+class = content.Music
+tag = client
+music = custom:music/music-evening.mp3
+id = music-evening-01

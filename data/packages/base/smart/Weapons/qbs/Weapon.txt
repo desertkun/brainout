@@ -1,0 +1,90 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                pull-snd-shotgun
+                {
+                    attachTo = shell-bone
+                    object = sleeve-2-physic
+                }
+            ]
+        ]
+        reload = spas12-reload-snd-1, spas12-reload-snd-2
+        shoot = [
+            spas12-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            spas12-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            spas12-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            spas12-shoot-4, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            spas12-shoot-5, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            spas12-shoot-6, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 3.5
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 300
+    }
+    {
+        animation = anim-qbs
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            fetch = pull-shotgun-underbarrel
+            reload = reload-shotgun-1
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 8
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-qbs-default
+id = weapon-qbs
+instrumentTags = primary, shotgun
+primary = {
+    accuracy = 10
+    aimDistance = 30
+    allowedBullets = bullet-12-76
+    clipSize = 5
+    damage = 100
+    fire-rate = 250
+    noUnload = true
+    perBulletReload = true
+    pullRequired = false
+    fetchTime = 0.75
+    recoil = 90
+    reloadTime = 0.7
+    shootModes = single
+    shell-auto-eject = false
+}
+slot = slot-primary

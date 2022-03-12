@@ -1,0 +1,128 @@
+function = pow2In
+name = ITEM_BULLET_PG_7V
+power = 0.02
+speed = 240
+powerDistance = 128
+mass = 0.05
+components = [
+    {
+        throw-power = 10
+        tag = server
+        class = content.components.BulletThrowableComponent
+        throw-active = molotov-flame-active
+    }
+]
+id = molotov-flame
+maxDistance = 4
+class = content.bullet.LimitedBullet
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 5
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ActiveParticleComponent
+        particle = molotov-particle
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0
+        height = 1
+        mass = 0.5
+        reduce = 0
+        width = 1
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClass = physics
+        tag = server
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = physics
+        tag = server
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.SpawnActiveComponent
+        tag = server
+        active = active-molotov-fire
+        effect = molotov-flare-burst-1
+        speedCoef = 0
+    }
+]
+id = molotov-flame-active
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 8
+        random = 2
+    }
+    {
+        class = content.components.ActiveParticleComponent
+        particle = fire-particle
+        offset = {
+            x = 0
+            y = -1
+        }
+        tag = client
+    }
+    {
+        class = content.components.PassInstrumentInfoComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = eb893133
+        distance = 12
+        rays = 16
+        soft = 4
+        tag = client
+    }
+    {
+        class = content.components.ActiveDamageComponent
+        damage = 10
+        period = 0.2
+        x = -1
+        y = -2
+        width = 2
+        height = 5
+        kind = hit
+        tag = server
+    }
+]
+id = active-molotov-fire
+
+--------
+
+class = content.Effect
+id = molotov-flare-burst-1
+set = [
+    molotov-burning-1-snd
+    molotov-burning-2-snd
+]
+tag = client

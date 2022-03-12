@@ -1,0 +1,110 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 1
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = [
+            [
+                pull-snd-1
+                {
+                    attachTo = shell-bone
+                    object = sleeve-1-physic
+                }
+            ]
+        ]
+        reload = sniper-reload-snd
+        reloadSecondary = []
+        shoot = [
+            m98b-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 4.3
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 60
+    }
+    {
+        animation = anim-m98b
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            fetch = pull-2hands-1
+            reload = reload-2hands-2
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 24
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m98b-default
+id = weapon-m98b
+instrumentTags = primary, sniper
+primary = {
+    accuracy = 95
+    aimDistance = 80
+    allowedBullets = bullet-338-Lapua
+    clipSize = 10
+    magazineManagement = 2
+    damage = 200
+    fire-rate = 500
+    noHalfReload = false
+    noUnload = false
+    perBulletReload = false
+    pullRequired = true
+    fetchTime = 1.1
+    recoil = 80
+    reloadTime = 3
+    shootModes = single
+    silenced = false
+    shell-auto-eject = false
+}
+slot = slot-primary

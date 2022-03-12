@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-spetsnaz
+        tag = client
+    }
+]
+id = sl-skin-spetsnaz
+items = []
+name = ITEM_PLAYER_SKIN_SPETSNAZ
+skin = skin-player-spetsnaz
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 4
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = gold-case
+        unlockTitle = MENU_LOCKED_UNIFORM
+    }
+}

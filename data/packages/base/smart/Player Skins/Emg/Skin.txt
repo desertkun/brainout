@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = emg
+id = skin-player-emg
+name = ITEM_PLAYER_SKIN_EMG

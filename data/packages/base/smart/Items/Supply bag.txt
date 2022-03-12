@@ -1,0 +1,104 @@
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-sandbag
+        class = content.components.InstrumentAnimationComponent
+        skin = sandbag
+        states = {
+            aimHit = hit-sandbag
+            hit = hit-sandbag
+            hold = hold-sandbag
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-sandbag
+        icon-small = icon-sandbag-small
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = hands
+        lock = true
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = bandages-move-1
+        tag = client
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = supply-bag-picked
+        weight = 8
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10000
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-sandbag-default
+forceSelect = true
+stacks = false
+id = instrument-supply-bag
+speedCoef = 0.75
+throwable = true
+name = ITEM_SUPPLY_BAG
+description = ITEM_SUPPLY_BAG_DESC
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 2
+        mass = 2
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = true
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        timeToLive = 0
+        tag = server
+    }
+]
+auto-remove = true
+id = supply-bag-picked
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = []
+data = sandbag
+id = skin-instrument-sandbag-default
+name = ITEM_SUPPLY_BAG
+description = ITEM_SUPPLY_BAG_DESC
+
+--------
+
+animation = base:animations/instrument-sandbag.json
+class = content.Animation
+id = anim-sandbag
+states = []
+timeScale = 1

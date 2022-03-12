@@ -1,0 +1,317 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 600
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.25
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsContactEffectComponent
+        tag = client
+        effect = [
+            grenade-roll-snd-1
+            grenade-roll-snd-2
+            grenade-roll-snd-3
+            grenade-roll-snd-4
+        ]
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-glowstick
+        class = content.components.ActiveIconComponent
+        rotateByX = 4
+        offsetY = -0.5
+        skin = red
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = 330000FF
+        cone = 12
+        distance = 30
+        rays = 32
+        soft = 16
+        tag = client
+    }
+]
+id = glowstick-active-red
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 600
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.25
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsContactEffectComponent
+        tag = client
+        effect = [
+            grenade-roll-snd-1
+            grenade-roll-snd-2
+            grenade-roll-snd-3
+            grenade-roll-snd-4
+        ]
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-glowstick
+        class = content.components.ActiveIconComponent
+        rotateByX = 4
+        offsetY = -0.5
+        skin = red
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = 000033FF
+        cone = 12
+        distance = 30
+        rays = 32
+        soft = 16
+        tag = client
+    }
+]
+id = glowstick-active-blue
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 600
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.25
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsContactEffectComponent
+        tag = client
+        effect = [
+            grenade-roll-snd-1
+            grenade-roll-snd-2
+            grenade-roll-snd-3
+            grenade-roll-snd-4
+        ]
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-glowstick
+        class = content.components.ActiveIconComponent
+        rotateByX = 4
+        offsetY = -0.5
+        skin = red
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = 003300FF
+        cone = 12
+        distance = 30
+        rays = 32
+        soft = 16
+        tag = client
+    }
+]
+id = glowstick-active-green
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 600
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.25
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsContactEffectComponent
+        tag = client
+        effect = [
+            grenade-roll-snd-1
+            grenade-roll-snd-2
+            grenade-roll-snd-3
+            grenade-roll-snd-4
+        ]
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-glowstick
+        class = content.components.ActiveIconComponent
+        rotateByX = 4
+        offsetY = -0.5
+        skin = red
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = FFA500FF
+        cone = 12
+        distance = 30
+        rays = 32
+        soft = 16
+        tag = client
+    }
+]
+id = glowstick-active-orange
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 600
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.25
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsContactEffectComponent
+        tag = client
+        effect = [
+            grenade-roll-snd-1
+            grenade-roll-snd-2
+            grenade-roll-snd-3
+            grenade-roll-snd-4
+        ]
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-glowstick
+        class = content.components.ActiveIconComponent
+        rotateByX = 4
+        offsetY = -0.5
+        skin = red
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = FF00FFFF
+        cone = 12
+        distance = 30
+        rays = 32
+        soft = 16
+        tag = client
+    }
+]
+id = glowstick-active-magenta
+name = ITEM_SPECIAL_GLOWSTICK

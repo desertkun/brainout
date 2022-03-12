@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-g3
+instrument = {
+    id = weapon-g3
+    skins = skin-weapon-g3-default, skin-weapon-g3-arsen, skin-weapon-g3-bones, skin-weapon-g3-1984, skin-weapon-g3-tin, skin-weapon-g3-piano, skin-weapon-g3-amphibian
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        butt = upgrade-g3-butt-extended
+        recoil = upgrade-g3-recoil
+        reload-time = upgrade-g3-reload-time
+        scope = upgrade-g3-scope-pks
+        shoot-time = upgrade-g3-shoot-time
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_G3
+slot = slot-primary
+category = sniper
+tags = missions, classic
+index = 28
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = headshots-from, weapon-fnfal
+        param = 30
+        unlockTitle = MENU_UNLOCK_G3
+    }
+}

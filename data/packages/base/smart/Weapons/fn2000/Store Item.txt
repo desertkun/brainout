@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-fn2000
+instrument = {
+    id = weapon-fn2000
+    skins = skin-weapon-fn2000-default, skin-weapon-fn2000-elite, skin-weapon-fn2000-blade, skin-weapon-fn2000-starlight, skin-weapon-fn2000-circuit, skin-weapon-fn2000-n7, skin-weapon-fn2000-streaks, skin-weapon-fn2000-ace
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-fn2000-accuracy
+        on = upgrade-fn2000-holder
+        reload-time = upgrade-fn2000-reload-time
+        scope = upgrade-fn2000-scope-susat, upgrade-fn2000-scope-truglo
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_FN2000
+slot = slot-primary
+category = assault
+tags = missions, classic
+index = 27
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kill-streaks-5
+        param = 1
+        unlockTitle = MENU_UNLOCK_FN2000
+    }
+}

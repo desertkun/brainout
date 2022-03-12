@@ -1,0 +1,27 @@
+class = content.consumable.ConsumableToStatContent
+stat = dog-tags-collected
+id = freeplay-dog-tags
+name = ITEM_DOGTAGS
+description = MENU_DOGTAG_DESC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-freeplay-dogtags
+        icon-small = icon-freeplay-dogtags-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = clan-kill-1, clan-kill-2, clan-kill-3, clan-kill-4
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 5000
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-hunter-bow.json
+class = content.Animation
+id = anim-hunter-bow
+states = []
+timeScale = 1

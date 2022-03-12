@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = delta
+id = skin-player-delta
+name = ITEM_PLAYER_SKIN_DELTA

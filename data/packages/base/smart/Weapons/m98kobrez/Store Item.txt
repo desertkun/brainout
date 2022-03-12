@@ -1,0 +1,50 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = m98kobrez-skin
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 15
+    }
+    {
+        class = content.components.ItemDependencyComponent
+        items = [
+            medal-steam
+        ]
+        tag = server
+    }
+]
+id = sl-sec-m98kobrez
+instrument = {
+    id = weapon-m98kobrez
+    skins = skin-weapon-m98kobrez-default
+    upgrades = {
+	    silencer = upgrade-m98kobrez-silencer
+    }
+}
+items = [
+    {
+        amount = 5
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_M98KOBREZ
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 383
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

@@ -1,0 +1,26 @@
+class = content.active.Player
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-speed
+        tag = client
+    }
+]
+extends = player-default
+id = player-fast
+jumpForce = 26
+name = ITEM_PLAYER_FAST
+states = {
+    run = {
+        speed = {
+            x = 14
+            y = 14
+        }
+    }
+    sit = {
+        speed = {
+            x = 4
+            y = 14
+        }
+    }
+}

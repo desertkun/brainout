@@ -1,0 +1,57 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-ak105
+instrument = {
+    id = weapon-ak105
+    skins = skin-weapon-ak105-default, skin-weapon-ak105-predator, skin-weapon-ak105-fan, skin-weapon-ak105-queen, skin-weapon-ak105-alpha, skin-weapon-ak105-vdnh, skin-weapon-ak105-clown
+    upgrades = {
+        butt = upgrade-ak105-butt-extended
+        muzle = upgrade-ak105-muzzle
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ak105-accuracy
+        holder = upgrade-ak105-holder
+        recoil = upgrade-ak105-recoil
+        reload-time = upgrade-ak105-reload-time
+        scope = upgrade-ak105-scope-pk110
+        wear-resistance = upgrade-ak105-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AK105
+slot = slot-primary
+category = assault
+tags = resources
+index = 53
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

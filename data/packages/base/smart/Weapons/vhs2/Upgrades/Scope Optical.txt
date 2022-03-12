@@ -1,0 +1,53 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = optical
+        }
+        tag = client
+    }
+    {
+        big-icon = vhs2-scope-optical
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_OPTICAL_DESC
+id = upgrade-vhs2-scope-optical
+name = ITEM_UPGRADE_SCOPE_OPTICAL
+properties = {
+    accuracy = "+10"
+	aim-distance = "+10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-vhs2
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

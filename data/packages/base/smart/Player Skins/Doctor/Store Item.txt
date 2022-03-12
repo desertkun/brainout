@@ -1,0 +1,30 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-doctor
+        tag = client
+    }
+]
+id = sl-skin-doctor
+items = []
+name = ITEM_PLAYER_SKIN_DOCTOR
+skin = skin-player-doctor
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 25
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = gold-case
+        unlockTitle = MENU_LOCKED_UNIFORM
+    }
+}

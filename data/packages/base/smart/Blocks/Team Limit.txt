@@ -1,0 +1,141 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = damage-block
+            tag = client
+        }
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-collision
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = limit-block-red
+        tag = client
+    }
+    {
+        class = content.components.BlockTeamComponent
+        team = team-red
+    }
+    {
+        class = content.components.IgnoreWayPointsComponent
+        tag = server
+    }
+]
+contactId = collision
+contactStrategy = teamLimit
+static = true
+contactTo = collision, brick, core, metal, ground, platform, core-inv
+id = bl-limit-red
+generatePhysics = false
+name = Team Limit Red
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = damage-block
+            tag = client
+        }
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-collision
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = limit-block-green
+        tag = client
+    }
+    {
+        class = content.components.BlockTeamComponent
+        team = team-green
+    }
+    {
+        class = content.components.IgnoreWayPointsComponent
+        tag = server
+    }
+]
+contactId = collision
+contactStrategy = teamLimit
+contactTo = collision, brick, core, metal, ground, platform, core-inv
+id = bl-limit-green
+static = true
+generatePhysics = false
+name = Team Limit Green
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = damage-block
+            tag = client
+        }
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-collision
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = limit-block-blue
+        tag = client
+    }
+    {
+        class = content.components.BlockTeamComponent
+        team = team-blue
+    }
+    {
+        class = content.components.IgnoreWayPointsComponent
+        tag = server
+    }
+]
+contactId = collision
+contactStrategy = teamLimit
+contactTo = collision, brick, core, metal, ground, platform, core-inv
+id = bl-limit-blue
+static = true
+generatePhysics = false
+name = Team Limit Blue

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-executor.json
+class = content.Animation
+id = anim-executor
+states = []
+timeScale = 1

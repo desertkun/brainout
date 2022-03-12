@@ -1,0 +1,6 @@
+{
+	filterMin: MipMap,
+	filterMag: MipMap,
+    maxWidth: 2048,
+    maxHeight: 2048
+}

@@ -1,0 +1,21 @@
+id = bg-city
+class = content.Background
+name = BACKGROUND_CITY
+parallax = parr-city
+music-list = music-list-city
+
+--------
+
+id = bg-forest
+class = content.Background
+name = BACKGROUND_FOREST
+parallax = parr-forest
+music-list = music-list-forest
+
+--------
+
+id = bg-evening
+class = content.Background
+name = BACKGROUND_EVENING
+parallax = parr-evening
+music-list = music-list-evening

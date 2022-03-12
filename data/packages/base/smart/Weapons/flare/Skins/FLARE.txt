@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-flare-default
+name = ITEM_WEAP_FLARE
+slot = sl-sec-flare

@@ -1,0 +1,5 @@
+{
+	"name": "base",
+	"dependency": ["sounds"],
+	"version": "0.1"
+}

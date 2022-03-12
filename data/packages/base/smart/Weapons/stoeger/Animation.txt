@@ -1,0 +1,5 @@
+animation = base:animations/weapon-stoeger.json
+class = content.Animation
+id = anim-stoeger
+states = []
+timeScale = 1

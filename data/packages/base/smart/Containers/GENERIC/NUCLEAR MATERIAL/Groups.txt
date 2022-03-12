@@ -1,0 +1,84 @@
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-standard-bg
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-nuclear-material-standard
+name = CARDGROUP_STANDARD
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-improved-bg
+        icon-shine = card-shine-improved
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-nuclear-material-improved
+name = CARDGROUP_IMPROVED
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-rare-bg
+        icon-shine = card-shine-rare
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-nuclear-material-rare
+name = CARDGROUP_RARE
+
+--------
+
+class = content.gamecase.CardGroup
+components = [
+    {
+        class = content.components.IconComponent
+        icon-back = card-back
+        icon-bg = card-unique-bg
+        icon-shine = card-shine-unique
+        tag = client
+    }
+    {
+        class = content.components.ClientCardGroupComponent
+        flipEffect = card-flip-snd
+        openEffect = card-open-snd
+        tag = client
+        titleStyle = title-small
+    }
+]
+id = cardgroup-nuclear-material-unique
+name = CARDGROUP_RARE

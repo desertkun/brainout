@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-hk21-default
+name = ITEM_WEAP_HK21
+slot = sl-pri-hk21

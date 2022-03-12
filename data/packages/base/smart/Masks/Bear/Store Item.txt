@@ -1,0 +1,50 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-bear
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = bear
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-bear
+        goal = GOAL_KILL_USING_MASK
+        value = 666
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 3
+        class = content.components.UnlockStoreItemComponent
+        content = case-daily
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-bear
+items = []
+name = ITEM_MASK_BEAR
+player = player-mask-bear
+slot = slot-mask
+category = mask
+tags = unique
+index = 22
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		hide = true
+    }
+}

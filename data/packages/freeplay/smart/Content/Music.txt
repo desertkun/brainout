@@ -1,0 +1,29 @@
+class = content.MusicList
+tag = client
+list = [
+]
+id = music-list-freeplay
+
+--------
+
+class = content.Music
+tag = client
+music = freeplay:music/alarm.mp3
+id = music-freeplay-alarm
+
+
+--------
+
+class = content.MusicList
+tag = client
+list = [
+	music-freeplay-swamp
+]
+id = music-list-swamp
+
+--------
+
+class = content.Music
+tag = client
+music = freeplay:music/swamp.mp3
+id = music-freeplay-swamp

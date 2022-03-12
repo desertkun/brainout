@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 200
+    }
+]
+id = sl-pri-stoeger
+instrument = {
+    id = weapon-stoeger
+    skins = skin-weapon-stoeger-default, skin-weapon-stoeger-poacher, skin-weapon-stoeger-inquisitor
+    upgrades = {
+        accuracy = upgrade-stoeger-accuracy
+        recoil = upgrade-stoeger-recoil
+        reload-time = upgrade-stoeger-reload-time
+        scope = upgrade-stoeger-scope-burris, upgrade-stoeger-scope-pks
+        shoot-time = upgrade-stoeger-shoot-time
+    }
+}
+items = [
+    {
+        amount = 12
+        id = bullet-12-slug
+    }
+]
+name = ITEM_WEAP_STOEGER
+slot = slot-primary
+category = shotgun
+tags = resources
+index = 101
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

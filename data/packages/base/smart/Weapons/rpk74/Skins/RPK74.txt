@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-rpk74-default
+name = ITEM_WEAP_RPK74
+slot = sl-pri-rpk74

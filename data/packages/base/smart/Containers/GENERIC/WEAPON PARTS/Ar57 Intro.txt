@@ -1,0 +1,27 @@
+class = content.gamecase.gen.PartialInstrumentCard
+components = [
+    {
+        class = content.components.ClientPartialInstrumentCardComponent
+        flipEffect = skin-owned-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerPartialInstrumentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.PartialInstrumentCardComponent
+        content = sl-pri-ar57
+        stats-filters = {
+            parts-of-weapon-ar57 = {
+                func = "<="
+                value = 1
+            }
+        }
+    }
+]
+group = cardgroup-part
+id = gen-skin-ar57-intro
+name = CARDGROUP_PART
+weight = 600

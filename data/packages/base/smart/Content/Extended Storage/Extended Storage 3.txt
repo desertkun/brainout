@@ -1,0 +1,40 @@
+class = content.upgrades.ExtendedStorage
+
+description = EXTENDED_STORAGE_DESC
+id = extended-storage-3
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-extended-storage
+        tag = client
+    }
+]
+name = "{ITEM_EXTENDED_STORAGE}: 30kg"
+category = default
+extra-weight = 15
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 50000
+        currency = ru
+    }
+}
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = extended-storage
+        param = 3
+        icon = icon-extended-storage-crate
+        unlockTitle = MENU_EXTENDED_STORAGE_LOCKED
+    }
+}

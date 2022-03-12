@@ -1,0 +1,5 @@
+animation = base:animations/weapon-guerrilla.json
+class = content.Animation
+id = anim-guerrilla
+states = []
+timeScale = 1

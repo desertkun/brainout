@@ -1,0 +1,33 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-diversionist
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-diversionist
+items = []
+name = ITEM_PLAYER_SKIN_DIVERSIONIST
+skin = skin-player-diversionist
+slot = slot-player-skin
+category = outfit
+tags = missions
+index = 338
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        unlockTitle = MENU_UNLOCK_QUEST
+        unlockObject = QUEST_TITLE_KIT
+    }
+}

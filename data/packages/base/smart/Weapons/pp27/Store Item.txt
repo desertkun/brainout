@@ -1,0 +1,43 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-pp27
+instrument = {
+    id = weapon-pp27
+    skins = skin-weapon-pp27-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        butt = upgrade-pp27-butt-unfolded
+        clip = upgrade-pp27-clip-extended
+        silencer = upgrade-pp27-silencer
+        reload-time = upgrade-pp27-reload-time
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_PP27
+slot = slot-primary
+category = submachine
+tags = unique
+index = 367
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = zveroboy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ZVEROBOY
+    }
+}
+
+

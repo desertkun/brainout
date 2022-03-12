@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-pdrc-pulsar
+        tag = client
+    }
+]
+data = weapon-pulsar
+id = skin-weapon-pdrc-pulsar
+name = ITEM_WEAP_PDRC_PULSAR
+slot = sl-pri-pdrc
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

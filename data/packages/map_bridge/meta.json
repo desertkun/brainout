@@ -1,0 +1,39 @@
+{
+	"textures":
+	{
+		"output": "content/textures"
+	},
+	"export": 
+	{
+		"ch":
+		{
+			"filter": [
+				".+NSFW.+"
+			]
+		},
+		"server":
+		{
+			"exclude": 
+			[
+				"textures",
+				"contents/content/music",
+				"contents/content/particles",
+				"contents/content/shaders",
+				"contents/content/sounds",
+				"contents/content/textures"
+			]
+		},
+		"chserver":
+		{
+			"exclude": 
+			[
+				"textures",
+				"contents/content/music",
+				"contents/content/particles",
+				"contents/content/shaders",
+				"contents/content/sounds",
+				"contents/content/textures"
+			]
+		}
+	}
+}

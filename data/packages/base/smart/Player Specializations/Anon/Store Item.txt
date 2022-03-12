@@ -1,0 +1,32 @@
+access = byDefault
+class = content.shop.PlayerSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-anon
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_ANON_DESC
+id = sl-pl-anon
+items = []
+name = ITEM_SPECIAL_ANON
+player = player-anon
+slot = slot-player
+category = special
+tags = unique
+index = 7
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = we-are-legion
+        hide = true
+        param = 1
+    }
+}

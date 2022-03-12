@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = ground-hit-part-2
+particle = base:particles/ground-hit-2
+tag = client

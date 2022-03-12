@@ -1,0 +1,51 @@
+class = content.quest.Quest
+id = quest-kit-6
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-kit
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-fort12
+        target = 1
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-sgi5k
+        target = 1
+    }
+}
+
+group = kit
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_KIT
+
+rewards = [
+    {
+        action = unlock
+        id = sl-skin-skat
+        amount = 1
+    }
+    {
+        action = unlock
+        id = case-daily
+        amount = 1
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 500
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 1000
+    }
+]

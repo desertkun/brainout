@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-m98kobrez-default
+name = ITEM_WEAP_M98KOBREZ
+slot = sl-sec-m98kobrez

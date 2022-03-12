@@ -1,0 +1,57 @@
+{
+	"textures":
+	{
+		"output": "content/textures"
+	},
+	"localization":
+	{
+		"output": "data/texts.json"
+	},
+	"export": 
+	{
+		"default": {
+			"exclude": [
+				"smart"
+			]
+		},
+		"server":
+		{
+			"exclude": 
+			[
+				"smart",
+				"textures",
+				"ch-textures",
+				"contents/content/music",
+				"contents/content/particles",
+				"contents/content/shaders",
+				"contents/content/sounds",
+				"contents/content/textures"
+			]
+		},
+		"chserver":
+		{
+			"filter": [
+				".+NSFW.+"
+			],
+			"exclude": 
+			[
+				"smart",
+				"textures",
+				"ch-textures",
+				"contents/content/music",
+				"contents/content/particles",
+				"contents/content/shaders",
+				"contents/content/sounds",
+				"contents/content/textures"
+			]
+		}
+	},
+	"smart": {
+		"path": "smart",
+		"output": "content.json",
+		"base": {
+		    "localization": "data/texts.json",
+		    "textures": "data/textures/textures.json"
+		}
+	}
+}

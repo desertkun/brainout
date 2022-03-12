@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 60
+    }
+]
+id = sl-pri-hk417
+instrument = {
+    id = weapon-hk417
+    skins = skin-weapon-hk417-default, skin-weapon-hk417-vector
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        scope = upgrade-hk417-scope-truglo, upgrade-hk417-scope-pks
+        on = upgrade-hk417-holder
+        barrel = upgrade-hk417-barrel-dmr
+        reload-time = upgrade-hk417-reload-time	
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_HK417
+slot = slot-primary
+category = assault
+tags = resources
+index = 102
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

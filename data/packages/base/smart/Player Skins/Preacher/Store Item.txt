@@ -1,0 +1,32 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-preacher
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-preacher
+items = []
+name = ITEM_PLAYER_SKIN_PREACHER
+skin = skin-player-preacher
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 410
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

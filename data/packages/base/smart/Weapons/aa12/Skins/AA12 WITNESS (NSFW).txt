@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-aa12-witness
+        tag = client
+    }
+]
+data = weapon-witness
+id = skin-weapon-aa12-witness
+name = ITEM_WEAP_AA12_WITNESS
+slot = sl-pri-aa12
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,38 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-mts569
+instrument = {
+    id = weapon-mts569
+    skins = skin-weapon-mts569-default
+    upgrades = {
+        scope = upgrade-mts569-scope-aimpoint
+        holder = upgrade-mts569-holder
+        wear-resistance = upgrade-mts569-wear-reistance
+        accuracy = upgrade-mts569-accuracy
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-12.7x55
+    }
+]
+name = ITEM_WEAP_MTS569
+slot = slot-primary
+category = sniper
+tags = unique
+index = 387
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	icon = icon-bp-premium-x2
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0_PREMIUM
+        unlockObject = BATTLE_PASS
+    }
+}

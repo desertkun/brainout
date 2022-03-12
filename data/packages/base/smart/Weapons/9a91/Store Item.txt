@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-9a91
+instrument = {
+    id = weapon-9a91
+    skins = skin-weapon-9a91-default, skin-weapon-9a91-storm, skin-weapon-9a91-vagabund, skin-weapon-9a91-futuristic
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-9a91-recoil
+        holder = upgrade-9a91-shotgun
+        scope = upgrade-9a91-scope-optical
+		silencer = upgrade-9a91-silencer
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mm-39
+    }
+]
+name = ITEM_WEAP_9A91
+slot = slot-primary
+category = assault
+tags = unique
+index = 333
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_VIMPEL
+    }
+}

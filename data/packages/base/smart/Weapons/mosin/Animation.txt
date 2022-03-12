@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mosin.json
+class = content.Animation
+id = anim-mosin
+states = []
+timeScale = 1

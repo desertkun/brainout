@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-heart
+        tag = client
+    }
+]
+id = profile-badge-heart
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = triple-kills
+        param = 3
+        unlockTitle = ACHIEVEMENT_9_LIVES_DESC
+    }
+}

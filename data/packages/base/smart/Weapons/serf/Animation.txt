@@ -1,0 +1,5 @@
+animation = base:animations/weapon-serf.json
+class = content.Animation
+id = anim-serf
+states = []
+timeScale = 1

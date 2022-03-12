@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = dusty
+id = skin-player-dusty
+name = ITEM_PLAYER_SKIN_DUSTY

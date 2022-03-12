@@ -1,0 +1,11 @@
+class = content.Team
+color = F83800
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-team-red
+        tag = client
+    }
+]
+id = team-red
+name = ITEM_TEAM_RED

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = exo
+id = skin-player-exo
+name = ITEM_PLAYER_SKIN_EXO

@@ -1,0 +1,114 @@
+class = content.block.Concrete
+components = [
+    {
+        chances = {
+            * = 0.5
+            instrument-drill = 0.5
+        }
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        class = content.components.ConnectionComponent
+        data = [
+            brick-0
+            brick-1
+            brick-2
+            brick-3
+            brick-4
+            brick-5
+            brick-6
+            brick-7
+            brick-8
+            brick-9
+            brick-10
+            brick-11
+            brick-12
+            brick-13
+            brick-14
+            brick-15
+        ]
+        stickId = brick
+        stickTo = brick, metal
+        tag = client
+    }
+    {
+        class = content.components.CanShootThroughComponent
+        tag = server
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        destroy = {
+            @if = "$editor != true"
+            @then = [
+                [
+                    smoke-part
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-snd-1
+                ]
+            ]
+        }
+        hit = [
+            wood-hit-snd-1, wood-hit-part-1
+            wood-hit-snd-2, wood-hit-part-1
+            wood-hit-snd-3, wood-hit-part-2
+            wood-hit-snd-4, wood-hit-part-2
+            wood-hit-snd-5, wood-hit-part-1
+            wood-hit-snd-6, wood-hit-part-2
+        ]
+        place = {
+            @if = "$editor != true"
+            @then = [
+                [
+                    smoke-part
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                    wood-destroy-part-1-physic
+                ]
+            ]
+        }
+        step = wood-step-snd-1, wood-step-snd-2, wood-step-snd-3, wood-step-snd-4
+        tag = client
+    }
+    {
+        @if = "$editor != true"
+        @then = {
+            class = content.components.BlockHealthComponent
+            damageCoef = {
+                explosive-bullet-active = 100
+                explosive-bullet-c4 = 100
+                explosive-bullet-grenade = 100
+            }
+            health = 300
+            tag = server
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-brick
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = brick
+contactStrategy = combined
+contactTo = core, brick, ground, carbon, platform
+id = brick
+name = ITEM_BG_BRICK
+resist = 20

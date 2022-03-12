@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = reaper
+id = skin-player-reaper
+name = ITEM_PLAYER_SKIN_REAPER

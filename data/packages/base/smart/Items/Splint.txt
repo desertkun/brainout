@@ -1,0 +1,57 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-splint
+        icon-small = icon-splint-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = bandages-move-1
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+    {
+        class = content.components.ClientItemActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerBoosterActivatorComponent
+        time = 5
+        effect = medikit-open-effect
+        boosters-to-remove = bones
+        animation = medikit-used
+        tag = server
+    }
+    {
+        class = content.components.BoosterActivatorComponent
+        health = 0
+        fix-bones = true
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = med
+        weight = 0.3
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 100
+        tag = client
+    }
+]
+id = consumable-item-splint
+name = ITEM_SPECIAL_SPLINT
+description = ITEM_SPECIAL_SPLINT_DESC
+
+--------
+
+class = content.Effect
+id = medikit-open-effect
+set = [
+	medikit-open-snd
+]
+tag = client

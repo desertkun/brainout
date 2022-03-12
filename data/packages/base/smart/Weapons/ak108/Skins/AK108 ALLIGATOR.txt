@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-ak108-alligator
+        tag = client
+    }
+]
+data = weapon-alligator
+id = skin-weapon-ak108-alligator
+name = ITEM_WEAP_AK108_ALLIGATOR
+slot = sl-pri-ak108
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,38 @@
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-medkit
+        class = content.components.ThrowableAnimationComponent
+        skin = throwable-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+    {
+        big-icon = icon-shop-special-medkit
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+defaultSkin = skin-instrument-medkit-default
+id = instrument-medkit
+slot = slot-special
+throwActive = medkit-active
+throwPower = 15
+throwTime = 1
+throwable = false

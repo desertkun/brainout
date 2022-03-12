@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = he-grenade-particle
+particle = base:particles/he-slide
+tag = client

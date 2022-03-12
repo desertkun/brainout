@@ -1,0 +1,5 @@
+animation = base:animations/weapon-aek.json
+class = content.Animation
+id = anim-aek
+states = []
+timeScale = 1

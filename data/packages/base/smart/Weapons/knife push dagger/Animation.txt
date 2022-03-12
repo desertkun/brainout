@@ -1,0 +1,5 @@
+animation = base:animations/weapon-push-dagger.json
+class = content.Animation
+id = anim-push-dagger
+states = []
+timeScale = 1

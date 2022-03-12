@@ -1,0 +1,64 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+id = sl-pri-rg6
+instrument = {
+    id = weapon-rg6
+    skins = skin-weapon-rg6-default, skin-weapon-rg6-beast, skin-weapon-rg6-training, skin-weapon-rg6-nuke, skin-weapon-rg6-lava
+    upgrades = {
+        shoot-time = upgrade-rg6-shoot-time
+    }
+}
+items = [
+    {
+        amount = 3
+        id = grenade-bullet
+    }
+]
+name = ITEM_WEAP_RG6
+slot = slot-primary
+category = other
+tags = missions, resources
+index = 10
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 12
+        currency = nuclear-material
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-bullet-tag-gl
+        param = 30
+        unlockTitle = MENU_UNLOCK_KILL_GRENADE_BULLET
+    }
+}

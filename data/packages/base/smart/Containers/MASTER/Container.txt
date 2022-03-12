@@ -1,0 +1,29 @@
+cards = [
+    {
+        groups = cardgroup-master
+    }
+    {
+        groups = cardgroup-master
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = xmas-case-bg
+        class = content.components.IconComponent
+        icon = xmas-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_ELITE_DESC
+id = case-master
+name = CASE_MASTER

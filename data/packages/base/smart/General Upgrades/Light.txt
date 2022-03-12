@@ -1,0 +1,15 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.InstrumentLightComponent
+        color = 333333FF
+        cone = 12
+        distance = 40
+        rays = 32
+        soft = 16
+        tag = client
+    }
+]
+id = upgrade-light
+name = ITEM_UPGRADE_LIGHT

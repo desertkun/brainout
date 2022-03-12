@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-pumpkin
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = pumpkin
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-pumpkin
+        goal = GOAL_KILL_USING_MASK
+        value = 50
+    }
+    {
+        amount = 20
+        class = content.components.AddStatItemComponent
+        stat = gears
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-pumpkin
+items = []
+name = ITEM_MASK_PUMPKIN
+player = player-mask-pumpkin
+slot = slot-mask
+category = mask
+tags = unique
+index = 1
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-pumpkin
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

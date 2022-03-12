@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-l85
+        tag = client
+    }
+]
+id = profile-badge-l85
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-ls5
+        param = 1000
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_LS5}"
+    }
+}

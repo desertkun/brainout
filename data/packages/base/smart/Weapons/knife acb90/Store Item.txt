@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-acb90
+        class = content.components.IconComponent
+        icon = knife-acb90
+        tag = client
+    }
+]
+id = sl-ml-knife-acb90
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-acb90
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_ACB90
+slot = slot-melee
+category = melee
+tags = unique
+index = 383
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

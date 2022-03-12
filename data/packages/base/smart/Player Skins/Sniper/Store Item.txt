@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-sniper
+        tag = client
+    }
+]
+id = sl-skin-sniper
+items = []
+name = ITEM_PLAYER_SKIN_SNIPER
+skin = skin-player-sniper
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 45
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = sniper-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}

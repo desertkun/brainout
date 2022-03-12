@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-keltec
+instrument = {
+    id = weapon-keltec
+    skins = skin-weapon-keltec-default, skin-weapon-keltec-77, skin-weapon-keltec-exo, skin-weapon-keltec-biomass, skin-weapon-keltec-slayer
+    upgrades = {
+        holder = upgrade-keltec-holder
+        laser = upgrade-keltec-laser
+        reload-time = upgrade-keltec-reload-time
+    }
+}
+items = [
+    {
+        amount = 18
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_KELTEC
+slot = slot-primary
+category = shotgun
+tags = resources
+index = 350
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

@@ -1,0 +1,33 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = gold-case
+        tag = client
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-gold
+    }
+]
+description = CASE_GOLD_DESC
+id = sl-store-case-gold
+limit = 5
+name = CASE_GOLD
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 12
+        currency = nuclear-material
+    }
+}

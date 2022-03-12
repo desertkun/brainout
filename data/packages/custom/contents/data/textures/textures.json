@@ -1,0 +1,6 @@
+{
+	"CITY": "custom:textures/CITY.atlas", 
+	"FOREST": "custom:textures/FOREST.atlas", 
+	"EVENING": "custom:textures/EVENING.atlas", 
+	"CUSTOM_SPRITES": "custom:textures/CUSTOM_SPRITES.atlas"
+}

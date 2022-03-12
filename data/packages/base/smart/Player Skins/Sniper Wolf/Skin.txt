@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = sniper-wolf
+id = skin-player-sniper-wolf
+name = ITEM_PLAYER_SKIN_SNIPER_WOLF

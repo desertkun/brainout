@@ -1,0 +1,29 @@
+cards = [
+    {
+        groups = cardgroup-red
+    }
+    {
+        groups = cardgroup-skillpts
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = red-case-bg
+        class = content.components.IconComponent
+        icon = red-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_RED_DESC
+id = case-red
+name = CASE_RED

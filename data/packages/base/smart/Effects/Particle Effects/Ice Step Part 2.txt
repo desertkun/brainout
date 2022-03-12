@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = ice-step-part-2
+particle = base:particles/ice-break-1
+tag = client

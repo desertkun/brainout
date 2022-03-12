@@ -1,0 +1,55 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 5
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = rpg, physics
+        tag = server
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rpg
+        tag = server
+    }
+    {
+        class = content.components.BlockAheadDetectorComponent
+        detectClass = rpg
+        distance = 6
+        tag = server
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.25
+        reduce = -0.4
+        rotateBySpeed = true
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        amount = 45
+        bullet = explosive-bullet-freeplay
+        class = content.components.ExplosiveComponent
+        damage = 50
+        effect = explode-effect-freeplay
+        tag = server
+    }
+]
+id = explosive-freeplay-active
+

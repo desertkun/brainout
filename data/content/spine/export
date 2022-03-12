@@ -1,0 +1,11 @@
+{
+class: json,
+projectPath: D:/work/svn/desertkun/data/content/spine/weapons.spine,
+output: D:/work/svn/desertkun/data/packages/base/content/animations/,
+extension: .json,
+format: JSON,
+nonessential: true,
+prettyPrint: false,
+createAtlas: false,
+texturePacker: null
+}

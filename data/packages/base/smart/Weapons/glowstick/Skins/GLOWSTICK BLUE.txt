@@ -1,0 +1,21 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        icon = icon-item-glowstick-blue
+        big-icon = icon-item-glowstick-blue
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentAnimationComponent
+        replace = {
+            hit = hit-weapon-knife-2
+        }
+        tag = client
+    }
+]
+preferIcon = true
+data = blue
+id = skin-instrument-glowstick-blue
+name = ITEM_SPECIAL_GLOWSTICK
+slot = sl-grn-glowstick

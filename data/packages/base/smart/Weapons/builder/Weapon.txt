@@ -1,0 +1,35 @@
+class = content.instrument.PlaceBlock
+components = [
+    {
+        animation = anim-drill
+        class = content.components.PlaceAnimationComponent
+        skin = instrument-default
+        states = {
+            hold = hold-weapon-1hand
+        }
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        shoot = [
+            drill-launch-1, digger-shoot-smoke
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.5
+    }
+    {
+        big-icon = icon-instrument-drill
+        class = content.components.IconComponent
+        icon = icon-instrument-drill
+        tag = client
+    }
+]
+damage = 200
+defaultSkin = skin-instrument-drill-default
+id = instrument-drill
+maxDistance = 5
+placeTime = 0.3
+slot = slot-special
+throwable = false

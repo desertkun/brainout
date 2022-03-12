@@ -1,0 +1,36 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-geiger-counter
+        icon-small = icon-item-geiger-counter-small
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 85
+        tag = client
+    }
+    {
+        class = content.components.GeigerComponent
+        distance-divider = 12
+        highest-frequency = 2400
+        sounds = [
+            geiger-1
+            geiger-2
+            geiger-3
+            geiger-4
+            geiger-5
+            geiger-6
+        ]
+        tag = client
+    }
+]
+id = consumable-item-geiger
+name = ITEM_GEIGER_COUNTER
+description = ITEM_GEIGER_COUNTER_DESC
+stacks = false

@@ -1,0 +1,24 @@
+class = content.gamecase.gen.StatCard
+components = [
+    {
+        class = content.components.ClientScoreCardComponent
+        icon = icon-score
+        tag = client
+    }
+    {
+        amount = {
+            from = 500
+            to = 500
+        }
+        class = content.components.ServerStatCardComponent
+        stat = score
+        tag = server
+    }
+    {
+        class = content.components.StatCardComponent
+    }
+]
+group = cardgroup-improved
+id = gen-score-500
+name = CARD_SCORE
+weight = 150

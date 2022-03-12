@@ -1,0 +1,392 @@
+{
+	"content": 
+	{
+		"editor-place": {
+	        "class": "content.Sound",
+	        "sound": "mainmenu:sounds/place.mp3",
+	        "tag": "client"
+	    },
+		"font-medium-20": {
+			"@switch": "language",
+			"@cases": {
+				"ZH": {
+					"class": "content.FreeTypeFont",
+					"tag": "client",
+					"id": "medium",
+					"size": 16,
+					"shadowOffsetX": 0,
+					"shadowOffsetY": 0,
+					"shadowColor": "881400",
+					"fileName": "mainmenu:fonts/NotoSerifCJKtc-Regular.otf"
+				},
+				"KO": {
+					"class": "content.FreeTypeFont",
+					"tag": "client",
+					"id": "medium",
+					"size": 16,
+					"shadowOffsetX": 0,
+					"shadowOffsetY": 0,
+					"shadowColor": "881400",
+					"fileName": "mainmenu:fonts/NotoSerifCJKtc-Regular.otf"
+				},
+				"ZH_CN": {
+					"class": "content.FreeTypeFont",
+					"tag": "client",
+					"id": "medium",
+					"size": 16,
+					"shadowOffsetX": 0,
+					"shadowOffsetY": 0,
+					"shadowColor": "881400",
+					"fileName": "mainmenu:fonts/NotoSerifCJKtc-Regular.otf"
+				}
+			},
+			"@default": {
+				"class": "content.FreeTypeFont",
+				"tag": "client",
+				"id": "medium",
+				"size": 20,
+				"shadowOffsetX": 0,
+				"shadowOffsetY": 2,
+				"shadowColor": "881400",
+				"fileName": "mainmenu:fonts/Visitor_Rus.ttf"
+			}
+		},
+		"font-ingame": {
+			"@switch": "language",
+			"@cases": {
+				"ZH": {
+					"class": "content.FreeTypeInGameFont",
+					"tag": "client",
+					"id": "ingame",
+					"size": 10,
+					"shadowOffsetX": 0,
+					"shadowOffsetY": 0,
+					"shadowColor": "881400",
+					"fileName": "mainmenu:fonts/NotoSerifCJKtc-Regular.otf"
+				},
+				"KO": {
+					"class": "content.FreeTypeInGameFont",
+					"tag": "client",
+					"id": "ingame",
+					"size": 10,
+					"shadowOffsetX": 0,
+					"shadowOffsetY": 0,
+					"shadowColor": "881400",
+					"fileName": "mainmenu:fonts/NotoSerifCJKtc-Regular.otf"
+				},
+				"ZH_CN": {
+					"class": "content.FreeTypeInGameFont",
+					"tag": "client",
+					"id": "ingame",
+					"size": 10,
+					"shadowOffsetX": 0,
+					"shadowOffsetY": 0,
+					"shadowColor": "881400",
+					"fileName": "mainmenu:fonts/NotoSerifCJKtc-Regular.otf"
+				}
+			},
+			"@default": {
+				"class": "content.IngameFont",
+				"tag": "client",
+				"id": "ingame",
+				"fileName": "mainmenu:fonts/ingame-10.fnt"
+			}
+		},
+		"font-inspect-16":
+		{
+			"class": "content.Font",
+			"tag": "client",
+			"id": "inspect",
+			"fileName": "mainmenu:fonts/inspect-16.fnt"
+		},
+		"font-messages":
+		{
+			"class": "content.Font",
+			"tag": "client",
+			"id": "terminal",
+			"fileName": "mainmenu:fonts/messages.fnt"
+		},
+		"music-loading":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "mainmenu:music/loading.mp3"
+		},
+		"music-mainmenu":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "mainmenu:music/mainmenu.mp3"
+		},
+		"music-intro":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "mainmenu:music/intro.mp3"
+		},
+		"music-endgame":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "mainmenu:music/endgame.mp3"
+		},
+		"music-authors":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "mainmenu:music/authors.mp3"
+		},
+		"music-effect-authors":
+		{
+			"class": "content.effect.MusicEffect",
+			"tag": "client",
+			"distance": 0.4,
+			"music": "mainmenu:music/authors.mp3"
+		},
+		"music-flash":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"length": 9.8,
+			"music": "mainmenu:music/flash.mp3"
+		},
+		"after-flash":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "mainmenu:music/after-flash.mp3"
+		},
+		"shader-gauss":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/gauss.fs",
+			"vs": "mainmenu:shaders/gauss.vs"
+		},
+		"shader-shaded-gauss":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/sh-gauss.fs",
+			"vs": "mainmenu:shaders/sh-gauss.vs"
+		},
+		"shader-abberation":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/abberation.fs",
+			"vs": "mainmenu:shaders/abberation.vs"
+		},
+		"shader-grayed":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/grayed.fs",
+			"vs": "mainmenu:shaders/grayed.vs"
+		},
+		"shader-grayscaled":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/grayscaled.fs",
+			"vs": "mainmenu:shaders/grayscaled.vs"
+		},
+		"shader-grayscaled-ui":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/grayscaled-ui.fs",
+			"vs": "mainmenu:shaders/grayscaled-ui.vs"
+		},
+		"shader-black":
+		{
+			"class": "content.Shader",
+			"tag": "client",
+			"fs": "mainmenu:shaders/black.fs",
+			"vs": "mainmenu:shaders/black.vs"
+		},
+		"select":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/click.mp3"
+		},
+		"trash":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/trash.mp3"
+		},
+		"cardboardRipOff":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/cardboardRipOff.mp3"
+		},
+		"back":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/back.mp3"
+		},
+		"denied":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/denied.mp3"
+		},
+		"equip":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/equip.mp3"
+		},
+		"character":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/character.mp3"
+		},
+		"rankUp":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/rankUp.mp3"
+		},
+		"hover":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/hover.mp3"
+		},
+		"contentOwned":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/contentOwned.mp3"
+		},
+		"itemSold":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/itemSold.mp3"
+		},
+		"contentOwnedEx":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/contentOwnedEx.mp3"
+		},
+		"chipFail":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/chipFail.mp3"
+		},
+		"chipSuccess":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/chipSuccess.mp3"
+		},
+		"newWeaponSkill":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/newWeaponSkill.mp3"
+		},
+		"levelUp":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/levelup.mp3"
+		},
+		"trophy":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/trophy.mp3"
+		},
+		"techLevelUp":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/techlevelup.mp3"
+		},
+		"gameStarted":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/gameStarted.mp3"
+		},
+		"install":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/install.mp3"
+		},
+		"upgrade-installed-snd-effect": {
+			"class": "content.effect.SoundEffect",
+			"sound": "mainmenu:sounds/install.mp3",
+			"tag": "client"
+		},
+		"upgrade-installed-snd": {
+			"class": "content.Effect",
+			"set": [
+				"upgrade-installed-snd-effect"
+			],
+			"tag": "client"
+		},
+		"repair":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/repair.mp3"
+		},
+		"skillpointsEarned":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/skillpointsEarned.mp3"
+		},
+		"geigerCard":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/geigerCard.mp3"
+		},
+		"smuggling-snd":
+		{
+			"class": "content.Sound",
+			"tag": "client",
+			"sound": "mainmenu:sounds/smuggling.mp3"
+		},
+	    "anim-intro": {
+	        "animation": "mainmenu:animations/intro.json",
+	        "class": "content.Animation",
+	        "states": [],
+	        "timeScale": 1
+	    },
+	    "anim-controller": {
+	        "animation": "mainmenu:animations/controller.json",
+	        "class": "content.Animation",
+	        "states": [],
+	        "timeScale": 1
+	    },
+        "sparks-intro": {
+            "class": "content.effect.ParticleEffect",
+            "particle": "mainmenu:particles/sparks",
+            "atlas": "mainmenu:textures/INTRO.atlas",
+            "tag": "client"
+        },
+        "snow-intro": {
+            "class": "content.effect.ParticleEffect",
+            "particle": "mainmenu:particles/snow",
+            "atlas": "mainmenu:textures/INTRO.atlas",
+            "tag": "client"
+        }
+	},
+	"skin": "data/skin/skin.json",
+	"localization": "data/texts.json",
+	"textures": "data/textures/textures.json"
+}

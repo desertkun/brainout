@@ -1,0 +1,36 @@
+class = content.battlepass.GameModeAction
+id = battle-pass-kills-freeplay
+target = 10
+reward = 250
+action = kills
+title = MENU_KILL_N_TIMES
+game-mode = free
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-kills2-freeplay
+target = 1
+reward = 250
+action = kills-2
+title = MENU_KILL_2_IN_GAME
+game-mode = free
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-enter-freeplay
+target = 1
+reward = 250
+action = enter-locked-doors
+title = MENU_ENTER_ANY_PREMISE_THAT_REQUIRES_KEY
+game-mode = free
+
+--------
+
+class = content.battlepass.Action
+id = battle-pass-sell3-freeplay
+target = 3
+reward = 250
+action = market-items-sold
+title = MENU_SELL_N_MARKET_ITEMS

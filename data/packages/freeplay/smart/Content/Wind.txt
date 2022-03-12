@@ -1,0 +1,34 @@
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.WindComponent
+        distance = 64
+        power = 2
+    }
+    {
+        class = content.components.ClientWindComponent
+        effects = [
+            music-freeplay-wind, wind-leafs
+        ]
+        extra-distance = 4
+        tag = client
+    }
+]
+id = cold-wind
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+distance = 1
+sound = freeplay:music/wind.mp3
+id = music-freeplay-wind
+loop = true
+
+--------
+
+class = content.effect.ParticleEffect
+id = wind-leafs
+particle = base:particles/leafs
+tag = client

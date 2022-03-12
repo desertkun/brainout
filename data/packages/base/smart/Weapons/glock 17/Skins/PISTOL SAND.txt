@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-pistol-sand
+        tag = client
+    }
+]
+data = weapon-sand
+id = skin-weapon-pistol-sand
+name = ITEM_WEAP_PISTOL_SAND
+slot = sl-sec-pistol
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,33 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-loyalist
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-loyalist
+items = []
+name = ITEM_PLAYER_SKIN_LOYALIST
+skin = skin-player-loyalist
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 352
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = gold-case
+        unlockTitle = MENU_LOCKED_UNIFORM
+    }
+}

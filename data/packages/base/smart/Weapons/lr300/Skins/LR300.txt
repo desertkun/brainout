@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-lr300-default
+name = ITEM_WEAP_LR300
+slot = sl-pri-lr300

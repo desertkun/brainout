@@ -1,0 +1,39 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-antiterror
+        class = content.components.IconComponent
+        icon = knife-antiterror
+        tag = client
+    }
+]
+id = sl-ml-knife-antiterror
+instrument = {
+    id = weapon-knife-antiterror
+    skin = skin-weapon-knife-antiterror
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_ANTITERROR
+slot = slot-melee
+category = melee
+tags = unique
+index = 13
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = gold-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_GOLD
+    }
+}

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = st6
+id = skin-player-st6
+name = ITEM_PLAYER_SKIN_ST6

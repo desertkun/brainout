@@ -1,0 +1,62 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = special-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-special-vimpel
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-special-vimpel
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-skin-vimpel
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-sec-ots33
+                value = 0
+            }
+            {
+                func = ">="
+                id = sl-sec-usp-match
+                value = 1
+            }
+            {
+                func = ">="
+                id = sl-skin-combine
+                value = 1
+            }
+        ]
+    }
+]
+description = CASE_SUPPLY_DESC
+id = sl-store-case-vimpel
+name = CASE_VIMPEL
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 150000
+        currency = ru
+    }
+}

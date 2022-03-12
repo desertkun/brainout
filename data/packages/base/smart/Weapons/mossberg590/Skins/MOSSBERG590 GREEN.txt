@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mossberg590-green
+        tag = client
+    }
+]
+data = weapon-green
+id = skin-weapon-mossberg590-green
+name = ITEM_WEAP_MOSSBERG590_GREEN
+slot = sl-pri-mossberg590
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}
+

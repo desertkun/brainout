@@ -1,0 +1,8 @@
+@if = "$tracers != disabled"
+@then = {
+    alphaBefore = 0.15
+    class = content.effect.ProjectileEffect
+    projectile = water-bullet-1
+    tag = client
+}
+id = bullet-projectile-water-1

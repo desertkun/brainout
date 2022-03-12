@@ -1,0 +1,50 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceInstrumentAnimationComponent
+        replace = {
+            reload = reload-weapon-revolver-fast
+        }
+        tag = client
+    }
+    {
+        big-icon = icon-magnum-fastloader
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_FAST_LOADER_DESC
+id = upgrade-r8-fastloader
+name = ITEM_UPGRADE_FAST_LOADER
+properties = {
+    reload-time = "=2.5"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-r8
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

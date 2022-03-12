@@ -1,0 +1,5 @@
+animation = base:animations/weapon-pp27.json
+class = content.Animation
+id = anim-pp27
+states = []
+timeScale = 1

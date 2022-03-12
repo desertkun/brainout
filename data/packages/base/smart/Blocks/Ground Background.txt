@@ -1,0 +1,53 @@
+class = content.block.BackgroundBlock
+components = [
+    {
+        chances = {
+            * = 0.5
+            instrument-digger = 1
+        }
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        class = content.components.ConnectionComponent
+        data = [
+            rock-0-0, rock-0-1
+            rock-1-0, rock-1-1
+            rock-2-0, rock-2-1
+            rock-3-0, rock-3-1
+            rock-4-0, rock-4-1
+            rock-5-0, rock-5-1
+            rock-6-0, rock-6-1
+            rock-7-0, rock-7-1
+            rock-8-0, rock-8-1
+            rock-9-0, rock-9-1
+            rock-10-0, rock-10-1
+            rock-11-0, rock-11-1
+            rock-12-0, rock-12-1
+            rock-13-0, rock-13-1
+            rock-14-0, rock-14-1
+            rock-15-0, rock-15-1, rock-15-2, rock-15-3, rock-15-4
+        ]
+        stickId = rock
+        stickTo = rock
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-ground-bg
+        tag = client
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 0
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+id = ground-bg
+static = true
+name = ITEM_BG_GROUND_BACKGROUND
+resist = 5

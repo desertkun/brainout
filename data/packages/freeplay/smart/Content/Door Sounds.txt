@@ -1,0 +1,47 @@
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/safe-beep.mp3
+id = safe-been-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = safe-open-effects
+set = safe-open-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/safe-open.mp3
+id = safe-open-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = safe-denied-effects
+set = safe-denied-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/safe-denied.mp3
+id = safe-denied-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = door-1-locked-effects
+set = door-locked-open-1-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/door-locked-open-1.mp3
+id = door-locked-open-1-snd
+tag = client

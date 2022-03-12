@@ -1,0 +1,48 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 105
+    }
+]
+id = sl-pri-mp9
+instrument = {
+    id = weapon-mp9
+    skins = skin-weapon-mp9-default, skin-weapon-mp9-azure
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-mp9-accuracy
+        holder = upgrade-mp9-holder
+        recoil = upgrade-mp9-recoil
+        reload-time = upgrade-mp9-reload-time
+        scope = upgrade-mp9-scope-truglo
+        silencer = upgrade-mp9-silencer
+        clip = upgrade-mp9-clip-default
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_MP9
+slot = slot-primary
+category = submachine
+tags = unique
+index = 100
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = phantom-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_PHANTOM
+    }
+}

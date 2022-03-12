@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-famas-origins
+        tag = client
+    }
+]
+data = weapon-origins
+id = skin-weapon-famas-origins
+name = ITEM_WEAP_FAMAS_ORIGINS
+slot = sl-pri-famas
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

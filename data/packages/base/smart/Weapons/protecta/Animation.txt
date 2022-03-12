@@ -1,0 +1,5 @@
+animation = base:animations/weapon-protecta.json
+class = content.Animation
+id = anim-protecta
+states = []
+timeScale = 1

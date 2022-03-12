@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-sickle
+        class = content.components.IconComponent
+        icon = knife-sickle
+        tag = client
+    }
+]
+data = knife-sickle
+id = skin-weapon-knife-sickle
+name = ITEM_WEAP_KNIFE_SICKLE
+slot = sl-ml-knife-sickle

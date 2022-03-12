@@ -1,0 +1,21 @@
+class = content.shop.Slot
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-slot-instruments
+        tag = client
+    }
+]
+default = sl-inst-none
+id = slot-special
+name = SLOT_SPECIAL
+categories = [
+    {
+        id = special
+        title = SLOT_CATEGORY_SPECIALIZATION
+    }
+]
+tags = [
+]
+stack = true
+width = 100

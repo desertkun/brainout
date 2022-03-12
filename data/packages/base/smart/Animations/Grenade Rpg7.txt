@@ -1,0 +1,5 @@
+animation = base:animations/grenade-rpg7.json
+class = content.Animation
+id = anim-grenade-rpg7
+states = []
+timeScale = 1

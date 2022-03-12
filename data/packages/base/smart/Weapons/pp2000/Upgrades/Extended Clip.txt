@@ -1,0 +1,53 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            clip = extended
+        }
+        tag = client
+    }
+    {
+        big-icon = pp2000-clip-extended
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_EXTENDED_CLIP_DESC
+id = upgrade-pp2000-clip-extended
+name = ITEM_UPGRADE_EXTENDED_CLIP
+properties = {
+    clip-size = "+24"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-pp2000
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}
+

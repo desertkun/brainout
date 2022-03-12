@@ -1,0 +1,42 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 40
+    }
+]
+id = sl-pri-agram
+instrument = {
+    id = weapon-agram
+    skins = skin-weapon-agram-default, skin-weapon-agram-snowman, skin-weapon-agram-evil, skin-weapon-agram-evo
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        silencer = upgrade-agram-silencer
+    }
+}
+items = [
+    {
+        amount = 64
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_AGRAM
+slot = slot-primary
+category = submachine
+tags = unique
+index = 170
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_STANDARD
+    }
+}

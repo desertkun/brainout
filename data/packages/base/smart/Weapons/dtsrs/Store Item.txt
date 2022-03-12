@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-dtsrs
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 60
+    }
+]
+instrument = {
+    id = weapon-dtsrs
+    skins = skin-weapon-dtsrs-default, skin-weapon-dtsrs-pikachu, skin-weapon-dtsrs-julius
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-dtsrs-recoil
+        reload-time = upgrade-dtsrs-reload-time
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-338-Lapua
+    }
+]
+name = ITEM_WEAP_DTSRS
+slot = slot-primary
+category = sniper
+tags = parts
+index = 110
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-dtsrs
+        icon = standard-case
+        param = 5
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

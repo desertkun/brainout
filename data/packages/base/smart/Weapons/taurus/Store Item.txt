@@ -1,0 +1,46 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-taurus
+instrument = {
+    id = weapon-taurus
+    skins = skin-weapon-taurus-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-taurus-clip-extended, upgrade-taurus-clip-damage
+        light = upgrade-taurus-light
+        silencer = upgrade-taurus-silencer
+		recoil = upgrade-taurus-recoil
+		light = upgrade-taurus-light
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_TAURUS
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 200
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_BOPE
+    }
+}

@@ -1,0 +1,180 @@
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-locked
+        tag = client
+    }
+    {
+    	class = content.components.ClientActiveActivatorComponent
+    	activateText = MENU_ENTER_THE_DOOR
+    	tag = client
+    }
+    {
+        class = content.components.ClientActivatorPortalKeyConditionComponent
+        lockedText = MENU_DOOR_LOCKED_UP
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = door-1-effects
+        lockedActivateEffect = door-1-locked-effects
+        tag = server
+    }
+]
+key = freeplay-keys-garage
+id = garage-locked-door
+name = Garage Locked Door
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-locked
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_ENTER_THE_DOOR
+        tag = client
+    }
+    {
+        class = content.components.ClientActivatorPortalKeyConditionComponent
+        lockedText = MENU_DOOR_LOCKED_UP
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = door-1-effects
+        lockedActivateEffect = door-1-locked-effects
+        tag = server
+    }
+]
+key = freeplay-keys-apartment
+id = apartment-locked-door
+name = Apartment Locked Door
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-locked
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_ENTER_THE_DOOR
+        tag = client
+    }
+    {
+        class = content.components.ClientActivatorPortalKeyConditionComponent
+        lockedText = MENU_DOOR_LOCKED_UP
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = safe-open-effects
+        lockedActivateEffect = door-1-locked-effects
+        tag = server
+    }
+]
+key = freeplay-keys-rfid
+id = swamp-locked-door
+name = Swamp Locked Door
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-locked
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_ENTER_THE_DOOR
+        tag = client
+    }
+    {
+        class = content.components.ClientActivatorPortalKeyConditionComponent
+        lockedText = MENU_DOOR_LOCKED_UP
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = safe-denied-effects
+        lockedActivateEffect = safe-open-effects
+        tag = server
+    }
+]
+key = freeplay-keys-tunnel
+allow-sneak = false
+id = tunnel-locked-door
+name = Tunnel Locked Door
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-locked
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_ENTER_THE_DOOR
+        tag = client
+    }
+    {
+        class = content.components.ClientActivatorPortalKeyConditionComponent
+        lockedText = MENU_DOOR_LOCKED_UP
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = door-1-effects
+        lockedActivateEffect = door-1-locked-effects
+        tag = server
+    }
+]
+key = freeplay-keys-pharm
+allow-sneak = false
+id = pharm-locked-door
+name = Pharm Locked Door
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-portal-locked
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_ENTER_THE_DOOR
+        tag = client
+    }
+    {
+        class = content.components.ClientActivatorPortalKeyConditionComponent
+        lockedText = MENU_DOOR_LOCKED_UP
+        tag = client
+    }
+    {
+        class = content.components.ServerPortalComponent
+        activateEffect = safe-open-effects
+        lockedActivateEffect = door-1-locked-effects
+        tag = server
+    }
+]
+key = freeplay-keys-bank
+allow-sneak = false
+id = bank-locked-door
+name = bank Locked Door

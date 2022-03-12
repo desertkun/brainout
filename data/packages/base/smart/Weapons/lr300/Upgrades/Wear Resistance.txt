@@ -1,0 +1,7 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_WEAR_RESISTANCE_DESC
+id = upgrade-lr300-wear-reistance
+level-kind = tech-level
+name = ITEM_UPGRADE_WEAR_RESISTANCE
+prefix = lr300
+upgrades = upgrade-wear-resistance-1, upgrade-wear-resistance-2, upgrade-wear-resistance-3, upgrade-wear-resistance-4, upgrade-wear-resistance-5

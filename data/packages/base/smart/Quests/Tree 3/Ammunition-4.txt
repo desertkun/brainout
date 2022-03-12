@@ -1,0 +1,41 @@
+class = content.quest.Quest
+id = quest-ammunition-4
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-ammunition
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = rpg7-bullet
+        target = 2
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = grenade-bullet
+        target = 3
+    }
+}
+
+group = ammunition
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_AMMUNITION
+
+rewards = [
+    {
+        action = unlock
+        id = case-gold
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 1000
+    }
+]

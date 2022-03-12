@@ -1,0 +1,56 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            barrel = barrel-dmr
+        }
+        tag = client
+    }
+    {
+        big-icon = hk417-barrel-dmr
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_BARREL_DMR_DESC
+id = upgrade-hk417-barrel-dmr
+name = ITEM_UPGRADE_BARREL_DMR
+properties = {
+    accuracy = "+35"
+    recoil = "+10"
+    damage = "+25"
+    shoot-modes = "=single"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 4
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-hk417
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}
+

@@ -1,0 +1,14 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-hide-others
+        tag = client
+    }
+    {
+        class = content.components.FlagChunkComponent
+        flag = hideOthers
+    }
+]
+id = hide-others-marker
+name = Hide Others Marker

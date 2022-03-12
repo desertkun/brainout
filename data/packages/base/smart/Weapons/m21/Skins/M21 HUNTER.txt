@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m21-hunter
+        tag = client
+    }
+]
+data = weapon-hunter
+id = skin-weapon-m21-hunter
+name = ITEM_WEAP_M21_HUNTER
+slot = sl-pri-m21
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

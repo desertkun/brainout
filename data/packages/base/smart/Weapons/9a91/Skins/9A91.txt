@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-9a91-default
+name = ITEM_WEAP_9A91
+slot = sl-pri-9a91

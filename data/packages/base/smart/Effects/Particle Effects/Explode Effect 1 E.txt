@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = explode-effect-1-e
+particle = base:particles/explosion-1
+tag = client

@@ -1,0 +1,7 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+
+id = skin-weapon-supershorty-default
+name = ITEM_WEAP_SUPERSHORTY
+slot = sl-pri-supershorty

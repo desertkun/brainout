@@ -1,0 +1,48 @@
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-petrol
+        class = content.components.InstrumentAnimationComponent
+        skin = instrument-guide-box
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-petrol
+        icon-small = icon-petrol-small
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = hands
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = petrol-move-1, petrol-move-2, petrol-move-3
+        tag = client
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-guide-box-default
+forceSelect = true
+id = instrument-guide-box
+speedCoef = 0.75
+throwable = false
+name = ITEM_PETROL
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = []
+data = instrument-guide-box
+id = skin-instrument-guide-box-default
+name = ITEM_PETROL

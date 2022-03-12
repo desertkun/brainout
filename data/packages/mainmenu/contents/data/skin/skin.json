@@ -1,0 +1,1425 @@
+{
+	"com.badlogic.gdx.graphics.Color":
+	{
+		"black": { "r": 0.2, "g": 0.2, "b": 0.2, "a": 0.95 },
+		"gray": { "r": 0.5, "g": 0.5, "b": 0.5, "a": 0.95 },
+		"white": { "r": 1, "g": 1, "b": 1, "a": 1 },
+		"red": { "r": 1, "g": 0.2, "b": 0.2, "a": 0.95 },
+		"green": { "r": 0.2, "g": 1, "b": 0.2, "a": 0.95 },
+		"blue": { "r": 0, "g": 0.58, "b": 1, "a": 0.95 },
+		"gold": { "r": 1, "g": 0.6, "b": 0, "a": 1 },
+
+		"good": { "r": 0.19, "g": 0.63, "b": 0.94, "a": 1 },
+		"bad": { "r": 0.98, "g": 0.21, "b": 0, "a": 1 },
+
+		"friend": { "r": 0.192, "g": 0.635, "b": 0.949, "a": 1 },
+		"enemy": { "r": 0.894, "g": 0.36, "b": 0.062, "a": 1 },
+		"yellow": { "r": 0.972, "g": 0.721, "b": 0, "a": 1 },
+		"light-blue": { "r": 0.192, "g": 0.635, "b": 0.949, "a": 1 }
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle":
+	{
+		"button-editor-empty":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over"
+		},
+		"button-editor-checkable":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over"
+		},
+		"button-item": 
+		{
+			"up": "item-holder",
+			"over": "item-holder-hover"
+		},
+		"button-checkbox":
+		{
+			"checked": "checkbox-default-checked",
+			"over": "checkbox-default-unchecked-over",
+			"checkedOver": "checkbox-default-checked-over",
+			"up": "checkbox-default-unchecked"
+		},
+		"button-checkable":{
+			"down": "button-default-active",
+			"checked": "button-tab-checked",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-inventory-cell":
+		{
+			"up": "inventory-cell-normal",
+			"over": "inventory-cell-hover"
+		},
+		"button-inventory-selected":
+		{
+			"up": "inventory-cell-selected"
+		},
+		"button-skills":
+		{
+			"over": "button-default-hover"
+		},
+		"button-gears":
+		{
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-upgrade":
+		{
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-upgrade-checkable":
+		{
+			"down": "button-default-active",
+			"checked": "button-upgrade-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-inventory":
+		{
+			"down": "button-default-active",
+			"up": "button-default-alpha",
+			"over": "button-default-hover"
+		},
+		"button-inventory-checkable":
+		{
+			"down": "button-default-active",
+			"checked": "button-tab-checked",
+			"up": "button-default-alpha",
+			"over": "button-default-hover"
+		},
+		"button-notext":
+		{
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-red-border":
+		{
+			"down": "button-default-active",
+			"up": "button-default-red",
+			"over": "button-default-hover"
+		},
+		"button-selected-magazine":
+		{
+			"down": "button-default-active",
+			"up": "button-upgrade-active",
+			"over": "button-default-hover"
+		},
+		"button-highlighted-magazine":
+		{
+			"down": "button-highlighted-normal",
+			"up": "button-highlighted-normal",
+			"over": "button-highlighted-normal"
+		},
+		"button-highlighted":
+		{
+			"down": "button-default-active",
+			"up": "button-highlighted-normal",
+			"over": "button-default-hover"
+		},
+		"button-notext-checkable":
+		{
+			"down": "button-default-active",
+			"checked": "button-tab-checked",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-red":
+		{
+			"down": "button-default-active",
+			"up": "button-red-normal",
+			"over": "button-default-hover"
+		},
+		"button-red-drop":
+		{
+			"down": "button-red-normal",
+			"up": "button-red-normal",
+			"over": "button-red-normal"
+		},
+		"button-yellow":
+		{
+			"down": "button-default-active",
+			"up": "button-yellow-normal",
+			"over": "button-default-hover"
+		},
+		"button-yellow-label":
+		{
+			"down": "button-default-empty",
+			"up": "button-default-active",
+			"over": "button-default-active-hovered"
+		},
+		"button-green":
+		{
+			"down": "button-green-active",
+			"up": "button-green-normal",
+			"over": "button-green-hover",
+			"disabled": "button-default-normal"
+		},
+		"button-green-border":
+		{
+			"down": "button-green-active",
+			"up": "button-green-border",
+			"over": "button-highlighted-normal"
+		},
+		"button-disabled":
+		{
+			"down": "button-default-normal",
+			"up": "button-default-normal",
+			"over": "button-default-normal"
+		},
+		"button-green-checkable":
+		{
+			"down": "button-green-active",
+			"up": "button-highlighted-normal",
+			"checked": "button-tab-checked",
+			"over": "button-green-hover",
+			"disabled": "button-default-normal"
+		},
+		"button-hoverable": {
+			"over": "button-default-hover",
+			"up": "button-default-empty"
+		},
+		"button-hoverable-clear": {
+			"over": "button-default-hover",
+			"up": "button-default-clear"
+		},
+		"button-hoverable-gray": {
+			"over": "button-default-alpha",
+			"up": "button-default-clear"
+		},
+		"button-checkable-clear": {
+			"over": "button-default-hover",
+			"checked": "button-tab-checked",
+			"up": "button-default-clear"
+		},
+		"button-row-red": {
+			"over": "form-selected",
+			"up": "form-red"
+		},
+		"button-row-dark-blue": {
+			"over": "form-selected",
+			"up": "form-dark-blue"
+		},
+		"button-row-border-blue": {
+			"over": "form-selected",
+			"up": "border-dark-blue"
+		},
+		"button-row-gray": {
+			"over": "form-selected",
+			"up": "form-gray"
+		},
+		"button-row-default": {
+			"over": "form-selected",
+			"up": "form-default"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle":
+	{
+		"checkbox-default": 
+		{
+			"checkboxOn": "checkbox-default-checked",
+			"checkboxOff": "checkbox-default-unchecked",
+
+			"font": "medium",
+			"fontColor": "white",
+
+			"overFontColor": "yellow",
+			"checkedOverFontColor": "yellow"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle":
+	{
+		"button-editor-mode-blocks":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+			"imageUp": "editor-mode-blocks"
+		},
+		"button-editor-widgets-hide":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-widgets-hide"
+		},
+		"button-editor-zoom":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "icon-search"
+		},
+		"button-editor-widgets-show":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-widgets-show"
+		},
+		"button-editor-layer-visibility":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+
+			"imageUp": "editor-layer-hidden",
+			"imageChecked": "editor-layer-visible"
+		},
+		"button-editor-layer-lock":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+
+			"imageUp": "editor-layer-enabled",
+			"imageChecked": "editor-layer-disabled"
+		},
+		"button-editor-mode-sprites":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-sprites"
+		},
+		"button-editor-mode-lights":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-lights"
+		},
+		"button-editor-mode-other":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-other"
+		},
+		"button-editor-mode-play":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+			"imageUp": "editor-play"
+		},
+		"button-editor-mode-shadow":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-mode-shadow"
+		},
+		"button-editor-grid":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-grid"
+		},
+		"button-editor-cutter":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-cutter"
+		},
+		"button-editor-play":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-play"
+		},
+		"button-editor-save":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-save"
+		},
+		"button-editor-exit":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-exit"
+		},
+		"button-editor-unload":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-open"
+		},
+		"button-editor-import":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-import"
+		},
+		"button-editor-export":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-export"
+		},
+		"button-editor-resize":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-resize"
+		},
+		"button-editor-dimensions":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"imageUp": "editor-dimensions"
+		},
+		"button-editor-remove":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-remove"
+		},
+		"button-editor-shape-1":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-shape-1"
+		},
+		"button-editor-shape-2":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-shape-2"
+		},
+		"button-editor-shape-3":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-shape-3"
+		},
+		"button-editor-shape-rect":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-shape-rect"
+		},
+		"button-editor-shape-line":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-shape-line"
+		},
+		"button-editor-shape-select":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-shape-select"
+		},
+		"button-editor-shape-select-cancel":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+
+			"imageUp": "editor-shape-select-cancel"
+		},
+		"button-editor-shape-select-remove":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+
+			"imageUp": "editor-remove"
+		},
+		"button-editor-active-add":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-mode-active-add"
+		},
+		"button-editor-map-edit":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+
+			"imageUp": "editor-map-settings"
+		},
+		"button-editor-active-edit":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-mode-active-edit"
+		},
+		"button-editor-active-move":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-mode-active-move"
+		},
+		"button-editor-active-remove":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-remove"
+		},
+		"button-editor-active-no-team":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "icon-no-team"
+		},
+		"button-editor-shadow-remove":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-remove"
+		},
+		"button-editor-shadow-add":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-add"
+		},
+		"button-editor-layer-foreground":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-foreground"
+		},
+		"button-editor-layer-background":
+		{
+			"up": "editor-button-normal",
+			"over": "editor-button-over",
+			"checked": "editor-button-checked",
+			"checkedOver": "editor-button-checked-over",
+
+			"imageUp": "editor-background"
+		},
+		"button-delete":
+		{
+			"imageUp": "button-icon-delete",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-online":
+		{
+			"imageUp": "online",
+			"down": "button-default-active",
+			"up": "button-default-clear",
+			"over": "button-default-hover"
+		},
+		"button-approve":
+		{
+			"imageUp": "button-icon-approve",
+			"down": "button-green-active",
+			"up": "button-green-normal",
+			"over": "button-green-hover",
+			"disabled": "button-default-normal"
+		},
+		"button-reject":
+		{
+			"imageUp": "button-icon-reject",
+			"down": "button-default-active",
+			"up": "button-red-normal",
+			"over": "button-default-hover"
+		},
+		"button-chat-send":
+		{
+			"imageUp": "icon-chat-send",
+			"down": "button-chat-hover",
+			"up": "button-chat-default",
+			"over": "button-chat-hover"
+		},
+		"button-refresh":
+		{
+			"imageUp": "button-icon-refresh",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-filters":
+		{
+			"imageUp": "button-icon-filters",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-buy":
+		{
+			"imageUp": "button-icon-buy",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-select":
+		{
+			"imageUp": "button-icon-non-checked",
+			"imageChecked": "button-icon-checked",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-upgrades":
+		{
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover",
+			"imageUp": "instrument-upgrades"
+		},
+		"button-upgrades-badge":
+		{
+			"down": "button-default-active",
+			"up": "button-default-active",
+			"over": "button-default-hover",
+			"imageUp": "instrument-upgrades"
+		},
+		"button-touch-okay":
+		{
+			"imageUp": "touch-okay",
+			"up": "touch-button"
+		},
+		"button-touch-cancel":
+		{
+			"imageUp": "touch-cancel",
+			"up": "touch-button"
+		},
+		"button-touch-launch":
+		{
+			"imageUp": "touch-launch",
+			"up": "touch-button"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle":
+	{
+		"title-tooltip": 
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"background": "border-dark-blue"
+		},
+		"title-small": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-inspect": 
+		{
+			"font": "inspect",
+			"fontColor": "white"
+		},
+		"title-small-white": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-small-money": 
+		{
+			"font": "medium",
+			"fontColor": "gold"
+		},
+		"title-small-item": 
+		{
+			"font": "medium",
+			"fontColor": "blue"
+		},
+		"title-small-weight": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-small-text": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-small-amount": 
+		{
+			"font": "medium",
+			"fontColor": "green"
+		},
+		"instrument-info-text": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-medium": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-medium-white": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-medium-red": 
+		{
+			"font": "medium",
+			"fontColor": "red"
+		},
+		"status-medium": 
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"background": "message-shape"
+		},
+		"item-small": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-red": 
+		{
+			"font": "medium",
+			"fontColor": "red"
+		},
+		"chat-author": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"chat-text": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"chat-console": 
+		{
+			"font": "terminal",
+			"fontColor": "white"
+		},
+		"player-health": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"player-money": 
+		{
+			"font": "medium",
+			"fontColor": "gold"
+		},
+		"notify-award": 
+		{
+			"font": "medium",
+			"fontColor": "gold"
+		},
+		"player-list": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"player-list-ping": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-messages-white":
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-messages-red":
+		{
+			"font": "medium",
+			"fontColor": "red"
+		},
+		"title-messages-green":
+		{
+			"font": "medium",
+			"fontColor": "green"
+		},
+		"title-green":
+		{
+			"font": "medium",
+			"fontColor": "green"
+		},
+		"title-blue":
+		{
+			"font": "medium",
+			"fontColor": "blue"
+		},
+		"title-good":
+		{
+			"font": "medium",
+			"fontColor": "good"
+		},
+		"title-bad":
+		{
+			"font": "medium",
+			"fontColor": "bad"
+		},
+		"numbers-normal": 
+		{
+			"font": "medium",
+			"fontColor": "green"
+		},
+		"tooltip-medium": 
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"background": "message-shape"
+		},
+		"domination-stats": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-shaped": 
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"background": "label-shape"
+		},
+		"title-friend": 
+		{
+			"font": "medium",
+			"fontColor": "friend"
+		},
+		"title-enemy": 
+		{
+			"font": "medium",
+			"fontColor": "enemy"
+		},
+		"title-bullets": 
+		{
+			"font": "medium",
+			"fontColor": "yellow"
+		},
+		"title-auto": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-weapon": 
+		{
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"title-yellow": 
+		{
+			"font": "medium",
+			"fontColor": "yellow"
+		},
+		"title-light-blue": 
+		{
+			"font": "medium",
+			"fontColor": "light-blue"
+		},
+		"title-red-bg":
+		{
+			"font": "medium",
+			"fontColor": "yellow",
+			"background": "form-red"
+		},
+		"title-notfound": 
+		{
+			"font": "medium",
+			"fontColor": "gray"
+		},
+		"title-level": 
+		{
+			"font": "medium",
+			"fontColor": "yellow"
+		},
+		"title-ingame":
+		{
+			"font": "ingame",
+			"fontColor": "white"
+		},
+		"title-ingame-chat":
+		{
+			"font": "ingame",
+			"fontColor": "white",
+			"background": "chat-text-shape"
+		},
+		"title-ingame-nickname":
+		{
+			"font": "ingame",
+			"fontColor": "white"
+		},
+		"title-ingame-red":
+		{
+			"font": "ingame",
+			"fontColor": "red"
+		},
+		"title-ingame-item-stats":
+		{
+			"font": "ingame",
+			"fontColor": "white"
+		},
+		"title-gray": 
+		{
+			"font": "medium",
+			"fontColor": "gray"
+		},
+		"title-gray-bg": 
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"background": "form-gray"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle":
+	{
+		"list-default":
+		{
+			"font": "medium",
+			"fontColorSelected": "white",
+			"fontColorUnselected": "white",
+			"selection": "list-selection"
+		},
+		"list-inspect":
+		{
+			"font": "inspect",
+			"fontColorSelected": "white",
+			"fontColorUnselected": "white",
+			"selection": "list-selection"
+		},
+		"list-gray":
+		{
+			"font": "medium",
+			"fontColorSelected": "white",
+			"fontColorUnselected": "white",
+			"selection": "form-yellow",
+			"background": "form-gray"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle":
+	{
+		"slider-default": 
+		{
+			"background": "progress-background",
+			"knobBefore": "progress-knob-score",
+			"knob": "slider-knob"
+		},
+		"slider-2": 
+		{
+			"knobBefore": "slider-2-knob-before",
+			"background": "slider-2-knob-after",
+			"knob": "slider-2-knob-default",
+			"knobOver": "slider-2-knob-active"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle":
+	{
+		"progress-friend": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-friend",
+			"knobBefore": "progress-knob-friend"
+		},
+		"progress-cold":
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-cold",
+			"knobBefore": "progress-knob-cold"
+		},
+		"progress-radio":
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-radio",
+			"knobBefore": "progress-knob-radio"
+		},
+		"progress-inventory": 
+		{
+			"knobBefore": "progress-knob-parts"
+		},
+		"progress-inventory-full":
+		{
+			"knobBefore": "progress-knob-full"
+		},
+		"progress-inventory-half-full":
+		{
+			"knobBefore": "progress-knob-half-full"
+		},
+		"progress-enemy": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-enemy",
+			"knobBefore": "progress-knob-enemy"
+		},
+		"progress-health": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-health",
+			"knobBefore": "progress-knob-health"
+		},
+		"progress-spawn": 
+		{
+			"background": "progress-background-spawn",
+			"knob": "progress-knob-spawn",
+			"knobBefore": "progress-knob-spawn"
+		},
+		"progress-upgrades": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-upgrades",
+			"knobBefore": "progress-knob-upgrades"
+		},
+		"progress-score": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-score",
+			"knobBefore": "progress-knob-score"
+		},
+		"progress-event": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-event",
+			"knobBefore": "progress-knob-event"
+		},
+		"progress-battle-points":
+		{
+			"background": "progress-background-bp",
+			"knob": "progress-knob-bp",
+			"knobBefore": "progress-knob-bp"
+		},
+		"progress-parts": 
+		{
+			"knobBefore": "progress-knob-parts"
+		},
+		"progress-tech-score": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob-tech-score",
+			"knobBefore": "progress-knob-tech-score"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle":
+	{
+		"scroll-default":
+		{
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob"
+		},
+		"scroll-no-background":
+		{
+			"vScrollKnob": "scroll-v-knob",
+			"hScrollKnob": "scroll-h-knob"
+		},
+		"scroll-borders":
+		{
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob",
+			"background": "form-default"
+		},
+		"scroll-chat":
+		{
+			"background": "chat-shape",
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob"
+		},
+		"scroll-for-list":
+		{
+			"background": "select-default",
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob"
+		},
+		"scroll-market":
+		{
+			"background": "form-gray",
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle":
+	{
+		"select-default":
+		{
+			"background": "select-default",
+			"backgroundOver": "select-default-hover",
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"scrollStyle": "scroll-for-list",
+			"listStyle": "list-default"
+		},
+		"select-inspect":
+		{
+			"background": "select-default",
+			"backgroundOver": "select-default-hover",
+			"font": "inspect",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"scrollStyle": "scroll-for-list",
+			"listStyle": "list-inspect"
+		},
+		"select-badged":
+		{
+			"background": "select-badged",
+			"backgroundOver": "select-badged-hover",
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"scrollStyle": "scroll-for-list",
+			"listStyle": "list-default"
+		},
+		"select-badged-yellow":
+		{
+			"background": "select-badged",
+			"backgroundOver": "select-badged-hover",
+			"font": "medium",
+			"fontColor": "yellow",
+			"disabledFontColor": "gray",
+			"scrollStyle": "scroll-for-list",
+			"listStyle": "list-default"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle":
+	{
+		"button-editor-text":
+		{
+			"up": "editor-button9-normal",
+			"over": "editor-button9-over",
+
+			"font": "medium",
+			"fontColor": "white"
+		},
+		"button-default":{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-badge":
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"up": "select-badged",
+			"over": "select-badged-hover"
+		},
+		"button-disabled":{
+			"font": "medium",
+			"fontColor": "gray",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-gray":{
+			"font": "medium",
+			"fontColor": "gray",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-gray-bg":{
+			"font": "medium",
+			"fontColor": "yellow",
+			"down": "button-default-active",
+			"up": "button-tab-normal",
+			"over": "button-tab-hover"
+		},
+		"button-chat-txt":{
+			"font": "medium",
+			"fontColor": "gray",
+			"down": "button-chat-hover",
+			"up": "button-chat-default",
+			"over": "button-chat-hover"
+		},
+		"button-yellow":{
+			"font": "medium",
+			"fontColor": "yellow",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-yellow-label":{
+			"font": "medium",
+			"fontColor": "yellow",
+			"down": "button-default-active",
+			"up": "button-default-empty",
+			"over": "button-default-hover"
+		},
+		"button-green":{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-green-active",
+			"up": "button-green-normal",
+			"over": "button-green-hover",
+			"disabled": "button-default-normal",
+			"disabledFontColor": "gray"
+		},
+		"button-status-ingame":{
+			"font": "medium",
+			"fontColor": "green",
+			"down": "button-default-active",
+			"up": "button-default-clear",
+			"over": "button-default-hover"
+		},
+		"button-fill":{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-fill-active",
+			"up": "button-fill-normal",
+			"over": "button-fill-hover"
+		},
+		"button-fill-gray":{
+			"font": "medium",
+			"fontColor": "gray",
+			"down": "button-fill-active",
+			"up": "button-fill-normal",
+			"over": "button-fill-hover"
+		},
+		"button-text-clear": {
+			"over": "button-default-hover",
+			"up": "button-default-clear",
+			"font": "medium",
+			"fontColor": "white",
+			"overFontColor": "green",
+			"down": "button-default-normal"
+		},
+		"button-activated":{
+			"font": "medium",
+			"fontColor": "yellow",
+			"down": "button-default-normal",
+			"up": "button-default-active",
+			"over": "button-default-active-hovered"
+		},
+		"button-inspect":{
+			"font": "inspect",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-important":{
+			"font": "medium",
+			"fontColor": "yellow",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-small":{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-danger":{
+			"font": "medium",
+			"fontColor": "red",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-checkable":{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"checked": "button-tab-checked",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-checkable-green":{
+			"font": "medium",
+			"fontColor": "white",
+			"checked": "button-green-normal",
+			"down": "button-green-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover",
+			"checkedOver": "button-green-hover",
+			"disabled": "button-default-normal"
+		},
+		"button-checkable-market":{
+			"font": "medium",
+			"fontColor": "white",
+			"checked": "form-drag-good",
+			"down": "button-green-active",
+			"up": "button-green-normal",
+			"over": "button-green-hover",
+			"checkedOver": "form-drag-good",
+			"disabled": "form-border-red"
+		},
+		"button-tab":{
+			"font": "medium",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"checked": "button-tab-checked",
+			"up": "button-tab-normal",
+			"over": "button-tab-hover"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle":
+	{
+		"edit-default":
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"background": "form-default",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-empty":
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-yellow":
+		{
+			"font": "medium",
+			"fontColor": "yellow",
+			"disabledFontColor": "gray",
+			"background": "form-default",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-focused":
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"background": "select-default-hover",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-inspect":
+		{
+			"font": "inspect",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"background": "form-default",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-inspect-no-borders":
+		{
+			"font": "inspect",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-chat":
+		{
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"background": "chat-text-send",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-console":
+		{
+			"font": "terminal",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"background": "edit-console",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-console-message":
+		{
+			"font": "terminal",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Touchpad$TouchpadStyle":
+	{
+		"touchpad-move": 
+		{
+			"background": "touchpad-background",
+			"knob": "touchpad-move"
+		},
+		"touchpad-aim": 
+		{
+			"background": "touchpad-background",
+			"knob": "touchpad-aim"
+		}
+	},
+	"com.desertkun.brainout.menu.ui.SearchField$SearchFieldStyle":
+	{
+		"search-default":
+		{
+			"background": "select-default",
+			"backgroundOver": "select-default-hover",
+			"font": "medium",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"scrollStyle": "scroll-market",
+			"listStyle": "list-gray"
+		}
+	}
+}

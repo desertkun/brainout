@@ -1,0 +1,27 @@
+class = content.block.NonContact
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-damage
+        tag = client
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = damage-block
+            tag = client
+        }
+    }
+    {
+        class = content.components.BlockDamageComponent
+        damage = "100"
+        period = "0.25"
+        tag = server
+    }
+]
+fixture = false
+hasContact = false
+id = damage
+name = ITEM_BG_DAMAGE
+resist = 0

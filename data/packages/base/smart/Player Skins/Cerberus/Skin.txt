@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = cerberus
+id = skin-player-cerberus
+name = ITEM_PLAYER_SKIN_CERBERUS

@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-sr47
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-sr47
+    skins = skin-weapon-sr47-default, skin-weapon-sr47-leader
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        holder = upgrade-sr47-holder, upgrade-sr47-gl-m203
+        scope = upgrade-sr47-scope-aimpoint
+        wear-resistance = upgrade-sr47-wear-reistance
+        laser = upgrade-sr47-laser
+        silencer = upgrade-sr47-silencer
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_SR47
+slot = slot-primary
+category = assault
+tags = unique
+index = 357
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

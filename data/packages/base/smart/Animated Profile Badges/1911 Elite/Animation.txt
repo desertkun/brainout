@@ -1,0 +1,5 @@
+animation = base:animations/anim-badge-1911-elite.json
+class = content.Animation
+id = anim-badge-1911-elite
+states = []
+timeScale = 1

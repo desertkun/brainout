@@ -1,0 +1,5 @@
+animation = base:animations/weapon-kriss.json
+class = content.Animation
+id = anim-kriss
+states = []
+timeScale = 1

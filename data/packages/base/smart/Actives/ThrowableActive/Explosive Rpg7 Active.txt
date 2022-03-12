@@ -1,0 +1,77 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 5
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.EnemyDetectorComponent
+        detectClass = rpg
+        height = 4
+        period = 0.0125
+        tag = server
+        width = 4
+        x = -2
+        y = -2
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = rpg, physics
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rpg
+        tag = server
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1
+        tag = server
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            rpg7-flash, rpg7-rocket-part, rpg7-engine-loop
+        ]
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.13
+        reduce = -0.4
+        rotateBySpeed = true
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-grenade-rpg7
+        class = content.components.ActiveIconComponent
+        skin = throwable-default
+        tag = client
+    }
+    {
+        amount = 45
+        bullet = explosive-bullet-active
+        class = content.components.ExplosiveComponent
+        damage = 50
+        effect = explode-effect-1
+        tag = server
+    }
+]
+id = explosive-rpg7-active
+name = ITEM_WEAP_RPG7

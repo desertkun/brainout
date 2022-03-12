@@ -1,0 +1,216 @@
+{
+	"ports":
+	{
+		"tcp": 36555,
+		"udp": 36556,
+		"http": 36557
+	},
+
+	"name": "Normal #1",
+
+	"packages":
+	[
+		"base",
+		"sounds"
+	],
+
+	"defines":
+	{
+		"dropBullets": "false",
+		"crow_damage": "false",
+		"crow_visibility": "false",
+		"crawl": "disabled"
+	},
+
+	"presets": {
+		"no-primary": {
+			"defines": {
+				"primary": "disabled"
+			},
+			"limit-slots": [
+				"slot-player-skin",
+				"slot-secondary",
+				"slot-player",
+				"slot-special",
+				"slot-melee"
+			]
+		},
+		"knife-only": {
+			"defines": {
+				"primary": "disabled",
+				"secondary": "disabled",
+				"special": "disabled"
+			},
+			"limit-slots": [
+				"slot-player-skin",
+				"slot-melee"
+			]
+		},
+		"classic-only": {
+			"defines": {
+			},
+			"limit-tags": {
+				"slot-primary": [
+					"classic"
+				],
+				"slot-secondary": [
+					"classic"
+				]
+			}
+		},
+		"toz34-only": {
+			"defines": {
+			},
+			"limit-tags": {
+				"slot-primary": [
+					"toz34"
+				]
+			},
+			"limit-slots": [
+				"slot-player-skin",
+				"slot-primary",
+				"slot-melee"
+			]
+		},
+		"hard": {
+			"defines": {
+				"minimapEnabled": "false",
+				"friendlyFire": "true",
+				"extendedTakeTime": "true",
+				"shortVisibility": "true",
+				"spectatorsCanSeeEnemies": "false"
+			},
+			"limit-tags": {
+				"slot-primary": [
+					"classic"
+				],
+				"slot-secondary": [
+					"classic"
+				]
+			}
+		},
+		"super-hard": {
+			"defines": {
+				"minimapEnabled": "false",
+				"friendlyFire": "true",
+				"extendedTakeTime": "true",
+				"shortVisibility": "true",
+				"tracers": "disabled",
+				"weaponStats": "disabled",
+				"spectatorsCanSeeEnemies": "false"
+			},
+			"limit-tags": {
+				"slot-primary": [
+					"classic"
+				],
+				"slot-secondary": [
+					"classic"
+				]
+			}
+		}
+	},
+
+	"teams": 
+	[
+		"team-blue",
+		"team-green"
+	],
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},	
+
+	"prices":
+	{
+		"createClan": 15,
+		"joinClan": 5,
+		"updateClan": 5,
+		"participateClanEvent": 40,
+		"kill": 5,
+		"headshot": 5,
+		"longshot": 10,
+		"headtohead": 5,
+		"takePoint": 15,
+		"doubleKill": 15,
+		"tripleKill": 25,
+		"knife": 20,
+		"chip-take": 25,
+		"purchase-gears": 2,
+		"purchase-skillpts": 25,
+		"trophy-base": 2,
+		"trophy-upgrade": 1,
+		"trophy-skin": 1
+	},
+
+	"modeDelay": 11,
+	"maxPlayers": 16,
+
+	"plugins":
+	[
+		{
+			"class": "plugins.TeamKillKickPlugin",
+			"enabled": "true",
+			"killToKick": 3
+		},
+		{
+			"class": "plugins.RewardPlugin",
+			"min": 2,
+			"max": 5,
+			"reward": "case-standard",
+			"min-players": 3,
+			"key": "case-standard-reward"
+		},
+		{
+			"class": "plugins.StatsRewardPlugin",
+			"reward": "case-master",
+			"min-players": 3,
+			"stats-filters": {
+				"case-master-opened": {
+					"func": "<=",
+					"value": 0
+				},
+				"games-won-gungame": {
+					"func": ">=",
+					"value": 10
+				}
+			},
+			"items-filters": {
+				"case-master": {
+					"func": "<=",
+					"value": 0
+				}
+			}
+		},
+		{
+			"class": "plugins.PostLeaderboardPlugin",
+			"leaderboard": "top100",
+			"leaderboard-order": "desc",
+			"stat": "kpd",
+			"min": "1.5",
+			"expire-in": 604000
+		}
+	],
+
+	"respawn":
+	{
+		"kind": "dynamicWaves",
+		"rate": 3,
+		"waveMinTime": 1
+	},
+
+	"damageCoef": 2,
+	"autoBalance":
+	{
+		"enabled": true,
+		"balance": 1
+	},
+
+	"restartIn": 20,
+	"roundTime": 1200,
+
+	"greetings": "greetings-default.xml",
+
+	"daily-container": "case-daily"
+}

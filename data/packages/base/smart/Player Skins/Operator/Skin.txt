@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = operator
+id = skin-player-operator
+name = ITEM_PLAYER_SKIN_OPERATOR

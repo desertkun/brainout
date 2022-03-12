@@ -1,0 +1,65 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+id = sl-pri-m95
+instrument = {
+    id = weapon-m95
+    skins = skin-weapon-m95-default, skin-weapon-m95-sportmaster, skin-weapon-m95-akatsuki, skin-weapon-m95-vision, skin-weapon-m95-santa
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-m95-recoil
+        scope = upgrade-m95-scope-optical
+	    accuracy = upgrade-m95-accuracy
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-12.7x55
+    }
+]
+name = ITEM_WEAP_M95
+slot = slot-primary
+category = sniper
+tags = unique
+index = 251
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 20
+        currency = nuclear-material
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 50
+    }
+}

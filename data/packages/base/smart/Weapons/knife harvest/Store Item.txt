@@ -1,0 +1,38 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-harvest
+        class = content.components.IconComponent
+        icon = knife-harvest
+        tag = client
+    }
+]
+id = sl-ml-knife-harvest
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-harvest
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_HARVEST
+slot = slot-melee
+category = melee
+tags = unique
+index = 341
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

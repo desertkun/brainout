@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-p99
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-p99
+instrument = {
+    id = weapon-p99
+    skins = skin-weapon-p99-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-p99-reload-time
+	recoil = upgrade-p99-recoil
+    }
+}
+items = [
+    {
+        amount = 32
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_P99
+slot = slot-secondary
+category = pistol
+tags = level
+index = 105
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 25
+    }
+}

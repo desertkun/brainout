@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = urban
+id = skin-player-urban
+name = ITEM_PLAYER_SKIN_URBAN

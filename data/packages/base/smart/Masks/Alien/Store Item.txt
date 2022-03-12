@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-alien
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = alien
+        }
+    }
+    {
+        class = content.components.ContentProgressComponent
+        stat = headshots-mask-alien
+        goal = GOAL_HEADSHOT_USING_MASK
+        value = 100
+    }
+    {
+        amount = 12
+        class = content.components.AddStatItemComponent
+        stat = nuclear-material
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-alien
+items = []
+name = ITEM_MASK_ALIEN
+player = player-mask-alien
+slot = slot-mask
+category = mask
+tags = unique
+index = 6
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-alien
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

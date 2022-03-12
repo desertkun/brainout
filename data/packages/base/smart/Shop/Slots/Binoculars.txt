@@ -1,0 +1,13 @@
+class = content.shop.Slot
+components = [
+]
+default = sl-binoculars
+id = slot-binoculars
+name = ITEM_BINOCULARS
+width = 100
+categories = [
+    {
+        id = binoculars
+        title = ITEM_BINOCULARS
+    }
+]

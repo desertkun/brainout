@@ -1,0 +1,18 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_RELOAD_TIME_DESC
+id = upgrade-mg34-reload-time
+level-kind = tech-level
+name = ITEM_UPGRADE_RELOAD_TIME
+prefix = mg34
+upgrades = [
+    upgrade-reload-time-1
+    upgrade-reload-time-2
+    upgrade-reload-time-3
+    upgrade-reload-time-4
+    upgrade-reload-time-5
+    upgrade-reload-time-6
+    upgrade-reload-time-7
+    upgrade-reload-time-8
+    upgrade-reload-time-9
+    upgrade-reload-time-10
+]

@@ -1,0 +1,56 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-lr300
+instrument = {
+    id = weapon-lr300
+    skins = skin-weapon-lr300-default, skin-weapon-lr300-triton, skin-weapon-lr300-us, skin-weapon-lr300-reed, skin-weapon-lr300-wanderer
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-lr300-accuracy
+        butt = upgrade-lr300-butt-light
+        holder = upgrade-lr300-gl-m203
+        recoil = upgrade-lr300-recoil
+        reload-time = upgrade-lr300-reload-time
+        scope = upgrade-lr300-scope-susat
+        wear-resistance = upgrade-lr300-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_LR300
+slot = slot-primary
+category = assault
+tags = unique
+index = 67
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = radioactive-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RADIOACTIVE
+    }
+}

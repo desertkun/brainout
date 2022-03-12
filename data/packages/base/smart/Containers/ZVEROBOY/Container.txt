@@ -1,0 +1,39 @@
+cards = [
+    {
+        groups = cardgroup-zveroboy-1
+    }
+    {
+        groups = cardgroup-zveroboy-2
+    }
+    {
+        groups = cardgroup-zveroboy-3
+    }
+	{
+        groups = cardgroup-zveroboy-4
+    }
+	{
+        groups = cardgroup-zveroboy-5
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = zveroboy-case-bg
+        class = content.components.IconComponent
+        icon = zveroboy-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_ZVEROBOY_DESC
+id = case-zveroboy
+name = CASE_ZVEROBOY

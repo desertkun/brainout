@@ -1,0 +1,35 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-gunner
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.SkillPointsRewardComponent
+        tag = server
+    }
+]
+id = achievement-gunner
+name = ACHIEVEMENT_GUNNER
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = shots
+        param = 20000
+        unlockTitle = ACHIEVEMENT_GUNNER_DESC
+    }
+}

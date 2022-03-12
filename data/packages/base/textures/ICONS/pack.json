@@ -1,0 +1,7 @@
+{
+    maxWidth: 2048,
+    maxHeight: 2048,
+    stripWhitespaceX: true,
+    stripWhitespaceY: true,
+    fast: true
+}

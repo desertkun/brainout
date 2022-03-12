@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m16-born
+        tag = client
+    }
+]
+data = weapon-born
+id = skin-weapon-m16-born
+name = ITEM_WEAP_M16_BORN
+slot = sl-pri-m16
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

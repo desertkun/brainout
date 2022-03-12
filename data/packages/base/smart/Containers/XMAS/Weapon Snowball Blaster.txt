@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-pri-snowball-blaster
+    }
+]
+group = cardgroup-xmas
+id = gen-weapon-snowball-blaster
+name = ITEM_WEAP_SNOWBALL_BLASTER
+weight = 100

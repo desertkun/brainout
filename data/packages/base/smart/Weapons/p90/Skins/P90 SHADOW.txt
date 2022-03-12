@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-p90-shadow
+        tag = client
+    }
+]
+data = weapon-shadow
+id = skin-weapon-p90-shadow
+name = ITEM_WEAP_P90_SHADOW
+slot = sl-pri-p90
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

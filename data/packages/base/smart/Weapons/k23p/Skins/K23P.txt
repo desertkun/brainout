@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-k23p-default
+name = ITEM_WEAP_K23P
+slot = sl-sec-k23p

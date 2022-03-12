@@ -1,0 +1,67 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-pdrc
+instrument = {
+    id = weapon-pdrc
+    skins = skin-weapon-pdrc-default, skin-weapon-pdrc-andromeda, skin-weapon-pdrc-anguis, skin-weapon-pdrc-pulsar, skin-weapon-pdrc-boom, skin-weapon-pdrc-ressurected
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-pdrc-accuracy
+        reload-time = upgrade-pdrc-reload-time
+        scope = upgrade-pdrc-scope-truglo
+        shoot-time = upgrade-pdrc-shoot-time
+        wear-resistance = upgrade-pdrc-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_PDRC
+slot = slot-primary
+category = assault
+tags = unique
+index = 50
+
+--------
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 65000
+        currency = ru
+    }
+}
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-pdrc
+		icon = icon-blueprint
+		param = 1
+        unlockTitle = MENU_LOCKED_BLUEPRINT
+    }
+}
+
+

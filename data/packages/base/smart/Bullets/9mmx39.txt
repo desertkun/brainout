@@ -1,0 +1,114 @@
+class = content.bullet.ShotBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-flash-1, bullet-projectile-def-1
+            bullet-flash-1, bullet-projectile-def-2
+        ]
+        hit = [
+            bullet-hit-1, hit-flash-1
+        ]
+        shell = [
+            [
+                {
+                    attachTo = shell-bone
+                    object = sleeve-1-physic
+                }
+            ]
+        ]
+        launch = [
+            [
+                {
+                    attachTo = fire-bone
+                    object = shoot-flash-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-fire-1
+                }
+            ]
+            [
+                {
+                    attachTo = fire-bone
+                    object = shoot-flash-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-fire-2
+                }
+            ]
+            [
+                {
+                    attachTo = fire-bone
+                    object = shoot-flash-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-fire-3
+                }
+            ]
+        ]
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-bullet-9mmx39
+        icon-small = icon-bullet-9mmx39-small
+        tag = client
+    }
+    {
+        class = content.components.FlyByComponent
+        distance = 6
+        effect = [
+            bullet-flyby-1
+            bullet-flyby-2
+            bullet-flyby-3
+            bullet-flyby-4
+        ]
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = bullet-default-move-1, bullet-default-move-2, bullet-default-move-3, bullet-default-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = ammo
+        weight = 0.016
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 40
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 20
+                    from = 25
+                    to = 80
+                }
+                {
+                    weight = 5
+                    from = 80
+                    to = 90
+                }
+            ]
+        }
+    }
+]
+id = bullet-9mm-39
+mass = 0.05
+name = ITEM_BULLET_9MM_39
+power = 0.04
+powerDistance = {
+    @if = "$bulletDistance == far"
+    @then = 400
+    @else = 200
+}
+speed = 190
+good = 30

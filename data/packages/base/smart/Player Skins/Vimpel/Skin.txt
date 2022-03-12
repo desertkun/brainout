@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = vimpel
+id = skin-player-vimpel
+name = ITEM_PLAYER_SKIN_VIMPEL

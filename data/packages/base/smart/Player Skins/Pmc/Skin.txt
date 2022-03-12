@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = pmc
+id = skin-player-pmc
+name = ITEM_PLAYER_SKIN_PMC

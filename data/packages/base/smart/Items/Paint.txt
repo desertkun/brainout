@@ -1,0 +1,32 @@
+class = content.consumable.DecayConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-paint
+        icon-small = icon-item-paint-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = energy-drink-move-1
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.5
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 20
+        tag = client
+    }
+]
+id = consumable-item-paint
+uses = 2
+stacks = false
+name = ITEM_PAINT
+description = ITEM_PAINT_DESC

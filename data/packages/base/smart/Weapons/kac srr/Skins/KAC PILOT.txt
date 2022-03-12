@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-kac-pilot
+        tag = client
+    }
+]
+data = weapon-pilot
+id = skin-weapon-kac-pilot
+name = ITEM_WEAP_KAC_PILOT
+slot = sl-pri-kac
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

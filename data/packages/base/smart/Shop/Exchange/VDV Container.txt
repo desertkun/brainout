@@ -1,0 +1,57 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = special-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-special-vdv
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-special-vdv
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-rpd
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-skin-vdv
+                value = 0
+            }
+            {
+                func = ">="
+                id = sl-pri-m14
+                value = 1
+            }
+        ]
+    }
+]
+description = CASE_SPECIAL_VDV_DESC
+id = sl-store-case-special-vdv
+name = CASE_SPECIAL
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 70000
+        currency = ru
+    }
+}

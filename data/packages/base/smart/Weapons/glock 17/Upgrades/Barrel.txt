@@ -1,0 +1,37 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            barrel = on
+        }
+        tag = client
+    }
+    {
+        big-icon = pistol-barrel
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_BIPOD_DESC
+id = upgrade-pistol-barrel
+name = ITEM_UPGRADE_COMPENSATOR
+properties = {
+    recoil = "-10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}

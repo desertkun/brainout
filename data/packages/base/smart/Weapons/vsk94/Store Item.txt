@@ -1,0 +1,43 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+id = sl-pri-vsk94
+instrument = {
+    id = weapon-vsk94
+    skins = skin-weapon-vsk94-default, skin-weapon-vsk94-confidential, skin-weapon-vsk94-snowfall, skin-weapon-vsk94-training
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-vsk94-accuracy
+        reload-time = upgrade-vsk94-reload-time
+        shoot-time = upgrade-vsk94-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mm-39
+    }
+]
+name = ITEM_WEAP_VSK94
+slot = slot-primary
+category = sniper
+tags = unique
+index = 40
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = exclusive-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_EXCLUSIVE
+    }
+}

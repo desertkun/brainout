@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = rpg7-tail-part
+particle = base:particles/rpg7-tail
+tag = client

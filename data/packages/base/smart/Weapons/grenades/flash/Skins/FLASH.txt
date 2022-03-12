@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-flash
+id = skin-instrument-grenade-flash-default
+name = ITEM_SPECIAL_FLASH
+slot = sl-grn-flash

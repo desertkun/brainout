@@ -1,0 +1,86 @@
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        game-icon = fire-pit
+        tag = client
+    }
+    {
+        class = content.components.ItemStatsComponent
+        showEmpty = false
+        tag = client
+    }
+    {
+        class = content.components.ActiveEffectComponent
+        effect = open-fire-snd
+        tag = client
+    }
+    {
+        class = content.components.ActiveParticleComponent
+        particle = fire-particle
+        offset = {
+            x = 0
+            y = -0.4
+        }
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = eb8931cc
+        distance = 30
+        rays = 64
+        soft = 4
+        tag = client
+    }
+    {
+        class = content.components.ClientCampFireComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerCampFireComponent
+        addFuel = campfire-open-flame
+        tag = server
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+id = camp-fire
+
+--------
+
+
+class = content.Effect
+id = campfire-open-flame
+set = [
+    campfire-open-snd
+]
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/open-flame.mp3
+tag = client
+id = campfire-open-snd

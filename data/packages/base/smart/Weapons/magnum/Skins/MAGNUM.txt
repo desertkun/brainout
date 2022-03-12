@@ -1,0 +1,12 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-magnum
+        tag = client
+    }
+]
+data = weapon-default
+id = skin-weapon-magnum-default
+name = ITEM_WEAP_MAGNUM
+slot = sl-sec-magnum

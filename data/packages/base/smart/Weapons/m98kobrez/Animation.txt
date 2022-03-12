@@ -1,0 +1,5 @@
+animation = base:animations/weapon-m98kobrez.json
+class = content.Animation
+id = anim-m98kobrez
+states = []
+timeScale = 1

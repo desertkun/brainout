@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+id = sl-pri-vssm-2
+instrument = {
+    id = weapon-vssm
+    skins = skin-weapon-vssm-default, skin-weapon-vssm-holiday
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-vssm-accuracy
+      	bipod = upgrade-vssm-bipod
+        recoil = upgrade-vssm-recoil
+        clip = upgrade-vssm-clip-extended
+        reload-time = upgrade-vssm-reload-time
+        scope = upgrade-vssm-scope-pk110, upgrade-vssm-scope-1p86
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-9mm-39
+    }
+]
+name = ITEM_WEAP_VSSM
+slot = slot-primary
+category = sniper
+tags = unique
+index = 190
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = sobr-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SOBR
+    }
+}

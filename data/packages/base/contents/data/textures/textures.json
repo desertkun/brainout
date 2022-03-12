@@ -1,0 +1,13 @@
+{
+	"GAME": "base:textures/GAME.atlas", 
+	"ICONS": "base:textures/ICONS.atlas", 
+	"PIXELED": "base:textures/PIXELED.atlas", 
+	"BLOCKS": "base:textures/BLOCKS.atlas", 
+	"HINTS": "base:textures/HINTS.atlas", 
+	"CARDS": "base:textures/CARDS.atlas", 
+	"DEFAULT_PARRALAX": "base:textures/DEFAULT_PARRALAX.atlas",
+	"QUESTS": "base:textures/QUESTS.atlas",
+	"EFFECTS": "base:textures/EFFECTS.atlas",
+	"BADGES": "base:textures/BADGES.atlas",
+	"ANIM_BADGES": "base:textures/ANIM_BADGES.atlas"
+}

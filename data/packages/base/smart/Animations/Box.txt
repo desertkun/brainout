@@ -1,0 +1,5 @@
+animation = base:animations/special-box.json
+class = content.Animation
+id = anim-box
+states = []
+timeScale = 1

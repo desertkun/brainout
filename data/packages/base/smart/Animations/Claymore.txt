@@ -1,0 +1,5 @@
+animation = base:animations/instrument-claymore.json
+class = content.Animation
+id = anim-claymore
+states = []
+timeScale = 1

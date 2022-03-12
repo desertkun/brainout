@@ -1,0 +1,5 @@
+class = content.effect.FlashbangEffect
+fadeOutDuration = 4
+flashDuration = 1.5
+id = flashbang-effect-set
+tag = client

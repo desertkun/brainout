@@ -1,0 +1,5 @@
+animation = base:animations/weapon-hk69.json
+class = content.Animation
+id = anim-hk69
+states = []
+timeScale = 1

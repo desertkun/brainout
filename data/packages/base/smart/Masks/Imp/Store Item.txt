@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-imp
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = imp
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-imp
+        goal = GOAL_KILL_USING_MASK
+        value = 500
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = sl-ml-knife-sickle
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-imp
+items = []
+name = ITEM_MASK_IMP
+player = player-mask-imp
+slot = slot-mask
+category = mask
+tags = unique
+index = 7
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-imp
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

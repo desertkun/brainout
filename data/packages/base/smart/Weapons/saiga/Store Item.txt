@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-saiga
+instrument = {
+    id = weapon-saiga
+    skins = skin-weapon-saiga-default, skin-weapon-saiga-plum, skin-weapon-saiga-alligator, skin-weapon-saiga-wolfhound
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-saiga-recoil
+    }
+}
+items = [
+    {
+        amount = 16
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_SAIGA
+slot = slot-primary
+category = shotgun
+tags = resources
+index = 20
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

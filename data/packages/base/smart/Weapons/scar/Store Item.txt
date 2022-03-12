@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-scar
+instrument = {
+    id = weapon-scar
+    skins = skin-weapon-scar-default, skin-weapon-scar-fur, skin-weapon-scar-sever, skin-weapon-scar-nightstalker, skin-weapon-scar-ranger, skin-weapon-scar-mentanol, skin-weapon-scar-snowflake, skin-weapon-scar-rena
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-scar-accuracy
+        holder = upgrade-scar-holder, upgrade-scar-shotgun
+        reload-time = upgrade-scar-reload-time
+        scope = upgrade-scar-scope-eot, upgrade-scar-scope-acog
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_SCAR
+slot = slot-primary
+category = assault
+tags = missions, classic
+index = 22
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-m4a1
+        param = 120
+        unlockTitle = MENU_UNLOCK_SCAR
+    }
+}

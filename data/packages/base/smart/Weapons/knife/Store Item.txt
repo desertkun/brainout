@@ -1,0 +1,22 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife
+        class = content.components.IconComponent
+        icon = knife
+        tag = client
+    }
+]
+id = sl-ml-knife
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-default
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE
+slot = slot-melee
+category = melee
+tags = classic
+index = 1

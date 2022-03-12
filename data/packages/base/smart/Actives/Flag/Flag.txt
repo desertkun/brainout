@@ -1,0 +1,27 @@
+class = content.active.Flag
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-point
+        tag = client
+    }
+    {
+        class = content.components.ServerFlagComponent
+        tag = server
+        takeDistance = 8
+    }
+    {
+        class = content.components.ClientFlagComponent
+        flagEnemyIcon = flag-enemy
+        flagNoneIcon = flag-none
+        flagOursIcon = flag-ours
+        tag = client
+    }
+]
+id = flag
+name = ITEM_FLAG
+takeTime = {
+    @else = 6
+    @if = "$extendedTakeTime == true"
+    @then = 10
+}

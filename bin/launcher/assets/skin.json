@@ -1,0 +1,61 @@
+{
+	"com.badlogic.gdx.graphics.g2d.BitmapFont":
+	{
+		"default": "medium-20"
+	},
+	"com.badlogic.gdx.graphics.Color":
+	{
+		"white": { "r": 1, "g": 1, "b": 1, "a": 1 },
+		"gray": { "r": 0.8, "g": 0.8, "b": 0.8, "a": 1 }
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle":
+	{
+		"title-default": 
+		{
+			"font": "default",
+			"fontColor": "white"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle":
+	{
+		"button-default":
+		{
+			"font": "default",
+			"fontColor": "white",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle":
+	{
+		"scroll-default":
+		{
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle":
+	{
+		"edit-default":
+		{
+			"font": "default",
+			"fontColor": "white",
+			"disabledFontColor": "gray",
+			"background": "edit-default",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle":
+	{
+		"progress-default": 
+		{
+			"background": "progress-background",
+			"knob": "progress-knob",
+			"knobBefore": "progress-knob"
+		}
+	}
+}

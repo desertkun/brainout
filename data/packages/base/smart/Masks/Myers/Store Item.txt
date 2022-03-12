@@ -1,0 +1,50 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-myers
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = myers
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = knife-kills-mask-myers
+        goal = GOAL_KNIFE_KILL_USING_MASK
+        value = 50
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = sl-ml-butcher
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-myers
+items = []
+name = ITEM_MASK_MYERS
+player = player-mask-myers
+slot = slot-mask
+category = mask
+tags = unique
+index = 20
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		hide = true
+    }
+}

@@ -1,0 +1,127 @@
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        placeholders = {
+            battery = icon-battery-placeholder
+            ignition = icon-ignition-placeholder
+        }
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ItemStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 0
+        target = freeplay
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-freeplay-container
+            tag = client
+        }
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+filter = {
+    battery = {
+        items = [
+            instrument-battery-ok
+            instrument-battery-dead
+        ]
+        fulfill = instrument-battery-ok
+        limit = 1
+    }
+    ignition = {
+        items = [
+            consumable-item-spark-ok
+            consumable-item-spark-dead
+        ]
+        fulfill = consumable-item-spark-ok
+        limit = 1
+    }
+}
+name = ITEM_VEHICLE_ENGINE
+auto-remove = false
+editor = true
+id = freeplay-vehicle-engine
+
+--------
+
+class = content.active.FreeplayGenerator
+components = [
+    {
+        class = content.components.ClientFreeplayGeneratorComponent
+        startup = vehicle-engine-startup
+        fail = vehicle-engine-startup-fail
+        stop = vehicle-engine-stop
+        idle = vehicle-engine-idle
+        tag = client
+    }
+    {
+        class = content.components.ServerFreeplayGeneratorComponent
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-vehicle-engine
+            tag = client
+        }
+    }
+]
+id = freeplay-vehicle-ignition
+refill-animation = petrol-refill
+refill-effect = generator-refill-effect
+refill-time = 5
+refill-amount = 5000
+petrol = instrument-petrol
+working-time-from = 10
+working-time-to = 15
+name = Vehicle Ignition
+
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-broadcast
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_DRIVE_AWAY
+        tag = client
+    }
+    {
+        class = content.components.ClientFreeplayGeneratorConditionComponent
+        noPowerText = MENU_ENGINE_TURNED_OFF
+        generator = swamp-ignition
+        tag = client
+    }
+    {
+        class = content.components.ServerFreeplayDriveAwayActivatorComponent
+        event = swamp-ignition
+        generator = swamp-ignition
+        drive = swamp-car
+        driveAnimations = run, ride
+        trunk = swamp-trunk
+        tag = server
+    }
+]
+id = freeplay-vehicle-activator
+name = Freeplay Vehicle Activator

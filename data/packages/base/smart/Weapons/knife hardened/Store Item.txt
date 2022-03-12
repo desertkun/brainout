@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-hardened
+        class = content.components.IconComponent
+        icon = knife-hardened
+        tag = client
+    }
+]
+id = sl-ml-knife-hardened
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-hardened
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_HARDENED
+slot = slot-melee
+category = melee
+tags = unique
+index = 2
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

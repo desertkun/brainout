@@ -1,0 +1,35 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-revo
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-revo
+items = []
+name = ITEM_PLAYER_SKIN_REVO
+skin = skin-player-revo
+slot = slot-player-skin
+category = outfit
+tags = missions
+index = 407
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, instrument-grenade-molotov
+        param = 50
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_SPECIAL_MOLOTOV}"
+    }
+}
+

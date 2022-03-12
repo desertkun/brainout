@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-ak74m-default
+name = ITEM_WEAP_AK74M
+slot = sl-pri-ak74m

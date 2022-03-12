@@ -1,0 +1,89 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 1
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+        }
+        reload = []
+        shoot = [
+            bow-shoot-1
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        actions = [
+            {
+                for = load
+                type = effect
+                effects = bow-cock
+            }
+            {
+                enabled = false
+                for = shoot
+                slot = arrow
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = arrow
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2
+    }
+    {
+        animation = anim-crossbow
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-crossbow
+        }
+    }
+    {
+        class = content.components.ConditionalSlotComponent
+        conditions = {
+            arrow = loaded
+        }
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-crossbow-default
+id = weapon-crossbow
+instrumentTags = primary
+primary = {
+    accuracy = 70
+    aimDistance = 30
+    allowedBullets = arrow-bullet
+    clipSize = 1
+    cockTime = 0.66
+    damage = 280
+    fire-rate = 450
+    silenced = true
+    recoil = 60
+    reloadTime = 2
+    shootModes = single
+    shell-auto-eject = false
+    noUnload = true
+}
+slot = slot-primary

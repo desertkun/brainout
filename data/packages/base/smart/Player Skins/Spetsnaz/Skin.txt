@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = spetsnaz
+id = skin-player-spetsnaz
+name = ITEM_PLAYER_SKIN_SPETSNAZ

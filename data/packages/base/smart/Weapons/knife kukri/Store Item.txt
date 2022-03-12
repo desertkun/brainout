@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-kukri
+        class = content.components.IconComponent
+        icon = knife-kukri
+        tag = client
+    }
+]
+id = sl-ml-knife-kukri
+instrument = {
+    id = weapon-knife-kukri
+    skin = skin-weapon-knife-kukri
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_KUKRI
+slot = slot-melee
+category = melee
+tags = unique
+index = 9
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = x4-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_X4
+    }
+}
+

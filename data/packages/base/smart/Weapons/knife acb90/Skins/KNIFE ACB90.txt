@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-acb90
+        class = content.components.IconComponent
+        icon = knife-acb90
+        tag = client
+    }
+]
+data = knife-acb90
+id = skin-weapon-knife-acb90
+name = ITEM_WEAP_KNIFE_ACB90
+slot = sl-ml-knife-acb90

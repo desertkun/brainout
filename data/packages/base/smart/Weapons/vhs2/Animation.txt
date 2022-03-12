@@ -1,0 +1,5 @@
+animation = base:animations/weapon-vhs2.json
+class = content.Animation
+id = anim-vhs2
+states = []
+timeScale = 1

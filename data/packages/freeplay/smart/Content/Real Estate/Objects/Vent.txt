@@ -1,0 +1,92 @@
+class = content.active.RealEstateItem
+name = DECOR_VENT
+kind = decor
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 1
+        height = 1
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 1
+                h = 1
+                image = rs-decor-1x1-2
+            }
+        ]
+        underlying-block = rs-decor
+        blocks-layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = rs-decor-1x1-2
+        tag = client
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.RecipeComponent
+        items = {
+            res-plastic = 1
+            consumable-item-junk = 1
+        }
+        stat = blueprint-rs-vent-1
+    }
+    {
+        class = content.components.ItemComponent
+        space = true
+        weight = 1
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+]
+id = rs-vent-1
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-rs-vent-1
+stat = blueprint-rs-vent-1
+name = "{BLUEPRINT_FOR}: {DECOR_VENT}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-rsitem
+        icon-small = icon-blueprint-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-rs-vent-1
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+]

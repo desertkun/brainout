@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = faceless
+id = skin-player-faceless
+name = ITEM_PLAYER_SKIN_FACELESS

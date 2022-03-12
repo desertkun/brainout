@@ -1,0 +1,28 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-cima-luxurious
+        tag = client
+    }
+]
+data = weapon-luxurious
+id = skin-weapon-cima-luxurious
+name = ITEM_WEAP_CIMA_LUXURIOUS 
+slot = sl-pri-cima
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	hide = true
+        for = kills-from, weapon-cima
+        param = 200
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_CIMA}"
+    }
+}

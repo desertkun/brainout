@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-trench
+        class = content.components.IconComponent
+        icon = knife-trench
+        tag = client
+    }
+]
+data = knife-trench
+id = skin-weapon-knife-trench
+name = ITEM_WEAP_KNIFE_TRENCH
+slot = sl-ml-knife-trench

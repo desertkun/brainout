@@ -1,0 +1,73 @@
+id = parr-city
+class = content.parallax.Parallax
+tag = client
+layers = [
+	{
+		class = content.parallax.StaticLayer
+		texture = parr-city-root-repeat
+		x = 0
+		y = 0
+		coefX = 0.1
+		coefY = 0.0
+		scale = true
+	}
+]
+
+--------
+
+id = parr-forest
+class = content.parallax.Parallax
+tag = client
+layers = [
+	{
+		class = content.parallax.StaticLayer
+		texture = parr-forest-root-repeat
+		x = 0
+		y = 0
+		coefX = 0.1
+		coefY = 0.0
+		scale = true
+	}
+]
+
+--------
+
+id = parr-evening
+class = content.parallax.Parallax
+tag = client
+layers = [
+	{
+		class = content.parallax.DynamicLayer
+		texture = evening-parr-sky-foreground
+		x = 0
+		y = 515
+		coefX = 0.01
+		coefY = 0.01
+		flowX = -5
+	}
+	{
+		class = content.parallax.StaticLayer
+		texture = evening-parr-sky-root-repeat
+		x = 0
+		y = 0
+		coefX = 0.1
+		coefY = 0.0
+		scale = true
+	}
+	{
+		class = content.parallax.StaticLayer
+		texture = evening-parr-sky-root
+		x = 0
+		y = 128
+		coefX = 0.01
+		coefY = 0.01
+	}
+	{
+		class = content.parallax.StaticLayer
+		texture = evening-parr-grass
+		x = 0
+		y = 330
+		coefX = 0.5
+		coefY = 0.2
+	}
+]

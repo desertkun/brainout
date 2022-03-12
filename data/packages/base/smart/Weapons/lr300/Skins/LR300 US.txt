@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-lr300-us
+        tag = client
+    }
+]
+data = weapon-us
+id = skin-weapon-lr300-us
+name = ITEM_WEAP_LR300_US
+slot = sl-pri-lr300
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

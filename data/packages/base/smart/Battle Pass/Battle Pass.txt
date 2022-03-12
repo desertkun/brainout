@@ -1,0 +1,38 @@
+class = content.battlepass.BattlePass
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-bp-premium-x2
+        tag = client
+    }
+    {
+        class = content.components.BattlePassScorePostOwnComponent
+        score = 1000
+        tag = server
+    }
+]
+name = MENU_BATTLE_PASS
+id = battle-pass-1
+tasks = [
+    {
+        pool = battle-pass-kill-from-assault, battle-pass-kill-from-submashine, battle-pass-kill-from-shotgun, battle-pass-kill-from-sniper, battle-pass-kill-from-other, battle-pass-kill-from-pistol
+        phase = 86400
+    }
+    {
+        pool = battle-pass-capt-flag-dom-normal, battle-pass-kill-dom-normal, battle-pass-capt-4-flag-dom-normal, battle-pass-kill-15-dom-normal, battle-pass-win-3-dom-normal, battle-pass-kill-3-dom-normal, battle-pass-double-kills-dom-normal, battle-pass-3-double-kills-dom-normal, battle-pass-kill-deathmatch, battle-pass-kill-15-deathmatch, battle-pass-win-3-deathmatch, battle-pass-kill-3-deathmatch, battle-pass-double-kills-deathmatch, battle-pass-3-double-kills-deathmatch, battle-pass-3-double-kills-gungame, battle-pass-double-kills-gungame, battle-pass-kill-3-gungame, battle-pass-win-3-gungame, battle-pass-knife-gungame, battle-pass-lvl15-gungame, battle-pass-lvl-gungame, battle-pass-hunter-foxhunt, battle-pass-secondary-foxhunt, battle-pass-win-3-foxhunt, battle-pass-kills-assault, battle-pass-kills5-assault, battle-pass-kills22-assault
+        phase = 86400
+    }
+    {
+        pool = battle-pass-kills-freeplay, battle-pass-kills2-freeplay, battle-pass-enter-freeplay, battle-pass-sell3-freeplay
+        phase = 86400
+    }
+    {
+        pool = battle-pass-kill-from-assault, battle-pass-kill-from-submashine, battle-pass-kill-from-shotgun, battle-pass-kill-from-sniper, battle-pass-kill-from-other, battle-pass-kill-from-pistol, battle-pass-capt-flag-dom-normal, battle-pass-kill-dom-normal, battle-pass-capt-4-flag-dom-normal, battle-pass-kill-15-dom-normal, battle-pass-win-3-dom-normal, battle-pass-kill-3-dom-normal, battle-pass-double-kills-dom-normal, battle-pass-3-double-kills-dom-normal, battle-pass-kill-deathmatch, battle-pass-kill-15-deathmatch, battle-pass-win-3-deathmatch, battle-pass-kill-3-deathmatch, battle-pass-double-kills-deathmatch, battle-pass-3-double-kills-deathmatch, battle-pass-3-double-kills-gungame, battle-pass-double-kills-gungame, battle-pass-kill-3-gungame, battle-pass-win-3-gungame, battle-pass-knife-gungame, battle-pass-lvl15-gungame, battle-pass-lvl-gungame, battle-pass-hunter-foxhunt, battle-pass-secondary-foxhunt, battle-pass-win-3-foxhunt, battle-pass-kills-assault, battle-pass-kills5-assault, battle-pass-kills22-assault, battle-pass-kills-freeplay, battle-pass-kills2-freeplay, battle-pass-enter-freeplay, battle-pass-sell3-freeplay
+        phase = 86400
+        premium = true
+    }
+    {
+        pool = battle-pass-weekly-kill-from-assault, battle-pass-weekly-1000kills, battle-pass-weekly-grenade, battle-pass-weekly-kill-from-ddn, battle-pass-weekly-kill-from-afg, battle-pass-weekly-win, battle-pass-weekly-win-dom, battle-pass-weekly-win-nor, battle-pass-weekly-win-dea, battle-pass-weekly-win-ass, battle-pass-weekly-free, battle-pass-weekly-dq, battle-pass-weekly-oppositekills, battle-pass-weekly-kills5-freeplay, battle-pass-weekly-double-kills, battle-pass-weekly-kills5-freeplay, battle-pass-weekly-triple-kills-freeplay, battle-pass-weekly-win24-freeplay, battle-pass-weekly-4-double-kills, battle-pass-weekly-exit-fp, battle-pass-weekly-sell-20k, battle-pass-weekly-bunker, battle-pass-weekly-minutes-spent, battle-pass-weekly-lvl-gungame, battle-pass-weekly-hunter-foxhunt, battle-pass-weekly-knife-gungame, battle-pass-weekly-knife-assault, battle-pass-weekly-secondary, battle-pass-weekly-bandages, battle-pass-weekly-medikit
+        phase = 604800
+    }
+]

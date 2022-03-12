@@ -1,0 +1,239 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-elevator-controller
+        tag = client
+    }
+    {
+        class = content.components.ServerElevatorComponent
+        move-effect = elevator-moving-effects
+        fail-effect = elevator-fail-effects
+        startup-effect = elevator-startup-effects
+        arrived-effect = elevator-opening-effects
+        closed-effect = elevator-closing-effects
+        move-time = 10
+        open-time = 3
+        items-required = freeplay-quest-fuse
+        items-required-amount = 3
+        tag = server
+    }
+]
+id = elevator-controller-a
+name = Elevator Controller A
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-elevator-button
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_CALL_THE_ELEVATOR
+        tag = client
+    }
+    {
+        class = content.components.ServerElevatorFloorComponent
+        button-on = fr-button-on
+        button-off = fr-button-off
+        push-effect = elevator-button-effects
+        tag = server
+    }
+]
+id = elevator-floor-a
+name = Elevator Floor A
+
+--------
+
+class = content.active.Portal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-elevator-door
+        tag = client
+    }
+    {
+        class = content.components.ClientActiveActivatorComponent
+        activateText = MENU_ENTER_THE_DOOR
+        tag = client
+    }
+    {
+        class = content.components.ServerElevatorDoorComponent
+        tag = server
+    }
+]
+id = elevator-door-a
+name = Elevator Door A
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-elevator-room
+        tag = client
+    }
+]
+id = elevator-room-a
+name = Elevator Room A
+
+--------
+
+class = content.active.Animation
+components = [
+    {
+        class = content.components.ActiveAnimationComponent
+        animation = anim-elevator-door-a
+        tag = client
+    }
+]
+id = elevator-door-animation-a
+name = Elevator Door Animation A
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        placeholders = {
+            fuse = icon-item-fuse-placeholder
+        }
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ItemStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 0
+        target = freeplay
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-freeplay-container
+            tag = client
+        }
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+filter = {
+    fuse = {
+        items = [
+            freeplay-quest-fuse
+            freeplay-quest-broken-fuse
+        ]
+        limit = 3
+    }
+}
+name = QUEST_SWITCHBOARD
+auto-remove = false
+editor = true
+id = freeplay-elevator-holder
+
+
+--------
+
+class = content.Animation
+id = anim-elevator-door-a
+animation = freeplay:animations/elevator-door-a.json
+timeScale = 1
+tag = client
+
+--------
+
+class = content.Effect
+id = elevator-opening-effects
+set = elevator-opening-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/elevator-opening.mp3
+id = elevator-opening-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = elevator-moving-effects
+set = elevator-moving-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/elevator-moving.mp3
+id = elevator-moving-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = elevator-closing-effects
+set = elevator-closing-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/elevator-closing.mp3
+id = elevator-closing-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = elevator-button-effects
+set = elevator-button-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/elevator-button.mp3
+id = elevator-button-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = elevator-fail-effects
+set = elevator-fail-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/elevator-fail.mp3
+id = elevator-fail-snd
+tag = client
+
+--------
+
+class = content.Effect
+id = elevator-startup-effects
+set = elevator-startup-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/elevator-startup.mp3
+id = elevator-startup-snd
+tag = client

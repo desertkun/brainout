@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-beretta
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-beretta
+instrument = {
+    id = weapon-beretta
+    skins = skin-weapon-beretta-default, skin-weapon-beretta-coyote, skin-weapon-beretta-snake
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-beretta-reload-time
+    }
+}
+items = [
+    {
+        amount = 34
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_BERETTA
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 15
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = polymer-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_POLYMER
+    }
+}

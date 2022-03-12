@@ -1,0 +1,57 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-ignition-ok
+        icon-small = icon-ignition-ok-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ignition-move-1
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.5
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+]
+id = consumable-item-spark-ok
+stacks = false
+name = ITEM_SPARK_PLUG_OK
+description = ITEM_SPARK_PLUG_OK_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-ignition-dead
+        icon-small = icon-ignition-dead-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ignition-move-1
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.5
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+]
+id = consumable-item-spark-dead
+stacks = false
+name = ITEM_SPARK_PLUG_DEAD
+description = ITEM_SPARK_PLUG_DEAD_DESC

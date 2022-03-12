@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = steampunk
+id = skin-player-steampunk
+name = ITEM_PLAYER_SKIN_STEAMPUNK

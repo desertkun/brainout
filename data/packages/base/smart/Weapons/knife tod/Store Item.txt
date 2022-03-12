@@ -1,0 +1,38 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-tod
+        class = content.components.IconComponent
+        icon = knife-tod
+        tag = client
+    }
+]
+id = sl-ml-knife-tod
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-tod
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_TOD
+slot = slot-melee
+category = melee
+tags = unique
+index = 342
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

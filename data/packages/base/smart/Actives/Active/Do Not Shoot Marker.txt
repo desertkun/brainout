@@ -1,0 +1,14 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shooting-disabled
+        tag = client
+    }
+    {
+        class = content.components.FlagChunkComponent
+        flag = shootingDisabled
+    }
+]
+id = shooting-disabled-marker
+name = Shooting Disabled Marker

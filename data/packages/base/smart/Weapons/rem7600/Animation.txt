@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rem7600.json
+class = content.Animation
+id = anim-rem7600
+states = []
+timeScale = 1

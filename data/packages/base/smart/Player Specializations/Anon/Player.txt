@@ -1,0 +1,18 @@
+class = content.active.Player
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-speed
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            hat = package
+        }
+        tag = client
+    }
+]
+extends = player-default
+id = player-anon
+name = ITEM_PLAYER_ANON

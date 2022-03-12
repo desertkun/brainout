@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-crossbow
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 70
+    }
+]
+instrument = {
+    id = weapon-crossbow
+    skins = skin-weapon-crossbow-default
+    upgrades = {
+        accuracy = upgrade-crossbow-accuracy
+        scope = upgrade-crossbow-scope-acog
+    }
+}
+items = [
+    {
+        amount = 10
+        id = arrow-bullet
+    }
+]
+name = ITEM_WEAP_CROSSBOW
+slot = slot-primary
+category = other
+tags = unique
+index = 370
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = legacy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_LEGACY
+    }
+}
+

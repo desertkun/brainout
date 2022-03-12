@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-butcher
+        class = content.components.IconComponent
+        icon = knife-butcher
+        tag = client
+    }
+]
+id = sl-ml-butcher
+instrument = {
+    id = weapon-butcher
+    skin = skin-weapon-butcher
+}
+items = [
+]
+name = ITEM_WEAP_BUTCHER
+slot = slot-melee
+category = melee
+tags = unique
+index = 381
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

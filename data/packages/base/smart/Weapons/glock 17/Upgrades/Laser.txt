@@ -1,0 +1,41 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            light = on
+        }
+        tag = client
+    }
+    {
+        class = content.components.LaserComponent
+        tag = client
+    }
+    {
+        big-icon = pistol-light
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_LASER_DESC
+id = upgrade-pistol-laser
+name = ITEM_UPGRADE_LASER
+properties = {
+    accuracy = "+10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}

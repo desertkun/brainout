@@ -1,0 +1,43 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            light = on
+        }
+        tag = client
+    }
+    {
+        class = content.components.InstrumentLightComponent
+        color = 333333FF
+        cone = 12
+        distance = 40
+        rays = 32
+        soft = 16
+        tag = client
+    }
+    {
+        big-icon = pistol-light
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_LIGHT_DESC
+id = upgrade-pistol-light
+name = ITEM_UPGRADE_LIGHT
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}

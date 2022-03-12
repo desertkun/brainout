@@ -1,0 +1,5 @@
+animation = base:animations/weapon-bayonet.json
+class = content.Animation
+id = anim-bayonet
+states = []
+timeScale = 1

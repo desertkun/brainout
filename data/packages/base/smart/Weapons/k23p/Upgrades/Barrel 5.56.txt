@@ -1,0 +1,69 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+	    clip = extended
+        }
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentEffectsComponent
+        replace = {
+            shoot = [
+                m4a1-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+                m4a1-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+                m4a1-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+                m4a1-shoot-4, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+                m4a1-shoot-5, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+                m4a1-shoot-6, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            ]
+        }
+        tag = client
+    }
+    {
+        big-icon = k23p-clip-extended
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = "{ITEM_UPGRADE_BARREL_DESC} {ITEM_BULLET_556_45MM}"
+id = upgrade-k23p-clip-extended
+name = "{ITEM_UPGRADE_BARREL} {ITEM_BULLET_556_45MM}"
+properties = {
+    bullet = "=bullet-5.56x45"
+    damage = "=50"
+    clip-size = "=30"
+	recoil = "=45"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-k23p
+        param = 2
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

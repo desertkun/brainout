@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-svds
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 15
+    }
+]
+instrument = {
+    id = weapon-svds
+    skins = skin-weapon-svds-default , skin-weapon-svds-barkhan
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-svds-clip-extended
+        sag = upgrade-svds-sag-kit
+        reload-time = upgrade-svds-reload-time
+        scope = upgrade-svds-scope-optical
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_SVDS
+slot = slot-primary
+category = sniper
+tags = unique
+index = 361
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

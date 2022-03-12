@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mdrc-citadel
+        tag = client
+    }
+]
+data = weapon-citadel
+id = skin-weapon-mdrc-citadel
+name = ITEM_WEAP_MDRC_CITADEL
+slot = sl-pri-mdrc
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,45 @@
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-kill-from-assault
+target = 75
+reward = 250
+kind = assault
+
+--------
+
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-kill-from-submashine
+target = 50
+reward = 250
+kind = submachine
+
+--------
+
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-kill-from-shotgun
+target = 40
+reward = 250
+kind = shotgun
+
+--------
+
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-kill-from-sniper
+target = 40
+reward = 250
+kind = sniper
+
+--------
+
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-kill-from-other
+target = 35
+reward = 250
+kind = other
+
+--------
+
+class = content.battlepass.KillFromWeaponKind
+id = battle-pass-kill-from-pistol
+target = 25
+reward = 250
+kind = pistol

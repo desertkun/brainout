@@ -1,0 +1,2 @@
+rt.jar filter=lfs diff=lfs merge=lfs -text
+bin/obfuscated/brainout-desktop.jar filter=lfs diff=lfs merge=lfs -text

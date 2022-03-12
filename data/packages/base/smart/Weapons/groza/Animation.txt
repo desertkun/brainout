@@ -1,0 +1,5 @@
+animation = base:animations/weapon-groza.json
+class = content.Animation
+id = anim-groza
+states = []
+timeScale = 1

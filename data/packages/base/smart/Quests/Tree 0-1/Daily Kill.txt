@@ -1,0 +1,31 @@
+class = content.quest.DailyQuest
+id = quest-daily-kill
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-kill
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.KillOppositeKarma
+        target = 20
+    }
+}
+
+coop = false
+hasToLeave = false
+perTaskReward = true
+perTargetItemReward = true
+name = QUEST_TITLE_BOUNTY_HUNTER
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 100
+    }
+]

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = instrument-default
+id = skin-instrument-shield-default
+name = ITEM_SHIELD
+slot = sl-pri-shield

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-vhs2-default
+name = ITEM_WEAP_VHS2
+slot = sl-pri-vhs2

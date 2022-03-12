@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = gurza
+id = skin-player-gurza
+name = ITEM_PLAYER_SKIN_GURZA

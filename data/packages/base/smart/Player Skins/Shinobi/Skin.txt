@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = shinobi
+id = skin-player-shinobi
+name = ITEM_PLAYER_SKIN_SHINOBI

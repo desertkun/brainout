@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-fort12
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+]
+instrument = {
+    id = weapon-fort12
+    skins = skin-weapon-fort12-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-9mmx18
+    }
+]
+name = ITEM_WEAP_FORT12
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 100
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = cs-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_CS
+    }
+}

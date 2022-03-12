@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-icicle
+        class = content.components.IconComponent
+        icon = knife-icicle
+        tag = client
+    }
+]
+id = sl-ml-knife-icicle
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-icicle
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_ICICLE
+slot = slot-melee
+category = melee
+tags = unique
+index = 382
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = icon-battle-pass-points-big
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}

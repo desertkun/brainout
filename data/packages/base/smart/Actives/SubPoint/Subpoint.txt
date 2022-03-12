@@ -1,0 +1,13 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.SubPointComponent
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-subpoint
+        tag = client
+    }
+]
+id = subpoint
+name = ITEM_SUBPOINT

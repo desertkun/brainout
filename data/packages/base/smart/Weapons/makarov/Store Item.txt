@@ -1,0 +1,27 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-makarov
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+]
+instrument = {
+    id = weapon-makarov
+    skins = skin-weapon-makarov-default, skin-weapon-makarov-gold, skin-weapon-makarov-modern, skin-weapon-makarov-watermelon
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-makarov-clip-extended
+    }
+}
+items = [
+    {
+        amount = 21
+        id = bullet-9mmx18
+    }
+]
+name = ITEM_WEAP_MAKAROV
+slot = slot-secondary
+category = pistol
+tags = classic
+index = 1

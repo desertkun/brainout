@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mossberg590.json
+class = content.Animation
+id = anim-mossberg590
+states = []
+timeScale = 1

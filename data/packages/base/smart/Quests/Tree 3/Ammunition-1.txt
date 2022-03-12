@@ -1,0 +1,51 @@
+class = content.quest.Quest
+id = quest-ammunition-1
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-ammunition
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = bullet-9mmx18
+        target = 50
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = bullet-357-magnum
+        target = 25
+    }
+}
+
+group = ammunition
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_AMMUNITION
+
+rewards = [
+    {
+        action = addstat
+        id = tech-score
+        amount = 175
+    }
+    {
+        action = addstat
+        id = score
+        amount = 250
+    }
+    {
+        action = addstat
+        id = gears
+        amount = 10
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 300
+    }
+]

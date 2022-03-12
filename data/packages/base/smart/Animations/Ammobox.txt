@@ -1,0 +1,6 @@
+animation = base:animations/instrument-ammobox.json
+class = content.Animation
+defaultSkin = skin-instrument-ammobox-default
+id = anim-ammobox
+states = []
+timeScale = 1

@@ -1,0 +1,108 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ConnectionComponent
+            data = [
+                call-0
+                call-0
+                call-0
+                call-3
+                call-0
+                call-0
+                call-6
+                call-0
+                call-0
+                call-9
+                call-0
+                call-0
+                call-12
+                call-0
+                call-0
+                call-0
+            ]
+            stickId = collision
+            stickTo = collision, brick, metal, ground, platform, core-inv, core
+            tag = client
+        }
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-collision
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = collision
+static = true
+contactStrategy = triangleNoBullets
+contactTo = collision, brick, core, metal, ground, platform, core-inv
+id = collision
+name = ITEM_BG_COLLISION
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.ConnectionComponent
+            data = [
+                call-0
+                call-0
+                call-0
+                call-3
+                call-0
+                call-0
+                call-6
+                call-0
+                call-0
+                call-9
+                call-0
+                call-0
+                call-12
+                call-0
+                call-0
+                call-0
+            ]
+            stickId = collision
+            stickTo = collision, brick, metal, ground, platform, core-inv, core
+            tag = client
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-collision
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = collision
+static = true
+generatePhysics = false
+contactStrategy = triangleNoBullets
+contactTo = collision, brick, core, metal, ground, platform, core-inv
+id = collision-nophy
+name = Collision With No Physics

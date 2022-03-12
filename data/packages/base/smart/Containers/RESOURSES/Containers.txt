@@ -1,0 +1,33 @@
+cards = [
+    {
+        groups = cardgroup-resourses-1
+    }
+    {
+        groups = cardgroup-resourses-2
+    }
+    {
+        groups = cardgroup-resourses-3
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = resourses-case-bg
+        class = content.components.IconComponent
+        icon = resourses-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_RESOURSES_DESC
+id = case-resourses
+name = CASE_RESOURSES
+

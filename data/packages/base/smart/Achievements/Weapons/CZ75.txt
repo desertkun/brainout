@@ -1,0 +1,36 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-cz75
+        icon-locked = achievement-cz75-lock
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 2000
+        class = content.components.RuRewardComponent
+        tag = server
+    }
+]
+id = achievement-cz75
+name = ACHIEVEMENT_CZ75
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-cz75
+        param = 500
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_CZ75}"
+    }
+}

@@ -1,0 +1,6 @@
+{
+	filterMin: Linear,
+	filterMag: Linear,
+    maxWidth: 2048,
+    maxHeight: 2048
+}

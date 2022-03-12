@@ -1,0 +1,5 @@
+animation = base:animations/weapon-m4a1-desert.json
+class = content.Animation
+id = anim-m4a1-desert
+states = []
+timeScale = 1

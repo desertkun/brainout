@@ -1,0 +1,157 @@
+
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-1-moan-1.mp3
+distance = 0.5
+tag = client
+id = zombie-1-moan-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-1-moan-2.mp3
+distance = 0.5
+tag = client
+id = zombie-1-moan-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-1-moan-3.mp3
+distance = 0.5
+tag = client
+id = zombie-1-moan-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-1-moan-3.mp3
+distance = 0.5
+tag = client
+id = zombie-1-moan-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-2-moan-1.mp3
+distance = 0.5
+tag = client
+id = zombie-2-moan-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-2-moan-2.mp3
+distance = 0.5
+tag = client
+id = zombie-2-moan-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-2-moan-3.mp3
+distance = 0.5
+tag = client
+id = zombie-2-moan-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-2-moan-3.mp3
+distance = 0.5
+tag = client
+id = zombie-2-moan-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-3-moan-1.mp3
+distance = 0.5
+tag = client
+id = zombie-3-moan-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-3-moan-2.mp3
+distance = 0.5
+tag = client
+id = zombie-3-moan-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-3-moan-3.mp3
+distance = 0.5
+tag = client
+id = zombie-3-moan-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-3-moan-3.mp3
+tag = client
+id = zombie-3-moan-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-1-notice-1.mp3
+tag = client
+id = zombie-1-notice-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-1-notice-2.mp3
+tag = client
+id = zombie-1-notice-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-2-notice-1.mp3
+tag = client
+id = zombie-2-notice-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-2-notice-2.mp3
+tag = client
+id = zombie-2-notice-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-3-notice-1.mp3
+tag = client
+id = zombie-3-notice-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-3-notice-2.mp3
+tag = client
+id = zombie-3-notice-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-attack-1.mp3
+tag = client
+id = zombie-attack-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-attack-2.mp3
+tag = client
+id = zombie-attack-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+sound = halloween:sounds/zombie-attack-3.mp3
+tag = client
+id = zombie-attack-3-snd

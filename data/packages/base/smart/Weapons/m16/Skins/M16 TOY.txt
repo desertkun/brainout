@@ -1,0 +1,25 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m16-toy
+        tag = client
+    }
+]
+data = weapon-toy
+id = skin-weapon-m16-toy
+name = ITEM_WEAP_M16_TOY
+slot = sl-pri-m16
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-pri-svt40
+instrument = {
+    id = weapon-svt40
+    skins = skin-weapon-svt40-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-svt40-accuracy
+        reload-time = upgrade-svt40-reload-time
+        scope = upgrade-svt40-scope-npz
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_SVT40
+slot = slot-primary
+category = sniper
+tags = unique
+index = 364
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}
+

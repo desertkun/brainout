@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-militia
+        tag = client
+    }
+]
+id = sl-skin-militia
+items = []
+name = ITEM_PLAYER_SKIN_MILITIA
+skin = skin-player-militia
+slot = slot-player-skin
+category = outfit
+tags = missions
+index = 341
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        unlockTitle = MENU_UNLOCK_QUEST
+        unlockObject = QUEST_TITLE_PASSPORT
+    }
+}

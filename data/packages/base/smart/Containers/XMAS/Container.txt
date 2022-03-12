@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-xmas
+    }
+    {
+        groups = cardgroup-skillpts
+    }
+    {
+        groups = cardgroup-xmas
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = xmas-case-bg
+        class = content.components.IconComponent
+        icon = xmas-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_XMAS_DESC
+id = case-xmas
+name = CASE_XMAS

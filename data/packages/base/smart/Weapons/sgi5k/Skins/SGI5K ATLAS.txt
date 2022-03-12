@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-sgi5k-atlas
+        tag = client
+    }
+]
+data = weapon-atlas
+id = skin-weapon-sgi5k-atlas
+name = ITEM_WEAP_SGI5K_ATLAS
+slot = sl-pri-sgi5k
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

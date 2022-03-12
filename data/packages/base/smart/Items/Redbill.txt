@@ -1,0 +1,74 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-redbill
+        icon-small = icon-redbill-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = energy-drink-move-1
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+    {
+        class = content.components.ClientItemActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerBoosterActivatorComponent
+        time = 5
+        effect = drink-energy-effect
+        animation = drink-energy-drink
+        tag = server
+    }
+    {
+        class = content.components.BoosterActivatorComponent
+        boosters = {
+            speed = {
+                value = 1.3
+                duration = 90
+            }
+        }
+	    thirst = 20
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = fridge
+        weight = 0.3
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 40
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 70
+                    to = 80
+                }
+            ]
+        }
+    }
+]
+id = consumable-redbill
+name = ITEM_ENERGY_DRINK
+description = ITEM_ENERGY_DRINK_DESC
+
+--------
+
+class = content.Effect
+id = drink-energy-effect
+set = [
+    drink-energy-snd
+]
+tag = client

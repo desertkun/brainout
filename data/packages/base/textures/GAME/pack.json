@@ -1,0 +1,8 @@
+{
+	filterMin: Linear,
+	filterMag: Nearest,
+	useIndexes: false,
+    maxWidth: 2048,
+    maxHeight: 2048,
+    fast: true
+}

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rpk16.json
+class = content.Animation
+id = anim-rpk16
+states = []
+timeScale = 1

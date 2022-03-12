@@ -1,0 +1,5 @@
+animation = base:animations/weapon-imbel.json
+class = content.Animation
+id = anim-imbel
+states = []
+timeScale = 1

@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-flick
+        class = content.components.IconComponent
+        icon = knife-flick
+        tag = client
+    }
+]
+id = sl-ml-knife-flick
+instrument = {
+    id = weapon-knife-flick
+    skin = skin-weapon-knife-flick
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_FLICK
+slot = slot-melee
+category = melee
+tags = unique
+index = 335
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

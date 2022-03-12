@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = geigerCard
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = profile-badge-radiation
+    }
+]
+group = cardgroup-nuclear-material-unique
+id = gen-nuclear-material-4
+name = CARD_NUCLEAR_MATERIAL
+weight = 1

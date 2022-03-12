@@ -1,0 +1,37 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = on
+        }
+        tag = client
+    }
+    {
+        big-icon = pistol-scope-glock
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_TRUGLO_DESC
+id = upgrade-pistol-scope
+name = ITEM_UPGRADE_SCOPE_TRUGLO
+properties = {
+    accuracy = "+10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}

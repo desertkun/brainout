@@ -1,0 +1,96 @@
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 1
+        animation = anim-electro-guitar
+        attach-to = secondary
+        class = content.components.InstrumentAnimationComponent
+        skin = instrument-electro-guitar
+        states = {
+            aim = hold-guitar
+            aimHit = play-guitar
+            hit = play-guitar
+            hold = hold-guitar
+        }
+        icon-scale = 0.7
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 3
+    }
+    {
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.MyInstrumentEffectsComponent
+        tag = client
+    }
+    {
+        class = content.components.MyGuitarComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            custom-c2 = electro-guitar-note-36
+            custom-db2 = electro-guitar-note-37
+            custom-d2 = electro-guitar-note-38
+            custom-eb2 = electro-guitar-note-39
+            custom-e2 = electro-guitar-note-40
+            custom-f2 = electro-guitar-note-41
+            custom-gb2 = electro-guitar-note-42
+            custom-g2 = electro-guitar-note-43
+            custom-ab2 = electro-guitar-note-44
+            custom-a2 = electro-guitar-note-45
+            custom-bb2 = electro-guitar-note-46
+            custom-b2 = electro-guitar-note-47
+            custom-c3 = electro-guitar-note-48
+            custom-db3 = electro-guitar-note-49
+            custom-d3 = electro-guitar-note-50
+            custom-eb3 = electro-guitar-note-51
+            custom-e3 = electro-guitar-note-52
+            custom-f3 = electro-guitar-note-53
+            custom-gb3 = electro-guitar-note-54
+            custom-g3 = electro-guitar-note-55
+            custom-ab3 = electro-guitar-note-56
+            custom-a3 = electro-guitar-note-57
+            custom-bb3 = electro-guitar-note-58
+            custom-b3 = electro-guitar-note-59
+            custom-c4 = electro-guitar-note-60
+            custom-db4 = electro-guitar-note-61
+            custom-d4 = electro-guitar-note-62
+            custom-eb4 = electro-guitar-note-63
+            custom-e4 = electro-guitar-note-64
+            custom-f4 = electro-guitar-note-65
+            custom-gb4 = electro-guitar-note-66
+            custom-g4 = electro-guitar-note-67
+            custom-ab4 = electro-guitar-note-68
+            custom-a4 = electro-guitar-note-69
+            custom-bb4 = electro-guitar-note-70
+            custom-b4 = electro-guitar-note-71
+            custom-c5 = electro-guitar-note-72
+            custom-db5 = electro-guitar-note-73
+            custom-d5 = electro-guitar-note-74
+            custom-eb5 = electro-guitar-note-75
+            custom-e5 = electro-guitar-note-76
+            custom-f5 = electro-guitar-note-77
+            custom-gb5 = electro-guitar-note-78
+            custom-g5 = electro-guitar-note-79
+            custom-ab5 = electro-guitar-note-80
+            custom-a5 = electro-guitar-note-81
+            custom-bb5 = electro-guitar-note-82
+            custom-b5 = electro-guitar-note-83
+            custom-c6 = electro-guitar-note-84
+        }
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 150
+    }
+]
+defaultSkin = skin-instrument-electro-guitar-default
+id = instrument-electro-guitar
+slot = slot-special
+throwable = false

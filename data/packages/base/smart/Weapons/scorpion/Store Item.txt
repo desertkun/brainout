@@ -1,0 +1,44 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-scorpion
+instrument = {
+    id = weapon-scorpion
+    skins = skin-weapon-scorpion-default, skin-weapon-scorpion-cech
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-scorpion-clip-extended
+        butt = upgrade-scorpion-butt-unfolded
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-9mmx18
+    }
+]
+name = ITEM_WEAP_SCORPION
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 12
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = xmas-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_1YEAR
+    }
+}

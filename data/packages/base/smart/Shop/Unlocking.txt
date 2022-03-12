@@ -1,0 +1,24 @@
+class = content.ContentLockTree
+id = unlock-tree
+items = {
+    layout-2 = {
+        for = level
+        param = 20
+    }
+    layout-3 = {
+        for = level
+        param = 30
+    }
+    layout-4 = {
+        for = level
+        param = 40
+    }
+    sl-pl-recoil = {
+        for = level
+        param = 3
+    }
+    sl-pl-sniper = {
+        for = level
+        param = 19
+    }
+}

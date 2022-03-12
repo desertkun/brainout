@@ -1,0 +1,5 @@
+animation = base:animations/weapon-wa2000.json
+class = content.Animation
+id = anim-wa2000
+states = []
+timeScale = 1

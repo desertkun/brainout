@@ -1,0 +1,52 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = pso
+        }
+        tag = client
+    }
+    {
+        big-icon = svu-scope-pso
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_PSO_DESC
+id = upgrade-an94-scope-pso
+name = ITEM_UPGRADE_SCOPE_PSO
+properties = {
+    aim-distance = "+20"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-an94
+        param = 2
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

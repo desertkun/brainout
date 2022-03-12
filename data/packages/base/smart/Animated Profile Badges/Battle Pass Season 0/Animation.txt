@@ -1,0 +1,5 @@
+animation = base:animations/anim-badge-battle-pass-0-animated.json
+class = content.Animation
+id = anim-badge-battle-pass-0-animated
+states = []
+timeScale = 1

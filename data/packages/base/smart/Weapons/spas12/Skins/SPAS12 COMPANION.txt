@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-spas12-companion
+        tag = client
+    }
+]
+data = weapon-companion
+id = skin-weapon-spas12-companion
+name = ITEM_WEAP_SPAS12_COMPANION
+slot = sl-pri-spas12
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-scar-sever
+        tag = client
+    }
+]
+data = weapon-sever
+id = skin-weapon-scar-sever
+name = ITEM_WEAP_SCAR_SEVER
+slot = sl-pri-scar
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

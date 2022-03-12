@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-an94
+        tag = client
+    }
+]
+id = profile-badge-an94
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-an94
+        param = 1000
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_AN94}"
+    }
+}

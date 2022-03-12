@@ -1,0 +1,5 @@
+animation = base:animations/grass-1.json
+class = content.Animation
+id = anim-grass-1
+states = []
+timeScale = 0.25

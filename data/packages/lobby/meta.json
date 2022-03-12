@@ -1,0 +1,49 @@
+{
+	"textures":
+	{
+		"output": "content/textures"
+	},
+	"export": 
+	{
+		"default": {
+			"exclude": [
+				"smart"
+			]
+		},
+		"ch":
+		{
+			"filter": [
+				".+NSFW.+"
+			]
+		},
+		"server":
+		{
+			"exclude": 
+			[
+				"smart",
+				"textures",
+				"contents/content/music",
+				"contents/content/particles",
+				"contents/content/shaders",
+				"contents/content/sounds",
+				"contents/content/textures"
+			]
+		},
+		"chserver":
+		{
+			"filter": [
+				".+NSFW.+"
+			],
+			"exclude": 
+			[
+				"smart",
+				"textures",
+				"contents/content/music",
+				"contents/content/particles",
+				"contents/content/shaders",
+				"contents/content/sounds",
+				"contents/content/textures"
+			]
+		}
+	}
+}

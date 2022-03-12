@@ -1,0 +1,73 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.ChemicalExposureComponent
+        skins = [
+            skin-player-protect
+            skin-player-protect2
+            skin-player-protect3
+        ]
+        radius = 8
+        period = 1
+        damage = 25
+        tag = server
+    }
+    {
+        class = content.components.BoundingBoxComponent
+        width = 8
+        height = 8
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-chimical-exposure
+            tag = client
+        }
+    }
+]
+id = chemical-exposure
+name = Checmical Exposure
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ActiveParticleComponent
+        particle = chemical-exposure-part
+        tag = client
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            chemical-exposure-snd
+        ]
+        tag = client
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-chimical-exposure
+            tag = client
+        }
+    }
+]
+id = chemical-exposure-particles
+name = Checmical Exposure Particles
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = chemical-exposure-snd
+sound = freeplay:sounds/gas-loop.wav
+loop = true
+
+--------
+
+class = content.effect.ParticleEffect
+id = chemical-exposure-part
+particle = freeplay:particles/chemical-exposure
+tag = client

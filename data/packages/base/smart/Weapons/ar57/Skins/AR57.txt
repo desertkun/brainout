@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-ar57-default
+name = ITEM_WEAP_AR57
+slot = sl-pri-ar57

@@ -1,0 +1,54 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.2
+        height = 1
+        mass = 0.25
+        reduce = -0.2
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-medkit
+        class = content.components.ActiveIconComponent
+        rotateByX = 0
+        skin = throwable-default
+        tag = client
+    }
+    {
+        amount = 200
+        class = content.components.HealthResourceDispenserComponent
+        distance = 4
+        effect = health-delivered-effect
+        period = 5
+        rewardOwner = 2
+        tag = server
+        timeToLive = 60
+    }
+    {
+        class = content.components.LimitInstancesComponent
+        instancesCount = 1
+        itemsClass = special
+        tag = server
+    }
+]
+id = medkit-active
+name = ITEM_SPECIAL_AMMOBOX
+showOnMinimap = false

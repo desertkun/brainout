@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = fantomas
+id = skin-player-fantomas
+name = ITEM_PLAYER_SKIN_FANTOMAS

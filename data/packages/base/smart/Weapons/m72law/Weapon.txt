@@ -1,0 +1,85 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 1.5
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        shoot = [
+            rpg7-shoot-1
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2
+    }
+    {
+        actions = [
+
+            {
+                effects = [
+                    m72-open
+                ]
+                for = open-snd
+                type = effect
+            }
+            {
+                for = open
+                type = animate
+                animation = load
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-m72law
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-m72
+            aimHit = shoot-weapon-m72
+            cock = cock-weapon-m72
+            hit = shoot-weapon-m72
+            hold = hold-weapon-m72
+        }
+    }
+    {
+        class = content.components.ConditionalSlotComponent
+        conditions = {
+            grenade = loaded
+        }
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m72law-default
+id = weapon-m72law
+instrumentTags = special, rpg
+primary = {
+    accuracy = 35
+    aimDistance = 30
+    allowedBullets = m72law-bullet
+    clipSize = 1
+    damage = 250
+    fire-rate = 60
+    cockTime = 0.75
+    noUnload = true
+    recoil = 90
+    reloadTime = 0.1
+    autoLoad = true
+    shootModes = singleCock
+}
+slot = slot-special

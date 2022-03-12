@@ -1,0 +1,33 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-gears-store-15
+        tag = client
+    }
+    {
+        amount = 15
+        class = content.components.AddStatItemComponent
+        stat = gears
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = GEARS_PACK_15
+id = sl-store-gears
+limit = 5
+name = CARD_GEARS
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = nuclear-material
+    }
+}

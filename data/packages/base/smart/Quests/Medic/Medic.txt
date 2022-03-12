@@ -1,0 +1,55 @@
+class = content.quest.Quest
+id = quest-medic
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-medic
+        tag = client
+    }
+]
+
+tasks = {
+	1 = {
+        class = content.quest.task.PickUpPartner
+        target = 3
+    }
+	2 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-medikit
+        target = 15
+    }
+	3 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-bandages
+        target = 10
+    }
+	4 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-radx
+        target = 5
+    }
+	5 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-splint
+        target = 3
+    }
+	6 = {
+        class = content.quest.task.UseItem
+        items = skin-player-protect
+        target = 1
+    }
+}
+
+coop = false
+hasToLeave = false
+name = QUEST_TITLE_MEDIC
+perTaskReward = true
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 1500
+    }
+]

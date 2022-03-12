@@ -1,0 +1,5 @@
+{
+	"name": "map_bridge",
+	"dependency": ["base", "sounds"],
+	"version": "0.1"
+}

@@ -1,0 +1,95 @@
+class = content.active.RealEstateItem
+name = "{DECOR_SOFA} #1"
+kind = decor
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 4
+        height = 2
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 4
+                h = 2
+                image = rs-decor-4x2-1
+            }
+        ]
+        underlying-block = rs-decor
+        blocks-layer = 1
+    }
+    {
+        class = content.components.IconComponent
+        icon = rs-decor-4x2-1
+        tag = client
+    }
+    {
+        class = content.components.RecipeComponent
+        items = {
+            res-textile = 3
+            res-wood = 2
+            res-glue = 2
+            res-paint = 2
+            consumable-item-junk = 2
+        }
+        stat = blueprint-rs-sofa-1
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        space = true
+        weight = 8
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+]
+id = rs-sofa-1
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-rs-sofa-1
+stat = blueprint-rs-sofa-1
+name = "{BLUEPRINT_FOR}: {DECOR_SOFA} #1"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-rsitem
+        icon-small = icon-blueprint-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-rs-sofa-1
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+]

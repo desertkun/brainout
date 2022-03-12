@@ -1,0 +1,30 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = medal-spectator
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_SPECTATOR_DESC
+id = medal-spectator
+name = MEDAL_SPECTATOR
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_SPECTATOR_DESC
+    }
+}

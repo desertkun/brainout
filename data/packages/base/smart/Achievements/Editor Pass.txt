@@ -1,0 +1,30 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-builder
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+hide = true
+id = map-editor-pass
+name = MAP_EDITOR_PASS
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 10
+    }
+}

@@ -1,0 +1,35 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-katana
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 150
+    }
+]
+instrument = {
+    id = weapon-katana
+    skins = skin-weapon-katana-default, skin-weapon-katana-shin, skin-weapon-katana-sandayu, skin-weapon-katana-murasama, skin-weapon-katana-nobility
+    upgrades = {
+    }
+}
+items = [
+]
+name = ITEM_WEAP_KATANA
+slot = slot-primary
+category = other
+tags = unique
+index = 390
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = cyber-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_CYBER
+    }
+}

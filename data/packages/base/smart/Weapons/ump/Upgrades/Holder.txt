@@ -1,0 +1,52 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            holder = on
+        }
+        tag = client
+    }
+    {
+        big-icon = ump-holder-on
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_HOLDER_DESC
+id = upgrade-ump-holder
+name = ITEM_UPGRADE_HOLDER
+properties = {
+    recoil = "-10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-ump
+        param = 1
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

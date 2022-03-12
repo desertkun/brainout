@@ -1,0 +1,48 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-pri-ar57
+instrument = {
+    id = weapon-ar57
+    skins = skin-weapon-ar57-default, skin-weapon-ar57-meta, skin-weapon-ar57-home
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-ar57-recoil
+        shoot-time = upgrade-ar57-shoot-time
+	wear-resistance = upgrade-ar57-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-5.7x28
+    }
+]
+name = ITEM_WEAP_AR57
+slot = slot-primary
+category = assault
+tags = parts
+index = 198
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-ar57
+        icon = standard-case
+        param = 6
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

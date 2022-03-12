@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-ots141a
+instrument = {
+    id = weapon-ots141a
+    skins = skin-weapon-ots141a-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ots141a-accuracy
+        recoil = upgrade-ots141a-recoil
+        light = upgrade-ots141a-light
+        scope = upgrade-ots141a-scope
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_OTS141A
+slot = slot-primary
+category = assault
+tags = unique
+index = 382
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-groza
+        param = 500
+        unlockTitle = MENU_UNLOCK_OTS141A
+    }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-agram-default
+name = ITEM_WEAP_AGRAM
+slot = sl-pri-agram

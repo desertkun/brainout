@@ -1,0 +1,31 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+]
+id = sl-sec-flare
+instrument = {
+    id = weapon-flare
+    skins = skin-weapon-flare-default
+    upgrades = {
+    }
+}
+items = [
+]
+name = ITEM_WEAP_FLARE
+price = 0
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

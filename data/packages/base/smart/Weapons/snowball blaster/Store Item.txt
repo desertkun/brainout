@@ -1,0 +1,31 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = []
+id = sl-pri-snowball-blaster
+instrument = {
+    id = weapon-snowball-blaster
+    skin = skin-weapon-snowball-blaster-default
+}
+items = [
+    {
+        amount = 32
+        id = snowball-bullet
+    }
+]
+name = ITEM_WEAP_SNOWBALL_BLASTER
+slot = slot-primary
+category = other
+tags = unique
+index = 1000
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

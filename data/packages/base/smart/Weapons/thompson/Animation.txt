@@ -1,0 +1,5 @@
+animation = base:animations/weapon-thompson.json
+class = content.Animation
+id = anim-thompson
+states = []
+timeScale = 1

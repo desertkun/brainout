@@ -1,0 +1,13 @@
+class = content.shop.Slot
+components = [
+]
+default = sl-flashlight
+id = slot-flashlight
+name = ITEM_FLASHLIGHT
+width = 100
+categories = [
+    {
+        id = flashlight
+        title = ITEM_FLASHLIGHT
+    }
+]

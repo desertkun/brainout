@@ -1,0 +1,81 @@
+﻿<div>
+    <define id="currentMode">
+        <editor>
+            <img expand="true" fill="true" pad="20">hint-editor</img><br/>
+        </editor>
+        <deathmatch>
+            <img expand="true" fill="true" pad="20">hint-dm</img><br/>--
+            <loc expand="true" fill="true" align="center">MENU_HINT_DM</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_DM_DESC</loc><br/>
+        </deathmatch>
+        <ctf>
+            <img expand="true" fill="true" pad="20">hint-ctf</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_HINT_CTF</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_CTF_DESC</loc><br/>
+        </ctf>
+        <normal>
+            <img expand="true" fill="true" pad="20">hint-kill</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_HINT_KILL_BAD_GUYS</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_TICKETS_WIN</loc><br/>
+        </normal>
+        <foxhunt>
+            <img expand="true" fill="true" pad="20">hint-foxhunt</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_HINT_FOXHUNT</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_FOXHUNT_DESC</loc><br/>
+        </foxhunt>
+        <gungame>
+            <img expand="true" fill="true" pad="20">hint-gungame</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_HINT_GUNGAME</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_GUNGAME_DESC</loc><br/>
+        </gungame>
+        <assault>
+            <img expand="true" fill="true" pad="20">hint-assault</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_HINT_ASSAULT</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_ASSAULT_DESC</loc><br/>
+        </assault>
+        <domination>
+            <img expand="true" fill="true" pad="20">hint-points</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_HINT_TAKE_POINTS</loc><br/>
+            <loc expand="true" fill="true" align="center" pad="20">MENU_HINT_POINTS_WIN</loc><br/>
+        </domination>
+        <free>
+            <img expand="true" pad="20">container-pile</img><br/>
+            <loc expand="true" width="400" align="center" style="title-yellow">MENU_FP_TUTORIAL_1_TITLE</loc><br/>
+            <loc expand="true" width="400" align="center" pad="20">MENU_FP_TUTORIAL_1_DESC</loc><br/>
+            <img expand="true" pad="20">freeplay-knife</img><br/>
+            <loc expand="true" width="400" align="center" style="title-yellow">MENU_FP_TUTORIAL_3_TITLE</loc><br/>
+            <loc expand="true" width="400" align="center" pad="20">MENU_FP_TUTORIAL_3_DESC</loc><br/>
+        </free>
+        <zombie>
+            <loc expand="true" width="400" fill="true" align="center">MENU_HINT_ZOMBIE</loc><br/>
+            <loc expand="true" width="400" fill="true" align="center" pad="20">MENU_HINT_ZOMBIE_WIN</loc><br/>
+        </zombie>
+    </define>
+    <br/>
+    <define id="preset">
+        <no-primary>
+            <img expand="true" fill="true" pad="20">icon-events-secondary-weapon</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_PRESET_NO_PRIMARY</loc><br/>
+        </no-primary>
+        <knife-only>
+            <img expand="true" fill="true" pad="20">icon-events-fresh-blood</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_PRESET_KNIFES_ONLY</loc><br/>
+        </knife-only>
+        <classic-only>
+            <img expand="true" fill="true" pad="20">icon-events-legend-weapon</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_PRESET_CLASSIC_ONLY</loc><br/>
+        </classic-only>
+        <toz34-only>
+            <img expand="true" fill="true" pad="20">placeholder-toz34</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_PRESET_TOZ34</loc><br/>
+        </toz34-only>
+        <hard>
+            <img expand="true" fill="true" pad="20">icon-events-double-kills</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_PRESET_HARD</loc><br/>
+        </hard>
+        <super-hard>
+            <img expand="true" fill="true" pad="20">icon-events-double-kills</img><br/>
+            <loc expand="true" fill="true" align="center">MENU_PRESET_SUPER_HARD</loc><br/>
+        </super-hard>
+    </define>
+</div>

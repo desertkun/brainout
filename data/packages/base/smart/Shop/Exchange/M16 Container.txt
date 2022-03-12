@@ -1,0 +1,53 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = m16-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-exclusive-starter-2
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-exclusive-starter-2
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-m16
+                value = 0
+            }
+            {
+                func = "<="
+                id = skin-player-vietnam
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_M16_DESC
+id = sl-store-case-starter-2
+name = CASE_M16
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 18
+        currency = nuclear-material
+    }
+}
+

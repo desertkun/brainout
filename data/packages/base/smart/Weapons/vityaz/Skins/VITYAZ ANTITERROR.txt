@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-vityaz-antiterror
+        tag = client
+    }
+]
+data = weapon-antiterror
+id = skin-weapon-vityaz-antiterror
+name = ITEM_WEAP_VITYAZ_ANTITERROR
+slot = sl-pri-vityaz
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

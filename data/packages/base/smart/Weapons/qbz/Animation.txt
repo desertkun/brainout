@@ -1,0 +1,5 @@
+animation = base:animations/weapon-qbz.json
+class = content.Animation
+id = anim-qbz
+states = []
+timeScale = 1

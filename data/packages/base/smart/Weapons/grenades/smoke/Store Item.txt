@@ -1,0 +1,54 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-grenade-smoke
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+description = ITEM_SPECIAL_SMOKE_DESC
+id = sl-grn-smoke
+instrument = {
+    amount = 2
+    id = instrument-grenade-smoke
+    skin = skin-instrument-grenade-smoke-default
+}
+items = []
+name = ITEM_SPECIAL_SMOKE
+slot = slot-special
+category = special
+tags = level
+index = 9
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 11
+    }
+}

@@ -1,0 +1,100 @@
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-petrol
+        class = content.components.InstrumentAnimationComponent
+        skin = instrument-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-petrol
+        icon-small = icon-petrol-small
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = hands
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = petrol-move-1, petrol-move-2, petrol-move-3
+        tag = client
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = petrol-item-picked
+        weight = 5
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10000
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-petrol-default
+forceSelect = true
+id = instrument-petrol
+speedCoef = 0.75
+throwable = true
+name = ITEM_PETROL
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 2
+        mass = 2
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = true
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        timeToLive = 0
+        tag = server
+    }
+]
+auto-remove = true
+id = petrol-item-picked
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = []
+data = instrument-default
+id = skin-instrument-petrol-default
+name = ITEM_PETROL
+
+--------
+
+animation = base:animations/instrument-petrol.json
+class = content.Animation
+id = anim-petrol
+states = []
+timeScale = 1

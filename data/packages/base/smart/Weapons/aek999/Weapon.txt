@@ -1,0 +1,101 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = pkm-reload-snd
+        fetch = pkm-fetch-snd
+        shoot = [
+            vsk94-shoot-1, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 9.0
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 820
+    }
+    {
+        animation = anim-aek999
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        class = content.components.SuppressBulletAttachmentsComponent
+        suppress = fire-bone
+        tag = client
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-aek999-default
+id = weapon-aek999
+instrumentTags = primary
+primary = {
+    accuracy = 50
+    aimDistance = 30
+    allowedBullets = bullet-7.62x39
+    clipSize = 100
+    magazineManagement = 2
+    damage = 51
+    fire-rate = 650
+    recoil = 20
+    reloadTime = 3.5
+    fetchTime = 0.5
+    shootModes = auto
+    silenced = true
+}
+slot = slot-primary
+speedCoef = 0.8

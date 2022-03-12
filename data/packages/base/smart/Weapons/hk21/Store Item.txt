@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-hk21
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+instrument = {
+    id = weapon-hk21
+    skins = skin-weapon-hk21-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag        
+        scope = upgrade-hk21-scope-elcan
+        clip = upgrade-hk21-clip-extended
+        shoot-time = upgrade-hk21-shoot-time
+        recoil = upgrade-hk21-recoil
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_HK21
+slot = slot-primary
+category = other
+tags = unique
+index = 382
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = hollywood-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_HOLLYWOOD
+    }
+}

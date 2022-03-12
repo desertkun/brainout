@@ -1,0 +1,25 @@
+class = content.gamecase.gen.StatCard
+components = [
+    {
+        class = content.components.ClientStatCardComponent
+        flipEffect = repair
+        icon = icon-pack-gears
+        tag = client
+    }
+    {
+        amount = {
+            from = 100
+            to = 100
+        }
+        class = content.components.ServerStatCardComponent
+        stat = gears
+        tag = server
+    }
+    {
+        class = content.components.StatCardComponent
+    }
+]
+group = cardgroup-resourses-1
+id = gen-gears-100
+name = CARD_GEARS
+weight = 200

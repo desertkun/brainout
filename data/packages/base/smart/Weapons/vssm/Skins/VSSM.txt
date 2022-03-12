@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-vssm-default
+name = ITEM_WEAP_VSSM
+slot = sl-pri-vssm-2

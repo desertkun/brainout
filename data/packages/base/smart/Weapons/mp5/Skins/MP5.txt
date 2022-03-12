@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mp5-default
+name = ITEM_WEAP_MP5
+slot = sl-pri-mp5

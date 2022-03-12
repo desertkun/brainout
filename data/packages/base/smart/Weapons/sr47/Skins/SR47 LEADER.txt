@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-sr47-leader
+        tag = client
+    }
+]
+data = weapon-leader
+id = skin-weapon-sr47-leader
+name = ITEM_WEAP_SR47_LEADER
+slot = sl-pri-sr47
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

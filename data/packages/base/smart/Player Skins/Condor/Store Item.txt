@@ -1,0 +1,28 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-condor
+        tag = client
+    }
+]
+id = sl-skin-condor
+items = []
+name = ITEM_PLAYER_SKIN_CONDOR
+skin = skin-player-condor
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 411
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

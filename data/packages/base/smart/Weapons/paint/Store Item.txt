@@ -1,0 +1,31 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = []
+id = sl-pri-paint
+instrument = {
+    id = weapon-paint
+    skin = skin-weapon-paint-default
+}
+items = [
+    {
+        amount = 100
+        id = paint-bullet
+    }
+]
+name = ITEM_WEAP_PAINT
+slot = slot-primary
+category = other
+tags = unique
+index = 1000
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

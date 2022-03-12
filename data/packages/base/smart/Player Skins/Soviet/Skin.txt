@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = soviet
+id = skin-player-soviet
+name = ITEM_PLAYER_SKIN_SOVIET

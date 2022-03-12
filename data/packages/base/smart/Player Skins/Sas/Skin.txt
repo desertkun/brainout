@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = sas
+id = skin-player-sas
+name = ITEM_PLAYER_SKIN_SAS

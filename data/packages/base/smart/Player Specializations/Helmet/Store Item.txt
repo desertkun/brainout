@@ -1,0 +1,51 @@
+access = byDefault
+class = content.shop.PlayerSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-helmet
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_HELMET_DESC
+id = sl-pl-helmet
+items = [
+    {
+        amount = 1
+        id = item-helmet-pasgt
+    }
+]
+name = ITEM_SPECIAL_HELMET
+player = player-default
+slot = slot-player
+category = special
+tags = level
+index = 4
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 15
+    }
+}

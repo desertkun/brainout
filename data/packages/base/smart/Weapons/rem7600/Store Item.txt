@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-rem7600
+instrument = {
+    id = weapon-rem7600
+    skins = skin-weapon-rem7600-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-rem7600-accuracy
+        recoil = upgrade-rem7600-recoil
+        stock = upgrade-rem7600-police-stock     
+        scope = upgrade-rem7600-scope-optical
+	    clip = upgrade-rem7600-clip-extended
+    }
+}
+items = [
+    {
+        amount = 16
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_REM7600
+slot = slot-primary
+category = sniper
+tags = unique
+index = 383
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = hollywood-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_HOLLYWOOD
+    }
+}

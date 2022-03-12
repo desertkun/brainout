@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-vietnam2
+    }
+    {
+        groups = cardgroup-vietnam2
+    }
+    {
+        groups = cardgroup-vietnam2
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = vietnam1-case-bg
+        class = content.components.IconComponent
+        icon = vietnam2-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_VIETNAM2_DESC
+id = case-vietnam2
+name = CASE_VIETNAM2

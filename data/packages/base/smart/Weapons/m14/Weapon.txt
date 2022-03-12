@@ -1,0 +1,104 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = ak74-reload-snd
+        fetch = ak74-fetch-snd
+        shoot = [
+            m14-shoot-1, gunshot-tail-1, supersonic-snap
+            m14-shoot-2, gunshot-tail-2, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        attachBoneA = belt-a
+        attachBoneB = belt-b
+        cellSprite = weapon-belt-green
+        cells = 8
+        class = content.components.InstrumentBeltComponent
+        tag = client
+        tension = 1.25
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 400
+    }
+    {
+        animation = anim-m14
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m14-default
+id = weapon-m14
+instrumentTags = primary
+primary = {
+    accuracy = 70
+    aimDistance = 25
+    allowedBullets = bullet-7.62x51
+    clipSize = 5
+    magazineManagement = 2
+    damage = 70
+    fire-rate = 700
+    recoil = 55
+    reloadTime = 1.5
+    fetchTime = 0.5
+    shootModes = single
+}
+slot = slot-primary

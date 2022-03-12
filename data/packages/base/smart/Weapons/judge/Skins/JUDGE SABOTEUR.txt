@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-judge-saboteur
+        tag = client
+    }
+]
+data = weapon-saboteur
+id = skin-weapon-judge-saboteur
+name = ITEM_WEAP_JUDGE_SABOTEUR
+slot = sl-sec-judge
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

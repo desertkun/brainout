@@ -1,0 +1,25 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            butt = unfolded
+        }
+        tag = client
+    }
+    {
+        big-icon = scorpion-butt-on
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_UNFOLDED_BUTT_DESC
+id = upgrade-scorpion-butt-unfolded
+name = ITEM_UPGRADE_UNFOLDED_BUTT
+properties = {
+    accuracy = "+20"
+    recoil = "-20"
+    speed-coef = "=0.91"
+}

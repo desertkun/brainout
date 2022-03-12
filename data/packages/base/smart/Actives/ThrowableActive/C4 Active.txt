@@ -1,0 +1,69 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 1
+        height = 1
+        mass = 0.25
+        reduce = -0.2
+        sticky = true
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-c4
+        class = content.components.ActiveIconComponent
+        rotateByX = 0
+        skin = throwable-default
+        tag = client
+    }
+    {
+        class = content.components.LimitInstancesComponent
+        instancesCount = 1
+        itemsClass = c4
+        tag = server
+    }
+    {
+        amount = 45
+        bullet = explosive-bullet-c4
+        class = content.components.ExplosiveComponent
+        damage = 500
+        effect = explode-effect-1
+        tag = server
+    }
+    {
+        class = content.components.HealthComponent
+        health = 1
+    }
+    {
+        class = content.components.ColliderComponent
+        colliders = {
+            body = {
+                damageCoefficient = 1
+                height = 1
+                width = 1
+            }
+        }
+        tag = server
+    }
+    {
+        class = content.components.ActiveColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClass = c4
+        tag = server
+    }
+]
+id = c4-active
+name = ITEM_SPECIAL_C4
+showOnMinimap = false

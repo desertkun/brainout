@@ -1,0 +1,22 @@
+class = content.bullet.LimitedBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = []
+        hit = []
+        launch = []
+        tag = client
+    }
+]
+dropable = false
+hitImpulse = 0
+id = crow-bullet
+mass = 0
+maxDistance = {
+    @else = 2.5
+    @if = "$crow_damage == false"
+    @then = 0.05
+}
+power = 1
+powerDistance = 10
+speed = 32

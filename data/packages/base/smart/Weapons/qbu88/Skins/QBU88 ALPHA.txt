@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-qbu88-alpha
+        tag = client
+    }
+]
+data = weapon-alpha
+id = skin-weapon-qbu88-alpha
+name = ITEM_WEAP_QBU88_ALPHA
+slot = sl-pri-qbu88
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = xmas-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

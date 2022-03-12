@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-g36c-default
+name = ITEM_WEAP_G36C
+slot = sl-pri-g36c2

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-makarov-default
+name = ITEM_WEAP_MAKAROV
+slot = sl-sec-makarov

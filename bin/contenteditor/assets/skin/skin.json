@@ -1,0 +1,273 @@
+{
+	"com.badlogic.gdx.graphics.g2d.BitmapFont":
+	{
+		"inspect-small": "inspect-12",
+		"inspect-medium": "inspect-16",
+		"inspect-big": "inspect-16"
+	},
+	"com.badlogic.gdx.graphics.Color":
+	{
+		"black": { "r": 0.2, "g": 0.2, "b": 0.2, "a": 0.95 },
+		"gray": { "r": 0.5, "g": 0.5, "b": 0.5, "a": 0.95 },
+		"white": { "r": 0.9, "g": 0.9, "b": 0.9, "a": 1 },
+		"red": { "r": 1, "g": 0.2, "b": 0.2, "a": 0.95 },
+		"green": { "r": 0.1, "g": 0.4, "b": 0.1, "a": 0.95 },
+		"blue": { "r": 0, "g": 0.58, "b": 1, "a": 0.95 },
+		"gold": { "r": 0.4, "g": 0.6, "b": 0, "a": 1 }
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle":
+	{
+		"title-pixel": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "black"
+		},
+		"title-property": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "gold"
+		},
+		"title-normal": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "black"
+		},
+		"title-content": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "black"
+		},
+		"title-small": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "black"
+		},
+		"title-alert": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "green"
+		},
+		"title-tool": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "black"
+		},
+		"title-system": 
+		{
+			"font": "inspect-medium",
+			"fontColor": "black"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle":
+	{
+		"button-default":{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-medium":{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		},
+		"button-small":{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover"
+		},
+		"button-checkable":{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+			"checked": "button-tool-active"
+		},
+		"button-context":{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover",
+			"checked": "button-default-active"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle":
+	{
+		"button":{
+			"down": "button-default-active",
+			"up": "button-default-normal",
+			"over": "button-default-hover"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle":
+	{
+		"button-settings":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-settings"
+		},
+		"button-play":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-play"
+		},
+		"button-link":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-link"
+		},
+		"button-add":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-add-inactive",
+			"imageOver": "icon-add"
+		},
+		"button-visibility-shown":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-shown"
+		},
+		"button-visibility-hidden":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-hidden"
+		},
+		"button-close":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-close-inactive",
+			"imageOver": "icon-close"
+		},
+		"button-properties":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-properties-inactive",
+			"imageOver": "icon-properties"
+		},
+		"button-save":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-save"
+		},
+		"button-zoom-in":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-zoom-in"
+		},
+		"button-zoom-out":{
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover",
+
+			"imageUp": "icon-zoom-out"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle":
+	{
+		"scroll-default":
+		{
+			"vScroll": "scroll-v-background",
+			"vScrollKnob": "scroll-v-knob",
+			"hScroll": "scroll-h-background",
+			"hScrollKnob": "scroll-h-knob"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle":
+	{
+		"edit-default":
+		{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"disabledFontColor": "gray",
+			"background": "edit-default",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-property":
+		{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"disabledFontColor": "gray",
+			"background": "edit-property",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-code":
+		{
+			"font": "inspect-medium",
+			"fontColor": "black",
+			"disabledFontColor": "gray",
+			"background": "edit-property",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-int":
+		{
+			"font": "inspect-medium",
+			"fontColor": "blue",
+			"disabledFontColor": "gray",
+			"background": "edit-property",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		},
+		"edit-float":
+		{
+			"font": "inspect-medium",
+			"fontColor": "green",
+			"disabledFontColor": "gray",
+			"background": "edit-property",
+			"cursor": "edit-default-cursor",
+			"selection": "edit-default-selection"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Tree$TreeStyle":
+	{
+		"tree-default":
+		{
+			"plus": "tree-plus",
+			"minus": "tree-minus"
+		}
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle":
+	{
+		"checkbox-default": 
+		{
+			"checkboxOn": "checkbox-checked",
+			"checkboxOff": "checkbox-unchecked",
+
+			"font": "inspect-medium",
+			"fontColor": "black",
+
+			"down": "button-tool-active",
+			"up": "button-tool-normal",
+			"over": "button-tool-hover"
+		}
+	}
+}

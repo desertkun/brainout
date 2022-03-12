@@ -1,0 +1,60 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        blowBackMultiplier = 0
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = water-reload-snd
+        shoot = [
+			paint-shoot-1
+			paint-shoot-2
+			paint-shoot-3
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1.4
+    }
+    {
+        animation = anim-paint
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-water
+        }
+    }
+]
+defaultSkin = skin-weapon-paint-default
+id = weapon-paint
+instrumentTags = primary
+primary = {
+    accuracy = 55
+    aimDistance = 25
+    allowedBullets = paint-bullet
+    clipSize = 100
+    damage = 40
+    fire-rate = 600
+    recoil = 28
+    reloadTime = 1.8
+    shootModes = single
+}
+slot = slot-primary

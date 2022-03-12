@@ -1,0 +1,18 @@
+angleOffset = {
+    max = 180
+    min = 0
+}
+attached = wood-destroy-part-1
+class = content.effect.PhysicEffect
+friction = 0.5
+id = wood-destroy-part-1-physic
+mass = 0.5
+speed = {
+    max = 10
+    min = 5
+}
+spring = {
+    max = 0.05
+    min = 0.3
+}
+tag = client

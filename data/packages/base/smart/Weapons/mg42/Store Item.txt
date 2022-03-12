@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 40
+    }
+]
+id = sl-pri-mg42
+instrument = {
+    id = weapon-mg42
+    skins = skin-weapon-mg42-default, skin-weapon-mg42-steinhund
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-mg42-accuracy
+        recoil = upgrade-mg42-recoil
+        reload-time = upgrade-mg42-reload-time
+        shoot-time = upgrade-mg42-shoot-time
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_MG42
+slot = slot-primary
+category = other
+tags = unique
+index = 150
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RED
+    }
+}

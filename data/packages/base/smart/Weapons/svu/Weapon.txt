@@ -1,0 +1,100 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 1
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = sniper-reload-snd
+        fetch = sniper-fetch-snd
+        shoot = [
+            svu-shoot-1, pistol-shoot-smoke
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 100
+    }
+    {
+        animation = anim-svu
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-bp
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 24
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-svu-default
+id = weapon-svu
+instrumentTags = primary
+primary = {
+    accuracy = 80
+    aimDistance = 55
+    allowedBullets = bullet-7.62x51
+    clipSize = 5
+    magazineManagement = 2
+    damage = 103
+    fire-rate = 200
+    recoil = 90
+    reloadTime = 2.7
+    fetchTime = 0.5
+    shootModes = single
+    silenced = true
+}
+slot = slot-primary

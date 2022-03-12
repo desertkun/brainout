@@ -1,0 +1,47 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = hollywood-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-hollywood
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-hollywood
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-rem7600
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_HOLLYWOOD_DESC
+id = sl-store-case-hollywood
+name = CASE_HOLLYWOOD
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 150000
+        currency = ru
+    }
+}

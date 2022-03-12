@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-fnx45-default
+name = ITEM_WEAP_FNX45
+slot = sl-sec-fnx45

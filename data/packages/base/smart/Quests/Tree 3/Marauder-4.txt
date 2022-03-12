@@ -1,0 +1,41 @@
+class = content.quest.Quest
+id = quest-marauder-4
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-marauder
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = item-backpack-alice
+        target = 1
+    }
+}
+
+group = marauder
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_MARAUDER
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 1
+    }
+    {
+        action = addstat
+        id = tech-score
+        amount = 150
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 1500
+    }
+]

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-tar21-dragon
+        tag = client
+    }
+]
+data = weapon-dragon
+id = skin-weapon-tar21-dragon
+name = ITEM_WEAP_TAR21_DRAGON
+slot = sl-pri-tar21
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

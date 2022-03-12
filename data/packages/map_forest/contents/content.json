@@ -1,0 +1,62 @@
+{
+	"content": 
+	{
+		"music-list-forest":
+		{
+			"class": "content.MusicList",
+			"tag": "client",
+			"list":
+			[
+				"music-forest"
+			]
+		},
+		"music-forest":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "map_forest:music/bg.mp3"
+		},
+		"parr-forest":
+		{
+			"class": "content.parallax.Parallax",
+			"tag": "client",
+			"layers": [
+				{
+					"class": "content.parallax.DynamicLayer",
+					"texture": "parr-forest-sky-foreground",
+					"x": 0,
+					"y": 515,
+					"coefX": 0.01,
+					"coefY": 0.01,
+					"flowX": -5
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "parr-forest-sky-root-repeat",
+					"x": 0,
+					"y": 0,
+					"coefX": 0.1,
+					"coefY": 0.0,
+					"scale": true
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "parr-forest-sky-root",
+					"x": 0,
+					"y": 128,
+					"coefX": 0.01,
+					"coefY": 0.01
+				},
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "parr-forest-grass",
+					"x": 0,
+					"y": 330,
+					"coefX": 0.5,
+					"coefY": 0.2
+				}
+			]
+		}
+	},
+	"textures": "data/textures/textures.json"
+}

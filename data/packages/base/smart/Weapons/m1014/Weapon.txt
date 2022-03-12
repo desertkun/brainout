@@ -1,0 +1,77 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = spas12-reload-snd-1, spas12-reload-snd-2
+        fetch = ak74-fetch-snd
+        shoot = [
+            m1014-shoot-1, gunshot-tail-1, supersonic-snap
+            m1014-shoot-2, gunshot-tail-2, supersonic-snap
+            m1014-shoot-3, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 300
+    }
+    {
+        animation = anim-m1014
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-shotgun-1
+            fetch = reload-2hands-1-fetch
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-m1014-default
+id = weapon-m1014
+instrumentTags = primary, shotgun
+primary = {
+    accuracy = 30
+    aimDistance = 30
+    allowedBullets = bullet-12-76
+    clipSize = 6
+    damage = 100
+    fire-rate = 160
+    noUnload = true
+    perBulletReload = true
+    recoil = 60
+    reloadTime = 0.8
+    fetchTime = 0.5
+    shootModes = auto
+}
+slot = slot-primary

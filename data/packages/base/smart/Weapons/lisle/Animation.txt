@@ -1,0 +1,5 @@
+animation = base:animations/weapon-lisle.json
+class = content.Animation
+id = anim-lisle
+states = []
+timeScale = 1

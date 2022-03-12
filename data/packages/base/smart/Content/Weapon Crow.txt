@@ -1,0 +1,56 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = crow-kark-1, crow-kark-2, crow-kark-3, crow-kark-4, crow-kark-5
+        }
+        reload = []
+        shoot = []
+        switchMode = []
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0
+    }
+    {
+        animation = anim-weapon-crow
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = fly
+            aimHit = fly
+            hit = fly
+            hold = fly
+            reload = fly
+        }
+    }
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+defaultSkin = skin-weapon-crow-default
+defaultSkun = skin-weapon-crow-default
+id = weapon-crow
+primary = {
+    accuracy = 100
+    aimDistance = 60
+    allowedBullets = crow-bullet
+    damage = 0
+    fire-rate = 60
+    recoil = 29
+    reloadTime = 1
+    shootModes = single
+}
+slot = slot-primary
+throwable = false

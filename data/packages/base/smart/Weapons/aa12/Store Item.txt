@@ -1,0 +1,65 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+id = sl-pri-aa12
+instrument = {
+    id = weapon-aa12
+    skins = skin-weapon-aa12-default, skin-weapon-aa12-heritage, skin-weapon-aa12-witness, skin-weapon-aa12-drowned, skin-weapon-aa12-dead, skin-weapon-aa12-sledgehammer, skin-weapon-aa12-pistachio
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-aa12-clip-extended
+        wear-resistance = upgrade-aa12-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_AA12
+slot = slot-primary
+category = shotgun
+tags = missions, resources
+index = 20
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 10
+        currency = nuclear-material
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-tag, shotgun
+        param = 100
+        unlockTitle = MENU_UNLOCK_KILL_SHOTGUN
+    }
+}

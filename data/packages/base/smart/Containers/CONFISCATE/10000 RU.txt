@@ -1,0 +1,24 @@
+class = content.gamecase.gen.StatCard
+components = [
+    {
+        class = content.components.ClientScoreCardComponent
+        icon = icon-confiscate-ru-10000
+        tag = client
+    }
+    {
+        amount = {
+            from = 10000
+            to = 10000
+        }
+        class = content.components.ServerStatCardComponent
+        stat = ru
+        tag = server
+    }
+    {
+        class = content.components.StatCardComponent
+    }
+]
+group = cardgroup-confiscate
+id = gen-confiscate-ru-10000
+name = RU
+weight = 85

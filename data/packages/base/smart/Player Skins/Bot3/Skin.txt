@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = bot3
+id = skin-player-bot3
+name = ITEM_PLAYER_SKIN_BOT

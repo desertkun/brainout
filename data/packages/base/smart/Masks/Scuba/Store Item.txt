@@ -1,0 +1,50 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-scuba
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = scuba
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = knife-kills-mask-scuba
+        goal = GOAL_KNIFE_KILL_USING_MASK
+        value = 30
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = profile-badge-summer
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-scuba
+items = []
+name = ITEM_MASK_SCUBA
+player = player-mask-scuba
+slot = slot-mask
+category = mask
+tags = unique
+index = 16
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	hide = true
+    }
+}

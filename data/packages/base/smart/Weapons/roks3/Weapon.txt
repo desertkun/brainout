@@ -1,0 +1,70 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 0
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ExtendedInstrumentEffectsComponent
+        shootExt = [
+            roks-3-ext-sound
+        ]
+        shootExtPeriod = 0.2
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.PlayerAnimationComponentData
+        replace = {
+            backpack = roks3-backpack
+        }
+        tag = server
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        attachBoneA = belt-a
+        attachBoneB = belt-body-b
+        cellSprite = weapon-belt-thick
+        cells = 14
+        class = content.components.InstrumentBeltComponent
+        tag = client
+        tension = 1.5
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1.4
+    }
+    {
+        animation = anim-roks3
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-water
+        }
+    }
+]
+defaultSkin = skin-weapon-roks3-default
+id = weapon-roks3
+instrumentTags = primary
+primary = {
+    accuracy = 100
+    aimDistance = 25
+    allowedBullets = fire-bullet
+    clipSize = 500
+    damage = 15
+    fire-rate = 3600
+    recoil = 0
+    reloadTime = 2
+    shootModes = auto
+}
+slot = slot-primary
+speedCoef = 0.8

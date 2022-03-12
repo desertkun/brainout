@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-fnminimi-default
+name = ITEM_WEAP_FNMINIMI
+slot = sl-pri-fnminimi

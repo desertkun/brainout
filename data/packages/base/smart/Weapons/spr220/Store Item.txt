@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 200
+    }
+]
+id = sl-pri-spr220
+instrument = {
+    id = weapon-spr220
+    skins = skin-weapon-spr220-default, skin-weapon-spr220-thick, skin-weapon-spr220-blueberry, skin-weapon-spr220-jeweler
+    upgrades = {
+        sawnoff = upgrade-spr220-sawnoff
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_SPR220
+slot = slot-primary
+category = shotgun
+tags = level
+index = 169
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 68
+    }
+}

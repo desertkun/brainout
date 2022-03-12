@@ -1,0 +1,90 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = tec9-reload-snd
+        fetch = tec9-fetch-snd
+        shoot = [
+            tec9-shoot-1, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        actions = [
+            {
+                enabled = false
+                for = unloaded
+                slot = clip
+                type = updateSlot
+            }
+            {
+                enabled = true
+                for = loaded
+                slot = clip
+                type = updateSlot
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-tec9
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-2hands-1
+            fetch = reload-2hands-1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-tec9-default
+id = weapon-tec9
+instrumentTags = secondary
+primary = {
+    accuracy = 30
+    aimDistance = 25
+    allowedBullets = bullet-9mmx19
+    clipSize = 20
+    magazineManagement = 2
+    damage = 48
+    fire-rate = 500
+    recoil = 38
+    reloadTime = 1.5
+    fetchTime = 0.5
+    shootModes = auto, single
+}
+slot = slot-secondary

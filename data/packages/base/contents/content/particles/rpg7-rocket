@@ -1,0 +1,199 @@
+rpg7-rocket
+- Delay -
+active: false
+- Duration - 
+lowMin: 125.0
+lowMax: 125.0
+- Count - 
+min: 0
+max: 1000
+- Emission - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 100.0
+highMax: 100.0
+relative: false
+scalingCount: 2
+scaling0: 1.0
+scaling1: 1.0
+timelineCount: 2
+timeline0: 0.0
+timeline1: 1.0
+- Life - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 2000.0
+highMax: 2000.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Life Offset - 
+active: false
+- X Offset - 
+active: true
+lowMin: -0.25
+lowMax: 0.25
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Y Offset - 
+active: true
+lowMin: -0.25
+lowMax: 0.25
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Spawn Shape - 
+shape: point
+- Spawn Width - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 4.0
+highMax: 4.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Spawn Height - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 4.0
+highMax: 4.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Scale - 
+lowMin: 0.125
+lowMax: 0.5
+highMin: 1.0
+highMax: 2.0
+relative: false
+scalingCount: 6
+scaling0: 1.0
+scaling1: 0.4213483
+scaling2: 0.19101124
+scaling3: 0.0
+scaling4: 0.15730338
+scaling5: 0.19662921
+timelineCount: 6
+timeline0: 0.0
+timeline1: 0.08041237
+timeline2: 0.14432989
+timeline3: 0.3298969
+timeline4: 0.5670103
+timeline5: 1.0
+- Velocity - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 1.0
+highMax: 1.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Angle - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 0.0
+highMax: 0.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
+- Rotation - 
+active: false
+- Wind - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: -1.0
+highMax: 1.0
+relative: false
+scalingCount: 3
+scaling0: 0.0
+scaling1: 0.26530612
+scaling2: 1.0
+timelineCount: 3
+timeline0: 0.0
+timeline1: 0.51369864
+timeline2: 1.0
+- Gravity - 
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: -1.0
+highMax: 1.0
+relative: false
+scalingCount: 3
+scaling0: 0.0
+scaling1: 0.30612245
+scaling2: 1.0
+timelineCount: 3
+timeline0: 0.0
+timeline1: 0.51369864
+timeline2: 1.0
+- Tint - 
+colorsCount: 12
+colors0: 0.654902
+colors1: 0.23137255
+colors2: 0.015686275
+colors3: 0.972549
+colors4: 0.32156864
+colors5: 0.023529412
+colors6: 0.972549
+colors7: 0.7607843
+colors8: 0.6666667
+colors9: 0.7411765
+colors10: 0.7411765
+colors11: 0.7411765
+timelineCount: 4
+timeline0: 0.0
+timeline1: 0.07606679
+timeline2: 0.37847868
+timeline3: 1.0
+- Transparency - 
+lowMin: 0.0
+lowMax: 0.0
+highMin: 1.0
+highMax: 1.0
+relative: false
+scalingCount: 6
+scaling0: 0.0
+scaling1: 0.43258426
+scaling2: 0.57894737
+scaling3: 0.50877196
+scaling4: 0.2982456
+scaling5: 0.0
+timelineCount: 6
+timeline0: 0.0
+timeline1: 0.033333335
+timeline2: 0.28767124
+timeline3: 0.56164384
+timeline4: 0.74657536
+timeline5: 1.0
+- Options - 
+attached: false
+continuous: true
+aligned: true
+additive: true
+behind: false
+premultipliedAlpha: false
+- Image Path -
+/C:/Work/brainout/data/packages/base/textures/GAME/particle.png

@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-jason
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = jason
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = knife-kills-mask-jason
+        goal = GOAL_KNIFE_KILL_USING_MASK
+        value = 30
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = sl-skin-maniac
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-jason
+items = []
+name = ITEM_MASK_JASON
+player = player-mask-jason
+slot = slot-mask
+category = mask
+tags = unique
+index = 9
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-jason
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

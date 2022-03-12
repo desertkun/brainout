@@ -1,0 +1,247 @@
+class = content.Authors
+
+id = authors-list
+tag = client
+
+content = {
+
+    graphicsAndDesign = [
+        igoryan
+    ]
+
+    gameDesign = [
+        kektus
+        vovun
+    ]
+
+    specialThanksTo = [
+        Ekaterina Glukhaia
+    ]
+
+    ideologicalInspirers = [
+        The Seeing Hare
+        player one
+        Mikhail
+        tigr
+        alex
+    ]
+
+    betaTesters = [
+        Arthur "zRainbowCat" Israelyan
+        Vsevolod "Jabensky" Timofeev
+        Mikhail "Aethyl" Akulov
+        Arseniy "HHL" Ivashenko
+        Ivan "JackPigeon" Golub
+        Ivan "Mark" Dolgopolov
+        Gleb "LAZA" Gorelchuk
+        Viktor "Bidi" Petrov
+        Magomed Magomedov
+        Momcilo Blazevic
+        Nikita Azarenkov
+        Vladislav Frank
+        Pavel Kornienko
+        Arseniy Zvonar
+        Daniil Spivak
+        Mc Von Bababooj
+        Nik Neuroy
+        Ian Curtis
+        Pythonskey
+        Kobradian
+        Celestia
+        Protodax
+        Prooty
+        Alpha
+        Myxtap
+    ]
+
+    contentCreators = [
+        Alexey "EvilMuffin" Mikhailov
+        Vsevolod "Jabensky" Timofeev
+        Aleksey "Iron Maiden" Byron
+        Zakhar "Two-Faced" Sotnikov
+        Georgiy "Maloi" Mokshancev
+        Igor "IJackal" Shkalyukov
+        Andrei "Jingetsu" Amosov
+        Bogdan "Uryufu" Samchuk
+        Lev "Levinol" Minyaylov
+        Ivan "JackPigeon" Golub
+        Nikita "Ballet" Iskakov
+        Ilya "F.Lowrew" Volkov
+        Roman "Rokviil" Volkov
+        Daniil "A1my" Gavrilov
+		Arsen "Koban" Sokolov
+        Savva "Owlman" Fokin
+        Jesse "Jim_" Miller
+        Alexandr Maslennikov
+        Grigoriy Scherbakov
+        Georgiy Alexandrov
+        Mikhail Nesterov
+        Nikita Azarenkov
+        Clarabela Trazzi
+        Arseniy Zvonar
+        Lev Cherpasov
+        Ignat Markin
+		Artem Mahaev
+        Ilya Povkh
+        Denis Rudnev
+		Guillermo A.K.A Giye
+        your Biological Dad
+        Mister R.U.B.I.
+        Super Loli Man
+        Eiernacken
+        Orange Cat
+        Yksnawel
+        Dosunko
+        Vodka
+        Vyacheslav "Lokan141" Ovchinnikov
+        Alexander "Sami Naya!" Malakhov
+        Denis "Sedoy_Gunslinger" Sotsky
+        Viktor "dispatcheroff" Borodin
+		Denis "Deniskosmonaft" Makarov
+        Dmitry "Lazy Capybara" Vlasov
+        Pavel "Kubik Rubik" Shevarov
+        Konstantin "Pashtet" Pashkov
+        Nikita "Prospero" Chaynikov
+        Nikita "Hekmatyar" Bamburin
+        Artem "Charon" Derevitskiy
+        Oleg "Coca-Cola " Lashunya
+        Sergey "MACJINHA" Khomich
+        Bogdan "Velaron" Shulyar
+        Samuel "samwkaz" Dantas
+        Kirill "Qril" Polevets
+        Nicholas "Roz" Ferrel
+        Vadim "Some1" Sokolov
+        Saveliy "Vega" Silent
+        Vlad "KAPS" Lyutsko
+        Mukhammad Akhmedkhanov
+        Mikhail Sotnichenko
+        Vladimir Shershnev
+        Nikita Mozharov
+        Ilvir Gainullin
+        Roman Grabauer
+        Ilya Gaydamak
+		Roman Shitov
+        Marko Novak
+        WeariedCoffee2
+        The Mechanist
+        Pythonskey
+        Hartkekse!
+        D4nte64
+        MrSinny
+        Anton V
+    ]
+
+    music = [
+        "Andrey Partola (Steklovata - Novi God)"
+		"Maximum Max (Gorky park - Two Candles)"
+    ]
+
+    localization = [
+        Golden Pen Studio
+		Mauro "spidermastermind100" Eibek
+        Andrii "Rayfulrand" Raboshchuk
+		Aaron "BlackJack" Gandzumian
+		Samantha "Leviathan!" Hopton
+		Komninos "Ghost" Demestihas
+		Regnars "Riigniits" Purits
+		Ethan "Morphy"  Wayfarer
+        Dominik "Jabu2" Wronski
+		Haktan "Shawnta" Yilmaz
+		Aaron "Depruu" Sanchez
+        Winicjusz "Rombo" Wnuk
+		STALKER (Yun Ki Woong)
+        Pietro "Loxer" Marino
+        Filip "Filda" Pasztor
+        Noe "Nobelix" Le Cam
+        Jiri "Jjohny" Jahn
+        Emisariusz Bogdan
+        Untila Dumitru
+        Yusuf Yildirim
+		Daria "Asleste"
+		Alex "Ukronos"
+		Guillermo A.K.A Giye
+        BorisKalashnikov
+		Encrypted Wizard
+        YUYO EL DEMENTE
+        The italian way
+        Bboy_Corentin
+		Oleg Krupyk
+		Otto Carius
+        BennyFuture
+        R4ttlesnake
+        DieDieCoon
+        space oats
+        Starshine
+        Sr. Raven
+        Jager8417
+        GaZ BeaR
+        Grzegrze
+        Brenden
+        Spectro
+		BramBot
+        Natrix
+        Gruglu
+        Golde
+        Poopy
+        TZM13
+		Vodka
+        Xecat
+        Xeno
+		Doom
+    ]
+
+    fandomEditors = [
+        Arthur "zRainbowCat" Israelyan
+        Vsevolod "Jabensky" Timofeev
+        Aleksey "Iron Maidan" Byron
+        Nikita "Prospero" Chaynikov
+        Nikita "Unrevy" Pasyuga
+        Lev "Levinol" Minyaylov
+        Ivan "JackPigeon" Golub
+        Roman "Rokviil" Volkov
+        Daniil "A1my" Gavrilov
+        Vadim "Some1" Sokolov
+    ]
+
+    levelDesign = [
+        map:hangars
+        Zakhar "Two-Faced" Sotnikov
+        Nikita "Prospero" Chaynikov
+        Oleg "Coca-Cola " Lashunya
+        Nikita "Ballet" Iskakov
+        Daniil "A1my" Gavrilov
+        Kirill "Qril" Polevets
+        Yuri Chernyshow
+        Roman Grabauer
+
+        map:cargo
+        Ilya "F.Lowrew" Volkov
+
+        map:deposite
+        Lev "Levinol" Minyaylov
+        Kirill "Qril" Polevets
+
+        map:canyon
+        Alexey "EvilMuffin" Mikhailov
+        Lev "Levinol" Minyaylov
+        Ivan "Storm." Tokarev
+        Vadim "Some1" Sokolov
+
+        map:other maps
+        your Biological Dad
+        Pavel Kornienko
+        leoneed
+    ]
+
+    communitySupport = [
+        Vsevolod "Jabensky" Timofeev
+		Lev "Levinol" Minyaylov
+        Ivan "JackPigeon" Golub
+        Ilya "F.Lowrew" Volkov
+        Vadim "Some1" Sokolov
+        Protodax
+        Talavok
+		Vodka
+    ]
+
+}

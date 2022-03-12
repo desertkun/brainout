@@ -1,0 +1,422 @@
+apply plugin: 'com.github.ben-manes.versions'
+apply plugin: "idea-utils"
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
+        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'org.robovm:robovm-gradle-plugin:1.9.0'
+        classpath 'com.github.desertkun.libgdx:gdx-tools:1.9.9'
+        classpath 'net.sf.proguard:proguard-gradle:5.2.1'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
+        classpath 'com.github.rodionmoiseev.gradle.plugins:idea-utils:0.4-rc1'
+    }
+}
+
+allprojects {
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = 'BrainOut'
+        gdxVersion = '1.9.16'
+        roboVMVersion = '2.1.0'
+        box2DLightsVersion = '1.4-dev'
+        ashleyVersion = '1.4.0'
+        aiVersion = '1.9.5-dev'
+        anthillRuntimeVersion = '0.2.10'
+        anthillServerRuntimeVersion = '0.2.0'
+        gdxControllersVersion = '2.2.1'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+/*
+
+project(":android") {
+    apply plugin: "android"
+
+    configurations { natives }
+
+    dependencies {
+        compile project(":client")
+        compile "com.github.desertkun.libgdx:gdx-backend-android:$gdxVersion"
+        natives "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-armeabi"
+        natives "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
+        natives "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-x86"
+        compile "com.github.desertkun.libgdx:gdx-box2d:$gdxVersion"
+        natives "com.github.desertkun.libgdx:gdx-box2d-platform:$gdxVersion:natives-armeabi"
+        natives "com.github.desertkun.libgdx:gdx-box2d-platform:$gdxVersion:natives-armeabi-v7a"
+        natives "com.github.desertkun.libgdx:gdx-box2d-platform:$gdxVersion:natives-x86"
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+project(":ios") {
+    apply plugin: "java"
+    apply plugin: "robovm"
+
+    configurations { natives }
+
+    dependencies {
+        compile project(":client")
+        compile "org.robovm:robovm-rt:$roboVMVersion"
+        compile "org.robovm:robovm-cocoatouch:$roboVMVersion"
+        compile "com.github.desertkun.libgdx:gdx-backend-robovm:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-box2d:$gdxVersion"
+        natives "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-ios"
+        natives "com.github.desertkun.libgdx:gdx-box2d-platform:$gdxVersion:natives-ios"
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+*/
+
+project(":core") {
+    apply plugin: "java"
+
+    dependencies {
+        compile "com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion"
+
+        compile "com.github.desertkun.infomas-asl:annotation-detector:3.1-dev"
+
+        compile ("com.github.desertkun:kryonet:2.22.0-RC7") {
+            exclude group: 'com.esotericsoftware', module: 'kryo'
+        }
+        compile "com.esotericsoftware:kryo:5.1.1"
+
+        compile "org.json:json:20180130"
+        compile "com.github.desertkun.libgdx:gdx:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-box2d:$gdxVersion"
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+project(":client") {
+    apply plugin: "java"
+
+    dependencies {
+        compile "com.beust:jcommander:1.48"
+        compile "com.mashape.unirest:unirest-java:1.4.9"
+        compile "com.github.desertkun:box2dlights:$box2DLightsVersion"
+        compile project(":core")
+        compile ("com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion") {
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
+            compile "com.github.desertkun.libgdx:gdx:$gdxVersion"
+        }
+        compile "com.github.desertkun.libgdx:gdx-freetype:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-tools:$gdxVersion"
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+
+project(":desktop") {
+    apply plugin: "java"
+
+
+    dependencies {
+        compile project(":client")
+        compile "com.github.desertkun.libgdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.github.desertkun.libgdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        compile ("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion") {
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
+            compile "com.github.desertkun.libgdx:gdx:$gdxVersion"
+        }
+        compile "com.github.desertkun.libgdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+project(":steam") {
+    apply plugin: "java"
+
+
+    dependencies {
+        compile project(":desktop")
+        compile project(":client")
+        compile "com.code-disaster.steamworks4j:steamworks4j:1.7.0"
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+project(":server") {
+    apply plugin: "java"
+
+    dependencies {
+        compile "com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion"
+        compile "com.github.anthill-platform:anthill-runtime-java-server:$anthillServerRuntimeVersion"
+        compile project(":core")
+        compile "com.beust:jcommander:1.48"
+        compile "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.github.desertkun.libgdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        compile "com.sun.net.httpserver:http:20070405"
+    }
+}
+
+project(":launcher") {
+    apply plugin: "java"
+
+    dependencies {
+        compile "com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion"
+
+        compile "com.github.desertkun.libgdx:gdx:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-desktop"
+    }
+}
+
+def accessToken = ''
+def discoveryServices = '{"profile":"https://profile-valpha.brainout.org","login":"https://login-valpha.brainout.org","message":"https://message-valpha.brainout.org","event":"https://event-valpha.brainout.org","leaderboard":"https://leaderboard-valpha.brainout.org","social":"https://social-valpha.brainout.org","static":"https://static-valpha.brainout.org","game":"https://game-valpha.brainout.org","store":"https://store-valpha.brainout.org","report":"https://report-valpha.brainout.org","market":"https://market-valpha.brainout.org"}'
+
+idea {
+    project {
+        jdkName = '1.8'
+        languageLevel = '1.8'
+
+        vcs {
+            vcs = 'Git'
+            directory = '$PROJECT_DIR$'
+        }
+
+        runConfigurations {
+            server {
+                type = 'Application'
+                name = 'Server Alpha'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                programArguments = 'no 36555,36556,36557 --settings server-settings.json --maps maps-set.json'
+                env = [
+                    'login_access_token': accessToken,
+                    'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                    'discovery_services': discoveryServices
+                ]
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverOffline {
+                type = 'Application'
+                name = 'Server Offline'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                programArguments = 'no 36555,36556,36557 --settings server-settings.json --maps maps-set.json --offline'
+                env = [
+                    'login_access_token': accessToken,
+                    'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                    'discovery_services': discoveryServices
+                ]
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverEditor {
+                type = 'Application'
+                name = 'Server Editor Alpha'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                env = [
+                    'login_access_token': accessToken,
+                    'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                    'discovery_services': discoveryServices
+                ]
+                programArguments = '--mode editor --settings server-editor.json'
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverEditorOffline {
+                type = 'Application'
+                name = 'Server Editor Offline'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                env = [
+                    'login_access_token': accessToken,
+                    'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                    'discovery_services': discoveryServices
+                ]
+                programArguments = '--mode editor --settings server-editor.json --offline'
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverLobby {
+                type = 'Application'
+                name = 'Server Lobby Alpha'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                env = [
+                        'login_access_token': accessToken,
+                        'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                        'discovery_services': discoveryServices
+                ]
+                programArguments = '--mode lobby --settings server-lobby.json'
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverLobbyOffline {
+                type = 'Application'
+                name = 'Server Lobby Offline'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                env = [
+                        'login_access_token': accessToken,
+                        'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                        'discovery_services': discoveryServices
+                ]
+                programArguments = '--mode lobby --settings server-lobby.json --offline'
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverFree {
+                type = 'Application'
+                name = 'Server Free Alpha'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                env = [
+                        'login_access_token': accessToken,
+                        'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                        'discovery_services': discoveryServices
+                ]
+                programArguments = '--mode free --settings server-free.json --map freeplay-maps.shuffle'
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            serverFreeOffline {
+                type = 'Application'
+                name = 'Server Free Offline'
+
+                mainClass = 'com.desertkun.brainout.Main'
+                vmOptions = ''
+                env = [
+                        'login_access_token': accessToken,
+                        'JAVA_LIBRARY_PATH': '/opt/local/lib',
+                        'discovery_services': discoveryServices
+                ]
+                programArguments = '--mode free --settings server-free.json --map freeplay-maps.shuffle --offline'
+                module = project(':server')
+                workingDirectory = new File('bin/server')
+            }
+            steam {
+                type = 'Application'
+                name = 'Steam'
+
+                mainClass = 'com.desertkun.brainout.desktop.SteamLauncher'
+                vmOptions = ''
+
+                programArguments = ''
+                module = project(':steam')
+                workingDirectory = new File('bin/client')
+            }
+            desktop {
+                type = 'Application'
+                name = 'Desktop Alpha'
+
+                mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
+                vmOptions = ''
+
+                programArguments = ''
+                module = project(':desktop')
+                workingDirectory = new File('bin/client')
+            }
+            desktopOffline {
+                type = 'Application'
+                name = 'Desktop Offline Unsafe'
+
+                mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
+                vmOptions = ''
+
+                programArguments = '--offline --unsafe'
+                module = project(':desktop')
+                workingDirectory = new File('bin/client')
+            }
+            desktopLocal {
+                type = 'Application'
+                name = 'Desktop Local Alpha'
+
+                mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
+                vmOptions = ''
+
+                programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3'
+                module = project(':desktop')
+                workingDirectory = new File('bin/client')
+            }
+            desktopLocalOffline {
+                type = 'Application'
+                name = 'Desktop Local Offline Unsafe'
+
+                mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
+                vmOptions = ''
+
+                programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3 --offline --unsafe'
+                module = project(':desktop')
+                workingDirectory = new File('bin/client')
+            }
+            desktopLocal2 {
+                type = 'Application'
+                name = 'Desktop Local 2 Alpha'
+
+                mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
+                vmOptions = ''
+
+                programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3'
+                env = [
+                    "DESKTOP_PROFILE_NAME": "profile-2"
+                ]
+                module = project(':desktop')
+                workingDirectory = new File('bin/client')
+            }
+            desktopLocal2Offline {
+                type = 'Application'
+                name = 'Desktop Local 2 Offline Unsafe'
+
+                mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
+                vmOptions = ''
+
+                programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3 --offline --unsafe'
+                env = [
+                    "DESKTOP_PROFILE_NAME": "profile-2"
+                ]
+                module = project(':desktop')
+                workingDirectory = new File('bin/client')
+            }
+        }
+    }
+}

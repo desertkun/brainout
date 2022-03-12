@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-rsh12-cyrax
+        tag = client
+    }
+]
+data = weapon-cyrax
+id = skin-weapon-rsh12-cyrax
+name = ITEM_WEAP_RSH12_CYRAX
+slot = sl-sec-rsh12
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

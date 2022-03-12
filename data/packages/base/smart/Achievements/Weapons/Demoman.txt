@@ -1,0 +1,36 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-demoman
+        icon-locked = achievement-demoman-lock
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 2000
+        class = content.components.RuRewardComponent
+        tag = server
+    }
+]
+id = achievement-demoman
+name = ACHIEVEMENT_DEMOMAN
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-tag, c4
+        param = 100
+        unlockTitle = ACHIEVEMENT_DEMOMAN_DESC
+    }
+}

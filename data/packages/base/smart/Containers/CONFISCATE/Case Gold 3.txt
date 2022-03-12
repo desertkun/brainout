@@ -1,0 +1,24 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 3
+        limited = false
+        class = content.components.ContentCardComponent
+        content = case-gold
+    }
+]
+group = cardgroup-confiscate
+id = gen-confiscate-gold-3
+name = CASE_GOLD
+weight = 10
+
+

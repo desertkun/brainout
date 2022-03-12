@@ -1,0 +1,11 @@
+class = content.SpectatorTeam
+color = 0094FF
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-crow
+        tag = client
+    }
+]
+id = team-spectator
+name = ITEM_TEAM_SPECTATOR

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = revo
+id = skin-player-revo
+name = ITEM_PLAYER_SKIN_REVO

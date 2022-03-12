@@ -1,0 +1,15 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientBackgroundEffectComponent
+        particle = snow-part
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-snow
+        tag = client
+    }
+]
+id = snow-effect
+name = ITEM_SNOW

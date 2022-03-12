@@ -1,0 +1,5 @@
+class = content.shop.ConsumableSlotItem
+id = sl-pri-none
+items = []
+name = ITEM_NONE
+

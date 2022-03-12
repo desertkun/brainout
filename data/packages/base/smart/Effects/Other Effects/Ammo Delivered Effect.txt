@@ -1,0 +1,6 @@
+class = content.Effect
+id = ammo-delivered-effect
+set = [
+    ammo-received
+]
+tag = client

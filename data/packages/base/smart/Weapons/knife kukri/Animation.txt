@@ -1,0 +1,5 @@
+animation = base:animations/weapon-kukri.json
+class = content.Animation
+id = anim-kukri
+states = []
+timeScale = 1

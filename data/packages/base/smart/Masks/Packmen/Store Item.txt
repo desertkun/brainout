@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-pacman
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = pacmen
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = doublekills-mask-pacmen
+        goal = GOAL_DOUBLEKILL_USING_MASK
+        value = 2
+    }
+    {
+        amount = 2
+        class = content.components.AddStatItemComponent
+        stat = skillpts
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-packmen
+items = []
+name = ITEM_MASK_PACKMEN
+player = player-mask-packmen
+slot = slot-mask
+category = mask
+tags = unique
+index = 2
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-packmen
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

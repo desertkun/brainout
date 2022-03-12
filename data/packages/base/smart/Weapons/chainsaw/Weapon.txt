@@ -1,0 +1,80 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 0
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ExtendedInstrumentEffectsComponent
+        shootExt = [
+            chainsaw-ext-sound
+        ]
+        shootExtPeriod = 0.2
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        actions = [
+            {
+                for = cycle
+                type = animate
+                animation = working
+            }
+            {
+                effects = [
+                    {
+                        attachTo = shell-bone
+                        object = chainsaw-idle-1
+                    }
+                    {
+                        attachTo = shell-bone
+                        object = chainsaw-idle-2
+                    }
+                ]
+                for = idle
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1.4
+    }
+    {
+        animation = anim-chainsaw
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-chainsaw
+            aimHit = shoot-aim-weapon-chainsaw
+            hit = hit-weapon-chainsaw
+            hold = hold-weapon-chainsaw
+            reload = reload-2hands-water
+        }
+    }
+]
+defaultSkin = skin-weapon-chainsaw-default
+id = weapon-chainsaw
+instrumentTags = primary
+primary = {
+    accuracy = 100
+    aimDistance = 25
+    allowedBullets = chainsaw-bullet
+    clipSize = 500
+    damage = 70
+    fire-rate = 800
+    recoil = 0
+    reloadTime = 2
+    shootModes = auto
+}
+slot = slot-primary
+speedCoef = 1

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-galil-default
+name = ITEM_WEAP_GALIL
+slot = sl-pri-galil

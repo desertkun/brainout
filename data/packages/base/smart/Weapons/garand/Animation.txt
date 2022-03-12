@@ -1,0 +1,5 @@
+animation = base:animations/weapon-garand.json
+class = content.Animation
+id = anim-garand
+states = []
+timeScale = 1

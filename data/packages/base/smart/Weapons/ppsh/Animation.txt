@@ -1,0 +1,5 @@
+animation = base:animations/weapon-ppsh.json
+class = content.Animation
+id = anim-ppsh
+states = []
+timeScale = 1

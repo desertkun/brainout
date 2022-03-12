@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-terminator
+    }
+    {
+        groups = cardgroup-terminator
+    }
+    {
+        groups = cardgroup-terminator
+    }
+    {
+        groups = cardgroup-terminator
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = terminator-case-bg
+        class = content.components.IconComponent
+        icon = terminator-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_TERMINATOR_DESC
+id = case-terminator
+name = CASE_TERMINATOR

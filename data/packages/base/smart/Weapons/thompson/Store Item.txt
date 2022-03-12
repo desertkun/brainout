@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-thompson
+instrument = {
+    id = weapon-thompson
+    skins = skin-weapon-thompson-default, skin-weapon-thompson-remastered
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        holder = upgrade-thompson-holder
+        clip = upgrade-thompson-clip-extended
+        accuracy = upgrade-thompson-accuracy
+        shoot-time = upgrade-thompson-shoot-time
+        recoil = upgrade-thompson-recoil
+		wear-resistance = upgrade-thompson-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 80
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_THOMPSON
+slot = slot-primary
+category = submachine
+tags = unique
+index = 63
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = mafia-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_MAFIA
+    }
+}

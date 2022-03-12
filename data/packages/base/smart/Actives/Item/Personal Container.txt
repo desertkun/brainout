@@ -1,0 +1,24 @@
+class = content.active.PersonalContainer
+components = [
+    {
+        class = content.components.ClientMarketContainerComponent
+        title = MENU_PERSONAL_STASH
+        tag = client
+    }
+    {
+        class = content.components.ServerMarketContainerComponent
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-personal-container-spawner
+        tag = client
+    }
+    {
+        class = content.components.MaxWeightComponent
+        weight = 15
+    }
+]
+market = freeplay
+name = Free Play Personal Container
+id = personal-container

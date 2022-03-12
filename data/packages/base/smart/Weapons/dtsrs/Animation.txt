@@ -1,0 +1,5 @@
+animation = base:animations/weapon-dtsrs.json
+class = content.Animation
+id = anim-dtsrs
+states = []
+timeScale = 1

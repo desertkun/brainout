@@ -1,0 +1,147 @@
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.ConnectionComponent
+        data = [
+            ground-0-0, ground-0-1
+            ground-1-0, ground-1-1
+            ground-2-0, ground-2-1
+            ground-3-0, ground-3-1
+            ground-4-0, ground-4-1
+            ground-5-0, ground-5-1
+            ground-6-0, ground-6-1
+            ground-7-0, ground-7-1
+            ground-8-0, ground-8-1
+            ground-9-0, ground-9-1
+            ground-10-0, ground-10-1
+            ground-11-0, ground-11-1
+            ground-12-0, ground-12-1
+            ground-13-0, ground-13-1
+            ground-14-0, ground-14-1
+            ground-15-0, ground-15-1, ground-15-2, ground-15-3
+        ]
+        stickId = ground
+        stickTo = ground, ca-ground, brick, gold, metal
+        tag = client
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        destroy = {
+            @if = "$editor != true"
+            @then = [
+                ground-hit-snd-1, ground-hit-part-1
+            ]
+        }
+        hit = [
+            ground-hit-snd-1, ground-hit-part-1, ground-hit-part-2-physic, ground-hit-part-2-physic, ground-hit-part-2-physic
+            ground-hit-snd-4, ground-hit-part-1, ground-hit-part-2-physic, ground-hit-part-2-physic
+            ground-hit-snd-2, ground-hit-part-1, ground-hit-part-2-physic
+            ground-hit-snd-3, ground-hit-part-1, ground-hit-part-2-physic
+        ]
+        place = {
+            @if = "$editor != true"
+            @then = [
+                ground-hit-part-1
+            ]
+        }
+        step = ground-step-snd-1, ground-step-snd-2, ground-step-snd-3, ground-step-snd-4
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-ground
+        tag = client
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = ground
+static = true
+contactStrategy = triangle
+contactTo = ground, brick, gold, core
+id = ground
+name = ITEM_BG_GROUND
+resist = 4
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.ConnectionComponent
+        data = [
+            ground-0-0, ground-0-1
+            ground-1-0, ground-1-1
+            ground-2-0, ground-2-1
+            ground-3-0, ground-3-1
+            ground-4-0, ground-4-1
+            ground-5-0, ground-5-1
+            ground-6-0, ground-6-1
+            ground-7-0, ground-7-1
+            ground-8-0, ground-8-1
+            ground-9-0, ground-9-1
+            ground-10-0, ground-10-1
+            ground-11-0, ground-11-1
+            ground-12-0, ground-12-1
+            ground-13-0, ground-13-1
+            ground-14-0, ground-14-1
+            ground-15-0, ground-15-1, ground-15-2, ground-15-3
+        ]
+        stickId = ground
+        stickTo = ground, ca-ground, brick, gold, metal
+        tag = client
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        destroy = {
+            @if = "$editor != true"
+            @then = [
+                ground-hit-snd-1, ground-hit-part-1
+            ]
+        }
+        hit = [
+            ground-hit-snd-1, ground-hit-part-1, ground-hit-part-2-physic, ground-hit-part-2-physic, ground-hit-part-2-physic
+            ground-hit-snd-4, ground-hit-part-1, ground-hit-part-2-physic, ground-hit-part-2-physic
+            ground-hit-snd-2, ground-hit-part-1, ground-hit-part-2-physic
+            ground-hit-snd-3, ground-hit-part-1, ground-hit-part-2-physic
+        ]
+        step = [
+            mud-step-snd-1, mud-step-physic
+            mud-step-snd-2, mud-step-physic
+            mud-step-snd-3, mud-step-physic
+        ]
+        place = {
+            @if = "$editor != true"
+            @then = [
+                ground-hit-part-1
+            ]
+        }
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-ground
+        tag = client
+    }
+    {
+        class = content.components.Editor2EnabledComponent
+        layer = 1
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = ground
+static = true
+contactStrategy = triangle
+contactTo = ground, brick, gold, core
+id = ground-mud
+name = Ground With Mud
+resist = 4

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-sr3.json
+class = content.Animation
+id = anim-sr3
+states = []
+timeScale = 1

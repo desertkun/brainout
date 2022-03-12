@@ -1,0 +1,20 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.AnimationComponent
+        animation = anim-badge-1911-elite
+        tag = client
+    }
+]
+id = profile-badge-1911-elite
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

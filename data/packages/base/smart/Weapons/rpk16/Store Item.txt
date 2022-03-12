@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-rpk16
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+instrument = {
+    id = weapon-rpk16
+    skins = skin-weapon-rpk16-default, skin-weapon-rpk16-vitality
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-rpk16-accuracy
+        clip = upgrade-rpk16-clip-extended
+        holder = upgrade-rpk16-holder
+        recoil = upgrade-rpk16-recoil
+        reload-time = upgrade-rpk16-reload-time
+        scope = upgrade-rpk16-scope-okp7
+    }
+}
+items = [
+    {
+        amount = 90
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_RPK16
+slot = slot-primary
+category = other
+tags = unique
+index = 364
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = legacy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_LEGACY
+    }
+}

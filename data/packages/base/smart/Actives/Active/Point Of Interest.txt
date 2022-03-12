@@ -1,0 +1,14 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-point-of-interest
+        tag = client
+    }
+    {
+    	class = content.components.PointOfInterestComponent
+    	tag = server
+    }
+]
+id = point-of-interest
+name = Point Of Interest

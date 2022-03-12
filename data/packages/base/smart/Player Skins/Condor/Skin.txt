@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = condor
+id = skin-player-condor
+name = ITEM_PLAYER_SKIN_CONDOR

@@ -1,0 +1,24 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-halloween-1
+        tag = client
+    }
+]
+id = profile-badge-halloween-1
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	hide = true
+    	for = pupmkins-destroyed
+    	param = 100
+        icon = icon-challenge-pumpkin
+    	unlockTitle = UNLOCK_KILL_PUMPKINS
+    }
+}

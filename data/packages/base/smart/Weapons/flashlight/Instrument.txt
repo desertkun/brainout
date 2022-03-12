@@ -1,0 +1,59 @@
+access = byDefault
+class = content.instrument.Instrument
+components = [
+    {
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        big-icon = icon-item-flashlight
+        icon-small = icon-item-flashlight-small
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = flashlight
+    }
+    {
+        class = content.components.InstrumentAimComponent
+        aimDistance = 30
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-flashlight
+        class = content.components.InstrumentAnimationComponent
+        skin = flashlight-default
+        states = {
+            aim = hold-flashlight
+            hold = hold-flashlight
+        }
+    }
+    {
+        class = content.components.InstrumentLightComponent
+        color = 333333FF
+        cone = 16
+        distance = 80
+        rays = 32
+        soft = 8
+        tag = client
+    }
+    {
+        class = content.components.ServerSelectFreeplayEventComponent
+        tag = server
+    }
+]
+defaultSkin = skin-instrument-flashlight-default
+id = instrument-flashlight
+instrumentTags = tools
+slot = slot-flashlight
+name = ITEM_FLASHLIGHT

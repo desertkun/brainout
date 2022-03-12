@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mauser-default
+name = ITEM_WEAP_MAUSER
+slot = sl-sec-mauser

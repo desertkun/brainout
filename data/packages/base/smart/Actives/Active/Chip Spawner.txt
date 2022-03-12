@@ -1,0 +1,16 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-chip
+        tag = client
+    }
+    {
+        chip = instrument-chip
+        class = content.components.ServerChipSpawnerComponent
+        dropItem = chip-spawn-item
+        tag = server
+    }
+]
+id = chip-spawner
+name = ITEM_CHIP_SPAWNER

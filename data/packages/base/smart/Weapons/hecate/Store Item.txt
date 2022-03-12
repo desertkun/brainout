@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-hecate
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+instrument = {
+    id = weapon-hecate
+    skins = skin-weapon-hecate-default, skin-weapon-hecate-sports, skin-weapon-hecate-jacobs, skin-weapon-hecate-pre, skin-weapon-hecate-cny
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-hecate-recoil
+        reload-time = upgrade-hecate-reload-time
+    }
+}
+items = [
+    {
+        amount = 8
+        id = bullet-12.7x55
+    }
+]
+name = ITEM_WEAP_HECATE
+slot = slot-primary
+category = sniper
+tags = unique
+index = 100
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = steel-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_STEEL
+    }
+}

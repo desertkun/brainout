@@ -1,0 +1,5 @@
+animation = base:animations/weapon-hk433.json
+class = content.Animation
+id = anim-hk433
+states = []
+timeScale = 1

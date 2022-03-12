@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwnedEx
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-pri-pp27
+    }
+]
+group = cardgroup-zveroboy-4
+id = gen-weapon-pp27
+name = CARD_TITLE_NEW_WEAPON
+weight = 1000

@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-veresk
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-veresk
+    skins = skin-weapon-veresk-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        scope = upgrade-veresk-scope-sr2
+        clip = upgrade-veresk-clip-extended
+        recoil = upgrade-veresk-recoil
+        reload-time = upgrade-veresk-reload-time
+        butt = upgrade-veresk-butt-unfolded
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx18
+    }
+]
+name = ITEM_WEAP_VERESK
+slot = slot-primary
+category = submachine
+tags = missions
+index = 10
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        unlockTitle = MENU_UNLOCK_QUEST
+        unlockObject = QUEST_TITLE_VALUABLE_CARGO
+    }
+}

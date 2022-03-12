@@ -1,0 +1,33 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = confiscate-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-confiscate
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+]
+description = CASE_CONFISCATE_DESC
+id = sl-store-case-confiscate
+limit = 2
+name = CASE_CONFISCATE
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 5000
+        currency = ru
+    }
+}

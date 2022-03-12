@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-m16
+instrument = {
+    id = weapon-m16
+    skins = skin-weapon-m16-default, skin-weapon-m16-vietnam, skin-weapon-m16-born, skin-weapon-m16-hev, skin-weapon-m16-tigris, skin-weapon-m16-woodstock, skin-weapon-m16-toy
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-m16-accuracy
+        clip = upgrade-m16-clip-extended
+        recoil = upgrade-m16-recoil
+        reload-time = upgrade-m16-reload-time
+        shoot-time = upgrade-m16-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_M16
+slot = slot-primary
+category = assault
+tags = resources
+index = 47
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = m16-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_M16
+    }
+}

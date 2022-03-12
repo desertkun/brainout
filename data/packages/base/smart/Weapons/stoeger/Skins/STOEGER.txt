@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-stoeger-default
+name = ITEM_WEAP_STOEGER
+slot = sl-pri-stoeger

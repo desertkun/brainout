@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rsaas.json
+class = content.Animation
+id = anim-rsaas
+states = []
+timeScale = 1

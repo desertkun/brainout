@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-m16
+    }
+    {
+        groups = cardgroup-exclusive-skin-vietnam
+    }
+    {
+        groups = cardgroup-gears-exclusive
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = m16-case-bg
+        class = content.components.IconComponent
+        icon = m16-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_M16_DESC
+id = case-exclusive-starter-2
+name = CASE_M16

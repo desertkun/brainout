@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-pkm-cookie
+        tag = client
+    }
+]
+data = weapon-cookie
+id = skin-weapon-pkm-cookie
+name = ITEM_WEAP_PKM_COOKIE
+slot = sl-pri-pkm
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        
+    }
+}

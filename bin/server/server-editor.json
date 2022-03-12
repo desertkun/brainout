@@ -1,0 +1,71 @@
+{
+	"ports":
+	{
+		"tcp": 36555,
+		"udp": 36556,
+		"http": 36557
+	},
+	"name": "Sandbox [editor mode]",
+	"packages":
+	[
+		"base", "lobby",
+		"editor", "freeplay",
+		"map_factory", "map_siber", "map_forest", "map_bridge",
+		"map_canyon", "custom",
+		"map_station", "map_hospital", "map_construction", "sounds"
+	],
+	"defines":
+	{
+		"editor": "true"
+	},
+	"teams": 
+	[
+		"team-blue",
+		"team-green",
+		"team-freeplay"
+	],
+	
+	"prices":
+	{
+		"kill": 10
+	},
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},	
+
+	"modeDelay": 11,
+
+	"respawn": 
+	{
+		"kind": "immedeately",
+		"waveTime": 10,
+		"waveMinTime": 2
+	},
+	
+	"damageCoef": 4,
+	"autoBalance":
+	{
+		"enabled": false,
+		"balance": 1
+	},
+	"mode": "editor",
+	"modeSettings":
+	{
+		"editor":
+		{
+			"defaultCustom":
+			{
+				"parallax": "parr-default",
+				"music-list": "music-list-default"
+			}
+		}
+	},
+	"restartIn": 20,
+	"roundTime": 0,
+	"spectateIfNoPlayers": false,
+
+	"maps-filter": "template-"
+}

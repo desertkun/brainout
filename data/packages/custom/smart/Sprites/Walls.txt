@@ -1,0 +1,406 @@
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-1
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-1
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-2
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-2
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-3
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-3
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-4
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-4
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-5
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-5
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-6
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-6
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-7
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-7
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-8
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-8
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-9
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-9
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-10
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-10
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-11
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-11
+
+--------
+
+class = content.active.Active
+name = CUSTOM_WALL
+components = [
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 8
+        height = 8
+        images = [
+            {
+                x = 0
+                y = 0
+                w = 8
+                h = 8
+                image = custom-bg-12
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+        zIndex = 4
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-wall-12
+

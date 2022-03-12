@@ -1,0 +1,11 @@
+id = sl-inst-none
+
+access = byDefault
+class = content.shop.ConsumableSlotItem
+description = ITEM_NONE
+items = []
+name = ITEM_NONE
+slot = slot-special
+category = special
+tags = []
+index = 1

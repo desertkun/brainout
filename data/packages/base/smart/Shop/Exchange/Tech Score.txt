@@ -1,0 +1,33 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-tech-level-3
+        tag = client
+    }
+    {
+        amount = 50
+        class = content.components.AddStatItemComponent
+        stat = tech-score
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+id = sl-store-tech-score
+limit = 10
+name = CARD_TECH_SCORE
+
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = nuclear-material
+    }
+}

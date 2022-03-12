@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-smerch
+        class = content.components.IconComponent
+        icon = knife-smerch
+        tag = client
+    }
+]
+data = knife-smerch
+id = skin-weapon-knife-smerch
+name = ITEM_WEAP_KNIFE_SMERCH
+slot = sl-ml-knife

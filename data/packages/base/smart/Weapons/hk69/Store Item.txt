@@ -1,0 +1,37 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+
+    }
+]
+id = sl-pri-hk69
+instrument = {
+    id = weapon-hk69
+    skins = skin-weapon-hk69-default
+    upgrades = {
+    }
+}
+items = [
+    {
+        amount = 3
+        id = grenade-bullet
+    }
+]
+name = ITEM_WEAP_HK69
+slot = slot-primary
+category = other
+tags = unique
+index = 894
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

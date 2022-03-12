@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-skull
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = skull
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = longshots-mask-skull
+        goal = GOAL_LONGSHOT_USING_MASK
+        value = 50
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-gold
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-brainout
+items = []
+name = ITEM_MASK_BRAINOUT
+player = player-mask-brainout
+slot = slot-mask
+category = mask
+tags = unique
+index = 14
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-brainout
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

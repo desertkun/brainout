@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-ax
+        class = content.components.IconComponent
+        icon = knife-ax
+        tag = client
+    }
+]
+data = knife-ax
+id = skin-weapon-knife-ax
+name = ITEM_WEAP_KNIFE_AX
+slot = sl-ml-knife-ax

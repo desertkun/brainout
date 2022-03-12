@@ -1,0 +1,5 @@
+animation = base:animations/weapon-p90.json
+class = content.Animation
+id = anim-p90
+states = []
+timeScale = 1

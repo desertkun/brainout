@@ -1,0 +1,5 @@
+animation = base:animations/weapon-svd.json
+class = content.Animation
+id = anim-svd
+states = []
+timeScale = 1

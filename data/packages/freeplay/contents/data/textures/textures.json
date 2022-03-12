@@ -1,0 +1,9 @@
+{
+	"FREEPLAY": "freeplay:textures/FREEPLAY.atlas", 
+	"FREEPLAY_PARRALAX": "freeplay:textures/FREEPLAY_PARRALAX.atlas",
+	"FREEPLAY_MENU": "freeplay:textures/FREEPLAY_MENU.atlas", 
+	"FREEPLAY_INTRO": "freeplay:textures/FREEPLAY_INTRO.atlas", 
+	"FREEPLAY_CARDS": "freeplay:textures/FREEPLAY_CARDS.atlas", 
+	"FREEPLAY_REALESTATE": "freeplay:textures/FREEPLAY_REALESTATE.atlas", 
+	"EFFECTS": "freeplay:textures/EFFECTS.atlas"
+}

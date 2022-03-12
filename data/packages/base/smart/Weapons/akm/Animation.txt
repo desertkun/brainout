@@ -1,0 +1,5 @@
+animation = base:animations/weapon-akm.json
+class = content.Animation
+id = anim-akm
+states = []
+timeScale = 1

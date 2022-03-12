@@ -1,0 +1,5 @@
+alphaBefore = 0.05
+class = content.effect.ProjectileEffect
+id = bullet-projectile-grenade-1
+projectile = grenade-bullet-1
+tag = client

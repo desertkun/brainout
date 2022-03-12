@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-colt-default
+name = ITEM_WEAP_COLT
+slot = sl-sec-colt

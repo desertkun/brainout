@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-garand-default
+name = ITEM_WEAP_GARAND
+slot = sl-pri-garand

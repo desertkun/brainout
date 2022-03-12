@@ -1,0 +1,40 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-luger
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+instrument = {
+    id = weapon-luger
+    skin = skin-weapon-luger-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+    }
+}
+items = [
+    {
+        amount = 16
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_LUGER
+slot = slot-secondary
+category = pistol
+tags = unique
+index = 9
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RED_MOSIN
+    }
+}

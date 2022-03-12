@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-sobr
+    }
+    {
+        groups = cardgroup-sobr
+    }
+    {
+        groups = cardgroup-sobr
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = sobr-case-bg
+        class = content.components.IconComponent
+        icon = sobr-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_SOBR_DESC
+id = case-sobr
+name = CASE_SOBR

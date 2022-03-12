@@ -1,0 +1,71 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = glock-reload
+        fetch = glock-fetch
+        shoot = [
+            cz75-shoot-1, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-cz75
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-1hand
+            fetch = reload-1hand-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-cz75-default
+id = weapon-cz75
+instrumentTags = secondary
+primary = {
+    accuracy = 40
+    aimDistance = 25
+    allowedBullets = bullet-9mmx19
+    clipSize = 12
+    magazineManagement = 2
+    damage = 45
+    fire-rate = 700
+    recoil = 50
+    reloadTime = 1.1
+    fetchTime = 0.4
+    shootModes = auto, burst, single
+}
+slot = slot-secondary

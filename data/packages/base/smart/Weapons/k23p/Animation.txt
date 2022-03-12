@@ -1,0 +1,5 @@
+animation = base:animations/weapon-k23p.json
+class = content.Animation
+id = anim-k23p
+states = []
+timeScale = 1

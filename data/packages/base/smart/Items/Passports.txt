@@ -1,0 +1,81 @@
+class = content.consumable.ConsumableContent
+id = freeplay-passport-1
+name = ITEM_PASSPORT
+description = ITEM_PASSPORT_DESC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-passport-1
+        icon-small = icon-passport-1-small
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 10
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-passport-2
+name = ITEM_PASSPORT
+description = ITEM_PASSPORT_DESC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-passport-2
+        icon-small = icon-passport-2-small
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 10
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-passport-3
+name = ITEM_PASSPORT
+description = ITEM_PASSPORT_DESC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-passport-3
+        icon-small = icon-passport-3-small
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 10
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]

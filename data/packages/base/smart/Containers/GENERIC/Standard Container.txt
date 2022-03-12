@@ -1,0 +1,41 @@
+cards = [
+    {
+        groups = [
+            cardgroup-standard
+            cardgroup-improved
+            cardgroup-rare
+            cardgroup-part
+            cardgroup-gears-improved
+            cardgroup-gears
+            cardgroup-gears-rare
+            cardgroup-unique
+        ]
+    }
+    {
+        groups = cardgroup-improved, cardgroup-rare, cardgroup-gears-improved, cardgroup-gears-rare, cardgroup-skillpts
+    }
+    {
+        groups = cardgroup-standard, cardgroup-improved, cardgroup-rare, cardgroup-gears, cardgroup-gears-improved, cardgroup-gears-rare
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = standard-case-bg
+        class = content.components.IconComponent
+        icon = standard-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_STANDARD_DESC
+id = case-standard
+name = CASE_STANDARD

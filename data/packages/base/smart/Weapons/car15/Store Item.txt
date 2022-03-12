@@ -1,0 +1,65 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-car15
+instrument = {
+    id = weapon-car15
+    skins = skin-weapon-car15-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-car15-accuracy
+        clip = upgrade-car15-clip-extended
+        silencer = upgrade-car15-silencer
+        shoot-time = upgrade-car15-shoot-time
+        wear-resistance = upgrade-car15-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_CAR15
+slot = slot-primary
+category = assault
+tags = unique
+index = 377
+
+--------
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 65000
+        currency = ru
+    }
+}
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-car15
+		icon = icon-blueprint
+		param = 1
+        unlockTitle = MENU_LOCKED_BLUEPRINT
+    }
+}

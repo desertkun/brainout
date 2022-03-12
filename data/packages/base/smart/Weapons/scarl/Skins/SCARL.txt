@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-scarl-default
+name = ITEM_WEAP_SCARL
+slot = sl-pri-scarl

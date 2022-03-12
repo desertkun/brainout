@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-l4d
+    }
+    {
+        groups = cardgroup-l4d
+    }
+    {
+        groups = cardgroup-l4d
+    }
+    {
+        groups = cardgroup-l4d
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = l4d-case-bg
+        class = content.components.IconComponent
+        icon = l4d-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_L4D_DESC
+id = case-l4d
+name = CASE_L4D

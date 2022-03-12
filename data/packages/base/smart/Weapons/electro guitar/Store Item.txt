@@ -1,0 +1,29 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+]
+description = ITEM_SPECIAL_GUITAR_DESC
+id = sl-spc-electro-guitar
+instrument = {
+    id = instrument-electro-guitar
+    skins = skin-instrument-electro-guitar-default
+}
+items = []
+name = ITEM_SPECIAL_ELECTRO_GUITAR
+freeplay = false
+slot = slot-special
+category = special
+tags = unique
+index = 13
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

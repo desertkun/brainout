@@ -1,0 +1,5 @@
+animation = base:animations/weapon-judge.json
+class = content.Animation
+id = anim-judge
+states = []
+timeScale = 1

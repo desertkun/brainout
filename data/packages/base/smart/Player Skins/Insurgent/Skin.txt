@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = insurgent
+id = skin-player-insurgent
+name = ITEM_PLAYER_SKIN_INSURGENT

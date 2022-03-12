@@ -1,0 +1,46 @@
+class = content.quest.Quest
+id = quest-ammunition-3
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-ammunition
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = bullet-12-slug
+        target = 20
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = bullet-12-76
+        target = 20
+    }
+}
+
+group = ammunition
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_AMMUNITION
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 1
+    }
+    {
+        action = addstat
+        id = skillpts
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 700
+    }
+]

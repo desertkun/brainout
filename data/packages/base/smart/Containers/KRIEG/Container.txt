@@ -1,0 +1,42 @@
+cards = [
+    {
+        groups = cardgroup-krieg
+    }
+    {
+        groups = cardgroup-krieg
+    }
+    {
+        groups = cardgroup-krieg
+    }
+	{
+        groups = cardgroup-krieg
+    }
+	{
+        groups = cardgroup-krieg
+    }
+	{
+        groups = cardgroup-krieg
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = krieg-case-bg
+        class = content.components.IconComponent
+        icon = krieg-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_SUPPLY_DESC
+id = case-krieg
+name = CASE_KRIEG

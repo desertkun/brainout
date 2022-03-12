@@ -1,0 +1,211 @@
+class = content.consumable.ConsumableContent
+id = freeplay-quest-valuable-cargo
+name = QUEST_TITLE_VALUABLE_CARGO
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-case-cargo
+        icon-small = icon-case-cargo-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 2
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-quest-instruments
+name = QUEST_ITEM_INSTRUMENTS
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-case-instruments
+        icon-small = icon-case-instruments-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 2
+    }
+]
+
+--------
+
+class = content.consumable.FlashDrive
+id = freeplay-code-1
+name = QUEST_ITEM_FLASH_DRIVE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-code-1
+        icon-small = icon-item-code-1-small
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 600
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+
+--------
+
+class = content.consumable.FlashDrive
+id = freeplay-code-2
+name = QUEST_ITEM_FLASH_DRIVE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-code-2
+        icon-small = icon-item-code-2-small
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 600
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+
+--------
+
+class = content.consumable.FlashDrive
+id = freeplay-code-3
+name = QUEST_ITEM_FLASH_DRIVE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-code-3
+        icon-small = icon-item-code-3-small
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 600
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-quest-information
+name = QUEST_ITEM_DOCUMENTS
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-documents
+        icon-small = icon-item-documents-small
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-quest-fuse
+name = QUEST_ITEM_FUSE
+stacks = false
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-fuse
+        icon-small = icon-item-fuse-small
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 150
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-quest-broken-fuse
+name = QUEST_ITEM_BROKEN_FUSE
+stacks = false
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-broken-fuse
+        icon-small = icon-item-broken-fuse-small
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 149
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-quest-precursor
+name = QUEST_TITLE_PRECURSOR
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-precursor
+        icon-small = icon-precursor-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = container-item-move-1, container-item-move-2, container-item-move-3, container-item-move-4
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 150
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 3
+    }
+]

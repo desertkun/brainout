@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-default
+id = skin-instrument-claymore-default
+name = ITEM_SPECIAL_CLAYMORE
+slot = sl-spc-claymore

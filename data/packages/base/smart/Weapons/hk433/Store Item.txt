@@ -1,0 +1,37 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-hk433
+instrument = {
+    id = weapon-hk433
+    skins = skin-weapon-hk433-default, skin-weapon-hk433-firefighter, skin-weapon-hk433-black-swordsman, skin-weapon-hk433-accelerator
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-hk433-clip-extended
+        holder = upgrade-hk433-shotgun
+        scope = upgrade-hk433-scope-leupold, upgrade-hk433-scope-truglo
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_HK433
+slot = slot-primary
+category = assault
+tags = missions
+index = 381
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-mp5k
+        tag = client
+    }
+]
+id = profile-badge-mp5k
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-mp5k
+        param = 500
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_MP5K}"
+    }
+}

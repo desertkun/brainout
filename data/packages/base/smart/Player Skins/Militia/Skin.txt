@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = militia
+id = skin-player-militia
+name = ITEM_PLAYER_SKIN_MILITIA

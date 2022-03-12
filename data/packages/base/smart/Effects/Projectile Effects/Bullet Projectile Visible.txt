@@ -1,0 +1,5 @@
+alphaBefore = 0.05
+class = content.effect.ProjectileEffect
+id = bullet-projectile-visible
+projectile = bullet-def-1
+tag = client

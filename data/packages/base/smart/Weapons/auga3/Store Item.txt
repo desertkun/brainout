@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-auga3
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-auga3
+    skins = skin-weapon-auga3-default, skin-weapon-auga3-demigod, skin-weapon-auga3-gift, skin-weapon-auga3-octopus, skin-weapon-auga3-outrun, skin-weapon-auga3-tokyo, skin-weapon-auga3-icecream
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-auga3-accuracy
+        reload-time = upgrade-auga3-reload-time
+        scope = upgrade-auga3-scope-acog, upgrade-auga3-scope-truglo
+        shoot-time = upgrade-auga3-shoot-time
+		holder = upgrade-auga3-gl-m203, upgrade-auga3-holder
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_AUGA3
+slot = slot-primary
+category = assault
+tags = missions
+index = 24
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-aug
+        param = 400
+        unlockTitle = MENU_UNLOCK_AUGA3
+    }
+}

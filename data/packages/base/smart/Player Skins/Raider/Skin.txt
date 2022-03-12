@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = raider
+id = skin-player-raider
+name = ITEM_PLAYER_SKIN_RAIDER

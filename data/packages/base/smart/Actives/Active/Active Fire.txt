@@ -1,0 +1,20 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.ActiveParticleComponent
+        particle = fire-particle
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-particles
+        tag = client
+    }
+    {
+        class = content.components.ActiveParticleComponent
+        particle = fire-particle
+        tag = client
+    }
+]
+id = active-fire
+name = PARTICLE_FIRE

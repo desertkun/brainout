@@ -1,0 +1,55 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.AnimatedIconComponent
+        frames = [
+            {
+                frame = medal-beta-1-1
+                delay = 2
+            }
+            {
+                frame = medal-beta-1-2
+                delay = 0.07
+            }
+            {
+                frame = medal-beta-1-3
+                delay = 0.07
+            }
+            {
+                frame = medal-beta-1-4
+                delay = 0.07
+            }
+            {
+                frame = medal-beta-1-5
+                delay = 0.07
+            }
+            {
+                frame = medal-beta-1-6
+                delay = 0.07
+            }
+        ]
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_BETA_DESC
+id = medal-beta
+name = MEDAL_BETA
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_BETA_DESC
+    }
+}

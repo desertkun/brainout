@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mosin-default
+name = ITEM_WEAP_MOSIN
+slot = sl-pri-mosin

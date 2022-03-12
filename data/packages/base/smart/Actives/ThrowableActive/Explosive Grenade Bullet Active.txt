@@ -1,0 +1,69 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 10
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.EnemyDetectorComponent
+        detectClass = rg6
+        height = 4
+        period = 0.0125
+        tag = server
+        width = 4
+        x = -2
+        y = -2
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = physics, rg6
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rg6
+        tag = server
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.8
+        reduce = -0.25
+        rotateBySpeed = true
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-grenade-bullet
+        class = content.components.ActiveIconComponent
+        skin = throwable-default
+        tag = client
+    }
+    {
+        amount = 45
+        bullet = explosive-bullet-active
+        class = content.components.ExplosiveComponent
+        damage = 50
+        effect = explode-effect-1
+        tag = server
+    }
+]
+id = explosive-grenade-bullet-active
+name = ITEM_WEAP_RG6

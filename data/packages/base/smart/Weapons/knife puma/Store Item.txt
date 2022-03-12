@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-puma
+        class = content.components.IconComponent
+        icon = knife-puma
+        tag = client
+    }
+]
+id = sl-ml-knife-puma
+instrument = {
+    id = weapon-knife-puma
+    skin = skin-weapon-knife-puma
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_PUMA
+slot = slot-melee
+category = melee
+tags = unique
+index = 25
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}
+
+

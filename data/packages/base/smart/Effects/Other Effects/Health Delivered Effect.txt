@@ -1,0 +1,6 @@
+class = content.Effect
+id = health-delivered-effect
+set = [
+    health-received
+]
+tag = client

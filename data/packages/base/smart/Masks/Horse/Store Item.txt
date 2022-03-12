@@ -1,0 +1,53 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-horse
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = horse
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-horse
+        goal = GOAL_KILL_USING_MASK
+        value = 250
+    }
+    {
+        amount = 25000
+        class = content.components.AddStatItemComponent
+        stat = ru
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-horse
+items = []
+name = ITEM_MASK_HORSE
+player = player-mask-horse
+slot = slot-mask
+category = mask
+tags = unique
+index = 12
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-horse
+		icon = icon-blueprint-mask
+		param = 1
+        unlockTitle = MENU_LOCKED_HALLOWEEN_BLUEPRINT
+    }
+}

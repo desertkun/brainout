@@ -1,0 +1,7 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_RECOIL_DESC
+id = upgrade-aek-recoil
+level-kind = tech-level
+name = ITEM_UPGRADE_RECOIL
+prefix = aek
+upgrades = upgrade-recoil-1, upgrade-recoil-2, upgrade-recoil-3, upgrade-recoil-4, upgrade-recoil-5

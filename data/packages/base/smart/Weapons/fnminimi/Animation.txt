@@ -1,0 +1,5 @@
+animation = base:animations/weapon-fnminimi.json
+class = content.Animation
+id = anim-fnminimi
+states = []
+timeScale = 1

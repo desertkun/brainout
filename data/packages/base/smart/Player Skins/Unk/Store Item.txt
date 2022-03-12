@@ -1,0 +1,39 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-unk
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+    {
+        class = content.components.ItemDependencyComponent
+        items = [
+            medal-wiki-3
+        ]
+        tag = server
+    }
+]
+id = sl-skin-unk
+items = []
+name = ITEM_PLAYER_SKIN_UNK
+skin = skin-player-unk
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 381
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        }
+}

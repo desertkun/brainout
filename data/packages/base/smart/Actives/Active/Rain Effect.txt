@@ -1,0 +1,15 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientBackgroundEffectComponent
+        particle = rain-part
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-rain
+        tag = client
+    }
+]
+id = rain-effect
+name = ITEM_RAIN

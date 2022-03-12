@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = rfe
+id = skin-player-rfe
+name = ITEM_PLAYER_SKIN_RFE

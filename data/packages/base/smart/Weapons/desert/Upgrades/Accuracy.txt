@@ -1,0 +1,7 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_ACCURACY_DESC
+id = upgrade-desert-accuracy
+level-kind = tech-level
+name = ITEM_UPGRADE_ACCURACY
+prefix = desert
+upgrades = upgrade-accuracy-1, upgrade-accuracy-2, upgrade-accuracy-3, upgrade-accuracy-4, upgrade-accuracy-5

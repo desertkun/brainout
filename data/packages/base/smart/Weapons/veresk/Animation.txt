@@ -1,0 +1,5 @@
+animation = base:animations/weapon-veresk.json
+class = content.Animation
+id = anim-veresk
+states = []
+timeScale = 1

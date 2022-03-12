@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-an94
+instrument = {
+    id = weapon-an94
+    skins = skin-weapon-an94-default, skin-weapon-an94-amethyst, skin-weapon-an94-male, skin-weapon-an94-war, skin-weapon-an94-lucid, skin-weapon-an94-wave, skin-weapon-an94-nightfall, skin-weapon-an94-range, skin-weapon-an94-autumn
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-an94-clip-extended
+        recoil = upgrade-an94-recoil
+        reload-time = upgrade-an94-reload-time
+        scope = upgrade-an94-scope-pso, upgrade-an94-scope-cobra, upgrade-an94-scope-tulpan
+        gl = upgrade-an94-gl-gp30
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AN94
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 9
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 12
+    }
+}

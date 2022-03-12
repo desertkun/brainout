@@ -1,0 +1,19 @@
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientFreeplayCricketComponent
+        effects = [
+        	sound-fox-1
+        	sound-fox-2
+        	sound-fox-3
+        	sound-fox-4
+        ]
+        interval = 4
+        periodic = true
+        cycles = 2
+        delayAfterPeriod = 20
+        tag = client
+    }
+]
+id = freeplay-fox

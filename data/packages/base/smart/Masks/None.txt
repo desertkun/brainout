@@ -1,0 +1,7 @@
+class = content.shop.CustomAnimationSlotItem
+id = sl-msk-none
+items = []
+slot = slot-mask
+category = mask
+name = ITEM_NONE
+index = 0

@@ -1,0 +1,39 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+id = sl-pri-gm94
+instrument = {
+    id = weapon-gm94
+    skins = skin-weapon-gm94-default, skin-weapon-gm94-imp
+    upgrades = {
+    }
+}
+items = [
+    {
+        amount = 3
+        id = grenade-bullet
+    }
+]
+name = ITEM_WEAP_GM94
+slot = slot-primary
+category = other
+tags = unique
+index = 105
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = insurgent-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_INSURGENT
+    }
+}

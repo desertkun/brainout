@@ -1,0 +1,11 @@
+class = content.effect.LightEffect
+color = ffefa355
+distance = 4
+id = bullet-flash-visible
+rays = 16
+soft = 8
+tag = client
+time = 0.8
+timeAfter = 0.4
+timeBefore = 0
+xRay = true

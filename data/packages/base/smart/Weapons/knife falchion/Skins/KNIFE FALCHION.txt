@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-falchion
+        class = content.components.IconComponent
+        icon = knife-falchion
+        tag = client
+    }
+]
+data = knife-falchion
+id = skin-weapon-knife-falchion
+name = ITEM_WEAP_KNIFE_FALCHION
+slot = sl-ml-knife-falchion

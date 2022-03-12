@@ -1,0 +1,28 @@
+blockEffect = false
+class = content.bullet.ShotBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-projectile-snowball-1
+        ]
+        hit = [
+            snow-hit-snd-1, snow-hit-1
+            snow-hit-snd-2, snow-hit-1
+            snow-hit-snd-3, snow-hit-1
+        ]
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-bullet-pistol
+        tag = client
+    }
+]
+id = snowball-bullet
+mass = 0.15
+name = ITEM_BULLET_SNOWBALL
+power = 0.02
+powerDistance = 500
+speed = 80

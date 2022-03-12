@@ -1,0 +1,7 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_RELOAD_TIME_DESC
+id = upgrade-ak105bullpup-reload-time
+level-kind = tech-level
+name = ITEM_UPGRADE_RELOAD_TIME
+prefix = ak105bullpup
+upgrades = upgrade-reload-time-1, upgrade-reload-time-2, upgrade-reload-time-3, upgrade-reload-time-4, upgrade-reload-time-5

@@ -1,0 +1,129 @@
+class = content.consumable.ConsumableContent
+id = freeplay-keys-apartment
+name = ITEM_KEYS_APARTMENT
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-keys-apartment
+        icon-small = icon-keys-apartment-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = keys-move-1, keys-move-2, keys-move-3, keys-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-keys-garage
+name = ITEM_KEYS_GARAGE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-keys-garage
+        icon-small = icon-keys-garage-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = keys-move-1, keys-move-2, keys-move-3, keys-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-keys-tunnel
+components = [
+    {
+        class = content.components.ItemComponent
+        dropItem = null
+        weight = 0.1
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-keys-rfid
+name = ITEM_KEYS_RFID
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-rfid
+        icon-small = icon-rfid-small
+        tag = client
+    }
+    {
+        class = content.components.QuestOnlyComponent
+        quest = quest-deal-1
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = keys-move-1, keys-move-2, keys-move-3, keys-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.2
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-keys-pharm
+name = ITEM_KEYS_PHARM
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-keys-pharm
+        icon-small = icon-keys-pharm-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = keys-move-1, keys-move-2, keys-move-3, keys-move-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.2
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableContent
+id = freeplay-keys-bank
+name = ITEM_KEYS_BANK
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-keys-bank
+        icon-small = icon-keys-bank-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.2
+    }
+]

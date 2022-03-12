@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-spas12-default
+name = ITEM_WEAP_SPAS12
+slot = sl-pri-spas12

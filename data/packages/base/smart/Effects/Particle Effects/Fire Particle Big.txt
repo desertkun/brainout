@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = fire-particle-big
+particle = base:particles/fire-big
+tag = client

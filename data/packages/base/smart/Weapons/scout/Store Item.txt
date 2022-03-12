@@ -1,0 +1,66 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-scout
+components = [
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+	{
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-scout
+    skins = skin-weapon-scout-default, skin-weapon-scout-cerise, skin-weapon-scout-calm, skin-weapon-scout-rogue
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-scout-clip-extended
+        recoil = upgrade-scout-recoil
+        reload-time = upgrade-scout-reload-time
+        scope = upgrade-scout-scope-optical
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_SCOUT
+slot = slot-primary
+category = sniper
+tags = unique
+index = 66
+
+--------
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 55000
+        currency = ru
+    }
+}
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		for = blueprint-scout
+		icon = icon-blueprint
+		param = 1
+        unlockTitle = MENU_LOCKED_BLUEPRINT
+    }
+}
+
+

@@ -1,0 +1,22 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-hand
+        tag = client
+    }
+]
+id = profile-badge-hand
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = deaths
+        param = 1000
+        unlockTitle = ACHIEVEMENT_VICTIM_DESC
+    }
+}

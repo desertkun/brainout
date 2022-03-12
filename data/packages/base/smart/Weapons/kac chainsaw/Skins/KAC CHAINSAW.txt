@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-kac-chainsaw-default
+name = ITEM_WEAP_KAC_CHAINSAW
+slot = sl-pri-kac-chainsaw

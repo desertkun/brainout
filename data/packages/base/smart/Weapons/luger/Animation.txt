@@ -1,0 +1,5 @@
+animation = base:animations/weapon-luger.json
+class = content.Animation
+id = anim-luger
+states = []
+timeScale = 1

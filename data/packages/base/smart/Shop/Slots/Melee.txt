@@ -1,0 +1,14 @@
+class = content.shop.Slot
+components = []
+default = sl-ml-knife
+id = slot-melee
+name = SLOT_SECONDARY
+categories = [
+    {
+        id = melee
+        title = SLOT_CATEGORY_KNIFES
+    }
+]
+tags = [
+]
+width = 100

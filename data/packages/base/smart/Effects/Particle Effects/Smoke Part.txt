@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = smoke-part
+particle = base:particles/smoke-effect-2
+tag = client

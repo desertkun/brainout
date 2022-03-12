@@ -1,0 +1,33 @@
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-claymore
+        class = content.components.ThrowableAnimationComponent
+        skin = throwable-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = explosive
+        weight = 1
+    }
+]
+name = ITEM_SPECIAL_CLAYMORE
+defaultSkin = skin-instrument-claymore-default
+id = instrument-claymore
+instrumentTags = c4, explosive
+slot = slot-special
+throwActive = claymore-active
+throwPower = 6
+throwTime = 1
+throwable = false

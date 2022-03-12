@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-colt
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+instrument = {
+    id = weapon-colt
+    skins = skin-weapon-colt-default, skin-weapon-colt-pro, skin-weapon-colt-harding, skin-weapon-colt-judge, skin-weapon-colt-rassel, skin-weapon-colt-pigeon
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-colt-clip-extended
+	    silencer = upgrade-colt-silencer
+    }
+}
+items = [
+    {
+        amount = 21
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_COLT
+slot = slot-secondary
+category = pistol
+tags = missions, classic
+index = 8
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = headshots-from, weapon-desert
+        param = 45
+        unlockTitle = MENU_UNLOCK_COLT
+    }
+}

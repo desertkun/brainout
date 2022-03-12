@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = tundra
+id = skin-player-tundra
+name = ITEM_PLAYER_SKIN_TUNDRA

@@ -1,0 +1,26 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            butt = on
+        }
+        tag = client
+    }
+    {
+        big-icon = vp70-butt
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_VP70_BUTT_DESC
+id = upgrade-vp70-butt
+name = ITEM_UPGRADE_VP70_BUTT
+properties = {
+    accuracy = "+20"
+    recoil = "-20"
+    speed-coef = "=0.91"
+    shoot-modes = "=burst,single"
+}

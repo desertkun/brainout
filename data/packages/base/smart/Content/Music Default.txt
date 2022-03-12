@@ -1,0 +1,4 @@
+class = content.Music
+id = music-default
+music = base:music/bg.mp3
+tag = client

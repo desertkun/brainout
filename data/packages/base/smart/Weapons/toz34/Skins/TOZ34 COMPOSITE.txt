@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-toz34-composite
+        tag = client
+    }
+]
+data = weapon-composite
+id = skin-weapon-toz34-composite
+name = ITEM_WEAP_TOZ34_COMPOSITE
+slot = sl-pri-toz34
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

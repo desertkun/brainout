@@ -1,0 +1,4 @@
+class = content.effect.SoundEffect
+id = move-weapon-snd
+sound = mainmenu:sounds/trophy.mp3
+tag = client

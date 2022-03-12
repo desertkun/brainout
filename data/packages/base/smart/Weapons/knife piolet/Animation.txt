@@ -1,0 +1,5 @@
+animation = base:animations/weapon-piolet.json
+class = content.Animation
+id = anim-piolet
+states = []
+timeScale = 1

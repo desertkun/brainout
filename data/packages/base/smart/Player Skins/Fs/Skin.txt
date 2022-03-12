@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = fs
+id = skin-player-fs
+name = ITEM_PLAYER_SKIN_fs

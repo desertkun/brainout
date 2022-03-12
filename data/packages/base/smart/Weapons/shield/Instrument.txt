@@ -1,0 +1,59 @@
+class = content.instrument.Instrument
+components = [
+    {
+        animation = anim-shield
+        attach-to = primaryUpper
+        class = content.components.InstrumentAnimationComponent
+        icon-scale = 0.5
+        skin = instrument-default
+        states = {
+            aimHit = hold-shield
+            hit = hold-shield
+            hold = hold-shield
+        }
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 1
+    }
+    {
+        class = content.components.ShieldComponent
+        slot = phy
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            damaged-hit = [
+                sparkle-1, shield-hit-damaged-snd-1, wood-hit-part-1
+            ]
+        }
+        hit = [
+            sparkle-1, shield-hit-snd-1, wood-hit-part-1
+            sparkle-1, shield-hit-snd-2, wood-hit-part-1
+        ]
+        tag = client
+    }
+    {
+        class = content.components.InstrumentHealthComponent
+        damageCoef = {
+            knife-bullet = 0
+            bullet-9mmx18 = 0.5
+            bullet-7.62x39 = 1.1
+            bullet-45acp = 1.1
+            bullet-357-magnum = 1.2
+            bullet-7.62x51 = 3.5
+            bullet-9.3x74R = 4
+            bullet-338-Lapua = 4
+            bullet-12.7x55 = 4.5
+            m72law-bullet = 5
+            rpg7-bullet = 5
+        }
+        health = 2000
+        tag = server
+    }
+]
+defaultSkin = skin-instrument-shield-default
+id = instrument-shield
+slot = slot-primary
+speedCoef = 0.8
+throwable = false

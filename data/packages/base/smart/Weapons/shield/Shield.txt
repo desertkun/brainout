@@ -1,0 +1,5 @@
+animation = base:animations/instrument-shield.json
+class = content.Animation
+id = anim-shield
+states = []
+timeScale = 1

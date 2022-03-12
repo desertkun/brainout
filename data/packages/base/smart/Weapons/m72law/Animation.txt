@@ -1,0 +1,5 @@
+animation = base:animations/weapon-m72law.json
+class = content.Animation
+id = anim-m72law
+states = []
+timeScale = 1

@@ -1,0 +1,56 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 0
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        actions = [
+            {
+                effects = knife-swing
+                for = sound
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-knife
+        class = content.components.WeaponAnimationComponent
+        skin = knife-default
+        states = {
+            aim = hold-zombie
+            aimHit = hold-zombie
+            hit = hold-zombie
+            hold = hold-zombie
+            reload = hold-zombie
+            fetch = hold-zombie
+        }
+    }
+]
+defaultSkin = skin-weapon-knife-default
+id = weapon-zombie-knife
+instrumentTags = knife
+launchTime = 1
+primary = {
+    allowedBullets = knife-bullet
+    damage = 60
+    fire-rate = 400
+    silenced = true
+    unlimited = true
+    visible = false
+}
+slot = slot-melee
+speedCoef = 1
+throwable = false

@@ -1,0 +1,29 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        big-icon = icon-peacemaker-6rounds
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_6ROUNDS_DESC
+id = upgrade-peacemaker-6rounds
+name = ITEM_UPGRADE_6ROUNDS
+properties = {
+    clip-size = "=6"
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-peacemaker
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

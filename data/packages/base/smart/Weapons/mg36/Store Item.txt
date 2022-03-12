@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-mg36
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+instrument = {
+    id = weapon-mg36
+    skins = skin-weapon-mg36-default, skin-weapon-mg36-amadeus, skin-weapon-mg36-steel, skin-weapon-mg36-sandstorm
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-mg36-accuracy
+        recoil = upgrade-mg36-recoil
+        reload-time = upgrade-mg36-reload-time
+ 	scope = upgrade-mg36-scope-eotech
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_MG36
+slot = slot-primary
+category = other
+tags = missions
+index = 103
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-m4a1-zoom
+        param = 400
+		unlockTitle = MENU_UNLOCK_MG36
+    }
+}

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-pistol.json
+class = content.Animation
+id = anim-pistol
+states = []
+timeScale = 1

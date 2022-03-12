@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = instrument-electro-guitar
+id = skin-instrument-electro-guitar-default
+name = ITEM_SPECIAL_ELECTRO_GUITAR
+slot = sl-spc-electro-guitar	

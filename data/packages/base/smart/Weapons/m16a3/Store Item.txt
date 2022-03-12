@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-m16a3
+instrument = {
+    id = weapon-m16a3
+    skins = skin-weapon-m16a3-default, skin-weapon-m16a3-woodland, skin-weapon-m16a3-veteran, skin-weapon-m16a3-insurgency, skin-weapon-m16a3-detective, skin-weapon-m16a3-noble, skin-weapon-m16a3-pull
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-m16a3-doubleclip
+        holder = upgrade-m16a3-holder
+        recoil = upgrade-m16a3-recoil
+        scope = upgrade-m16a3-scope-acog, upgrade-m16a3-scope-eotech
+        shoot-time = upgrade-m16a3-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_M16A3
+slot = slot-primary
+category = assault
+tags = level
+index = 189
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 60
+    }
+}

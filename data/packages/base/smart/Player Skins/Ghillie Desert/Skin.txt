@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = ghillie-desert
+id = skin-player-ghillie-desert
+name = ITEM_PLAYER_SKIN_GHILLIE_DESERT

@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-default
+id = skin-instrument-chip-default
+name = ITEM_SPECIAL_CHIP

@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-woe
+        class = content.components.IconComponent
+        icon = knife-woe
+        tag = client
+    }
+]
+id = sl-ml-knife-woe
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-woe
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_WOE
+slot = slot-melee
+category = melee
+tags = unique
+index = 10
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

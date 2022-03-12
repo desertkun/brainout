@@ -1,0 +1,55 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.AnimatedIconComponent
+        frames = [
+            {
+                frame = medal-templar-3-1
+                delay = 2
+            }
+            {
+                frame = medal-templar-3-2
+                delay = 0.05
+            }
+            {
+                frame = medal-templar-3-3
+                delay = 0.05
+            }
+            {
+                frame = medal-templar-3-4
+                delay = 0.05
+            }
+            {
+                frame = medal-templar-3-5
+                delay = 0.05
+            }
+            {
+                frame = medal-templar-3-6
+                delay = 0.05
+            }
+        ]
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_TEMPLAR_DESC
+id = medal-templar-3
+name = "{MEDAL_TEMPLAR} 3"
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_TEMPLAR_DESC
+    }
+}

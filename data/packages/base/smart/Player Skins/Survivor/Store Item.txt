@@ -1,0 +1,29 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-survivor
+        tag = client
+    }
+]
+id = sl-skin-survivor
+items = []
+name = ITEM_PLAYER_SKIN_SURVIVOR
+skin = skin-player-survivor
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 42
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = survivor-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}

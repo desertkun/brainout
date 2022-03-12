@@ -1,0 +1,67 @@
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientBackgroundMusicComponent
+        music = freeplay:sounds/rain-inside.mp3
+        tag = client
+    }
+]
+id = fr-ac-inside
+
+--------
+
+class = content.effect.BackgroundSoundEffect
+sound = freeplay:sounds/thunder-1.mp3
+tag = client
+id = freeplay-thunder-1
+
+--------
+
+class = content.effect.BackgroundSoundEffect
+sound = freeplay:sounds/thunder-2.mp3
+tag = client
+id = freeplay-thunder-2
+
+--------
+
+class = content.effect.BackgroundSoundEffect
+sound = freeplay:sounds/thunder-3.mp3
+tag = client
+id = freeplay-thunder-3
+
+--------
+
+class = content.effect.FlashEffect
+duration = 0.2
+tag = client
+id = freeplay-thunder-flash
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientBackgroundEffectComponent
+        particle = rain-part
+        tag = client
+    }
+    {
+        class = content.components.ClientBackgroundMusicComponent
+        music = freeplay:sounds/rain-outside.mp3
+        tag = client
+    }
+    {
+        class = content.components.ReoccurringActiveEffectComponent
+        effect = [
+            freeplay-thunder-flash, freeplay-thunder-1
+            freeplay-thunder-flash, freeplay-thunder-2
+            freeplay-thunder-flash, freeplay-thunder-3
+        ]
+        periodFrom = 10
+        periodTo = 45
+        tag = client
+    }
+]
+id = fr-ac-outside
+

@@ -1,0 +1,893 @@
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-pumpkin
+stat = blueprint-pumpkin
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_PUMPKIN}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-pumpkin
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-packmen
+stat = blueprint-packmen
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_PACKMEN}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-packmen
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-chainsaw
+stat = blueprint-chainsaw
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_CHAINSAW}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-chainsaw
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-scream
+stat = blueprint-scream
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_SCREAM}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-scream
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-alien
+stat = blueprint-alien
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_ALIEN}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-alien
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-imp
+stat = blueprint-imp
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_IMP}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-imp
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-jason
+stat = blueprint-jason
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_JASON}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-jason
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-zombie
+stat = blueprint-zombie
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_ZOMBIE}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-zombie
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-v
+stat = blueprint-v
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_V}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-v
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-horse
+stat = blueprint-horse
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_HORSE}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-horse
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-penny
+stat = blueprint-penny
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_PENNY}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-penny
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-brainout
+stat = blueprint-brainout
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_BRAINOUT}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-brainout
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-desertkun
+stat = blueprint-desertkun
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_DESERTKUN}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-desertkun
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-cone
+stat = blueprint-cone
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_CONE}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-cone
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-shark
+stat = blueprint-shark
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_SHARK}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-shark
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]
+
+--------
+
+class = content.consumable.ConsumableToStatContent
+id = freeplay-blueprint-mask-sun
+stat = blueprint-sun
+name = "{BLUEPRINT_FOR}: {ITEM_MASK_SUN}"
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-blueprint-mask
+        icon-small = icon-blueprint-mask-small
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = "<="
+                id = blueprint-sun
+                value = 0
+            }
+        ]
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.01
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 10
+                    from = 100
+                    to = 100
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,67 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.SuppressBulletAttachmentsComponent
+        suppress = fire-bone
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentEffectsComponent
+        replace = {
+            shoot = [
+                aac-shoot-1, pistol-shoot-smoke
+            ]
+        }
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            barrel = silencer
+        }
+        tag = client
+    }
+    {
+        big-icon = m3gg-barrel-silencer
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SILENCER_DESC
+id = upgrade-m3gg-barrel-silencer
+name = ITEM_UPGRADE_SILENCER
+properties = {
+    damage = "-5"
+    silent = "=1"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-m3gg
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

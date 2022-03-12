@@ -1,0 +1,214 @@
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-1
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 120
+        tag = client
+    }
+]
+id = consumable-item-trash-1
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 130
+        tag = client
+    }
+]
+id = consumable-item-trash-2
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-3
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 140
+        tag = client
+    }
+]
+id = consumable-item-trash-3
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-4
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 150
+        tag = client
+    }
+]
+id = consumable-item-trash-4
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-5
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 160
+        tag = client
+    }
+]
+id = consumable-item-trash-5
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-6
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 170
+        tag = client
+    }
+]
+id = consumable-item-trash-6
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-7
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 180
+        tag = client
+    }
+]
+id = consumable-item-trash-7
+name = ITEM_TRASH
+stacks = false
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-item-trash-8
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 190
+        tag = client
+    }
+]
+id = consumable-item-trash-8
+name = ITEM_TRASH
+stacks = false

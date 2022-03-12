@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-lisle-default
+name = ITEM_WEAP_LISLE
+slot = sl-pri-lisle

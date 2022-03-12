@@ -1,0 +1,26 @@
+angleOffset = {
+    max = 25
+    min = -25
+}
+attached = grenade-pin
+class = content.effect.PhysicEffect
+friction = 0.5
+id = grenade-pin-physic
+mass = 2
+reduce = -0.4
+speed = {
+    max = 10
+    min = 5
+}
+spring = {
+    max = 0.5
+    min = 0.25
+}
+tag = client
+
+--------
+
+class = content.effect.ParticleEffect
+id = grenade-pin
+particle = base:particles/grenade-pin
+tag = client

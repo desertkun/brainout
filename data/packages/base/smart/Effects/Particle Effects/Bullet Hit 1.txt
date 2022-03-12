@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = bullet-hit-1
+particle = base:particles/bullet-hit-1
+tag = client

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mat49.json
+class = content.Animation
+id = anim-mat49
+states = []
+timeScale = 1

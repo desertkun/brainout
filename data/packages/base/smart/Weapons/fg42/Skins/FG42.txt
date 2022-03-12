@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-fg42-default
+name = ITEM_WEAP_FG42
+slot = sl-pri-fg42

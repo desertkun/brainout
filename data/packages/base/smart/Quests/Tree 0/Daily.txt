@@ -1,0 +1,58 @@
+class = content.quest.DailyQuest
+id = quest-daily
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-daily
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutRandomItem
+        category = weapon
+        hash = a
+        share = 6
+    }
+    2 = {
+        class = content.quest.task.TakeOutRandomItem
+        category = ammo
+        hash = a
+    }
+    3 = {
+        class = content.quest.task.TakeOutRandomItem
+        category = ammo
+        hash = b
+        share = 10
+    }
+    4 = {
+        class = content.quest.task.TakeOutRandomItem
+        category = other
+        hash = a
+    }
+    5 = {
+        class = content.quest.task.TakeOutRandomItem
+        category = other
+        hash = b
+        share = 10
+    }
+    6 = {
+        class = content.quest.task.TakeOutRandomItem
+        category = dogtags
+    }
+}
+
+cycle = 28800
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_DAILY
+
+rewards = [
+    {
+        action = unlock
+        id = case-confiscate
+        amount = 1
+    }
+]

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-scorpion-default
+name = ITEM_WEAP_SCORPION
+slot = sl-sec-scorpion

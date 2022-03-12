@@ -1,0 +1,67 @@
+class = content.effect.SoundEffect
+tag = client
+id = 00-item-crate-open
+sound = freeplay:sounds/crateOpening.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 00-item-crate-close
+sound = freeplay:sounds/crateClosing.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 01-item-bag-open
+sound = freeplay:sounds/smuggling.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 01-item-bag-close
+sound = freeplay:sounds/smuggling-closing.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 02-item-locker-open
+sound = freeplay:sounds/lockerOpening.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 02-item-locker-close
+sound = freeplay:sounds/lockerClosing.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 03-item-cardboard-open
+sound = freeplay:sounds/cardboardOpen.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 03-item-cardboard-close
+sound = freeplay:sounds/cardboardClose.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 04-item-wood-chest-open
+sound = freeplay:sounds/woodCrateOpening.mp3
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = 04-item-wood-chest-close
+sound = freeplay:sounds/woodCrateClosing.mp3

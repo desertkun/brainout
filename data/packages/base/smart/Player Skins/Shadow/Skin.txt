@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = shadow
+id = skin-player-shadow
+name = ITEM_PLAYER_SKIN_SHADOW

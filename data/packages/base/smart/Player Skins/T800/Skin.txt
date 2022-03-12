@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = t800
+id = skin-player-t800
+name = ITEM_PLAYER_SKIN_TERMINATOR

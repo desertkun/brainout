@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-pistol-default
+name = ITEM_WEAP_PISTOL
+slot = sl-sec-pistol

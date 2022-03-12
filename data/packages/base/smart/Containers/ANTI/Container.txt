@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-anti
+    }
+    {
+        groups = cardgroup-anti
+    }
+    {
+        groups = cardgroup-anti
+    }
+    {
+        groups = cardgroup-anti
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = anti-case-bg
+        class = content.components.IconComponent
+        icon = anti-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_ANTI_DESC
+id = case-anti
+name = CASE_ANTI

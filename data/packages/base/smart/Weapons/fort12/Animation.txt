@@ -1,0 +1,5 @@
+animation = base:animations/weapon-fort12.json
+class = content.Animation
+id = anim-fort12
+states = []
+timeScale = 1

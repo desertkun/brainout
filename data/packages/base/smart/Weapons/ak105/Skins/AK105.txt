@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-ak105-default
+name = ITEM_WEAP_AK105
+slot = sl-pri-ak105

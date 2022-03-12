@@ -1,0 +1,18 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_ACCURACY_DESC
+id = upgrade-mg42-accuracy
+level-kind = tech-level
+name = ITEM_UPGRADE_ACCURACY
+prefix = mg42
+upgrades = [
+    upgrade-accuracy-1
+    upgrade-accuracy-2
+    upgrade-accuracy-3
+    upgrade-accuracy-4
+    upgrade-accuracy-5
+    upgrade-accuracy-6
+    upgrade-accuracy-7
+    upgrade-accuracy-8
+    upgrade-accuracy-9
+    upgrade-accuracy-10
+]

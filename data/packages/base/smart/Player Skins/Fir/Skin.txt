@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = fir
+id = skin-player-fir
+name = ITEM_PLAYER_SKIN_FIR

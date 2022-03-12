@@ -1,0 +1,4 @@
+class = content.Sound
+id = achievement-unlocked-snd
+sound = base:sounds/achievement-unlocked.mp3
+tag = client

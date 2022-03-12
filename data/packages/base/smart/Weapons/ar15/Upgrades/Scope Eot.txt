@@ -1,0 +1,52 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = eotech
+        }
+        tag = client
+    }
+    {
+        big-icon = ak74m-scope-eotech
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_EOT_DESC
+id = upgrade-ar15-scope-eot
+name = ITEM_UPGRADE_SCOPE_EOT
+properties = {
+    accuracy = "+10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-ar15
+        param = 2
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

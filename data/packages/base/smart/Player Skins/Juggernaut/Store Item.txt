@@ -1,0 +1,33 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-juggernaut
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-skin-juggernaut
+items = []
+name = ITEM_PLAYER_SKIN_JUGGERNAUT
+skin = skin-player-juggernaut
+slot = slot-player-skin
+category = outfit
+tags = resources
+index = 404
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_UNIFORM_CONTRABAND
+    }
+}

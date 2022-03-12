@@ -1,0 +1,124 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        fetch = []
+        reload = toz34-reload
+        reloadSecondary = []
+        shoot = [
+            toz34-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            toz34-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            toz34-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 3
+    }
+    {
+        actions = [
+            {
+                effects = [
+                    [
+                        shotgun-shell-1-snd
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                ]
+                for = drop-bullets
+                type = effect
+            }
+            {
+                effects = toz34-reload-1, toz34-reload-1
+                for = add-bullet
+                type = effect
+            }
+            {
+                effects = toz34-close
+                for = toz34-close
+                type = effect
+            }
+            {
+                effects = toz34-open
+                for = toz34-open
+                type = effect
+            }
+            {
+                for = opened
+                type = animate
+                animation = open
+            }
+            {
+                for = closed
+                type = animate
+                animation = close
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-spr220
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-toz34
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-spr220-default
+id = weapon-spr220
+instrumentTags = primary
+primary = {
+    accuracy = 20
+    aimDistance = 30
+    allowedBullets = bullet-12-76
+    clipSize = 2
+    damage = 120
+    fire-rate = 1000
+    noHalfReload = false
+    noUnload = false
+    perBulletReload = false
+    pullRequired = false
+    fetchTime = 0
+    recoil = 60
+    reloadTime = 2
+    shootModes = single
+    silenced = false
+    shell-auto-eject = false
+}
+slot = slot-primary

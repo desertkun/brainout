@@ -1,0 +1,17 @@
+class = content.Layout
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-layout
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+id = layout-2
+key = "2"
+name = MENU_LAYOUT_2
+order = 1

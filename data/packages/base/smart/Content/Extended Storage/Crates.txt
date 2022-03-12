@@ -1,0 +1,87 @@
+
+animation = base:animations/instrument-extended-st.json
+class = content.Animation
+id = anim-ext-st
+states = []
+timeScale = 1
+
+--------
+
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-ext-st
+        class = content.components.InstrumentAnimationComponent
+        skin = ok
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-extended-storage-crate
+        icon-small = chip
+        tag = client
+    }
+    {
+        class = content.components.UniqueComponent
+        category = hands
+        lock = true
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = battery-move-1
+        tag = client
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = battery-item-picked
+        weight = 8
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 10000
+        tag = client
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                id = extended-storage
+                func = "<"
+                value = 4
+            }
+        ]
+    }
+    {
+        class = content.components.FreePlayAddStatExitComponent
+        stat = extended-storage
+        amount = 1
+        tag = server
+    }
+]
+defaultSkin = skin-instrument-ext-st-default
+forceSelect = true
+stacks = false
+id = instrument-ext-st
+speedCoef = 0.75
+throwable = true
+name = ITEM_EXTENDED_STORAGE_CRATE
+description = ITEM_EXTENDED_STORAGE_CRATE_DESC
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = []
+data = ok
+id = skin-instrument-ext-st-default
+name = ITEM_EXTENDED_STORAGE_CRATE
+description = ITEM_EXTENDED_STORAGE_CRATE_DESC

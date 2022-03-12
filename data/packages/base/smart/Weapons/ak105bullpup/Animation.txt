@@ -1,0 +1,5 @@
+animation = base:animations/weapon-ak105bullpup.json
+class = content.Animation
+id = anim-ak105bullpup
+states = []
+timeScale = 1

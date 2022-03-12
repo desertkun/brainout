@@ -1,0 +1,37 @@
+{
+	"content": 
+	{
+		"music-list-construction":
+		{
+			"class": "content.MusicList",
+			"tag": "client",
+			"list":
+			[
+				"music-construction"
+			]
+		},
+		"music-construction":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "map_construction:music/bg.mp3"
+		},
+		"parr-construction":
+		{
+			"class": "content.parallax.Parallax",
+			"tag": "client",
+			"layers": [
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "construction-parr-sky-root-repeat",
+					"x": 0,
+					"y": 0,
+					"coefX": 0.1,
+					"coefY": 0.0,
+					"scale": true
+				}
+			]
+		}
+	},
+	"textures": "data/textures/textures.json"
+}

@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-m4a1-zoom
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+instrument = {
+    id = weapon-m4a1-zoom
+    skins = skin-weapon-m4a1-zoom-default, skin-weapon-m4a1-zoom-vulcan, skin-weapon-m4a1-zoom-defence, skin-weapon-m4a1-zoom-flecktarn, skin-weapon-m4a1-zoom-mummy, skin-weapon-m4a1-zoom-sweetie
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-m4a1-zoom-accuracy
+        butt = upgrade-g36-butt-plastic
+        clip = upgrade-g36-clip-extended
+        holder = upgrade-g36-holder
+        recoil = upgrade-m4a1-zoom-recoil
+        reload-time = upgrade-m4a1-zoom-reload-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_M4A1_ZOOM
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 6
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 9
+    }
+}

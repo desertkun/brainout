@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = vietcong
+id = skin-player-vietcong
+name = ITEM_PLAYER_SKIN_VIETCONG

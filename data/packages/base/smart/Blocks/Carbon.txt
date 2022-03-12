@@ -1,0 +1,67 @@
+class = content.block.Concrete
+components = [
+    {
+        chances = {
+            * = 0.5
+            instrument-digger = 1
+        }
+        class = content.components.DropComponent
+        dropItem = def-drop-item
+        tag = server
+    }
+    {
+        class = content.components.ConnectionComponent
+        data = [
+            carbon-0
+            carbon-1
+            carbon-2
+            carbon-3
+            carbon-4
+            carbon-5
+            carbon-6
+            carbon-7
+            carbon-8
+            carbon-9
+            carbon-10
+            carbon-11
+            carbon-12
+            carbon-13
+            carbon-14
+            carbon-15-0, carbon-15-1
+        ]
+        stickId = carbon
+        stickTo = carbon
+        strategy = random
+        tag = client
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        destroy = {
+            @if = "$editor != true"
+            @then = metal-destroy-snd-1, metal-destroy-snd-2
+        }
+        hit = [
+            sparkle-1, metal-hit-snd-1
+            sparkle-1, metal-hit-snd-2
+            sparkle-1, metal-hit-snd-3
+        ]
+        step = metal-step-snd-1, metal-step-snd-2, metal-step-snd-3, metal-step-snd-4
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-carbon
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+contactId = carbon
+static = true
+contactStrategy = combined
+contactTo = core, brick, carbon, ground, platform
+id = carbon
+name = ITEM_BG_CARBON
+resist = 2

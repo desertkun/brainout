@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-m98k-default
+name = ITEM_WEAP_M98K
+slot = sl-pri-m98k

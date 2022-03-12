@@ -1,0 +1,53 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 0
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        actions = [
+            {
+                effects = knife-swing
+                for = sound
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-trench
+        class = content.components.WeaponAnimationComponent
+        skin = knife-trench
+        states = {
+            hit = hit-weapon-knife
+            hold = hold-weapon-knife
+        }
+    }
+]
+defaultSkin = skin-weapon-knife-trench
+id = weapon-knife-trench
+instrumentTags = knife
+launchTime = 1
+primary = {
+    allowedBullets = knife-bullet
+    damage = 260
+    fire-rate = 120
+    silenced = true
+    unlimited = true
+    visible = false
+    noUnload = true
+}
+slot = slot-melee
+speedCoef = 1.2
+throwable = false

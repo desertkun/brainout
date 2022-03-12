@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-cherry
+        class = content.components.IconComponent
+        icon = knife-cherry
+        tag = client
+    }
+]
+id = sl-ml-knife-cherry
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-cherry
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_CHERRY
+slot = slot-melee
+category = melee
+tags = unique
+index = 66
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = zveroboy-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ZVEROBOY
+    }
+}

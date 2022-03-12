@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-t13
+id = skin-instrument-grenade-t13-default
+name = ITEM_SPECIAL_T13
+slot = sl-grn-t13

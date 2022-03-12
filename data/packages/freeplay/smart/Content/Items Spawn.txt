@@ -1,0 +1,1352 @@
+class = content.FreePlayItems
+id = freeplay-items-spawm
+tag = server
+items = [
+  {
+    item = freeplay-blueprint-rs-ammobox-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-bag-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-cardbox-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-carpet-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-chair-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-chair-2
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-door-3
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-door-4
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-explosivebox-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-fridge-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-locker-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-locker-2
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-locker-3
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-medical-box-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-pc-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-poster-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-sofa-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-sofa-2
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-table-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-toilet-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-vent-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-1
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-3
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-4
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-5
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-6
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-7
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-8
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-rs-wall-9
+    amount = 1
+    tag = ""
+  }
+  {
+    item = res-ceramics
+    amount = 4
+    tag = ""
+  }
+  {
+    item = res-chemicals
+    amount = 5
+    tag = ""
+  }
+  {
+    item = res-glass
+    amount = 5
+    tag = ""
+  }
+  {
+    item = res-glue
+    amount = 5
+    tag = ""
+  }
+  {
+    item = res-metal
+    amount = 5
+    tag = ""
+  }
+  {
+    item = res-paint
+    amount = 5
+    tag = ""
+  }
+  {
+    item = res-paper
+    amount = 10
+    tag = ""
+  }
+  {
+    item = res-pcb
+    amount = 3
+    tag = ""
+  }
+  {
+    item = res-plastic
+    amount = 8
+    tag = ""
+  }
+  {
+    item = res-textile
+    amount = 3
+    tag = ""
+  }
+  {
+    item = res-wood
+    amount = 8
+    tag = ""
+  }
+  {
+    item = freeplay-keys-apartment
+    amount = 2
+    tag = ""
+  }
+  {
+    item = freeplay-pda
+    amount = 5
+    tag = ""
+  }
+  {
+    item = freeplay-keys-rfid
+    amount = 1
+    tag = cn
+  }
+  {
+    item = consumable-item-spark-dead
+    amount = 1
+    tag = swamp-engine
+  }
+  {
+    item = instrument-battery-dead
+    amount = 1
+    tag = swamp-engine
+  }
+  {
+    item = instrument-supply-bag
+    amount = 2
+    tag = swamp-sandbag
+  }
+  {
+    item = freeplay-blueprint-executor
+    amount = 1
+    tag = ""
+  }
+  {
+    item = instrument-ext-st
+    amount = 2
+    tag = "tower"
+  }
+  {
+    item = freeplay-blueprint-cn
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-pdrc
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-breacher
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-polar
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-ratnik
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-ghillie-desert
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-baltiets
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-scout
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-six12
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-kiparis
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-knife-butterfly
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-roks3
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-car15
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-swat
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-fsa
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-knife-butterfly
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-master
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-berill
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-raider
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-judge
+    amount = 1
+    tag = ""
+  }
+  {
+    item = blueprint-knife-butterfly
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-quest-broken-fuse
+    amount = 3
+    tag = bunker
+  }
+  {
+    item = freeplay-quest-fuse
+    amount = 3
+    tag = bunker
+  }
+  {
+    item = freeplay-blueprint-mask-pumpkin
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-packmen
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-chainsaw
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-scream
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-alien
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-imp
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-jason
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-zombie
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-v
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-horse
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-penny
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-brainout
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-cone
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-shark
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-mask-sun
+    amount = 1
+    tag = ""
+  }
+  {
+    item = radio-receiver
+    amount = 4
+    tag = ""
+  }
+  {
+    item = freeplay-parts-of-weapon-mp94
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-parts-of-weapon-roks3
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-blueprint-m72law
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-parts-of-weapon-m72law
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-parts-of-weapon-rgm40
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-keys-garage
+    amount = 2
+    tag = ""
+  }
+  {
+    item = freeplay-keys-pharm
+    amount = 2
+    tag = ""
+  }
+  {
+    item = freeplay-keys-bank
+    amount = 2
+    tag = ""
+  }
+  {
+    item = weapon-svd
+    skin = skin-weapon-svd-scarlet
+    upgrades = {
+      clip = upgrade-svd-clip-extended
+      scope = upgrade-svd-scope-pso
+    }
+    bonus = [
+      {
+        item = bullet-7.62x51
+        amount = 40
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-sniper
+    no_player = true
+  }
+  {
+    item = weapon-svu
+    skin = skin-weapon-svu-adaptive
+    upgrades = {
+      clip = upgrade-svu-clip-extended
+      scope = upgrade-svu-scope-cobra
+    }
+    bonus = [
+      {
+        item = bullet-7.62x51
+        amount = 40
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-sniper
+    no_player = true
+  }
+  {
+    item = weapon-vssm
+    skin = skin-weapon-vssm-default
+    upgrades = {
+      bipod = upgrade-vssm-bipod
+      scope = upgrade-vssm-scope-1p86
+    }
+    bonus = [
+      {
+        item = bullet-9mm-39
+        amount = 40
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-sniper
+    no_player = true
+  }
+  {
+    item = weapon-m98b
+    skin = skin-weapon-m98b-weaver
+    upgrades = {
+      scope = upgrade-m98b-scope-leupold
+    }
+    bonus = [
+      {
+        item = bullet-338-Lapua
+        amount = 32
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-sniper
+    no_player = true
+  }
+  {
+    item = weapon-vssk
+    skin = skin-weapon-vssk-default
+    upgrades = {
+      scope = upgrade-vssk-scope-optical
+    }
+    bonus = [
+      {
+        item = bullet-12.7x55
+        amount = 20
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-sniper
+    no_player = true
+  }
+  {
+    item = weapon-dvl10
+    skin = skin-weapon-dvl10-default
+    bonus = [
+      {
+        item = bullet-338-Lapua
+        amount = 32
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-sniper
+    no_player = true
+  }
+  {
+    item = weapon-rg6
+    bonus = [
+      {
+        item = grenade-bullet
+        amount = 12
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-gl
+    no_player = true
+  }
+  {
+    item = weapon-rpg7
+    skin = skin-weapon-rpg7-default
+    upgrades = {
+      scope = upgrade-rpg7-scope-optical
+    }
+    bonus = [
+      {
+        item = rpg7-bullet
+        amount = 4
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-gl
+    no_player = true
+  }
+  {
+    item = weapon-mg36
+    skin = skin-weapon-mg36-default
+    upgrades = {
+      scope = upgrade-mg36-scope-eotech
+    }
+    bonus = [
+      {
+        item = bullet-5.56x45
+        amount = 100
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-assault
+    no_player = true
+  }
+  {
+    item = weapon-rpk16
+    skin = skin-weapon-rpk16-default
+    upgrades = {
+      scope = upgrade-rpk16-scope-okp7
+      holder = upgrade-rpk16-holder
+      clip = upgrade-rpk16-clip-extended
+    }
+    bonus = [
+      {
+        item = bullet-5.45x39
+        amount = 100
+      }
+    ]
+    amount = 1
+    tag = bunker-bonus
+    exclusive = bunker-assault
+    no_player = true
+  }
+  {
+    item = instrument-grenade-he
+    skin = skin-instrument-grenade-he-default
+    amount = 4
+    tag = bunker-bonus
+    no_player = true
+  }
+  {
+    item = instrument-claymore
+    skin = skin-instrument-claymore-default
+    amount = 2
+    tag = bunker-bonus
+    no_player = true
+  }
+  {
+    item = consumable-item-medikit
+    amount = 5
+    tag = ""
+  }
+  {
+    item = consumable-item-walkietalkie
+    amount = 10
+    tag = ""
+  }
+  {
+    item = consumable-item-medikit
+    amount = 1
+    tag = pharm
+    no_player = true
+  }
+  {
+    item = consumable-item-medikit
+    amount = 1
+    tag = bunker-safe
+    no_player = true
+  }
+  {
+    item = consumable-item-bandages
+    amount = 6
+    tag = ""
+  }
+  {
+    item = consumable-item-bandages
+    amount = 2
+    tag = bunker-safe
+    no_player = true
+  }
+  {
+    item = consumable-item-bandages
+    amount = 2
+    tag = pharm
+    no_player = true
+  }
+  {
+    item = consumable-item-geiger
+    amount = 10
+    tag = ""
+  }
+  {
+    item = instrument-glowstick-red
+    amount = 2
+    tag = ""
+  }
+  {
+    item = instrument-glowstick-red
+    amount = 1
+    tag = bunker-safe
+    no_player = true
+  }
+  {
+    item = instrument-glowstick-green
+    amount = 2
+    tag = ""
+  }
+  {
+    item = instrument-glowstick-blue
+    amount = 2
+    tag = ""
+  }
+  {
+    item = instrument-glowstick-magenta
+    amount = 1
+    tag = ""
+  }
+  {
+    item = instrument-glowstick-orange
+    amount = 1
+    tag = ""
+  }
+  {
+    item = consumable-item-icecream
+    amount = 4
+    tag = fridge
+  }
+  {
+    item = consumable-item-water
+    amount = 4
+    tag = fridge
+  }
+  {
+    item = consumable-item-water
+    amount = 2
+    tag = ""
+  }
+  {
+    item = consumable-item-splint
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-radx
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-radx
+    amount = 1
+    tag = pharm
+    no_player = true
+  }
+  {
+    item = consumable-item-corn
+    amount = 6
+    tag = ""
+  }
+  {
+    item = consumable-item-energy-drink
+    amount = 4
+    tag = fridge
+  }
+  {
+    item = consumable-item-energy-drink
+    amount = 3
+    tag = ""
+  }
+  {
+    item = consumable-redbill
+    amount = 2
+    tag = ""
+  }
+  {
+    item = consumable-item-pickles
+    amount = 3
+    tag = ""
+  }
+  {
+    item = consumable-item-canned-goods
+    amount = 4
+    tag = fridge
+  }
+  {
+    item = consumable-item-canned-goods
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-paste
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-milk
+    amount = 2
+    tag = fridge
+  }
+  {
+    item = consumable-item-mre
+    amount = 5
+    tag = ""
+  }
+  {
+    item = consumable-item-mre
+    amount = 2
+    tag = bunker-safe
+    no_player = true
+  }
+  {
+    item = consumable-item-beans
+    amount = 5
+    tag = ""
+  }
+  {
+    item = consumable-item-caviar
+    amount = 2
+    tag = ""
+  }
+  {
+    item = consumable-item-toilet-paper
+    amount = 10
+    tag = ""
+  }
+  {
+    item = consumable-item-matches-1
+    amount = 10
+    tag = ""
+  }
+  {
+    item = consumable-item-matches-2
+    amount = 10
+    tag = ""
+  }
+  {
+    item = consumable-item-lighter-1
+    amount = 8
+    tag = ""
+  }
+  {
+    item = consumable-item-lighter-2
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-paint
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-vodka
+    amount = 3
+    tag = ""
+  }
+  {
+    item = consumable-item-vodka
+    amount = 2
+    tag = fridge
+  }
+  {
+    item = consumable-item-vodka
+    amount = 1
+    tag = pharm
+    no_player = true
+  }
+  {
+    item = consumable-item-pythonmeister
+    amount = 1
+    tag = fridge
+  }
+  {
+    item = consumable-item-pythonmeister
+    amount = 2
+    tag = ""
+  }
+  {
+    item = consumable-item-brandy
+    amount = 2
+    tag = ""
+  }
+  {
+    item = freeplay-cards-ru
+    amount = 1
+    tag = ""
+  }
+  {
+    item = freeplay-cards-en
+    amount = 1
+    tag = ""
+  }
+  {
+    item = instrument-binoculars
+    skin = skin-instrument-binoculars-default
+    amount = 4
+    tag = ""
+  }
+  {
+    item = instrument-guitar
+    skin = skin-instrument-guitar-default
+    amount = 5
+    tag = ""
+  }
+  {
+    item = instrument-flashlight
+    skin = skin-instrument-flashlight-default
+    amount = 8
+    tag = ""
+  }
+  {
+    item = item-backpack-alice
+    amount = 2
+    tag = ""
+  }
+  {
+    item = item-backpack-sports-green
+    amount = 1
+    tag = ""
+  }
+  {
+    item = item-backpack-sports-blue
+    amount = 1
+    tag = ""
+  }
+  {
+    item = item-backpack-sports-red
+    amount = 2
+    tag = ""
+  }
+  {
+    item = item-helmet-pasgt-fp
+    amount = 4
+    tag = ""
+  }
+  {
+    item = item-helmet-pasgt-fp
+    amount = 1
+    tag = bunker-safe
+    no_player = true
+  }
+  {
+    item = item-tactical-vest
+    amount = 6
+    tag = ""
+  }
+  {
+    item = item-tactical-vest
+    amount = 1
+    tag = bunker-safe
+    exclusive = bunker-safe
+    no_player = true
+  }
+  {
+    item = item-plate-carrier
+    amount = 5
+    tag = ""
+  }
+  {
+    item = item-plate-carrier
+    amount = 1
+    tag = bunker-safe
+    exclusive = bunker-safe
+    no_player = true
+  }
+  {
+    item = item-helmet-pasgt-fp
+    amount = 4
+    tag = ""
+  }
+  {
+    item = item-armor-vest-fp
+    amount = 4
+    tag = ""
+  }
+  {
+    item = item-armor-vest-fp
+    amount = 1
+    tag = bunker-safe
+    exclusive = bunker-safe
+    no_player = true
+  }
+  {
+    item = item-backpack-alice
+    amount = 1
+    tag = bunker-safe
+    no_player = true
+  }
+  {
+    item = weapon-flare
+    skin = skin-weapon-flare-default
+    amount = 2
+    tag = ""
+    bonus = [
+      {
+        item = flare-bullet-green
+        amount = 1
+      }
+    ]
+  }
+  {
+    item = weapon-scout
+    skin = skin-weapon-scout-default
+    amount = 1
+    tag = tunnel-safe
+    bonus = [
+      {
+        item = bullet-7.62x51
+        amount = 20
+      }
+    ]
+  }
+  {
+    item = consumable-item-bandages
+    amount = 1
+    tag = tunnel-safe
+  }
+  {
+    item = consumable-item-canned-goods
+    amount = 1
+    tag = tunnel-safe
+  }
+  {
+    item = instrument-grenade-flash
+    skin = skin-instrument-grenade-flash-default
+    amount = 1
+    tag = tunnel-safe
+  }
+  {
+    item = instrument-grenade-flash
+    skin = skin-instrument-grenade-flash-default
+    amount = 1
+    tag = tunnel-safe
+  }
+  {
+    item = instrument-binoculars
+    skin = skin-instrument-binoculars-default
+    amount = 1
+    tag = tower
+  }
+  {
+    item = consumable-item-water
+    amount = 2
+    tag = tower
+  }
+  {
+    item = bullet-7.62x51
+    amount = 40
+    group = [
+      10
+    ]
+    tag = tower
+  }
+  {
+    item = instrument-grenade-he-small
+    skin = skin-instrument-grenade-he-small-default
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-junk-1
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-2
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-3
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-4
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-5
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-6
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-7
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-8
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-9
+    amount = 3
+  }
+  {
+    item = consumable-item-junk-10
+    amount = 3
+  }
+  {
+    item = bullet-5.7x28
+    amount = 120
+    group = [
+      10
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-5.45x39
+    amount = 360
+    group = [30, 20, 10]
+    tag = ""
+  }
+  {
+    item = bullet-5.56x45
+    amount = 360
+    group = [30, 20, 10]
+    tag = ""
+  }
+  {
+    item = bullet-7.62x39
+    amount = 100
+    group = [25]
+    tag = ""
+  }
+  {
+    item = bullet-7.62x51
+    amount = 64
+    group = [4]
+    tag = ""
+  }
+  {
+    item = bullet-9.3x74R
+    amount = 40
+    group = [
+      5
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-9mmx18
+    amount = 240
+    group = [
+      20
+      10
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-9mmx19
+    amount = 120
+    group = [
+      10
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-9mm-39
+    amount = 120
+    group = [
+      10
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-12.7x55
+    amount = 48
+    group = [
+      4
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-12-slug
+    amount = 48
+    group = [
+      4
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-12-76
+    amount = 48
+    group = [
+      4
+    ]
+    tag = ""
+  }
+  {
+    item = grenade-bullet
+    amount = 6
+    tag = ""
+  }
+  {
+    item = bullet-45acp
+    amount = 60
+    group = [
+      10
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-338-Lapua
+    amount = 24
+    group = [
+      2
+    ]
+    tag = ""
+  }
+  {
+    item = bullet-357-magnum
+    amount = 24
+    group = [
+      4
+    ]
+    tag = ""
+  }
+  {
+    item = consumable-item-audio-player
+    amount = 3
+    tag = ""
+  }
+  {
+    item = consumable-item-casette-1
+    amount = 7
+    tag = ""
+  }
+  {
+    item = consumable-item-casette-2
+    amount = 7
+    tag = ""
+  }
+  {
+    item = consumable-item-gamegirl
+    amount = 1
+    tag = ""
+  }
+  {
+    item = consumable-item-brickgame
+    amount = 4
+    tag = ""
+  }
+  {
+    item = consumable-item-phone
+    amount = 1
+    tag = ""
+  }
+  {
+    item = consumable-item-watches
+    amount = 1
+    tag = ""
+  }
+  {
+    item = consumable-item-vhs-player
+    amount = 1
+    tag = ""
+  }
+  {
+    item = consumable-item-vhs-1
+    amount = 6
+    tag = ""
+  }
+  {
+    item = consumable-item-vhs-2
+    amount = 6
+    tag = ""
+  }
+  {
+    item = consumable-item-beeper
+    amount = 2
+    tag = ""
+  }
+  {
+    item = consumable-item-diskette
+    amount = 5
+    tag = ""
+  }
+  {
+    item = weapon-makarov
+    skin = skin-weapon-makarov-gold
+    bonus = [
+      {
+        item = bullet-9mmx18
+        amount = 16
+      }
+    ]
+    amount = 1
+    tag = bank
+    exclusive = bank-pistol
+    no_player = true
+  }
+  {
+    item = weapon-desert
+    skin = skin-weapon-desert-gold
+    bonus = [
+      {
+        item = bullet-357-magnum
+        amount = 7
+      }
+    ]
+    amount = 1
+    tag = bank
+    exclusive = bank-pistol
+    no_player = true
+  }
+  {
+    item = weapon-magnum
+    skin = skin-weapon-magnum-vip
+    bonus = [
+      {
+        item = bullet-357-magnum
+        amount = 6
+      }
+    ]
+    amount = 1
+    tag = bank
+    exclusive = bank-pistol
+    no_player = true
+  }
+  {
+    item = consumable-item-watches
+    amount = 1
+    tag = bank
+    no_player = true
+  }
+  {
+    item = consumable-item-brandy
+    amount = 2
+    tag = bank
+    exclusive = bank-drink
+    no_player = true
+  }
+  {
+    item = consumable-item-pythonmeister
+    amount = 2
+    tag = bank
+    exclusive = bank-drink
+    no_player = true
+  }
+]

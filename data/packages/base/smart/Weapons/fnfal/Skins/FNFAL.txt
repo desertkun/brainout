@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-fnfal-default
+name = ITEM_WEAP_FNFAL
+slot = sl-pri-fnfal

@@ -1,0 +1,27 @@
+class = content.shop.Slot
+components = []
+default = sl-skin-green
+id = slot-player-skin
+name = SLOT_PLAYER_SKIN
+categories = [
+    {
+        id = outfit
+        title = SLOT_CATEGORY_OUTFITS
+    }
+]
+tags = [
+    {
+        id = missions
+        title = SLOT_TAG_MISSIONS
+    }
+    {
+        id = resources
+        title = SLOT_TAG_RESOURCES
+    }
+    {
+        id = unique
+        title = SLOT_TAG_UNIQUE
+    }
+]
+stack = true
+width = 192

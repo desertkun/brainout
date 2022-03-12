@@ -1,0 +1,87 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = [
+            gl-insert-1
+        ]
+        shoot = [
+            [
+                {
+                    attachTo = fire-bone
+                    object = shoot-flash-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-smoke
+                }
+                {
+                    attachTo = fire-bone
+                    object = gl-shoot-1
+                }
+                {
+                    attachTo = fire-bone
+                    object = pistol-shoot-fire-1
+                }
+            ]
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 6
+    }
+    {
+        animation = anim-rgm40
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-2hands-underbarrel
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 24
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-rgm40-default
+id = weapon-rgm40
+instrumentTags = secondary
+primary = {
+    accuracy = 35
+    aimDistance = 30
+    allowedBullets = grenade-bullet
+    clipSize = 1
+    damage = 400
+    fire-rate = 100
+    perBulletReload = true
+    recoil = 29
+    reloadTime = 1.8
+    shootModes = single
+}
+slot = slot-secondary
+speedCoef = 1.1

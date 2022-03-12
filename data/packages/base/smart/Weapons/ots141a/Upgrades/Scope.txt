@@ -1,0 +1,53 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        big-icon = ots141a-scope-aimpoint
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = scope
+            cover = cover
+            grip = tactical
+        }
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_BURRIS_DESC
+id = upgrade-ots141a-scope
+name = ITEM_UPGRADE_SCOPE_AIMPOINT
+properties = {
+    accuracy = "+10"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-ots141a
+        param = 2
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

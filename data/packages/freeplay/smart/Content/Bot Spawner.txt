@@ -1,0 +1,22 @@
+class = content.active.BotSpawner
+components = [
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-freeplay-botspawner
+            tag = client
+        }
+    }
+	{
+		class = content.components.FreeplayBotSpawnerComponent
+		enabled = {
+			@if = "$editor == true"
+			@then = false
+			@else = true
+		}
+		tag = server
+	}
+]
+name = Bot Spawner
+id = fp-bot-spawner

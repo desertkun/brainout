@@ -1,0 +1,5 @@
+animation = base:animations/weapon-rgm40.json
+class = content.Animation
+id = anim-rgm40
+states = []
+timeScale = 1

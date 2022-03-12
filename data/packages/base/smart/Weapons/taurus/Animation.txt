@@ -1,0 +1,5 @@
+animation = base:animations/weapon-taurus.json
+class = content.Animation
+id = anim-taurus
+states = []
+timeScale = 1

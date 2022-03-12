@@ -1,0 +1,458 @@
+
+activationTime = 0.25
+blockEffect = false
+bulletTags = flare
+class = content.bullet.LimitedBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-projectile-grenade-1
+        ]
+        hit = []
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-bullet-flare-red
+        icon-small = icon-bullet-flare-red-small
+        tag = client
+    }
+    {
+        class = content.components.BulletThrowableComponent
+        tag = server
+        throw-active = flare-bullet-red-active
+        throw-power = 62
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = ammo
+        weight = 0.230
+    }
+]
+id = flare-bullet-red
+mass = 0.005
+maxDistance = 4
+name = ITEM_BULLET_FLARE_RED
+power = 0.02
+powerDistance = 64
+slot = secondary
+speed = 60
+timeToLive = 6
+good = 3
+
+--------
+
+activationTime = 0.25
+blockEffect = false
+bulletTags = flare
+class = content.bullet.LimitedBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-projectile-grenade-1
+        ]
+        hit = []
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-bullet-flare-green
+        icon-small = icon-bullet-flare-green-small
+        tag = client
+    }
+    {
+        class = content.components.BulletThrowableComponent
+        tag = server
+        throw-active = flare-bullet-green-active
+        throw-power = 62
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = ammo
+        weight = 0.230
+    }
+]
+id = flare-bullet-green
+mass = 0.005
+maxDistance = 4
+name = ITEM_BULLET_FLARE_GREEN
+power = 0.02
+powerDistance = 64
+slot = secondary
+speed = 60
+timeToLive = 6
+good = 3
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 1.8
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.EnemyDetectorComponent
+        detectClass = rg6
+        height = 4
+        period = 0.0125
+        tag = server
+        width = 4
+        x = -2
+        y = -2
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            white-smoke
+        ]
+        tag = client
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = physics, rg6
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rg6
+        tag = server
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.75
+        reduce = -0.25
+        rotateBySpeed = true
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-grenade-bullet
+        class = content.components.ActiveIconComponent
+        skin = throwable-default
+        tag = client
+    }
+    {
+        class = content.components.SpawnActiveComponent
+        tag = server
+        active = flare-bullet-green-active-light
+        effect = flare-effect-1
+        speedCoef = 0.1
+    }
+]
+id = flare-bullet-green-active
+name = ITEM_BULLET_FLARE_GREEN
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 1.8
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.EnemyDetectorComponent
+        detectClass = rg6
+        height = 4
+        period = 0.0125
+        tag = server
+        width = 4
+        x = -2
+        y = -2
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            white-smoke
+        ]
+        tag = client
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = physics, rg6
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rg6
+        tag = server
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.75
+        reduce = -0.25
+        rotateBySpeed = true
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-grenade-bullet
+        class = content.components.ActiveIconComponent
+        skin = throwable-default
+        tag = client
+    }
+    {
+        class = content.components.SpawnActiveComponent
+        tag = server
+        active = flare-bullet-red-active-light
+        effect = flare-effect-1
+        speedCoef = 0.1
+    }
+]
+id = flare-bullet-red-active
+name = ITEM_BULLET_FLARE_RED
+
+--------
+
+class = content.Effect
+id = flare-effect-1
+set = [
+    flare-explode-effect-1-snd, explosion-flash-1, explode-effect-1-shake
+]
+tag = client
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 8
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = physics, rg6
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            flare-green-part
+        ]
+        tag = client
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rg6
+        tag = server
+    }
+    {
+        animation = anim-lens-flare
+        class = content.components.ActiveIconComponent
+        skin = green
+        tag = client
+        play = [
+            animation
+        ]
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.008
+        reduce = -0.25
+        rotateBySpeed = false
+        width = 1
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = 008900cc
+        distance = 80
+        rays = 96
+        soft = 4
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.RequestDropOffComponent
+        kind = green
+        time = 3
+        tag = server
+    }
+]
+id = flare-bullet-green-active-light
+name = ITEM_BULLET_FLARE_GREEN
+
+--------
+
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 8
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClasses = physics, rg6
+        tag = server
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            flare-red-part
+        ]
+        tag = client
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = rg6
+        tag = server
+    }
+    {
+        animation = anim-lens-flare
+        class = content.components.ActiveIconComponent
+        skin = red
+        tag = client
+        play = [
+            animation
+        ]
+    }
+    {
+        class = content.components.ClientLightComponent
+        color = 890000cc
+        distance = 40
+        rays = 64
+        soft = 0
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        contactGap = 0.05
+        fixable = false
+        friction = 0.1
+        height = 1
+        mass = 0.008
+        reduce = -0.25
+        rotateBySpeed = false
+        width = 1
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.RequestDropOffComponent
+        kind = red
+        time = 3
+        tag = server
+    }
+]
+id = flare-bullet-red-active-light
+name = ITEM_BULLET_FLARE_RED
+
+--------
+
+class = content.effect.LightEffect
+color = 00ff00FF
+distance = 6
+id = flare-flash-green
+rays = 32
+soft = 3
+tag = client
+time = 15
+timeAfter = 5
+timeBefore = 0
+
+--------
+
+class = content.effect.LightEffect
+color = 00ff00FF
+distance = 6
+id = flare-flash-red
+rays = 32
+soft = 3
+tag = client
+time = 15
+timeAfter = 5
+timeBefore = 0
+
+--------
+
+animation = base:animations/lens-flare.json
+class = content.Animation
+id = anim-lens-flare
+states = []
+timeScale = 4
+
+--------
+
+class = content.effect.ParticleEffect
+id = flare-green-part
+particle = base:particles/flare-rocket-green
+tag = client
+
+--------
+
+class = content.effect.ParticleEffect
+id = flare-red-part
+particle = base:particles/flare-rocket-red
+tag = client
+

@@ -1,0 +1,45 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-sr3
+instrument = {
+    id = weapon-sr3
+    skins = skin-weapon-sr3-default, skin-weapon-sr3-taxi
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-sr3-clip-extended
+        reload-time = upgrade-sr3-reload-time
+        scope = upgrade-sr3-scope-cobra
+        shoot-time = upgrade-sr3-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mm-39
+    }
+]
+name = ITEM_WEAP_SR3
+slot = slot-primary
+category = assault
+tags = unique
+index = 61
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = exclusive-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_EXCLUSIVE
+    }
+}

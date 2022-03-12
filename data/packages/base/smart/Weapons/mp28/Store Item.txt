@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-pri-mp28
+instrument = {
+    id = weapon-mp28
+    skins = skin-weapon-mp28-default, skin-weapon-mp28-sturmtruppen
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-mp28-accuracy
+        recoil = upgrade-mp28-recoil
+        reload-time = upgrade-mp28-reload-time
+        shoot-time = upgrade-mp28-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_MP28
+slot = slot-primary
+category = submachine
+tags = unique
+index = 353
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = anti-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_ANTI
+    }
+}
+

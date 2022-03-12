@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-ml-knife-smerch
+    }
+]
+group = cardgroup-red-wow
+id = gen-weapon-knife-smerch
+name = ITEM_WEAP_KNIFE
+weight = 100

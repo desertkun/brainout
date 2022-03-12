@@ -1,0 +1,52 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-snowman
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = snowman
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = kills-mask-snowman
+        goal = GOAL_KILL_USING_MASK
+        value = 2022
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 3
+        class = content.components.UnlockStoreItemComponent
+        content = case-confiscate
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-snowman
+items = []
+name = ITEM_MASK_SNOWMAN
+player = player-mask-snowman
+slot = slot-mask
+category = mask
+tags = unique
+index = 23
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	icon = icon-battle-pass-points
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}

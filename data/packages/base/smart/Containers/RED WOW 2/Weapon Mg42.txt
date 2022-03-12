@@ -1,0 +1,21 @@
+class = content.gamecase.gen.ContentCard
+components = [
+    {
+        class = content.components.ClientContentCardComponent
+        flipEffect = contentOwned
+        tag = client
+    }
+    {
+        class = content.components.ServerContentCardComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.ContentCardComponent
+        content = sl-pri-mg42
+    }
+]
+group = cardgroup-red-wow-2
+id = gen-weapon-mg42
+name = CARD_TITLE_NEW_WEAPON
+weight = 100

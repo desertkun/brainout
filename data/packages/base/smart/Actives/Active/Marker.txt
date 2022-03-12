@@ -1,0 +1,10 @@
+class = content.active.Marker
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-marker
+        tag = client
+    }
+]
+id = marker
+name = ITEM_MARKER

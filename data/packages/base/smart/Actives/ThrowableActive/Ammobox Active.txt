@@ -1,0 +1,130 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.2
+        height = 1
+        mass = 0.25
+        reduce = -0.2
+        width = 1
+    }
+    {
+        class = content.components.FlipOnDetectComponent
+        detectClasses = physics
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-ammobox
+        class = content.components.ActiveIconComponent
+        rotateByX = 0
+        skin = throwable-default
+        tag = client
+    }
+    {
+        class = content.components.AmmoResourceDispenserComponent
+        consumables = {
+            bullet-5.56x45 = {
+                amount = 300
+                deliverAtTime = 30
+                minToHave = 60
+            }
+            bullet-5.7x28 = {
+                amount = 200
+                deliverAtTime = 30
+                minToHave = 40
+            }
+            bullet-5.45x39 = {
+                amount = 300
+                deliverAtTime = 30
+                minToHave = 60
+            }
+            bullet-9mm-39 = {
+                amount = 300
+                deliverAtTime = 30
+                minToHave = 60
+            }
+            bullet-9mmx18 = {
+                amount = 200
+                deliverAtTime = 30
+                minToHave = 40
+            }
+            bullet-9mmx19 = {
+                    amount = 200
+                    deliverAtTime = 30
+                    minToHave = 40
+            }
+            bullet-357-magnum = {
+                amount = 96
+                deliverAtTime = 8
+                minToHave = 24
+            }
+            bullet-45acp = {
+                amount = 60
+                deliverAtTime = 7
+                minToHave = 20
+            }
+            rpg7-bullet = {
+                amount = 2
+                deliverAtTime = 1
+                minToHave = 2
+            }
+            bullet-12-76 = {
+                amount = 64
+                deliverAtTime = 8
+                minToHave = 16
+            }
+            bullet-12-slug = {
+                amount = 64
+                deliverAtTime = 8
+                minToHave = 16
+            }
+            bullet-7.62x39 = {
+                amount = 200
+                deliverAtTime = 20
+                minToHave = 100
+            }
+            bullet-7.62x51 = {
+                amount = 30
+                deliverAtTime = 5
+                minToHave = 20
+            }
+            bullet-338-Lapua = {
+                amount = 30
+                deliverAtTime = 5
+                minToHave = 20
+            }
+			bullet-12.7x55 = {
+                amount = 20
+                deliverAtTime = 5
+                minToHave = 20
+            }
+        }
+        distance = 8
+        effect = ammo-delivered-effect
+        period = 4
+        rewardOwner = 2
+        tag = server
+        timeToLive = 60
+    }
+    {
+        class = content.components.LimitInstancesComponent
+        instancesCount = 1
+        itemsClass = special
+        tag = server
+    }
+]
+id = ammobox-active
+name = ITEM_SPECIAL_AMMOBOX
+showOnMinimap = false

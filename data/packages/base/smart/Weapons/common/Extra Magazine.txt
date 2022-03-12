@@ -1,0 +1,12 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_EXTRA_MAGAZINE_DESC
+id = upgrade-common-extra-mag
+level-kind = tech-level
+name = ITEM_UPGRADE_EXTRA_MAGAZINE
+prefix = common
+upgrades = upgrade-extra-mag-1, upgrade-extra-mag-2
+enabled = {
+    @if = "$freeplay == true"
+    @then = true
+    @else = false
+}

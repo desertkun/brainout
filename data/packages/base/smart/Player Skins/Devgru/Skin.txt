@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = devgru
+id = skin-player-devgru
+name = ITEM_PLAYER_SKIN_DEVGRU

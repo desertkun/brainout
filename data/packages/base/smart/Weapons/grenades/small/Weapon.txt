@@ -1,0 +1,64 @@
+class = content.instrument.Grenade
+components = [
+    {
+        aimDistance = 30
+        animation = anim-grenade-he
+        class = content.components.ThrowableAnimationComponent
+        skin = throwable-small
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        actions = [
+            {
+                effects = [
+                    [
+                        he-grenade-click-sound
+                        {
+                            attachTo = shell-bone
+                            object = grenade-pin-physic
+                        }
+                    ]
+                ]
+                for = cooked
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerGrenadeComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = explosive
+        weight = 0.1
+    }
+    {
+        icon = icon-grenade-he
+        big-icon = icon-grenade-he
+        icon-small = icon-grenade-he-small
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-grenade-he-small-default
+id = instrument-grenade-he-small
+instrumentTags = grenade, explosive, grenade
+slot = slot-special
+throwActive = explosive-he-small-active
+throwPower = 22
+throwable = false
+cockTime = 0.01
+name = ITEM_SPECIAL_MK3A2

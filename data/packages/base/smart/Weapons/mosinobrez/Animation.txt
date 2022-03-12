@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mosinobrez.json
+class = content.Animation
+id = anim-mosinobrez
+states = []
+timeScale = 1

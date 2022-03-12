@@ -1,0 +1,73 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = glock-reload
+        fetch = glock-fetch
+        shoot = [
+            taurus-shoot-1, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1
+    }
+    {
+        animation = anim-taurus
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-1hand
+            fetch = reload-1hand-fetch
+            addRound = add-round
+        }
+        icon-scale = 1.142
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 6
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-taurus-default
+id = weapon-taurus
+instrumentTags = secondary
+primary = {
+    accuracy = 40
+    aimDistance = 20
+    allowedBullets = bullet-45acp
+    clipSize = 10
+    magazineManagement = 2
+    damage = 55
+    fire-rate = 700
+    recoil = 40
+    reloadTime = 1.35
+    fetchTime = 0.4
+    shootModes = single
+}
+slot = slot-secondary

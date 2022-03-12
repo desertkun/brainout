@@ -1,0 +1,26 @@
+cards = [
+    {
+        groups = cardgroup-confiscate
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = confiscate-case-bg
+        class = content.components.IconComponent
+        icon = confiscate-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = cardboardRipOff
+        tag = client
+    }
+]
+description = CASE_CONFISCATE_DESC
+id = case-confiscate
+name = CASE_CONFISCATE

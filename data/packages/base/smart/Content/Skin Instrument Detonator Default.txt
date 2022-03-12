@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-default
+id = skin-instrument-detonator-default
+name = ITEM_SPECIAL_C4_DETONATOR
+slot = sl-spc-c4

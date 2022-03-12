@@ -1,0 +1,54 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+	    barrel = barrel-9.3
+        }
+        tag = client
+    }
+    {
+        big-icon = mp94-skin-b-9.3
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = "{ITEM_UPGRADE_BARREL_DESC} {ITEM_BULLET_93_74_R}"
+id = upgrade-mp94-barrel-9.3
+name = "{ITEM_UPGRADE_BARREL} {ITEM_BULLET_93_74_R}"
+properties = {
+    recoil = "-10"
+    bullet = "=bullet-9.3x74R"
+    damage = "=140"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-mp94
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

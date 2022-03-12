@@ -1,0 +1,33 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-m134
+instrument = {
+    id = weapon-m134
+    skins = skin-weapon-m134-default, skin-weapon-m134-sasha, skin-weapon-m134-protocol, skin-weapon-m134-chaingun
+}
+items = [
+    {
+        amount = 150
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_M134
+slot = slot-primary
+category = other
+tags = unique
+index = 347
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = terminator-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_TERMINATOR
+    }
+}

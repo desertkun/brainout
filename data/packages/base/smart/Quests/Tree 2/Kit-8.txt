@@ -1,0 +1,46 @@
+class = content.quest.Quest
+id = quest-kit-8
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-kit
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-rpk74
+        target = 1
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-mp443
+        target = 1
+    }
+}
+
+group = kit
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_KIT
+
+rewards = [
+    {
+        action = unlock
+        id = sl-skin-bear
+        amount = 1
+    }
+    {
+        action = unlock
+        id = case-gold
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 2000
+    }
+]

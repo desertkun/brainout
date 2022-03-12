@@ -1,0 +1,290 @@
+class = content.active.Player
+components = [
+    {
+        class = content.components.PlayerPhysicsComponent
+        contactGap = 1
+        height = 2
+        mass = 1
+        width = 2
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerPhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveProgressComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveProgressVisualComponent
+    }
+    {
+        @if = "$ragdoll != disabled"
+        @then = {
+            animationClass = content.components.PlayerAnimationComponent
+            class = content.components.RagDollComponent
+            detachBones = leg-1-1, leg-1-2, leg-2-1, leg-2-2
+            detachProbability = 0.5
+            tag = client
+            timeToLive = 30
+        }
+    }
+    {
+        class = content.components.PlayerChatComponent
+        tag = client
+    }
+    {
+        animation = anim-boar
+        stayTimeScale = {
+            min = 0.5
+            max = 1.5
+        }
+        class = content.components.PlayerAnimationComponent
+    }
+    {
+        class = content.components.ServerTeamVisibilityComponent
+        detectionTime = {
+            @else = 5
+            @if = "$shortVisibility == true"
+            @then = 3
+        }
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-player-default
+        tag = client
+    }
+    {
+        class = content.components.HealthComponent
+        health = 400
+        immortalTime = 1.5
+    }
+    {
+        class = content.components.PlayerEffectsComponent
+        custom = {
+            oink = [
+                oink-snd-1
+                oink-snd-2
+                oink-snd-3
+                oink-snd-4
+                oink-snd-5
+                oink-snd-6
+            ]
+            notice = [
+                oink-notice-1-snd
+                oink-notice-2-snd
+                oink-notice-3-snd
+                oink-notice-4-snd
+            ]
+        }
+        hit = [
+            player-hit-snd-1, player-blood-part-1-physic, player-blood-part-2-physic, player-blood-spray-part-1
+            player-hit-snd-2, player-blood-part-3-physic, player-blood-part-4-physic, player-blood-spray-part-2
+            player-hit-snd-1, player-blood-part-3-physic, player-blood-part-3-physic, player-blood-spray-part-1
+            player-hit-snd-2, player-blood-part-4-physic, player-blood-part-4-physic, player-blood-spray-part-1
+            player-hit-snd-1, player-blood-part-1-physic, player-blood-part-2-physic, player-blood-part-4-physic, player-blood-part-3-physic, player-blood-spray-part-2
+            player-hit-snd-2, player-blood-part-1-physic, player-blood-part-2-physic, player-blood-part-4-physic, player-blood-part-3-physic, player-blood-spray-part-2
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ColliderComponent
+        colliders = {
+            body = {
+                damageCoefficient = 1
+                height = 2.75
+                width = 2
+            }
+        }
+        tag = server
+    }
+    {
+        class = content.components.PlayerComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerPlayerColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerHealthComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveColliderComponent
+        tag = server
+    }
+    {
+        class = content.components.PlayerStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.PlayerBoostersComponent
+    }
+]
+defaultSkin = skin-boar-default
+id = player-boar
+jumpForce = 5
+jumpJetDelay = 0.3
+maxWeight = 15
+name = ITEM_PLAYER_DEFAULT
+states = {
+    normal = {
+        collider = {
+            body = {
+                x1 = -1.5
+                y1 = -1
+                x2 = 1.5
+                y2 = 1
+            }
+        }
+        height = 2
+        speed = {
+            x = 15
+            y = 17
+        }
+        width = 3
+    }
+    run = {
+        collider = {
+            body = {
+                x1 = -1.5
+                y1 = -1
+                x2 = 1.5
+                y2 = 1
+            }
+        }
+        height = 2
+        speed = {
+            x = 15
+            y = 15
+        }
+        width = 3
+    }
+}
+
+--------
+
+animation = freeplay:animations/boar.json
+class = content.Animation
+defaultMix = 0.25
+id = anim-boar
+states = [
+]
+skip-mix = [
+]
+timeScale = 2
+
+--------
+
+class = content.PlayerSkin
+components = []
+data = boar-default
+id = skin-boar-default
+name = Boar Default
+
+--------
+
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = icon-crow
+        class = content.components.IconComponent
+        icon = icon-crow
+        tag = client
+    }
+]
+data = weapon-default
+id = skin-weapon-boar-default
+name = ITEM_WEAP_CROW
+
+--------
+
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+        }
+        reload = []
+        shoot = []
+        switchMode = []
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0
+    }
+    {
+        animation = anim-weapon-boar
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+        }
+    }
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+defaultSkin = skin-weapon-boar-default
+id = weapon-boar
+primary = {
+    accuracy = 100
+    aimDistance = 60
+    allowedBullets = boar-bullet
+    damage = 100
+    fire-rate = 120
+    recoil = 29
+    reloadTime = 1
+    shootModes = auto
+}
+slot = slot-primary
+throwable = false
+
+--------
+
+class = content.bullet.LimitedBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = []
+        hit = []
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = null
+        weight = 0
+    }
+]
+dropable = false
+hitImpulse = 0
+id = boar-bullet
+mass = 0
+maxDistance = 5
+power = 1
+powerDistance = 10
+speed = 32
+
+--------
+
+animation = base:animations/weapon-crow.json
+class = content.Animation
+id = anim-weapon-boar
+states = []
+timeScale = 1

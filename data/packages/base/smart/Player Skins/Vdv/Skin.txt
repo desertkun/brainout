@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = vdv
+id = skin-player-vdv
+name = ITEM_PLAYER_SKIN_VDV

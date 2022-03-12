@@ -1,0 +1,44 @@
+class = content.instrument.Grenade
+components = [
+    {
+        aimDistance = 30
+        animation = anim-grenade-he
+        class = content.components.ThrowableAnimationComponent
+        skin = throwable-molotov
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerGrenadeComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = explosive
+        weight = 0.3
+    }
+    {
+        icon = icon-grenade-molotov
+        big-icon = icon-grenade-molotov
+        icon-small = icon-grenade-molotov-small
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+defaultSkin = skin-instrument-grenade-molotov-default
+id = instrument-grenade-molotov
+instrumentTags = grenade, explosive, grenade
+slot = slot-special
+throwActive = explosive-molotov-active
+throwPower = 22
+throwable = false
+cockTime = 0.01
+name = ITEM_SPECIAL_MOLOTOV

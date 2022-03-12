@@ -1,0 +1,5 @@
+animation = base:animations/weapon-sigsauer.json
+class = content.Animation
+id = anim-sigsauer
+states = []
+timeScale = 1

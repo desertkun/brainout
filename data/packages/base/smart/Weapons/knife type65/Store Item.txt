@@ -1,0 +1,38 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-type65
+        class = content.components.IconComponent
+        icon = knife-type65
+        tag = client
+    }
+]
+id = sl-ml-knife-type65
+instrument = {
+    id = weapon-knife-type65
+    skin = skin-weapon-knife-type65
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_TYPE65
+slot = slot-melee
+category = melee
+tags = unique
+index = 336
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-default
+id = skin-instrument-ammobox-default
+name = ITEM_SPECIAL_AMMO
+slot = sl-spc-ammobox

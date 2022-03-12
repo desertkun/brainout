@@ -1,0 +1,28 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-siber
+        tag = client
+    }
+]
+id = sl-skin-siber
+items = []
+name = ITEM_PLAYER_SKIN_SIBER
+skin = skin-player-siber
+slot = slot-player-skin
+category = outfit
+tags = unique
+index = 33
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

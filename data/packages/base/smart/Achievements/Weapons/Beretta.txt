@@ -1,0 +1,36 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-beretta
+        icon-locked = achievement-beretta-lock
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 2000
+        class = content.components.RuRewardComponent
+        tag = server
+    }
+]
+id = achievement-beretta
+name = ACHIEVEMENT_BERETTA
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-beretta
+        param = 500
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_BERETTA}"
+    }
+}

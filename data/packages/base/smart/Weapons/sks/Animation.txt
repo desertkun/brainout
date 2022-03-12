@@ -1,0 +1,5 @@
+animation = base:animations/weapon-sks.json
+class = content.Animation
+id = anim-sks
+states = []
+timeScale = 1

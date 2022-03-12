@@ -1,0 +1,56 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-ak108
+instrument = {
+    id = weapon-ak108
+    skins = skin-weapon-ak108-default, skin-weapon-ak108-alligator
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ak108-accuracy
+        holder = upgrade-ak108-holder
+        recoil = upgrade-ak108-recoil
+        reload-time = upgrade-ak108-reload-time
+        scope = upgrade-ak108-scope-burris
+        silencer = upgrade-ak108-silencer
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_AK108
+slot = slot-primary
+category = assault
+tags = unique
+index = 376
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = confiscate-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_CONFISCATE
+    }
+}

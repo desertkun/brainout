@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = terror
+id = skin-player-terror
+name = ITEM_PLAYER_SKIN_TERROR

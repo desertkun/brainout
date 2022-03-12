@@ -1,0 +1,5 @@
+animation = base:animations/weapon-puma.json
+class = content.Animation
+id = anim-puma
+states = []
+timeScale = 1

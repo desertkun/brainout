@@ -1,0 +1,5 @@
+animation = base:animations/weapon-nova.json
+class = content.Animation
+id = anim-nova
+states = []
+timeScale = 1

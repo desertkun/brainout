@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = sledge
+id = skin-player-sledge
+name = ITEM_PLAYER_SKIN_SLEDGE

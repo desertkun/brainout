@@ -1,0 +1,5 @@
+{
+	"name": "map_forest",
+	"dependency": ["base", "sounds"],
+	"version": "0.1"
+}

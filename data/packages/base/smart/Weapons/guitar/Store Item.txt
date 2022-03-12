@@ -1,0 +1,31 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+]
+description = ITEM_SPECIAL_GUITAR_DESC
+id = sl-spc-guitar
+instrument = {
+    id = instrument-guitar
+    skins = skin-instrument-guitar-default, skin-instrument-guitar-halloween, skin-instrument-guitar-dragon, skin-instrument-guitar-catrina
+}
+items = []
+name = ITEM_SPECIAL_GUITAR
+freeplay = false
+slot = slot-special
+category = special
+tags = unique
+index = 13
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = radioactive-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RADIOACTIVE
+    }
+}

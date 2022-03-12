@@ -1,0 +1,4 @@
+class = content.MusicList
+id = music-list-default
+list = music-default
+tag = client

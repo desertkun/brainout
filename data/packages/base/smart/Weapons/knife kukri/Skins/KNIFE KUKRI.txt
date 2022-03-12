@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-kukri
+        class = content.components.IconComponent
+        icon = knife-kukri
+        tag = client
+    }
+]
+data = knife-kukri
+id = skin-weapon-knife-kukri
+name = ITEM_WEAP_KNIFE_KUKRI
+slot = sl-ml-knife-kukri

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = kobra
+id = skin-player-kobra
+name = ITEM_PLAYER_SKIN_KOBRA

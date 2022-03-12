@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-pri-p90
+instrument = {
+    id = weapon-p90
+    skins = skin-weapon-p90-default, skin-weapon-p90-shadow, skin-weapon-p90-zebra, skin-weapon-p90-evo, skin-weapon-p90-grad, skin-weapon-p90-beast, skin-weapon-p90-neko, skin-weapon-p90-p2h
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-p90-accuracy
+        recoil = upgrade-p90-recoil
+        reload-time = upgrade-p90-reload-time
+        scope = upgrade-p90-scope-bushnell
+        silencer = upgrade-p90-silencer
+        wear-resistance = upgrade-p90-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.7x28
+    }
+]
+name = ITEM_WEAP_P90
+slot = slot-primary
+category = submachine
+tags = missions, classic
+index = 31
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = capture-flags
+        param = 20
+        unlockTitle = MENU_CAPTURE_N_POINTS
+    }
+}

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = kekov
+id = skin-player-kekov
+name = ITEM_PLAYER_SKIN_KEKOV

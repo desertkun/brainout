@@ -1,0 +1,42 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-acr
+instrument = {
+    id = weapon-acr
+    skins = skin-weapon-acr-default, skin-weapon-acr-sweet, skin-weapon-acr-midnight, skin-weapon-acr-pony
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-acr-accuracy
+        reload-time = upgrade-acr-reload-time
+        scope = upgrade-acr-scope-eot
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_ACR
+slot = slot-primary
+category = assault
+tags = missions
+index = 44
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        unlockTitle = MENU_UNLOCK_QUEST
+        unlockObject = QUEST_TITLE_INFORMATION
+    }
+}

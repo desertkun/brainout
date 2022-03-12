@@ -1,0 +1,74 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = protecta-reload-snd-1, protecta-reload-snd-2
+        shoot = [
+            stoeger-shoot-1, gunshot-tail-1, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2.9
+    }
+    {
+        class = content.components.WeaponDurabilityComponent
+        durability = 5
+        wear = 400
+    }
+    {
+        animation = anim-protecta
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-shotgun-2
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-protecta-default
+id = weapon-protecta
+instrumentTags = primary, shotgun
+primary = {
+    accuracy = 30
+    aimDistance = 25
+    allowedBullets = bullet-12-76
+    clipSize = 12
+    damage = 90
+    fire-rate = 240
+    noUnload = true
+    perBulletReload = true
+    recoil = 75
+    reloadTime = 0.7
+    shootModes = single
+
+}
+slot = slot-primary
+speedCoef = 1.2

@@ -1,0 +1,19 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.RadioactiveComponent
+        distance = 4
+        power = 0.5
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-radx
+            tag = client
+        }
+    }
+]
+editor = true
+id = radioactive-spot
+name = Radioactive Spot

@@ -1,0 +1,42 @@
+cards = [
+    {
+        groups = cardgroup-navy
+    }
+    {
+        groups = cardgroup-navy2
+    }
+    {
+        groups = cardgroup-navy3
+    }
+	{
+        groups = cardgroup-navy4
+    }
+	{
+        groups = cardgroup-navy5
+    }
+	{
+        groups = cardgroup-navy6
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = navy-case-bg
+        class = content.components.IconComponent
+        icon = navy-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_NAVY_DESC
+id = case-navy
+name = CASE_NAVY

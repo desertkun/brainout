@@ -1,0 +1,58 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+]
+id = sl-pri-kriss
+instrument = {
+    id = weapon-kriss
+    skins = skin-weapon-kriss-default, skin-weapon-kriss-azure, skin-weapon-kriss-shark, skin-weapon-kriss-sector9, skin-weapon-kriss-columbus, skin-weapon-kriss-triforce
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-kriss-recoil
+        reload-time = upgrade-kriss-reload-time
+        wear-resistance = upgrade-kriss-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 50
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_KRISS
+slot = slot-primary
+category = submachine
+tags = parts
+index = 51
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 20
+        currency = gears
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-kriss
+        icon = standard-case
+        param = 5
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

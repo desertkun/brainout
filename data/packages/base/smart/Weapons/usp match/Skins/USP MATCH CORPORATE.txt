@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-usp-match-corporate
+        tag = client
+    }
+]
+data = weapon-corporate
+id = skin-weapon-usp-match-corporate
+name = ITEM_WEAP_USP_MATCH_CORPORATE
+slot = sl-sec-usp-match
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,147 @@
+{
+  "bundles": {
+    "brainout-desktop.jar": {
+      "path": "../bin/obfuscated/brainout-desktop.jar",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/freeplay.zip": {
+      "path": "../bin/client/packages/freeplay.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/base.zip": {
+      "path": "../bin/client/packages/base.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/editor.zip": {
+      "path": "../bin/client/packages/editor.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/lobby.zip": {
+      "path": "../bin/client/packages/lobby.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/mainmenu.zip": {
+      "path": "../bin/client/packages/mainmenu.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/sounds.zip": {
+      "path": "../bin/client/packages/sounds.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/map_bridge.zip": {
+      "path": "../bin/client/packages/map_bridge.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/map_factory.zip": {
+      "path": "../bin/client/packages/map_factory.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/map_forest.zip": {
+      "path": "../bin/client/packages/map_forest.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/map_siber.zip": {
+      "path": "../bin/client/packages/map_siber.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/map_station.zip": {
+      "path": "../bin/client/packages/map_station.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    },
+    "packages/map_construction.zip": {
+      "path": "../bin/client/packages/map_construction.zip",
+      "filters": {
+        "os.windows": true,
+        "os.osx": true,
+        "os.linux": true,
+        "os.ios": true,
+        "os.android": true
+      },
+      "settings": {}
+    }
+  }
+}

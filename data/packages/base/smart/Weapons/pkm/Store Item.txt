@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-pkm
+instrument = {
+    id = weapon-pkm
+    skins = skin-weapon-pkm-default, skin-weapon-pkm-butcher, skin-weapon-pkm-bandit, skin-weapon-pkm-cookie
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        bipod = upgrade-pkm-bipod
+        recoil = upgrade-pkm-recoil
+        reload-time = upgrade-pkm-reload-time
+        scope = upgrade-pkm-scope-cobra
+        shoot-time = upgrade-pkm-shoot-time
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_PKM
+slot = slot-primary
+category = other
+tags = level, classic
+index = 13
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 18
+    }
+}

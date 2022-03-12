@@ -1,0 +1,4 @@
+class = content.Sound
+id = card-flip-snd
+sound = base:sounds/card-flip.mp3
+tag = client

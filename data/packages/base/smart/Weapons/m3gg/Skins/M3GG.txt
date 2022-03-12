@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-m3gg-default
+name = ITEM_WEAP_M3GG
+slot = sl-pri-m3gg

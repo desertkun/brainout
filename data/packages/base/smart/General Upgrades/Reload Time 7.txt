@@ -1,0 +1,43 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        big-icon = icon-shop-upgrade-reload-time
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_RELOAD_TIME_DESC
+id = upgrade-reload-time-7
+name = ITEM_UPGRADE_RELOAD_TIME
+properties = {
+    reload-time = "-0.35"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 19
+        currency = gears
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = tech-level
+        notify = false
+        param = 6
+    }
+}

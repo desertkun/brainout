@@ -1,0 +1,37 @@
+class = content.instrument.Chip
+components = [
+    {
+        aimDistance = 30
+        animation = anim-chip
+        class = content.components.InstrumentAnimationComponent
+        skin = throwable-default
+        states = {
+            aimHit = hit-box
+            hit = hit-box
+            hold = hold-box
+        }
+    }
+    {
+        beforeThrow = he-grenade-click-sound
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = chip-drop-item-picked
+        weight = 2
+    }
+    {
+        class = content.components.ServerChipComponent
+        tag = server
+    }
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+defaultSkin = skin-instrument-chip-default
+forceSelect = true
+id = instrument-chip
+slot = slot-chip
+speedCoef = 0.75
+throwable = true

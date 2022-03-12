@@ -1,0 +1,85 @@
+class = content.active.RoundLockSafe
+components = [
+    {
+        class = content.components.ClientItemComponent
+        fetchIcon = false
+        iconBadge = false
+        tag = client
+    }
+    {
+        class = content.components.ItemStatsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 0
+        target = freeplay
+    }
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.IconComponent
+            icon = icon-portal-round-locker
+            tag = client
+        }
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ClientRoundLockActivatorComponent
+        activateText = MENU_DOOR_CRACK
+        tag = client
+    }
+    {
+        class = content.components.ServerRoundLockComponent
+        activateEffect = round-locker-opened-effects
+        safeActivatedTexture = fr-obj46-open
+        safeClosedTexture = fr-obj46
+        tag = server
+    }
+]
+
+name = Locker Container
+auto-remove = false
+editor = true
+id = freeplay-container-locker
+
+
+--------
+
+class = content.Effect
+id = round-locker-opened-effects
+set = round-locker-opened-snd
+tag = client
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/round-locker-opened.mp3
+id = round-locker-opened-snd
+tag = client
+
+--------
+
+
+class = content.Sound
+sound = freeplay:sounds/lock-click.mp3
+id = fp-lock-click-snd
+tag = client
+
+--------
+
+class = content.Sound
+sound = freeplay:sounds/lock-click-hit.mp3
+id = fp-lock-click-hit-snd
+tag = client
+
+--------
+
+class = content.Sound
+sound = freeplay:sounds/lock-click-fail.mp3
+id = fp-lock-click-fail-snd
+tag = client

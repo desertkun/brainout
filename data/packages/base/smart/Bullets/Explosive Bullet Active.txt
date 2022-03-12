@@ -1,0 +1,17 @@
+components = [
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+power = 0.12
+speed = 240
+damageMyself = true
+mass = 0
+hitImpulse = 20
+bulletTags = gl, explosive
+id = explosive-bullet-active
+headMultiplier = 1
+powerDistance = 24
+maxDistance = 24
+class = content.bullet.LimitedBullet
+name = ITEM_BULLET_EXPLOSIVE    

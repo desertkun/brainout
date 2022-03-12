@@ -1,0 +1,4 @@
+class = content.effect.ParticleEffect
+id = garand-clp-part
+particle = base:particles/garand-clip
+tag = client

@@ -1,0 +1,30 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.IconComponent
+        icon = medal-wow
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_WOW_DESC
+id = medal-wow
+name = MEDAL_WOW
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_WOW_DESC
+    }
+}

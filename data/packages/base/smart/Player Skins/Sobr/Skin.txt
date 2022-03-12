@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = sobr
+id = skin-player-sobr
+name = ITEM_PLAYER_SKIN_SOBR

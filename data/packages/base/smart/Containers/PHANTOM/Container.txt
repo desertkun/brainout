@@ -1,0 +1,35 @@
+cards = [
+    {
+        groups = cardgroup-phantom
+    }
+    {
+        groups = cardgroup-phantom
+    }
+    {
+        groups = cardgroup-phantom
+    }
+    {
+        groups = cardgroup-phantom
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = phantom-case-bg
+        class = content.components.IconComponent
+        icon = phantom-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_ELITE_DESC
+id = phantom-case
+name = CASE_PHANTOM

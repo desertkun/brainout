@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = nut
+id = skin-player-nut
+name = ITEM_PLAYER_SKIN_NUT

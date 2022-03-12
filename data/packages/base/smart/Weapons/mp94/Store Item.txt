@@ -1,0 +1,65 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 200
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-stats = [
+            {
+                func = ">"
+                id = blueprint-mp94
+                value = 0
+            }
+        ]
+    }
+]
+id = sl-pri-mp94
+instrument = {
+    id = weapon-mp94
+    skins = skin-weapon-mp94-default
+    upgrades = {
+        barrel = upgrade-mp94-barrel-7.62, upgrade-mp94-barrel-9.3
+        scope = upgrade-mp94-scope-po2
+    }
+}
+items = [
+    {
+        amount = 14
+        id = bullet-5.56x45
+    }
+    {
+        amount = 6
+        id = bullet-9.3x74R
+    }
+    {
+        amount = 10
+        id = bullet-7.62x51
+    }
+    {
+        amount = 6
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_MP94
+slot = slot-primary
+category = shotgun
+tags = unique
+index = 347
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-mp94
+        icon = icon-blueprint
+        param = 2
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

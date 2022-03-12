@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-beretta-default
+name = ITEM_WEAP_BERETTA
+slot = sl-sec-beretta

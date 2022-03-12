@@ -1,0 +1,19 @@
+angleOffset = {
+    max = 10
+    min = -10
+}
+attached = garand-clp-part
+class = content.effect.PhysicEffect
+friction = 0.5
+id = garand-clip-physic
+mass = 1
+reduce = -0.4
+speed = {
+    max = 15
+    min = 7
+}
+spring = {
+    max = 0.5
+    min = 0.25
+}
+tag = client

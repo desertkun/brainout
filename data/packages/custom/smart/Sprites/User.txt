@@ -1,0 +1,43 @@
+class = content.active.Active
+name = EDITOR2_USER_IMAGES
+components = [
+    {
+        class = content.components.UserSpriteWithBlocksComponent
+        ext-name = ext-decor
+        underlying-block = sp-block-n
+        blocks-layer = 1
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_DECOR
+        icon = icon-custom-decor
+    }
+]
+id = sp-bg-user-decor
+
+--------
+
+class = content.active.Active
+name = EDITOR2_USER_IMAGES
+components = [
+    {
+        class = content.components.UserSpriteWithBlocksComponent
+        ext-name = ext-wall
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_WALL
+        icon = icon-custom-wall
+    }
+]
+id = sp-bg-user-wall

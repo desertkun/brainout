@@ -1,0 +1,524 @@
+[
+  {
+    "bot-task": "bot.freeplay.TaskHoldStillNotice",
+    "skin": "skin-boar-default",
+    "spawn-at": "boar",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "player": "player-boar",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-boar",
+          "kind": "instrument",
+          "skin": "skin-weapon-boar-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "boar-bullet",
+          "amount": 1000
+        }
+      ]
+    },
+    "amount": 6
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot1",
+    "spawn-at": "human",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 2
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot2",
+    "spawn-at": "human",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 2
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot3",
+    "spawn-at": "human",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 2
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot4",
+    "spawn-at": "human",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStillAndShoot",
+    "skin": "skin-player-bot1",
+    "spawn-at": "swamp-tower",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 90
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStillAndShoot",
+    "skin": "skin-player-bot2",
+    "spawn-at": "swamp-tower",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-sks",
+          "kind": "instrument",
+          "skin": "skin-weapon-sks-default",
+          "upgrades": {
+            "scope": "upgrade-sks-scope-m81"
+          }
+        },
+        {
+          "item": "bullet-7.62x51",
+          "amount": 90
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-militia",
+    "spawn-at": "swamp-policeman",
+    "spawn-at-dimension": "swamp",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "item-helmet-pasgt-fp",
+          "amount": 1
+        },
+        {
+          "item": "item-armor-vest-fp",
+          "amount": 1
+        },
+        {
+          "item": "weapon-ak74",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+            "clip": "upgrade-ak74-doubleclip",
+            "scope": "upgrade-ak74-scope-pso",
+            "butt": "upgrade-ak74-butt-old"
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 90
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot2",
+    "spawn-at": "human",
+    "spawn-at-dimension": "fr-swamp-1",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot3",
+    "spawn-at": "human",
+    "spawn-at-dimension": "fr-swamp-2",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-bot4",
+    "spawn-at": "human",
+    "spawn-at-dimension": "fr-swamp-3",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-aksu",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-1",
+    "group-id": "swamp",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-ak74",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-2",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-m4a1",
+          "kind": "instrument",
+          "skin": "skin-weapon-m4a1-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.56x45",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-3",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-ak74",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 2
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-5",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-ak74",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 2
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-6",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-makarov",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-9mmx18",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-7",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-ak74",
+          "kind": "instrument",
+          "skin": "skin-weapon-ak74-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.45x39",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-8",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-mp5",
+          "kind": "instrument",
+          "skin": "skin-weapon-mp5-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-9mmx19",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  },
+  {
+    "bot-task": "bot.freeplay.TaskHoldStill",
+    "skin": "skin-player-protect3",
+    "spawn-at": "bots",
+    "spawn-at-dimension": "fr-part-tunnel-9",
+    "group-id": "tunnel-bots",
+    "give": {
+      "items": [
+        {
+          "item": "weapon-lr300",
+          "kind": "instrument",
+          "skin": "skin-weapon-lr300-default",
+          "upgrades": {
+          }
+        },
+        {
+          "item": "bullet-5.56x45",
+          "amount": 30
+        },
+        {
+          "item": "weapon-knife",
+          "kind": "instrument"
+        }
+      ]
+    },
+    "amount": 1
+  }
+]

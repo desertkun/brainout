@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mp40-orange
+        tag = client
+    }
+]
+data = weapon-orange
+id = skin-weapon-mp40-orange
+name = ITEM_WEAP_MP40_ORANGE
+slot = sl-pri-mp40
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

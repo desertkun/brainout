@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-ft200m-widow
+        tag = client
+    }
+]
+data = weapon-widow
+id = skin-weapon-ft200m-widow
+name = ITEM_WEAP_FT200M_WIDOW
+slot = sl-pri-ft200m
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = xmas-case
+        unlockTitle = "{MENU_LOCKED_SKINS}\n({CASE_HALLOWEEN})"
+    }
+}

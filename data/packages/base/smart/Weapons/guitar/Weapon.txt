@@ -1,0 +1,96 @@
+class = content.instrument.Instrument
+components = [
+    {
+        aimDistance = 1
+        animation = anim-guitar
+        attach-to = secondary
+        class = content.components.InstrumentAnimationComponent
+        skin = instrument-default
+        states = {
+            aim = hold-guitar
+            aimHit = play-guitar
+            hit = play-guitar
+            hold = hold-guitar
+        }
+        icon-scale = 0.7
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 3
+    }
+    {
+        class = content.components.ClientInstrumentComponent
+        tag = client
+    }
+    {
+        class = content.components.MyInstrumentEffectsComponent
+        tag = client
+    }
+    {
+        class = content.components.MyGuitarComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            custom-c2 = guitar-note-36
+            custom-db2 = guitar-note-37
+            custom-d2 = guitar-note-38
+            custom-eb2 = guitar-note-39
+            custom-e2 = guitar-note-40
+            custom-f2 = guitar-note-41
+            custom-gb2 = guitar-note-42
+            custom-g2 = guitar-note-43
+            custom-ab2 = guitar-note-44
+            custom-a2 = guitar-note-45
+            custom-bb2 = guitar-note-46
+            custom-b2 = guitar-note-47
+            custom-c3 = guitar-note-48
+            custom-db3 = guitar-note-49
+            custom-d3 = guitar-note-50
+            custom-eb3 = guitar-note-51
+            custom-e3 = guitar-note-52
+            custom-f3 = guitar-note-53
+            custom-gb3 = guitar-note-54
+            custom-g3 = guitar-note-55
+            custom-ab3 = guitar-note-56
+            custom-a3 = guitar-note-57
+            custom-bb3 = guitar-note-58
+            custom-b3 = guitar-note-59
+            custom-c4 = guitar-note-60
+            custom-db4 = guitar-note-61
+            custom-d4 = guitar-note-62
+            custom-eb4 = guitar-note-63
+            custom-e4 = guitar-note-64
+            custom-f4 = guitar-note-65
+            custom-gb4 = guitar-note-66
+            custom-g4 = guitar-note-67
+            custom-ab4 = guitar-note-68
+            custom-a4 = guitar-note-69
+            custom-bb4 = guitar-note-70
+            custom-b4 = guitar-note-71
+            custom-c5 = guitar-note-72
+            custom-db5 = guitar-note-73
+            custom-d5 = guitar-note-74
+            custom-eb5 = guitar-note-75
+            custom-e5 = guitar-note-76
+            custom-f5 = guitar-note-77
+            custom-gb5 = guitar-note-78
+            custom-g5 = guitar-note-79
+            custom-ab5 = guitar-note-80
+            custom-a5 = guitar-note-81
+            custom-bb5 = guitar-note-82
+            custom-b5 = guitar-note-83
+            custom-c6 = guitar-note-84
+        }
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 150
+    }
+]
+defaultSkin = skin-instrument-guitar-default
+id = instrument-guitar
+slot = slot-special
+throwable = false

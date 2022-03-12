@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.PartialSlotItemComponent
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 60
+    }
+]
+id = sl-pri-hk416
+instrument = {
+    id = weapon-hk416
+    skins = skin-weapon-hk416-default, skin-weapon-hk416-dino, skin-weapon-hk416-frog, skin-weapon-hk416-saw
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-hk416-recoil
+        reload-time = upgrade-hk416-reload-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_HK416
+slot = slot-primary
+category = assault
+tags = parts
+index = 52
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = parts-of, weapon-hk416
+        icon = standard-case
+        param = 5
+        unlockTitle = MENU_LOCKED_PARTS
+    }
+}

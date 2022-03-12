@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-rpd
+instrument = {
+    id = weapon-rpd
+    skins = skin-weapon-rpd-default, skin-weapon-rpd-chromium, skin-weapon-rpd-hijacker, skin-weapon-rpd-punisher
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        bipod = upgrade-rpd-bipod
+        recoil = upgrade-rpd-recoil
+        reload-time = upgrade-rpd-reload-time
+        shoot-time = upgrade-rpd-shoot-time
+    }
+}
+items = [
+    {
+        amount = 100
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_RPD
+slot = slot-primary
+category = other
+tags = unique
+index = 156
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SPECIAL
+    }
+}

@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-aek999-hoarfrost
+        tag = client
+    }
+]
+data = weapon-hoarfrost
+id = skin-weapon-aek999-hoarfrost
+name = ITEM_WEAP_AEK999_HOARFROST
+slot = sl-pri-aek999
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = icon-battle-pass-points-big
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}

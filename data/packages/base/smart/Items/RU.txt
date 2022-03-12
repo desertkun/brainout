@@ -1,0 +1,44 @@
+class = content.consumable.ConsumableToStatContent
+id = freeplay-ru
+stat = ru
+name = RU
+components = [
+    {
+        class = content.components.IconComponent
+        icon-small = icon-ru-small
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = ru-move-1, ru-move-2, ru-move-3
+        tag = client
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 1000
+        tag = client
+    }
+    {
+        class = content.components.CampFireFuelComponent
+        duration = 10
+        need = 50
+    }
+    {
+        class = content.components.ClientItemDynamicIconComponent
+        prefix = "icon-ru-"
+        ranges = [
+            5000
+            1000
+            500
+            100
+            50
+            10
+        ]
+        fallback = icon-ru-10
+        tag = client
+    }
+]

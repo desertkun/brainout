@@ -1,0 +1,85 @@
+class = content.active.Active
+components = [
+    {
+        class = content.components.ActiveAnimationComponent
+        animation = anim-pumpkin
+        play = [
+            animation
+        ]
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 2
+        reduce = -0.4
+        width = 1
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.HealthComponent
+        health = 50
+    }
+    {
+        class = content.components.ColliderComponent
+        colliders = {
+            body = {
+                damageCoefficient = 1
+                height = 1
+                width = 1
+            }
+        }
+        tag = server
+    }
+    {
+        class = content.components.ServerHealthComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveColliderComponent
+        needsValidation = false
+        tag = server
+    }
+    {
+        class = content.components.RandomJumpComponent
+        tag = server
+    }
+    {
+        class = content.components.ActiveAddStatOnDestroyComponent
+        stat = pupmkins-destroyed
+        tag = server
+    }
+    {
+        class = content.components.ActiveDeathEffectComponent
+        effect = [
+            [
+                pumpkin-destroyed-1
+                pumpkin-destroyed-snd-1
+            ]
+            [
+                pumpkin-destroyed-1
+                pumpkin-destroyed-snd-2
+            ]
+        ]
+        tag = client
+    }
+]
+id = active-pumpkin
+name = Pumkpkin
+
+--------
+
+animation = base:animations/pumpkin.json
+class = content.Animation
+id = anim-pumpkin
+states = []
+timeScale = 1

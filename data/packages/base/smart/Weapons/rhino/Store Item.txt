@@ -1,0 +1,41 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-rhino
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 15
+    }
+]
+instrument = {
+    id = weapon-rhino
+    skins = skin-weapon-rhino-default, skin-weapon-rhino-enforcer, skin-weapon-rhino-fury, skin-weapon-rhino-brutal, skin-weapon-rhino-shiz
+    upgrades = {
+        fastloader = upgrade-rhino-fastloader
+        holder = upgrade-rhino-laser
+        scope = upgrade-rhino-scope
+    }
+}
+items = [
+    {
+        amount = 24
+        id = bullet-357-magnum
+    }
+]
+name = ITEM_WEAP_RHINO
+slot = slot-secondary
+category = pistol
+tags = resources
+index = 10
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

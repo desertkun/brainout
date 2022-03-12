@@ -1,0 +1,19 @@
+angleOffset = {
+    max = 25
+    min = -25
+}
+attached = sleeve-1
+class = content.effect.PhysicEffect
+friction = 0.5
+id = sleeve-revolver-physic
+mass = 2
+reduce = -0.4
+speed = {
+    max = 10
+    min = 5
+}
+spring = {
+    max = 0.5
+    min = 0.25
+}
+tag = client

@@ -1,0 +1,30 @@
+class = content.quest.Quest
+id = quest-summer-1
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-summer
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-icecream
+        target = 5
+    }
+}
+
+coop = false
+hasToLeave = false
+name = QUEST_TITLE_SUMMER
+
+rewards = [
+    {
+        action = unlock
+        id = sl-msk-scuba
+        amount = 1
+    }
+]

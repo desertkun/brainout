@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-falchion
+        class = content.components.IconComponent
+        icon = knife-falchion
+        tag = client
+    }
+]
+id = sl-ml-knife-falchion
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-falchion
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_FALCHION
+slot = slot-melee
+category = melee
+tags = unique
+index = 334
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = krieg-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_KRIEG
+    }
+}
+

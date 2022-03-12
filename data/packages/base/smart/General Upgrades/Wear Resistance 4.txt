@@ -1,0 +1,43 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        big-icon = icon-shop-upgrade-wear-resistance
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_WEAR_RESISTANCE_DESC
+id = upgrade-wear-resistance-4
+name = ITEM_UPGRADE_WEAR_RESISTANCE
+properties = {
+    wear-resistance = "+200"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = tech-level
+        notify = false
+        param = 5
+    }
+}

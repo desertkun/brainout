@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 60
+    }
+]
+id = sl-pri-m14
+instrument = {
+    id = weapon-m14
+    skins = skin-weapon-m14-default, skin-weapon-m14-balrog, skin-weapon-m14-wood, skin-weapon-m14-forest, skin-weapon-m14-hivernale, skin-weapon-m14-red, skin-weapon-m14-anarchy, skin-weapon-m14-dancer
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-m14-clip-extended
+        recoil = upgrade-m14-recoil
+        reload-time = upgrade-m14-reload-time
+        scope = upgrade-m14-scope-redfield
+        silencer = upgrade-m14-silencer
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_M14
+slot = slot-primary
+category = sniper
+tags = unique
+index = 157
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SPECIAL
+    }
+}

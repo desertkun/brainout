@@ -1,0 +1,5 @@
+animation = base:animations/weapon-agram.json
+class = content.Animation
+id = anim-agram
+states = []
+timeScale = 1

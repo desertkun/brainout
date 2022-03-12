@@ -1,0 +1,33 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = []
+id = sl-pri-water
+instrument = {
+    id = weapon-water
+    skins = skin-weapon-water-default, skin-weapon-water-bwg
+}
+items = [
+    {
+        amount = 500
+        id = water-bullet
+    }
+]
+name = ITEM_WEAP_WATER
+price = 0
+slot = slot-primary
+category = other
+tags = unique
+index = 200
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

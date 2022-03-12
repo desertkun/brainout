@@ -1,0 +1,5 @@
+animation = base:animations/weapon-tec9.json
+class = content.Animation
+id = anim-tec9
+states = []
+timeScale = 1

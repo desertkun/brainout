@@ -1,0 +1,32 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = skillpoints-big
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.AddStatItemComponent
+        stat = skillpts
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+id = sl-store-skillpts
+limit = 8
+name = CARD_SKILLPOINTS
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 6
+        currency = nuclear-material
+    }
+}

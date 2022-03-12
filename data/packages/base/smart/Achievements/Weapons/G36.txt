@@ -1,0 +1,36 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-g36
+        icon-locked = achievement-g36-lock
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 2000
+        class = content.components.RuRewardComponent
+        tag = server
+    }
+]
+id = achievement-g36
+name = ACHIEVEMENT_G36
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-m4a1-zoom
+        param = 1000
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_M4A1_ZOOM}"
+    }
+}

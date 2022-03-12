@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-qbu88
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+]
+instrument = {
+    id = weapon-qbu88
+    skins = skin-weapon-qbu88-default, skin-weapon-qbu88-midnight, skin-weapon-qbu88-alpha, skin-weapon-qbu88-insurrection, skin-weapon-qbu88-sadist, skin-weapon-qbu88-merc, skin-weapon-qbu88-bloodthirsty
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-qbu88-accuracy
+        bipod = upgrade-qbu88-bipod
+        wear-resistance = upgrade-qbu88-wear-reistance
+        scope = upgrade-qbu88-scope-optical
+	reload-time = upgrade-qbu88-reload-time
+    }
+}
+items = [
+    {
+        amount = 20
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_QBU88
+slot = slot-primary
+category = sniper
+tags = resources
+index = 372
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

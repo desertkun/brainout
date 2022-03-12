@@ -1,0 +1,37 @@
+class = content.shop.InstrumentSlotItem
+id = sl-sec-usp
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+instrument = {
+    id = weapon-usp
+    skins = skin-weapon-usp-default, skin-weapon-usp-era, skin-weapon-usp-prewar
+}
+items = [
+    {
+        amount = 24
+        id = bullet-45acp
+    }
+]
+name = ITEM_WEAP_USP
+slot = slot-secondary
+category = pistol
+tags = level, classic
+index = 4
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 10
+    }
+}

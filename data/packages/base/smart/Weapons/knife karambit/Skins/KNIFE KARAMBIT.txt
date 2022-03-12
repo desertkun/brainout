@@ -1,0 +1,20 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-karambit
+        class = content.components.IconComponent
+        icon = knife-karambit
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentAnimationComponent
+        replace = {
+            hit = hit-weapon-knife-2
+        }
+        tag = client
+    }
+]
+data = knife-karambit
+id = skin-weapon-knife-karambit
+name = ITEM_WEAP_KNIFE_KARAMBIT
+slot = sl-ml-knife-karambit

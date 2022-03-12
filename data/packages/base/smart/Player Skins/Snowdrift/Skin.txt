@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = snowdrift
+id = skin-player-snowdrift
+name = ITEM_PLAYER_SKIN_SNOWDRIFT

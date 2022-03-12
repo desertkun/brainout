@@ -1,0 +1,182 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+            shootSecondary = [
+                spas12-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+                spas12-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+                spas12-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+                spas12-shoot-4, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+                spas12-shoot-5, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+                spas12-shoot-6, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            ]
+        }
+        shoot = [
+            mosin-shoot-1, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+            mosin-shoot-2, pistol-shoot-smoke, gunshot-tail-2, supersonic-snap
+            mosin-shoot-3, pistol-shoot-smoke, gunshot-tail-1, supersonic-snap
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 3.2
+    }
+    {
+        actions = [
+            {
+                effects = [
+                    [
+                        magnum-bullet-drop-1
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                ]
+                for = drop-bullet-a
+                type = effect
+            }
+            {
+                effects = [
+                    [
+                        shotgun-shell-1-snd
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                    ]
+                ]
+                for = drop-bullet-b
+                type = effect
+            }
+            {
+                effects = [
+                    [
+                        magnum-bullet-drop-1
+                        shotgun-shell-1-snd
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-2-physic
+                        }
+                        {
+                            attachTo = shell-bone
+                            object = sleeve-revolver-physic
+                        }
+                    ]
+                ]
+                for = drop-bullets
+                type = effect
+            }
+            {
+                effects = toz34-reload-1, toz34-reload-1
+                for = add-bullet
+                type = effect
+            }
+            {
+                effects = toz34-close
+                for = toz34-close
+                type = effect
+            }
+            {
+                effects = toz34-open
+                for = toz34-open
+                type = effect
+            }
+            {
+                for = opened
+                type = animate
+                animation = open
+            }
+            {
+                for = closed
+                type = animate
+                animation = close
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        animation = anim-sauer
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-2hands
+            aimHit = shoot-aim-weapon-2hands
+            hit = shoot-hold-weapon-2hands
+            hold = hold-weapon-2hands
+            reload = reload-mp94-a
+            reloadSecondary = reload-mp94-b-2
+            reloadBoth = reload-mp94-c-2
+        }
+    }
+    {
+        class = content.components.SecondaryWeaponSlotComponent
+        icon = icon-shop-special-shotgun
+        properties = {
+            accuracy = 10
+            aimDistance = 30
+            allowedBullets = bullet-12-76
+            clipSize = 2
+            damage = 80
+            fire-rate = 1000
+            noUnload = true
+            recoil = 76
+            reloadTime = 2.11
+            canReloadBoth = true
+            reloadBothTime = 2.41
+            shootModes = single
+            shell-auto-eject = false
+            autoSwitchSecondary = true
+            autoReload = false
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 12
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-sauer-default
+id = weapon-sauer
+instrumentTags = primary
+primary = {
+    accuracy = 65
+    aimDistance = 30
+    allowedBullets = bullet-9.3x74R
+    clipSize = 1
+    damage = 140
+    fire-rate = 1000
+    noHalfReload = false
+    noUnload = false
+    perBulletReload = false
+    pullRequired = false
+    fetchTime = 0
+    recoil = 30
+    reloadTime = 1.5
+    canReloadBoth = true
+    reloadBothTime = 2.41
+    shootModes = single
+    silenced = false
+    shell-auto-eject = false
+    autoSwitchSecondary = true
+    autoReload = false
+}
+slot = slot-primary

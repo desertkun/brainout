@@ -1,0 +1,82 @@
+class = content.block.NonContact
+components = [
+    {
+        class = content.components.SpriteBlockComponent
+    }
+]
+fixture = false
+hasContact = false
+id = rs-block-n
+name = ITEM_BG_SPRITE
+resist = 0
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.SpriteBlockComponent
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        hit = [
+            sparkle-1, wood-hit-snd-1, wood-hit-part-1
+            sparkle-1, wood-hit-snd-2, wood-hit-part-1
+            sparkle-1, wood-hit-snd-3, wood-hit-part-2
+            sparkle-1, wood-hit-snd-4, wood-hit-part-1
+            sparkle-1, wood-hit-snd-5, wood-hit-part-1
+            sparkle-1, wood-hit-snd-6, wood-hit-part-2
+        ]
+        step = wood-step-snd-1, wood-step-snd-2, wood-step-snd-3, wood-step-snd-4
+        tag = client
+    }
+]
+contactId = core
+contactStrategy = combined
+contactTo = core, collision, brick, ground, carbon, metal
+id = rs-block
+name = ITEM_BG_SPRITE
+resist = 999999
+
+--------
+
+class = content.block.NonContact
+components = [
+    {
+        class = content.components.SpriteBlockComponent
+    }
+]
+fixture = false
+hasContact = false
+id = rs-decor
+name = ITEM_BG_SPRITE
+resist = 0
+
+--------
+
+class = content.block.Concrete
+components = [
+    {
+        class = content.components.SpriteBlockComponent
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        hit = [
+            sparkle-1, wood-hit-snd-1, wood-hit-part-1
+            sparkle-1, wood-hit-snd-2, wood-hit-part-1
+            sparkle-1, wood-hit-snd-3, wood-hit-part-2
+            sparkle-1, wood-hit-snd-4, wood-hit-part-1
+            sparkle-1, wood-hit-snd-5, wood-hit-part-1
+            sparkle-1, wood-hit-snd-6, wood-hit-part-2
+        ]
+        step = wood-step-snd-1, wood-step-snd-2, wood-step-snd-3, wood-step-snd-4
+        tag = client
+    }
+]
+id = rs-triangle
+contactId = sptriangle
+contactStrategy = triangle
+contactTo = spblock, sptriangle, core, brick, ground, carbon, metal
+name = ITEM_BG_SPRITE
+resist = 999999
+

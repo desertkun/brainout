@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = cs3b
+id = skin-player-cs3b
+name = ITEM_PLAYER_SKIN_CS3B

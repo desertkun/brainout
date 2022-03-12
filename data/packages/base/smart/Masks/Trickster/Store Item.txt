@@ -1,0 +1,50 @@
+access = byDefault
+class = content.shop.CustomAnimationSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-hat-trickster
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        replace = {
+            mask = trickster
+        }
+    }
+	{
+        class = content.components.ContentProgressComponent
+        stat = doublekills-mask-trickster
+        goal = GOAL_DOUBLEKILL_USING_MASK
+        value = 4
+    }
+    {
+        amount = 3
+        class = content.components.AddStatItemComponent
+        stat = skillpts
+    }
+    {
+        class = content.components.ServerAddStatItemComponent
+        tag = server
+    }
+]
+description = ITEM_SPECIAL_MASK_DESC
+id = sl-msk-trickster
+items = []
+name = ITEM_MASK_TRICKSTER
+player = player-mask-trickster
+slot = slot-mask
+category = mask
+tags = unique
+index = 21
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+		hide = true
+    }
+}

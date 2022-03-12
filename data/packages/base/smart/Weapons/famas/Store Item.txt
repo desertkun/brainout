@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 80
+    }
+]
+id = sl-pri-famas
+instrument = {
+    id = weapon-famas
+    skins = skin-weapon-famas-default, skin-weapon-famas-ice, skin-weapon-famas-spark, skin-weapon-famas-beast, skin-weapon-famas-snake, skin-weapon-famas-daybreak, skin-weapon-famas-origins
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-famas-accuracy
+        clip = upgrade-famas-clip-extended
+        holder = upgrade-famas-holder
+        reload-time = upgrade-famas-reload-time
+        scope = upgrade-famas-scope-eot
+        shoot-time = upgrade-famas-shoot-time
+        wear-resistance = upgrade-famas-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_FAMAS
+slot = slot-primary
+category = assault
+tags = missions, classic
+index = 21
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-ls5
+        param = 60
+        unlockTitle = MENU_UNLOCK_FAMAS
+    }
+}

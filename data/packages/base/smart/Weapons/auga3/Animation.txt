@@ -1,0 +1,5 @@
+animation = base:animations/weapon-auga3.json
+class = content.Animation
+id = anim-auga3
+states = []
+timeScale = 1

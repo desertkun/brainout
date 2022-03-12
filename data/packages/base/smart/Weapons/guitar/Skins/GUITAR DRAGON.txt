@@ -1,0 +1,24 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-guitar-dragon
+        tag = client
+    }
+]
+data = instrument-dragon
+id = skin-instrument-guitar-dragon
+name = ITEM_SPECIAL_GUITAR_DRAGON
+slot = sl-spc-guitar
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

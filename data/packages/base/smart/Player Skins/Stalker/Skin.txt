@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = stalker
+id = skin-player-stalker
+name = ITEM_PLAYER_SKIN_STALKER

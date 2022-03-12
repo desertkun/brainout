@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-m4a1-default
+name = ITEM_WEAP_M4A1
+slot = sl-pri-m4a1

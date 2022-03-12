@@ -1,0 +1,4 @@
+class = content.Sound
+id = card-open-snd
+sound = base:sounds/card-open.mp3
+tag = client

@@ -1,0 +1,162 @@
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-glowstick
+        class = content.components.ThrowableAnimationComponent
+        skin = red
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+defaultSkin = skin-instrument-glowstick-red
+id = instrument-glowstick-red
+slot = slot-special
+throwActive = glowstick-active-red
+throwPower = 22
+throwable = false
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-glowstick
+        class = content.components.ThrowableAnimationComponent
+        skin = blue
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+defaultSkin = skin-instrument-glowstick-blue
+id = instrument-glowstick-blue
+slot = slot-special
+throwActive = glowstick-active-blue
+throwPower = 22
+throwable = false
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-glowstick
+        class = content.components.ThrowableAnimationComponent
+        skin = green
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+defaultSkin = skin-instrument-glowstick-green
+id = instrument-glowstick-green
+slot = slot-special
+throwActive = glowstick-active-green
+throwPower = 22
+throwable = false
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-glowstick
+        class = content.components.ThrowableAnimationComponent
+        skin = orange
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+defaultSkin = skin-instrument-glowstick-orange
+id = instrument-glowstick-orange
+slot = slot-special
+throwActive = glowstick-active-orange
+throwPower = 22
+throwable = false
+name = ITEM_SPECIAL_GLOWSTICK
+
+--------
+
+class = content.instrument.ThrowableInstrument
+components = [
+    {
+        aimDistance = 30
+        animation = anim-glowstick
+        class = content.components.ThrowableAnimationComponent
+        skin = magenta
+        states = {
+            aimHit = hit-throwable
+            hit = hit-throwable
+            cock = grenade-cooked
+            hold = hold-throwable
+        }
+    }
+    {
+        class = content.components.ClientThrowableComponent
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.1
+    }
+]
+defaultSkin = skin-instrument-glowstick-magenta
+id = instrument-glowstick-magenta
+slot = slot-special
+throwActive = glowstick-active-magenta
+throwPower = 22
+throwable = false
+name = ITEM_SPECIAL_GLOWSTICK

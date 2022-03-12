@@ -1,0 +1,38 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 25
+    }
+]
+id = sl-pri-mosinobrez
+instrument = {
+    id = weapon-mosinobrez
+    skins = skin-weapon-mosinobrez-default
+    upgrades = {
+	    silencer = upgrade-mosinobrez-silencer
+    }
+}
+items = [
+    {
+        amount = 15
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_MOSINOBREZ
+slot = slot-primary
+category = other
+tags = unique
+index = 368
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

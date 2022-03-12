@@ -1,0 +1,28 @@
+
+class = content.battlepass.GameModeAction
+id = battle-pass-hunter-foxhunt
+target = 30
+reward = 250
+action = kills-from-weapon-hunter-bow
+title = MENU_KILL_N_HUNTER_BOW
+game-mode = foxhunt
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-secondary-foxhunt
+target = 50
+reward = 250
+action = kills-tag-secondary
+title = ACHIEVEMENT_DUELIST_DESC
+game-mode = foxhunt
+
+--------
+
+class = content.battlepass.GameModeAction
+id = battle-pass-win-3-foxhunt
+target = 3
+reward = 250
+action = games-won
+title = MENU_WIN_N_TIMES
+game-mode = foxhunt

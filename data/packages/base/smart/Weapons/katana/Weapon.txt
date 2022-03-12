@@ -1,0 +1,61 @@
+class = content.instrument.Weapon
+components = [
+    {
+        blowBack = 0
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        actions = [
+            {
+                effects = knife-swing
+                for = knife-swing
+                type = effect
+            }
+        ]
+        class = content.components.InstrumentActionsComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 2
+    }
+    {
+        animation = anim-katana
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = hold-weapon-katana
+            hold = hold-weapon-katana
+            cock = cock-katana
+            hit = hit-weapon-katana
+            aimHit = hit-weapon-katana
+            reset = hold-weapon-katana
+        }
+    }
+]
+defaultSkin = skin-weapon-katana-default
+id = weapon-katana
+instrumentTags = primary
+primary = {
+    accuracy = 1
+    allowedBullets = katana-bullet
+    clipSize = 1
+    cockTime = 0.15
+    shootModes = singleCock
+    shell-auto-eject = false
+    damage = 260
+    fire-rate = 120
+    silenced = true
+    unlimited = true
+    visible = false
+    noUnload = true
+}
+noWeaponStats = true
+slot = slot-primary
+speedCoef = 1.2

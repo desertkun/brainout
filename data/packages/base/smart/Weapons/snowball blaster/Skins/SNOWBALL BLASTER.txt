@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-snowball-blaster-default
+name = ITEM_WEAP_SNOWBALL_BLASTER
+slot = sl-pri-snowball-blaster

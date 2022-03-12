@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 45
+    }
+]
+id = sl-pri-bar
+instrument = {
+    id = weapon-bar
+    skins = skin-weapon-bar-default, skin-weapon-bar-sturm, skin-weapon-bar-sierra
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-bar-recoil
+        shoot-time = upgrade-bar-shoot-time
+        bipod = upgrade-bar-bipod
+		
+    }
+}
+items = [
+    {
+        amount = 40
+        id = bullet-7.62x51
+    }
+]
+name = ITEM_WEAP_BAR
+slot = slot-primary
+category = other
+tags = unique
+index = 389
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_STANDARD
+    }
+}

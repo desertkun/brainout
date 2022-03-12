@@ -1,0 +1,6 @@
+class = content.Effect
+id = flashbang-effect-visible
+set = [
+    flashbang-effect-set, explosion-flash-1, flashbang-effect-1-snd
+]
+tag = client

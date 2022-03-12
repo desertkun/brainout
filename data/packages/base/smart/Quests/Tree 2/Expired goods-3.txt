@@ -1,0 +1,36 @@
+class = content.quest.Quest
+id = quest-expired-goods-3
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-canned-goods
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = consumable-item-milk
+        target = 5
+    }
+}
+
+group = expired-goods
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_SPOILED_GOODS
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 2
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 600
+    }
+]

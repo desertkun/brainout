@@ -1,0 +1,14 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        icon = icon-item-glowstick-magenta
+        big-icon = icon-item-glowstick-magenta
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+preferIcon = true
+data = magenta
+id = skin-instrument-glowstick-magenta
+name = ITEM_SPECIAL_GLOWSTICK
+slot = sl-grn-glowstick

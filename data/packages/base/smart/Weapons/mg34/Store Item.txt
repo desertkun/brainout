@@ -1,0 +1,47 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-pri-mg34
+instrument = {
+    id = weapon-mg34
+    skins = skin-weapon-mg34-default, skin-weapon-mg34-afrika, skin-weapon-mg34-wagh, skin-weapon-mg34-witchcraft, skin-weapon-mg34-racer
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-mg34-accuracy
+        recoil = upgrade-mg34-recoil
+        reload-time = upgrade-mg34-reload-time
+        shoot-time = upgrade-mg34-shoot-time
+    }
+}
+items = [
+    {
+        amount = 150
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_MG34
+slot = slot-primary
+category = other
+tags = unique
+index = 355
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = anti-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_ANTI
+    }
+}
+
+
+

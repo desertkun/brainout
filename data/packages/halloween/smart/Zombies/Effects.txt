@@ -1,0 +1,63 @@
+class = content.Effect
+id = zombie-1-moan
+set = [
+    zombie-1-moan-1-snd
+    zombie-1-moan-2-snd
+    zombie-1-moan-3-snd
+    zombie-1-moan-4-snd
+]
+tag = client
+
+--------
+
+class = content.Effect
+id = zombie-2-moan
+set = [
+    zombie-2-moan-1-snd
+    zombie-2-moan-2-snd
+    zombie-2-moan-3-snd
+    zombie-2-moan-4-snd
+]
+tag = client
+
+--------
+
+class = content.Effect
+id = zombie-3-moan
+set = [
+    zombie-3-moan-1-snd
+    zombie-3-moan-2-snd
+    zombie-3-moan-3-snd
+    zombie-3-moan-4-snd
+]
+tag = client
+
+--------
+
+class = content.Effect
+id = zombie-1-notice
+set = [
+    zombie-1-notice-1-snd
+    zombie-1-notice-2-snd
+]
+tag = client
+
+--------
+
+class = content.Effect
+id = zombie-2-notice
+set = [
+    zombie-2-notice-1-snd
+    zombie-2-notice-2-snd
+]
+tag = client
+
+--------
+
+class = content.Effect
+id = zombie-3-notice
+set = [
+    zombie-3-notice-1-snd
+    zombie-3-notice-2-snd
+]
+tag = client

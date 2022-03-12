@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-hook
+        class = content.components.IconComponent
+        icon = knife-hook
+        tag = client
+    }
+]
+data = knife-hook
+id = skin-weapon-knife-hook
+name = ITEM_WEAP_KNIFE_HOOK
+slot = sl-ml-knife-hook

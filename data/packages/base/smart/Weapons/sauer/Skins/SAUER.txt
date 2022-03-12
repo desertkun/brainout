@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-sauer-default
+name = ITEM_WEAP_SAUER
+slot = sl-pri-sauer

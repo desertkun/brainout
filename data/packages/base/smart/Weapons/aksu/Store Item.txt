@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 105
+    }
+]
+id = sl-pri-aksu
+instrument = {
+    id = weapon-aksu
+    skins = skin-weapon-aksu-default, skin-weapon-aksu-plastic, skin-weapon-aksu-syndicate, skin-weapon-aksu-swamp, skin-weapon-aksu-draco
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-aksu-accuracy
+        holder = upgrade-aksu-holder
+        recoil = upgrade-aksu-recoil
+        reload-time = upgrade-aksu-reload-time
+        scope = upgrade-aksu-scope-cobra
+        silencer = upgrade-aksu-silencer
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_AKSU
+slot = slot-primary
+price = 0
+
+slot = slot-primary
+category = assault
+tags = classic
+index = 1

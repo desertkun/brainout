@@ -1,0 +1,48 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = red-case
+        tag = client
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-red-mosin
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-red-mosin
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-mosin
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_RED_MOSIN_DESC_2
+id = sl-store-case-red-mosin
+name = CASE_RED_MOSIN
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 15
+        currency = nuclear-material
+    }
+}
+

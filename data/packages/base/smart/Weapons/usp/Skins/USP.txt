@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-usp-default
+name = ITEM_WEAP_USP
+slot = sl-sec-usp

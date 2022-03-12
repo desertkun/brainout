@@ -1,0 +1,38 @@
+class = content.shop.InstrumentSlotItem
+id = sl-pri-m98b
+components = [
+]
+instrument = {
+    id = weapon-m98b
+    skins = skin-weapon-m98b-default, skin-weapon-m98b-legend, skin-weapon-m98b-weaver, skin-weapon-m98b-airborn
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        recoil = upgrade-m98b-recoil
+        reload-time = upgrade-m98b-reload-time
+        scope = upgrade-m98b-scope-leupold
+    }
+}
+items = [
+    {
+        amount = 10
+        id = bullet-338-Lapua
+    }
+]
+name = ITEM_WEAP_M98B
+slot = slot-primary
+category = sniper
+tags = resources
+index = 343
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = contraband-case
+        unlockTitle = MENU_LOCKED_WEAPON_CONTRABAND
+    }
+}

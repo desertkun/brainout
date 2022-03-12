@@ -1,0 +1,10 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.LaserComponent
+        tag = client
+    }
+]
+id = upgrade-laser
+name = ITEM_UPGRADE_LASER

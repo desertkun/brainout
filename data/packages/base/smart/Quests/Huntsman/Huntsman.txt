@@ -1,0 +1,74 @@
+class = content.quest.Quest
+id = quest-huntsman
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-huntsman
+        tag = client
+    }
+]
+
+tasks = {
+	1 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-matches-1, consumable-item-matches-2
+        target = 5
+    }
+	2 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-lighter-1, consumable-item-lighter-2
+        target = 5
+    }
+	3 = {
+        class = content.quest.task.UseItem
+        items = cards-ru-item, cards-en-item
+        customName = DECK_OF_ANY_CARDS
+        target = 1
+    }
+	4 = {
+        class = content.quest.task.BurnItem
+        item = consumable-item-toilet-paper
+        target = 5
+    }
+	5 = {
+        class = content.quest.task.BurnItem
+        items = freeplay-passport-1, freeplay-passport-2, freeplay-passport-3
+        target = 10
+    }
+	6 = {
+        class = content.quest.task.BurnItem
+        item = consumable-item-log
+        target = 2
+    }
+	7 = {
+        class = content.quest.task.BurnItem
+        item = consumable-item-sticks
+        target = 5
+    }
+	8 = {
+        class = content.quest.task.BurnItem
+        item = consumable-item-boards
+        target = 5
+    }
+	9 = {
+        class = content.quest.task.KillEnemyOfKind
+        player = player-crow
+        playerTitle = ITEM_PLAYER_CROW
+        playerIcon = icon-crow
+        target = 10
+    }
+}
+
+coop = false
+hasToLeave = false
+name = QUEST_TITLE_HUNTSMAN
+perTaskReward = true
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 1500
+    }
+]

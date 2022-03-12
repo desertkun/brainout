@@ -1,0 +1,46 @@
+access = byDefault
+class = content.shop.PlayerSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-speed
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_TRAINING_DESC
+id = sl-pl-fast
+items = []
+name = ITEM_SPECIAL_TRAINING
+player = player-fast
+slot = slot-player
+category = special
+tags = level
+index = 3
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 3
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 11
+    }
+}

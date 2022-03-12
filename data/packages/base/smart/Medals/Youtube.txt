@@ -1,0 +1,63 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.AnimatedIconComponent
+        frames = [
+            {
+                frame = icon-medal-tube-1
+                delay = 2
+            }
+            {
+                frame = icon-medal-tube-2
+                delay = 0.05
+            }
+            {
+                frame = icon-medal-tube-3
+                delay = 0.05
+            }
+            {
+                frame = icon-medal-tube-4
+                delay = 0.05
+            }
+            {
+                frame = icon-medal-tube-5
+                delay = 0.05
+            }
+            {
+                frame = icon-medal-tube-6
+                delay = 0.05
+            }
+            {
+                frame = icon-medal-tube-7
+                delay = 0.05
+            }
+            {
+                frame = icon-medal-tube-8
+                delay = 0.05
+            }
+        ]
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+]
+description = MEDAL_YOUTUBE_DESC
+id = medal-tube
+name = MEDAL_YOUTUBE
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_YOUTUBE_DESC
+    }
+}

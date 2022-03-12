@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = binoculars-default
+id = skin-instrument-binoculars-default
+name = ITEM_BINOCULARS
+slot = sl-sec-binoculars

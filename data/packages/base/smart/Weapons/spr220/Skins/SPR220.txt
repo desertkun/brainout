@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-spr220-default
+name = ITEM_WEAP_SPR220
+slot = sl-pri-spr220

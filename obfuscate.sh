@@ -1,0 +1,1 @@
+java -jar tools/proguard5.2.1/lib/proguard.jar @desktop/proguard-project.txt

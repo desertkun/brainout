@@ -1,0 +1,99 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            holder = m203
+        }
+        tag = client
+    }
+    {
+        big-icon = auga3-gl-m203
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentEffectsComponent
+        replace = {
+            reloadSecondary = [
+                [
+                    {
+                        attachTo = fire-secondary-bone
+                        object = gl-insert-1
+                    }
+                ]
+            ]
+            shootSecondary = [
+                [
+                    {
+                        attachTo = fire-secondary-bone
+                        object = shoot-flash-1
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = pistol-shoot-smoke
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = gl-shoot-1
+                    }
+                    {
+                        attachTo = fire-secondary-bone
+                        object = pistol-shoot-fire-1
+                    }
+                ]
+            ]
+        }
+        tag = client
+    }
+    {
+        class = content.components.SecondaryWeaponSlotComponent
+        icon = icon-shop-special-gl
+        properties = {
+            accuracy = 35
+            aimDistance = 30
+            allowedBullets = grenade-bullet
+            clipSize = 1
+            damage = 500
+            fire-rate = 120
+            recoil = 29
+            reloadTime = 1.8
+            shootModes = single
+        }
+    }
+]
+description = ITEM_UPGRADE_GL_M203_DESC
+id = upgrade-auga3-gl-m203
+name = ITEM_UPGRADE_GL_M203
+properties = {
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-auga3
+        param = 3
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

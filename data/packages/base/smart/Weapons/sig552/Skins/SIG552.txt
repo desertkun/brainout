@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-sig552-default
+name = ITEM_WEAP_SIG552
+slot = sl-pri-sig552

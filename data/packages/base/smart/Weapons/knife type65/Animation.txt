@@ -1,0 +1,5 @@
+animation = base:animations/weapon-type65.json
+class = content.Animation
+id = anim-type65
+states = []
+timeScale = 1

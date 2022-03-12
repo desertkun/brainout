@@ -1,0 +1,36 @@
+class = content.Achievement
+components = [
+    {
+        class = content.components.IconComponent
+        icon = achievement-mp5sd6
+        icon-locked = achievement-mp5sd6-lock
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        amount = 2000
+        class = content.components.RuRewardComponent
+        tag = server
+    }
+]
+id = achievement-mp5sd6
+name = ACHIEVEMENT_MP5SD6
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = kills-from, weapon-mp5sd6
+        param = 1000
+        unlockTitle = "{MENU_UNLOCK_KILLS_WITH} {ITEM_WEAP_MP5SD6}"
+    }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = throwable-default
+id = skin-instrument-c4-default
+name = ITEM_SPECIAL_C4
+slot = sl-spc-c4

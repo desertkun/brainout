@@ -1,0 +1,39 @@
+class = content.parallax.Parallax
+id = parr-default
+layers = [
+    {
+        class = content.parallax.DynamicLayer
+        coefX = 0.01
+        coefY = 0.01
+        flowX = -5
+        texture = parr-default-sky-foreground
+        x = 0
+        y = 515
+    }
+    {
+        class = content.parallax.StaticLayer
+        coefX = 0.1
+        coefY = 0
+        texture = parr-default-sky-root-repeat
+        x = 0
+        y = 0
+        scale = true
+    }
+    {
+        class = content.parallax.StaticLayer
+        coefX = 0.01
+        coefY = 0.01
+        texture = parr-default-sky-root
+        x = 0
+        y = 128
+    }
+    {
+        class = content.parallax.StaticLayer
+        coefX = 0.5
+        coefY = 0.2
+        texture = parr-default-grass
+        x = 0
+        y = 330
+    }
+]
+tag = client

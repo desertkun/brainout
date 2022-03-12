@@ -1,0 +1,37 @@
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.75
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        iconBadge = false
+        fetchIcon = false
+        discover = true
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 120
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = chip-2
+        tag = client
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+auto-remove = true
+id = death-drop-item

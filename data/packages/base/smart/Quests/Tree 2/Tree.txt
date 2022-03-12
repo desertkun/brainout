@@ -1,0 +1,26 @@
+class = content.quest.Tree
+id = quest-tree-2
+
+quests = [
+	quest-expired-goods-1
+    quest-kit-1
+    quest-passport-1
+	quest-expired-goods-2
+    quest-kit-2
+    quest-passport-2
+	quest-expired-goods-3
+    quest-kit-3
+    quest-passport-3
+    quest-kit-4
+	quest-expired-goods-4
+	quest-expired-goods-5
+    quest-kit-5
+	quest-expired-goods-6
+    quest-kit-6
+	quest-expired-goods-7
+	quest-kit-7
+	quest-expired-goods-8
+	quest-kit-8
+	quest-expired-goods-9
+	quest-kit-9
+]

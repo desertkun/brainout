@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mauser.json
+class = content.Animation
+id = anim-mauser
+states = []
+timeScale = 1

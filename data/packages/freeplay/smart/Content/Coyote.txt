@@ -1,0 +1,19 @@
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientFreeplayCricketComponent
+        effects = [
+        	sound-coyote-1
+        	sound-coyote-2
+        	sound-coyote-3
+        	sound-coyote-4
+        ]
+        interval = 4
+        periodic = true
+        cycles = 2
+        delayAfterPeriod = 20
+        tag = client
+    }
+]
+id = freeplay-coyote

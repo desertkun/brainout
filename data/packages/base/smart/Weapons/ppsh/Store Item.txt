@@ -1,0 +1,46 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-ppsh
+instrument = {
+    id = weapon-ppsh
+    skin = skin-weapon-ppsh-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ppsh-accuracy
+        clip = upgrade-ppsh-clip-extended
+        recoil = upgrade-ppsh-recoil
+        reload-time = upgrade-ppsh-reload-time
+        shoot-time = upgrade-ppsh-shoot-time
+        wear-resistance = upgrade-ppsh-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 71
+        id = bullet-9mmx18
+    }
+]
+name = ITEM_WEAP_PPSH
+slot = slot-primary
+category = submachine
+tags = unique
+index = 151
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = red-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_RED
+    }
+}

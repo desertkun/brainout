@@ -1,0 +1,37 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-aek999
+instrument = {
+    id = weapon-aek999
+    skins = skin-weapon-aek999-default, skin-weapon-aek999-hoarfrost
+    upgrades = {
+        recoil = upgrade-aek999-recoil
+        reload-time = upgrade-aek999-reload-time
+    }
+}
+items = [
+    {
+        amount = 50
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_AEK999
+slot = slot-primary
+category = other
+tags = unique
+index = 410
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+	    icon = icon-battle-pass-points-big
+        unlockTitle = MENU_UNLOCK_BATTLE_PASS_SEASON_0
+        unlockObject = BATTLE_PASS
+    }
+}

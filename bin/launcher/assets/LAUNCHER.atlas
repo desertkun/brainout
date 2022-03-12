@@ -1,0 +1,118 @@
+
+LAUNCHER.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bg-loading
+  rotate: false
+  xy: 2, 100
+  size: 569, 320
+  orig: 569, 320
+  offset: 0, 0
+  index: -1
+button-default-active
+  rotate: false
+  xy: 2, 66
+  size: 27, 32
+  split: 5, 5, 5, 5
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+button-default-hover
+  rotate: false
+  xy: 573, 388
+  size: 27, 32
+  split: 5, 5, 5, 5
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+button-default-normal
+  rotate: false
+  xy: 2, 32
+  size: 27, 32
+  split: 5, 5, 5, 5
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+edit-default
+  rotate: false
+  xy: 602, 406
+  size: 14, 14
+  split: 6, 6, 6, 6
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+edit-default-cursor
+  rotate: false
+  xy: 602, 393
+  size: 3, 11
+  split: 1, 1, 1, 1
+  orig: 3, 11
+  offset: 0, 0
+  index: -1
+edit-default-selection
+  rotate: false
+  xy: 585, 375
+  size: 11, 11
+  split: 2, 2, 2, 2
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+form-default
+  rotate: false
+  xy: 2, 16
+  size: 14, 14
+  split: 6, 6, 6, 6
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+progress-background
+  rotate: false
+  xy: 618, 408
+  size: 2, 12
+  split: 0, 0, 0, 12
+  pad: 0, 0, -1, -1
+  orig: 2, 12
+  offset: 0, 0
+  index: -1
+progress-knob
+  rotate: false
+  xy: 2, 2
+  size: 2, 12
+  split: 0, 0, 0, 12
+  pad: 0, 0, -1, -1
+  orig: 2, 12
+  offset: 0, 0
+  index: -1
+scroll-h-background
+  rotate: false
+  xy: 31, 88
+  size: 24, 10
+  split: 6, 5, 4, 4
+  orig: 24, 10
+  offset: 0, 0
+  index: -1
+scroll-h-knob
+  rotate: false
+  xy: 31, 76
+  size: 14, 10
+  split: 6, 6, 4, 4
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+scroll-v-background
+  rotate: false
+  xy: 573, 362
+  size: 10, 24
+  split: 4, 4, 6, 5
+  orig: 10, 24
+  offset: 0, 0
+  index: -1
+scroll-v-knob
+  rotate: false
+  xy: 573, 346
+  size: 10, 14
+  split: 4, 4, 6, 6
+  orig: 10, 14
+  offset: 0, 0
+  index: -1

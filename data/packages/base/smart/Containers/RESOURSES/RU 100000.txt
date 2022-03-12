@@ -1,0 +1,25 @@
+class = content.gamecase.gen.StatCard
+components = [
+    {
+        class = content.components.ClientStatCardComponent
+        flipEffect = skillpointsEarned
+        icon = icon-pack-ru
+        tag = client
+    }
+    {
+        amount = {
+            from = 100000
+            to = 100000
+        }
+        class = content.components.ServerStatCardComponent
+        stat = ru
+        tag = server
+    }
+    {
+        class = content.components.StatCardComponent
+    }
+]
+group = cardgroup-resourses-3
+id = gen-ru-100000
+name = RU
+weight = 200

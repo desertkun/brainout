@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-rpg7-2118
+        tag = client
+    }
+]
+data = weapon-2118
+id = skin-weapon-rpg7-2118
+name = ITEM_WEAP_RPG7_2118
+slot = sl-pri-rpg7
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-ax
+        class = content.components.IconComponent
+        icon = knife-ax
+        tag = client
+    }
+]
+id = sl-ml-knife-ax
+instrument = {
+    id = weapon-knife-ax
+    skin = skin-weapon-knife-ax
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_AX
+slot = slot-melee
+category = melee
+tags = unique
+index = 26
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = sniper-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SNIPER
+    }
+}

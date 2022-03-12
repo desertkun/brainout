@@ -1,0 +1,75 @@
+access = byDefault
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = glock-reload
+        fetch = glock-fetch
+        shoot = [
+            glock-shoot-1, gunshot-tail-1, supersonic-snap, supersonic-snap
+            glock-shoot-2, gunshot-tail-2, supersonic-snap, supersonic-snap
+            glock-shoot-3, gunshot-tail-1, supersonic-snap, supersonic-snap
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 0.8
+    }
+    {
+        animation = anim-pistol
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-1hand
+            fetch = reload-1hand-fetch
+            addRound = add-round
+        }
+	icon-scale = 0.8
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 6
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-pistol-default
+id = weapon-pistol
+instrumentTags = secondary
+primary = {
+    accuracy = 30
+    aimDistance = 25
+    allowedBullets = bullet-9mmx19
+    clipSize = 17
+    magazineManagement = 2
+    damage = 40
+    fire-rate = 800
+    recoil = 65
+    reloadTime = 1.1
+    fetchTime = 0.4
+    shootModes = single, auto
+}
+slot = slot-secondary

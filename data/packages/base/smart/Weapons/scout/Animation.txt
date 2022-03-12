@@ -1,0 +1,5 @@
+animation = base:animations/weapon-scout.json
+class = content.Animation
+id = anim-scout
+states = []
+timeScale = 1

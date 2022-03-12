@@ -1,0 +1,99 @@
+{
+	"content": 
+	{
+		"music-list-lobby":
+		{
+			"class": "content.MusicList",
+			"tag": "client",
+			"list":
+			[
+				"music-lobby"
+			]
+		},
+		"anim-cristmas-tree": 
+		{
+			"class": "content.Animation",
+			"animation": "lobby:animations/cristmas-tree.json",
+			"states": [],
+			"tag": "client",
+			"timeScale": 1
+		},
+		"active-cristmas-tree":
+		{
+			"class": "content.active.Animation",
+			"name": "Cristmas Tree",
+			"components": [
+				{
+					"class": "content.components.ActiveAnimationComponent",
+					"animation": "anim-cristmas-tree",
+					"play": [
+						"animation"
+					],
+					"tag": "client"
+				}
+			]
+		},
+		"anim-cristmas-lights": 
+		{
+			"class": "content.Animation",
+			"animation": "lobby:animations/cristmas-lights.json",
+			"states": [],
+			"tag": "client",
+			"timeScale": 1
+		},
+		"active-cristmas-lights":
+		{
+			"class": "content.active.Animation",
+			"name": "Cristmas Lights",
+			"components": [
+				{
+					"class": "content.components.ActiveAnimationComponent",
+					"animation": "anim-cristmas-lights",
+					"play": [
+						"animation"
+					],
+					"tag": "client"
+				}
+			]
+		},
+		"music-lobby":
+		{
+			"class": "content.Music",
+			"tag": "client",
+			"music": "lobby:music/bg.mp3"
+		},
+		"music-event":
+		{
+			"class": "content.effect.MusicListEffect",
+			"tag": "client",
+			"distance": 0.4,
+			"music": [
+				"mainmenu:music/authors.mp3"
+			]
+		},
+		"music-buzzer":
+		{
+			"class": "content.effect.MusicEffect",
+			"tag": "client",
+			"distance": 0.4,
+			"music": "lobby:music/buzzer.mp3"
+		},
+		"parr-lobby":
+		{
+			"class": "content.parallax.Parallax",
+			"tag": "client",
+			"layers": [
+				{
+					"class": "content.parallax.StaticLayer",
+					"texture": "lobby-parr-sky-root-repeat",
+					"x": 0,
+					"y": 0,
+					"coefX": 0.1,
+					"coefY": 0.0,
+					"scale": true
+				}
+			]
+		}
+	},
+	"textures": "data/textures/textures.json"
+}

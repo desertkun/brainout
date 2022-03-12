@@ -1,0 +1,5 @@
+animation = base:animations/weapon-trench.json
+class = content.Animation
+id = anim-trench
+states = []
+timeScale = 1

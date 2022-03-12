@@ -1,0 +1,339 @@
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-1
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -4
+                y = 0
+                w = 11
+                h = 31
+                image = custom-tree-1
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-1
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-2
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -8
+                y = 0
+                w = 19
+                h = 31
+                image = custom-tree-2
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-2
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-3
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -5.5
+                y = 0
+                w = 14
+                h = 19
+                image = custom-tree-3
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-3
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-4
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -6.5
+                y = 0
+                w = 16
+                h = 18
+                image = custom-tree-4
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-4
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-5
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -3
+                y = 0
+                w = 9
+                h = 6
+                image = custom-tree-5
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-5
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-6
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -4
+                y = 0
+                w = 11
+                h = 12
+                image = custom-tree-6
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-6
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-7
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -8.5
+                y = 0
+                w = 20
+                h = 17
+                image = custom-tree-7
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-7
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-8
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -2
+                y = 0
+                w = 7
+                h = 7
+                image = custom-tree-8
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-9
+
+--------
+
+class = content.active.Active
+name = CUSTOM_TREE
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-custom-tree-9
+        tag = client
+    }
+    {
+        class = content.components.SpriteWithBlocksComponent
+        width = 3
+        height = 3
+        images = [
+            {
+                x = -0.5
+                y = 0
+                w = 2
+                h = 23
+                image = custom-tree-2x23
+            }
+        ]
+        underlying-block = sp-block-n
+        blocks-layer = 0
+    }
+    {
+        class = content.components.ClientSpriteBlockComponent
+        tag = client
+    }
+    {
+        class = content.components.CategoryComponent
+        name = CUSTOM_TREE
+        icon = icon-custom-tree
+    }
+]
+id = sp-bg-tree-10

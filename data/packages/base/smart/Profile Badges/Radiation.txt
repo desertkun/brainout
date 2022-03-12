@@ -1,0 +1,21 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-radiation
+        big-icon = icon-nuclear-profile-badge-unique
+        tag = client
+    }
+]
+id = profile-badge-radiation
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+    	hide = true
+    }
+}

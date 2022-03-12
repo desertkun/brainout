@@ -1,0 +1,34 @@
+class = content.shop.PlayerSkinSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-player-skin-emil
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-skin-emil
+items = []
+name = ITEM_PLAYER_SKIN_EMIL
+skin = skin-player-emil
+slot = slot-player-skin
+category = outfit
+tags = missions
+index = 390
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = hollywood-case
+        unlockTitle = MENU_LOCKED_UNIFORM_GENERIC
+    }
+}
+

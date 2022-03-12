@@ -1,0 +1,77 @@
+class = content.instrument.Weapon
+components = [
+    {
+        class = content.components.ClientWeaponComponent
+        tag = client
+    }
+    {
+        class = content.components.InstrumentEffectsComponent
+        custom = {
+            empty = stuck-snd
+            stuck = stuck-snd
+        }
+        reload = pistol-reload-snd
+        fetch = pistol-fetch-snd
+        shoot = [
+            pistol-shoot-s-1, pistol-shoot-smoke
+        ]
+        switchMode = weapon-switch-snd
+        addRound = add-round-snd
+        tag = client
+    }
+    {
+        class = content.components.ServerWeaponComponent
+        tag = server
+    }
+    {
+        class = content.components.SuppressBulletAttachmentsComponent
+        suppress = fire-bone
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        dropItem = weapon-drop-item
+        weight = 1
+    }
+    {
+        animation = anim-pistol-s
+        class = content.components.WeaponAnimationComponent
+        skin = weapon-default
+        states = {
+            aim = aim-weapon-1hand
+            aimHit = shoot-aim-weapon-1hand
+            hit = shoot-hold-weapon-1hand
+            hold = hold-weapon-1hand
+            reload = reload-1hand
+            fetch = reload-1hand1-fetch
+            addRound = add-round
+        }
+    }
+    {
+        attach-bone = fire-bone
+        attenuation = 12
+        class = content.components.WeaponHeatComponent
+        effect = white-smoke
+        launch-add = 4
+        max = 100
+        tag = client
+    }
+]
+defaultSkin = skin-weapon-pistol-s-default
+id = weapon-pistol-s
+instrumentTags = secondary
+primary = {
+    accuracy = 55
+    aimDistance = 25
+    allowedBullets = bullet-9mmx18
+    clipSize = 12
+    magazineManagement = 2
+    damage = 45
+    fire-rate = 750
+    recoil = 30
+    reloadTime = 1.1
+    fetchTime = 0.4
+    shootModes = single
+    silenced = true
+}
+slot = slot-secondary

@@ -1,0 +1,19 @@
+"DepotBuildConfig"
+{
+  "DepotID" "578313"
+  "ContentRoot" "windows/x86"
+
+  "FileMapping"
+  {
+    "LocalPath" "./bin/*"
+    "DepotPath" "./bin"
+    "recursive" "1"
+  }
+
+  "FileMapping"
+  {
+    "LocalPath" "./lib/*"
+    "DepotPath" "./lib"
+    "recursive" "1"
+  }
+}

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-baltiets-default
+name = ITEM_WEAP_BALTIETS
+slot = sl-sec-baltiets

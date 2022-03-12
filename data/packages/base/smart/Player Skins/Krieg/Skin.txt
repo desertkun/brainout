@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = krieg
+id = skin-player-krieg
+name = ITEM_PLAYER_SKIN_KRIEG

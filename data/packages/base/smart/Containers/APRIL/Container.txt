@@ -1,0 +1,33 @@
+cards = [
+    {
+        groups = cardgroup-april
+    }
+    {
+        groups = cardgroup-skillpts
+    }
+    {
+        groups = cardgroup-gears, cardgroup-gears-rare, cardgroup-gears-improved
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = xmas-case-bg
+        class = content.components.IconComponent
+        icon = xmas-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+demand = true
+description = CASE_APRIL_DESC
+id = case-april
+name = CASE_APRIL

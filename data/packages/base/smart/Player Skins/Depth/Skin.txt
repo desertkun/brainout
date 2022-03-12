@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = depth
+id = skin-player-depth
+name = ITEM_PLAYER_SKIN_DEPTH

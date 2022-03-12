@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = combine
+id = skin-player-combine
+name = ITEM_PLAYER_SKIN_COMBINE

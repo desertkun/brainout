@@ -1,0 +1,39 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 75
+    }
+]
+id = sl-sec-cz75
+instrument = {
+    id = weapon-cz75
+    skins = skin-weapon-cz75-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+    }
+}
+items = [
+    {
+        amount = 30
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_CZ75
+slot = slot-secondary
+category = pistol
+tags = level
+index = 7
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 21
+    }
+}

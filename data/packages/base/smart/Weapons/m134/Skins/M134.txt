@@ -1,0 +1,5 @@
+class = content.instrument.InstrumentSkin
+data = weapon-default
+id = skin-weapon-m134-default
+name = ITEM_WEAP_M134
+slot = sl-pri-m134

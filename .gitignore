@@ -1,0 +1,79 @@
+## Java
+
+*.class
+*.war
+*.ear
+hs_err_pid*
+
+## GWT
+war/
+html/war/gwt_bree/
+html/gwt-unitCache/
+.apt_generated/
+html/war/WEB-INF/deploy/
+html/war/WEB-INF/classes/
+.gwt/
+gwt-unitCache/
+www-test/
+.gwt-tmp/
+
+## Android Studio and Intellij and Android in general
+android/libs/armeabi/
+android/libs/armeabi-v7a/
+android/libs/x86/
+android/gen/
+.idea/
+*.ipr
+*.iws
+*.iml
+out/
+com_crashlytics_export_strings.xml
+
+## Eclipse
+.classpath
+.project
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+
+## NetBeans
+**/nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+bin/bin
+bin/lib
+
+## Gradle
+
+.gradle
+gradle-app.setting
+build/
+
+## OS Specific
+.DS_Store
+/scripts/*.pyc
+*.pyc
+bin/server/packages/
+*.zip
+brainout-server.jar
+bin/obfuscated
+bin/client
+scripts/steam/output
+*.log
+bin/ch/brainout-ch.jar
+bin/ch/brainout.jar
+bin/chserver/brainout-server-ch.jar
+bin/server/brainout-server-o.jar

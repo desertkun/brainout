@@ -1,0 +1,18 @@
+class = content.bullet.LimitedBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = []
+        hit = []
+        launch = []
+        tag = client
+    }
+]
+hitImpulse = 0
+id = katana-bullet
+mass = 0
+maxDistance = 5
+power = 1
+powerDistance = 5
+speed = 128
+bulletAtLaunch = 4

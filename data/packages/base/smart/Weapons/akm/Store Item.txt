@@ -1,0 +1,45 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-akm
+instrument = {
+    id = weapon-akm
+    skins = skin-weapon-akm-default, skin-weapon-akm-gold, skin-weapon-akm-scotch, skin-weapon-akm-paratrooper, skin-weapon-akm-ice, skin-weapon-akm-fear, skin-weapon-akm-umbra, skin-weapon-akm-festive, skin-weapon-akm-persian
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-akm-accuracy
+        clip = upgrade-akm-clip-extended
+        gl = upgrade-akm-gl-gp30
+        recoil = upgrade-akm-recoil
+        scope = upgrade-akm-scope-cobra
+        shoot-time = upgrade-akm-shoot-time
+    }
+}
+items = [
+    {
+        amount = 80
+        id = bullet-7.62x39
+    }
+]
+name = ITEM_WEAP_AKM
+slot = slot-primary
+category = assault
+tags = level, classic
+index = 3
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 2
+    }
+}

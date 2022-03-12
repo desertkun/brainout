@@ -1,0 +1,83 @@
+class = content.active.ThrowableActive
+components = [
+    {
+        class = content.components.TimeToLiveComponent
+        time = 10
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ActiveParticleComponent
+        particle = fire-particle
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 1
+        mass = 0.25
+        reduce = -0.25
+        width = 1
+        contactGap = 0
+    }
+    {
+        class = content.components.DestroyOnDetectComponent
+        detectClass = physics
+        tag = server
+    }
+    {
+        class = content.components.CollisionDetectorComponent
+        detectClass = physics
+        tag = server
+    }
+    {
+        class = content.components.PhysicsCollisionDetectorComponent
+        distance = 1.0
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        animation = anim-grenade-he
+        class = content.components.ActiveIconComponent
+        rotateByX = 10
+        skin = throwable-molotov
+        tag = client
+    }
+    {
+        class = content.components.IgnorePlatformsComponent
+    }
+    {
+        @if = "$lobby != true"
+        @then = {
+            amount = 24
+            bullet = molotov-flame
+            class = content.components.ExplosiveComponent
+            damage = 75
+            effect = molotov-effect-1
+            tag = server
+        }
+    }
+]
+id = explosive-molotov-active
+name = ITEM_HE
+
+--------
+class = content.Effect
+id = molotov-effect-1
+set = [
+    molotov-explode-snd, explosion-flash-1, explode-effect-2-shake
+]
+tag = client
+
+
+--------
+
+class = content.effect.ParticleEffect
+id = molotov-particle
+particle = base:particles/fire-bullet
+tag = client

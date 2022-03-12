@@ -1,0 +1,52 @@
+access = byDefault
+additionalClip = 1
+class = content.shop.PlayerSlotItem
+clipExcept = [
+    grenade-bullet
+]
+weaponExcept = [
+]
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-shop-special-secondary-clip
+        tag = client
+    }
+]
+description = ITEM_SPECIAL_SECONDARY_MAGAZINE_DESC
+id = sl-pl-sc-clip
+items = []
+name = ITEM_SPECIAL_SECONDARY_MAGAZINE
+player = player-default
+slotFrom = slot-secondary
+slot = slot-player
+category = special
+tags = level
+index = 40
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 6
+    }
+}

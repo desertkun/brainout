@@ -1,0 +1,17 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-bio
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.25
+    }
+    {
+        class = content.components.HideFromMarketComponent
+    }
+]
+id = bio
+name = ITEM_BG_BIO

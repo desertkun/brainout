@@ -1,0 +1,5 @@
+{
+	"name": "map_station",
+	"dependency": ["base"],
+	"version": "0.1"
+}

@@ -1,0 +1,46 @@
+class = content.quest.Quest
+id = quest-expired-goods-2
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-canned-goods
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = consumable-item-water
+        target = 5
+    }
+    2 = {
+        class = content.quest.task.TakeOutItem
+        item = consumable-item-beans
+        target = 3
+    }
+}
+
+group = expired-goods
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_SPOILED_GOODS
+
+rewards = [
+    {
+        action = unlock
+        id = case-standard
+        amount = 1
+    }
+    {
+        action = addstat
+        id = score
+        amount = 450
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 400
+    }
+]

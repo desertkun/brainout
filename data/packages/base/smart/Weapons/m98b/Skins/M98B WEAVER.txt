@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m98b-weaver
+        tag = client
+    }
+]
+data = weapon-weaver
+id = skin-weapon-m98b-weaver
+name = ITEM_WEAP_M98B_WEAVER
+slot = sl-pri-m98b
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-fn2000-elite
+        tag = client
+    }
+]
+data = weapon-elite
+id = skin-weapon-fn2000-elite
+name = ITEM_WEAP_FN2000_ELITE
+slot = sl-pri-fn2000
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

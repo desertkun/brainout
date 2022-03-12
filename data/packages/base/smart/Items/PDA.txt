@@ -1,0 +1,37 @@
+
+class = content.consumable.ConsumableContent
+id = freeplay-pda
+name = ITEM_PDA
+description = ITEM_PDA_DESC
+stacks = false
+components = [
+    {
+        class = content.components.IconComponent
+        icon-small = icon-pda-small
+        game-icon = icon-pda-small
+        big-icon = icon-pda
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 0
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = valuables-brickgame-move-1, valuables-brickgame-move-2
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.02
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 600
+        tag = client
+    }
+    {
+        class = content.components.ClientMarketViewerComponent
+        tag = client
+    }
+]

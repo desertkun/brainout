@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mp7.json
+class = content.Animation
+id = anim-mp7
+states = []
+timeScale = 1

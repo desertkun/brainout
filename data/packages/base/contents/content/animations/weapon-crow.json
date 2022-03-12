@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"88SfFn2S4ho","spine":"4.0.36","images":"../../../textures/GAME/","audio":""},"bones":[{"name":"root"},{"name":"fire-bone","parent":"root","length":17.82}],"skins":[{"name":"weapon-default"}],"animations":{"animation":{}}}

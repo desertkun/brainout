@@ -1,0 +1,4 @@
+class = content.effect.SoundEffect
+id = move-other-snd
+sound = mainmenu:sounds/equip.mp3
+tag = client

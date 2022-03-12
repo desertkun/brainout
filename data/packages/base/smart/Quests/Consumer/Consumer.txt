@@ -1,0 +1,66 @@
+class = content.quest.Quest
+id = quest-consumer
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-ration
+        tag = client
+    }
+]
+
+tasks = {
+	1 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-water
+        target = 10
+    }
+	2 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-vodka
+        target = 5
+    }
+	3 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-canned-goods
+        target = 8
+    }
+	4 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-beans
+        target = 5
+    }
+	5 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-energy-drink
+        target = 8
+    }
+	6 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-brandy
+        target = 3
+    }
+	7 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-milk
+        target = 5
+    }
+    8 = {
+        class = content.quest.task.UseItem
+        items = consumable-item-caviar
+        target = 3
+    }
+}
+
+coop = false
+hasToLeave = false
+name = QUEST_TITLE_CONSUMER
+perTaskReward = true
+
+rewards = [
+    {
+        action = addstat
+        id = ru
+        amount = 1500
+    }
+]

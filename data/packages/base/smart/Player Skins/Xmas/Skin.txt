@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = xmas
+id = skin-player-xmas
+name = ITEM_PLAYER_SKIN_XMAS

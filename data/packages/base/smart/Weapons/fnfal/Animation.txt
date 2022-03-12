@@ -1,0 +1,5 @@
+animation = base:animations/weapon-fnfal.json
+class = content.Animation
+id = anim-fnfal
+states = []
+timeScale = 1

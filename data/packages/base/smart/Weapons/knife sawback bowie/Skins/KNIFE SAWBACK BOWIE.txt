@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-sawback-bowie
+        class = content.components.IconComponent
+        icon = knife-sawback-bowie
+        tag = client
+    }
+]
+data = knife-sawback-bowie
+id = skin-weapon-knife-sawback-bowie
+name = ITEM_WEAP_KNIFE_SAWBACK_BOWIE
+slot = sl-ml-knife-sawback-bowie

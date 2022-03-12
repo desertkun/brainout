@@ -1,0 +1,29 @@
+@if = "$light != disabled"
+@then = {
+    class = content.effect.LightEffect
+    color = ffefa3ff
+    distance = 40
+    rays = 128
+    soft = 8
+    tag = client
+    time = 0.2
+    timeAfter = 0.2
+    timeBefore = 0
+}
+id = explosion-flash-1
+
+--------
+
+@if = "$light != disabled"
+@then = {
+    class = content.effect.LightEffect
+    color = ffefa399
+    distance = 20
+    rays = 128
+    soft = 8
+    tag = client
+    time = 0.2
+    timeAfter = 0.2
+    timeBefore = 0
+}
+id = explosion-flash-2

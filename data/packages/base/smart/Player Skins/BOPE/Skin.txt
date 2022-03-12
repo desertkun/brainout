@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = bope
+id = skin-player-bope
+name = ITEM_PLAYER_SKIN_BOPE

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-gewehr43.json
+class = content.Animation
+id = anim-gewehr43
+states = []
+timeScale = 1

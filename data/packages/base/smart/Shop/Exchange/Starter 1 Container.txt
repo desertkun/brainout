@@ -1,0 +1,52 @@
+class = content.shop.StoreSlotItem
+components = [
+    {
+        class = content.components.IconComponent
+        icon = exclusive-case
+        tag = client
+    }
+    {
+        amount = 1
+        class = content.components.UnlockStoreItemComponent
+        content = case-exclusive-starter-1
+    }
+    {
+        class = content.components.ServerUnlockStoreItemComponent
+        tag = server
+    }
+    {
+        class = content.components.ItemLimitsComponent
+        limit-items = [
+            {
+                func = "<="
+                id = case-exclusive-starter-1
+                value = 0
+            }
+            {
+                func = "<="
+                id = sl-pri-ak12
+                value = 0
+            }
+            {
+                func = "<="
+                id = skin-player-bandit
+                value = 0
+            }
+        ]
+    }
+]
+description = CASE_STARTER_1_DESC
+id = sl-store-case-starter-1
+name = CASE_EXCLUSIVE
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 15
+        currency = nuclear-material
+    }
+}

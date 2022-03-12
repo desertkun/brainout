@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-msp-default
+name = ITEM_WEAP_MSP
+slot = sl-pri-msp

@@ -1,0 +1,5 @@
+animation = base:animations/weapon-knife.json
+class = content.Animation
+id = anim-knife
+states = []
+timeScale = 1

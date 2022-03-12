@@ -1,0 +1,21 @@
+class = content.quest.Tree
+id = quest-tree-3
+
+quests = [
+    quest-first-aid-1
+    quest-marauder-1
+    quest-ammunition-1
+    quest-explosives-1
+    quest-marauder-2
+    quest-ammunition-2
+    quest-first-aid-2
+    quest-marauder-3
+    quest-ammunition-3
+    quest-explosives-2
+    quest-marauder-4
+    quest-ammunition-4
+    quest-first-aid-3
+    quest-marauder-5
+    quest-marauder-6
+    quest-first-aid-4
+]

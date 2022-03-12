@@ -1,0 +1,52 @@
+{
+	"name": "Duel",
+	"packages":
+	[
+		"base",
+		"sounds",
+		"freeplay"
+	],
+	"defines":
+	{
+		"minimapEnabled": "false",
+		"chat": "disabled",
+		"dropBullets": "false",
+		"crawl": "disabled",
+		"grenades": "disabled",
+		"drill": "disabled"
+	},
+	"teams": 
+	[
+		"team-blue",
+		"team-green"
+	],
+
+	"prices":
+	{
+		"knife": 50,
+		"purchase-gears": 2,
+		"purchase-skillpts": 25,
+		"trophy-base": 2,
+		"trophy-upgrade": 1,
+		"trophy-skin": 1,
+		"duel": 1000
+	},
+
+	"levels": 
+	{
+		"level": "levels-default",
+		"tech-level": "levels-tech"
+	},	
+
+	"modeDelay": 11,
+	"roundTime": 0,
+
+	"deathsRequired": 3,
+
+	"damageCoef": 4,
+	"autoBalance":
+	{
+		"enabled": false,
+		"balance": 1
+	}
+}

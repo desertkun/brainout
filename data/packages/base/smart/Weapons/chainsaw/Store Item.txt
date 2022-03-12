@@ -1,0 +1,36 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-chainsaw
+instrument = {
+    id = weapon-chainsaw
+    skins = skin-weapon-chainsaw-default, skin-weapon-chainsaw-sword, skin-weapon-chainsaw-cherry, skin-weapon-chainsaw-slayer, skin-weapon-chainsaw-druzhba
+}
+items = [
+    {
+        amount = 100
+        id = chainsaw-bullet
+    }
+]
+name = ITEM_WEAP_CHAINSAW
+price = 0
+slot = slot-primary
+category = other
+tags = unique
+index = 250
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = l4d-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_L4D
+    }
+}
+

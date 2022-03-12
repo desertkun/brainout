@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = loyalist
+id = skin-player-loyalist
+name = ITEM_PLAYER_SKIN_LOYALIST

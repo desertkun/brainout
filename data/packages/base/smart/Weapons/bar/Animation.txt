@@ -1,0 +1,5 @@
+animation = base:animations/weapon-bar.json
+class = content.Animation
+id = anim-bar
+states = []
+timeScale = 1

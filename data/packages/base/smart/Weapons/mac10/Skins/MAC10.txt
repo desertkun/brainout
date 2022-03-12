@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-mac10-default
+name = ITEM_WEAP_MAC10
+slot = sl-pri-mac10

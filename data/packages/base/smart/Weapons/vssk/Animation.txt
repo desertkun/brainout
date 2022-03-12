@@ -1,0 +1,5 @@
+animation = base:animations/weapon-vssk.json
+class = content.Animation
+id = anim-vssk
+states = []
+timeScale = 1

@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = fsg
+id = skin-player-fsg
+name = ITEM_PLAYER_SKIN_FSG

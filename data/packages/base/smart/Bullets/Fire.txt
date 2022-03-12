@@ -1,0 +1,33 @@
+blockEffect = false
+class = content.bullet.ShotBullet
+components = [
+    {
+        class = content.components.BulletEffectsComponent
+        fly = [
+            bullet-particle-fire-1
+        ]
+        hit = []
+        launch = []
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-bullet-pistol
+        tag = client
+    }
+]
+id = fire-bullet
+mass = 0.05
+hitShake = 0
+name = ITEM_BULLET_FIRE
+power = 0.02
+powerDistance = 600
+speed = 50
+
+--------
+
+class = content.effect.ContinuousParticleEffect
+stickTime = 0
+id = bullet-particle-fire-1
+particle = base:particles/fire-bullet
+tag = client

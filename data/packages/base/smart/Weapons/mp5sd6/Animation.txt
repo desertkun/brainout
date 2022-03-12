@@ -1,0 +1,5 @@
+animation = base:animations/weapon-mp5sd6.json
+class = content.Animation
+id = anim-mp5sd6
+states = []
+timeScale = 1

@@ -1,0 +1,6 @@
+class = content.instrument.InstrumentSkin
+components = []
+data = weapon-default
+id = skin-weapon-kriss-default
+name = ITEM_WEAP_KRISS
+slot = sl-pri-kriss

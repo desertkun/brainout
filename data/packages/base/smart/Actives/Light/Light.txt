@@ -1,0 +1,39 @@
+class = content.active.Light
+color = 333333CC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-light
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        tag = client
+    }
+]
+distance = 20
+id = light
+name = ITEM_LIGHT
+rays = 32
+soft = 8
+
+--------
+
+class = content.active.Light
+color = 333333CC
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-light
+        tag = client
+    }
+    {
+        class = content.components.ClientLightComponent
+        tag = client
+    }
+]
+distance = 20
+id = light-sharp
+name = Sharp Light
+rays = 64
+soft = 0

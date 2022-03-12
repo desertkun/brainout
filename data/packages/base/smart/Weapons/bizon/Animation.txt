@@ -1,0 +1,5 @@
+animation = base:animations/weapon-bizon.json
+class = content.Animation
+id = anim-bizon
+states = []
+timeScale = 1

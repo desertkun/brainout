@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-feldmesser81
+        class = content.components.IconComponent
+        icon = knife-sickle
+        tag = client
+    }
+]
+data = knife-feldmesser81
+id = skin-weapon-knife-feldmesser81
+name = ITEM_WEAP_KNIFE_FELDMESSER81
+slot = sl-ml-knife-feldmesser81

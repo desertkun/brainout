@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-mosin-flapper
+        tag = client
+    }
+]
+data = weapon-flapper
+id = skin-weapon-mosin-flapper
+name = ITEM_WEAP_MOSIN_FLAPPER
+slot = sl-pri-mosin
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = xmas-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

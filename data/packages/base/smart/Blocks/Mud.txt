@@ -1,0 +1,92 @@
+class = content.block.Concrete
+components = [
+    {
+        @if = "$editor == true"
+        @then = {
+            class = content.components.BlockTextureComponent
+            region = core-mud
+            tag = client
+        }
+    }
+    {
+        class = content.components.BlockEffectsComponent
+        destroy = {
+            @if = "$editor != true"
+            @then = [
+                ground-hit-snd-1, ground-hit-part-1
+            ]
+        }
+        hit = [
+            ground-hit-snd-1, ground-hit-part-1, ground-hit-part-2-physic, ground-hit-part-2-physic, ground-hit-part-2-physic
+            ground-hit-snd-4, ground-hit-part-1, ground-hit-part-2-physic, ground-hit-part-2-physic
+            ground-hit-snd-2, ground-hit-part-1, ground-hit-part-2-physic
+            ground-hit-snd-3, ground-hit-part-1, ground-hit-part-2-physic
+        ]
+        place = {
+            @if = "$editor != true"
+            @then = [
+                ground-hit-part-1
+            ]
+        }
+        step = [
+            mud-step-snd-1, mud-step-physic
+            mud-step-snd-2, mud-step-physic
+            mud-step-snd-3, mud-step-physic
+        ]
+        tag = client
+    }
+    {
+        class = content.components.IconComponent
+        icon = icon-ground
+        tag = client
+    }
+    {
+        class = content.components.ItemComponent
+        weight = 0.05
+    }
+]
+contactId = core-mud
+contactStrategy = combined
+contactTo = collision, brick, core, metal, ground, platform, core-mud
+id = core-mud
+name = Mud
+static = true
+resist = 999999
+
+--------
+
+class = content.effect.ParticleEffect
+id = che-1
+particle = base:particles/che-1
+tag = client
+
+--------
+
+angleOffset = {
+    max = -75
+    min = -115
+}
+offsetX = {
+    min = -0.5
+    max = 0.5
+}
+offsetY = {
+    min = 0.5
+    max = 0.5
+}
+attached = che-1
+class = content.effect.PhysicEffect
+friction = 0.5
+id = mud-step-physic
+mass = 2
+reduce = -0.4
+speed = {
+    max = 25
+    min = 15
+}
+spring = {
+    max = 0.5
+    min = 0.25
+}
+tag = client
+

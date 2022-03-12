@@ -1,0 +1,30 @@
+class = content.upgrades.Upgrade
+components = [
+    {
+        big-icon = icon-shop-upgrade-extra-mag
+        class = content.components.IconComponent
+        tag = client
+    }
+    {
+        class = content.components.ProvideMagazineComponent
+        tag = server
+    }
+]
+description = ITEM_UPGRADE_EXTRA_MAGAZINE_DESC
+id = upgrade-extra-mag-2
+name = ITEM_UPGRADE_EXTRA_MAGAZINE
+properties = {
+    number-of-magazines = "+2"
+}
+
+--------
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}

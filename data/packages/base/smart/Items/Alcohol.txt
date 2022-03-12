@@ -1,0 +1,211 @@
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-vodka
+        icon-small = icon-item-vodka-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = vodka-move-1
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+    {
+        class = content.components.ClientItemActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerBoosterActivatorComponent
+        time = 3
+        effect = drink-vodka-effect
+        animation = drink-vodka
+        tag = server
+    }
+    {
+        class = content.components.BoosterActivatorComponent
+        radio = 25
+        temperature = 10
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = fridge, med
+        weight = 1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 25
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 40
+                    from = 40
+                    to = 60
+                }
+                {
+                    weight = 10
+                    from = 80
+                    to = 90
+                }
+            ]
+        }
+    }
+]
+id = consumable-item-vodka
+name = ITEM_VODKA
+description = ITEM_VODKA_DESC
+
+--------
+
+class = content.consumable.DecayConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-brandy
+        icon-small = icon-item-brandy-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = vodka-move-1
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+    {
+        class = content.components.ClientItemActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerBoosterActivatorComponent
+        time = 3
+        effect = drink-vodka-effect
+        animation = drink-brandy
+        tag = server
+    }
+    {
+        class = content.components.BoosterActivatorComponent
+        radio = 10
+        temperature = 15
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = fridge, med
+        weight = 1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 25
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 40
+                    from = 40
+                    to = 60
+                }
+                {
+                    weight = 10
+                    from = 80
+                    to = 90
+                }
+            ]
+        }
+    }
+]
+uses = 2
+id = consumable-item-brandy
+name = ITEM_BRANDY
+description = ITEM_VODKA_DESC
+
+--------
+
+class = content.consumable.ConsumableContent
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-item-pythonmeister
+        icon-small = icon-item-pythonmeister-small
+        tag = client
+    }
+    {
+        class = content.components.InventoryMoveSoundComponent
+        sounds = vodka-move-1
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 20
+    }
+    {
+        class = content.components.ClientItemActivatorComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerBoosterActivatorComponent
+        time = 3
+        effect = drink-vodka-effect
+        animation = drink-pythonmeister
+        tag = server
+    }
+    {
+        class = content.components.BoosterActivatorComponent
+        radio = 10
+        temperature = 25
+    }
+    {
+        class = content.components.ItemComponent
+        consumableTags = fridge, med
+        weight = 1
+    }
+    {
+        class = content.components.SortingRankComponent
+        rank = 25
+        tag = client
+    }
+    {
+        @if = "$freeplay == true"
+        @then = {
+            class = content.components.QualityComponent
+            probabilities = [
+                {
+                    weight = 40
+                    from = 40
+                    to = 60
+                }
+                {
+                    weight = 10
+                    from = 80
+                    to = 90
+                }
+            ]
+        }
+    }
+]
+id = consumable-item-pythonmeister
+name = ITEM_PYTHON_MEISTER
+description = ITEM_VODKA_DESC
+
+--------
+
+class = content.Effect
+id = drink-vodka-effect
+set = [
+    drink-vodka-snd
+]
+tag = client

@@ -1,0 +1,321 @@
+{
+	"rotary": "random",
+	"class": "source.MapSetSource",
+	"maps":
+	{
+		"factory":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_station"],
+			"map": "maps/factory.map"
+		},
+		"hangars":
+		{
+			"packages": ["map_factory", "custom"],
+			"map": "maps/hangars.map",
+			"defines":
+			{
+				"coredestructable": "no",
+				"platforms": "phy"
+			}
+		},
+		"canyon":
+		{
+			"packages": ["map_factory", "map_canyon", "custom"],
+			"map": "maps/canyon.map",
+			"defines":
+			{
+				"coredestructable": "no",
+				"platforms": "phy"
+			}
+		},
+		"construction":
+		{
+			"packages": ["map_construction"],
+			"map": "maps/construction.map",
+			"defines":
+			{
+				"claymore": "disabled",
+				"drill": "disabled",
+				"minimapEnabled": "false"
+			}
+		},
+		"station":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_station"],
+			"map": "maps/station.map"
+		},
+		"siber":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_station"],
+			"map": "maps/siber.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"forest":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge"],
+			"map": "maps/forest.map"
+		},
+		"bridge":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/bridge.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"tower":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/tower.map"
+		},
+		"bunker":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/bunker.map"
+		},
+		"bunker_ctf":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/bunker_ctf.map"
+		},
+		"mall":
+		{
+			"packages": ["map_factory", "map_siber", "map_forest", "map_bridge", "map_station"],
+			"map": "maps/mall.map"
+		},
+		"hospital":
+		{
+			"packages": ["map_factory", "map_forest", "map_hospital"],
+			"map": "maps/hospital.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"hospital_new":
+		{
+			"packages": ["map_factory", "map_forest", "map_hospital"],
+			"map": "maps/hospital_new.map",
+			"defines":
+			{
+				"coredestructable": "yes"
+			}
+		},
+		"warehouse":
+		{
+			"packages": ["map_station", "map_factory"],
+			"map": "maps/warehouse.map"
+		},
+		"deposite":
+		{
+			"packages": ["map_factory", "custom"],
+			"map": "maps/deposite.map",
+			"defines":
+			{
+				"coredestructable": "no",
+				"platforms": "phy"
+			}
+		},
+		"cargo":
+		{
+			"packages": ["map_factory", "custom"],
+			"map": "maps/cargo.map",
+			"defines":
+			{
+				"coredestructable": "no",
+				"platforms": "phy"
+			}
+		}
+	},
+	"modes":
+	{
+		"domination":
+		{
+			"mode": "domination",
+			"settings":
+			{
+				"winPoints": 100,
+				"takeFlagPoints": 5,
+
+				"holdFlagTime": 5,
+				"holdFlagPoints": 1
+			}
+		},
+		"foxhunt":
+		{
+			"mode": "foxhunt",
+			"teams": [
+				"team-dm"
+			],
+			"settings": {
+				"tickets": 10,
+				"ticketsForNewPlayer": 10
+			},
+			"defines":
+			{
+				"primary": "disabled",
+				"arrows": "explosive",
+				"items_auto_pick": "false",
+				"coredestructable": "no"
+			}
+		},
+		"gungame":
+		{
+			"mode": "gungame",
+			"teams": [
+				"team-dm"
+			],
+			"settings": {
+				"weapons": [
+					["sl-sec-makarov", "sl-sec-pistol", "sl-sec-usp", "sl-sec-fort12"],
+					["sl-sec-beretta", "sl-sec-p99", "sl-sec-fnx45", "sl-sec-sigsauer"],
+					["sl-sec-desert", "sl-sec-coltds", "sl-sec-mr412", "sl-sec-tt"],
+					["sl-sec-aps", "sl-sec-cz75", "sl-sec-ots33", "sl-sec-mp5k"],
+					["sl-pri-spr220", "sl-pri-toz34", "sl-pri-stoeger"],
+					["sl-pri-spas12", "sl-pri-m1897", "sl-pri-mts255", "sl-pri-m1014"],
+					["sl-pri-mp5", "sl-pri-mp5sd6", "sl-pri-ump", "sl-pri-vityaz"],
+					["sl-pri-p90", "sl-pri-thompson", "sl-pri-bizon"],
+					["sl-pri-mp7", "sl-pri-p91", "sl-pri-mp9", "sl-pri-9a91"],
+					["sl-pri-akm", "sl-pri-ak74", "sl-pri-ak12", "sl-pri-ak105"],
+					["sl-pri-m4a1", "sl-pri-acr", "sl-pri-hk416", "sl-pri-lr300"],
+					["sl-pri-aswal", "sl-pri-sgi5k", "sl-pri-m4a1-desert", "sl-pri-hk417"],
+					["sl-pri-fnfal", "sl-pri-scar", "sl-pri-aug"],
+					["sl-pri-m16", "sl-pri-m16a3", "sl-pri-ft200m", "sl-pri-vhs2"],
+					["sl-pri-scout", "sl-pri-dtsrs", "sl-pri-m110", "sl-pri-garand"],
+					["sl-pri-ar15", "sl-pri-g3", "sl-pri-m14", "sl-pri-sks"],
+					["sl-pri-sniper", "sl-pri-mosin", "sl-pri-m98k", "sl-pri-dvl10"],
+					["sl-pri-fnminimi", "sl-pri-mg42", "sl-pri-l86", "sl-pri-pkm"],
+					"sl-ml-knife",
+					["sl-sec-luger", "sl-sec-mauser", "sl-pri-lisle", "sl-sec-tec9"]
+				]
+			},
+			"defines":
+			{
+				"primary": "disabled",
+				"secondary": "disabled",
+				"special": "disabled",
+				"player": "disabled",
+				"items_auto_pick": "false"
+			}
+		},
+		"assault":
+		{
+			"mode": "assault",
+			"defines":
+			{
+				"items_long_live": "true"
+			},
+			"settings":
+			{
+				"rounds": 15,
+				"timeRound": 300,
+				"timeAfterRound": 3,
+				"timeBeforeRound": 15
+			},
+			"roundTime": 0
+		},
+		"ctf":
+		{
+			"mode": "ctf",
+			"settings":
+			{
+				"winPoints": 4,
+				"chips": 4
+			}
+		},
+		"normal":
+		{
+			"mode": "normal",
+			"settings":
+			{
+				"tickets": 10,
+				"ticketsForNewPlayer": 10,
+				"pointBonus": 0
+			}
+		},
+		"deathmatch":
+		{
+			"mode": "deathmatch",
+			"teams":
+			[
+				"team-dm"
+			],
+			"settings":
+			{
+				"tickets": 20,
+				"ticketsForNewPlayer": 15
+			}
+		}
+	},
+	"sets":
+	[
+		{
+			"map": "factory",
+			"mode": "domination,assault"
+		},
+		{
+			"map": "cargo",
+			"mode": "normal,domination,assault"
+		},
+		{
+			"map": "deposite",
+			"mode": "deathmatch,foxhunt"
+		},
+		{
+			"map": "hospital",
+			"mode": "domination,deathmatch,normal,foxhunt,gungame"
+		},
+		{
+			"map": "hospital_new",
+			"mode": "domination,deathmatch,normal,foxhunt,gungame"
+		},
+		{
+			"map": "siber",
+			"mode": "normal,deathmatch,foxhunt,gungame"
+		},
+		{
+			"map": "forest",
+			"mode": "normal"
+		},
+		{
+			"map": "mall",
+			"mode": "normal,domination,deathmatch,assault,foxhunt,gungame"
+		},
+		{
+			"map": "warehouse",
+			"mode": "deathmatch,foxhunt,gungame"
+		},
+		{
+			"map": "construction",
+			"mode": "deathmatch,foxhunt,gungame"
+		},
+		{
+			"map": "bridge",
+			"mode": "normal,domination"
+		},
+		{
+			"map": "tower",
+			"mode": "assault,normal,domination"
+		},
+		{
+			"map": "bunker",
+			"mode": "normal,domination"
+		},
+		{
+			"map": "hangars",
+			"mode": "normal,domination,assault"
+		},
+		{
+			"map": "canyon",
+			"mode": "normal,domination,assault"
+		},
+		{
+			"map": "station",
+			"mode": "assault"
+		}
+	]
+}

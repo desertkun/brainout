@@ -1,0 +1,48 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-vityaz
+instrument = {
+    id = weapon-vityaz
+    skins = skin-weapon-vityaz-default, skin-weapon-vityaz-antiterror
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-vityaz-accuracy
+        butt = upgrade-vityaz-butt-tactical
+        clip = upgrade-vityaz-clip-paired
+        holder = upgrade-vityaz-holder
+        reload-time = upgrade-vityaz-reload-time
+        scope = upgrade-vityaz-scope-optical
+        shoot-time = upgrade-vityaz-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_VITYAZ
+slot = slot-primary
+category = submachine
+tags = unique
+index = 62
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = elite-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_ELITE
+    }
+}

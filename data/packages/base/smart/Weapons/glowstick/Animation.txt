@@ -1,0 +1,5 @@
+animation = base:animations/glowstick.json
+class = content.Animation
+id = anim-glowstick
+states = []
+timeScale = 1

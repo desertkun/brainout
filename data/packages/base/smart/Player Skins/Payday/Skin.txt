@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = payday
+id = skin-player-payday
+name = ITEM_PLAYER_SKIN_PAYDAY

@@ -1,0 +1,43 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 30
+    }
+]
+id = sl-sec-mp443
+instrument = {
+    id = weapon-mp443
+    skins = skin-weapon-mp443-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        reload-time = upgrade-mp443-reload-time
+	recoil = upgrade-mp443-recoil
+    }
+}
+items = [
+    {
+        amount = 38
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_MP443
+slot = slot-secondary
+category = pistol
+tags = resources
+index = 352
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = defender-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_DEFENDER
+    }
+}
+

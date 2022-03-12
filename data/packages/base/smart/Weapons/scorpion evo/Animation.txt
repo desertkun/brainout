@@ -1,0 +1,5 @@
+animation = base:animations/weapon-scorpion-evo.json
+class = content.Animation
+id = anim-scorpion-evo
+states = []
+timeScale = 1

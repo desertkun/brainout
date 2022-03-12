@@ -1,0 +1,36 @@
+class = content.quest.Quest
+id = quest-marauder-6
+
+components = [
+    {
+        class = content.components.IconComponent
+        bg = quest-bg-marauder
+        tag = client
+    }
+]
+
+tasks = {
+    1 = {
+        class = content.quest.task.TakeOutItem
+        item = weapon-vssk
+        target = 1
+    }
+}
+
+group = marauder
+coop = false
+hasToLeave = true
+name = QUEST_TITLE_MARAUDER
+
+rewards = [
+    {
+        action = unlock
+        id = sl-ml-knife-tanto
+        amount = 1
+    }
+    {
+        action = addstat
+        id = ru
+        amount = 3000
+    }
+]

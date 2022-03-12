@@ -1,0 +1,448 @@
+class = content.effect.StaticSoundEffect
+distance = 0.25
+loop = true
+sound = freeplay:sounds/toads.mp3
+tag = client
+id = sound-toads
+
+--------
+
+class = content.effect.StaticSoundEffect
+distance = 0.25
+loop = true
+sound = freeplay:sounds/mosquitos.mp3
+tag = client
+id = sound-mosquitos
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+sound = freeplay:sounds/oink-1.mp3
+tag = client
+id = oink-snd-1
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+sound = freeplay:sounds/oink-2.mp3
+tag = client
+id = oink-snd-2
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+sound = freeplay:sounds/oink-3.mp3
+tag = client
+id = oink-snd-3
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+sound = freeplay:sounds/oink-4.mp3
+tag = client
+id = oink-snd-4
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+sound = freeplay:sounds/oink-5.mp3
+tag = client
+id = oink-snd-5
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+sound = freeplay:sounds/oink-6.mp3
+tag = client
+id = oink-snd-6
+
+--------
+
+class = content.effect.SoundEffect
+distance = 1
+sound = freeplay:sounds/oink-notice-1.mp3
+tag = client
+id = oink-notice-1-snd
+
+--------
+
+class = content.effect.SoundEffect
+distance = 1
+sound = freeplay:sounds/oink-notice-2.mp3
+tag = client
+id = oink-notice-2-snd
+
+--------
+
+class = content.effect.SoundEffect
+distance = 1
+sound = freeplay:sounds/oink-notice-3.mp3
+tag = client
+id = oink-notice-3-snd
+
+--------
+
+class = content.effect.SoundEffect
+distance = 1
+sound = freeplay:sounds/oink-notice-4.mp3
+tag = client
+id = oink-notice-4-snd
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/cricket-1.mp3
+tag = client
+id = sound-cricket-1
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/cricket-2.mp3
+tag = client
+id = sound-cricket-2
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/cricket-3.mp3
+tag = client
+id = sound-cricket-3
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/cricket-4.mp3
+tag = client
+id = sound-cricket-4
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/cricket-5.mp3
+tag = client
+id = sound-cricket-5
+
+--------
+
+class = content.effect.SoundEffect
+distance = 0.5
+loop = false
+sound = freeplay:sounds/cricket-6.mp3
+tag = client
+id = sound-cricket-6
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/coyote-1.mp3
+tag = client
+id = sound-coyote-1
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/coyote-2.mp3
+tag = client
+id = sound-coyote-2
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/coyote-3.mp3
+tag = client
+id = sound-coyote-3
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/coyote-4.mp3
+tag = client
+id = sound-coyote-4
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/fox-1.mp3
+tag = client
+id = sound-fox-1
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/fox-2.mp3
+tag = client
+id = sound-fox-2
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/fox-3.mp3
+tag = client
+id = sound-fox-3
+
+--------
+
+class = content.effect.SoundEffect
+distance = 2
+loop = false
+sound = freeplay:sounds/fox-4.mp3
+tag = client
+id = sound-fox-4
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-1-ru.mp3
+    @else = freeplay:sounds/radio-1-en.mp3
+}
+tag = client
+id = radio-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-2-ru.mp3
+    @else = freeplay:sounds/radio-2-en.mp3
+}
+tag = client
+id = radio-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-3-ru.mp3
+    @else = freeplay:sounds/radio-3-en.mp3
+}
+tag = client
+id = radio-3
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-4-ru.mp3
+    @else = freeplay:sounds/radio-4-en.mp3
+}
+tag = client
+id = radio-4
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-5-ru.mp3
+    @else = freeplay:sounds/radio-5-en.mp3
+}
+tag = client
+id = radio-5
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-6-ru.mp3
+    @else = freeplay:sounds/radio-6-en.mp3
+}
+tag = client
+id = radio-6
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-7-ru.mp3
+    @else = freeplay:sounds/radio-7-en.mp3
+}
+tag = client
+id = radio-7
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-8-ru.mp3
+    @else = freeplay:sounds/radio-8-en.mp3
+}
+tag = client
+id = radio-8
+
+--------
+
+class = content.effect.SoundEffect
+sound = {
+    @if = "$language == RU"
+    @then = freeplay:sounds/radio-9-ru.mp3
+    @else = freeplay:sounds/radio-9-en.mp3
+}
+tag = client
+id = radio-9
+
+--------
+
+class = content.effect.SoundEffect
+loop = true
+sound = freeplay:sounds/buzzer-active.mp3
+tag = client
+id = buzzer-active
+
+--------
+
+class = content.effect.SoundEffect
+loop = true
+sound = freeplay:sounds/buzzer-bg.mp3
+tag = client
+id = buzzer-bg
+
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/watch-1.mp3
+tag = client
+id = valuables-watch-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/watch-2.mp3
+tag = client
+id = valuables-watch-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/vhs-player-2.mp3
+tag = client
+id = valuables-vhsplayer-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/vhs-player-1.mp3
+tag = client
+id = valuables-vhsplayer-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/phone-1.mp3
+tag = client
+id = valuables-telephone-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/phone-2.mp3
+tag = client
+id = valuables-telephone-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/beeper-1.mp3
+tag = client
+id = valuables-beeper-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/beeper-2.mp3
+tag = client
+id = valuables-beeper-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/brick-game-1.mp3
+tag = client
+id = valuables-brickgame-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/brick-game-2.mp3
+tag = client
+id = valuables-brickgame-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/casette-1.mp3
+tag = client
+id = valuables-casette-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/casette-2.mp3
+tag = client
+id = valuables-casette-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/disk-1.mp3
+tag = client
+id = valuables-floppy-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/disk-2.mp3
+tag = client
+id = valuables-floppy-move-2
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/audio-player-1.mp3
+tag = client
+id = valuables-recorder-move-1
+
+--------
+
+class = content.effect.SoundEffect
+sound = freeplay:sounds/valuables/audio-player-2.mp3
+tag = client
+id = valuables-recorder-move-2

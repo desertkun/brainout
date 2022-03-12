@@ -1,0 +1,50 @@
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.75
+        width = 1
+    }
+    {
+        class = content.components.ClientItemComponent
+        tag = client
+    }
+    {
+        @if = "$items_auto_pick != false"
+        @then = {
+            class = content.components.ClientItemAutoPickerComponent
+            effect = equip-snd
+            pickTime = 0.5
+            tag = client
+        }
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = {
+            @else = 10
+            @if = "$items_long_live == true"
+            @then = 120
+        }
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        @if = "$items_pickup_icon != false"
+        @then = {
+            class = content.components.IconComponent
+            icon = ingame-icon-weapon
+            tag = client
+        }
+    }
+]
+auto-remove = true
+id = weapon-drop-item

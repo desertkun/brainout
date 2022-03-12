@@ -1,0 +1,30 @@
+class = content.ProfileBadge
+components = [
+    {
+        class = content.components.IconComponent
+        icon = profile-badge-drawbot
+        tag = client
+    }
+    {
+        class = content.components.ItemDependencyComponent
+        items = [
+            medal-skin-maker-2
+        ]
+        tag = server
+    }
+]
+id = profile-badge-drawbot
+
+--------
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        for = medal-skin-maker-2
+        param = 1
+        unlockTitle = YOU_DRAW_WE_ADD
+    }
+}

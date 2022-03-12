@@ -1,0 +1,5 @@
+animation = base:animations/crow.json
+class = content.Animation
+id = anim-crow
+states = []
+timeScale = 1

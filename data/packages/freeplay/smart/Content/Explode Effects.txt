@@ -1,0 +1,37 @@
+class = content.Effect
+id = explode-effect-freeplay
+set = [
+    explode-freeplay-effect-1-snd, explode-effect-1-e, explosion-flash-1, explode-effect-freeplay-shake
+    explode-freeplay-effect-2-snd, explode-effect-1-e, explosion-flash-1, explode-effect-freeplay-shake
+    explode-freeplay-effect-3-snd, explode-effect-1-e, explosion-flash-1, explode-effect-freeplay-shake
+]
+tag = client
+
+--------
+
+class = content.effect.ShakeEffect
+distance = 64
+id = explode-effect-freeplay-shake
+power = 32
+tag = client
+
+--------
+
+id = explode-freeplay-effect-1-snd
+class = content.effect.SoundEffect
+sound = freeplay:sounds/explosion-1.mp3
+tag = client
+
+--------
+
+id = explode-freeplay-effect-2-snd
+class = content.effect.SoundEffect
+sound = freeplay:sounds/explosion-2.mp3
+tag = client
+
+--------
+
+id = explode-freeplay-effect-3-snd
+class = content.effect.SoundEffect
+sound = freeplay:sounds/explosion-3.mp3
+tag = client

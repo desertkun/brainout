@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = jack
+id = skin-player-jack
+name = ITEM_PLAYER_SKIN_JACK

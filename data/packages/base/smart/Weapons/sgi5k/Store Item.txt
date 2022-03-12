@@ -1,0 +1,51 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-pri-sgi5k
+instrument = {
+    id = weapon-sgi5k
+    skins = skin-weapon-sgi5k-default, skin-weapon-sgi5k-atlas, skin-weapon-sgi5k-paladin
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-sgi5k-accuracy
+        recoil = upgrade-sgi5k-recoil
+        reload-time = upgrade-sgi5k-reload-time
+        shoot-time = upgrade-sgi5k-shoot-time
+		holder = upgrade-sgi5k-gl-m203
+		scope = upgrade-sgi5k-scope-susat
+		silencer = upgrade-sgi5k-silencer
+		wear-resistance = upgrade-sgi5k-wear-reistance
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-5.56x45
+    }
+]
+name = ITEM_WEAP_SGI5K
+slot = slot-primary
+category = assault
+tags = unique
+index = 49
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = cs-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_CS
+    }
+}
+
+

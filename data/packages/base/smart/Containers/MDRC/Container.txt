@@ -1,0 +1,32 @@
+cards = [
+    {
+        groups = cardgroup-polymer-mdrc
+    }
+    {
+        groups = cardgroup-polymer-mdrc
+    }
+    {
+        groups = cardgroup-polymer-mdrc
+    }
+]
+class = content.gamecase.Case
+components = [
+    {
+        bg = polymer-case-bg
+        class = content.components.IconComponent
+        icon = polymer-case
+        tag = client
+    }
+    {
+        class = content.components.ServerCaseComponent
+        tag = server
+    }
+    {
+        class = content.components.ClientCaseComponent
+        openEffect = case-open-snd
+        tag = client
+    }
+]
+description = CASE_POLYMER_DESC
+id = case-polymer-mdrc
+name = CASE_POLYMER

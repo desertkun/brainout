@@ -1,0 +1,157 @@
+{
+  "green": [
+    [
+      {
+        "items": [
+          {
+            "item": "skin-player-protect"
+          },
+          {
+            "item": "skin-player-protect"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "items": [
+          {
+            "item": "weapon-m4a1",
+            "skin": "skin-weapon-m4a1-default"
+          },
+          {
+            "item": "bullet-5.56x45",
+            "amount": 30
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "item": "weapon-ak74",
+            "skin": "skin-weapon-ak74-default"
+          },
+          {
+            "item": "bullet-5.45x39",
+            "amount": 30
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "items": [
+          {
+            "item": "weapon-m110",
+            "skin": "skin-weapon-m110-default"
+          },
+          {
+            "item": "bullet-7.62x51",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "item": "weapon-zastava",
+            "skin": "skin-weapon-zastava-default"
+          },
+          {
+            "item": "bullet-7.62x51",
+            "amount": 20
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "items": [
+          {
+            "item": "weapon-m1897",
+            "skin": "skin-weapon-spas12-default"
+          },
+          {
+            "item": "bullet-12-76",
+            "amount": 16
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "item": "weapon-saiga",
+            "skin": "skin-weapon-saiga-default"
+          },
+          {
+            "item": "bullet-12-76",
+            "amount": 16
+          }
+        ]
+      }
+    ],
+    {
+      "items": [
+        {
+          "item": "consumable-case-standard"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "consumable-item-water",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "consumable-item-radx",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "consumable-item-canned-goods",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "consumable-item-medikit",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "item-backpack-alice",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "item-helmet-pasgt-fp",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "item-armor-vest-fp",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

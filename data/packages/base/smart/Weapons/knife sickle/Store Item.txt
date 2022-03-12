@@ -1,0 +1,35 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-sickle
+        class = content.components.IconComponent
+        icon = knife-sickle
+        tag = client
+    }
+]
+id = sl-ml-knife-sickle
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-sickle
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_SICKLE
+slot = slot-melee
+category = melee
+tags = unique
+index = 339
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

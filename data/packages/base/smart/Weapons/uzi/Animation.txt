@@ -1,0 +1,5 @@
+animation = base:animations/weapon-uzi.json
+class = content.Animation
+id = anim-uzi
+states = []
+timeScale = 1

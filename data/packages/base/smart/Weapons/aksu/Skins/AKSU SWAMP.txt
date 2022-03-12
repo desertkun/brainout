@@ -1,0 +1,27 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-aksu-swamp
+        tag = client
+    }
+]
+data = weapon-swamp
+id = skin-weapon-aksu-swamp
+name = ITEM_WEAP_AKSU_SWAMP
+slot = sl-pri-aksu
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        icon = xmas-case
+        unlockTitle = "{MENU_LOCKED_SKINS}\n({CASE_HALLOWEEN})"
+    }
+}

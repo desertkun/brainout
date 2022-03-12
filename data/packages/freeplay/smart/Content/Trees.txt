@@ -1,0 +1,249 @@
+animation = freeplay:animations/fr-tree-1.json
+class = content.Animation
+id = anim-fr-tree-1
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-2.json
+class = content.Animation
+id = anim-fr-tree-2
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-3.json
+class = content.Animation
+id = anim-fr-tree-3
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-4.json
+class = content.Animation
+id = anim-fr-tree-4
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-5.json
+class = content.Animation
+id = anim-fr-tree-5
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-6.json
+class = content.Animation
+id = anim-fr-tree-6
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-7.json
+class = content.Animation
+id = anim-fr-tree-7
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-9.json
+class = content.Animation
+id = anim-fr-tree-9
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-10.json
+class = content.Animation
+id = anim-fr-tree-10
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-11.json
+class = content.Animation
+id = anim-fr-tree-11
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-12.json
+class = content.Animation
+id = anim-fr-tree-12
+states = []
+timeScale = 1
+
+--------
+
+animation = freeplay:animations/fr-tree-13.json
+class = content.Animation
+id = anim-fr-tree-13
+states = []
+timeScale = 1
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-1
+name = Tree 1
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-1
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-2
+name = Tree 2
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-2
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-3
+name = Tree 3
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-3
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-4
+name = Tree 4
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-4
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-5
+name = Tree 5
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-5
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-6
+name = Tree 6
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-6
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-7
+name = Tree 7
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-7
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-9
+name = Tree 9
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-9
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-10
+name = Tree 10
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-10
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-11
+name = Tree 11
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-11
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-12
+name = Tree 12
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-12
+        tag = client
+    }
+]
+
+--------
+
+class = content.active.Animation
+id = active-fr-tree-13
+name = Tree 13
+components = [
+    {
+        class = content.components.WindAnimationComponent
+        animation = anim-fr-tree-13
+        tag = client
+    }
+]

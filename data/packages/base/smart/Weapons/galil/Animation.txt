@@ -1,0 +1,5 @@
+animation = base:animations/weapon-galil.json
+class = content.Animation
+id = anim-galil
+states = []
+timeScale = 1

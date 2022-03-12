@@ -1,0 +1,23 @@
+
+class = content.Animation
+id = anim-conditioning
+animation = base:animations/conditioning.json
+states = []
+tag = client
+timeScale = 1
+
+--------
+
+class = content.active.Animation
+id = active-conditioning
+name = ACTIVE_CONDITIONING
+components = [
+	{
+		class = content.components.ActiveAnimationComponent
+		animation = anim-conditioning
+		play = [
+			animation
+		]
+		tag = client
+	}
+]

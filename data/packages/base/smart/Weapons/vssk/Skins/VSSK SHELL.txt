@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-vssk-shell
+        tag = client
+    }
+]
+data = weapon-shell
+id = skin-weapon-vssk-shell
+name = ITEM_WEAP_VSSK_SHELL
+slot = sl-pri-vssk
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = xmas-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-vssm-holiday
+        tag = client
+    }
+]
+data = weapon-holiday
+id = skin-weapon-vssm-holiday
+name = ITEM_WEAP_VSSM_HOLIDAY
+slot = sl-pri-vssm-2
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = xmas-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

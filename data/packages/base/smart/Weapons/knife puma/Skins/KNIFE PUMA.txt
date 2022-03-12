@@ -1,0 +1,13 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        big-icon = knife-puma
+        class = content.components.IconComponent
+        icon = knife-puma
+        tag = client
+    }
+]
+data = knife-puma
+id = skin-weapon-knife-puma
+name = ITEM_WEAP_KNIFE_PUMA
+slot = sl-ml-knife-puma

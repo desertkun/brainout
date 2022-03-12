@@ -1,0 +1,135 @@
+animation = freeplay:animations/helicopter.json
+class = content.Animation
+id = anim-helicopter
+states = []
+timeScale = 1
+
+--------
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ActiveAnimationComponent
+        animation = anim-helicopter
+        play = [
+            animation
+        ]
+        tag = client
+    }
+    {
+        class = content.components.SimplePhysicsComponent
+        fixable = false
+        friction = 0.05
+        height = 0
+        mass = 0
+        reduce = -0.4
+        width = 0
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.ServerHealthComponent
+        tag = server
+    }
+    {
+        class = content.components.AutoRemoveComponent
+        kind = XLessThanZero
+        tag = server
+    }
+    {
+        class = content.components.DropOffComponent
+        item = helicopter-drop-item
+        tag = server
+    }
+    {
+        class = content.components.ActiveEffectSetComponent
+        effects = [
+            helicopter-loop
+        ]
+        tag = client
+    }
+]
+id = active-helicopter
+name = Helicopter
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = helicopter-loop
+sound = freeplay:sounds/helicopter-loop.wav
+distance = 4
+loop = true
+
+--------
+
+class = content.active.Item
+components = [
+    {
+        class = content.components.SimplePhysicsComponent
+        friction = 0.5
+        height = 1
+        mass = 0.5
+        width = 2
+    }
+    {
+        class = content.components.ClientItemComponent
+        iconBadge = false
+        fetchIcon = false
+        tag = client
+    }
+    {
+        class = content.components.ServerItemComponent
+        tag = server
+        timeToLive = 120
+    }
+    {
+        class = content.components.DropEffectsComponent
+        effects = [
+        	[
+        		crate-drop
+        		crate-drop-smoke
+        	]
+        ]
+        tag = client
+    }
+    {
+        class = content.components.ServerSimplePhysicsSyncComponent
+        tag = server
+    }
+    {
+        class = content.components.IconComponent
+        icon = fr-drop-off
+        tag = client
+    }
+    {
+        class = content.components.ClientPhysicsSyncComponent
+        tag = client
+    }
+]
+auto-remove = true
+id = helicopter-drop-item
+
+
+
+--------
+
+class = content.effect.SoundEffect
+tag = client
+id = crate-drop
+sound = freeplay:sounds/crate-drop.mp3
+distance = 4
+
+--------
+
+class = content.effect.ParticleEffect
+id = crate-drop-smoke
+particle = freeplay:particles/drop-smoke
+tag = client
+

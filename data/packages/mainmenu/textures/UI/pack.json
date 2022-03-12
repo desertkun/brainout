@@ -1,0 +1,4 @@
+{
+	filterMin: Nearest,
+	filterMag: Nearest
+}

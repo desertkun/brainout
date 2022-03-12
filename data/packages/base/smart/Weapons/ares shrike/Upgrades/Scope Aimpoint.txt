@@ -1,0 +1,52 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            scope = aimpoint
+        }
+        tag = client
+    }
+    {
+        big-icon = ares-shrike-scope-aimpoint
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SCOPE_TRUGLO_DESC
+id = upgrade-ares-shrike-scope-aimpoint
+name = ITEM_UPGRADE_SCOPE_AIMPOINT
+properties = {
+    accuracy = "+15"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 1
+        currency = skillpts
+    }
+}
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = skills-with, weapon-ares-shrike
+        param = 2
+        unlockTitle = MENU_UNLOCK_SKILL
+    }
+}

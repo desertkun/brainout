@@ -1,0 +1,45 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 100
+    }
+]
+id = sl-sec-pistol
+instrument = {
+    id = weapon-pistol
+    skins = skin-weapon-pistol-default, skin-weapon-pistol-apple, skin-weapon-pistol-sand, skin-weapon-pistol-opal
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-pistol-clip-extended
+        light = upgrade-pistol-laser
+        barrel = upgrade-pistol-silencer, upgrade-pistol-barrel
+	scope = upgrade-pistol-scope
+	butt = upgrade-pistol-butt
+    }
+}
+items = [
+    {
+        amount = 34
+        id = bullet-9mmx19
+    }
+]
+name = ITEM_WEAP_PISTOL
+slot = slot-secondary
+category = pistol
+tags = level, classic
+index = 2
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        for = level
+        param = 2
+    }
+}

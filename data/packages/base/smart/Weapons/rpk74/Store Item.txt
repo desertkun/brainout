@@ -1,0 +1,44 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-rpk74
+instrument = {
+    id = weapon-rpk74
+    skins = skin-weapon-rpk74-default
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        clip = upgrade-rpk74-clip-extended
+        recoil = upgrade-rpk74-recoil
+        scope = upgrade-rpk74-scope-cobra, upgrade-rpk74-scope-tulpan
+    }
+}
+items = [
+    {
+        amount = 90
+        id = bullet-5.45x39
+    }
+]
+name = ITEM_WEAP_RPK74
+slot = slot-primary
+category = other
+tags = resources
+index = 351
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = defender-case
+		unlockTitle = MENU_UNLOCK_CONTAINER
+		unlockObject = CASE_DEFENDER
+    }
+}

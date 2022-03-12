@@ -1,0 +1,37 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = knife-sawback-bowie
+        class = content.components.IconComponent
+        icon = knife-sawback-bowie
+        tag = client
+    }
+]
+id = sl-ml-knife-sawback-bowie
+instrument = {
+    id = weapon-knife
+    skin = skin-weapon-knife-sawback-bowie
+}
+items = [
+]
+name = ITEM_WEAP_KNIFE_SAWBACK_BOWIE
+slot = slot-melee
+category = melee
+tags = unique
+index = 4
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = special-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SPECIAL
+    }
+}

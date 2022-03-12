@@ -1,0 +1,22 @@
+access = byDefault
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        big-icon = icon-item-flashlight
+        class = content.components.IconComponent
+        icon = icon-item-flashlight
+        tag = client
+    }
+]
+id = sl-flashlight
+instrument = {
+    id = instrument-flashlight
+    skins = skin-instrument-flashlight-default
+}
+items = [
+]
+name = ITEM_FLASHLIGHT
+slot = slot-flashlight
+category = flashlight
+tags = []
+index = 1

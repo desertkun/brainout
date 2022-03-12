@@ -1,0 +1,54 @@
+access = byDefault
+class = content.upgrades.Upgrade
+components = [
+    {
+        class = content.components.SuppressBulletAttachmentsComponent
+        suppress = fire-bone
+        tag = client
+    }
+    {
+        class = content.components.ReplaceInstrumentEffectsComponent
+        replace = {
+            shoot = [
+                pistol-shoot-s-1, pistol-shoot-smoke
+                pistol-shoot-s-2, pistol-shoot-smoke
+                pistol-shoot-s-3, pistol-shoot-smoke
+            ]
+        }
+        tag = client
+    }
+    {
+        class = content.components.ReplaceSlotComponent
+        classToReplace = data.components.WeaponAnimationComponentData
+        replace = {
+            barrel = silencer
+        }
+        tag = client
+    }
+    {
+        big-icon = pistol-sliencer
+        class = content.components.IconComponent
+        tag = client
+    }
+]
+description = ITEM_UPGRADE_SILENCER_DESC
+id = upgrade-pistol-silencer
+name = ITEM_UPGRADE_SILENCER
+properties = {
+    silent = "=1"
+    damage = "-5"
+}
+
+
+--------
+
+
+// This section describes the price of the item
+
+id = shop
+items = {
+    *THIS* = {
+        amount = 2
+        currency = skillpts
+    }
+}

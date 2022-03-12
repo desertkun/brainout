@@ -1,0 +1,18 @@
+
+class = content.active.Active
+components = [
+    {
+        class = content.components.ClientFreeplayCricketComponent
+        effects = [
+        	sound-cricket-1
+        	sound-cricket-2
+        	sound-cricket-3
+        	sound-cricket-4
+        	sound-cricket-5
+        	sound-cricket-6
+        ]
+        interval = 0.2
+        tag = client
+    }
+]
+id = freeplay-cricket

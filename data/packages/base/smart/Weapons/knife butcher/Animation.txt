@@ -1,0 +1,5 @@
+animation = base:animations/weapon-butcher.json
+class = content.Animation
+id = anim-butcher
+states = []
+timeScale = 1

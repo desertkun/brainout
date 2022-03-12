@@ -1,0 +1,5 @@
+animation = base:animations/instrument-binoculars.json
+class = content.Animation
+id = anim-binoculars
+states = []
+timeScale = 1

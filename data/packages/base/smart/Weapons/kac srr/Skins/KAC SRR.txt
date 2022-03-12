@@ -1,0 +1,12 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-kac
+        tag = client
+    }
+]
+data = weapon-default
+id = skin-weapon-kac-default
+name = ITEM_WEAP_KAC
+slot = sl-pri-kac

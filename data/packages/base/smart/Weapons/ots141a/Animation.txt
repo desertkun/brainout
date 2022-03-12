@@ -1,0 +1,5 @@
+animation = base:animations/weapon-ots141a.json
+class = content.Animation
+id = anim-ots141a
+states = []
+timeScale = 1

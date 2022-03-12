@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = usmc
+id = skin-player-usmc
+name = ITEM_PLAYER_SKIN_USMC

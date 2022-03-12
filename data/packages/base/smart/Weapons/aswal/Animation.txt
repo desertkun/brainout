@@ -1,0 +1,5 @@
+animation = base:animations/weapon-aswal.json
+class = content.Animation
+id = anim-aswal
+states = []
+timeScale = 1

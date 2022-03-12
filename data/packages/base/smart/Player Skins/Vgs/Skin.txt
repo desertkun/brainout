@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = vgs
+id = skin-player-vgs
+name = ITEM_PLAYER_SKIN_VGS

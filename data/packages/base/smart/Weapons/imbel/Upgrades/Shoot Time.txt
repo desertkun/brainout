@@ -1,0 +1,7 @@
+class = content.upgrades.UpgradeChain
+description = ITEM_UPGRADE_SHOOT_TIME_DESC
+id = upgrade-imbel-shoot-time
+level-kind = tech-level
+name = ITEM_UPGRADE_SHOOT_TIME
+prefix = imbel
+upgrades = upgrade-shoot-time-1, upgrade-shoot-time-2, upgrade-shoot-time-3, upgrade-shoot-time-4, upgrade-shoot-time-5

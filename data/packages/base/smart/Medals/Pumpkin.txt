@@ -1,0 +1,85 @@
+class = content.Medal
+components = [
+    {
+        class = content.components.AnimatedIconComponent
+        frames = [
+            {
+                frame = medal-pumplin-1
+                delay = 2
+            }
+            {
+                frame = medal-pumplin-2
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-3
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-4
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-5
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-6
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-7
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-8
+                delay = 0.05
+            }
+            {
+                frame = medal-pumplin-9
+                delay = 0.05
+            }
+        ]
+        tag = client
+    }
+    {
+        class = content.components.UnlockSoundComponent
+        sound = achievement-unlocked-snd
+        tag = client
+    }
+    {
+        class = content.components.ItemDependencyComponent
+        items = [
+            sl-msk-alien
+            sl-msk-brainout
+            sl-msk-chainsaw
+            sl-msk-horse
+            sl-msk-imp
+            sl-msk-jason
+            sl-msk-packmen
+            sl-msk-penny
+            sl-msk-pumpkin
+            sl-msk-scream
+            sl-msk-v
+            sl-msk-zombie
+        ]
+        tag = server
+    }
+]
+description = MEDAL_PUMPKIN_DESC
+id = medal-pumpkin
+name = MEDAL_PUMPKIN
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+        unlockTitle = MEDAL_PUMPKIN
+    }
+}

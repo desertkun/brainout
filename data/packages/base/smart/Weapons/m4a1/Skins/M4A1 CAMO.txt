@@ -1,0 +1,26 @@
+class = content.instrument.InstrumentSkin
+components = [
+    {
+        class = content.components.IconComponent
+        icon = icon-weapon-m4a1-camo
+        tag = client
+    }
+]
+data = weapon-camo
+id = skin-weapon-m4a1-camo
+name = ITEM_WEAP_M4A1_CAMO
+slot = sl-pri-m4a1
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = standard-case
+        unlockTitle = MENU_LOCKED_SKINS
+    }
+}

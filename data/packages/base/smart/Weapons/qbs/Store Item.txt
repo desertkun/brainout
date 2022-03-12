@@ -1,0 +1,39 @@
+class = content.shop.InstrumentSlotItem
+components = [
+]
+id = sl-pri-qbs
+instrument = {
+    id = weapon-qbs
+    skins = skin-weapon-qbs-default
+    upgrades = {
+        recoil = upgrade-qbs-recoil
+        reload-time = upgrade-qbs-reload-time
+		scope = upgrade-qbs-scope-eotech
+		holder = upgrade-qbs-holder
+		light = upgrade-qbs-light
+		butt = upgrade-qbs-butt-unfolded
+    }
+}
+items = [
+    {
+        amount = 15
+        id = bullet-12-76
+    }
+]
+name = ITEM_WEAP_QBS
+slot = slot-primary
+category = shotgun
+tags = unique
+index = 341
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        hide = true
+    }
+}

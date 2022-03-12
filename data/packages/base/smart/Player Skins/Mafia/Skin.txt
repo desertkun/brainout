@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = mafia
+id = skin-player-mafia
+name = ITEM_PLAYER_SKIN_MAFIA

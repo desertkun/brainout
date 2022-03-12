@@ -1,0 +1,5 @@
+class = content.PlayerSkin
+components = []
+data = nva
+id = skin-player-nva
+name = ITEM_PLAYER_SKIN_NVA

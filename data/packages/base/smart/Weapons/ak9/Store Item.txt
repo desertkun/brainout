@@ -1,0 +1,55 @@
+class = content.shop.InstrumentSlotItem
+components = [
+    {
+        class = content.components.HideIfOwnedComponent
+        slot = slot-store
+    }
+    {
+        class = content.components.ShowPurchaseProgressComponent
+        slot = slot-store
+        tag = client
+    }
+    {
+        class = content.components.RandomWeightComponent
+        weight = 50
+    }
+]
+id = sl-pri-ak9-2
+instrument = {
+    id = weapon-ak9
+    skins = skin-weapon-ak9-default, skin-weapon-ak9-torvald
+    upgrades = {
+        extra-mag = upgrade-common-extra-mag
+        accuracy = upgrade-ak9-accuracy
+	silencer = upgrade-ak9-silencer
+        reload-time = upgrade-ak9-reload-time
+        scope = upgrade-ak9-scope-pso
+        shoot-time = upgrade-ak9-shoot-time
+    }
+}
+items = [
+    {
+        amount = 60
+        id = bullet-9mm-39
+    }
+]
+name = ITEM_WEAP_AK9
+slot = slot-primary
+category = assault
+tags = unique
+index = 191
+
+
+--------
+
+
+// This section describes the unlocking process of the item
+
+id = unlock-tree
+items = {
+    *THIS* = {
+        icon = sobr-case
+        unlockTitle = MENU_UNLOCK_CONTAINER
+        unlockObject = CASE_SOBR
+    }
+}
