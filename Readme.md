@@ -53,7 +53,23 @@ any map, use `BRAINOUT_MAPS` environment variable to point client to `<this repo
 It uses `--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3` argument
 which is bas64-encoded `localhost;36555;36556;36557`
 
+You might also see there's `Desktop Local 2 *` configurations, these are copies under different user,
+e.g., you can launch those two in parallel and run two instances of the game on same PC.
+
 `Desktop Alpha` – a client that tries to participate Alpha network.
+
+## Testing
+
+The project has a CI system in place: on every new commit, 
+it builds a new version of client/server and deploys it automatically.
+There are two environments available:
+
+* `main`, which is built on every master commit
+* `test`, which is built on every pull request. A new pull request wipes out the previous one,
+  as it is intended to verify the correctness of the pull request.
+
+The clients of those builds are deployed on Dropbox, to get invited there,
+please join the Dev Support telegram channel below and ask for invite link.
 
 ## Community
 
