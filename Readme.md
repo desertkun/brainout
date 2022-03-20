@@ -19,6 +19,15 @@ Then,
 
 For either of those to work, Game Assets has to be built.
 
+## Dependencies
+
+On your build environment, for scripts to work, you need to install these
+
+```
+pip install git+https://github.com/desertkun/hjson-py
+pip install pycrypto
+```
+
 ## How to build Game Assets
 
 See [this readme](data/README.md) for how to change Game Assets.
