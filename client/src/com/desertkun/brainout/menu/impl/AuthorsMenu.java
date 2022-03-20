@@ -5,6 +5,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.desertkun.brainout.BrainOutClient;
+import com.desertkun.brainout.Version;
 import com.desertkun.brainout.content.Authors;
 import com.desertkun.brainout.menu.Menu;
 import com.desertkun.brainout.menu.ui.MenuHelper;
@@ -66,6 +67,9 @@ public class AuthorsMenu extends Menu
 
         result +=
                         "<img padBottom=\"16\">logo-small</img><br/>" +
+                        "<div padBottom=\"32\">" +
+                        "<text style=\"title-yellow\">Version: " + Version.VERSION + ", Tag: " + Version.TAG +"</text>" +
+                        "</div><br/>" +
                         "<div padBottom=\"32\">" +
                         "<text style=\"title-yellow\">Graphics and design</text><br/>";
 
