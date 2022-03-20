@@ -1,9 +1,0 @@
-[submodule "bin/linux"]
-	path = bin/linux
-	url = https://github.com/desertkun/brainout-bin-linux.git
-[submodule "bin/mac"]
-	path = bin/mac
-	url = https://github.com/desertkun/brainout-bin-mac.git
-[submodule "bin/windows"]
-	path = bin/windows
-	url = https://github.com/desertkun/brainout-bin-windows.git
