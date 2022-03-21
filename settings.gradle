@@ -1,1 +1,1 @@
-include 'core', 'client', 'onlinelib-steam', 'desktop', 'steam', 'server', 'launcher', 'ru'
+include 'core', 'client', 'onlinelib-steam', 'desktop', 'steam', 'server'

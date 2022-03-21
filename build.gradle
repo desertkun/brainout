@@ -188,18 +188,6 @@ project(":server") {
     }
 }
 
-project(":launcher") {
-    apply plugin: "java"
-
-    dependencies {
-        compile "com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion"
-
-        compile "com.github.desertkun.libgdx:gdx:$gdxVersion"
-        compile "com.github.desertkun.libgdx:gdx-backend-lwjgl:$gdxVersion"
-        compile "com.github.desertkun.libgdx:gdx-platform:$gdxVersion:natives-desktop"
-    }
-}
-
 def accessToken = ''
 def discoveryServices = '{"profile":"https://profile-valpha.brainout.org","login":"https://login-valpha.brainout.org","message":"https://message-valpha.brainout.org","event":"https://event-valpha.brainout.org","leaderboard":"https://leaderboard-valpha.brainout.org","social":"https://social-valpha.brainout.org","static":"https://static-valpha.brainout.org","game":"https://game-valpha.brainout.org","store":"https://store-valpha.brainout.org","report":"https://report-valpha.brainout.org","market":"https://market-valpha.brainout.org"}'
 
