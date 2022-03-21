@@ -215,7 +215,7 @@ idea {
                     'discovery_services': discoveryServices
                 ]
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverOffline {
                 type = 'Application'
@@ -230,7 +230,7 @@ idea {
                     'discovery_services': discoveryServices
                 ]
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverEditor {
                 type = 'Application'
@@ -245,7 +245,7 @@ idea {
                 ]
                 programArguments = '--mode editor --settings server-editor.json'
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverEditorOffline {
                 type = 'Application'
@@ -260,7 +260,7 @@ idea {
                 ]
                 programArguments = '--mode editor --settings server-editor.json --offline'
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverLobby {
                 type = 'Application'
@@ -275,7 +275,7 @@ idea {
                 ]
                 programArguments = '--mode lobby --settings server-lobby.json'
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverLobbyOffline {
                 type = 'Application'
@@ -290,7 +290,7 @@ idea {
                 ]
                 programArguments = '--mode lobby --settings server-lobby.json --offline'
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverFree {
                 type = 'Application'
@@ -305,7 +305,7 @@ idea {
                 ]
                 programArguments = '--mode free --settings server-free.json --map freeplay-maps.shuffle'
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             serverFreeOffline {
                 type = 'Application'
@@ -320,7 +320,7 @@ idea {
                 ]
                 programArguments = '--mode free --settings server-free.json --map freeplay-maps.shuffle --offline'
                 module = project(':server')
-                workingDirectory = new File('bin/server')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/server')
             }
             steam {
                 type = 'Application'
@@ -331,7 +331,7 @@ idea {
 
                 programArguments = ''
                 module = project(':steam')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
             desktop {
                 type = 'Application'
@@ -342,7 +342,7 @@ idea {
 
                 programArguments = ''
                 module = project(':desktop')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
             desktopOffline {
                 type = 'Application'
@@ -353,7 +353,7 @@ idea {
 
                 programArguments = '--offline --unsafe'
                 module = project(':desktop')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
             desktopLocal {
                 type = 'Application'
@@ -364,7 +364,7 @@ idea {
 
                 programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3'
                 module = project(':desktop')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
             desktopLocalOffline {
                 type = 'Application'
@@ -375,7 +375,7 @@ idea {
 
                 programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3 --offline --unsafe'
                 module = project(':desktop')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
             desktopLocal2 {
                 type = 'Application'
@@ -389,7 +389,7 @@ idea {
                     "DESKTOP_PROFILE_NAME": "profile-2"
                 ]
                 module = project(':desktop')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
             desktopLocal2Offline {
                 type = 'Application'
@@ -403,7 +403,7 @@ idea {
                     "DESKTOP_PROFILE_NAME": "profile-2"
                 ]
                 module = project(':desktop')
-                workingDirectory = new File('bin/client')
+                workingDirectory = new File(System.getProperty("user.dir"), 'bin/client')
             }
         }
     }
