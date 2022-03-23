@@ -21,7 +21,9 @@ For either of those to work, Game Assets has to be built.
 
 ## Dependencies
 
-On your build environment, for scripts to work, you need to install these
+On your build environment, for scripts to work, you need to install these.
+
+**NOTE**: You will need to use the Python 2 pip.
 
 ```
 pip install git+https://github.com/desertkun/hjson-py
