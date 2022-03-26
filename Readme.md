@@ -28,11 +28,16 @@ pip install git+https://github.com/desertkun/hjson-py
 pip install pycrypto
 ```
 
+Notes:
+1. Command line git is required to install hjson
+2. `pycrypto` on Windows could be replaced with `pip install pycryptodome` since original
+pycrypto requires C development environment.
+
 ## How to build Game Assets
 
 See [this readme](data/README.md) for how to change Game Assets.
 
-To build them, call `./make_data.sh` on mac/linux and `make_data.bat` on windows.
+To build them, call `./make_data.sh` on Mac/Linux and `make_data.bat` on Windows.
 
 **NOTE**: the client digitally verifies the built data! So by default, the client
 won't be able to start up with locally built data, since the private key is not present in this repository.
@@ -76,6 +81,8 @@ There are two environments available:
 * `main`, which is built on every master commit
 * `test`, which is built on every pull request. A new pull request wipes out the previous one,
   as it is intended to verify the correctness of the pull request.
+* `dev`, which is build on every `dev_*` branch commit. Contributors with collaboration permissions
+  could push there directly and skip PR requirements to check things quickly.
 
 The clients of those builds are deployed on Dropbox, to get invited there,
 please join the Dev Support telegram channel below and ask for invite link.
