@@ -6,8 +6,10 @@ import com.desertkun.brainout.BrainOut;
 import com.desertkun.brainout.Constants;
 import com.desertkun.brainout.content.Content;
 import com.desertkun.brainout.content.components.HealthComponent;
+import com.desertkun.brainout.data.Map;
 import com.desertkun.brainout.data.components.base.Component;
 import com.desertkun.brainout.data.components.base.ComponentObject;
+import com.desertkun.brainout.data.containers.ChunkData;
 import com.desertkun.brainout.data.interfaces.WithTag;
 import com.desertkun.brainout.events.*;
 import com.desertkun.brainout.reflection.Reflect;
@@ -62,6 +64,13 @@ public class HealthComponentData<T extends HealthComponent> extends Component<T>
     {
         if (isImmortal())
         {
+            return;
+        }
+
+        Map map = getMap();
+        ChunkData chunk = map.getChunkAt((int) e.x, (int) e.y);
+        if (chunk.hasFlag(ChunkData.ChunkFlag.shootingDisabled)) {
+            // Log.info("Damage blocked by chunk shooting-disable flag");
             return;
         }
 
