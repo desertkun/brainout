@@ -33,7 +33,7 @@ public class Console
         registerCommand("addev", AddBattlePassEventStat.class);
         registerCommand("bot", SpawnBot.class);
         registerCommand("speed", GameSpeed.class);
-        registerCommand("editor", MakeEditor.class);
+        // registerCommand("editor", MakeEditor.class);
         registerCommand("tp", Teleport.class);
         registerCommand("slowmo", Slowmo.class);
         registerCommand("setstat", SetStat.class);
