@@ -409,7 +409,11 @@ public abstract class ClientGameRealization<G extends GameMode> extends ClientRe
             public void run()
             {
                 ps.popAllUntil(ActionPhaseMenu.class);
-                ps.pushMenu(new DeathCameraMenu(map, killer, info, this::done));
+                ps.pushMenu(new DeathCameraMenu(map,
+                    killer,
+                    info,
+                    this::done,
+                    getGameMode().getID() == GameMode.ID.free));
             }
         });
     }
