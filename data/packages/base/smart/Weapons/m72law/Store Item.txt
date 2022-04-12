@@ -19,7 +19,7 @@ components = [
 id = sl-spc-m72law
 instrument = {
     id = weapon-m72law
-    skins = skin-weapon-m72law-default
+    skins = skin-weapon-m72law-default, skin-weapon-m72law-decor
     upgrades = {
     }
 }

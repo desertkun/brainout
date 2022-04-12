@@ -35,6 +35,6 @@ public class ForEach extends ConsoleCommand
     @Override
     public boolean isRightsValid(Client asker, Client forClient, PlayerRights rights)
     {
-        return true;
+        return asker == forClient;
     }
 }

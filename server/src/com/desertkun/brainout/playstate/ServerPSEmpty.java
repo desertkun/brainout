@@ -81,6 +81,7 @@ public class ServerPSEmpty extends PlayStateEmpty
     public boolean received(final LoadMapMsg msg)
     {
         if (!validateMod()) return true;
+        if (!msg.map.matches("^[A-Za-z0-9_-]+\\.map$")) return true;
 
         BrainOutServer.PostRunnable(() -> {
             BrainOutServer.Controller.setMapSource(new SingleMapSource("maps/" + msg.map, GameMode.ID.editor));
