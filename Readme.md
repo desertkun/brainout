@@ -19,6 +19,8 @@ Then,
 
 For either of those to work, Game Assets has to be built.
 
+Look at [the troubleshooting document](docs/Troubleshooting.md), it includes several common issues and how to fix them.
+
 ## Dependencies
 
 On your build environment, for scripts to work, you need to install these.
