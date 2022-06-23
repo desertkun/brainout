@@ -3,7 +3,6 @@ package com.desertkun.brainout.menu.impl;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
@@ -13,7 +12,10 @@ import com.badlogic.gdx.scenes.scene2d.actions.RepeatAction;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.badlogic.gdx.utils.*;
+import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.IntMap;
+import com.badlogic.gdx.utils.Scaling;
 import com.desertkun.brainout.BrainOut;
 import com.desertkun.brainout.BrainOutClient;
 import com.desertkun.brainout.ClientConstants;
@@ -26,7 +28,6 @@ import com.desertkun.brainout.components.ClientWeaponSlotComponent;
 import com.desertkun.brainout.components.PlayerOwnerComponent;
 import com.desertkun.brainout.components.WeaponSlotComponent;
 import com.desertkun.brainout.components.my.MyPlaceComponent;
-import com.desertkun.brainout.components.my.MyPlayerComponent;
 import com.desertkun.brainout.components.my.MyWeaponComponent;
 import com.desertkun.brainout.content.Team;
 import com.desertkun.brainout.content.block.Block;
@@ -35,7 +36,6 @@ import com.desertkun.brainout.content.components.InstrumentAnimationComponent;
 import com.desertkun.brainout.content.instrument.Weapon;
 import com.desertkun.brainout.controllers.GameController;
 import com.desertkun.brainout.data.ClientMap;
-import com.desertkun.brainout.data.FreePlayMap;
 import com.desertkun.brainout.data.Map;
 import com.desertkun.brainout.data.active.ActiveData;
 import com.desertkun.brainout.data.active.PlayerData;
@@ -58,8 +58,6 @@ import com.desertkun.brainout.menu.widgets.chat.InGameChatWidget;
 import com.desertkun.brainout.mode.ClientRealization;
 import com.desertkun.brainout.mode.GameMode;
 import com.desertkun.brainout.playstate.PlayStateGame;
-
-import java.nio.IntBuffer;
 
 public class ActionPhaseMenu extends Menu implements EventReceiver
 {
@@ -1233,7 +1231,14 @@ public class ActionPhaseMenu extends Menu implements EventReceiver
         if (gameMode != null && !gameMode.allowTeamChange())
             return;
 
-        pushMenu(new SelectTeamMenu(csGame.getTeams(), new SelectTeamMenu.Select()
+        GameState gs = getGameState();
+        if (gs == null) {
+            return;
+        }
+
+        // Make sure this menu is never duplicated
+        gs.popMenu(SelectTeamMenu.class);
+        gs.pushMenu(new SelectTeamMenu(csGame.getTeams(), new SelectTeamMenu.Select()
         {
             @Override
             public void onSelect(Team item, GameState gs)
