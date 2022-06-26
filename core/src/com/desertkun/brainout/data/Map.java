@@ -11,17 +11,19 @@ import com.desertkun.brainout.Constants;
 import com.desertkun.brainout.content.Content;
 import com.desertkun.brainout.content.active.Active;
 import com.desertkun.brainout.content.block.Block;
-import com.desertkun.brainout.content.block.Concrete;
 import com.desertkun.brainout.content.consumable.ConsumableItem;
 import com.desertkun.brainout.content.instrument.Instrument;
 import com.desertkun.brainout.data.active.ActiveData;
-import com.desertkun.brainout.data.components.ActiveFilterComponentData;
-import com.desertkun.brainout.events.ActiveActionEvent;
 import com.desertkun.brainout.data.block.BlockData;
 import com.desertkun.brainout.data.bullet.BulletData;
+import com.desertkun.brainout.data.components.ActiveFilterComponentData;
 import com.desertkun.brainout.data.containers.*;
 import com.desertkun.brainout.data.instrument.InstrumentData;
-import com.desertkun.brainout.data.interfaces.*;
+import com.desertkun.brainout.data.interfaces.ComponentWritable;
+import com.desertkun.brainout.data.interfaces.RenderContext;
+import com.desertkun.brainout.data.interfaces.RenderUpdatable;
+import com.desertkun.brainout.data.interfaces.Watcher;
+import com.desertkun.brainout.events.ActiveActionEvent;
 import com.desertkun.brainout.events.SetBlockEvent;
 import com.desertkun.brainout.events.UpdatedEvent;
 import com.desertkun.brainout.inspection.Inspectable;
@@ -867,7 +869,7 @@ public abstract class Map extends DataContainer<RenderUpdatable> implements Json
         json.writeValue("dimension", dimension);
         json.writeValue("dimensionId", dimensionId);
         json.writeValue("contentIndex", contentIndex);
-        json.writeValue("speed", speed);
+        json.writeValue("speed", Math.min(1.0F, speed));
         json.writeValue("name", name);
 
         json.writeObjectStart("custom");
@@ -1164,7 +1166,7 @@ public abstract class Map extends DataContainer<RenderUpdatable> implements Json
             contentIndex.read(json, jsonData.get("contentIndex"));
         }
 
-        speed = jsonData.getFloat("speed", speed);
+        speed = jsonData.getFloat("speed", Math.min(1.0F, speed));
         name = jsonData.getString("name", name);
 
         blocks.read(this, json, jsonData.get("blocks"));
@@ -1599,7 +1601,7 @@ public abstract class Map extends DataContainer<RenderUpdatable> implements Json
 
     public void setSpeed(float speed)
     {
-        this.speed = speed;
+        this.speed = Math.min(1.0F, speed);
     }
 
     public float getSpeed()
