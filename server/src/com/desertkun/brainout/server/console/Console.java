@@ -56,7 +56,6 @@ public class Console
         registerCommand("completequest", CompleteQuest.class);
         registerCommand("skipwarmup", SkipWarmUp.class);
         registerCommand("boom", Boom.class);
-        registerCommand("myboom", MyBoom.class);
         registerCommand("migrate", Migrate.class);
         registerCommand("renamedimension", RenameDimension.class);
         registerCommand("follow", FollowPlayer.class);
