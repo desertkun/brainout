@@ -12,7 +12,7 @@ buildscript {
         classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
         classpath 'com.android.tools.build:gradle:1.0.0'
         classpath 'org.robovm:robovm-gradle-plugin:1.9.0'
-        classpath 'net.sf.proguard:proguard-gradle:5.2.1'
+        classpath 'net.sf.proguard:proguard-gradle:6.2.0'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
         classpath 'com.github.rodionmoiseev.gradle.plugins:idea-utils:0.4-rc1'
     }
@@ -105,7 +105,9 @@ project(":core") {
 
         compile "org.json:json:20180130"
         compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
-        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        compile ("com.badlogicgames.gdx:gdx-box2d:$gdxVersion") {
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
+        }
     }
 
     repositories {
@@ -120,20 +122,19 @@ project(":client") {
         compile "com.beust:jcommander:1.48"
         compile "com.mashape.unirest:unirest-java:1.4.9"
         compile ("com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion") {
-            compile("com.badlogicgames.gdx:gdx-box2d:1.6.2") {
-                exclude group: 'com.badlogicgames.gdx', module: 'gdx'
-                compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
-            }
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
-        compile "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion"
         compile project(":core")
         compile ("com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
             compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
         }
-        compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+        compile ("com.badlogicgames.gdx:gdx-freetype:$gdxVersion") {
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
+        }
         compile ("com.badlogicgames.gdx:gdx-tools:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx-backend-lwjgl'
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
     }
 
@@ -149,7 +150,9 @@ project(":desktop") {
 
     dependencies {
         compile project(":client")
-        compile "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+        compile ("com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion") {
+            exclude group: 'com.badlogicgames.gdx', module: 'gdx'
+        }
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
         compile ("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion") {

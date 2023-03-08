@@ -4,6 +4,8 @@ Source code for [Brain / Out](https://brainout.org/), the game.
 
 ## How To Build From Source
 
+OpenJDK 11 is required.
+
 First, clone this repo.
 
 Use Gradle Wrapper: `./gradlew <command>` on mac/linux, or `gradlew.bat <command>` on windows
