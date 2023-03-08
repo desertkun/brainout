@@ -29,7 +29,7 @@ Look at [the troubleshooting document](docs/Troubleshooting.md), it includes sev
 
 On your build environment, for scripts to work, you need to install these.
 
-**NOTE**: You will need to use the Python 2 pip.
+**NOTE**: You will need to use the Python 3 pip.
 
 ```
 pip3 install git+https://github.com/desertkun/hjson-py
@@ -38,8 +38,7 @@ pip3 install PyCryptodome
 
 Notes:
 1. Command line git is required to install hjson
-2. `pycrypto` on Windows could be replaced with `pip install pycryptodome` since original
-pycrypto requires C development environment.
+2. On linux/mac, put virtualenv into /opt/venv/dev folder (so `source /opt/venv/dev/bin/activate`) would work.
 
 ## How to build Game Assets
 
