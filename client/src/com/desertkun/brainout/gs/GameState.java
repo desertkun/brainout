@@ -52,6 +52,12 @@ public class GameState
             }
 
             @Override
+            public boolean touchCancelled(int screenX, int screenY, int pointer, int button)
+            {
+                return false;
+            }
+
+            @Override
             public boolean keyUp(int keycode)
             {
                 if (menus.empty())

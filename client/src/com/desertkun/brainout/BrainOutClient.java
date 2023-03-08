@@ -164,6 +164,12 @@ public class BrainOutClient extends BrainOut implements ApplicationListener
         GamePadMgr.init();
 
         BrainOutClient.ClientController.init();
+
+        if (Env.getTargetFullScreenDisplayMode() != null)
+        {
+            Gdx.graphics.setFullscreenMode(Env.getTargetFullScreenDisplayMode());
+            Env.setTargetFullScreenDisplayMode(null);
+        }
     }
 
     private void updateScreenSize(int width, int height)

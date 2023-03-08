@@ -29,7 +29,6 @@ public class DesktopEnvironment extends ClientEnvironment
         setArgs(args);
     }
 
-
     @Override
     public String getUniqueId()
     {

@@ -1,18 +1,13 @@
 package com.desertkun.brainout.desktop;
 
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.audio.AudioDevice;
-import com.badlogic.gdx.audio.AudioRecorder;
-import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.backends.lwjgl.audio.LwjglAudio;
-import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+import com.badlogic.gdx.graphics.glutils.HdpiMode;
+import com.desertkun.brainout.BrainOutClient;
 import com.desertkun.brainout.ClientEnvironment;
 import com.desertkun.brainout.client.settings.ClientSettings;
+import com.desertkun.brainout.client.settings.ScreenResolutionProperty;
 import com.esotericsoftware.minlog.Log;
 
 import java.io.*;
@@ -20,55 +15,6 @@ import java.io.*;
 
 public class DesktopLauncher
 {
-    private static class LwjglAudioWrapper implements LwjglAudio
-    {
-        private final LwjglAudio parent;
-
-        public LwjglAudioWrapper(LwjglAudio parent)
-        {
-            this.parent = parent;
-        }
-
-        @Override
-        public void update()
-        {
-            this.parent.update();
-        }
-
-        @Override
-        public AudioDevice newAudioDevice(int samplingRate, boolean isMono)
-        {
-            return this.parent.newAudioDevice(samplingRate, isMono);
-        }
-
-        @Override
-        public AudioRecorder newAudioRecorder(int samplingRate, boolean isMono)
-        {
-            return this.parent.newAudioRecorder(samplingRate, isMono);
-        }
-
-        @Override
-        public Sound newSound(FileHandle fileHandle)
-        {
-            return this.parent.newSound(fileHandle);
-        }
-
-        @Override
-        public Music newMusic(FileHandle file)
-        {
-            return this.parent.newMusic(file);
-        }
-
-        @Override
-        public void dispose()
-        {
-            if (System.getenv("BRAINOUT_NO_SOUND") == null)
-            {
-                this.parent.dispose();
-            }
-        }
-    }
-
     public static void main(String[] args)
     {
         try
@@ -95,34 +41,65 @@ public class DesktopLauncher
             return;
         }
 
-        LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-        cfg.title = environment.getAppName();
+        Lwjgl3ApplicationConfiguration cfg = new Lwjgl3ApplicationConfiguration();
 
         String name = System.getenv("DESKTOP_PROFILE_NAME");
 
         if (name != null)
         {
-            cfg.title += " - " + name;
+            cfg.setTitle(environment.getAppName() + " - " + name);
+        }
+        else
+        {
+            cfg.setTitle(environment.getAppName());
         }
 
-        cfg.useGL30 = false;
-        cfg.width = settings.getDisplayMode().getWidth();
-        cfg.height = settings.getDisplayMode().getHeight();
-        cfg.fullscreen = settings.getFullscreen().getValue();
-        cfg.resizable = false;
-        cfg.foregroundFPS = 60;
-        cfg.allowSoftwareMode = true;
-        cfg.audioDeviceSimultaneousSources = 64;
-        cfg.audioDeviceBufferCount = 18;
-
-        if (System.getenv("FORCE_X") != null)
+        if (settings.getFullscreen().getValue())
         {
-            cfg.x = Integer.valueOf(System.getenv("FORCE_X"));
+            ScreenResolutionProperty dm = settings.getDisplayMode();
+            Graphics.DisplayMode selected = null;
+            for (Graphics.DisplayMode displayMode : Lwjgl3ApplicationConfiguration.getDisplayModes())
+            {
+                if (dm.getWidth() == displayMode.width && dm.getHeight() == displayMode.height && dm.getHz() == displayMode.refreshRate
+                    && dm.getBpp() == displayMode.bitsPerPixel)
+                {
+                    selected = displayMode;
+                    break;
+                }
+            }
+
+            if (selected == null)
+            {
+                for (Graphics.DisplayMode displayMode : Lwjgl3ApplicationConfiguration.getDisplayModes())
+                {
+                    if (displayMode.width < 1024)
+                        continue;
+                    if (displayMode.width >= 2200)
+                        continue;
+                    if (displayMode.refreshRate > 60)
+                        continue;
+                    if (selected != null && (selected.width > displayMode.width))
+                        continue;
+                    selected = displayMode;
+                }
+            }
+
+            if (selected != null)
+            {
+                environment.setTargetFullScreenDisplayMode(selected);
+            }
+
+            cfg.setWindowedMode(1024, 768);
+        }
+        else
+        {
+            cfg.setWindowedMode(settings.getDisplayMode().getWidth(), settings.getDisplayMode().getHeight());
         }
 
-        if (System.getenv("FORCE_Y") != null)
+        if (System.getenv("FORCE_X") != null && System.getenv("FORCE_Y") != null)
         {
-            cfg.y = Integer.valueOf(System.getenv("FORCE_Y"));
+            cfg.setWindowPosition(Integer.valueOf(System.getenv("FORCE_X")),
+                    Integer.valueOf(System.getenv("FORCE_Y")));
         }
 
         /*
@@ -132,16 +109,9 @@ public class DesktopLauncher
         cfg.addIcon("icons/icon-16.png", Files.FileType.Internal);
          */
 
-        cfg.vSyncEnabled = settings.getvSync().getValue();
-        cfg.audioDeviceSimultaneousSources = 64;
+        cfg.useVsync(settings.getvSync().getValue());
+        cfg.setAudioConfig(64, 512, 9);
 
-        new LwjglApplication(BrainOutDesktop.initDesktopInstance(environment, settings), cfg)
-        {
-            @Override
-            public LwjglAudio createAudio(LwjglApplicationConfiguration config)
-            {
-                return new LwjglAudioWrapper(super.createAudio(config));
-            }
-        };
+        new Lwjgl3Application(BrainOutDesktop.initDesktopInstance(environment, settings), cfg);
     }
 }

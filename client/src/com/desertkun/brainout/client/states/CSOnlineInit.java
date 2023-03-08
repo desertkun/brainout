@@ -2,6 +2,7 @@ package com.desertkun.brainout.client.states;
 
 import com.badlogic.gdx.Gdx;
 import com.desertkun.brainout.*;
+import com.esotericsoftware.minlog.Log;
 import org.anthillplatform.runtime.requests.JsonRequest;
 import org.anthillplatform.runtime.requests.Request;
 import org.anthillplatform.runtime.requests.StringRequest;
@@ -56,19 +57,24 @@ public class CSOnlineInit extends ControllerState
 
         environmentService.getEnvironmentInfo((service, request, result, discoveryLocation, environmentInformation) ->
         {
-            if (result == Request.Result.success)
+            Gdx.app.postRunnable(() ->
             {
-                onlineInited("");
-            }
-            else
-            {
-                CSOnlineInit.this.complete(result, "lib " + result.toString());
-            }
+                if (result == Request.Result.success)
+                {
+                    onlineInited("");
+                }
+                else
+                {
+                    CSOnlineInit.this.complete(result, "lib " + result.toString());
+                }
+            });
         });
     }
 
     private void onlineInited(String environmentName)
     {
+        if (Log.INFO) Log.info("onlineInited");
+
         EnvironmentService environmentService = EnvironmentService.Get();
 
         boolean maintenance = environmentService.variable("maintenance", false, Boolean.class);
@@ -103,21 +109,25 @@ public class CSOnlineInit extends ControllerState
         discoveryService.discoverServices(Constants.Connection.DISCOVER,
             (service, request, result, discoveredServices) ->
         {
-            switch (result)
+            Gdx.app.postRunnable(() ->
             {
-                case success:
+                switch (result)
                 {
-                    proceed();
+                    case success:
+                    {
+                        if (Log.INFO) Log.info("Services discovered");
+                        proceed();
 
-                    break;
-                }
-                default:
-                {
-                    switchTo(new CSError("Failed to discover services: " + result.toString()));
+                        break;
+                    }
+                    default:
+                    {
+                        switchTo(new CSError("Failed to discover services: " + result.toString()));
 
-                    break;
+                        break;
+                    }
                 }
-            }
+            });
         });
     }
 
@@ -161,32 +171,37 @@ public class CSOnlineInit extends ControllerState
                 loginService.validateAccessToken(accessToken,
                     (service, request, result, validatedAccount, credential, scopes) ->
                 {
-                    switch (result)
+                    Gdx.app.postRunnable(() ->
                     {
-                        case success:
+                        switch (result)
                         {
-                            for (String scope : ClientConstants.Scopes.SHOULD_HAVE.split(","))
+                            case success:
                             {
-                                if (!scopes.contains(scope))
+                                if (Log.INFO) Log.info("Auth success");
+
+                                for (String scope : ClientConstants.Scopes.SHOULD_HAVE.split(","))
                                 {
-                                    // the validated token does not have required scope
-                                    account.resetAccessToken();
-                                    doAuth(loginService);
-                                    return;
+                                    if (!scopes.contains(scope))
+                                    {
+                                        // the validated token does not have required scope
+                                        account.resetAccessToken();
+                                        doAuth(loginService);
+                                        return;
+                                    }
                                 }
+
+                                authorized(loginService, accessToken, validatedAccount, credential, scopes);
+
+                                break;
                             }
-
-                            authorized(loginService, accessToken, validatedAccount, credential, scopes);
-
-                            break;
+                            default:
+                            {
+                                account.resetAccessToken();
+                                doAuth(loginService);
+                                break;
+                            }
                         }
-                        default:
-                        {
-                            account.resetAccessToken();
-                            doAuth(loginService);
-                            break;
-                        }
-                    }
+                    });
                 });
 
                 return;

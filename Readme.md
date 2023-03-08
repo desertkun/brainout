@@ -11,6 +11,8 @@ Use Gradle Wrapper: `./gradlew <command>` on mac/linux, or `gradlew.bat <command
 To obtain project, use `./gradlew idea` to generate [IntelliJ IDEA](https://www.jetbrains.com/idea/) project. Once project
    is generated, open `brainout.ipr` within IntelliJ IDEA IDE.
 
+Do NOT let the IDE "load gradle project", just stick with ipr.
+
 Then, 
 
 1. `./gradlew desktop:dist` to build desktop client
@@ -28,8 +30,8 @@ On your build environment, for scripts to work, you need to install these.
 **NOTE**: You will need to use the Python 2 pip.
 
 ```
-pip install git+https://github.com/desertkun/hjson-py
-pip install pycrypto
+pip3 install git+https://github.com/desertkun/hjson-py
+pip3 install PyCryptodome
 ```
 
 Notes:

@@ -11,12 +11,12 @@ import os
 import os.path
 import re
 import hashlib
-import urllib2
+from urllib.request import urlopen
 import shutil
 from base64 import b64encode, b64decode 
 
-from Crypto.PublicKey import RSA 
-from Crypto.Signature import PKCS1_v1_5 
+from Crypto.PublicKey import RSA
+from Crypto.Signature import PKCS1_v1_5
 from Crypto.Hash import SHA256
 
 try:
@@ -24,7 +24,7 @@ try:
         RSA_KEY = RSA.importKey(f.read())
         KEY_SIGNER = PKCS1_v1_5.new(RSA_KEY)
 except IOError:
-    print "Warning: no private key, making data without signing!"
+    print("Warning: no private key, making data without signing!")
     KEY_SIGNER = None
 
 def copy(input_dir, output_dir, platform):
@@ -72,7 +72,7 @@ def prebuild_packages(input_dir, output_dir, platform):
 
             platform_build = platform_export_rules.get("build", True)
             if not platform_build:
-                print "Skipped package '{0}'".format(package)
+                print("Skipped package '{0}'".format(package))
                 continue
         else:
             platform_filter_rules = None
@@ -80,10 +80,10 @@ def prebuild_packages(input_dir, output_dir, platform):
         if not os.path.exists(os.path.join(output_dir, package)):
             os.makedirs(os.path.join(output_dir, package))
 
-        print "Copying package '{0}' for platform '{1}'".format(package, platform)
+        print("Copying package '{0}' for platform '{1}'".format(package, platform))
 
         for address, dirs, files in os.walk(in_dir):
-            trimmed_path = unicode(address.replace('\\', '/').replace(in_dir, "", 1))
+            trimmed_path = address.replace('\\', '/').replace(in_dir, "", 1)
 
             if trimmed_path.startswith("/"):
                 trimmed_path = trimmed_path[1:]
@@ -108,7 +108,7 @@ def prebuild_packages(input_dir, output_dir, platform):
                             break
 
                 if skip:
-                    print "File skipped: {0}".format(file_name)
+                    print("File skipped: {0}".format(file_name))
                     continue
 
                 src = os.path.join(address, file_name).replace('\\', '/')
@@ -119,12 +119,12 @@ def prebuild_packages(input_dir, output_dir, platform):
         if platform_export_rules:
             platform_override = platform_export_rules.get("override", None)
             if platform_override:
-                for override_with, override_to in platform_override.iteritems():
+                for override_with, override_to in platform_override.items():
 
                     if not os.path.exists(os.path.join(output_dir, package, override_to)):
                         os.makedirs(os.path.join(output_dir, package, override_to))
 
-                    print "Overriding directory {0} with {1}".format(override_to, override_with)
+                    print("Overriding directory {0} with {1}".format(override_to, override_with))
 
                     distutils.dir_util.copy_tree(
                         os.path.join(input_dir, package, override_with),
@@ -175,26 +175,26 @@ def pack_localization(input_dir, output):
     try:
         languages = json.loads(languages_data)
     except ValueError as e:
-        print "Error parsing languages " + os.path.join(input_dir, "languages.json")
-        print "  *** " + str(e)
+        print("Error parsing languages " + os.path.join(input_dir, "languages.json"))
+        print("  *** " + str(e))
         sys.exit(-2)
 
     if os.path.isfile(os.path.join(input_dir, "external.txt")):
-        print "Found external localization"
+        print("Found external localization")
         with open(os.path.join(input_dir, "external.txt"), "r") as f:
             loc_url = f.readline()
 
         try:
-            loc_contents = urllib2.urlopen(loc_url).read()
+            loc_contents = urlopen(loc_url).read()
         except Exception as e:
-            print "####### Failed to download external loc: " + str(e)
+            print("####### Failed to download external loc: " + str(e))
         else:
             try:
                 loc_body = hjson.loads(loc_contents)
             except Exception as e:
-                print "####### Failed to load external loc: " + str(e)
+                print("####### Failed to load external loc: " + str(e))
             else:
-                for language_name, contents in loc_body.iteritems():
+                for language_name, contents in loc_body.items():
                     f_name = os.path.join(input_dir, language_name + ".json")
 
                     if os.path.isfile(f_name):
@@ -202,15 +202,15 @@ def pack_localization(input_dir, output):
                             with open(f_name, "r") as f:
                                 old_file = hjson.load(f)
                         except Exception as e:
-                            print "####### Failed to open old file: " + str(e)
+                            print("####### Failed to open old file: " + str(e))
                         else:
                             diff = set(contents.keys()) - set(old_file.keys())
                             if diff:
-                                print "New {0} localizations: {1}".format(language_name, ", ".join(diff))
+                                print("New {0} localizations: {1}".format(language_name, ", ".join(diff)))
 
                     with open(f_name, "w") as f:
                         json.dump(contents, f)
-                print "Saved externan localization"
+                print("Saved externan localization")
 
     data = {}
     res = {'data': data}
@@ -219,17 +219,17 @@ def pack_localization(input_dir, output):
         l_filename = os.path.join(input_dir, l.lower() + ".json")
 
         if not os.path.isfile(l_filename):
-            print "####### Warning: File " + l_filename + " is missing."
+            print("####### Warning: File " + l_filename + " is missing.")
             continue
 
         try:
             with open(l_filename, 'r') as f:
                 l_contents = hjson.load(f, encoding='utf-8')
         except Exception as e:
-            print "####### Failed to process {0}: {1}".format(l_filename, str(e))
+            print("####### Failed to process {0}: {1}".format(l_filename, str(e)))
             sys.exit(-1)
 
-        for string_id, string_value in l_contents.iteritems():
+        for string_id, string_value in l_contents.items():
             if not string_value:
                 continue
             record = data.get(string_id, None)
@@ -240,7 +240,7 @@ def pack_localization(input_dir, output):
             record[l] = string_value
 
     with open(output, 'w') as outfile:
-        json.dump(res, outfile, indent=4, sort_keys=True, encoding='utf-8', ensure_ascii=True)
+        json.dump(res, outfile, indent=4, sort_keys=True, ensure_ascii=True)
 
 
 def enumerate_textures(input_dir, output_dir):
@@ -292,7 +292,7 @@ def zip_dir(dir_path, zip_file_path):
         archive_path = archive_path.replace(dir_to_zip + os.path.sep, "", 1)
         return archive_path.replace('\\', '/')
 
-    print "Writing file {0}".format(zip_file_path)
+    print("Writing file {0}".format(zip_file_path))
 
     out_file = zipfile.ZipFile(zip_file_path, "w",
                                compression=zipfile.ZIP_STORED)
@@ -307,7 +307,7 @@ def zip_dir(dir_path, zip_file_path):
                 hashes[res_path] = crc(file_path)
                 out_file.write(file_path, res_path)
             except:
-                print "####### Failed to process {0}".format(file_path)
+                print("####### Failed to process {0}".format(file_path))
                 sys.exit(-1)
         if not fileNames and not dirNames:
             zipInfo = zipfile.ZipInfo(trim_path(archiveDirPath) + "/")
@@ -317,7 +317,7 @@ def zip_dir(dir_path, zip_file_path):
     out_file.writestr('__H', hashes_file)
 
     digest = SHA256.new()
-    digest.update(hashes_file)
+    digest.update(hashes_file.encode())
 
     if KEY_SIGNER:
         signature = KEY_SIGNER.sign(digest)
@@ -394,8 +394,8 @@ class CustomHjsonDecoder(hjson.HjsonDecoder):
 
 
 def update(d, u):
-    for k, v in u.iteritems():
-        if isinstance(v, collections.Mapping):
+    for k, v in u.items():
+        if isinstance(v, dict):
             r = update(d.get(k, {}), v)
             d[k] = r
         elif isinstance(v, list) and isinstance(d.get(k, None), list):
@@ -426,7 +426,7 @@ def process_smart(input_path, contents, platform_filter_rules):
                         break
 
             if skip:
-                print "File skipped: {0}".format(os.path.join(path, name))
+                print("File skipped: {0}".format(os.path.join(path, name)))
                 continue
 
             files_to_process.append(os.path.join(path, name))
@@ -443,7 +443,7 @@ def process_smart(input_path, contents, platform_filter_rules):
             with codecs.open(file, 'r', encoding="utf-8") as f:
                 text = f.read()
         except:
-            print "####### Failed to open file " + os.path.join(input_path, file)
+            print("####### Failed to open file " + os.path.join(input_path, file))
             exit(-1)
 
         pieces = [process_piece(file, piece) for piece in text.split(u"--------")]
@@ -460,7 +460,7 @@ def process_smart(input_path, contents, platform_filter_rules):
             if isinstance(e, dict):
                 if '*THIS*' in e:
                     e[main_id] = e.pop("*THIS*")
-                for k, v in e.iteritems():
+                for k, v in e.items():
                     if v == '*THIS*':
                         e[k] = main_id
                     else:
@@ -523,7 +523,7 @@ def process_package(meta, package_name, input_dir, output_dir, platform):
 
 
 def process_packages(input_dir, output_dir, platform):
-    print "Processing packages for platform {0}".format(platform)
+    print("Processing packages for platform {0}".format(platform))
 
     for package in os.listdir(input_dir):
         in_dir = os.path.join(input_dir, package)
@@ -548,7 +548,7 @@ def webjson(inputDir, outputDir, platform):
         "text": texts
     }
 
-    for content_id, c in content_root.iteritems():
+    for content_id, c in content_root.items():
         if "class" in c:
             clazz = c["class"]
 
@@ -556,4 +556,4 @@ def webjson(inputDir, outputDir, platform):
                 res_content[content_id] = c
 
     with open(os.path.join(outputDir, "web.json"), "w") as f:
-        f.write(json.dumps(res, f, indent=4, ensure_ascii=False).encode('utf8'))
+        json.dump(res, f, indent=4, ensure_ascii=False)

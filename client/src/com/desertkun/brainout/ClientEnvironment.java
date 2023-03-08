@@ -1,6 +1,7 @@
 package com.desertkun.brainout;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.desertkun.brainout.controllers.GameController;
 import com.desertkun.brainout.data.consumable.ConsumableContainer;
@@ -20,6 +21,7 @@ public abstract class ClientEnvironment extends Environment
 {
     private GameUser gameUser;
     private String currentRoom;
+    private Graphics.DisplayMode targetFullScreenDisplayMode;
 
     public abstract GameController getGameController();
 
@@ -243,6 +245,16 @@ public abstract class ClientEnvironment extends Environment
     public void resume()
     {
         //
+    }
+
+    public void setTargetFullScreenDisplayMode(Graphics.DisplayMode targetFullScreenDisplayMode)
+    {
+        this.targetFullScreenDisplayMode = targetFullScreenDisplayMode;
+    }
+
+    public Graphics.DisplayMode getTargetFullScreenDisplayMode()
+    {
+        return targetFullScreenDisplayMode;
     }
 
     public String getCurrentRoom()

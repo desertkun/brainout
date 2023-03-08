@@ -6,7 +6,7 @@ import sys
 
 platform = sys.argv[1]
 
-print "Building for platform {0}".format(platform)
+print("Building for platform {0}".format(platform))
 
 config.register_script(
     'Copy binaries',
