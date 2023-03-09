@@ -15,6 +15,8 @@ To obtain project, use `./gradlew idea` to generate [IntelliJ IDEA](https://www.
 
 Do NOT let the IDE "load gradle project", just stick with ipr.
 
+Make sure you build your data, call `./gradlew make_data`
+
 Then, 
 
 1. `./gradlew desktop:dist` to build desktop client
@@ -27,24 +29,13 @@ Look at [the troubleshooting document](docs/Troubleshooting.md), it includes sev
 
 ## Dependencies
 
-On your build environment, for scripts to work, you need to install these.
-
-**NOTE**: You will need to use the Python 3 pip.
-
-```
-pip3 install git+https://github.com/desertkun/hjson-py
-pip3 install PyCryptodome
-```
-
-Notes:
-1. Command line git is required to install hjson
-2. On linux/mac, put virtualenv into /opt/venv/dev folder (so `source /opt/venv/dev/bin/activate`) would work.
+On first install, or after any assets changed, make sure to call `./gradlew make_data`
 
 ## How to build Game Assets
 
 See [this readme](data/README.md) for how to change Game Assets.
 
-To build them, call `./make_data.sh` on Mac/Linux and `make_data.bat` on Windows.
+To build them, call `./gradlew make_data`
 
 **NOTE**: the client digitally verifies the built data! So by default, the client
 won't be able to start up with locally built data, since the private key is not present in this repository.

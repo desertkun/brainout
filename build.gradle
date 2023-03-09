@@ -1,5 +1,6 @@
 apply plugin: 'com.github.ben-manes.versions'
 apply plugin: "idea-utils"
+apply plugin: "com.jetbrains.python.envs"
 
 buildscript {
     repositories {
@@ -7,6 +8,7 @@ buildscript {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         jcenter()
         maven { url "https://jitpack.io" }
+        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
@@ -15,6 +17,7 @@ buildscript {
         classpath 'net.sf.proguard:proguard-gradle:6.2.0'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
         classpath 'com.github.rodionmoiseev.gradle.plugins:idea-utils:0.4-rc1'
+        classpath 'gradle.plugin.com.jetbrains.python:gradle-python-envs:0.0.31'
     }
 }
 
@@ -414,4 +417,24 @@ idea {
             }
         }
     }
+}
+
+
+envs {
+    bootstrapDirectory = new File(buildDir, 'bootstrap')
+    python "python310_64", "3.10.0", ["PyCryptodome", "git+https://github.com/desertkun/hjson-py", "cffi"]
+}
+
+task make_data_client(type: Exec, dependsOn: 'build_envs') {
+    workingDir "${project.projectDir}/scripts"
+    commandLine "${buildDir}/bootstrap/python310_64/bin/python3", 'make_data.py', 'client'
+}
+
+task make_data_server(type: Exec, dependsOn: 'build_envs') {
+    workingDir "${project.projectDir}/scripts"
+    commandLine "${buildDir}/bootstrap/python310_64/bin/python3", 'make_data.py', 'server'
+}
+
+task make_data() {
+    dependsOn 'make_data_client', 'make_data_server'
 }
