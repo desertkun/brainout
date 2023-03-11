@@ -25,11 +25,5 @@ config.register_script(
     scripts.process_packages,
     os.path.join('tmp', platform), config.DST)
 
-config.register_script(
-    'Generate web.json',
-    scripts.webjson,
-    os.path.join('tmp', platform),
-    os.path.join(config.DST, 'web'))
-
 config.check_dir(config.DST)
 config.make_data(platform)

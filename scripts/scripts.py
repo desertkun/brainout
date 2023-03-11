@@ -533,27 +533,3 @@ def process_packages(input_dir, output_dir, platform):
 
             process_package(meta, package, in_dir, output_dir, platform)
 
-
-def webjson(inputDir, outputDir, platform):
-    with open(os.path.join(inputDir, "base", "contents", "content.json"), "r") as f:
-        root = json.load(f)
-
-    with open(os.path.join(inputDir, "base", "contents", "data", "texts.json"), "r") as f:
-        texts = json.load(f)
-
-    content_root = root["content"]
-    res_content = {}
-    res = {
-        "content": res_content,
-        "text": texts
-    }
-
-    for content_id, c in content_root.items():
-        if "class" in c:
-            clazz = c["class"]
-
-            if clazz in ["content.Medal", "content.Achievement", "content.ContentLockTree"]:
-                res_content[content_id] = c
-
-    with open(os.path.join(outputDir, "web.json"), "w") as f:
-        json.dump(res, f, indent=4, ensure_ascii=False)
