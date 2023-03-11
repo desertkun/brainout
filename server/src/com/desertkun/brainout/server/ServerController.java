@@ -11,13 +11,11 @@ import com.desertkun.brainout.client.ConnectionList;
 import com.desertkun.brainout.client.PlayerClient;
 import com.desertkun.brainout.common.msg.client.SimpleMsg;
 import com.desertkun.brainout.common.msg.server.*;
-import com.desertkun.brainout.components.PlayerOwnerComponent;
 import com.desertkun.brainout.components.PlayerRemoteComponent;
 import com.desertkun.brainout.content.Content;
 import com.desertkun.brainout.content.Levels;
 import com.desertkun.brainout.content.SpectatorTeam;
 import com.desertkun.brainout.content.Team;
-import com.desertkun.brainout.content.bullet.Bullet;
 import com.desertkun.brainout.content.upgrades.Upgrade;
 import com.desertkun.brainout.content.upgrades.UpgradeChain;
 import com.desertkun.brainout.data.Data;
@@ -31,10 +29,11 @@ import com.desertkun.brainout.data.components.ServerTeamVisibilityComponentData;
 import com.desertkun.brainout.data.components.base.Component;
 import com.desertkun.brainout.data.interfaces.Spawnable;
 import com.desertkun.brainout.events.*;
-import com.desertkun.brainout.events.Event;
 import com.desertkun.brainout.mode.GameMode;
 import com.desertkun.brainout.mode.ServerRealization;
-import com.desertkun.brainout.online.*;
+import com.desertkun.brainout.online.PlayerRights;
+import com.desertkun.brainout.online.Preset;
+import com.desertkun.brainout.online.RoomSettings;
 import com.desertkun.brainout.playstate.PlayState;
 import com.desertkun.brainout.playstate.ServerPSGame;
 import com.desertkun.brainout.plugins.Plugin;
@@ -49,7 +48,6 @@ import java.io.*;
 import java.nio.ByteBuffer;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.function.Consumer;
 
 public class ServerController extends Controller implements EventReceiver
 {
@@ -1591,6 +1589,8 @@ public class ServerController extends Controller implements EventReceiver
 
     public void setSpeed(float speed)
     {
+        // F hyper speed
+        speed = Math.min(1.0F, speed);
         for (ServerMap map : Map.All(ServerMap.class))
         {
             map.setSpeed(speed);

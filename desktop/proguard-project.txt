@@ -1,6 +1,6 @@
 -injars ../bin/client/brainout-desktop.jar(!META-INF/versions/**.class,!module-info.class)
 -outjars ../bin/obfuscated/brainout-desktop.jar
--libraryjars  <java.home>/../jre/lib/rt.jar
+-libraryjars <java.home>/jmods
 -verbose
 -dontnote "!DuplicateClassPrinter*"
 -dontshrink

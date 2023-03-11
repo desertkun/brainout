@@ -1,6 +1,7 @@
 package com.desertkun.brainout.desktop;
 
 import com.codedisaster.steamworks.SteamAPI;
+import com.codedisaster.steamworks.SteamFriends;
 import com.codedisaster.steamworks.SteamID;
 import com.desertkun.brainout.BrainOutClient;
 import com.desertkun.brainout.GameUser;
@@ -42,7 +43,7 @@ public class SteamEnvironment extends DesktopEnvironment implements EventReceive
     @Override
     public boolean openURI(String uri)
     {
-        getGameUser().getSteamFriends().activateGameOverlayToWebPage(uri);
+        getGameUser().getSteamFriends().activateGameOverlayToWebPage(uri, SteamFriends.OverlayToWebPageMode.Modal);
 
         return true;
     }

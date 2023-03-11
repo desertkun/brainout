@@ -1,6 +1,6 @@
 -injars ../bin/server/brainout-server.jar(!META-INF/versions/**.class,!module-info.class)
 -outjars ../bin/server/brainout-server-o.jar
--libraryjars  <java.home>/../jre/lib/rt.jar
+-libraryjars <java.home>/jmods
 -verbose
 -dontnote "!DuplicateClassPrinter*"
 -dontshrink

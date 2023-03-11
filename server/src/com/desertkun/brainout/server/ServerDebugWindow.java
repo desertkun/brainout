@@ -3,8 +3,8 @@ package com.desertkun.brainout.server;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -65,19 +65,12 @@ public class ServerDebugWindow implements ApplicationListener, Watcher
         this.mousePosition = new Vector2();
         this.tmp = new Vector2();
 
-        LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-        cfg.title = "Server";
-        cfg.useGL30 = false;
-        cfg.width = (int)windowSize.x;
-        cfg.height = (int)windowSize.y;
-        cfg.fullscreen = false;
-        cfg.resizable = false;
-        cfg.foregroundFPS = 60;
-        cfg.allowSoftwareMode = true;
-        cfg.audioDeviceSimultaneousSources = 64;
-        cfg.audioDeviceBufferCount = 18;
+        Lwjgl3ApplicationConfiguration cfg = new Lwjgl3ApplicationConfiguration();
+        cfg.setTitle("Server");
+        cfg.setWindowedMode((int)windowSize.x, (int)windowSize.y);
+        cfg.setForegroundFPS(60);
 
-        new LwjglApplication(this, cfg);
+        new Lwjgl3Application(this, cfg);
     }
 
     @Override
