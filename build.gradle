@@ -428,7 +428,7 @@ envs {
     zipRepository = new URL("https://cdn.brainout.org/python/")
     shouldUseZipsFromRepository = Os.isFamily(Os.FAMILY_WINDOWS)
 
-    python "python3_64", "3.7.0", ["PyCryptodome", "git+https://github.com/desertkun/hjson-py", "cffi"]
+    python "python3_64", "3.10.0", ["PyCryptodome", "git+https://github.com/desertkun/hjson-py", "cffi"]
 }
 
 task make_data_client(type: Exec, dependsOn: 'build_envs') {
