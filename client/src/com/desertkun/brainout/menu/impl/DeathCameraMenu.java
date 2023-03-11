@@ -1,56 +1,62 @@
 package com.desertkun.brainout.menu.impl;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Scaling;
 import com.desertkun.brainout.BrainOutClient;
 import com.desertkun.brainout.Constants;
-import com.desertkun.brainout.common.msg.client.CurrentlyWatchingMsg;
-import com.desertkun.brainout.content.components.InstrumentAnimationComponent;
-import com.desertkun.brainout.controllers.GameController;
 import com.desertkun.brainout.L;
 import com.desertkun.brainout.client.ClientController;
 import com.desertkun.brainout.client.RemoteClient;
-import com.desertkun.brainout.client.settings.KeyProperties;
+import com.desertkun.brainout.common.msg.client.CurrentlyWatchingMsg;
 import com.desertkun.brainout.common.msg.client.ForgiveKillMsg;
-import com.desertkun.brainout.content.Levels;
-import com.desertkun.brainout.content.components.IconComponent;
-import com.desertkun.brainout.content.instrument.Instrument;
+import com.desertkun.brainout.controllers.GameController;
 import com.desertkun.brainout.data.Map;
 import com.desertkun.brainout.data.active.ActiveData;
 import com.desertkun.brainout.data.components.HealthComponentData;
 import com.desertkun.brainout.data.instrument.InstrumentInfo;
 import com.desertkun.brainout.data.interfaces.Watcher;
-import com.desertkun.brainout.events.*;
+import com.desertkun.brainout.events.Event;
+import com.desertkun.brainout.events.EventReceiver;
+import com.desertkun.brainout.events.GameControllerEvent;
 import com.desertkun.brainout.menu.Menu;
-import com.desertkun.brainout.menu.ui.*;
+import com.desertkun.brainout.menu.ui.ClickOverListener;
+import com.desertkun.brainout.menu.ui.ProfileBadgeWidget;
 
 public class DeathCameraMenu extends Menu implements Watcher, EventReceiver
 {
     private final ActiveData killer;
     private final Runnable complete;
     private final InstrumentInfo instrumentInfo;
+    private final boolean showId;
     private float x, y;
     private String dimension;
     private boolean lerp;
 
     public DeathCameraMenu(Map map,
-           ActiveData killer, InstrumentInfo instrumentInfo,
-           Runnable complete)
+                           ActiveData killer,
+                           InstrumentInfo instrumentInfo,
+                           Runnable complete)
+    {
+        this(map, killer, instrumentInfo, complete, false);
+    }
+
+    public DeathCameraMenu(Map map,
+                           ActiveData killer,
+                           InstrumentInfo instrumentInfo,
+                           Runnable complete,
+                           boolean showId)
     {
         this.killer = killer;
         this.dimension = killer.getDimension();
 
         this.instrumentInfo = instrumentInfo;
+        this.showId = showId;
 
         if (Map.GetWatcher() != null)
         {
@@ -158,7 +164,8 @@ public class DeathCameraMenu extends Menu implements Watcher, EventReceiver
         Label youKilled = new Label(L.get("MENU_KILLED"), BrainOutClient.Skin, "title-small");
         youKilled.setAlignment(Align.center);
 
-        if (!CC.isEnemies(remoteClient, CC.getMyRemoteClient()) && remoteClient.getId() != CC.getMyId())
+        int id = remoteClient.getId();
+        if (!CC.isEnemies(remoteClient, CC.getMyRemoteClient()) && id != CC.getMyId())
         {
             TextButton forgive = new TextButton(L.get("MENU_FORGIVE"),
                     BrainOutClient.Skin, "button-default");
@@ -171,7 +178,7 @@ public class DeathCameraMenu extends Menu implements Watcher, EventReceiver
                     if (lerp)
                     {
                         playSound(MenuSound.select);
-                        BrainOutClient.ClientController.sendTCP(new ForgiveKillMsg(remoteClient.getId()));
+                        BrainOutClient.ClientController.sendTCP(new ForgiveKillMsg(id));
 
                         complete();
                     }
@@ -194,6 +201,15 @@ public class DeathCameraMenu extends Menu implements Watcher, EventReceiver
                     remoteClient.getAvatar(), remoteClient.getLevel(), (int) health.getHealth(), instrumentInfo);
 
             data.add(badgeWidget).size(384, 112).row();
+        }
+
+        boolean isBot = remoteClient.getInfoBoolean("bot", false);
+        if (showId && !isBot)
+        {
+            String labelId = "id " + remoteClient.getAccountId();
+            // Based on the account id label in PlayerProfileMenu
+            Label label = new Label(labelId, BrainOutClient.Skin, "title-gray");
+            data.add(label).pad(10).padTop(0).row();
         }
 
         return data;

@@ -1108,7 +1108,17 @@ public class GameSteamUser extends GameUser implements SteamUserStatsCallback, S
 
     public void openOverlay(String uri, Runnable done)
     {
-        getSteamFriends().activateGameOverlayToWebPage(uri);
+        getSteamFriends().activateGameOverlayToWebPage(uri, SteamFriends.OverlayToWebPageMode.Modal);
         overlayClodedCallbacks.addLast(done);
+    }
+
+    @Override
+    public void onDeleteItem(SteamPublishedFileID publishedFileID, SteamResult result) {
+
+    }
+
+    @Override
+    public void onNumberOfCurrentPlayersReceived(boolean success, int players) {
+
     }
 }

@@ -1,6 +1,6 @@
 -injars ../bin/client/brainout-steam.jar(!META-INF/versions/**.class,!module-info.class)
 -outjars ../bin/obfuscated/brainout-steam.jar
--libraryjars  <java.home>/../jre/lib/rt.jar
+-libraryjars <java.home>/jmods
 -verbose
 -dontnote "!DuplicateClassPrinter*"
 -dontshrink
@@ -13,6 +13,7 @@
 -dontusemixedcaseclassnames
 -renamesourcefileattribute BrainOut
 -keepattributes LineNumberTable,SourceFile,EnclosingMethod,Synthetic,*Annotation*
+-dontwarn com.codedisaster.steamworks.**
 -dontwarn com.badlogic.**, com.esotericsoftware.**, org.lwjgl.**, eu.infomas.annotation.**, javax.crypto.**, javax.servlet.**, org.apache.log.**, org.apache.log4j.**, org.apache.avalon.**, org.slf4j.**
 
 -keepclassmembers class com.badlogic.gdx.backends.android.AndroidInput* {

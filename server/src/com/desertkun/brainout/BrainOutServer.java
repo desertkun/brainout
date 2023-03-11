@@ -1,9 +1,9 @@
 package com.desertkun.brainout;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.backends.lwjgl.LwjglFiles;
-import com.badlogic.gdx.backends.lwjgl.LwjglNet;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Files;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Net;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.Array;
@@ -240,8 +240,8 @@ public class BrainOutServer extends BrainOut implements Runnable
 
     public void initGdx()
     {
-        Gdx.files = new LwjglFiles();
-        Gdx.net = new LwjglNet(new LwjglApplicationConfiguration());
+        Gdx.files = new Lwjgl3Files();
+        Gdx.net = new Lwjgl3Net(new Lwjgl3ApplicationConfiguration());
     }
 
     public boolean start()
