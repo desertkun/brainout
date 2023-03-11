@@ -171,9 +171,9 @@ def last_modified_file(directory):
 
 
 def pack_localization(input_dir, output):
-    languages_data = open(os.path.join(input_dir, "languages.json")).read()
     try:
-        languages = json.loads(languages_data)
+        with open(os.path.join(input_dir, "languages.json"), "r", encoding="utf8") as f:
+            languages = json.load(f)
     except ValueError as e:
         print("Error parsing languages " + os.path.join(input_dir, "languages.json"))
         print("  *** " + str(e))
