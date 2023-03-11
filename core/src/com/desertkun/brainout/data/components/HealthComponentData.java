@@ -68,10 +68,11 @@ public class HealthComponentData<T extends HealthComponent> extends Component<T>
         }
 
         Map map = getMap();
-        ChunkData chunk = map.getChunkAt((int) e.x, (int) e.y);
-        if (chunk.hasFlag(ChunkData.ChunkFlag.shootingDisabled)) {
-            // Log.info("Damage blocked by chunk shooting-disable flag");
-            return;
+        if (map != null) {
+            ChunkData chunk = map.getChunkAt((int) e.x, (int) e.y);
+            if (chunk.hasFlag(ChunkData.ChunkFlag.shootingDisabled)) {
+                return;
+            }
         }
 
         float damage = e.damage;
