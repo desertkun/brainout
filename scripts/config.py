@@ -23,7 +23,7 @@ class Script(object):
         self.dst = dst
 
     def call(self, platform):
-        print "Executing script '{0}'...".format(self.name)
+        print("Executing script '{0}'...".format(self.name))
         self.method(self.src, self.dst, platform)
 
 

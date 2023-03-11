@@ -1,7 +1,7 @@
 package com.desertkun.brainout.desktop;
 
 import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonReader;
@@ -42,12 +42,12 @@ public class DesktopSettings extends ClientSettings
     @Override
     public Graphics.DisplayMode getDefaultDisplayMode()
     {
-        return LwjglApplicationConfiguration.getDesktopDisplayMode();
+        return Lwjgl3ApplicationConfiguration.getDisplayMode();
     }
 
     @Override
     public Graphics.DisplayMode[] getDisplayModes()
     {
-        return LwjglApplicationConfiguration.getDisplayModes();
+        return Lwjgl3ApplicationConfiguration.getDisplayModes();
     }
 }

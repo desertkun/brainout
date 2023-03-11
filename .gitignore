@@ -77,3 +77,4 @@ bin/ch/brainout-ch.jar
 bin/ch/brainout.jar
 bin/chserver/brainout-server-ch.jar
 bin/server/brainout-server-o.jar
+/keys/brainout.pem

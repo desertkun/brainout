@@ -2,6 +2,7 @@ package com.desertkun.brainout.desktop.client.states;
 
 import com.codedisaster.steamworks.SteamAPI;
 import com.codedisaster.steamworks.SteamException;
+import com.codedisaster.steamworks.SteamLibraryLoaderLwjgl3;
 import com.desertkun.brainout.BrainOutClient;
 import com.desertkun.brainout.L;
 import com.desertkun.brainout.client.states.CSError;
@@ -20,8 +21,16 @@ public class CSSteamInit extends ControllerState
 
     public static void TryInit()
     {
+        if (Inited)
+            return;
+
         try
         {
+            if (!SteamAPI.loadLibraries(new SteamLibraryLoaderLwjgl3()))
+            {
+                return;
+            }
+
             Inited = SteamAPI.init();
         }
         catch (SteamException e)

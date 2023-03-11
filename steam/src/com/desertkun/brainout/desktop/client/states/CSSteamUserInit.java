@@ -33,6 +33,12 @@ public class CSSteamUserInit extends ControllerState
         user = new SteamUser(new SteamUserCallback()
         {
             @Override
+            public void onAuthSessionTicket(SteamAuthTicket authTicket, SteamResult result)
+            {
+
+            }
+
+            @Override
             public void onValidateAuthTicket(
                 SteamID steamID,
                 SteamAuth.AuthSessionResponse authSessionResponse,

@@ -4,12 +4,18 @@ Source code for [Brain / Out](https://brainout.org/), the game.
 
 ## How To Build From Source
 
+OpenJDK 11 is required.
+
 First, clone this repo.
 
 Use Gradle Wrapper: `./gradlew <command>` on mac/linux, or `gradlew.bat <command>` on windows
 
 To obtain project, use `./gradlew idea` to generate [IntelliJ IDEA](https://www.jetbrains.com/idea/) project. Once project
    is generated, open `brainout.ipr` within IntelliJ IDEA IDE.
+
+Do NOT let the IDE "load gradle project", just stick with ipr.
+
+Make sure you build your data, call `./gradlew make_data`
 
 Then, 
 
@@ -23,25 +29,22 @@ Look at [the troubleshooting document](docs/Troubleshooting.md), it includes sev
 
 ## Dependencies
 
-On your build environment, for scripts to work, you need to install these.
+Setup SDK for IntelliJ IDEA:
 
-**NOTE**: You will need to use the Python 2 pip.
+1. Click Project Structure
+2. Select SDKs
+3. Click "+", Download SDK
+4. Select version 11
+5. Download it and rename to "1.8"
+6. Run `./gradlew idea` again
 
-```
-pip install git+https://github.com/desertkun/hjson-py
-pip install pycrypto
-```
-
-Notes:
-1. Command line git is required to install hjson
-2. `pycrypto` on Windows could be replaced with `pip install pycryptodome` since original
-pycrypto requires C development environment.
+On first install, or after any assets changed, make sure to call `./gradlew make_data`
 
 ## How to build Game Assets
 
 See [this readme](data/README.md) for how to change Game Assets.
 
-To build them, call `./make_data.sh` on Mac/Linux and `make_data.bat` on Windows.
+To build them, call `./gradlew make_data`
 
 **NOTE**: the client digitally verifies the built data! So by default, the client
 won't be able to start up with locally built data, since the private key is not present in this repository.
