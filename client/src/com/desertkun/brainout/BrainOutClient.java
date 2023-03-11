@@ -43,6 +43,8 @@ import java.io.*;
 import java.nio.IntBuffer;
 import java.util.Stack;
 
+import static com.desertkun.brainout.Version.ENV_SERVICE;
+
 public class BrainOutClient extends BrainOut implements ApplicationListener
 {
     public static ShapeRenderer 				ShapeRenderer;
@@ -121,7 +123,7 @@ public class BrainOutClient extends BrainOut implements ApplicationListener
             ClientConstants.Name.APP_NAME,
             Version.VERSION);
 
-        Online = AnthillRuntime.Create(ClientConstants.Connection.ENV_SERVICE, applicationInfo);
+        Online = AnthillRuntime.Create(ENV_SERVICE, applicationInfo);
 
         Skin = new SkinFromStream();
         ShapeRenderer = new com.badlogic.gdx.graphics.glutils.ShapeRenderer();

@@ -46,6 +46,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
+import static com.desertkun.brainout.Version.ENV_SERVICE;
+
 @SuppressWarnings("PointlessBooleanExpression")
 public class BrainOutServer extends BrainOut implements Runnable
 {
@@ -123,7 +125,7 @@ public class BrainOutServer extends BrainOut implements Runnable
             ServerConstants.Name.GAMESPACE,
             ServerConstants.Name.APP_NAME, Version.VERSION);
 
-        Online = AnthillRuntime.Create(ServerConstants.Connection.ENV_SERVICE, applicationInfo);
+        Online = AnthillRuntime.Create(ENV_SERVICE, applicationInfo);
 
         String sockets = null;
 

@@ -96,7 +96,6 @@ public class Constants
 
         public static final int RECONNECT_TIME_OUT = 15;
 
-        public static final String ENV_SERVICE = "https://env.brainout.org";
         public static final String[] DISCOVER = new String[]
         {
             LoginService.ID, ProfileService.ID, PromoService.ID, EventService.ID,
