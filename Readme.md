@@ -29,6 +29,15 @@ Look at [the troubleshooting document](docs/Troubleshooting.md), it includes sev
 
 ## Dependencies
 
+Setup SDK for IntelliJ IDEA:
+
+1. Click Project Structure
+2. Select SDKs
+3. Click "+", Download SDK
+4. Select version 11
+5. Download it and rename to "1.8"
+6. Run `./gradlew idea` again
+
 On first install, or after any assets changed, make sure to call `./gradlew make_data`
 
 ## How to build Game Assets
