@@ -198,6 +198,8 @@ project(":server") {
     }
 }
 
+import org.apache.tools.ant.taskdefs.condition.Os
+
 def accessToken = ''
 def discoveryServices = '{"profile":"https://profile-valpha.brainout.org","login":"https://login-valpha.brainout.org","message":"https://message-valpha.brainout.org","event":"https://event-valpha.brainout.org","leaderboard":"https://leaderboard-valpha.brainout.org","social":"https://social-valpha.brainout.org","static":"https://static-valpha.brainout.org","game":"https://game-valpha.brainout.org","store":"https://store-valpha.brainout.org","report":"https://report-valpha.brainout.org","market":"https://market-valpha.brainout.org"}'
 
@@ -217,7 +219,7 @@ idea {
                 name = 'Server Alpha'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 programArguments = 'no 36555,36556,36557 --settings server-settings.json --maps maps-set.json'
                 env = [
                     'login_access_token': accessToken,
@@ -232,7 +234,7 @@ idea {
                 name = 'Server Offline'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 programArguments = 'no 36555,36556,36557 --settings server-settings.json --maps maps-set.json --offline'
                 env = [
                     'login_access_token': accessToken,
@@ -247,7 +249,7 @@ idea {
                 name = 'Server Editor Alpha'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 env = [
                     'login_access_token': accessToken,
                     'JAVA_LIBRARY_PATH': '/opt/local/lib',
@@ -262,7 +264,7 @@ idea {
                 name = 'Server Editor Offline'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 env = [
                     'login_access_token': accessToken,
                     'JAVA_LIBRARY_PATH': '/opt/local/lib',
@@ -277,7 +279,7 @@ idea {
                 name = 'Server Lobby Alpha'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 env = [
                         'login_access_token': accessToken,
                         'JAVA_LIBRARY_PATH': '/opt/local/lib',
@@ -292,7 +294,7 @@ idea {
                 name = 'Server Lobby Offline'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 env = [
                         'login_access_token': accessToken,
                         'JAVA_LIBRARY_PATH': '/opt/local/lib',
@@ -307,7 +309,7 @@ idea {
                 name = 'Server Free Alpha'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 env = [
                         'login_access_token': accessToken,
                         'JAVA_LIBRARY_PATH': '/opt/local/lib',
@@ -322,7 +324,7 @@ idea {
                 name = 'Server Free Offline'
 
                 mainClass = 'com.desertkun.brainout.Main'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
                 env = [
                         'login_access_token': accessToken,
                         'JAVA_LIBRARY_PATH': '/opt/local/lib',
@@ -337,7 +339,7 @@ idea {
                 name = 'Steam'
 
                 mainClass = 'com.desertkun.brainout.desktop.SteamLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = ''
                 module = project(':steam')
@@ -348,7 +350,7 @@ idea {
                 name = 'Desktop Alpha'
 
                 mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = ''
                 module = project(':desktop')
@@ -359,7 +361,7 @@ idea {
                 name = 'Desktop Offline Unsafe'
 
                 mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = '--offline --unsafe'
                 module = project(':desktop')
@@ -370,7 +372,7 @@ idea {
                 name = 'Desktop Local Alpha'
 
                 mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3'
                 module = project(':desktop')
@@ -381,7 +383,7 @@ idea {
                 name = 'Desktop Local Offline Unsafe'
 
                 mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3 --offline --unsafe'
                 module = project(':desktop')
@@ -392,7 +394,7 @@ idea {
                 name = 'Desktop Local 2 Alpha'
 
                 mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3'
                 env = [
@@ -406,7 +408,7 @@ idea {
                 name = 'Desktop Local 2 Offline Unsafe'
 
                 mainClass = 'com.desertkun.brainout.desktop.DesktopLauncher'
-                vmOptions = '-XstartOnFirstThread'
+                vmOptions = Os.isFamily(Os.FAMILY_MAC) ? '-XstartOnFirstThread' : ''
 
                 programArguments = '--connect brainout://bG9jYWxob3N0OzM2NTU1OzM2NTU2OzM2NTU3 --offline --unsafe'
                 env = [
@@ -418,8 +420,6 @@ idea {
         }
     }
 }
-
-import org.apache.tools.ant.taskdefs.condition.Os
 
 envs {
     bootstrapDirectory = new File(buildDir, 'bootstrap')
