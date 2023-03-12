@@ -33,7 +33,7 @@ Setup SDK for IntelliJ IDEA:
 
 1. Click Project Structure
 2. Select SDKs
-3. Click "+", Download SDK
+3. Click "+", Download JDK
 4. Select version 11
 5. Download it and rename to "1.8"
 6. Run `./gradlew idea` again
