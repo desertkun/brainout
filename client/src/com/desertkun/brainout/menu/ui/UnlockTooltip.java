@@ -128,7 +128,7 @@ public class UnlockTooltip
             title.setAlignment(Align.center);
             title.setWrap(true);
 
-            tooltip.add(new BorderActor(title, "form-gray")).expandX().fillX().row();
+            tooltip.add(new BorderActor(title, 540, "form-gray")).expandX().fillX().row();
             tooltip.add(content).expand().fill().row();
 
             boolean addBottomLine = false;
