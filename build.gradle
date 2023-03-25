@@ -180,9 +180,9 @@ project(":steam") {
     dependencies {
         compile project(":desktop")
         compile project(":client")
-        implementation files('libs/steamworks4j-1.10.0-SNAPSHOT.jar')
-        implementation files('libs/steamworks4j-gdx-1.10.0-SNAPSHOT.jar')
-        implementation files('libs/steamworks4j-lwjgl3-1.10.0-SNAPSHOT.jar')
+        compile files('libs/steamworks4j-1.10.0-SNAPSHOT.jar')
+        compile files('libs/steamworks4j-gdx-1.10.0-SNAPSHOT.jar')
+        compile files('libs/steamworks4j-lwjgl3-1.10.0-SNAPSHOT.jar')
     }
 }
 
