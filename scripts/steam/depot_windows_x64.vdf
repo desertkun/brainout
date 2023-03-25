@@ -12,6 +12,13 @@
 
   "FileMapping"
   {
+    "LocalPath" "./conf/*"
+    "DepotPath" "./conf"
+    "recursive" "1"
+  }
+
+  "FileMapping"
+  {
     "LocalPath" "./lib/*"
     "DepotPath" "./lib"
     "recursive" "1"
