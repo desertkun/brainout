@@ -26,6 +26,8 @@ public class DesktopLauncher
             //
         }
 
+        System.setProperty("java.awt.headless", "true");
+
         ClientEnvironment environment = new DesktopEnvironment(args);
         ClientSettings settings;
 

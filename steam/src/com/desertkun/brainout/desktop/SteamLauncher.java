@@ -32,6 +32,7 @@ public class SteamLauncher
 
         CSSteamInit.TryInit();
 
+        System.setProperty("java.awt.headless", "true");
 
         ClientEnvironment environment = new SteamEnvironment(args);
         ClientSettings settings;
