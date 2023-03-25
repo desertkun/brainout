@@ -97,14 +97,17 @@ project(":core") {
     apply plugin: "java"
 
     dependencies {
-        compile "com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion"
+        compile ("com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion") {
+            exclude group: 'com.mashape.unirest', module: 'unirest-java'
+            compile "com.mashape.unirest:unirest-java:1.4.9"
+        }
 
         compile "com.github.desertkun.infomas-asl:annotation-detector:3.1-dev"
 
         compile ("com.github.desertkun:kryonet:2.22.0-RC7") {
             exclude group: 'com.esotericsoftware', module: 'kryo'
         }
-        compile "com.esotericsoftware:kryo:5.1.1"
+        compile "com.esotericsoftware:kryo:5.4.0"
 
         compile "org.json:json:20180130"
         compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
@@ -187,7 +190,10 @@ project(":server") {
     apply plugin: "java"
 
     dependencies {
-        compile "com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion"
+        compile ("com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion") {
+            exclude group: 'com.mashape.unirest', module: 'unirest-java'
+            compile "com.mashape.unirest:unirest-java:1.4.9"
+        }
         compile "com.github.anthill-platform:anthill-runtime-java-server:$anthillServerRuntimeVersion"
         compile project(":core")
         compile "com.beust:jcommander:1.48"
