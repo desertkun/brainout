@@ -151,6 +151,8 @@ public class CSOnlineInit extends ControllerState
 
     private void doAuth(LoginService loginService)
     {
+        if (Log.INFO) Log.info("Authenticating");
+
         Request.Fields options = new Request.Fields();
 
         options.put("should_have", ClientConstants.Scopes.SHOULD_HAVE);
@@ -196,6 +198,7 @@ public class CSOnlineInit extends ControllerState
                             }
                             default:
                             {
+                                if (Log.INFO) Log.info("Auth failure");
                                 account.resetAccessToken();
                                 doAuth(loginService);
                                 break;
@@ -211,41 +214,45 @@ public class CSOnlineInit extends ControllerState
         account.auth(loginService, LoginService.Scopes.FromString(ClientConstants.Scopes.SCOPES), options,
             (service, request, result, accessToken, account1, credential, scopes) ->
         {
-            switch (result)
-            {
-                case success:
-                {
-                    authorized(loginService, accessToken, account1, credential, scopes);
-                    break;
-                }
+            Gdx.app.postRunnable(() -> {
+                if (Log.INFO) Log.info("Auth done.");
 
-                case multipleChoices:
+                switch (result)
                 {
-                    switchTo(new CSMultipleAccounts(((JsonRequest) request).getObject()));
-
-                    break;
-                }
-
-                // we can't authorize, so create new anonymous account
-                case forbidden:
-                {
-                    Gdx.app.postRunnable(() ->
+                    case success:
                     {
-                        final GameUser user = BrainOutClient.Env.getGameUser();
+                        authorized(loginService, accessToken, account1, credential, scopes);
+                        break;
+                    }
 
-                        user.getAccounts().setNewAccountForEnvironment();
-                        user.write();
+                    case multipleChoices:
+                    {
+                        switchTo(new CSMultipleAccounts(((JsonRequest) request).getObject()));
 
-                        doAuth(loginService);
-                    });
+                        break;
+                    }
 
-                    break;
+                    // we can't authorize, so create new anonymous account
+                    case forbidden:
+                    {
+                        Gdx.app.postRunnable(() ->
+                        {
+                            final GameUser user = BrainOutClient.Env.getGameUser();
+
+                            user.getAccounts().setNewAccountForEnvironment();
+                            user.write();
+
+                            doAuth(loginService);
+                        });
+
+                        break;
+                    }
+                    default:
+                    {
+                        CSOnlineInit.this.complete(result, "login " + result.toString());
+                    }
                 }
-                default:
-                {
-                    CSOnlineInit.this.complete(result, "login " + result.toString());
-                }
-            }
+            });
         });
     }
 

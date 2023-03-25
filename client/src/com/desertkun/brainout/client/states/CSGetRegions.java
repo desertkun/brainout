@@ -1,7 +1,9 @@
 package com.desertkun.brainout.client.states;
 
+import com.badlogic.gdx.Gdx;
 import com.desertkun.brainout.BrainOutClient;
 import com.desertkun.brainout.L;
+import com.esotericsoftware.minlog.Log;
 import org.anthillplatform.runtime.requests.Request;
 import org.anthillplatform.runtime.services.GameService;
 import org.anthillplatform.runtime.services.LoginService;
@@ -35,27 +37,27 @@ public class CSGetRegions extends ControllerState
             return;
         }
 
-        gameService.getRegions(loginService.getCurrentAccessToken(), new GameService.ListRegionsCallback()
-        {
-            @Override
-            public void result(GameService service, Request request, Request.Result result,
-                               List<GameService.Region> regions, String myRegion)
-            {
-                if (result == Request.Result.success)
-                {
-                    BrainOutClient.ClientController.setRegions(regions);
-                    BrainOutClient.ClientController.setMyRegion(myRegion);
+        if (Log.INFO) Log.info("Requesting regions");
 
-                    proceed();
-                }
-                else
-                {
-                    switchTo(new CSError(
-                        L.get("MENU_ONLINE_ERROR", result.toString())
-                    ));
-                }
+        gameService.getRegions(loginService.getCurrentAccessToken(),
+            (service, request, result, regions, myRegion) -> Gdx.app.postRunnable(() ->
+        {
+            if (result == Request.Result.success)
+            {
+                if (Log.INFO) Log.info("Got regions");
+                BrainOutClient.ClientController.setRegions(regions);
+                BrainOutClient.ClientController.setMyRegion(myRegion);
+
+                proceed();
             }
-        });
+            else
+            {
+                if (Log.INFO) Log.info("Failed to get regions");
+                switchTo(new CSError(
+                    L.get("MENU_ONLINE_ERROR", result.toString())
+                ));
+            }
+        }));
     }
 
     private void proceed()
