@@ -238,10 +238,6 @@ public class Minimap extends Actor implements Disposable
 
             batch.end();
 
-            Gdx.gl.glEnable(GL20.GL_SCISSOR_TEST);
-            Gdx.gl.glEnable(GL20.GL_BLEND);
-            Gdx.gl.glScissor((int)getX(), (int)getY(), (int)getWidth(), (int)getHeight());
-
             ShapeRenderer shapeRenderer = BrainOutClient.ShapeRenderer;
             shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
             shapeRenderer.setProjectionMatrix(batch.getProjectionMatrix());
@@ -285,6 +281,18 @@ public class Minimap extends Actor implements Disposable
                         float bulletX = getX() + (bullet.getX() * SCALE - offsetX),
                                 bulletY = getY() + (bullet.getY() * SCALE - offsetY);
 
+                        if (bulletX < getX())
+                            continue;
+
+                        if (bulletX > getX() + getWidth())
+                            continue;
+
+                        if (bulletY < getY())
+                            continue;
+
+                        if (bulletY > getY() + getHeight())
+                            continue;
+
                         float scl = SCALE / 60.0f;
 
                         shapeRenderer.line(bulletX, bulletY, 0,
@@ -295,8 +303,6 @@ public class Minimap extends Actor implements Disposable
             }
 
             shapeRenderer.end();
-
-            Gdx.gl.glDisable(GL20.GL_SCISSOR_TEST);
 
             batch.begin();
         }
