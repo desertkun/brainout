@@ -9,7 +9,7 @@
 	"packages":
 	[
 		"base", "lobby",
-		"editor", "freeplay",
+		"freeplay",
 		"map_factory", "map_siber", "map_forest", "map_bridge",
 		"map_canyon", "custom",
 		"map_station", "map_hospital", "map_construction", "sounds"

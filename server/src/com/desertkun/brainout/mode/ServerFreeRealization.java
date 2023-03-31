@@ -1587,7 +1587,7 @@ public class ServerFreeRealization extends ServerRealization<GameModeFree>
         scheduleTask(this::spawnCrows, 2000, 2000);
         //scheduleTask(this::spawnZombies, 1000, 1000);
 
-        spawnSnow();
+        //spawnSnow();
 
         {
             long seconds = (System.currentTimeMillis() / 1000L) + (long)timeOfDayOffset;
