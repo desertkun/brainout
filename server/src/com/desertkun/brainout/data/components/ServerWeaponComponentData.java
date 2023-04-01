@@ -821,6 +821,9 @@ public class ServerWeaponComponentData extends Component<ServerWeaponComponent> 
 
         public boolean unload(PlayerOwnerComponent playerOwnerComponent)
         {
+            if (state == State.reloading)
+                return false;
+
             if (magazines != null)
             {
                 detachMagazine();
