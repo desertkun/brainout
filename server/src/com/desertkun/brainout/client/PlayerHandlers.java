@@ -181,6 +181,7 @@ public class PlayerHandlers implements Disposable
         handleRequest("ban", this::handleBanPlayer);
         handleRequest("withdraw_market_item", this::withdrawMarketItem);
         handleRequest("destroy_market_item", this::destroyMarketItem);
+        handleRequest("destroy_rs_market_item", this::destroyMarketRealEstateItem);
         handleRequest("put_market_item", this::putMarketItem);
         handleRequest("put_market_rs_item", this::putMarketRealEstateItem);
         handleRequest("withdraw_market_rs_item", this::withdrawMarketRealEstateItem);
@@ -2565,6 +2566,170 @@ public class PlayerHandlers implements Disposable
                 playerClient.sendConsumable();
 
                 playerClient.log("Withdrew " + finalAmount + " items " + futureRecord.getItem().getContent().getID() +
+                        " from real estate " + rs.payload.masterMap + " key " + key);
+
+                request.success(id, new JSONObject());
+            }));
+        });
+    }
+
+    private void destroyMarketRealEstateItem(JSONObject args, int id, ClientRequest request)
+    {
+        BrainOutServer.PostRunnable(() ->
+        {
+            if (MARKET_LOCK.contains(playerClient.getId()))
+            {
+                request.error(id, "Locked");
+                return;
+            }
+
+            String mapName = args.optString("map", null);
+            String key = args.optString("key", null);
+            String recordId = args.optString("record", null);
+            int amount = args.optInt("amount", -1);
+
+            if (mapName == null || key == null || recordId == null || amount <= 0)
+            {
+                request.error(id, "Welp");
+                return;
+            }
+
+            ServerFreeplayMap map = Map.Get(mapName, ServerFreeplayMap.class);
+            if (map == null)
+            {
+                request.error(id, "Welp");
+                return;
+            }
+
+            RealEstateInfo rs = map.getRealEstateInfo();
+            if (rs == null)
+            {
+                request.error(id, "Welp");
+                return;
+            }
+
+            if (!playerClient.getAccount().equals(rs.owner))
+            {
+                request.error(id, "Welp");
+                return;
+            }
+
+            MarketService marketService = MarketService.Get();
+            if (marketService == null)
+            {
+                request.error(id, "no_service");
+                return;
+            }
+
+            PlayerData playerData = playerClient.getPlayerData();
+            if (playerData == null)
+            {
+                request.error(id, "Not alive");
+                return;
+            }
+
+            PlayerOwnerComponent poc = playerData.getComponent(PlayerOwnerComponent.class);
+            if (poc == null)
+            {
+                request.error(id, "No poc");
+                return;
+            }
+
+            RealEstateInfo.WithdrawItemFromObjectResult wd = rs.withdrawItemFromObject(key, recordId, amount);
+            if (wd == null)
+            {
+                request.error(id, "Cannot withdraw");
+                return;
+            }
+
+            ConsumableRecord futureRecord = wd.record;
+
+            if (futureRecord.getItem().getContent() instanceof ConsumableContent)
+            {
+                if (!((ConsumableContent) futureRecord.getItem().getContent()).isStacks())
+                    futureRecord.setAmount(1);
+            }
+
+            if (futureRecord.getItem() instanceof InstrumentConsumableItem)
+            {
+                InstrumentData ici = ((InstrumentConsumableItem) futureRecord.getItem()).getInstrumentData();
+                futureRecord.setAmount(1);
+                if (ici instanceof WeaponData)
+                {
+                    Weapon weapon = ((WeaponData) ici).getWeapon();
+
+                    if (weapon.getSlot() != null)
+                    {
+                        String slotId = weapon.getSlot().getID();
+
+                        switch (slotId)
+                        {
+                            case "slot-primary":
+                            {
+                                int primary = getSlotWeaponsAmount("slot-primary", poc.getConsumableContainer());
+
+                                if (primary >= 2)
+                                {
+                                    request.error(id, "Too much primary");
+                                    return;
+                                }
+
+                                break;
+                            }
+                            case "slot-secondary":
+                            {
+                                int secondary = getSlotWeaponsAmount("slot-secondary",
+                                        poc.getConsumableContainer());
+
+                                if (secondary >= 1)
+                                {
+                                    request.error(id, "Too much secondary");
+                                    return;
+                                }
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (futureRecord.getItem() instanceof DecayConsumableItem)
+                futureRecord.setAmount(1);
+
+            if (playerClient.addMarketCooldown())
+            {
+                request.error(id, "MENU_ERROR_TRY_AGAIN");
+                return;
+            }
+
+            int finalAmount = futureRecord.getAmount();
+
+            List<MarketService.MarketItemEntry> entries = new ArrayList<>();
+            // remove the original real estate
+            entries.add(new MarketService.MarketItemEntry(rs.name, -1, wd.oldPayload.write()));
+            // add a modified real estate
+            entries.add(new MarketService.MarketItemEntry(rs.name, 1, wd.newPayload.write()));
+
+            MARKET_LOCK.add(playerClient.getId());
+
+            marketService.updateMarketItems("freeplay", entries, playerClient.getAccessToken(),
+                (r, result) -> BrainOutServer.PostRunnable(() ->
+            {
+                MARKET_LOCK.remove(playerClient.getId());
+
+                if (result != Request.Result.success)
+                {
+                    request.error(id, "Cannot obtain item");
+                    return;
+                }
+
+                ConsumableContainer cnt = poc.getConsumableContainer();
+                futureRecord.setId(cnt.newId());
+
+                rs.payload = wd.newPayload;
+
+                playerClient.log("Destroyed " + finalAmount + " items " + futureRecord.getItem().getContent().getID() +
                         " from real estate " + rs.payload.masterMap + " key " + key);
 
                 request.success(id, new JSONObject());

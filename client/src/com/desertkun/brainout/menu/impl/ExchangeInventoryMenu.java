@@ -38,10 +38,12 @@ import com.desertkun.brainout.content.consumable.CustomConsumableItem;
 import com.desertkun.brainout.content.consumable.impl.DefaultConsumableItem;
 import com.desertkun.brainout.content.consumable.impl.InstrumentConsumableItem;
 import com.desertkun.brainout.content.consumable.impl.PlayerSkinConsumableItem;
+import com.desertkun.brainout.content.consumable.impl.RealEstateItemConsumableItem;
 import com.desertkun.brainout.content.instrument.Instrument;
 import com.desertkun.brainout.content.instrument.Weapon;
 import com.desertkun.brainout.content.upgrades.ExtendedStorage;
 import com.desertkun.brainout.controllers.GameController;
+import com.desertkun.brainout.data.FreePlayMap;
 import com.desertkun.brainout.data.active.ActiveData;
 import com.desertkun.brainout.data.active.PlayerData;
 import com.desertkun.brainout.data.components.ClientItemComponentData;
@@ -1801,7 +1803,52 @@ public class ExchangeInventoryMenu extends Menu implements EventReceiver
 
         InventoryPanel.InventoryItem inventoryItem = ((InventoryPanel.InventoryItem) source);
 
-        if ((inventoryItem.getRecord() instanceof MarketItemsInventoryPanel.MarketInventoryRecord))
+        if (inventoryItem.getRecord() instanceof RealEstateItemInventoryPanel.RealEstateItemInventoryRecord)
+        {
+            if (!(targetPanel instanceof RealEstateItemInventoryPanel)) return;
+
+            RealEstateItemInventoryPanel rs = ((RealEstateItemInventoryPanel) targetPanel);
+
+            FreePlayMap map = rs.getRsItem().getMap(FreePlayMap.class);
+            if (map == null)
+                return;
+
+            RealEstateItemInventoryPanel.RealEstateItemInventoryRecord record =
+                (RealEstateItemInventoryPanel.RealEstateItemInventoryRecord)inventoryItem.getRecord();
+
+            JSONObject args = new JSONObject();
+            args.put("map", map.getDimension());
+            args.put("key", rs.getRealEstateItemKey());
+            args.put("record", record.getKey());
+
+            int amount = record.getRecord().getAmount();
+
+            if (amount > 1)
+            {
+                pushMenu(new AmountMenu(amount, amount)
+                {
+                    @Override
+                    public void approve(int splitAmount)
+                    {
+                        args.put("amount", splitAmount);
+
+                        destroyItemRequest("destroy_rs_market_item", args, rs);
+                    }
+
+                    @Override
+                    public void cancel()
+                    {
+
+                    }
+                });
+            }
+            else
+            {
+                args.put("amount", amount);
+                destroyItemRequest("destroy_rs_market_item", args, rs);
+            }
+        }
+        else if ((inventoryItem.getRecord() instanceof MarketItemsInventoryPanel.MarketInventoryRecord))
         {
             if (!(targetPanel instanceof  MarketItemsInventoryPanel)) return;
 
