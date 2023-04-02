@@ -210,13 +210,13 @@ public class RoomSettings
             filter.putEquals("newbie", newbie);
         }
 
-        if (myLevelOnly && !ignoreMyLevelOnly && level > 0)
+        if (levelGap < 100 && myLevelOnly && !ignoreMyLevelOnly && level > 0)
         {
             filter.putBetween("level", level - levelGap, level + levelGap);
         }
         else
         {
-            if (level > Constants.Other.LEVEL_PROTECT)
+            if (levelGap < 100 && level > Constants.Other.LEVEL_PROTECT)
             {
                 filter.putGreater("level", Constants.Other.LEVEL_PROTECT);
             }

@@ -836,13 +836,13 @@ public class LobbyMenu extends PlayerSelectionMenu
 
     private int calculateLevelGap(int amount)
     {
-        if (amount <= 8)
+        if (amount <= 80)
             return 100;
 
-        if (amount <= 16)
+        if (amount <= 160)
             return 32;
 
-        if (amount <= 32)
+        if (amount <= 320)
             return 16;
 
         return 8;
