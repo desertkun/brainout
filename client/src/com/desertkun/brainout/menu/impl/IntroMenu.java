@@ -96,11 +96,11 @@ public class IntroMenu extends Menu implements EventReceiver
 
         createAdditionalUI(data);
 
-        ParticleEffect sparks = BrainOutClient.ContentMgr.get("snow-intro", ParticleEffect.class);
+        ParticleEffect sparks = BrainOutClient.ContentMgr.get("sparks-intro", ParticleEffect.class);
 
         if (sparks.isEnabled())
         {
-            sparksEffect = sparks.getEffect(new PointLaunchData(BrainOutClient.getWidth() / 2.0f, BrainOutClient.getHeight(), 0, "default"));
+            sparksEffect = sparks.getEffect(new PointLaunchData(BrainOutClient.getWidth() / 2.0f, 0, 0, "default"));
             sparksEffect.init();
         }
 
