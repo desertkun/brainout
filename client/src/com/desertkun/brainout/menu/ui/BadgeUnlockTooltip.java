@@ -99,7 +99,7 @@ public class BadgeUnlockTooltip
             description.setAlignment(Align.center);
             description.setWrap(true);
 
-            content.add(description).expandX().fillX().row();
+            content.add(description).width(500).expandX().fillX().row();
         }
 
         protected boolean forceBottomLine()
@@ -120,7 +120,7 @@ public class BadgeUnlockTooltip
             title.setAlignment(Align.center);
             title.setWrap(true);
 
-            tooltip.add(new BorderActor(title, "form-gray")).expandX().fillX().row();
+            tooltip.add(new BorderActor(title, 500, "form-gray")).expandX().fillX().row();
             tooltip.add(content).expand().fill().row();
 
             boolean addBottomLine = true;
@@ -148,7 +148,7 @@ public class BadgeUnlockTooltip
                     BrainOutClient.Skin, "title-small");
                 lockedText.setAlignment(Align.center);
                 lockedText.setWrap(true);
-                content.add(lockedText).expandX().fillX().row();
+                content.add(lockedText).width(500).expandX().fillX().row();
 
                 addBottomLine = false;
             }

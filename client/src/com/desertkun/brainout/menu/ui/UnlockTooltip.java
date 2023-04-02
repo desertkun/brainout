@@ -102,7 +102,7 @@ public class UnlockTooltip
             description.setAlignment(Align.center);
             description.setWrap(true);
 
-            content.add(description).expandX().fillX().row();
+            content.add(description).width(500).expandX().fillX().row();
         }
 
         protected boolean forceBottomLine()

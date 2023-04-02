@@ -114,7 +114,7 @@ public class GearsButton extends Button
                             BrainOutClient.Skin, "title-gray");
                     conditionTitle.setAlignment(Align.center);
                     conditionTitle.setWrap(true);
-                    content.add(conditionTitle).expandX().fillX().row();
+                    content.add(conditionTitle).width(400).expandX().fillX().row();
 
                     Label killsText = new Label(L.get(
                             conditions.get(condition)),
@@ -122,7 +122,7 @@ public class GearsButton extends Button
 
                     killsText.setAlignment(Align.center);
                     killsText.setWrap(true);
-                    content.add(killsText).expandX().fillX().row();
+                    content.add(killsText).width(400).expandX().fillX().row();
 
                     Group progress = new Group();
 

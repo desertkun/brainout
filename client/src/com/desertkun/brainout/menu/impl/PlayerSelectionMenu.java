@@ -1304,7 +1304,7 @@ public class PlayerSelectionMenu extends Menu implements EventReceiver
                         title.setAlignment(Align.center);
                         title.setWrap(true);
 
-                        tooltip.add(new BorderActor(title, "form-gray")).expandX().fillX().row();
+                        tooltip.add(new BorderActor(title, 500, "form-gray")).expandX().fillX().row();
                         tooltip.add(tooltipContent).expand().fill().row();
 
                         tooltip.setSize(544, 240);
