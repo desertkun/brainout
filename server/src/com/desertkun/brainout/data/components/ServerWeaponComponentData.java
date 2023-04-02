@@ -187,7 +187,7 @@ public class ServerWeaponComponentData extends Component<ServerWeaponComponent> 
 
         boolean switchSource(PlayerOwnerComponent poc)
         {
-            unload(poc);
+            unload(poc, false);
             return load(poc, false, false);
         }
 
@@ -399,7 +399,7 @@ public class ServerWeaponComponentData extends Component<ServerWeaponComponent> 
             {
                 if (getRounds() > 0)
                 {
-                    unload(playerOwnerComponent);
+                    unload(playerOwnerComponent, false);
                 }
 
                 ConsumableContainer.AcquiredConsumables g = playerOwnerComponent.getAmmo(clipSize.asInt(), getBullet());
@@ -571,7 +571,7 @@ public class ServerWeaponComponentData extends Component<ServerWeaponComponent> 
                 {
                     if (getRounds() > 0)
                     {
-                        unload(playerOwnerComponent);
+                        unload(playerOwnerComponent, false);
                     }
 
                     ConsumableContainer.AcquiredConsumables b =
@@ -819,9 +819,9 @@ public class ServerWeaponComponentData extends Component<ServerWeaponComponent> 
             }
         }
 
-        public boolean unload(PlayerOwnerComponent playerOwnerComponent)
+        public boolean unload(PlayerOwnerComponent playerOwnerComponent, boolean external)
         {
-            if (state == State.reloading)
+            if (external && state == State.reloading)
                 return false;
 
             if (magazines != null)
@@ -1076,7 +1076,7 @@ public class ServerWeaponComponentData extends Component<ServerWeaponComponent> 
 
                 if (pog != null)
                 {
-                    unload(pog);
+                    unload(pog, false);
                 }
             }
 

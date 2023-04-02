@@ -2047,7 +2047,7 @@ public class ServerPlayerControllerComponentData extends PlayerControllerCompone
                             }
                             case unload:
                             {
-                                if (wslot.unload(poc))
+                                if (wslot.unload(poc, true))
                                 {
                                     consumablesUpdated();
                                 }

@@ -98,7 +98,7 @@ public class LoadMagazine extends Task
         {
             if (primary.getRounds() < primary.getClipSize() / 2)
             {
-                if (primary.unload(poc))
+                if (primary.unload(poc, false))
                 {
                     notifyReload(pc, weaponData, primary);
                     return true;
