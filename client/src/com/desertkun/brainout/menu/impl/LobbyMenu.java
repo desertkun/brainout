@@ -1022,71 +1022,35 @@ public class LobbyMenu extends PlayerSelectionMenu
             }
              */
 
-            if (BrainOutClient.LocalizationMgr.getCurrentLanguage().equals("RU"))
+            TextureRegion icon = BrainOutClient.getRegion("icon-discord");
+            if (icon != null)
             {
-                TextureRegion icon = BrainOutClient.getRegion("icon-vk");
-                if (icon != null)
+                TextButton chatButton = new TextButton("", BrainOutClient.Skin, "button-default");
+
+                Image image = new Image(icon);
+                image.setScaling(Scaling.none);
+                image.setFillParent(true);
+                image.setTouchable(Touchable.disabled);
+                chatButton.addActor(image);
+
+                chatButton.addListener(new ClickOverListener()
                 {
-                    TextButton chatButton = new TextButton("", BrainOutClient.Skin, "button-default");
-
-                    Image image = new Image(icon);
-                    image.setScaling(Scaling.none);
-                    image.setFillParent(true);
-                    image.setTouchable(Touchable.disabled);
-                    chatButton.addActor(image);
-
-                    chatButton.addListener(new ClickOverListener()
+                    @Override
+                    public void clicked(InputEvent event, float x, float y)
                     {
-                        @Override
-                        public void clicked(InputEvent event, float x, float y)
+                        Menu.playSound(MenuSound.select);
+
+                        boolean success = Gdx.net.openURI("https://discord.gg/brainout");
+
+                        if (success)
                         {
-                            Menu.playSound(MenuSound.select);
-
-                            boolean success = Gdx.net.openURI("https://vk.com/brainoutgame");
-
-                            if (success)
-                            {
-                                Gdx.app.postRunnable(() ->
-                                        BrainOutClient.getInstance().topState().pushMenu(new AlertPopup(L.get("MENU_BROWSER_TAB"))));
-                            }
+                            Gdx.app.postRunnable(() ->
+                                    BrainOutClient.getInstance().topState().pushMenu(new AlertPopup(L.get("MENU_BROWSER_TAB"))));
                         }
-                    });
+                    }
+                });
 
-                    buttonsGroup.add(chatButton).size(64, 64).row();
-                }
-            }
-            else
-            {
-                TextureRegion icon = BrainOutClient.getRegion("icon-discord");
-                if (icon != null)
-                {
-                    TextButton chatButton = new TextButton("", BrainOutClient.Skin, "button-default");
-
-                    Image image = new Image(icon);
-                    image.setScaling(Scaling.none);
-                    image.setFillParent(true);
-                    image.setTouchable(Touchable.disabled);
-                    chatButton.addActor(image);
-
-                    chatButton.addListener(new ClickOverListener()
-                    {
-                        @Override
-                        public void clicked(InputEvent event, float x, float y)
-                        {
-                            Menu.playSound(MenuSound.select);
-
-                            boolean success = Gdx.net.openURI("https://discord.gg/brainout");
-
-                            if (success)
-                            {
-                                Gdx.app.postRunnable(() ->
-                                        BrainOutClient.getInstance().topState().pushMenu(new AlertPopup(L.get("MENU_BROWSER_TAB"))));
-                            }
-                        }
-                    });
-
-                    buttonsGroup.add(chatButton).size(64, 64).row();
-                }
+                buttonsGroup.add(chatButton).size(64, 64).row();
             }
         }
 
