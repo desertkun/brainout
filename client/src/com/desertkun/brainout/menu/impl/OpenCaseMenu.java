@@ -188,7 +188,7 @@ public class OpenCaseMenu extends Menu implements EventReceiver
                     BrainOutClient.Skin, "title-small");
             description.setWrap(true);
             description.setAlignment(Align.center);
-            cardContent.add(description).pad(4).row();
+            cardContent.add(description).width(192).pad(4).row();
 
             Label category = new Label(ccc.getGroupTitle(cardData), BrainOutClient.Skin, ccg.getTitleStyle());
             category.setAlignment(Align.center);
