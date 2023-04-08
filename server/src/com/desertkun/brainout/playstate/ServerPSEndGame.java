@@ -17,6 +17,7 @@ import com.desertkun.brainout.content.shop.Slot;
 import com.desertkun.brainout.content.shop.SlotItem;
 import com.desertkun.brainout.data.Data;
 import com.desertkun.brainout.events.PlayerWonEvent;
+import com.desertkun.brainout.events.TeamWonEvent;
 import com.desertkun.brainout.mode.GameMode;
 import com.desertkun.brainout.mode.payload.ModePayload;
 import com.desertkun.brainout.online.ClientProfile;
@@ -253,6 +254,11 @@ public class ServerPSEndGame extends PlayStateEndGame
             deliverRating();
         }
 
+        if (gameResult.hasTeamWon())
+        {
+            BrainOutServer.EventMgr.sendDelayedEvent(TeamWonEvent.obtain(gameResult.getTeamWon()));
+        }
+
         for (ObjectMap.Entry<Integer, Client> entry : BrainOutServer.Controller.getClients())
         {
             Client client = entry.value;
@@ -469,7 +475,7 @@ public class ServerPSEndGame extends PlayStateEndGame
     private void complete()
     {
         if (BrainOutServer.Controller.isShutdownRequired() || BrainOutServer.getInstance().isClanWar() ||
-                BrainOutServer.Controller.isFreePlay())
+                BrainOutServer.Controller.isFreePlay() || (BrainOutServer.Settings.getZone() != null))
         {
             BrainOutServer.TriggerShutdown();
         }

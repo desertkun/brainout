@@ -215,6 +215,12 @@ public class PlayerHandlers implements Disposable
             return;
         }
 
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            request.error(id, "Cannot change team on global conflict");
+            return;
+        }
+
         Team team = BrainOutServer.ContentMgr.get(teamName, Team.class);
 
         if (team != null)

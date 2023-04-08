@@ -190,6 +190,10 @@
 			"stat": "kpd",
 			"min": "1.5",
 			"expire-in": 604000
+		},
+		{
+			"class": "plugins.PortGlobalConflictPlugin",
+			"conflict": "global-conflict"
 		}
 	],
 

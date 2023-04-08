@@ -87,6 +87,11 @@ public class MapSetSource extends MapSource
                     continue;
             }
 
+            if (!item.valid())
+            {
+                continue;
+            }
+
             queue.add(new QueuedItem(item));
         }
 
@@ -230,6 +235,11 @@ public class MapSetSource extends MapSource
             super.write(json);
         }
 
+        public boolean valid()
+        {
+            return modesList.size > 0;
+        }
+
         @Override
         public void read(Json json, JsonValue jsonData)
         {
@@ -237,6 +247,17 @@ public class MapSetSource extends MapSource
 
             mapString = jsonData.getString("map");
             modesList = new Array<>(jsonData.getString("mode").split(","));
+
+            if (BrainOutServer.Settings.getZone() != null)
+            {
+                for (String s : modesList.toArray())
+                {
+                    if (!zoneModeValid(s))
+                    {
+                        modesList.removeValue(s, false);
+                    }
+                }
+            }
 
             baseConditions.read(json, jsonData);
         }
@@ -275,6 +296,11 @@ public class MapSetSource extends MapSource
                 }
             }
 
+            if (modesList.size == 0)
+            {
+                return null;
+            }
+
             if (isAllModes())
             {
                 return modes.get(modes.keys().toArray().random());
@@ -308,6 +334,18 @@ public class MapSetSource extends MapSource
         {
             this.modes = json.readValue(ObjectMap.class,
                     ServerSettings.GameModeConditions.class, jsonData.get("modes"));
+
+            if (BrainOutServer.Settings.getZone() != null)
+            {
+                for (String key : this.modes.keys().toArray())
+                {
+                    if (zoneModeValid(key))
+                    {
+                        continue;
+                    }
+                    this.modes.remove(key);
+                }
+            }
         }
 
         if (jsonData.has("sets"))
@@ -320,6 +358,8 @@ public class MapSetSource extends MapSource
                 {
                     SetItem setting = new SetItem();
                     setting.read(json, v);
+                    if (!setting.valid())
+                        continue;
                     this.sets.add(setting);
                 }
             }
@@ -328,6 +368,14 @@ public class MapSetSource extends MapSource
         sets.shuffle();
 
         if (Log.INFO) Log.info("Loaded " + this.sets.size + " sets.");
+    }
+
+    private boolean zoneModeValid(String key) {
+        if (key.equals("default"))
+            return true;
+        if (key.equals("assault"))
+            return true;
+        return key.equals("domination");
     }
 
     @Override

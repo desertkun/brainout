@@ -276,6 +276,44 @@ public class BrainOutServer extends BrainOut implements Runnable
 
         Controller.getClients().init();
 
+        String roomSettingsData = BrainOutServer.getenv("room_settings", "room:settings");
+
+        if (roomSettingsData != null)
+        {
+            JSONObject roomJson;
+
+            try
+            {
+                roomJson = new JSONObject(roomSettingsData);
+            }
+            catch (JSONException e)
+            {
+                if (Log.ERROR) Log.error("Failed to load room Settings!");
+                return false;
+            }
+
+            if (Log.INFO) Log.info("Applying room settings: " + roomJson.toString());
+
+            RoomSettings settings = new RoomSettings();
+            settings.read(roomJson);
+
+            if (settings.getZone() != null)
+            {
+                BrainOutServer.Settings.setZone(settings.getZone());
+                if (Log.INFO) Log.info("Global Conflict Mode: " + settings.getZone());
+            }
+
+            setRoomSettings(settings);
+        }
+        else
+        {
+            if (custom)
+            {
+                if (Log.ERROR) Log.error("No room settings on custom mode!");
+                return false;
+            }
+        }
+
         if (map != null && !map.isEmpty())
         {
             String additionalFile = map;
@@ -333,37 +371,6 @@ public class BrainOutServer extends BrainOut implements Runnable
         }
 
         if (Log.INFO) Log.info("Map source loaded!");
-
-        String roomSettingsData = BrainOutServer.getenv("room_settings", "room:settings");
-
-        if (roomSettingsData != null)
-        {
-            JSONObject roomJson;
-
-            try
-            {
-                roomJson = new JSONObject(roomSettingsData);
-            }
-            catch (JSONException e)
-            {
-                if (Log.ERROR) Log.error("Failed to load room Settings!");
-                return false;
-            }
-
-            if (Log.INFO) Log.info("Applying room settings: " + roomJson.toString());
-
-            RoomSettings settings = new RoomSettings();
-            settings.read(roomJson);
-            setRoomSettings(settings);
-        }
-        else
-        {
-            if (custom)
-            {
-                if (Log.ERROR) Log.error("No room settings on custom mode!");
-                return false;
-            }
-        }
 
         if (Settings == null)
         {

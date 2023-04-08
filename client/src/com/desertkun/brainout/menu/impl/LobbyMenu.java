@@ -18,6 +18,7 @@ import com.desertkun.brainout.*;
 import com.desertkun.brainout.client.states.CSGame;
 import com.desertkun.brainout.client.states.CSQuickPlay;
 import com.desertkun.brainout.components.ClientPlayerComponent;
+import com.desertkun.brainout.content.GlobalConflict;
 import com.desertkun.brainout.content.OwnableContent;
 import com.desertkun.brainout.content.shop.ShopCart;
 import com.desertkun.brainout.data.Map;
@@ -760,7 +761,23 @@ public class LobbyMenu extends PlayerSelectionMenu
             return;
         }
 
-        pushMenu(new ServerBrowserMenu(new ServerBrowserMenu.Callback()
+        RoomSettings roomSettings1 = new RoomSettings();
+        roomSettings1.setRegion(BrainOutClient.ClientController.getMyRegion());
+        roomSettings1.init(BrainOutClient.ClientController.getUserProfile(), false);
+
+        long conflictStart = 0;
+        String myClanId;
+
+        if (BrainOutClient.SocialController.getMyClan() != null)
+        {
+            myClanId = BrainOutClient.SocialController.getMyClan().getId();
+        }
+        else
+        {
+            myClanId = null;
+        }
+
+        pushMenu(new GlobalConflictMenu(new GlobalConflictMenu.Callback()
         {
             @Override
             public void selected(GameService.Room room)
@@ -775,11 +792,33 @@ public class LobbyMenu extends PlayerSelectionMenu
             }
 
             @Override
-            public void newOne()
+            public void newOne(String zoneKey)
             {
-                quickPlay();
+                roomSettings1.setZone(zoneKey);
+
+                find("main", roomSettings1, new Matchmaking.FindGameResult()
+                {
+                    @Override
+                    public void success(String roomId)
+                    {
+                        //
+                    }
+
+                    @Override
+                    public void failed(Request.Result status, Request request)
+                    {
+                        //
+                    }
+
+                    @Override
+                    public void connectionFailed()
+                    {
+
+                    }
+                }, true);
             }
-        }, roomSettings, ServerBrowserMenu.Mode.standard));
+        }, roomSettings1, conflictStart,
+            GlobalConflict.GetAccountOwner(BrainOutClient.ClientController.getMyAccount(), myClanId, conflictStart)));
     }
 
     @Override
