@@ -11,13 +11,10 @@ import com.desertkun.brainout.content.GlobalConflict;
 import com.desertkun.brainout.content.Team;
 import com.desertkun.brainout.events.Event;
 import com.desertkun.brainout.events.EventReceiver;
-import com.desertkun.brainout.events.PlayerSavedEvent;
 import com.desertkun.brainout.events.TeamWonEvent;
 import com.desertkun.brainout.reflection.Reflect;
-import com.desertkun.brainout.utils.LongName;
 import com.esotericsoftware.minlog.Log;
 import org.anthillplatform.runtime.requests.Request;
-import org.anthillplatform.runtime.services.LeaderboardService;
 import org.anthillplatform.runtime.services.LoginService;
 import org.anthillplatform.runtime.services.ProfileService;
 import org.json.JSONObject;
@@ -96,7 +93,8 @@ public class PortGlobalConflictPlugin extends Plugin implements EventReceiver
             PlayerClient playerClient = ((PlayerClient) client);
 
             GlobalConflict.Owner owner =
-                GlobalConflict.GetAccountOwner(playerClient.getAccount(), playerClient.getClanId(), 0);
+                GlobalConflict.GetAccountOwner(playerClient.getAccount(), playerClient.getClanId(),
+                    BrainOutServer.Settings.getLastConflict());
 
             if (owner == GlobalConflict.Owner.a)
             {
@@ -137,9 +135,77 @@ public class PortGlobalConflictPlugin extends Plugin implements EventReceiver
             u.put("@then", now);
         }
 
+        if (BrainOutServer.Settings.getLastConflict() != 0)
+        {
+            JSONObject c = new JSONObject();
+            cc.put("last", c);
+            c.put("@func", "<=");
+            c.put("@cond", BrainOutServer.Settings.getLastConflict());
+            c.put("@then", BrainOutServer.Settings.getLastConflict());
+        }
+
         profileService.updateMyProfile(loginService.getCurrentAccessToken(), update, null, true,
-            (profileService1, request, result, profile) -> {
-                if (Log.INFO) Log.info("Zone progress " + zoneName + ": " + result.toString());
-            });
+            (profileService1, request, result, profile) ->
+        {
+            JSONObject c = profile.optJSONObject("conflict");
+            if (c != null)
+            {
+                long conflictStart = profile.optLong("last");
+
+                GlobalConflict.ConflictData d = conflict.getData(c, conflictStart);
+
+                ObjectMap<String, GlobalConflict.Owner> changedOwners = new ObjectMap<>();
+
+                for (GlobalConflict.ConflictData.ZoneData zoneDataInstance : d.getZones())
+                {
+                    GlobalConflict.Owner changedOwner = zoneDataInstance.postProcess();
+                    if (changedOwner != GlobalConflict.Owner.neutral)
+                    {
+                        changedOwners.put(zoneDataInstance.getKey(), changedOwner);
+                    }
+                }
+
+                GlobalConflict.Owner w = d.hasSomeoneWon();
+                if (w != GlobalConflict.Owner.neutral)
+                {
+                    globalWon(w, d, conflict, profileService, loginService, conflictStart);
+                }
+            }
+
+            if (Log.INFO) Log.info("Zone progress " + zoneName + ": " + result.toString());
+        });
+    }
+
+    private void globalWon(GlobalConflict.Owner owner, GlobalConflict.ConflictData data, GlobalConflict conflict,
+        ProfileService profileService, LoginService loginService, long lastConflict)
+    {
+        JSONObject cc = new JSONObject();
+
+        for (GlobalConflict.Zone zone : conflict.getZones())
+        {
+            cc.put(zone.getKey(), JSONObject.NULL);
+        }
+
+        {
+            long now = System.currentTimeMillis();
+            JSONObject newLast = new JSONObject();
+            newLast.put("@func", "<");
+            newLast.put("@cond", now);
+            newLast.put("@then", now);
+
+            cc.put("last", newLast);
+        }
+
+        cc.put("prev", lastConflict);
+        cc.put("winner", owner.toString());
+
+        JSONObject update = new JSONObject();
+        update.put("conflict", cc);
+
+        profileService.updateMyProfile(loginService.getCurrentAccessToken(), update, null, true,
+            (profileService1, request, result, profile) ->
+        {
+            if (Log.INFO) Log.info("Zone concluded team " + owner.toString() + " won: " + result.toString());
+        });
     }
 }

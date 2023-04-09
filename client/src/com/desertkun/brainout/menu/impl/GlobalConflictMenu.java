@@ -37,15 +37,22 @@ import org.anthillplatform.runtime.services.LoginService;
 import org.anthillplatform.runtime.services.ProfileService;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class GlobalConflictMenu extends FormMenu
 {
     private final Callback callback;
     private Table content;
+    private GlobalConflict.Owner prevOwner;
+    private GlobalConflict.Owner prevWinner;
     private GlobalConflict.Owner myOwner;
     private GlobalConflict globalConflict;
     private long conflictStart;
+    private long prevConflict;
 
     private RoomSettings filter;
     private ClientController.RegionWrapper anyRegion;
@@ -145,6 +152,29 @@ public class GlobalConflictMenu extends FormMenu
             status = new JSONObject();
         }
 
+        String myClanId;
+
+        if (BrainOutClient.SocialController.getMyClan() != null)
+        {
+            myClanId = BrainOutClient.SocialController.getMyClan().getId();
+        }
+        else
+        {
+            myClanId = null;
+        }
+
+        conflictStart = status.optLong("last", 0);
+        myOwner = GlobalConflict.GetAccountOwner(BrainOutClient.ClientController.getMyAccount(),
+            myClanId, conflictStart);
+
+        prevConflict = status.optLong("prev", -1);
+        if (prevConflict >= 0)
+        {
+            prevOwner = GlobalConflict.GetAccountOwner(
+                BrainOutClient.ClientController.getMyAccount(), myClanId, prevConflict);
+            prevWinner = GlobalConflict.Owner.valueOf(status.optString("winner", "neutral"));
+        }
+
         renderRooms(rooms, status);
     }
 
@@ -160,7 +190,7 @@ public class GlobalConflictMenu extends FormMenu
         float globalWidth = (globalConflict.getWidth() + 0.5f) * (w * 0.75f + 2);
         float globalHeight = (globalConflict.getHeight() + 0.5f) * (h + 2);
 
-        group.setSize(1000, 600);
+        group.setSize(1000, 560);
 
         float offsetX = (group.getWidth() - globalWidth) / 2;
         float offsetY = (group.getHeight() - globalHeight) / 2;
@@ -361,127 +391,20 @@ public class GlobalConflictMenu extends FormMenu
             }
         }
 
-        content.add(group).size(1000, 600).row();
+        content.add(group).size(1000, 560).row();
 
-        /*
-        Table items = new Table();
-        items.align(Align.top);
-
-        ScrollPane pane = new ScrollPane(items, BrainOutClient.Skin, "scroll-default");
-        setScrollFocus(pane);
-
-        renderItems(items, rooms, workshop);
-
-        content.add(pane).expand().fill().row();
-         */
-    }
-
-    private void clearSelection()
-    {
-        roomButtons = null;
-    }
-
-    private void renderItems(Table items, List<GameService.Room> rooms, ObjectMap<String,
-        GameUser.WorkshopItem> workshop)
-    {
-        roomButtons = new ButtonGroup<>();
-        roomButtons.setMaxCheckCount(1);
-        roomButtons.setMinCheckCount(1);
-
-        for (GameService.Room room: rooms)
+        if (prevOwner != null)
         {
+            Date date = new Date(conflictStart);
+            DateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
-            RoomSettings roomSettings = new RoomSettings();
-            roomSettings.init(BrainOutClient.ClientController.getUserProfile(), true);
-            roomSettings.read(room.settings);
-
-            GameUser.WorkshopItem workshopItem = workshop != null && roomSettings.getMap().isDefined() ?
-                    workshop.get(roomSettings.getMap().getValue()) : null;
-
-            String mapName;
-            boolean verified;
-
-            verified = false;
-            mapName = roomSettings.getMap().getValue();
-
-            Button row = new Button(BrainOutClient.Skin, "button-notext-checkable");
-            row.setUserObject(room);
-
-            roomButtons.add(row);
-
-            {
-                Table title = new Table();
-
-                Label map = new Label(mapName,
-                        BrainOutClient.Skin, "title-small");
-                map.setAlignment(Align.center);
-
-                title.add(map);
-
-                if (verified)
-                {
-                    Image verified_ = new Image(BrainOutClient.Skin, "icon-verified");
-                    verified_.setScaling(Scaling.none);
-                    title.add(verified_).size(24).padRight(4);
-                }
-
-                row.add(title).uniformX().fillX().expandX();
-            }
-            {
-                int myPlayers = room.settings.optInt("players-" + myOwner.toString(), 0);
-                String num = String.valueOf(myPlayers) + "/" + (room.maxPlayers / 2);
-
-                Label players = new Label(num,
-                        BrainOutClient.Skin, room.players > 0 ? "title-green" : "title-small");
-                players.setAlignment(Align.center);
-
-                row.add(players).uniformX().fillX().expandX();
-            }
-            {
-                Label mode = new Label(roomSettings.getMode().getValue(),
-                        BrainOutClient.Skin, "title-small");
-                mode.setAlignment(Align.center);
-
-                row.add(mode).uniformX().fillX().expandX();
-            }
-
-            int level = roomSettings.getLevel();
-            int a = Math.max(level - filter.getLevelGap(), 1);
-            int b = Math.min(level + filter.getLevelGap(), 68);
-
-            Label levels = new Label(String.valueOf(a) + " - " + b,
-                    BrainOutClient.Skin, "title-small");
-            levels.setAlignment(Align.center);
-
-            row.add(levels).uniformX().fillX().expandX();
-
-            {
-                Label ping = new Label("...",
-                        BrainOutClient.Skin, "title-small");
-                ping.setAlignment(Align.center);
-
-                Ping.GetLatency(room.host, (success, time) ->
-                {
-                    if (success)
-                    {
-                        ping.setText(String.valueOf(time));
-
-                        if (time < 100)
-                        {
-                            ping.setStyle(BrainOutClient.Skin.get("title-green", Label.LabelStyle.class));
-                        }
-                    }
-                    else
-                    {
-                        ping.setText("!");
-                        ping.setStyle(BrainOutClient.Skin.get("title-red", Label.LabelStyle.class));
-                    }
-                });
-
-                row.add(ping).uniformX().fillX().expandX();
-            }
-
-            items.add(row).expandX().fillX().row();
+            String lastText =
+                prevOwner == prevWinner ? L.get("MENU_LAST_CONFLICT_SUCCESS", format.format(date)) :
+                    L.get("MENU_LAST_CONFLICT_DEFEAT", format.format(date));
+            Label prevStatus = new Label(lastText, BrainOutClient.Skin,
+                prevOwner == prevWinner ? "title-green" : "title-red");
+            prevStatus.setAlignment(Align.center);
+            content.add(prevStatus).expandX().fillX().padBottom(16).row();
         }
     }
 
@@ -596,10 +519,8 @@ public class GlobalConflictMenu extends FormMenu
         return "4";
     }
 
-    public GlobalConflictMenu(Callback callback, RoomSettings filter, long conflictStart, GlobalConflict.Owner myOwner)
+    public GlobalConflictMenu(Callback callback, RoomSettings filter)
     {
-        this.conflictStart = conflictStart;
-        this.myOwner = myOwner;
         this.callback = callback;
         this.filter = filter;
         this.anyRegion = new ClientController.RegionWrapper(new GameService.Region(L.get("MENU_ANY_REGION"), null));

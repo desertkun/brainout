@@ -56,7 +56,8 @@ public class GlobalConflict extends Content
             hashValue = accountId + "-" + conflictStart;
         }
 
-        MessageDigest digest = null;
+        MessageDigest digest;
+
         try
         {
             digest = MessageDigest.getInstance("SHA-256");
@@ -259,6 +260,40 @@ public class GlobalConflict extends Content
                 }
             }
 
+            public Owner postProcess()
+            {
+                if (getOwner() == Owner.neutral)
+                {
+                    int neighborsA = 0;
+                    int neighborsB = 0;
+
+                    for (ZoneData neighbor : neighbors)
+                    {
+                        if (neighbor.getOwner() == Owner.a)
+                        {
+                            neighborsA++;
+                        }
+
+                        if (neighbor.getOwner() == Owner.b)
+                        {
+                            neighborsB++;
+                        }
+                    }
+
+                    if (neighborsA == 0 && neighborsB > 0)
+                    {
+                        return Owner.a;
+                    }
+
+                    if (neighborsB == 0 && neighborsA > 0)
+                    {
+                        return Owner.b;
+                    }
+                }
+
+                return Owner.neutral;
+            }
+
             public Owner getOwner()
             {
                 Owner realOwner = getRealOwner();
@@ -290,6 +325,39 @@ public class GlobalConflict extends Content
         public ZoneData getByKey(String key)
         {
             return zonesMap.get(key, null);
+        }
+
+        public Owner hasSomeoneWon()
+        {
+            int countA = 0;
+            int countB = 0;
+
+            for (ZoneData zone : getZones())
+            {
+                Owner ow = zone.getOwner();
+
+                if (ow == Owner.a)
+                {
+                    countA++;
+                }
+
+                if (ow == Owner.b)
+                {
+                    countA++;
+                }
+            }
+
+            if (countA == getZones().size)
+            {
+                return Owner.a;
+            }
+
+            if (countB == getZones().size)
+            {
+                return Owner.b;
+            }
+
+            return Owner.neutral;
         }
 
         public ConflictData(JSONObject data, long conflictStart)
@@ -368,13 +436,11 @@ public class GlobalConflict extends Content
 
     private void generate()
     {
-        int id = 0;
-
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
             {
-                String zoneId = getID() + "-" + String.valueOf(id++);
+                String zoneId = getID() + "-" + y + "x" + x;
                 Zone zone = new Zone(zoneId, x, y);
                 zones.add(zone);
                 zonesMap.put(zoneId, zone);

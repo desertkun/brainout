@@ -60,6 +60,7 @@ public class LobbyMenu extends PlayerSelectionMenu
     private float checkTimer;
     private Label playersOnline;
     private TextButton findGame;
+    private TextButton globalConflict;
     private TextButton chatButton;
     private TextButton quickPlay;
     private Image chatBadge;
@@ -467,9 +468,13 @@ public class LobbyMenu extends PlayerSelectionMenu
             L.get("MENU_HOME_BASE"),
             BrainOutClient.Skin, "button-default");
 
+        globalConflict = new TextButton(
+                L.get("MENU_GLOBAL_CONFLICT"),
+                BrainOutClient.Skin, "button-activated");
+
         quickPlay = new TextButton(
             L.get("MENU_QUICK_PLAY"),
-            BrainOutClient.Skin, "button-activated");
+            BrainOutClient.Skin, "button-default");
 
         TextButton freePlay = new TextButton(
             L.get("MENU_FREE_PLAY"),
@@ -526,6 +531,17 @@ public class LobbyMenu extends PlayerSelectionMenu
             }
         });
 
+        globalConflict.addListener(new ClickOverListener()
+        {
+            @Override
+            public void clicked(InputEvent event, float x, float y)
+            {
+                Menu.playSound(MenuSound.select);
+
+                globalConflict();
+            }
+        });
+
         profile.addListener(new ClickOverListener()
         {
             @Override
@@ -540,6 +556,7 @@ public class LobbyMenu extends PlayerSelectionMenu
         controls.add(playersOnline).colspan(3).expandX().pad(8).padTop(0).fillX().row();
 
         controls.add(base).colspan(3).expandX().height(32).fillX().row();
+        controls.add(globalConflict).colspan(3).expandX().height(32).fillX().row();
         controls.add(quickPlay).colspan(3).expandX().height(32).fillX().row();
         controls.add(freePlay).colspan(3).expandX().height(32).fillX().row();
         controls.add(findGame).colspan(3).expandX().height(32).fillX().row();
@@ -751,7 +768,7 @@ public class LobbyMenu extends PlayerSelectionMenu
         return true;
     }
 
-    private void findGame()
+    private void globalConflict()
     {
         if (!BrainOut.OnlineEnabled())
         {
@@ -764,18 +781,6 @@ public class LobbyMenu extends PlayerSelectionMenu
         RoomSettings roomSettings1 = new RoomSettings();
         roomSettings1.setRegion(BrainOutClient.ClientController.getMyRegion());
         roomSettings1.init(BrainOutClient.ClientController.getUserProfile(), false);
-
-        long conflictStart = 0;
-        String myClanId;
-
-        if (BrainOutClient.SocialController.getMyClan() != null)
-        {
-            myClanId = BrainOutClient.SocialController.getMyClan().getId();
-        }
-        else
-        {
-            myClanId = null;
-        }
 
         pushMenu(new GlobalConflictMenu(new GlobalConflictMenu.Callback()
         {
@@ -817,8 +822,39 @@ public class LobbyMenu extends PlayerSelectionMenu
                     }
                 }, true);
             }
-        }, roomSettings1, conflictStart,
-            GlobalConflict.GetAccountOwner(BrainOutClient.ClientController.getMyAccount(), myClanId, conflictStart)));
+        }, roomSettings1));
+    }
+
+    private void findGame()
+    {
+        if (!BrainOut.OnlineEnabled())
+        {
+            BrainOutClient.getInstance().topState().pushMenu(new AlertPopup(
+                    BrainOutClient.Env.getOfflineBuildError("Run Server Game Phase.bat")
+            ));
+            return;
+        }
+
+        pushMenu(new ServerBrowserMenu(new ServerBrowserMenu.Callback()
+        {
+            @Override
+            public void selected(GameService.Room room)
+            {
+                Matchmaking.JoinRoom(room);
+            }
+
+            @Override
+            public void cancelled()
+            {
+                //
+            }
+
+            @Override
+            public void newOne()
+            {
+                quickPlay();
+            }
+        }, roomSettings, ServerBrowserMenu.Mode.standard));
     }
 
     @Override

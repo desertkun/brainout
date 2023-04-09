@@ -32,6 +32,7 @@ public class ServerSettings extends CoreSettings
     private int deathsRequired;
     private String fullDrop;
     private String zone;
+    private long lastConflict;
 
     private boolean autoBalanceEnabled;
     private int autoBalanceValue;
@@ -346,7 +347,12 @@ public class ServerSettings extends CoreSettings
 
     public long getLastConflict()
     {
-        return 0;
+        return lastConflict;
+    }
+
+    public void setLastConflict(long lastConflict)
+    {
+        this.lastConflict = lastConflict;
     }
 
     public void setZone(String zone)

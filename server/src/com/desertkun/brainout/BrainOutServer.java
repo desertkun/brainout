@@ -28,6 +28,7 @@ import com.desertkun.brainout.utils.NullRenderAttachmentLoader;
 import com.desertkun.brainout.utils.RoomIDEncryption;
 import com.desertkun.brainout.utils.SteamAPIUtil;
 import org.anthillplatform.runtime.AnthillRuntime;
+import org.anthillplatform.runtime.requests.Request;
 import org.anthillplatform.runtime.server.GameServerController;
 import org.anthillplatform.runtime.services.DiscoveryService;
 import org.anthillplatform.runtime.services.GameService;
@@ -37,6 +38,7 @@ import com.esotericsoftware.kryonet.Listener;
 import com.esotericsoftware.kryonet.Server;
 import com.esotericsoftware.minlog.Log;
 import com.esotericsoftware.spine.SkeletonJson;
+import org.anthillplatform.runtime.services.ProfileService;
 import org.anthillplatform.runtime.util.ApplicationInfo;
 import org.apache.http.impl.nio.reactor.IOReactorConfig;
 import org.json.JSONException;
@@ -505,6 +507,27 @@ public class BrainOutServer extends BrainOut implements Runnable
             ExceptionHandler.handle(e);
 
             if (Log.ERROR) Log.error("Failed to init controller: " + e.getMessage());
+        }
+
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            LoginService loginService = LoginService.Get();
+            ProfileService profileService = ProfileService.Get();
+
+            if (loginService != null && profileService != null)
+            {
+                profileService.getMyProfile(loginService.getCurrentAccessToken(),
+                        (profileService1, request, result, profile) -> BrainOutServer.PostRunnable(() ->
+                {
+                    if (result == Request.Result.success)
+                    {
+                        JSONObject conflict = profile.optJSONObject("conflict");
+                        if (conflict == null)
+                            return;
+                        BrainOutServer.Settings.setLastConflict(conflict.optLong("last"));
+                    }
+                }));
+            }
         }
 
         if (Log.INFO) Log.info("Server successfully picked up!");
