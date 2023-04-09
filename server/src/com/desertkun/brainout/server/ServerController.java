@@ -391,7 +391,7 @@ public class ServerController extends Controller implements EventReceiver
                 settings.getMode().define(playState.getCurrentMode().name);
 
             GameMode mode = playState.getMode();
-            if (mode.isAboutToEnd())
+            if (mode.isAboutToEnd() && (BrainOutServer.Settings.getZone() == null))
             {
                 settings.setState("ending");
             }
