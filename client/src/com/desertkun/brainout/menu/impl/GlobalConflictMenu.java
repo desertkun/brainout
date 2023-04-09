@@ -1,13 +1,17 @@
 package com.desertkun.brainout.menu.impl;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.RepeatAction;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.*;
@@ -182,6 +186,12 @@ public class GlobalConflictMenu extends FormMenu
                     @Override
                     public void clicked(InputEvent event, float x, float y)
                     {
+                        if (zoneData.getStatus() == GlobalConflict.ZoneStatus.full)
+                        {
+                            Menu.playSound(MenuSound.denied);
+
+                            return;
+                        }
                         pop();
 
                         if (zoneData.getStatus() == GlobalConflict.ZoneStatus.ongoing)
@@ -214,8 +224,10 @@ public class GlobalConflictMenu extends FormMenu
             if (zoneData == null)
                 continue;
 
-            int myPlayers = room.settings.optInt("players-" + myOwner.toString(), 0);
-            if (myPlayers >= (room.maxPlayers / 2))
+            zoneData.setMaxPlayers(room.maxPlayers / 2);
+
+            zoneData.setMyPlayers(room.settings.optInt("players-" + myOwner.toString(), 0));
+            if (zoneData.getMyPlayers() >= zoneData.getMaxPlayers())
             {
                 zoneData.setStatus(GlobalConflict.ZoneStatus.full);
                 continue;
@@ -234,30 +246,118 @@ public class GlobalConflictMenu extends FormMenu
 
             if (zone.getOwner() != GlobalConflict.Owner.neutral)
             {
-                Image im = new Image(BrainOutClient.Skin,
-                    zone.getOwner() == myOwner ? "assault-icon-friend" : "assault-icon-enemy");
-                im.setScaling(Scaling.none);
-                im.setTouchable(Touchable.disabled);
-                b.add(im).size(64, 64);
+                boolean hasNeutralNeighbor = false;
+
+                for (GlobalConflict.ConflictData.ZoneData neighbor : zone.getNeighbors())
+                {
+                    if (neighbor.getOwner() == GlobalConflict.Owner.neutral)
+                    {
+                        hasNeutralNeighbor = true;
+                        break;
+                    }
+                }
+
+                if (hasNeutralNeighbor)
+                {
+                    Image im = new Image(BrainOutClient.Skin,
+                            zone.getOwner() == myOwner ? "assault-icon-friend" : "assault-icon-enemy");
+                    im.setScaling(Scaling.none);
+                    im.setTouchable(Touchable.disabled);
+                    im.setColor(1, 1, 1, 0.25f);
+                    b.add(im).size(64, 64);
+                }
+
+                Tooltip.RegisterToolTip(b, zone.getOwner() == myOwner ?
+                    L.get("MENU_YOUR_ZONE") : L.get("MENU_ENEMY_ZONE"), this);
 
                 continue;
             }
 
-            if (zone.getStatus() == GlobalConflict.ZoneStatus.ongoing)
+            switch (zone.getStatus())
             {
-                GameService.Room room = zone.getRoom();
-                if (room == null)
-                    continue;
-                String statusText = room.players + " / " + room.maxPlayers;
-                Label s = new Label(statusText, BrainOutClient.Skin, "title-small");
-                b.add(s).expandX().fill();
-            }
-            else
-            {
-                Image im = new Image(BrainOutClient.Skin, "icon-shop-special-healthbox");
-                im.setScaling(Scaling.none);
-                im.setTouchable(Touchable.disabled);
-                b.add(im).size(32, 32);
+                case ongoing:
+                {
+                    String statusText = zone.getMyPlayers() + " / " + zone.getMaxPlayers();
+                    Label s = new Label(statusText, BrainOutClient.Skin,
+                        zone.getMyPlayers() == 0 ? "title-red" : "title-yellow");
+
+                    s.setAlignment(Align.center);
+                    b.add(s).expandX().fill();
+
+                    b.addAction(Actions.repeat(RepeatAction.FOREVER, Actions.sequence(
+                        Actions.delay(0.5f),
+                        Actions.run(() -> b.setStyle(BrainOutClient.Skin.get("hex-live", Button.ButtonStyle.class))),
+                        Actions.delay(0.5f),
+                        Actions.run(() -> b.setStyle(BrainOutClient.Skin.get("hex-neutral", Button.ButtonStyle.class)))
+                    )));
+
+                    String text = "";
+
+                    GameService.Room room = zone.getRoom();
+
+                    if (room != null)
+                    {
+                        RoomSettings roomSettings = new RoomSettings();
+                        roomSettings.read(room.settings);
+
+                        text += L.get("MENU_PLAYERS") + ": " + room.players + " / " + room.maxPlayers + "\n";
+
+                        if (roomSettings.getMode().isDefined())
+                        {
+                            text += L.get("MENU_MODE") + ": " +
+                                L.get("MODE_" + roomSettings.getMode().getValue().toUpperCase()) + "\n";
+                        }
+
+                        if (roomSettings.getMap().isDefined())
+                        {
+                            text += L.get("MENU_MAP") + ": " +
+                                L.get("MAP_" + roomSettings.getMap().getValue().toUpperCase()) + "\n";
+                        }
+                    }
+
+                    Tooltip.RegisterStandardToolTip(b, L.get("MENU_JOIN_CONFLICT_ZONE"), text, this);
+
+                    break;
+                }
+                case full:
+                {
+                    String statusText = zone.getMyPlayers() + " / " + zone.getMaxPlayers();
+                    Label s = new Label(statusText, BrainOutClient.Skin, "title-gray");
+
+                    s.setAlignment(Align.center);
+                    b.add(s).expandX().fill();
+
+                    Tooltip.RegisterToolTip(b, L.get("MENU_THIS_CONFLICT_ZONE_IS_FULL"), this);
+
+                    break;
+                }
+                default:
+                {
+                    Image im = new Image(BrainOutClient.Skin, "icon-shop-special-healthbox");
+                    im.setScaling(Scaling.none);
+                    im.setTouchable(Touchable.disabled);
+                    im.setColor(1, 1, 1, 0.25f);
+                    b.add(im).size(32, 32);
+
+                    Tooltip.RegisterToolTip(b, L.get("MENU_START_NEW_CONFLICT"), this);
+
+                    b.addListener(new ClickListener()
+                    {
+                        @Override
+                        public void enter(InputEvent event, float x, float y, int pointer, Actor fromActor) {
+                            super.enter(event, x, y, pointer, fromActor);
+                            im.setColor(1, 1, 1, 1);
+                        }
+
+                        @Override
+                        public void exit(InputEvent event, float x, float y, int pointer, Actor toActor) {
+                            super.exit(event, x, y, pointer, toActor);
+                            im.setColor(1, 1, 1, 0.25f);
+                        }
+                    });
+
+                    break;
+                }
             }
         }
 

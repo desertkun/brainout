@@ -116,7 +116,7 @@ public class EndGameMenu extends PlayerListMenu
 
             Array<PlayStateEndGame.VoteMap> votesMaps = endGame.getVotesMaps();
 
-            if (votesMaps != null)
+            if (votesMaps != null && (BrainOutClient.PackageMgr.getDefine("zone", null) == null))
             {
                 final int columntSize = 100;
                 final int padleft = 8;

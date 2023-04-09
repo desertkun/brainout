@@ -386,6 +386,11 @@ public class BrainOutServer extends BrainOut implements Runnable
 
         initCommonData(Kryo);
 
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            BrainOutServer.PackageMgr.setDefine("zone", BrainOutServer.Settings.getZone());
+        }
+
         if (Log.INFO) Log.info("Kryo inited.");
 
         Controller.initSettings(Settings);

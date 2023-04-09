@@ -126,15 +126,15 @@ public class GlobalConflict extends Content
             addNeighbor(x - 1, y);
             addNeighbor(x + 1, y);
 
-            if (y % 2 == 0)
-            {
-                addNeighbor(x - 1, y - 1);
-                addNeighbor(x + 1, y - 1);
-            }
-            else
+            if (x % 2 == 0)
             {
                 addNeighbor(x - 1, y + 1);
                 addNeighbor(x + 1, y + 1);
+            }
+            else
+            {
+                addNeighbor(x - 1, y - 1);
+                addNeighbor(x + 1, y - 1);
             }
         }
     }
@@ -160,6 +160,8 @@ public class GlobalConflict extends Content
             private Owner defaultOwner;
             private ZoneStatus status;
             private GameService.Room room;
+            private int myPlayers;
+            private int maxPlayers;
             private Array<ZoneData> neighbors;
 
             public ZoneData(Zone zone, Owner defaultOwner, long lastA, long lastB)
@@ -170,6 +172,27 @@ public class GlobalConflict extends Content
                 this.lastA = lastA;
                 this.lastB = lastB;
                 this.status = ZoneStatus.inactive;
+                this.myPlayers = 0;
+            }
+
+            public Array<ZoneData> getNeighbors() {
+                return neighbors;
+            }
+
+            public int getMyPlayers() {
+                return myPlayers;
+            }
+
+            public void setMyPlayers(int myPlayers) {
+                this.myPlayers = myPlayers;
+            }
+
+            public void setMaxPlayers(int maxPlayers) {
+                this.maxPlayers = maxPlayers;
+            }
+
+            public int getMaxPlayers() {
+                return maxPlayers;
             }
 
             public void addNeighbor(ZoneData zoneData)

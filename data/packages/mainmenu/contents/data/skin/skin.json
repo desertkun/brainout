@@ -24,6 +24,11 @@
 			"up": "hex-neutral",
 			"over": "hex-active"
 		},
+		"hex-live":
+		{
+			"up": "hex-live",
+			"over": "hex-active"
+		},
 		"hex-blue":
 		{
 			"up": "hex-blue",

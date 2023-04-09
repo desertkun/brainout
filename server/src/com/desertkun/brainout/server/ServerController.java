@@ -1753,6 +1753,8 @@ public class ServerController extends Controller implements EventReceiver
                 if (!(client instanceof PlayerClient))
                     continue;
                 PlayerClient playerClient = ((PlayerClient) client);
+                if (playerClient.wasReleased())
+                    continue;
                 GlobalConflict.Owner owner = GlobalConflict.GetAccountOwner(
                     playerClient.getAccount(), playerClient.getClanId(), BrainOutServer.Settings.getLastConflict()
                 );
