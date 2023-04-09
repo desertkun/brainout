@@ -28,6 +28,7 @@ import com.desertkun.brainout.utils.NullRenderAttachmentLoader;
 import com.desertkun.brainout.utils.RoomIDEncryption;
 import com.desertkun.brainout.utils.SteamAPIUtil;
 import org.anthillplatform.runtime.AnthillRuntime;
+import org.anthillplatform.runtime.requests.Request;
 import org.anthillplatform.runtime.server.GameServerController;
 import org.anthillplatform.runtime.services.DiscoveryService;
 import org.anthillplatform.runtime.services.GameService;
@@ -37,6 +38,7 @@ import com.esotericsoftware.kryonet.Listener;
 import com.esotericsoftware.kryonet.Server;
 import com.esotericsoftware.minlog.Log;
 import com.esotericsoftware.spine.SkeletonJson;
+import org.anthillplatform.runtime.services.ProfileService;
 import org.anthillplatform.runtime.util.ApplicationInfo;
 import org.apache.http.impl.nio.reactor.IOReactorConfig;
 import org.json.JSONException;
@@ -276,6 +278,44 @@ public class BrainOutServer extends BrainOut implements Runnable
 
         Controller.getClients().init();
 
+        String roomSettingsData = BrainOutServer.getenv("room_settings", "room:settings");
+
+        if (roomSettingsData != null)
+        {
+            JSONObject roomJson;
+
+            try
+            {
+                roomJson = new JSONObject(roomSettingsData);
+            }
+            catch (JSONException e)
+            {
+                if (Log.ERROR) Log.error("Failed to load room Settings!");
+                return false;
+            }
+
+            if (Log.INFO) Log.info("Applying room settings: " + roomJson.toString());
+
+            RoomSettings settings = new RoomSettings();
+            settings.read(roomJson);
+
+            if (settings.getZone() != null)
+            {
+                BrainOutServer.Settings.setZone(settings.getZone());
+                if (Log.INFO) Log.info("Global Conflict Mode: " + settings.getZone());
+            }
+
+            setRoomSettings(settings);
+        }
+        else
+        {
+            if (custom)
+            {
+                if (Log.ERROR) Log.error("No room settings on custom mode!");
+                return false;
+            }
+        }
+
         if (map != null && !map.isEmpty())
         {
             String additionalFile = map;
@@ -334,37 +374,6 @@ public class BrainOutServer extends BrainOut implements Runnable
 
         if (Log.INFO) Log.info("Map source loaded!");
 
-        String roomSettingsData = BrainOutServer.getenv("room_settings", "room:settings");
-
-        if (roomSettingsData != null)
-        {
-            JSONObject roomJson;
-
-            try
-            {
-                roomJson = new JSONObject(roomSettingsData);
-            }
-            catch (JSONException e)
-            {
-                if (Log.ERROR) Log.error("Failed to load room Settings!");
-                return false;
-            }
-
-            if (Log.INFO) Log.info("Applying room settings: " + roomJson.toString());
-
-            RoomSettings settings = new RoomSettings();
-            settings.read(roomJson);
-            setRoomSettings(settings);
-        }
-        else
-        {
-            if (custom)
-            {
-                if (Log.ERROR) Log.error("No room settings on custom mode!");
-                return false;
-            }
-        }
-
         if (Settings == null)
         {
             if (Log.ERROR) Log.error("Failed to load server Settings!");
@@ -378,6 +387,11 @@ public class BrainOutServer extends BrainOut implements Runnable
         server = new Server(323840, 80480, new KryoSerialization(Kryo));
 
         initCommonData(Kryo);
+
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            BrainOutServer.PackageMgr.setDefine("zone", BrainOutServer.Settings.getZone());
+        }
 
         if (Log.INFO) Log.info("Kryo inited.");
 
@@ -493,6 +507,29 @@ public class BrainOutServer extends BrainOut implements Runnable
             ExceptionHandler.handle(e);
 
             if (Log.ERROR) Log.error("Failed to init controller: " + e.getMessage());
+        }
+
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            LoginService loginService = LoginService.Get();
+            ProfileService profileService = ProfileService.Get();
+
+            if (loginService != null && profileService != null)
+            {
+                profileService.getMyProfile(loginService.getCurrentAccessToken(),
+                        (profileService1, request, result, profile) -> BrainOutServer.PostRunnable(() ->
+                {
+                    if (result == Request.Result.success)
+                    {
+                        JSONObject conflict = profile.optJSONObject("conflict");
+                        if (conflict == null)
+                            return;
+                        BrainOutServer.Settings.setLastConflict(conflict.optLong("last"));
+
+                        if (Log.INFO) Log.info("Last Global Conflict: " + BrainOutServer.Settings.getLastConflict());
+                    }
+                }));
+            }
         }
 
         if (Log.INFO) Log.info("Server successfully picked up!");

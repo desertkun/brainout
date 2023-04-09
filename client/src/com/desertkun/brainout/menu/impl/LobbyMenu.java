@@ -18,6 +18,7 @@ import com.desertkun.brainout.*;
 import com.desertkun.brainout.client.states.CSGame;
 import com.desertkun.brainout.client.states.CSQuickPlay;
 import com.desertkun.brainout.components.ClientPlayerComponent;
+import com.desertkun.brainout.content.GlobalConflict;
 import com.desertkun.brainout.content.OwnableContent;
 import com.desertkun.brainout.content.shop.ShopCart;
 import com.desertkun.brainout.data.Map;
@@ -59,6 +60,7 @@ public class LobbyMenu extends PlayerSelectionMenu
     private float checkTimer;
     private Label playersOnline;
     private TextButton findGame;
+    private TextButton globalConflict;
     private TextButton chatButton;
     private TextButton quickPlay;
     private Image chatBadge;
@@ -466,9 +468,13 @@ public class LobbyMenu extends PlayerSelectionMenu
             L.get("MENU_HOME_BASE"),
             BrainOutClient.Skin, "button-default");
 
+        globalConflict = new TextButton(
+                L.get("MENU_GLOBAL_CONFLICT"),
+                BrainOutClient.Skin, "button-activated");
+
         quickPlay = new TextButton(
             L.get("MENU_QUICK_PLAY"),
-            BrainOutClient.Skin, "button-activated");
+            BrainOutClient.Skin, "button-default");
 
         TextButton freePlay = new TextButton(
             L.get("MENU_FREE_PLAY"),
@@ -525,6 +531,17 @@ public class LobbyMenu extends PlayerSelectionMenu
             }
         });
 
+        globalConflict.addListener(new ClickOverListener()
+        {
+            @Override
+            public void clicked(InputEvent event, float x, float y)
+            {
+                Menu.playSound(MenuSound.select);
+
+                globalConflict();
+            }
+        });
+
         profile.addListener(new ClickOverListener()
         {
             @Override
@@ -539,6 +556,7 @@ public class LobbyMenu extends PlayerSelectionMenu
         controls.add(playersOnline).colspan(3).expandX().pad(8).padTop(0).fillX().row();
 
         controls.add(base).colspan(3).expandX().height(32).fillX().row();
+        controls.add(globalConflict).colspan(3).expandX().height(32).fillX().row();
         controls.add(quickPlay).colspan(3).expandX().height(32).fillX().row();
         controls.add(freePlay).colspan(3).expandX().height(32).fillX().row();
         controls.add(findGame).colspan(3).expandX().height(32).fillX().row();
@@ -748,6 +766,63 @@ public class LobbyMenu extends PlayerSelectionMenu
         goToBase();
 
         return true;
+    }
+
+    private void globalConflict()
+    {
+        if (!BrainOut.OnlineEnabled())
+        {
+            BrainOutClient.getInstance().topState().pushMenu(new AlertPopup(
+                    BrainOutClient.Env.getOfflineBuildError("Run Server Game Phase.bat")
+            ));
+            return;
+        }
+
+        RoomSettings roomSettings1 = new RoomSettings();
+        roomSettings1.setRegion(BrainOutClient.ClientController.getMyRegion());
+        roomSettings1.init(BrainOutClient.ClientController.getUserProfile(), false);
+
+        pushMenu(new GlobalConflictMenu(new GlobalConflictMenu.Callback()
+        {
+            @Override
+            public void selected(GameService.Room room)
+            {
+                Matchmaking.JoinRoom(room);
+            }
+
+            @Override
+            public void cancelled()
+            {
+                //
+            }
+
+            @Override
+            public void newOne(String zoneKey)
+            {
+                roomSettings1.setZone(zoneKey);
+
+                find("main", roomSettings1, new Matchmaking.FindGameResult()
+                {
+                    @Override
+                    public void success(String roomId)
+                    {
+                        //
+                    }
+
+                    @Override
+                    public void failed(Request.Result status, Request request)
+                    {
+                        //
+                    }
+
+                    @Override
+                    public void connectionFailed()
+                    {
+
+                    }
+                }, true);
+            }
+        }, roomSettings1));
     }
 
     private void findGame()

@@ -656,7 +656,7 @@ public class BotControllerComponentData extends ServerPlayerControllerComponentD
                 float diffX = goTo.x - playerData.getX(),
                       diffY = goTo.y - playerData.getY() - 1.f;
 
-                float moveDirectionX = Math.abs(diffX) > 0.1f ? Math.signum(diffX) : 0;
+                float moveDirectionX = Math.abs(diffX) > 0.01f ? Math.signum(diffX) : 0;
                 float moveDirectionY;
 
                 if (phy != null && phy.hasFixture())

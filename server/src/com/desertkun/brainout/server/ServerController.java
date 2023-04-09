@@ -13,6 +13,7 @@ import com.desertkun.brainout.common.msg.client.SimpleMsg;
 import com.desertkun.brainout.common.msg.server.*;
 import com.desertkun.brainout.components.PlayerRemoteComponent;
 import com.desertkun.brainout.content.Content;
+import com.desertkun.brainout.content.GlobalConflict;
 import com.desertkun.brainout.content.Levels;
 import com.desertkun.brainout.content.SpectatorTeam;
 import com.desertkun.brainout.content.Team;
@@ -1740,6 +1741,43 @@ public class ServerController extends Controller implements EventReceiver
 
         GameService.RoomSettings stt = new GameService.RoomSettings();
         roomSettings.write(stt);
+
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            stt.add("zone", BrainOutServer.Settings.getZone());
+
+            int a = 0;
+            int b = 0;
+            for (Client client : BrainOutServer.Controller.getClients().values())
+            {
+                if (!(client instanceof PlayerClient))
+                    continue;
+                PlayerClient playerClient = ((PlayerClient) client);
+                if (playerClient.wasReleased())
+                    continue;
+                GlobalConflict.Owner owner = GlobalConflict.GetAccountOwner(
+                    playerClient.getAccount(), playerClient.getClanId(), BrainOutServer.Settings.getLastConflict()
+                );
+                if (owner == GlobalConflict.Owner.a)
+                {
+                    a++;
+                }
+                if (owner == GlobalConflict.Owner.b)
+                {
+                    b++;
+                }
+            }
+
+            if (a > 0)
+            {
+                stt.add("players-a", a);
+            }
+
+            if (b > 0)
+            {
+                stt.add("players-b", b);
+            }
+        }
 
         if (Log.INFO) Log.info("Updating settings: " + stt.toString());
 

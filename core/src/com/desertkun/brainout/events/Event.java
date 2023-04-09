@@ -84,6 +84,7 @@ public abstract class Event implements Pool.Poolable
         newOrderResult,
 
         playerWon,
+        teamWon,
         playerSaved,
         badgeRead,
 

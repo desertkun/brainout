@@ -19,6 +19,26 @@
 	},
 	"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle":
 	{
+		"hex-neutral":
+		{
+			"up": "hex-neutral",
+			"over": "hex-active"
+		},
+		"hex-live":
+		{
+			"up": "hex-live",
+			"over": "hex-active"
+		},
+		"hex-blue":
+		{
+			"up": "hex-blue",
+			"over": "hex-blue"
+		},
+		"hex-orange":
+		{
+			"up": "hex-orange",
+			"over": "hex-orange"
+		},
 		"button-editor-empty":
 		{
 			"up": "editor-button-normal",

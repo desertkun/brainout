@@ -10,6 +10,7 @@ import com.desertkun.brainout.common.msg.ReliableBody;
 import com.desertkun.brainout.common.msg.UdpMessage;
 import com.desertkun.brainout.common.msg.server.ChatMsg;
 import com.desertkun.brainout.content.Content;
+import com.desertkun.brainout.content.GlobalConflict;
 import com.desertkun.brainout.content.SpectatorTeam;
 import com.desertkun.brainout.content.Team;
 import com.desertkun.brainout.data.Map;
@@ -321,6 +322,40 @@ public class ClientList extends ObjectMap<Integer, Client>
 
             if (playerClient.getAccount() != null)
             {
+                if (BrainOutServer.Settings.getZone() != null)
+                {
+                    GlobalConflict.Owner owner = GlobalConflict.GetAccountOwner(
+                        playerClient.getAccount(), playerClient.getClanId(),
+                        BrainOutServer.Settings.getLastConflict());
+
+                    int idx = 0;
+
+                    for (Entry<Team, Array<Client>> entry : teams)
+                    {
+                        if (owner == GlobalConflict.Owner.a)
+                        {
+                            if (entry.value.size > maxPlayers / 2)
+                            {
+                                return null;
+                            }
+
+                            return entry.key;
+                        }
+
+                        if ((owner == GlobalConflict.Owner.b) && idx == 1)
+                        {
+                            if (entry.value.size > maxPlayers / 2)
+                            {
+                                return null;
+                            }
+
+                            return entry.key;
+                        }
+
+                        idx++;
+                    }
+                }
+
                 GameMode gameMode = BrainOutServer.Controller.getGameMode();
 
                 if (gameMode != null)

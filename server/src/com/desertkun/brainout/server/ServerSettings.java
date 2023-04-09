@@ -31,6 +31,8 @@ public class ServerSettings extends CoreSettings
     private boolean ratingEnabled;
     private int deathsRequired;
     private String fullDrop;
+    private String zone;
+    private long lastConflict;
 
     private boolean autoBalanceEnabled;
     private int autoBalanceValue;
@@ -337,6 +339,25 @@ public class ServerSettings extends CoreSettings
     public String getName()
     {
         return name;
+    }
+
+    public String getZone() {
+        return zone;
+    }
+
+    public long getLastConflict()
+    {
+        return lastConflict;
+    }
+
+    public void setLastConflict(long lastConflict)
+    {
+        this.lastConflict = lastConflict;
+    }
+
+    public void setZone(String zone)
+    {
+        this.zone = zone;
     }
 
     public Array<String> getTeamNames() {

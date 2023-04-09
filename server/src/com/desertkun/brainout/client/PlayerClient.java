@@ -2063,6 +2063,11 @@ public class PlayerClient extends Client
                 sendTCP(new ErrorMsg(ErrorMsg.Code.wrongTeam));
             }
         }
+
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            BrainOutServer.Controller.updateRoomSettings();
+        }
     }
 
     private void clientInited()
@@ -2844,6 +2849,11 @@ public class PlayerClient extends Client
             {
                 playerHandlers.dispose();
                 playerHandlers = null;
+            }
+
+            if (BrainOutServer.Settings.getZone() != null)
+            {
+                BrainOutServer.Controller.updateRoomSettings();
             }
 
             if (subscription != null)
@@ -5369,5 +5379,10 @@ public class PlayerClient extends Client
     public int getCurrentlyWatching()
     {
         return currentlyWatching;
+    }
+
+    public boolean wasReleased()
+    {
+        return playerHandlers == null;
     }
 }

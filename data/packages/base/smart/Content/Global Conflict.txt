@@ -1,0 +1,4 @@
+id = global-conflict
+class = content.GlobalConflict
+width = 3
+height = 3

@@ -29,6 +29,7 @@ public class RoomSettings
     private String party = null;
     private String region = null;
     private String preset = null;
+    private String zone = null;
 
     public static class BooleanOption
     {
@@ -232,6 +233,11 @@ public class RoomSettings
             filter.putEquals("party", party);
         }
 
+        if (zone != null)
+        {
+            filter.putEquals("zone", zone);
+        }
+
         if (preset != null)
         {
                 filter.putEquals("preset", preset);
@@ -272,6 +278,11 @@ public class RoomSettings
             settings.add("party", party);
         }
 
+        if (zone != null)
+        {
+            settings.add("zone", zone);
+        }
+
         if (preset != null)
         {
             settings.add("preset", preset);
@@ -308,6 +319,11 @@ public class RoomSettings
         if (json.has("state"))
         {
             setState(json.optString("state", null));
+        }
+
+        if (json.has("zone"))
+        {
+            setZone(json.optString("zone", null));
         }
 
         if (json.has("preset"))
@@ -428,6 +444,16 @@ public class RoomSettings
     public String getState()
     {
         return state;
+    }
+
+    public String getZone()
+    {
+        return zone;
+    }
+
+    public void setZone(String zone)
+    {
+        this.zone = zone;
     }
 
     public void setState(String state)
