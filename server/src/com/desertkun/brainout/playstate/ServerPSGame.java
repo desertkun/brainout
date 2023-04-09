@@ -192,25 +192,26 @@ public class ServerPSGame extends PlayStateGame
         C.getClients().clearHistory();
         C.getClients().updateBalance(true);
 
-        for (ObjectMap.Entry<Integer, Client> entry : C.getClients())
-        {
-            Client client = entry.value;
+        BrainOut.Timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (ObjectMap.Entry<Integer, Client> entry : C.getClients())
+                {
+                    Client client = entry.value;
 
-            if (client instanceof PlayerClient)
-            {
-                PlayerClient playerClient = ((PlayerClient) client);
-                // Wait 1 second to let player's state to change
-                BrainOut.Timer.schedule(new TimerTask() {
-                    @Override
-                    public void run() {
+                    if (client instanceof PlayerClient)
+                    {
+                        PlayerClient playerClient = ((PlayerClient) client);
+                        // Wait 1 second to let player's state to change
                         if (!playerClient.isInitialized()) return;
 
                         playerClient.setModePayload(
                             ((ServerRealization) getMode().getRealization()).newPlayerPayload(playerClient));
                     }
-                }, TimeUnit.SECONDS.toMillis(1));
+                }
             }
-        }
+        }, TimeUnit.SECONDS.toMillis(1));
+
 
         if (BrainOut.OnlineEnabled())
         {
@@ -252,7 +253,7 @@ public class ServerPSGame extends PlayStateGame
         {
             if (team == null)
                 continue;
-            
+
             json.writeValue(team.getID());
         }
         json.writeArrayEnd();
