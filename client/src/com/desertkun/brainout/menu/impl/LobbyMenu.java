@@ -780,7 +780,6 @@ public class LobbyMenu extends PlayerSelectionMenu
 
         RoomSettings roomSettings1 = new RoomSettings();
         roomSettings1.setRegion(BrainOutClient.ClientController.getMyRegion());
-        roomSettings1.init(BrainOutClient.ClientController.getUserProfile(), false);
 
         pushMenu(new GlobalConflictMenu(new GlobalConflictMenu.Callback()
         {
