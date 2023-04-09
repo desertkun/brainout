@@ -2,26 +2,37 @@ package com.desertkun.brainout.client;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.utils.*;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.ObjectMap;
 import com.desertkun.brainout.BrainOut;
 import com.desertkun.brainout.BrainOutServer;
 import com.desertkun.brainout.Constants;
 import com.desertkun.brainout.common.ReflectionReceiver;
 import com.desertkun.brainout.common.enums.DisconnectReason;
+import com.desertkun.brainout.common.enums.NotifyAward;
 import com.desertkun.brainout.common.enums.NotifyMethod;
 import com.desertkun.brainout.common.enums.NotifyReason;
-import com.desertkun.brainout.common.enums.NotifyAward;
 import com.desertkun.brainout.common.enums.data.NotifyData;
-import com.desertkun.brainout.common.msg.*;
+import com.desertkun.brainout.common.msg.ReliableManager;
+import com.desertkun.brainout.common.msg.UdpMessage;
+import com.desertkun.brainout.common.msg.client.WatchPointMsg;
+import com.desertkun.brainout.common.msg.server.ChatMsg;
+import com.desertkun.brainout.common.msg.server.NewRemoteClientMsg;
+import com.desertkun.brainout.common.msg.server.RemoveRemoteClientMsg;
 import com.desertkun.brainout.components.PlayerOwnerComponent;
 import com.desertkun.brainout.components.PlayerRemoteComponent;
-import com.desertkun.brainout.content.*;
+import com.desertkun.brainout.content.SpawnTarget;
+import com.desertkun.brainout.content.SpectatorTeam;
+import com.desertkun.brainout.content.Team;
 import com.desertkun.brainout.content.active.Player;
 import com.desertkun.brainout.content.consumable.ConsumableItem;
 import com.desertkun.brainout.content.shop.*;
 import com.desertkun.brainout.data.Data;
 import com.desertkun.brainout.data.Map;
-import com.desertkun.brainout.data.active.*;
+import com.desertkun.brainout.data.active.ActiveData;
+import com.desertkun.brainout.data.active.FlagData;
+import com.desertkun.brainout.data.active.PlayerData;
+import com.desertkun.brainout.data.active.SpawnPointData;
 import com.desertkun.brainout.data.block.BlockData;
 import com.desertkun.brainout.data.block.ConcreteBD;
 import com.desertkun.brainout.data.components.*;
@@ -30,7 +41,7 @@ import com.desertkun.brainout.data.consumable.ConsumableContainer;
 import com.desertkun.brainout.data.consumable.ConsumableRecord;
 import com.desertkun.brainout.data.instrument.InstrumentInfo;
 import com.desertkun.brainout.data.interfaces.Spawnable;
-import com.desertkun.brainout.events.*;
+import com.desertkun.brainout.events.DestroyEvent;
 import com.desertkun.brainout.mode.GameMode;
 import com.desertkun.brainout.mode.ServerRealization;
 import com.desertkun.brainout.mode.payload.ModePayload;
@@ -42,13 +53,12 @@ import com.desertkun.brainout.playstate.ServerPSGame;
 import com.desertkun.brainout.server.ServerConstants;
 import com.desertkun.brainout.server.ServerController;
 import com.desertkun.brainout.utils.SharedValue;
-
-import com.desertkun.brainout.common.msg.client.*;
-import com.desertkun.brainout.common.msg.server.*;
 import com.esotericsoftware.minlog.Log;
 import org.json.JSONObject;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TimerTask;
 
 @SuppressWarnings("PointlessBooleanExpression")
 public class Client extends ReflectionReceiver implements ActiveData.ComponentWriter, ReliableManager.MessageRecipient
@@ -713,22 +723,7 @@ public class Client extends ReflectionReceiver implements ActiveData.ComponentWr
 
     public boolean isInitialized()
     {
-        switch (getState())
-        {
-            case none:
-                return false;
-
-            case mapInitialized:
-            case readyToSpawn:
-            case spawnDelay:
-            case spawned:
-            case reconnect:
-            case roconnectTimeout:
-                return true;
-
-            default:
-                return true;
-        }
+        return getState() != null && getState() != State.none;
     }
 
     public boolean isReconnecting()
@@ -897,12 +892,7 @@ public class Client extends ReflectionReceiver implements ActiveData.ComponentWr
 
     public PlayerData hasBeenAliveRecently()
     {
-        if (playerData != null)
-        {
-            return playerData;
-        }
-
-        return recentPlayerData;
+        return playerData != null ? playerData : recentPlayerData;
     }
 
     public void registerKill(boolean trackStats)

@@ -197,12 +197,10 @@ public class ServerFoxHuntRealization extends ServerRealization<GameModeFoxHunt>
     private void setPlayerAsFox(Client player)
     {
         PlayerData playerData = player.getPlayerData();
-
         if (playerData == null)
             return;
 
         ModePayload payload = player.getModePayload();
-
         if (!(payload instanceof FoxHuntPayload))
             return;
 
@@ -394,11 +392,7 @@ public class ServerFoxHuntRealization extends ServerRealization<GameModeFoxHunt>
         {
             Client client1 = entry.value;
 
-            if (client1 == fox)
-                continue;
-
-            if (!client1.isAlive())
-                continue;
+            if (client1 == fox || !client1.isAlive()) continue;
 
             clientList.add(client1);
         }

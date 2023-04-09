@@ -6,7 +6,6 @@ import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.ObjectSet;
 import com.desertkun.brainout.BrainOut;
 import com.desertkun.brainout.BrainOutServer;
-import com.desertkun.brainout.Constants;
 import com.desertkun.brainout.client.Client;
 import com.desertkun.brainout.client.PlayerClient;
 import com.desertkun.brainout.common.msg.ModeMessage;
@@ -31,6 +30,9 @@ import org.anthillplatform.runtime.requests.Request;
 import org.anthillplatform.runtime.services.EventService;
 import org.anthillplatform.runtime.services.LoginService;
 import org.json.JSONArray;
+
+import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 public class ServerPSGame extends PlayStateGame
 {
@@ -190,21 +192,26 @@ public class ServerPSGame extends PlayStateGame
         C.getClients().clearHistory();
         C.getClients().updateBalance(true);
 
-        for (ObjectMap.Entry<Integer, Client> entry : C.getClients())
-        {
-            Client client = entry.value;
-
-            if (client instanceof PlayerClient)
-            {
-                PlayerClient playerClient = ((PlayerClient) client);
-
-                if (playerClient.isInitialized())
+        BrainOut.Timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (ObjectMap.Entry<Integer, Client> entry : C.getClients())
                 {
-                    playerClient.setModePayload(
-                        ((ServerRealization) getMode().getRealization()).newPlayerPayload(playerClient));
+                    Client client = entry.value;
+
+                    if (client instanceof PlayerClient)
+                    {
+                        PlayerClient playerClient = ((PlayerClient) client);
+                        // Wait 1 second to let player's state to change
+                        if (!playerClient.isInitialized()) return;
+
+                        playerClient.setModePayload(
+                            ((ServerRealization) getMode().getRealization()).newPlayerPayload(playerClient));
+                    }
                 }
             }
-        }
+        }, TimeUnit.SECONDS.toMillis(1));
+
 
         if (BrainOut.OnlineEnabled())
         {
@@ -246,7 +253,7 @@ public class ServerPSGame extends PlayStateGame
         {
             if (team == null)
                 continue;
-            
+
             json.writeValue(team.getID());
         }
         json.writeArrayEnd();
