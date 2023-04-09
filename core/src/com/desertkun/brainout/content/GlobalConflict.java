@@ -47,7 +47,7 @@ public class GlobalConflict extends Content
     {
         String hashValue;
 
-        if (groupId != null)
+        if (groupId != null && !groupId.isEmpty())
         {
             hashValue = groupId + "-" + conflictStart;
         }
@@ -64,7 +64,7 @@ public class GlobalConflict extends Content
         }
         catch (NoSuchAlgorithmException e)
         {
-            return Owner.a;
+            return Owner.neutral;
         }
 
         byte[] b = digest.digest(hashValue.getBytes(StandardCharsets.UTF_8));
@@ -343,7 +343,7 @@ public class GlobalConflict extends Content
 
                 if (ow == Owner.b)
                 {
-                    countA++;
+                    countB++;
                 }
             }
 

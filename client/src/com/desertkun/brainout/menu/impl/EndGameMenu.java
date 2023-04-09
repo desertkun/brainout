@@ -427,6 +427,9 @@ public class EndGameMenu extends PlayerListMenu
 
     private void updateRestart()
     {
+        if (BrainOutClient.PackageMgr.getDefine("zone", null) != null)
+            return;
+
         if (endGame.getRestartIn() > 0)
         {
             if (endGame.getVotesMaps() != null && endGame.getRestartIn() > endGame.VOTING_RESULTS_TIME)

@@ -150,9 +150,7 @@ public class PortGlobalConflictPlugin extends Plugin implements EventReceiver
             JSONObject c = profile.optJSONObject("conflict");
             if (c != null)
             {
-                long conflictStart = profile.optLong("last");
-
-                GlobalConflict.ConflictData d = conflict.getData(c, conflictStart);
+                GlobalConflict.ConflictData d = conflict.getData(c, BrainOutServer.Settings.getLastConflict());
 
                 ObjectMap<String, GlobalConflict.Owner> changedOwners = new ObjectMap<>();
 
@@ -168,7 +166,7 @@ public class PortGlobalConflictPlugin extends Plugin implements EventReceiver
                 GlobalConflict.Owner w = d.hasSomeoneWon();
                 if (w != GlobalConflict.Owner.neutral)
                 {
-                    globalWon(w, d, conflict, profileService, loginService, conflictStart);
+                    globalWon(w, d, conflict, profileService, loginService, BrainOutServer.Settings.getLastConflict());
                 }
             }
 

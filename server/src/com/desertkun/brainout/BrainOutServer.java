@@ -525,6 +525,8 @@ public class BrainOutServer extends BrainOut implements Runnable
                         if (conflict == null)
                             return;
                         BrainOutServer.Settings.setLastConflict(conflict.optLong("last"));
+
+                        if (Log.INFO) Log.info("Last Global Conflict: " + BrainOutServer.Settings.getLastConflict());
                     }
                 }));
             }
