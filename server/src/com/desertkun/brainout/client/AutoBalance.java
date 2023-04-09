@@ -43,6 +43,11 @@ public class AutoBalance
 
     public boolean isEnabled()
     {
+        if (BrainOutServer.Settings.getZone() != null)
+        {
+            return false;
+        }
+
         return enabled;
     }
 
