@@ -6,7 +6,6 @@ import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.ObjectSet;
 import com.desertkun.brainout.BrainOut;
 import com.desertkun.brainout.BrainOutServer;
-import com.desertkun.brainout.Constants;
 import com.desertkun.brainout.client.Client;
 import com.desertkun.brainout.client.PlayerClient;
 import com.desertkun.brainout.common.msg.ModeMessage;
@@ -31,6 +30,9 @@ import org.anthillplatform.runtime.requests.Request;
 import org.anthillplatform.runtime.services.EventService;
 import org.anthillplatform.runtime.services.LoginService;
 import org.json.JSONArray;
+
+import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 public class ServerPSGame extends PlayStateGame
 {
@@ -197,12 +199,16 @@ public class ServerPSGame extends PlayStateGame
             if (client instanceof PlayerClient)
             {
                 PlayerClient playerClient = ((PlayerClient) client);
+                // Wait 1 second to let player's state to change
+                BrainOut.Timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        if (!playerClient.isInitialized()) return;
 
-                if (playerClient.isInitialized())
-                {
-                    playerClient.setModePayload(
-                        ((ServerRealization) getMode().getRealization()).newPlayerPayload(playerClient));
-                }
+                        playerClient.setModePayload(
+                            ((ServerRealization) getMode().getRealization()).newPlayerPayload(playerClient));
+                    }
+                }, TimeUnit.SECONDS.toMillis(1));
             }
         }
 
