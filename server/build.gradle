@@ -19,8 +19,8 @@ task run(dependsOn: classes, type: JavaExec) {
 }
 
 task dist(type: Jar) {
-    destinationDir = new File("../bin/server")
-    baseName = new File("brainout-server")
+    destinationDirectory.set(file('../bin/server'))
+    archiveBaseName.set('brainout-server')
     version = null
 
     from files(sourceSets.main.output.classesDirs)

@@ -20,8 +20,8 @@ task run(dependsOn: classes, type: JavaExec) {
 }
 
 task dist(type: Jar) {
-    destinationDir = new File("../bin/client")
-    baseName = new File("brainout-desktop")
+    destinationDirectory.set(file('../bin/client'))
+    archiveBaseName.set('brainout-desktop')
     version = null
 
     from files(sourceSets.main.output.classesDirs)
