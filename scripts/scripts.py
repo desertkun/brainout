@@ -170,7 +170,7 @@ def last_modified_file(directory):
     return best_time
 
 
-def pack_localization(input_dir, output):
+def pack_localization(input_dir, output, input_file=None):
     try:
         with open(os.path.join(input_dir, "languages.json"), "r", encoding="utf8") as f:
             languages = json.load(f)
@@ -214,6 +214,10 @@ def pack_localization(input_dir, output):
 
     data = {}
     res = {'data': data}
+
+    if input_file and os.path.isfile(os.path.join(input_dir, input_file)):
+        with open(os.path.join(input_dir, input_file), 'r') as infile:
+            data.update(json.load(infile))
 
     for l in languages:
         l_filename = os.path.join(input_dir, l.lower() + ".json")
@@ -503,9 +507,14 @@ def process_package(meta, package_name, input_dir, output_dir, platform):
         if not output:
             raise RuntimeError("No localization output defined")
 
+        input_file = localization.get("input")
+        if input_file:
+            print("-- Ingesting additional input from {0}".format(input_file))
+
         pack_localization(
             os.path.join(input_dir, "localization"),
-            os.path.join(input_dir, "contents", output))
+            os.path.join(input_dir, "contents", output),
+            input_file=input_file)
 
     destination_ex = os.path.join(output_dir, platform)
 
