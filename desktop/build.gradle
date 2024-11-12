@@ -20,13 +20,17 @@ task run(dependsOn: classes, type: JavaExec) {
 }
 
 task dist(type: Jar) {
+    dependsOn(":core:build")
+    dependsOn(":client:build")
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     destinationDirectory.set(file('../bin/client'))
     archiveBaseName.set('brainout-desktop')
     version = null
 
     from files(sourceSets.main.output.classesDirs)
     from files(sourceSets.main.output.resourcesDir)
-    from {configurations.compile.collect {zipTree(it)}}
+    from {configurations.runtimeClasspath.collect {zipTree(it)}}
     from files(project.assetsDir);
  
     manifest {
