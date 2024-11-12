@@ -128,8 +128,8 @@ project(":client") {
     apply plugin: "java-library"
 
     dependencies {
-        implementation "com.beust:jcommander:1.48"
-        implementation "com.mashape.unirest:unirest-java:1.4.9"
+        api "com.beust:jcommander:1.48"
+        api "com.mashape.unirest:unirest-java:1.4.9"
         implementation ("com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
@@ -155,20 +155,20 @@ project(":client") {
 
 project(":desktop") {
     apply plugin: "java"
-
+    apply plugin: "java-library"
 
     dependencies {
-        implementation project(":client")
-        implementation ("com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion") {
+        api project(":client")
+        api ("com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
-        implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-        implementation ("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion") {
+        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        api ("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
             implementation "com.github.desertkun.libgdx:gdx:$localGdxVersion"
         }
-        implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
     }
 
     repositories {
