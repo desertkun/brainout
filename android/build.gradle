@@ -85,7 +85,7 @@ def setupAndroidSdk(node) {
 idea {
     module {
         sourceDirs += file("src");
-        scopes = [ COMPILE: [plus:[project.configurations.compile]]]        
+        scopes = [ COMPILE: [plus:[project.configurations.runtimeClasspath]]]
 
         iml {
             withXml {

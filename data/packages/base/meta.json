@@ -5,6 +5,7 @@
 	},
 	"localization":
 	{
+		"input": "input.json",
 		"output": "data/texts.json"
 	},
 	"export": 

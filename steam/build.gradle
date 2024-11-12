@@ -15,13 +15,16 @@ task run(dependsOn: classes, type: JavaExec) {
 }
 
 task dist(type: Jar) {
-    destinationDir = new File("../bin/client")
-    baseName = new File("brainout-steam")
+    dependsOn(":desktop:build")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    destinationDirectory.set(file('../bin/client'))
+    archiveBaseName.set('brainout-steam')
     version = null
 
     from files(sourceSets.main.output.classesDirs)
     from files(sourceSets.main.output.resourcesDir)
-    from {configurations.compile.collect {zipTree(it)}}
+    from {configurations.runtimeClasspath.collect {zipTree(it)}}
     from files(project.assetsDir);
  
     manifest {

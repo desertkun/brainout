@@ -9,12 +9,13 @@ buildscript {
         jcenter()
         maven { url "https://jitpack.io" }
         maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://repo.cuba-platform.com/content/groups/work/" }
     }
     dependencies {
         classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
         classpath 'com.android.tools.build:gradle:1.0.0'
         classpath 'org.robovm:robovm-gradle-plugin:1.9.0'
-        classpath 'net.sf.proguard:proguard-gradle:6.2.0'
+        classpath 'com.guardsquare:proguard-gradle:7.6.0'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
         classpath 'com.github.rodionmoiseev.gradle.plugins:idea-utils:0.4-rc1'
         classpath 'gradle.plugin.com.jetbrains.python:gradle-python-envs:0.0.31'
@@ -54,12 +55,12 @@ project(":android") {
     configurations { natives }
 
     dependencies {
-        compile project(":client")
-        compile "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
+        implementation project(":client")
+        implementation "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
-        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi-v7a"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86"
@@ -77,11 +78,11 @@ project(":ios") {
     configurations { natives }
 
     dependencies {
-        compile project(":client")
-        compile "org.robovm:robovm-rt:$roboVMVersion"
-        compile "org.robovm:robovm-cocoatouch:$roboVMVersion"
-        compile "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        implementation project(":client")
+        implementation "org.robovm:robovm-rt:$roboVMVersion"
+        implementation "org.robovm:robovm-cocoatouch:$roboVMVersion"
+        implementation "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios"
     }
@@ -95,23 +96,24 @@ project(":ios") {
 
 project(":core") {
     apply plugin: "java"
+    apply plugin: "java-library"
 
     dependencies {
-        compile ("com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion") {
+        api ("com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion") {
             exclude group: 'com.mashape.unirest', module: 'unirest-java'
-            compile "com.mashape.unirest:unirest-java:1.4.9"
+            api "com.mashape.unirest:unirest-java:1.4.9"
         }
 
-        compile "com.github.desertkun.infomas-asl:annotation-detector:3.1-dev"
+        api "com.github.desertkun.infomas-asl:annotation-detector:3.1-dev"
 
-        compile ("com.github.desertkun:kryonet:2.22.0-RC7") {
+        api ("com.github.desertkun:kryonet:2.22.0-RC7") {
             exclude group: 'com.esotericsoftware', module: 'kryo'
         }
-        compile "com.esotericsoftware:kryo:5.4.0"
+        api "com.esotericsoftware:kryo:5.4.0"
 
-        compile "org.json:json:20180130"
-        compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
-        compile ("com.badlogicgames.gdx:gdx-box2d:$gdxVersion") {
+        api "org.json:json:20180130"
+        api "com.github.desertkun.libgdx:gdx:$localGdxVersion"
+        api ("com.badlogicgames.gdx:gdx-box2d:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
     }
@@ -123,22 +125,23 @@ project(":core") {
 
 project(":client") {
     apply plugin: "java"
+    apply plugin: "java-library"
 
     dependencies {
-        compile "com.beust:jcommander:1.48"
-        compile "com.mashape.unirest:unirest-java:1.4.9"
-        compile ("com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion") {
+        api "com.beust:jcommander:1.48"
+        api "com.mashape.unirest:unirest-java:1.4.9"
+        implementation ("com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
-        compile project(":core")
-        compile ("com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion") {
+        api project(":core")
+        implementation ("com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
-            compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
+            implementation "com.github.desertkun.libgdx:gdx:$localGdxVersion"
         }
-        compile ("com.badlogicgames.gdx:gdx-freetype:$gdxVersion") {
+        implementation ("com.badlogicgames.gdx:gdx-freetype:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
-        compile ("com.badlogicgames.gdx:gdx-tools:$gdxVersion") {
+        implementation ("com.badlogicgames.gdx:gdx-tools:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx-backend-lwjgl'
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
@@ -152,20 +155,20 @@ project(":client") {
 
 project(":desktop") {
     apply plugin: "java"
-
+    apply plugin: "java-library"
 
     dependencies {
-        compile project(":client")
-        compile ("com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion") {
+        api project(":client")
+        api ("com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
         }
-        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-        compile ("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion") {
+        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        api ("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion") {
             exclude group: 'com.badlogicgames.gdx', module: 'gdx'
-            compile "com.github.desertkun.libgdx:gdx:$localGdxVersion"
+            implementation "com.github.desertkun.libgdx:gdx:$localGdxVersion"
         }
-        compile "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
     }
 
     repositories {
@@ -178,11 +181,11 @@ project(":steam") {
 
 
     dependencies {
-        compile project(":desktop")
-        compile project(":client")
-        compile files('libs/steamworks4j-1.10.0-SNAPSHOT.jar')
-        compile files('libs/steamworks4j-gdx-1.10.0-SNAPSHOT.jar')
-        compile files('libs/steamworks4j-lwjgl3-1.10.0-SNAPSHOT.jar')
+        implementation project(":desktop")
+        implementation project(":client")
+        implementation files('libs/steamworks4j-1.10.0-SNAPSHOT.jar')
+        implementation files('libs/steamworks4j-gdx-1.10.0-SNAPSHOT.jar')
+        implementation files('libs/steamworks4j-lwjgl3-1.10.0-SNAPSHOT.jar')
     }
 }
 
@@ -190,24 +193,24 @@ project(":server") {
     apply plugin: "java"
 
     dependencies {
-        compile ("com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion") {
+        implementation ("com.github.anthill-platform:anthill-runtime-java:$anthillRuntimeVersion") {
             exclude group: 'com.mashape.unirest', module: 'unirest-java'
-            compile "com.mashape.unirest:unirest-java:1.4.9"
+            implementation "com.mashape.unirest:unirest-java:1.4.9"
         }
-        compile "com.github.anthill-platform:anthill-runtime-java-server:$anthillServerRuntimeVersion"
-        compile project(":core")
-        compile "com.beust:jcommander:1.48"
-        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        compile "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-        compile "com.sun.net.httpserver:http:20070405"
+        implementation "com.github.anthill-platform:anthill-runtime-java-server:$anthillServerRuntimeVersion"
+        implementation project(":core")
+        implementation "com.beust:jcommander:1.48"
+        implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        implementation "com.sun.net.httpserver:http:20070405"
     }
 }
 
 import org.apache.tools.ant.taskdefs.condition.Os
 
-def accessToken = ''
-def discoveryServices = '{"profile":"https://profile-valpha.brainout.org","login":"https://login-valpha.brainout.org","message":"https://message-valpha.brainout.org","event":"https://event-valpha.brainout.org","leaderboard":"https://leaderboard-valpha.brainout.org","social":"https://social-valpha.brainout.org","static":"https://static-valpha.brainout.org","game":"https://game-valpha.brainout.org","store":"https://store-valpha.brainout.org","report":"https://report-valpha.brainout.org","market":"https://market-valpha.brainout.org"}'
+def accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1bm0iOiJkZXY6YnJhaW5vdXRfc2VydmVyIiwiYWNjIjoiNCIsImdtcyI6IjEiLCJzY28iOiJldmVudF9qb2luLGV2ZW50X2xlYXZlLHByb21vLHByb2ZpbGUsbWVzc2FnZV9saXN0ZW4scHJvZmlsZV93cml0ZSxncm91cCxldmVudF93cml0ZSxnYW1lX2Jhbixncm91cF93cml0ZSxncm91cF9jcmVhdGUscGFydHlfY2xvc2UsZ2FtZV9tdWx0aSxtYXJrZXRfdXBkYXRlX2l0ZW0sc3RvcmVfb3JkZXIscHJvZmlsZV9wcml2YXRlLG1lc3NhZ2VfYXV0aG9yaXRhdGl2ZSxsYl9hcmJpdHJhcnlfYWNjb3VudCxldmVudF9wcm9maWxlX3dyaXRlLHJlcG9ydF91cGxvYWQsZ2FtZSxtYXJrZXRfcG9zdF9vcmRlciIsImlhdCI6IjE2ODEwNDk0OTUiLCJleHAiOiIxNjg2MjMzNDk1IiwidWlkIjoiYzQ1NWI1OWMtNTkyZi00N2U5LTljYzYtYjAxOGEwNzc1NzEwIn0.iSSlk5yfBVFbxSGaJ5fNJpaIEwV-P-ObRC1awIy9__ajxRmpiixGAE2_9AS9QbFaJ6Gy1DT21FCt_O8iFnzSsQOsCv4Bibcr0zec2OctW23Ylpl5w8ed7wZW7zGSR_-_6YCdzcTr3OjSVtGW2pvLiIg3f36pDK24B_AR2grL3eD5hnidkhi3410HiMMoK-o6cnW-HZeuAIB8Hg9-llRuNrxD2jgG8dw_7BwwT6rKiJGoPJqte9K9n11Vfxjue7pZpCarmfMt53uJzNgACBcmW98UP_KUY_9ctq53uvRc0L0MA-Oce1KVmMFeSNxsDIWDg4DpXEETfommwHGn2alONg'
+def discoveryServices = '{"profile":"https://profile-valpha-2.brainout.org","login":"https://login-valpha-2.brainout.org","message":"https://message-valpha-2.brainout.org","event":"https://event-valpha-2.brainout.org","leaderboard":"https://leaderboard-valpha-2.brainout.org","social":"https://social-valpha-2.brainout.org","static":"https://static-valpha-2.brainout.org","game":"https://game-valpha-2.brainout.org","store":"https://store-valpha-2.brainout.org","report":"https://report-valpha-2.brainout.org","market":"https://market-valpha-2.brainout.org"}'
 
 idea {
     project {
